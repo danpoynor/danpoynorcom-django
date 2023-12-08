@@ -1,0 +1,14 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <h1>Project</h1>
+  <ul>
+    {% for project in projects %}
+      <li>
+        <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+      </li>
+      {% empty %}
+      <li>No projects available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,176 @@
+from django.core.validators import URLValidator, MinValueValidator, MaxValueValidator
+from django.urls import reverse
+from django.db import models
+import datetime
+
+# NOTE: Each taxonomy model should include:
+# - `name` field that is used to display the taxonomy term in the admin
+# - `singular_name` field that is used to display the taxonomy term to the user
+# - `plural_name` field that is used to display the taxonomy term to the user
+# - `slug` field that is used to generate the URL for the model's detail page
+# - `description` field that is used to describe the taxonomy term to the user
+# - `visible` field that is used to determine if the taxonomy is either public or private
+# - `image_sm` src value for the representative image for the taxonomy term
+# - `image_md` src value for the representative image for the taxonomy term
+# - `image_lg` src value for the representative image for the taxonomy term
+
+
+# Client taxonomy model
+class Client(models.Model):
+    class Meta:
+        verbose_name = 'Client'
+        verbose_name_plural = 'Clients'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the client description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    logo = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    website = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('client_detail', args=[str(self.slug)])
+
+
+# Industry taxonomy model
+class Industry(models.Model):
+    class Meta:
+        verbose_name = 'Industry'
+        verbose_name_plural = 'Industries'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the industry description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_md = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('industry_detail', args=[str(self.slug)])
+
+
+# Market taxonomy model
+class Market(models.Model):
+    class Meta:
+        verbose_name = 'Market'
+        verbose_name_plural = 'Markets'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the market description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_md = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('market_detail', args=[str(self.slug)])
+
+
+# MediaType taxonomy model
+class MediaType(models.Model):
+    class Meta:
+        verbose_name = 'Media Type'
+        verbose_name_plural = 'Media Types'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the media type description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_md = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('media_type_detail', args=[str(self.slug)])
+
+
+# Role taxonomy model
+class Role(models.Model):
+    class Meta:
+        verbose_name = 'Role'
+        verbose_name_plural = 'Roles'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the role description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_md = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('role_detail', args=[str(self.slug)])
+
+
+# Project model: Each project has a client, industry, market, media type, and role assigned to it
+class Project(models.Model):
+    class Meta:
+        verbose_name = 'Project'
+        verbose_name_plural = 'Projects'
+        ordering = ['name']
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the project description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project should be visible")
+    client = models.ForeignKey(Client, on_delete=models.PROTECT, related_name='projects', related_query_name='project', blank=True, null=True)
+    industry = models.ManyToManyField(Industry, related_name='projects', related_query_name='project', blank=True)
+    market = models.ManyToManyField(Market, related_name='projects', related_query_name='project', blank=True)
+    mediatype = models.ManyToManyField(MediaType, related_name='projects', related_query_name='project', blank=True)
+    role = models.ManyToManyField(Role, related_name='projects', related_query_name='project', blank=True)
+    year = models.IntegerField(help_text="Enter the project year as a 4-digit number", blank=True, null=True, validators=[MinValueValidator(1900), MaxValueValidator(datetime.date.today().year)])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('project_detail', args=[str(self.slug)])
+
+
+# ProjectItem model: Each project item has a project assigned to it
+class ProjectItem(models.Model):
+    class Meta:
+        verbose_name = 'Project Item'
+        verbose_name_plural = 'Project Items'
+        ordering = ['project']
+    project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='items', related_query_name='item')
+    name = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField(help_text="Enter the project item description", blank=True, null=True)
+    visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    image_sm = models.URLField(max_length=200, help_text="Enter the URL of the small image", blank=True, null=True, validators=[URLValidator()])
+    image_md = models.URLField(max_length=200, help_text="Enter the URL of the medium image", blank=True, null=True, validators=[URLValidator()])
+    image_lg = models.URLField(max_length=200, help_text="Enter the URL of the large image", blank=True, null=True, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name

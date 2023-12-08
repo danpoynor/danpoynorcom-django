@@ -1,0 +1,22 @@
+{% load static %}
+<header>
+  <div class="container">
+    <h1>Dan Poynor</h1>
+    <nav>
+      <ul>
+        <li{% if request.resolver_match.url_name == 'home' %} class="active"{% endif %}>
+          <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li{% if request.resolver_match.url_name == 'portfolio' %} class="active"{% endif %}>
+          <a href="{% url 'portfolio' %}">Portfolio</a>
+        </li>
+        <li{% if request.resolver_match.url_name == 'about' %} class="active"{% endif %}>
+          <a href="{% url 'about' %}">About</a>
+        </li>
+        <li{% if request.resolver_match.url_name == 'contact' %} class="active"{% endif %}>
+          <a href="{% url 'contact' %}">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

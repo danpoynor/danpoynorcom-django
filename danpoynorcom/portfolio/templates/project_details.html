@@ -1,0 +1,42 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <h1>{{ object.name }}</h1>
+  <p>{{ object.description }}</p>
+  <p>
+    Client: <a href="{{ object.client.get_absolute_url }}">{{ object.client.name }}</a>
+  </p>
+  <p>Year: {{ object.year }}</p>
+
+  <!-- Display industries -->
+  <p>
+    Industries:{% for industry in object.industries.all %}
+      {{ industry.name }}
+    {% endfor %}
+  </p>
+
+  <!-- Display roles -->
+  <p>
+    Roles:{% for role in object.roles.all %}
+      {{ role.name }}
+    {% endfor %}
+  </p>
+
+  <!-- Display media types -->
+  <p>
+    Media Types:{% for mediatype in object.mediatypes.all %}
+      {{ mediatype.name }}
+    {% endfor %}
+  </p>
+
+  <!-- Display markets -->
+  <p>
+    Markets:{% for market in object.markets.all %}
+      {{ market.name }}
+    {% endfor %}
+  </p>
+
+  <p>
+    <a href="{% url 'projects' %}">Back to projects list</a>
+  </p>
+{% endblock %}

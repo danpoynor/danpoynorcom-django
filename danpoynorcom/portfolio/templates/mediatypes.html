@@ -1,0 +1,14 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <h1>Media Types</h1>
+  <ul>
+    {% for mediatype in mediatypes %}
+      <li>
+        <a href="{{ mediatype.get_absolute_url }}">{{ mediatype.name }}</a>
+      </li>
+      {% empty %}
+      <li>No media types available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
