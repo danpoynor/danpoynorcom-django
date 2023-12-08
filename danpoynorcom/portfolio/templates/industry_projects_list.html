@@ -3,7 +3,9 @@
 {% block content %}
   <h1>{{ object.name }}</h1>
   <p>{{ object.description }}</p>
-  <img src="{{ object.image_sm }}" alt="{{ object.name }} image" />
+
+  {% include 'partials/_taxonomy_projects.html' %}
+
   <p>
     <a href="{% url 'industries' %}">Back to industries list</a>
   </p>

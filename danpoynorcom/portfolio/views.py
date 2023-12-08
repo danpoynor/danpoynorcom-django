@@ -24,9 +24,9 @@ def clients(request):
     return render(request, 'clients.html', {'clients': clients})
 
 
-class ClientDetailView(generic.DetailView):
+class ClientProjectsListView(generic.DetailView):
     model = Client
-    template_name = 'client_detail.html'
+    template_name = 'client_projects_list.html'
 
 
 def industries(request):
@@ -34,9 +34,9 @@ def industries(request):
     return render(request, 'industries.html', {'industries': industries})
 
 
-class IndustryDetailView(generic.DetailView):
+class IndustryProjectsListView(generic.DetailView):
     model = Industry
-    template_name = 'industry_detail.html'
+    template_name = 'industry_projects_list.html'
 
 
 def markets(request):
@@ -44,19 +44,19 @@ def markets(request):
     return render(request, 'markets.html', {'markets': markets})
 
 
-class MarketDetailView(generic.DetailView):
+class MarketProjectsListView(generic.DetailView):
     model = Market
-    template_name = 'market_detail.html'
+    template_name = 'market_projects_list.html'
 
 
 def mediatypes(request):
     mediatypes = MediaType.objects.all()
-    return render(request, 'mediatypes.html', {'mediatypes': mediatypes})
+    return render(request, 'media_types.html', {'mediatypes': mediatypes})
 
 
-class MediaTypeDetailView(generic.DetailView):
+class MediaTypeProjectsListView(generic.DetailView):
     model = MediaType
-    template_name = 'mediatype_detail.html'
+    template_name = 'media_type_projects_list.html'
 
 
 def roles(request):
@@ -64,9 +64,9 @@ def roles(request):
     return render(request, 'roles.html', {'roles': roles})
 
 
-class RoleDetailView(generic.DetailView):
+class RoleProjectsListView(generic.DetailView):
     model = Role
-    template_name = 'role_detail.html'
+    template_name = 'role_projects_list.html'
 
 
 def projects(request):

@@ -1,0 +1,10 @@
+<h2>Projects In This Taxonomy</h2>
+<ul>
+  {% for project in object.projects.all %}
+    <li>
+      <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+    </li>
+    {% empty %}
+    <li>No projects to display in this taxonomy.</li>
+  {% endfor %}
+</ul>

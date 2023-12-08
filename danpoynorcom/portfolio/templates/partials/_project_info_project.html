@@ -1,0 +1,27 @@
+<h3>Project Info</h3>
+
+<p>
+  Industries:{% for industry in object.industry.all %}
+    {{ industry.name }}
+  {% endfor %}
+</p>
+
+<p>
+  Markets:{% for market in object.market.all %}
+    {{ market.name }}
+  {% endfor %}
+</p>
+
+<p>
+  Roles:{% for role in object.role.all %}
+    {{ role.name }}
+  {% endfor %}
+</p>
+
+<p>
+  Media Types:{% for mediatype in object.mediatype.all %}
+    {{ mediatype.name }}
+  {% endfor %}
+</p>
+
+<p>Year: {{ object.year }}</p>
