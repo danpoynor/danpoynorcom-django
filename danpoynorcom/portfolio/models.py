@@ -157,20 +157,30 @@ class Project(models.Model):
 
 # ProjectItem model: Each project item has a project assigned to it
 class ProjectItem(models.Model):
+    STATUS_CHOICES = [
+        ('P', 'Publish'),
+        ('D', 'Draft'),
+        ('PR', 'Private'),
+        ('T', 'Trash'),
+    ]
+    status = models.CharField(max_length=2, choices=STATUS_CHOICES, default='D')
+
     class Meta:
         verbose_name = 'Project Item'
         verbose_name_plural = 'Project Items'
         ordering = ['project']
     project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='items', related_query_name='item')
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=200)
     description = models.TextField(help_text="Enter the project item description", blank=True, null=True)
+    html_content = models.TextField(blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
     image_sm = models.URLField(max_length=200, help_text="Enter the URL of the small image", blank=True, null=True, validators=[URLValidator()])
     image_md = models.URLField(max_length=200, help_text="Enter the URL of the medium image", blank=True, null=True, validators=[URLValidator()])
     image_lg = models.URLField(max_length=200, help_text="Enter the URL of the large image", blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    test = models.SlugField(max_length=20, blank=True, null=True)
 
     def __str__(self):
         return self.name
