@@ -89,6 +89,7 @@ class MediaType(models.Model):
         verbose_name = 'Media Type'
         verbose_name_plural = 'Media Types'
         ordering = ['name']
+        db_table = 'portfolio_project_media_type'
     name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField(help_text="Enter the media type description", blank=True, null=True)
@@ -169,6 +170,7 @@ class ProjectItem(models.Model):
         verbose_name = 'Project Item'
         verbose_name_plural = 'Project Items'
         ordering = ['project']
+        db_table = 'portfolio_project_item'
     project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name='items', related_query_name='item')
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200)
@@ -180,7 +182,6 @@ class ProjectItem(models.Model):
     image_lg = models.URLField(max_length=200, help_text="Enter the URL of the large image", blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    test = models.SlugField(max_length=20, blank=True, null=True)
 
     def __str__(self):
         return self.name
