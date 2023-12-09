@@ -5,7 +5,7 @@
 <details>
   <summary>Click to expand</summary>
 
-## Create A New Environment
+### Create A New Environment
 
 Assuming you have Python 3 installed, create a new virtual environment for this project.
 
@@ -24,7 +24,7 @@ virtualenv venv
 source venv/bin/activate
 ```
 
-## Install Dependencies
+### Install Dependencies
 
 After you’ve created and activated a virtual environment, enter the command:
 
@@ -39,7 +39,7 @@ Verify that Django can be seen by Python:
 python -m django --version
 ```
 
-## Create A New Django Project and Run The Development Server
+### Create A New Django Project and Run The Development Server
 
 ```sh
 django-admin startproject danpoynor
@@ -49,39 +49,39 @@ python manage.py runserver
 
 Visit <https://localhost:8000> in a web browser to see the Django welcome page.
 
-## Automatic reloading of runserver
+### Automatic reloading of runserver
 
 NOTE: The development server automatically reloads Python code for each request as needed. You don’t need to restart the server for code changes to take effect. However, some actions like adding files don’t trigger a restart, so you’ll have to restart the server in these cases.
 
 ---
 
-## Create A New App
+### Create A New App
 
 ```sh
 python manage.py startapp portfolio
 ```
 
-## Create A New Model
+### Create A New Model
 
 Edit the models.py file to add a new models.
 
-## Run Migrations
+### Run Migrations
 
 ```sh
 python manage.py migrate
 ```
 
-## Create A Superuser
+### Create A Superuser
 
 ```sh
 python manage.py createsuperuser
 ```
 
-## Register The Models With The Admin
+### Register The Models With The Admin
 
-## Create Views
+### Create Views
 
-## Create Templates
+### Create Templates
 
 Create a new directory called templates in the the app directory.
 
@@ -89,16 +89,41 @@ Create a new file called index.html in the templates directory.
 
 Edit the index.html file to add some HTML.
 
-## Create A URL
+### Create A URL
 
 Edit the app urls.py file to add a new URL.
 
 Edit the project urls.py file to include the app urls.
 
-## Run The Development Server
+### Run The Development Server
 
 ```sh
 python manage.py runserver
 ```
+
+</details>
+
+---
+
+## Importing Data Fixtures
+
+<details>
+  <summary>Click to expand</summary>
+
+### The `fixtures` directory contains JSON files that can be used to import data into the database using the custom admin commands located in the `portfolio/management/commands` directory
+
+```sh
+python3 manage.py import_clients
+python3 manage.py import_industries
+python3 manage.py import_markets
+python3 manage.py import_media_types
+python3 manage.py import_projects
+python3 manage.py import_project_items
+python3 manage.py import_roles
+```
+
+NOTE: When importing the project_items data a lot of debugging info will scroll past in the terminal. This is normal.
+
+TODO: Create proper fixtures so the `python3 manage.py importdata` command can be used.
 
 </details>
