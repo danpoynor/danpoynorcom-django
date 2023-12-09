@@ -4,11 +4,56 @@ from django.db.models import Case, When, IntegerField
 
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 
-admin.site.register(Client)
-admin.site.register(Industry)
-admin.site.register(Market)
-admin.site.register(MediaType)
-admin.site.register(Role)
+# admin.site.register(Client)
+# admin.site.register(Industry)
+# admin.site.register(Market)
+# admin.site.register(MediaType)
+# admin.site.register(Role)
+
+
+class ClientAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    list_display = ('id', 'name', 'slug', 'description')
+    list_display_links = ('name',)
+
+
+admin.site.register(Client, ClientAdmin)
+
+
+class IndustryAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    list_display = ('id', 'name', 'slug', 'description')
+    list_display_links = ('name',)
+
+
+admin.site.register(Industry, IndustryAdmin)
+
+
+class MarketAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    list_display = ('id', 'name', 'slug', 'description')
+    list_display_links = ('name',)
+
+
+admin.site.register(Market, MarketAdmin)
+
+
+class MediaTypeAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    list_display = ('id', 'name', 'slug', 'description')
+    list_display_links = ('name',)
+
+
+admin.site.register(MediaType, MediaTypeAdmin)
+
+
+class RoleAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    list_display = ('id', 'name', 'slug', 'description')
+    list_display_links = ('name',)
+
+
+admin.site.register(Role, RoleAdmin)
 
 
 class ProjectItemAdmin(admin.ModelAdmin):
@@ -26,11 +71,8 @@ admin.site.register(ProjectItem, ProjectItemAdmin)
 
 class ProjectAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'highlighted_name', 'visible', 'client_name', 'industries', 'markets', 'roles')
-
-    def highlighted_name(self, obj):
-        return format_html('<b>{}</b>', obj.name) if obj.name == '[Default Project]' else obj.name
-    highlighted_name.short_description = 'Name'
+    list_display = ('id', 'name', 'visible', 'client_name', 'industries', 'markets', 'roles')
+    list_display_links = ('name',)
 
     def client_name(self, obj):
         return obj.client.name if obj.client else '-'

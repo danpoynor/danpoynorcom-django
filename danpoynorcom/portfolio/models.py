@@ -3,17 +3,6 @@ from django.urls import reverse
 from django.db import models
 import datetime
 
-# NOTE: Each taxonomy model should include:
-# - `name` field that is used to display the taxonomy term in the admin
-# - `singular_name` field that is used to display the taxonomy term to the user
-# - `plural_name` field that is used to display the taxonomy term to the user
-# - `slug` field that is used to generate the URL for the model's detail page
-# - `description` field that is used to describe the taxonomy term to the user
-# - `visible` field that is used to determine if the taxonomy is either public or private
-# - `image_sm` src value for the representative image for the taxonomy term
-# - `image_md` src value for the representative image for the taxonomy term
-# - `image_lg` src value for the representative image for the taxonomy term
-
 
 # Client taxonomy model
 class Client(models.Model):
@@ -89,7 +78,7 @@ class MediaType(models.Model):
         verbose_name = 'Media Type'
         verbose_name_plural = 'Media Types'
         ordering = ['name']
-        db_table = 'portfolio_project_media_type'
+        db_table = 'portfolio_media_type'
     name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField(help_text="Enter the media type description", blank=True, null=True)
