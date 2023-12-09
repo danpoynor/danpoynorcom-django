@@ -1,0 +1,4002 @@
+[
+  {
+    "id": 388,
+    "count": 1,
+    "description": "More of an experiment (perhaps\/really) this was my contest entry submitted in an effort to get free tickets to the FunFunFun Festival.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/funfunfun-festival-animated-gif-contest-submission\/",
+    "name": "FunFunFun Festival Animated Gif Contest Submission",
+    "slug": "funfunfun-festival-animated-gif-contest-submission",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/388"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=388"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 356,
+    "count": 1,
+    "description": "Contest entry I submitted towards winning free tickets to the FunFunFun Festival in Austin.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/funfunfun-festival-t-shirt-contest-submission\/",
+    "name": "FunFunFun Festival T-shirt Contest Submission",
+    "slug": "funfunfun-festival-t-shirt-contest-submission",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/356"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=356"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 683,
+    "count": 4,
+    "description": "FYI Living was looking to improve their newsletter sign-up conversion rates for different subject areas such as fitness, nutrition, depression, pregnancy and others and needed an alternate look to test. After researching similar sites I noticed many where overly marketing oriented and tended to look kinda cheesy. I developed a few directions to avoid the typical look then narrowed down to these four initial designs to gather feedback on and potential test. These try to look more clinical news oriented and reserved in nature. They intentionally don't include photos since visitors sometimes get distracted by photos (especially of people) on landing pages and study them rather than focusing on the informational content being offered. \u201cClarity trumps persuasion\u201d is a tactic worth testing in my experience, even though the simpler style doesn't necessarily look as punchy as landing page designs which include big colorful photos.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fyi-living-newsletter-sign-up-landing-page-design\/",
+    "name": "FYI Living Newsletter Sign-Up Landing Page Design",
+    "slug": "fyi-living-newsletter-sign-up-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/683"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=683"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 488,
+    "count": 1,
+    "description": "The Kwanzoo quiz widget ad serves 5 questions on a topic within the ad then presents personalized results with a button linking to the advertisers website.\r\n\r\nFor this version I adopted the GEICO gecko lizard image from their website along with other trade dress elements so users could immediately identify the brand and feel confident they were interacting with a reputable business that might offer them special savings.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/geico-auto-insurance-quiz-banner-ad\/",
+    "name": "GEICO Auto Insurance Quiz Banner Ad",
+    "slug": "geico-auto-insurance-quiz-banner-ad",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/488"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=488"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 541,
+    "count": 5,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/goldcash-pro-website-design\/",
+    "name": "GoldCash.pro Website Design",
+    "slug": "goldcash-pro-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/541"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=541"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 282,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/grandmutual-debt-elimination-landing-page\/",
+    "name": "GrandMutual Debt Elimination Landing Page",
+    "slug": "grandmutual-debt-elimination-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/282"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=282"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 181,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/grand-mutual-financial-services-logo\/",
+    "name": "GrandMutual Financial Services Logo",
+    "slug": "grand-mutual-financial-services-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/181"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=181"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 283,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/grandmutual-life-insurance-landing-page\/",
+    "name": "GrandMutual Life Insurance Landing Page",
+    "slug": "grandmutual-life-insurance-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/283"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=283"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 783,
+    "count": 2,
+    "description": "A couple examples of newspaper ads I would layout and produce for managers. Working at Health Net corporate headquarters, we produced the advertising and marketing materials used throughout the United States. Initial design templates where provided by the agency that created the overall brand directions and I maintained the style across different formats for various needs. Here's where I honed my typographic layout skills using Quark Express and became \u201cThe Quark Master\u201d.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/health-net-newspaper-ads\/",
+    "name": "Health Net Newspaper Ads",
+    "slug": "health-net-newspaper-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/783"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=783"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 780,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/health-net-patient-kiosk-design-mockup\/",
+    "name": "Health Net Patient Kiosk Design Mockup",
+    "slug": "health-net-patient-kiosk-design-mockup",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/780"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=780"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 784,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/health-net-seniority-plus-brochure-design\/",
+    "name": "Health Net Seniority Plus Brochure Design",
+    "slug": "health-net-seniority-plus-brochure-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/784"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=784"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 785,
+    "count": 1,
+    "description": "As the &ldquo;keeper of the logo&rdquo;, I was in charge of seeing the right logo was used at the right size in the right position and that someone was keeping an eye on quality of the various items created for promotional use.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/health-net-swag\/",
+    "name": "Health Net Swag",
+    "slug": "health-net-swag",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/785"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=785"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 272,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/helmet-city-100-percent-satisfaction-guaranteed-badge\/",
+    "name": "Helmet City 100% Satisfaction Guaranteed Badge",
+    "slug": "helmet-city-100-percent-satisfaction-guaranteed-badge",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/272"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=272"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "count": 5,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/helmet-city-ecommerce-website-design\/",
+    "name": "Helmet City eCommerce Website Design",
+    "slug": "helmet-city-ecommerce-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/47"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=47"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 604,
+    "count": 2,
+    "description": "Created in Flash these dynamic banner ads pulled in campaign offers based on customer location and demographics. The formats needed to be flexible enough to present various amounts of text and images in ways that presented the offers clearly and didn't look awkward. We established content standards, character count limits, and image formats to be used as guidelines.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/homerun-com-dynamic-banner-ad-template-design\/",
+    "name": "HomeRun.com Dynamic Banner Ad Template Design",
+    "slug": "homerun-com-dynamic-banner-ad-template-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/604"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=604"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 525,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hot-creative-business-card\/",
+    "name": "Hot Creative Business Card",
+    "slug": "hot-creative-business-card",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/525"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=525"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 523,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hot-creative-logo-art\/",
+    "name": "Hot Creative Logo Art",
+    "slug": "hot-creative-logo-art",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/523"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=523"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 526,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hot-creative-promo-card\/",
+    "name": "Hot Creative Promo Card",
+    "slug": "hot-creative-promo-card",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/526"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=526"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 375,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hp-extended-service-plans-esp-icon-candidate-proposal\/",
+    "name": "HP Extended Service Plans (ESP) Icon Candidate Proposal",
+    "slug": "hp-extended-service-plans-esp-icon-candidate-proposal",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/375"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=375"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 376,
+    "count": 1,
+    "description": "A brief proposal created for expanding a brands visual language across interactive and print mediums by leveraging existing assets and making them available in more formats. By using a consistent look customers can more quickly identify promotions across mediums. Using different icon systems for web and print creates a more fragmented, disorganized user experience.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hp-promotional-icons-proposal\/",
+    "name": "HP Promotional Icons Proposal",
+    "slug": "hp-promotional-icons-proposal",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/376"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=376"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 306,
+    "count": 1,
+    "description": "Examples of animated promotional banners shown throughout the year on HPshopping.com.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-animated-gif-banner-ads-8-examples\/",
+    "name": "HPShopping.com Animated Gif Banner Ads \u2013 8 Examples",
+    "slug": "hpshopping-com-animated-gif-banner-ads-8-examples",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/306"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=306"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 342,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-back-to-school-shopping-guide\/",
+    "name": "HPShopping.com Back-to-School Shopping Guide",
+    "slug": "hpshopping-com-back-to-school-shopping-guide",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/342"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=342"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 257,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-banner-ad-creative-sets-4-themes\/",
+    "name": "HPShopping.com Banner Ad Creative Sets \u2013 4 Themes",
+    "slug": "hpshopping-com-banner-ad-creative-sets-4-themes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/257"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=257"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 766,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-digital-photography-solutions-center\/",
+    "name": "HPShopping.com Digital Photography Solutions Center",
+    "slug": "hpshopping-com-digital-photography-solutions-center",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/766"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=766"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 765,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-e-financing-center-2-offers\/",
+    "name": "HPShopping.com e-Financing Center 2 Offers",
+    "slug": "hpshopping-com-e-financing-center-2-offers",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/765"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=765"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 288,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-email-postcard-be-first-in-line\/",
+    "name": "HPShopping.com Email Postcard \u201cBe First In Line\u201d",
+    "slug": "hpshopping-com-email-postcard-be-first-in-line",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/288"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=288"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 250,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-fall-theme\/",
+    "name": "HPShopping.com Fall Theme",
+    "slug": "hpshopping-com-fall-theme",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/250"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=250"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 251,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-fathers-day-campaign\/",
+    "name": "HPShopping.com Fathers Day Campaign",
+    "slug": "hpshopping-com-fathers-day-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/251"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=251"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 341,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-gift-guide\/",
+    "name": "HPShopping.com Gift Guide",
+    "slug": "hpshopping-com-gift-guide",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/341"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=341"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 340,
+    "count": 1,
+    "description": "Wireframes showing content scenarios that would be presented depending if a visitor was new, returning, and signed-in to the ecommerce website. Each scenario wireframe indicates content that we wanted to present along with general layout where the content would appear. This helped engineers understand what database and code development updates would be needed. Eventually scenarios were also created for customers who had previously purchased from the site and recommended products based on their previous purchases along with other user types.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-homepage-visitor-scenario-wireframes\/",
+    "name": "HPShopping.com Homepage Visitor Scenario Wireframes",
+    "slug": "hpshopping-com-homepage-visitor-scenario-wireframes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/340"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=340"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 339,
+    "count": 1,
+    "description": "Remember html iframes and popup browser windows? These wireframes presented each as an option for the Digital Photography, Mobility, and Home Entertainment product showcases back in 2003. We didn't want to just link to showcase pages for some reason but we did want to keep the standard c-frame persistent.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-integration-showcase-solution-wireframes\/",
+    "name": "HPShopping.com Integration Showcase Solution Wireframes",
+    "slug": "hpshopping-com-integration-showcase-solution-wireframes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/339"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=339"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 567,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-pc-configurator\/",
+    "name": "HPShopping.com PC Configurator",
+    "slug": "hpshopping-com-pc-configurator",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/567"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=567"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 568,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-pc-series-matrix-page-design\/",
+    "name": "HPShopping.com PC Series Matrix Page Design",
+    "slug": "hpshopping-com-pc-series-matrix-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/568"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=568"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 569,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-printer-series-detail-page-design\/",
+    "name": "HPShopping.com Printer Series Detail Page Design",
+    "slug": "hpshopping-com-printer-series-detail-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/569"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=569"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 570,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-product-detail-page-design\/",
+    "name": "HPShopping.com Product Detail Page Design",
+    "slug": "hpshopping-com-product-detail-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/570"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=570"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 337,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hp-shopping-ecommerce-search-results-alternate-layout-mockups\/",
+    "name": "HPShopping.com Search Results Alternate Layout Mockups",
+    "slug": "hp-shopping-ecommerce-search-results-alternate-layout-mockups",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/337"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=337"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 305,
+    "count": 1,
+    "description": "Examples of promotional banners shown throughout the year on HPshopping.com.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-static-banner-ads-18-examples\/",
+    "name": "HPShopping.com Static Banner Ads \u2013 18 Examples",
+    "slug": "hpshopping-com-static-banner-ads-18-examples",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/305"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=305"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 854,
+    "count": 1,
+    "description": "Created as part of HPShopping&rsquo;s Customer Contact Management Tool, TOMI was used by telephone operators when customers called in to place or change orders. The portal provided a central area where associates can find current promotions, see featured products to promote, along with managing customer order information.\r\n\r\nThis was a quick design refresh to make the interface friendlier and more usable. Because of budget and time restraints, some screens, such as the New Customer form, were not fully designed but were at least coded with semantic HTML elements. You should have seen what at looked like back in 2004 before this refresh.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-telephone-order-management-interface-tomi-call-center-interface\/",
+    "name": "HPShopping.com Telephone Order Management Interface (TOMI) Call Center Interface",
+    "slug": "hpshopping-com-telephone-order-management-interface-tomi-call-center-interface",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/854"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=854"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 255,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-various-onsite-product-promotion-graphics\/",
+    "name": "HPShopping.com Various Onsite Product Promotion Graphics",
+    "slug": "hpshopping-com-various-onsite-product-promotion-graphics",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/255"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=255"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 253,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-visual-design-coordination-between-summer-print-catalog-and-store-website-homepage\/",
+    "name": "HPShopping.com Visual Design Coordination Between Summer Print Catalog and Store Website Homepage",
+    "slug": "hpshopping-com-visual-design-coordination-between-summer-print-catalog-and-store-website-homepage",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/253"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=253"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 252,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-visual-design-coordination-between-sunday-fsi-inserts-and-store-website-landing-page\/",
+    "name": "HPShopping.com Visual Design Coordination Between Sunday FSI Inserts and Store Website Landing Page",
+    "slug": "hpshopping-com-visual-design-coordination-between-sunday-fsi-inserts-and-store-website-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/252"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=252"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 254,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-visual-design-coordination-between-you-campaign-and-store-website-homepage\/",
+    "name": "HPShopping.com Visual Design Coordination Between YOU Campaign and Store Website Homepage",
+    "slug": "hpshopping-com-visual-design-coordination-between-you-campaign-and-store-website-homepage",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/254"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=254"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 248,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-warehouse-sale-campaign\/",
+    "name": "HPShopping.com Warehouse Sale Campaign",
+    "slug": "hpshopping-com-warehouse-sale-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/248"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=248"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 697,
+    "count": 1,
+    "description": "Around 2005 as web standards emerged and CSS was becoming the standard for creating and styling web page layouts, I championed the cause within HP in my department. Designers who started in print design were already familiar with using stylesheets and aware of their benefits from using programs such as Quark Express and Adobe PageMaker (similar to Adobe InDesign) when creating brochures, newsletters, catalogs, and magazines, or other types of publication designs. Business stakeholders, managers, and developers were generally less familiar with the concept of stylesheets though and this presentation aimed at informing and educating on the benefits of switching from HTML table based layouts to using CSS (or CSS-P) for positioning elements on web pages. It highlights specific benefits to the user experience (UX) (or customer experience (CX) in this case), benefits to how the brand would be perceived, plus how designers and developers workflow could be organized and optimized to reduce time spent on projects.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/hpshopping-com-website-optimization-and-scalability-presentation\/",
+    "name": "HPShopping.com Website Optimization and Scalability Presentation",
+    "slug": "hpshopping-com-website-optimization-and-scalability-presentation",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/697"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=697"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 316,
+    "count": 1,
+    "description": "Created as a favor for a friend of my boss at the time who was pitching a religious movie concept to Clint Eastwood and needed something created (with no budget) to make it appear as though she had a real production company. After sending her a few quickie directions to consider this is the final version settled on if I remember right.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/illumination-media-production-studio-logo\/",
+    "name": "Illumination Media Production Studio Logo",
+    "slug": "illumination-media-production-studio-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/316"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=316"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 775,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/illusion-factory-warner-bros-looney-tunes\/",
+    "name": "Illusion Factory Warner Bros. Looney Tunes",
+    "slug": "illusion-factory-warner-bros-looney-tunes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/775"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=775"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 624,
+    "count": 5,
+    "description": "After going through several alternate looks for the avatar \u2013 including different poses, clothing, and background environments \u2013 we settled on going with this direction and tested a few different headline and button text combinations. Based on the direction landing page tests were also done and eventually the IMVU homepage included the design in the main image rotation.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-avatar-movie-theme-campaign\/",
+    "name": "IMVU \u201cAvatar\u201d Movie Theme Campaign",
+    "slug": "imvu-avatar-movie-theme-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/624"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=624"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 609,
+    "count": 1,
+    "description": "Here's one of six pages created to capture natural SEO search traffic for specific terms. Checking on the url after a few years I noticed the design is still used and has only received minor updates. :)",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-avatar-seo-keyword-focused-landing-page-design\/",
+    "name": "IMVU \u201cAvatar\u201d SEO Keyword Focused Landing Page Design",
+    "slug": "imvu-avatar-seo-keyword-focused-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/609"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=609"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 618,
+    "count": 1,
+    "description": "Playing-off the TV show &ldquo;The Bachelorette&rdquo; which was getting a lot of press at the time. Not an actual tie-in promotion related to the show though.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-bachelorette-theme-banner-ads\/",
+    "name": "IMVU \u201cBachelorette\u201d Theme Banner Ads",
+    "slug": "imvu-bachelorette-theme-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/618"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=618"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 628,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-beach-girls-theme-banner-ads\/",
+    "name": "IMVU \u201cBeach Girls\u201d Theme Banner Ads",
+    "slug": "imvu-beach-girls-theme-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/628"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=628"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 634,
+    "count": 1,
+    "description": "With animated hearts.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-blonde-kiss-banner-ads\/",
+    "name": "IMVU \u201cBlonde Kiss\u201d Banner Ads",
+    "slug": "imvu-blonde-kiss-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/634"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=634"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 633,
+    "count": 1,
+    "description": "Banner ads created for specific placement and audience appeal on Chictopia.com.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-chictopia-banner-ads\/",
+    "name": "IMVU \u201cChictopia\u201d Banner Ads",
+    "slug": "imvu-chictopia-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/633"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=633"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 613,
+    "count": 2,
+    "description": "Also tested alternate colors, headlines, and button text - such as \u201cCome Hither. You've Been Naughty\u201d. Animated Flash banner version had finger curling to get viewers attention before button pulsed to prompt viewer interaction.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-come-hither-campaign\/",
+    "name": "IMVU \u201cCome Hither\u201d Campaign",
+    "slug": "imvu-come-hither-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/613"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=613"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 632,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-configurator-banner-ads\/",
+    "name": "IMVU \u201cConfigurator\u201d Banner Ads",
+    "slug": "imvu-configurator-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/632"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=632"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 639,
+    "count": 14,
+    "description": "Here we initially tested a few different taglines, models, clothing, and backgrounds using the 300x250 format. After determining which combination produced the best results additional ad sizes were created. Eventually localized versions for ten different geo-tarted audiences as well. Versions were also created to blend in with specific web site placements so they didn't stand out as being ads too much.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-dress-up-for-grown-ups-campaign\/",
+    "name": "IMVU \u201cDress Up for Grown Ups\u201d Campaign",
+    "slug": "imvu-dress-up-for-grown-ups-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/639"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=639"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 625,
+    "count": 2,
+    "description": "Two concepts initially created for testing before additional sizes created of the winning design direction.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-harlequin-pose-banner-ads\/",
+    "name": "IMVU \u201cHarlequin Pose\u201d Banner Ads",
+    "slug": "imvu-harlequin-pose-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/625"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=625"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 629,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-make-lover-not-war-banner-ads\/",
+    "name": "IMVU \u201cMake Lover Not War\u201d Banner Ads",
+    "slug": "imvu-make-lover-not-war-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/629"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=629"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 630,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-new-years-confetti-theme-banner-ads\/",
+    "name": "IMVU \u201cNew Years Confetti\u201d Theme Banner Ads",
+    "slug": "imvu-new-years-confetti-theme-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/630"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=630"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 627,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-pool-theme-banner-ad\/",
+    "name": "IMVU \u201cPool\u201d Theme Banner Ad",
+    "slug": "imvu-pool-theme-banner-ad",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/627"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=627"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 622,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-prom-theme-banner-ads\/",
+    "name": "IMVU \u201cProm\u201d Theme Banner Ads",
+    "slug": "imvu-prom-theme-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/622"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=622"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 617,
+    "count": 1,
+    "description": "My concept with this ad was to show activities avatars can interact in, such as dancing, riding motocycles, or playing games within the virtual environment.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-scenes-concept-banner-ad\/",
+    "name": "IMVU \u201cScenes\u201d Concept Banner Ad",
+    "slug": "imvu-scenes-concept-banner-ad",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/617"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=617"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 840,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-spring-fashion-skyscrapper-banner-ads\/",
+    "name": "IMVU \u201cSpring Fashion\u201d Skyscrapper Banner Ads",
+    "slug": "imvu-spring-fashion-skyscrapper-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/840"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=840"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 616,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-unleash-your-style-free-credits-offer-banner-ad\/",
+    "name": "IMVU \u201cUnleash Your Style\u201d Free Credits Offer Banner Ad",
+    "slug": "imvu-unleash-your-style-free-credits-offer-banner-ad",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/616"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=616"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 626,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-white-dress-banner-ads\/",
+    "name": "IMVU \u201cWhite Dress\u201d Banner Ads",
+    "slug": "imvu-white-dress-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/626"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=626"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 631,
+    "count": 1,
+    "description": "Using animated falling snowflakes to grab attention plus look timely\/relevant during the winter.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-winter-couple-seasonal-theme-banner-ad\/",
+    "name": "IMVU \u201cWinter Couple\u201d Seasonal Theme Banner Ad",
+    "slug": "imvu-winter-couple-seasonal-theme-banner-ad",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/631"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=631"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 611,
+    "count": 1,
+    "description": "Two banner ad directions created for specific placement using custom sizes 245x87, 393x100, 588x60, 866x318.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-banner-ads-for-myyearbook-free-lunch-money-campaign\/",
+    "name": "IMVU Banner Ads for MyYearbook \u201cFree Lunch Money\u201d Campaign",
+    "slug": "imvu-banner-ads-for-myyearbook-free-lunch-money-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/611"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=611"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 608,
+    "count": 1,
+    "description": "Based on another designers idea for a chat roulette page design I created a landing page which allowed viewers to click through a slideshow of various avatars.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-chat-roulette-theme-landing-page\/",
+    "name": "IMVU Chat Roulette Theme Landing Page",
+    "slug": "imvu-chat-roulette-theme-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/608"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=608"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 636,
+    "count": 11,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-email-campaigns-for-affiliates\/",
+    "name": "IMVU Email Campaigns for Affiliates",
+    "slug": "imvu-email-campaigns-for-affiliates",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/636"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=636"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 619,
+    "count": 1,
+    "description": "Most of the art in this project came from other IMVU designers or I appropriated after digging through internal servers. These test banners were created to see if viewers were particularly attracted to certain avatars more than others. I also intentionally avoided making them overly sexy (such as by avoiding showing overly exposed cleavage or a guy grabbing a girls butt) to better understand if customers were actually attracted by the virtual characters and environments or just the potential of having virtual sex with strangers. The logo is also faded back so it's less prominent and the avatars stand out (or \u201cpop\u201d) more.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-general-avatars-banner-ads\/",
+    "name": "IMVU General Avatars Banner Ads",
+    "slug": "imvu-general-avatars-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/619"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=619"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 635,
+    "count": 1,
+    "description": "Developed as a test to appeal to audiences in specific U.S. cities. Makes a real-world connection while promoting virtual world benefits.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-geo-targeted-u-s-cityscape-banner-ads\/",
+    "name": "IMVU Geo-targeted U.S Cityscape Banner Ads",
+    "slug": "imvu-geo-targeted-u-s-cityscape-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/635"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=635"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 614,
+    "count": 2,
+    "description": "Original look and design was created by someone else and occasionally we would do multivariate tests with alternate layouts and page elements. I would gather details about what we wanted to test and assemble content to create mockups and prototypes, such as these shorter or longer versions.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-homepage-design\/",
+    "name": "IMVU Homepage Design",
+    "slug": "imvu-homepage-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/614"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=614"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 615,
+    "count": 1,
+    "description": "IMVU had amazing designers (some might say &ldquo;illustration artists&rdquo;) working in-house and occasionally I'd grab art from them to format and present for potential use on the homepage. Other times I&rsquo;d assemble collages using art from various sources to represent ideas from internal marketing, management, and dev folks to consider using on the homepage. We would then test - such as wether showing an individual avatar posing closeup or showing couples in activity scenes generated more clicks. Eventually there were probably another dozen or more &ldquo;hero&rdquo; images I worked on while involved. This work was really inspiring design wise. Just looking at some of the original avatar compositions and background art other designers came up with plus being able to collaborate with them on compositions - really really cool stuff!",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-homepage-main-image-variation-mockups\/",
+    "name": "IMVU Homepage Main Image Variation Mockups",
+    "slug": "imvu-homepage-main-image-variation-mockups",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/615"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=615"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 640,
+    "count": 5,
+    "description": "These are few examples of &ldquo;virtual goods&rdquo; incentive campaigns. Wording was structured as &ldquo;Free [insert productname]&rdquo;, &ldquo;Free 3D [insert productname]&rdquo;, &ldquo;Get A Free [insert productname]&rdquo;, &ldquo;Give A Free [insert productname]&rdquo;. \r\nAssociated landing pages echoed the offers and imagery used in the ads to provide confidence customers would get their free virtual product after registering.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-incentive-campaigns\/",
+    "name": "IMVU Incentive Campaigns",
+    "slug": "imvu-incentive-campaigns",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/640"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=640"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 610,
+    "count": 2,
+    "description": "The original landing page design was received from SiteTuners a couple weeks after a conference call and some minor back and forth discussions. General page design was based on successes previously seen when specifically sending Facebook traffic to game site signups, such as Farmville. Eventually I created the newer redesigned version which was more closely aligned with the IMVU visual language and a dedicated front-end developer optimized my initial prototype code and was able to produce even better conversion.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-landing-page-based-on-site-tuners-design\/",
+    "name": "IMVU Landing Page Based On Site Tuners Design",
+    "slug": "imvu-landing-page-based-on-site-tuners-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/610"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=610"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 549,
+    "count": 2,
+    "description": "A timely design for Valentines day. After mocking up a few directions we settled on two versions to test.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-valentines-theme-landing-page-design\/",
+    "name": "IMVU Valentines Theme Landing Page Design",
+    "slug": "imvu-valentines-theme-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/549"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=549"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 637,
+    "count": 12,
+    "description": "These are some &ldquo;quickie&rdquo; layouts I put together to present as an initial starting point for discussions of what's needed. It helps to have something visual to kick-start the process of gathering peoples preferences (or dislikes to throw darts at). Layouts are usually based on my past experiences with similar campaigns, doing some competitive analysis, applying recent design trends, and browsing through screenshots I&rsquo;ve collected over the years that might offer additional ideas we can leverage.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/imvu-wireframed-landing-page-layout-alternatives-for-free-trial-incentive-campaign\/",
+    "name": "IMVU Wireframed Landing Page Layout Alternatives",
+    "slug": "imvu-wireframed-landing-page-layout-alternatives-for-free-trial-incentive-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/637"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=637"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 183,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/inetdvd-com-logo\/",
+    "name": "iNetDVD.com Logo",
+    "slug": "inetdvd-com-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/183"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=183"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 289,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/inetdvd-com-website\/",
+    "name": "iNetDVD.com Website",
+    "slug": "inetdvd-com-website",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/289"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=289"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 745,
+    "count": 1,
+    "description": "Example of white papers I would occasionally create.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-take-control-of-your-business-white-paper\/",
+    "name": "Insightly \u201cTake Control of Your Business\u201d White Paper",
+    "slug": "insightly-take-control-of-your-business-white-paper",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/745"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=745"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 755,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-quickbooks-online-promotional-t-shirt\/",
+    "name": "Insightly + Quickbooks Online Promotional T-shirt",
+    "slug": "insightly-quickbooks-online-promotional-t-shirt",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/755"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=755"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 758,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-300x600-banner-ads\/",
+    "name": "Insightly 300\u00d7600 Banner Ads",
+    "slug": "insightly-300x600-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/758"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=758"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 763,
+    "count": 1,
+    "description": "Example of some quickie wireframes I would put together to gather initial feedback on. Insightly wanted to jazz up the initial blog page layout so it was more magazine like. The final layout was also based on how it easy was for them to manage image sizes so they appear uniformly when in rows and don't start to look stretched or compressed.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-blog-facelift-wireframes\/",
+    "name": "Insightly Blog Facelift Wireframes",
+    "slug": "insightly-blog-facelift-wireframes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/763"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=763"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 761,
+    "count": 1,
+    "description": "Quickie roll-up display banners for a conference.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-conference-standee-roll-banners\/",
+    "name": "Insightly Conference Standee Roll Banners",
+    "slug": "insightly-conference-standee-roll-banners",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/761"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=761"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 760,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-customer-testimonial-banner-ads\/",
+    "name": "Insightly Customer Testimonial Banner Ads",
+    "slug": "insightly-customer-testimonial-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/760"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=760"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 762,
+    "count": 1,
+    "description": "Based on the style of already existing illustrations I would sometimes create new illustrations when needed. Over time some of the characters in the Insightly illustrations get reused and repurposed into different situations such as the training scenario illustrations.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-end-user-training-illustration\/",
+    "name": "Insightly End-User Training Illustration",
+    "slug": "insightly-end-user-training-illustration",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/762"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=762"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 747,
+    "count": 8,
+    "description": "From 2013 through 2016 I was the front-end developer for Insightly.com in charge of translating layered Photoshop PSD or Sketch files into HTML, CSS, and Javascript.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-homepage-evolution\/",
+    "name": "Insightly Homepage Evolution (2013-2016)",
+    "slug": "insightly-homepage-evolution",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/747"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=747"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 746,
+    "count": 1,
+    "description": "Page was designed by Nick at Insightly. This was not a typical page design that needed to be developed for insightly.com and required some extra Javascript such as for the Easy sectioin slider bar that would show\/hide the underlying image based on window scroll or if a user dragged the scrubber and dragged it back and forth.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-tldr-page\/",
+    "name": "Insightly TLDR Page",
+    "slug": "insightly-tldr-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/746"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=746"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 476,
+    "count": 18,
+    "description": "Presented here are several iterations of the Pricing page I coded or co-designed\/developed and maintained 3013 through 1016 while working with the Insightly marketing team, internal designers, and external vendors. Variations were tested using Optimizely and services such as Experiment Engine for A\/B testing and conversion optimization along with KissMetrics and Google Analytics for click path tracking. Occasionally I contributed to the visual design while staying true to the look and feel of the Insightly brand. Additionally I occasionally contributed test suggestions based on best practices research, reviewing reported successes on other sites and competitive analysis. Several other versions were created as well, such as using different visual treatments for the title area and plan blurbs. etcetera.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-pricing-page-test-variations\/",
+    "name": "Insightly.com Pricing Page Test Variations",
+    "slug": "insightly-pricing-page-test-variations",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/476"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=476"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 475,
+    "count": 15,
+    "description": "Initial layouts were created by another designer for the desktop screen width then handed-off for me to develop the alternate layouts for mobile devices. I coded layouts to be flexible so they worked on as many devices as possible. With only a couple exceptions, all pages were coded with four primary target sizes in mind beginning with the \"mobile first\" methodology. Additional media-query breakpoints were created when content areas within the layouts did not degrade gracefully when being resized. Standard sizes I would test and create media-queries for where 480x320 for iPhone landscape mode, 320x480 for iPhone portrait mode, 768x1024 for iPad portrait mode, and 1024x768 for iPad landscape mode and desktop use cases.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/insightly-responsive-website-design\/",
+    "name": "Insightly.com Responsive Website Design",
+    "slug": "insightly-responsive-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/475"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=475"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 278,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/iwon-win-cash-ad-campaign\/",
+    "name": "iWon \u201cWin Cash\u201d Ad Campaign",
+    "slug": "iwon-win-cash-ad-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/278"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=278"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 406,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/jarmedia-easy-google-money-microsite-landing-page\/",
+    "name": "JarMedia \u201cEasy Google Money\u201d Microsite Landing Page",
+    "slug": "jarmedia-easy-google-money-microsite-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/406"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=406"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 404,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/jarmedia-acaielite-free-trial-microsite\/",
+    "name": "JarMedia AcaiElite Free Trial Microsite",
+    "slug": "jarmedia-acaielite-free-trial-microsite",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/404"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=404"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 407,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/jarmedia-intracleanse-microsite-landing-page\/",
+    "name": "JarMedia IntraCleanse Microsite Landing Page",
+    "slug": "jarmedia-intracleanse-microsite-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/407"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=407"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 408,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/jarmedia-reunion-com-jump-page\/",
+    "name": "JarMedia Reunion.com Jump Page",
+    "slug": "jarmedia-reunion-com-jump-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/408"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=408"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 160,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/kcea-radio-station-mailer-flyer\/",
+    "name": "KCEA Radio Station Mailer Flyer",
+    "slug": "kcea-radio-station-mailer-flyer",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/160"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=160"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 460,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/keyringbreathalyzer-com-microsite-website\/",
+    "name": "KeyringBreathalyzer.com Microsite Website",
+    "slug": "keyringbreathalyzer-com-microsite-website",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/460"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=460"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 359,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/khn-solutions-logo-design-lockup\/",
+    "name": "KHN Solutions Logo Design",
+    "slug": "khn-solutions-logo-design-lockup",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/359"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=359"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 235,
+    "count": 7,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/khn-solutions-website-design\/",
+    "name": "KHN Solutions Website Design",
+    "slug": "khn-solutions-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/235"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=235"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 531,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/kick-or-die-vhs-jacket\/",
+    "name": "Kick Or Die VHS Jacket",
+    "slug": "kick-or-die-vhs-jacket",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/531"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=531"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 489,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/kwanzoo-customer-widget-ad-development-experience\/",
+    "name": "Kwanzoo Customer Widget Ad Development Experience",
+    "slug": "kwanzoo-customer-widget-ad-development-experience",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/489"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=489"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

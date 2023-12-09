@@ -1,0 +1,6849 @@
+[
+  {
+    "id": 617,
+    "date": "2015-09-10T15:41:27",
+    "date_gmt": "2015-09-10T15:41:27",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=617"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "fujitsu-lifebook-in-store-attract-loop-content-flow-navigration-map",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/fujitsu-lifebook-in-store-attract-loop-content-flow-navigration-map\/",
+    "title": {
+      "rendered": "Content Flow Navigration Map"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/fujitsu-lifebook-in-store-attract-loop-navmap-720x450.png\" alt=\"Content flow navigation map\"> ",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 618,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      171
+    ],
+    "client": [
+      172
+    ],
+    "role": [
+      77,
+      103
+    ],
+    "platform": [
+      474,
+      101
+    ],
+    "industry": [
+      124
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/617"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/617\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 7600,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/617\/revisions\/7600"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/618"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=617"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=617"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=617"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=617"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=617"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=617"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=617"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 599,
+    "date": "2015-09-09T20:42:29",
+    "date_gmt": "2015-09-09T20:42:29",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=599"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "aol-netscape-navigator-integration-navigation-map",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/aol-netscape-navigator-integration-navigation-map\/",
+    "title": {
+      "rendered": "AOL Netscape Navigator Integration Navigation Map"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/aol-netscape-navigator-navigation-map-720x492.png\" alt=\"AOL Netscape Navigator Integration Navigation Map\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 604,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      169
+    ],
+    "client": [
+      170
+    ],
+    "role": [
+      77,
+      103
+    ],
+    "platform": [
+      101
+    ],
+    "industry": [
+      115,
+      112,
+      129,
+      124
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/599"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/599\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 606,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/599\/revisions\/606"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/604"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=599"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=599"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=599"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=599"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=599"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=599"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=599"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 593,
+    "date": "2015-09-09T20:33:05",
+    "date_gmt": "2015-09-09T20:33:05",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=593"
+    },
+    "modified": "2017-04-29T16:06:39",
+    "modified_gmt": "2017-04-29T21:06:39",
+    "slug": "softcam-application-interface-navigation-map",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/softcam-application-interface-navigation-map\/",
+    "title": {
+      "rendered": "Navigation Map"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/softcam-application-interface-map-01-720x863.png\" alt=\"SoftCam Application Interface Navigation Map 01\">\r\n\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/softcam-application-interface-map-02-720x539.png\" alt=\"SoftCam Application Interface Navigation Map 02\">\r\n\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/softcam-application-interface-map-03-720x612.png\" alt=\"SoftCam Application Interface Navigation Map 03\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 608,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      168
+    ],
+    "client": [
+      149
+    ],
+    "role": [
+      77,
+      103
+    ],
+    "platform": [
+      119,
+      101
+    ],
+    "industry": [
+      129
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/593"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/593\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8843,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/593\/revisions\/8843"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/608"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=593"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=593"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=593"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=593"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=593"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=593"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=593"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 590,
+    "date": "2015-09-09T20:19:37",
+    "date_gmt": "2015-09-09T20:19:37",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=590"
+    },
+    "modified": "2017-04-29T16:05:58",
+    "modified_gmt": "2017-04-29T21:05:58",
+    "slug": "softcam-visual-interface-design",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/softcam-visual-interface-design\/",
+    "title": {
+      "rendered": "Mockups"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/softcam-software-application-interface-design.png\" alt=\"SoftCam Software Application Interface Design\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 613,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      168
+    ],
+    "client": [
+      149
+    ],
+    "role": [
+      285,
+      78,
+      55,
+      58,
+      79,
+      104,
+      103,
+      167
+    ],
+    "platform": [
+      119
+    ],
+    "industry": [
+      129
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/590"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/590\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8842,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/590\/revisions\/8842"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/613"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=590"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=590"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=590"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=590"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=590"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=590"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=590"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 587,
+    "date": "2015-09-09T20:14:37",
+    "date_gmt": "2015-09-09T20:14:37",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=587"
+    },
+    "modified": "2017-03-27T16:56:12",
+    "modified_gmt": "2017-03-27T21:56:12",
+    "slug": "clubvdo-website-design-club-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/clubvdo-website-design-club-page\/",
+    "title": {
+      "rendered": "Club Page"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/clubvdo-website-club.png\" alt=\"ClubVDO Website Design Club Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 588,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      148
+    ],
+    "client": [
+      147
+    ],
+    "role": [
+      78,
+      55,
+      249,
+      58,
+      41,
+      104,
+      103,
+      167,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      129,
+      124
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/587"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/587\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 2567,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/587\/revisions\/2567"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/588"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=587"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=587"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=587"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=587"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=587"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=587"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=587"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 584,
+    "date": "2015-09-09T20:12:54",
+    "date_gmt": "2015-09-09T20:12:54",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=584"
+    },
+    "modified": "2017-04-01T15:17:01",
+    "modified_gmt": "2017-04-01T20:17:01",
+    "slug": "vdophone-software-application-interface-redesign",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/vdophone-software-application-interface-redesign\/",
+    "title": {
+      "rendered": "VDOPhone Software Application Interface Redesign"
+    },
+    "content": {
+      "rendered": "<div class='vdo-phone-interface'><img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/vdophone-software-application-interface.png\" alt=\"VDOPhone Software Application Interface Design\"><\/div>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 615,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      284
+    ],
+    "client": [
+      147
+    ],
+    "role": [
+      285,
+      58,
+      79,
+      104,
+      103,
+      167
+    ],
+    "platform": [
+      119
+    ],
+    "industry": [
+      129
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/584"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/584\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8561,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/584\/revisions\/8561"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/615"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=584"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=584"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=584"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=584"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=584"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=584"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=584"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 580,
+    "date": "2015-09-09T17:28:35",
+    "date_gmt": "2015-09-09T17:28:35",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=580"
+    },
+    "modified": "2017-04-29T16:02:10",
+    "modified_gmt": "2017-04-29T21:02:10",
+    "slug": "mbna-shopsafe-customer-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/mbna-shopsafe-customer-email\/",
+    "title": {
+      "rendered": "MBNA ShopSafe Customer Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/mbna-shopsafe-customer-email.png\" alt=\"MBNA ShopSafe Customer Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 581,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      166
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      111
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/580"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/580\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8838,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/580\/revisions\/8838"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/581"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=580"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=580"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=580"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=580"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=580"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=580"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=580"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 577,
+    "date": "2015-09-09T17:26:24",
+    "date_gmt": "2015-09-09T17:26:24",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=577"
+    },
+    "modified": "2021-01-18T12:35:42",
+    "modified_gmt": "2021-01-18T18:35:42",
+    "slug": "directv-nfl-make-your-move-superfan-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-nfl-make-your-move-superfan-email\/",
+    "title": {
+      "rendered": "NFL \u201cMake Your Move\u201d SuperFan Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-nfl-superfan-sweeps-subscriber-version-email.png\" alt=\"DIRECTV NFL &quot;Make Your Move&quot; SuperFan Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 578,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129,
+      118
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/577"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/577\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 9284,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/577\/revisions\/9284"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/578"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=577"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=577"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=577"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=577"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=577"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=577"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=577"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 574,
+    "date": "2015-09-09T17:23:21",
+    "date_gmt": "2015-09-09T17:23:21",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=574"
+    },
+    "modified": "2021-01-18T12:36:21",
+    "modified_gmt": "2021-01-18T18:36:21",
+    "slug": "directv-get-more-national-offer-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-get-more-national-offer-email\/",
+    "title": {
+      "rendered": "\u201cGet More\u201d National Offer Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-q4-natl-offer-get-more-shows.png\" alt=\"DIRECTV &quot;Get More&quot; National Offer Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 575,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/574"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/574\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 9285,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/574\/revisions\/9285"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/575"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=574"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=574"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=574"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=574"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=574"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=574"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=574"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 571,
+    "date": "2015-09-09T17:19:56",
+    "date_gmt": "2015-09-09T17:19:56",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=571"
+    },
+    "modified": "2021-01-18T12:33:09",
+    "modified_gmt": "2021-01-18T18:33:09",
+    "slug": "directv-discover-entertainment-packages-national-offer-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-discover-entertainment-packages-national-offer-email\/",
+    "title": {
+      "rendered": "\u201cDiscover Entertainment\u201d National Offer Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-q4-natl-offer-discover-entertainment-email.png\" alt=\"DIRECTV Discover Entertainment Packages National Offer Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 572,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/571"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/571\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 9280,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/571\/revisions\/9280"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/572"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=571"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=571"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=571"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=571"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=571"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=571"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=571"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 568,
+    "date": "2015-09-09T17:17:28",
+    "date_gmt": "2015-09-09T17:17:28",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=568"
+    },
+    "modified": "2017-05-05T12:51:59",
+    "modified_gmt": "2017-05-05T17:51:59",
+    "slug": "directv-pay-per-view-pride-fighting-championship-debut-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-pay-per-view-pride-fighting-championship-debut-email\/",
+    "title": {
+      "rendered": "Pay-Per-View Pride Fighting Championship Debut Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-ppv-event-pridefc-realdeal-email.png\" alt=\"DIRECTV Pay-Per-View Pride Fighting Championship Debut Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 569,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129,
+      118
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/568"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/568\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8898,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/568\/revisions\/8898"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/569"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=568"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=568"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=568"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=568"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=568"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=568"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=568"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 565,
+    "date": "2015-09-09T17:14:40",
+    "date_gmt": "2015-09-09T17:14:40",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=565"
+    },
+    "modified": "2017-05-05T12:52:16",
+    "modified_gmt": "2017-05-05T17:52:16",
+    "slug": "directv-espn-experience-followup-nfl-sunday-ticket-superfan-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-espn-experience-followup-nfl-sunday-ticket-superfan-email\/",
+    "title": {
+      "rendered": "ESPN Experience Followup &#8211; NFL Sunday Ticket, SuperFan Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-espn-nfl-sunday-ticket-superfan-email.png\" alt=\"DIRECTV ESPN Experience - NFL Sunday Ticket, SuperFan Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 566,
+    "menu_order": 5,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129,
+      118
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/565"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/565\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8899,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/565\/revisions\/8899"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/566"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=565"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=565"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=565"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=565"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=565"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=565"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=565"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 562,
+    "date": "2015-09-09T17:11:29",
+    "date_gmt": "2015-09-09T17:11:29",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=562"
+    },
+    "modified": "2017-05-05T12:52:33",
+    "modified_gmt": "2017-05-05T17:52:33",
+    "slug": "directv-nfl-player-tracker-introduction-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-nfl-player-tracker-introduction-email\/",
+    "title": {
+      "rendered": "NFL Player Tracker Introduction Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-nfl_player-tracker-introduction-email.png\" alt=\"DIRECTV NFL Player Tracker Introduction Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 563,
+    "menu_order": 6,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129,
+      118
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/562"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/562\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8900,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/562\/revisions\/8900"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/563"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=562"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=562"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=562"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=562"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=562"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=562"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=562"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 554,
+    "date": "2015-09-09T17:07:46",
+    "date_gmt": "2015-09-09T17:07:46",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=554"
+    },
+    "modified": "2017-05-05T12:52:53",
+    "modified_gmt": "2017-05-05T17:52:53",
+    "slug": "directv-plus-nfl-sunday-ticket-interactive-box-email",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/directv-plus-nfl-sunday-ticket-interactive-box-email\/",
+    "title": {
+      "rendered": "NFL Sunday Ticket Interactive Box Email"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/directv-plus-nfl-interactive-email.png\" alt=\"DIRECTV Plus NFL Sunday Ticket Interactive Box Email\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 560,
+    "menu_order": 7,
+    "template": "",
+    "meta": [],
+    "project": [
+      165
+    ],
+    "client": [
+      164
+    ],
+    "role": [
+      78
+    ],
+    "platform": [
+      81
+    ],
+    "industry": [
+      129,
+      118,
+      124
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/554"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/554\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8901,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/554\/revisions\/8901"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/560"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=554"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=554"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=554"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=554"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=554"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=554"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=554"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 527,
+    "date": "2015-09-08T16:44:23",
+    "date_gmt": "2015-09-08T16:44:23",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=527"
+    },
+    "modified": "2017-05-05T11:52:42",
+    "modified_gmt": "2017-05-05T16:52:42",
+    "slug": "myjv-com-brand-identity",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/myjv-com-brand-identity\/",
+    "title": {
+      "rendered": "MyJV.com Brand Identity"
+    },
+    "content": {
+      "rendered": "<div class='center-images'>\r\n<p class=\"sample-description\">myJV.com Horizontal and Vertical Logo Versions<\/p>\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/logo-myjv.png\" alt=\"myJV.com Brand Identity\">\r\n\r\n\r\n<p class=\"sample-description\">myJV.com Brand Identity Style Guide Cover<\/p>\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/myjv-branding-identity-style-guide-cover-720x556.png\" alt=\"myJV.com Brand Identity Styleguide Cover\" class=\"outline\">\r\n<\/div>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "myJV.com Horizontal and Vertical Logo Versions myJV.com Brand Identity Style Guide Cover",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 528,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      163
+    ],
+    "client": [
+      162
+    ],
+    "role": [
+      78,
+      55,
+      58,
+      79,
+      200
+    ],
+    "platform": [
+      134
+    ],
+    "industry": [
+      111,
+      136
+    ],
+    "market": [
+      152
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/527"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/527\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8883,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/527\/revisions\/8883"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/528"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=527"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=527"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=527"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=527"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=527"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=527"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=527"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 487,
+    "date": "2015-08-29T22:06:48",
+    "date_gmt": "2015-08-29T22:06:48",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=487"
+    },
+    "modified": "2017-04-29T16:07:21",
+    "modified_gmt": "2017-04-29T21:07:21",
+    "slug": "softcam-logos-for-product-family",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/softcam-logos-for-product-family\/",
+    "title": {
+      "rendered": "SoftCam Product Family Logos"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/softcam-logos.png\" alt=\"SoftCam Logos for Product Family\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 488,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      150
+    ],
+    "client": [
+      149
+    ],
+    "role": [
+      78,
+      55,
+      58,
+      200
+    ],
+    "platform": [
+      134
+    ],
+    "industry": [
+      129,
+      124
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/487"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/487\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8844,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/487\/revisions\/8844"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/488"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=487"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=487"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=487"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=487"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=487"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=487"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=487"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 484,
+    "date": "2015-08-29T22:04:54",
+    "date_gmt": "2015-08-29T22:04:54",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=484"
+    },
+    "modified": "2017-02-24T22:41:42",
+    "modified_gmt": "2017-02-25T04:41:42",
+    "slug": "clubvdo-logo",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/clubvdo-logo\/",
+    "title": {
+      "rendered": "Logo Design"
+    },
+    "content": {
+      "rendered": "<div class='center-images'>\r\n\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/clubvdo-logo.png\" alt=\"ClubVDO Logo\">\r\n\r\n<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/clubvdo-logo-animation.gif\" alt=\"VlubVDO Logo Animation\" style='background-color:#63009c;padding:4em;'>\r\n\r\n<\/div>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 485,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      148
+    ],
+    "client": [
+      147
+    ],
+    "role": [
+      78,
+      55,
+      58,
+      90,
+      79,
+      200,
+      398,
+      167
+    ],
+    "platform": [
+      279,
+      134
+    ],
+    "industry": [
+      129,
+      124
+    ],
+    "market": [
+      153,
+      155
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/484"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/484\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 2572,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/484\/revisions\/2572"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/485"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=484"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=484"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=484"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=484"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=484"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=484"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=484"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 481,
+    "date": "2015-08-29T22:02:38",
+    "date_gmt": "2015-08-29T22:02:38",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=481"
+    },
+    "modified": "2017-04-01T12:52:17",
+    "modified_gmt": "2017-04-01T17:52:17",
+    "slug": "freelance-web-designer-logo",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/freelance-web-designer-logo\/",
+    "title": {
+      "rendered": "FreelanceWebDesigner.com Logo"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/freelancewebdesigner-header-logo-stylized-on-backgrounds.png\" alt=\"\">\r\n\r\n\r\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 8544,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      146
+    ],
+    "client": [
+      145
+    ],
+    "role": [
+      78,
+      55,
+      58,
+      79,
+      200,
+      398,
+      167
+    ],
+    "platform": [
+      134
+    ],
+    "industry": [
+      127,
+      117
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/481"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/481\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8547,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/481\/revisions\/8547"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/8544"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=481"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=481"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=481"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=481"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=481"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=481"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=481"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 466,
+    "date": "2015-08-29T21:03:27",
+    "date_gmt": "2015-08-29T21:03:27",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=466"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "apartment-search-consumer-site-map",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-consumer-site-map\/",
+    "title": {
+      "rendered": "Consumer Site Map"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartmentsearch-consumer-services-site-map-720x458.png\" alt=\"ApartmentSearch.com Consumer Site Map\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 2591,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      151
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      77,
+      103
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      115,
+      112,
+      136,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/466"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/466\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 5624,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/466\/revisions\/5624"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/2591"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=466"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=466"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=466"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=466"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=466"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=466"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=466"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 463,
+    "date": "2015-08-26T21:25:52",
+    "date_gmt": "2015-08-26T21:25:52",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=463"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "apartment-search-ab-test-design-version-2",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-ab-test-design-version-2\/",
+    "title": {
+      "rendered": "Version 2"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-city-landing-page-version-2-720x926.png\" alt=\"ApartmentSearch.com City Region Based A\/B Landing Page Test Variation 2\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 465,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      143
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      41,
+      77,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      144,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/463"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/463\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1615,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/463\/revisions\/1615"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/465"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=463"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=463"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=463"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=463"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=463"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=463"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=463"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 460,
+    "date": "2015-08-26T21:25:19",
+    "date_gmt": "2015-08-26T21:25:19",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=460"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "apartment-search-ab-test-design-version-1",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-ab-test-design-version-1\/",
+    "title": {
+      "rendered": "Version 1"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-city-landing-page-version-1-720x1028.png\" alt=\"ApartmentSearch.com City Region Based A\/B Landing Page Test Variation 1\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 461,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      143
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      58,
+      41,
+      77,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      144,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/460"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/460\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1616,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/460\/revisions\/1616"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/461"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=460"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=460"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=460"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=460"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=460"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=460"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=460"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 453,
+    "date": "2015-08-26T21:14:05",
+    "date_gmt": "2015-08-26T21:14:05",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=453"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "seo-property-name-keyword-focused-landing-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/seo-property-name-keyword-focused-landing-page\/",
+    "title": {
+      "rendered": "SEO Property Name Keyword Focused Landing Page"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-seo-landing-page-property-720x782.png\" alt=\"Apartment Search: SEO Property Name Keyword Focused Landing Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 454,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      142
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      41,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/453"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/453\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 456,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/453\/revisions\/456"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/454"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=453"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=453"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=453"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=453"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=453"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=453"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=453"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 450,
+    "date": "2015-08-26T21:12:38",
+    "date_gmt": "2015-08-26T21:12:38",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=450"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "seo-national-keyword-focused-landing-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/seo-national-keyword-focused-landing-page\/",
+    "title": {
+      "rendered": "Focus On National Keywords"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-seo-landing-page-national-720x824.png\" alt=\"Apartment Search: SEO National Keyword Focused Landing Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 451,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      142
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      41,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/450"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/450\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1619,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/450\/revisions\/1619"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/451"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=450"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=450"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=450"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=450"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=450"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=450"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=450"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 447,
+    "date": "2015-08-26T21:11:31",
+    "date_gmt": "2015-08-26T21:11:31",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=447"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "seo-state-keyword-focused-landing-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/seo-state-keyword-focused-landing-page\/",
+    "title": {
+      "rendered": "Focus On State Keywords"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-seo-landing-page-state-720x1010.png\" alt=\"Apartment Search: SEO State Keyword Focused Landing Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 448,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      142
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      41,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/447"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/447\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1617,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/447\/revisions\/1617"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/448"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=447"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=447"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=447"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=447"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=447"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=447"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=447"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 443,
+    "date": "2015-08-26T21:09:07",
+    "date_gmt": "2015-08-26T21:09:07",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=443"
+    },
+    "modified": "2017-02-11T12:17:48",
+    "modified_gmt": "2017-02-11T18:17:48",
+    "slug": "seo-city-keyword-focused-landing-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/seo-city-keyword-focused-landing-page\/",
+    "title": {
+      "rendered": "Focus On City Keywords"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-seo-landing-page-city-720x1011.png\" alt=\"Apartment Search: SEO City Keyword Focused Landing Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 445,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      142
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      41,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      115,
+      112,
+      123
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/443"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/443\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1618,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/443\/revisions\/1618"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/445"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=443"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=443"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=443"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=443"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=443"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=443"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=443"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 435,
+    "date": "2015-08-26T20:55:28",
+    "date_gmt": "2015-08-26T20:55:28",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=435"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "apartment-search-search-results-listing-with-competitive-analysis",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-search-results-listing-with-competitive-analysis\/",
+    "title": {
+      "rendered": "Step 2: Search Results Listing Wireframe with Competitive Analysis Screengrabs"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-search-results-listing-with-competitive-analysis-720x1113.png\" alt=\"Apartment Search: Search Results Listing with Competitive Analysis\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 436,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      140
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      77,
+      104,
+      103,
+      40
+    ],
+    "platform": [
+      80,
+      101
+    ],
+    "industry": [
+      264,
+      115,
+      112,
+      123
+    ],
+    "market": [
+      152,
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/435"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/435\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 439,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/435\/revisions\/439"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/436"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=435"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=435"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=435"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=435"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=435"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=435"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=435"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 432,
+    "date": "2015-08-26T20:54:16",
+    "date_gmt": "2015-08-26T20:54:16",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=432"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "apartment-search-search-interface-options",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-search-interface-options\/",
+    "title": {
+      "rendered": "Step 1: Search Interface Options"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-search-options-interface-720x1113.png\" alt=\"ApartmentSearch.com Search Interface UX design Options\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 433,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      140
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      77,
+      104,
+      103,
+      40
+    ],
+    "platform": [
+      80,
+      101
+    ],
+    "industry": [
+      264,
+      115,
+      112,
+      123
+    ],
+    "market": [
+      152,
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/432"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/432\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 2583,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/432\/revisions\/2583"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/433"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=432"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=432"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=432"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=432"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=432"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=432"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=432"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 429,
+    "date": "2015-08-26T20:52:30",
+    "date_gmt": "2015-08-26T20:52:30",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=429"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "apartment-search-property-detail-wireframe",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/apartment-search-property-detail-wireframe\/",
+    "title": {
+      "rendered": "Step 3: Property Detail Wireframe"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartment-search-property-detail-720x556.png\" alt=\"Apartment Search Property Detail Wireframe\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 430,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      140
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      77,
+      104,
+      103,
+      40
+    ],
+    "platform": [
+      80,
+      101
+    ],
+    "industry": [
+      264,
+      115,
+      112,
+      123
+    ],
+    "market": [
+      152,
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/429"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/429\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 442,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/429\/revisions\/442"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/430"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=429"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=429"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=429"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=429"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=429"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=429"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=429"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2586,
+    "date": "2015-08-26T20:51:18",
+    "date_gmt": "2015-08-27T02:51:18",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=2586"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "step-4-search-interface-with-expanded-options",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/step-4-search-interface-with-expanded-options\/",
+    "title": {
+      "rendered": "Step 4: Search Interface With Expanded Options"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/apartmentsearch-sub-page-expanded-search-functionality-720x519.png\" alt=\"Step 4: Search Interface With Expanded Options\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 2587,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      140
+    ],
+    "client": [
+      141
+    ],
+    "role": [
+      77,
+      104,
+      103,
+      40
+    ],
+    "platform": [
+      80,
+      101
+    ],
+    "industry": [
+      264,
+      115,
+      112,
+      123
+    ],
+    "market": [
+      152,
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/2586"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/2586\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 2588,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/2586\/revisions\/2588"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/2587"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=2586"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=2586"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=2586"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=2586"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=2586"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=2586"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=2586"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 184,
+    "date": "2015-08-13T04:24:26",
+    "date_gmt": "2015-08-13T04:24:26",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=184"
+    },
+    "modified": "2017-05-05T13:26:10",
+    "modified_gmt": "2017-05-05T18:26:10",
+    "slug": "trusted-hands-network-landing-page-step-3-confirmation-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/trusted-hands-network-landing-page-step-3-confirmation-page\/",
+    "title": {
+      "rendered": "Step 3: Confirmation Page"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/trusted-hands-network-04-success-page-720x561.png\" alt=\"Trusted Hands Network Landing Page - Step 3 Confirmation Page\"\/>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 185,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      54
+    ],
+    "client": [
+      76
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      113,
+      144,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/184"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/184\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8923,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/184\/revisions\/8923"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/185"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=184"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=184"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=184"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=184"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=184"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=184"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=184"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 180,
+    "date": "2015-08-13T04:22:47",
+    "date_gmt": "2015-08-13T04:22:47",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=180"
+    },
+    "modified": "2017-05-05T13:26:34",
+    "modified_gmt": "2017-05-05T18:26:34",
+    "slug": "trusted-hands-network-landing-page-step-2-long-form",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/trusted-hands-network-landing-page-step-2-long-form\/",
+    "title": {
+      "rendered": "Step 2: Long Form"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/trusted-hands-network-02-form-page-720x865.png\" alt=\"Trusted Hands Network Landing Page - Step 2 Long Form\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 182,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      54
+    ],
+    "client": [
+      76
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      113,
+      144,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/180"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/180\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8924,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/180\/revisions\/8924"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/182"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=180"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=180"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=180"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=180"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=180"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=180"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=180"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 177,
+    "date": "2015-08-13T04:21:53",
+    "date_gmt": "2015-08-13T04:21:53",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=177"
+    },
+    "modified": "2017-05-05T13:26:49",
+    "modified_gmt": "2017-05-05T18:26:49",
+    "slug": "trusted-hands-network-landing-page-with-phone-number-only",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/trusted-hands-network-landing-page-with-phone-number-only\/",
+    "title": {
+      "rendered": "Step 1 Alternate: Phone Number Only"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/trusted-hands-network-01-alternate-phone-only-page-720x781.png\" alt=\"Trusted Hands Network Landing Page With Phone Number Only\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 178,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      54
+    ],
+    "client": [
+      76
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      113,
+      144,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/177"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/177\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8925,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/177\/revisions\/8925"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/178"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=177"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=177"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=177"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=177"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=177"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=177"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=177"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 174,
+    "date": "2015-08-13T04:21:03",
+    "date_gmt": "2015-08-13T04:21:03",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=174"
+    },
+    "modified": "2017-05-05T13:27:02",
+    "modified_gmt": "2017-05-05T18:27:02",
+    "slug": "trusted-hands-network-landing-page-step-1-short-form",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/trusted-hands-network-landing-page-step-1-short-form\/",
+    "title": {
+      "rendered": "Step 1: Short Form"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/trusted-hands-network-01-720x781.png\" alt=\"Trusted Hands Network Landing Page - Step 1 Short Form\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 175,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      54
+    ],
+    "client": [
+      76
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      113,
+      144,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/174"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/174\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8926,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/174\/revisions\/8926"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/175"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=174"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=174"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=174"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=174"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=174"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=174"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=174"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 171,
+    "date": "2015-08-13T04:19:18",
+    "date_gmt": "2015-08-13T04:19:18",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=171"
+    },
+    "modified": "2017-02-04T10:50:57",
+    "modified_gmt": "2017-02-04T16:50:57",
+    "slug": "tixnix-landing-page-based-on-state-california",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/tixnix-landing-page-based-on-state-california\/",
+    "title": {
+      "rendered": "California Version"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/tixnix-landing-page-state-based-traffic-ticket-california-1372x1062.png\" alt=\"Screenshot of landing page\" class=\"outline\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 5706,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      75
+    ],
+    "client": [
+      74
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      131,
+      144,
+      116,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/171"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/171\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 5707,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/171\/revisions\/5707"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/5706"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=171"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=171"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=171"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=171"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=171"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=171"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=171"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 168,
+    "date": "2015-08-13T04:17:36",
+    "date_gmt": "2015-08-13T04:17:36",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=168"
+    },
+    "modified": "2017-04-29T16:09:48",
+    "modified_gmt": "2017-04-29T21:09:48",
+    "slug": "tixnix-landing-page-traffic-ticket",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/tixnix-landing-page-traffic-ticket\/",
+    "title": {
+      "rendered": "Traffic Ticket"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/tixnix-landing-page-traffic-ticket-720x1152.png\" alt=\"TixNix Landing Page - Traffic Ticket\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 169,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      52
+    ],
+    "client": [
+      74
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      131,
+      144,
+      116,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/168"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/168\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8849,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/168\/revisions\/8849"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/169"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=168"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=168"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=168"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=168"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=168"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=168"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=168"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 165,
+    "date": "2015-08-13T04:15:35",
+    "date_gmt": "2015-08-13T04:15:35",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=165"
+    },
+    "modified": "2017-04-29T16:10:02",
+    "modified_gmt": "2017-04-29T21:10:02",
+    "slug": "tixnix-landing-page-trucking-accident",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/tixnix-landing-page-trucking-accident\/",
+    "title": {
+      "rendered": "Trucking Accident"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/tixnix-landing-page-trucking-accident-720x1152.png\" alt=\"TixNix Landing Page - Trucking Accident\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 195,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      52
+    ],
+    "client": [
+      74
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      131,
+      144,
+      116,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/165"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/165\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8850,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/165\/revisions\/8850"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/195"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=165"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=165"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=165"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=165"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=165"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=165"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=165"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 162,
+    "date": "2015-08-13T04:14:48",
+    "date_gmt": "2015-08-13T04:14:48",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=162"
+    },
+    "modified": "2017-04-29T16:10:16",
+    "modified_gmt": "2017-04-29T21:10:16",
+    "slug": "tixnix-landing-page-motorcycle-accident",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/tixnix-landing-page-motorcycle-accident\/",
+    "title": {
+      "rendered": "Motorcycle Accident"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/tixnix-landing-page-motorcycle-accident-720x1152.png\" alt=\"TixNix Landing Page - Motorcycle Accident\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 163,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      52
+    ],
+    "client": [
+      74
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      131,
+      144,
+      116,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/162"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/162\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8851,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/162\/revisions\/8851"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/163"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=162"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=162"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=162"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=162"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=162"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=162"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=162"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 159,
+    "date": "2015-08-13T04:14:07",
+    "date_gmt": "2015-08-13T04:14:07",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=159"
+    },
+    "modified": "2017-04-29T16:10:29",
+    "modified_gmt": "2017-04-29T21:10:29",
+    "slug": "tixnix-landing-page-auto-accident",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/tixnix-landing-page-auto-accident\/",
+    "title": {
+      "rendered": "Auto Accident"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/tixnix-landing-page-auto-accident-720x1152.png\" alt=\"TixNix Landing Page - Auto Accident\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 160,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      52
+    ],
+    "client": [
+      74
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      131,
+      144,
+      116,
+      136
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/159"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/159\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8852,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/159\/revisions\/8852"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/160"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=159"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=159"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=159"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=159"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=159"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=159"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=159"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 153,
+    "date": "2015-08-13T04:11:03",
+    "date_gmt": "2015-08-13T04:11:03",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=153"
+    },
+    "modified": "2017-02-04T15:51:36",
+    "modified_gmt": "2017-02-04T21:51:36",
+    "slug": "social-security-disability-help-microsite-design-for-socialsecurityhelp",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/social-security-disability-help-microsite-design-for-socialsecurityhelp\/",
+    "title": {
+      "rendered": "SocialSecurityHelp.com"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/social-security-disability-landing-page-version-2-720x781.png\" alt=\"Social Security Disability Microsite Landing Page for SocialSecurityHelp.com\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 4114,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      50
+    ],
+    "client": [
+      72
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85,
+      241,
+      80
+    ],
+    "industry": [
+      111
+    ],
+    "market": [
+      153,
+      157
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/153"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/153\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 4115,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/153\/revisions\/4115"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/4114"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=153"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=153"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=153"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=153"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=153"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=153"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=153"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "date": "2015-08-13T04:10:31",
+    "date_gmt": "2015-08-13T04:10:31",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=150"
+    },
+    "modified": "2017-02-04T15:51:53",
+    "modified_gmt": "2017-02-04T21:51:53",
+    "slug": "social-security-disability-help-microsite-design-for-disabilityhelp",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/social-security-disability-help-microsite-design-for-disabilityhelp\/",
+    "title": {
+      "rendered": "DisabilityHelp.me"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/social-security-disability-landing-page-version-1-720x667.png\" alt=\"Social Security Disability Microsite Landing Page for DisabilityHelp.me\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 151,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      50
+    ],
+    "client": [
+      72
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85,
+      241,
+      80
+    ],
+    "industry": [
+      111
+    ],
+    "market": [
+      153,
+      157
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/150"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/150\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 4116,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/150\/revisions\/4116"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/151"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=150"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=150"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=150"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=150"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=150"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=150"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=150"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 147,
+    "date": "2015-08-13T04:08:26",
+    "date_gmt": "2015-08-13T04:08:26",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=147"
+    },
+    "modified": "2017-04-29T16:03:13",
+    "modified_gmt": "2017-04-29T21:03:13",
+    "slug": "nextcustomer-homepage",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/nextcustomer-homepage\/",
+    "title": {
+      "rendered": "Homepage"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/next-customer-720x1635.png\" alt=\"NextCustomer Homepage\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 148,
+    "menu_order": 0,
+    "template": "",
+    "meta": [],
+    "project": [
+      49
+    ],
+    "client": [
+      71
+    ],
+    "role": [
+      78,
+      58,
+      41,
+      77,
+      103,
+      167,
+      40
+    ],
+    "platform": [
+      241
+    ],
+    "industry": [
+      264,
+      158,
+      107,
+      108,
+      114,
+      144
+    ],
+    "market": [
+      152
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/147"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/147\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8839,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/147\/revisions\/8839"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/148"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=147"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=147"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=147"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=147"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=147"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=147"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=147"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 144,
+    "date": "2015-08-13T04:07:01",
+    "date_gmt": "2015-08-13T04:07:01",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=144"
+    },
+    "modified": "2017-03-27T17:02:53",
+    "modified_gmt": "2017-03-27T22:02:53",
+    "slug": "leadscon-landing-page-creator-wordpress-backend",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/leadscon-landing-page-creator-wordpress-backend\/",
+    "title": {
+      "rendered": "WordPress Backend"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/leadscon-landing-page-creator-wordPress-backend-720x3838.png\" alt=\"LeadsCon Landing Page Creator \u2013 WordPress Backend\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 1966,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      48
+    ],
+    "client": [
+      71
+    ],
+    "role": [
+      41,
+      103,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      158
+    ],
+    "market": [
+      152
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/144"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/144\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1968,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/144\/revisions\/1968"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/1966"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=144"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=144"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=144"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=144"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=144"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=144"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=144"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 141,
+    "date": "2015-08-13T04:06:17",
+    "date_gmt": "2015-08-13T04:06:17",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=141"
+    },
+    "modified": "2017-04-29T16:01:07",
+    "modified_gmt": "2017-04-29T21:01:07",
+    "slug": "leadscon-landing-page-creator-new-york-event-example",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/leadscon-landing-page-creator-new-york-event-example\/",
+    "title": {
+      "rendered": "New York Event Example"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/leadscon-new-york-720x4289.png\" alt=\"LeadsCon Landing Page Creator - New York Event Example\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 142,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      48
+    ],
+    "client": [
+      71
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      158
+    ],
+    "market": [
+      152
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/141"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/141\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8836,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/141\/revisions\/8836"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/142"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=141"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=141"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=141"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=141"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=141"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=141"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=141"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 138,
+    "date": "2015-08-13T04:05:10",
+    "date_gmt": "2015-08-13T04:05:10",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=138"
+    },
+    "modified": "2017-04-29T16:01:22",
+    "modified_gmt": "2017-04-29T21:01:22",
+    "slug": "leadscon-landing-page-creator-las-vegas-event-example",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/leadscon-landing-page-creator-las-vegas-event-example\/",
+    "title": {
+      "rendered": "Las Vegas Event Example"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/leadscon-las-vegas-720x4472.png\" alt=\"LeadsCon Landing Page Creator - Las Vegas Event Example\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 139,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      48
+    ],
+    "client": [
+      71
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      158
+    ],
+    "market": [
+      152
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/138"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/138\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8837,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/138\/revisions\/8837"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/139"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=138"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=138"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=138"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=138"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=138"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=138"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=138"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "date": "2015-08-13T04:02:08",
+    "date_gmt": "2015-08-13T04:02:08",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=132"
+    },
+    "modified": "2017-04-29T15:43:05",
+    "modified_gmt": "2017-04-29T20:43:05",
+    "slug": "helmet-city-mega-menu-drop-down-example-2",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/helmet-city-mega-menu-drop-down-example-2\/",
+    "title": {
+      "rendered": "Drop-Down Mega-Menu: Example 2"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/helmet-city-mega-dropdown-example-2-720x432.png\" alt=\"Helmet City - Mega Menu Drop Down example 2\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 133,
+    "menu_order": 5,
+    "template": "",
+    "meta": [],
+    "project": [
+      47
+    ],
+    "client": [
+      70
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      131
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/132"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/132\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8821,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/132\/revisions\/8821"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/133"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=132"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=132"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=132"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=132"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=132"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=132"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=132"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 129,
+    "date": "2015-08-13T04:01:29",
+    "date_gmt": "2015-08-13T04:01:29",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=129"
+    },
+    "modified": "2017-04-29T15:43:32",
+    "modified_gmt": "2017-04-29T20:43:32",
+    "slug": "helmet-city-mega-menu-drop-down-example-1",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/helmet-city-mega-menu-drop-down-example-1\/",
+    "title": {
+      "rendered": "Drop Down Mega-Menu: Example 1"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/helmet-city-mega-dropdown-example-1-720x432.png\" alt=\"Helmet City - Mega Menu Drop Down example 1\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 130,
+    "menu_order": 4,
+    "template": "",
+    "meta": [],
+    "project": [
+      47
+    ],
+    "client": [
+      70
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      131
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/129"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/129\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8822,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/129\/revisions\/8822"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/130"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=129"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=129"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=129"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=129"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=129"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=129"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=129"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "date": "2015-08-13T04:00:28",
+    "date_gmt": "2015-08-13T04:00:28",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=126"
+    },
+    "modified": "2017-04-29T15:43:52",
+    "modified_gmt": "2017-04-29T20:43:52",
+    "slug": "helmet-city-category-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/helmet-city-category-page\/",
+    "title": {
+      "rendered": "Category Page"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/helmet-city-shoei-helmets-category-720x1112.png\" alt=\"Helmet City - Category Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 127,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      47
+    ],
+    "client": [
+      70
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      131
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/126"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/126\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8823,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/126\/revisions\/8823"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/127"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=126"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=126"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=126"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=126"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=126"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=126"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=126"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 123,
+    "date": "2015-08-13T03:59:43",
+    "date_gmt": "2015-08-13T03:59:43",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=123"
+    },
+    "modified": "2017-04-29T15:44:15",
+    "modified_gmt": "2017-04-29T20:44:15",
+    "slug": "helmet-city-product-detail-page",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/helmet-city-product-detail-page\/",
+    "title": {
+      "rendered": "Product Detail Page"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/helmet-city-pdp-720x1339.png\" alt=\"Helmet City - Product Detail Page\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 124,
+    "menu_order": 3,
+    "template": "",
+    "meta": [],
+    "project": [
+      47
+    ],
+    "client": [
+      70
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      131
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/123"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/123\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8826,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/123\/revisions\/8826"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/124"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=123"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=123"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=123"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=123"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=123"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=123"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=123"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "date": "2015-08-13T03:58:44",
+    "date_gmt": "2015-08-13T03:58:44",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=120"
+    },
+    "modified": "2017-04-29T15:44:33",
+    "modified_gmt": "2017-04-29T20:44:33",
+    "slug": "helmet-city-homepage",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/helmet-city-homepage\/",
+    "title": {
+      "rendered": "Homepage"
+    },
+    "content": {
+      "rendered": "<img decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/helmet-city-home-720x1542.png\" alt=\"Helmet City - Homepage\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 121,
+    "menu_order": 1,
+    "template": "",
+    "meta": [],
+    "project": [
+      47
+    ],
+    "client": [
+      70
+    ],
+    "role": [
+      41,
+      40
+    ],
+    "platform": [
+      80
+    ],
+    "industry": [
+      131
+    ],
+    "market": [
+      153
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/120"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/120\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 8827,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/120\/revisions\/8827"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/121"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=120"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=120"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=120"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=120"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=120"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=120"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=120"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "date": "2015-08-13T03:56:52",
+    "date_gmt": "2015-08-13T03:56:52",
+    "guid": {
+      "rendered": "http:\/\/danpoynor.dev\/?post_type=dpportfolio&#038;p=117"
+    },
+    "modified": "2017-03-18T16:43:38",
+    "modified_gmt": "2017-03-18T21:43:38",
+    "slug": "debtrelief-org-landing-page-version-2",
+    "status": "publish",
+    "type": "dpportfolio",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/project-details\/debtrelief-org-landing-page-version-2\/",
+    "title": {
+      "rendered": "Version 2"
+    },
+    "content": {
+      "rendered": "<img loading=\"lazy\" decoding=\"async\" src=\"http:\/\/danpoynor.com.localhost\/wp-content\/uploads\/foreclosure-defense-landing-page-720x605.png\" alt=\"DebtRelief.org Landing Page - version 2\" width=\"660\" height=\"555\">",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 118,
+    "menu_order": 2,
+    "template": "",
+    "meta": [],
+    "project": [
+      66
+    ],
+    "client": [
+      572
+    ],
+    "role": [
+      58,
+      41,
+      79,
+      40
+    ],
+    "platform": [
+      85
+    ],
+    "industry": [
+      107,
+      111,
+      120,
+      136
+    ],
+    "market": [
+      153,
+      157
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/117"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/types\/dpportfolio"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/users\/1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/117\/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 552,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio\/117\/revisions\/552"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media\/118"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/media?parent=117"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "project",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project?post=117"
+        },
+        {
+          "taxonomy": "client",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/client?post=117"
+        },
+        {
+          "taxonomy": "role",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/role?post=117"
+        },
+        {
+          "taxonomy": "platform",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/platform?post=117"
+        },
+        {
+          "taxonomy": "industry",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/industry?post=117"
+        },
+        {
+          "taxonomy": "market",
+          "embeddable": true,
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market?post=117"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

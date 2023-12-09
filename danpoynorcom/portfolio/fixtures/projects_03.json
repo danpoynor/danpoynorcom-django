@@ -1,0 +1,4002 @@
+[
+  {
+    "id": 534,
+    "count": 4,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/breathalyzersuperstore-com-affiliate-website-design\/",
+    "name": "BreathalyzerSuperstore.com Affiliate Website Design",
+    "slug": "breathalyzersuperstore-com-affiliate-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/534"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=534"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 546,
+    "count": 2,
+    "description": "Created &ldquo;dayparting&rdquo; designs. Shorter version for daytime audience and longer version with more prose for evening\/nighttime audience.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/briefing-com-in-plan-landing-page-design\/",
+    "name": "Briefing.com \u201cBriefing In Plan\u201d Landing Page Design",
+    "slug": "briefing-com-in-plan-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/546"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=546"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 229,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/brillian-payinsight-pay-at-the-table-brochure\/",
+    "name": "Brillian PayInSight\u2122 \u201cPay At The Table\u201d Brochure",
+    "slug": "brillian-payinsight-pay-at-the-table-brochure",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/229"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=229"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 231,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/brillian-payinsight-pay-at-the-table-information-leaflet-for-dining-customers\/",
+    "name": "Brillian PayInSight\u2122 \u201cPay At The Table\u201d Leaflet for Dining Customers",
+    "slug": "brillian-payinsight-pay-at-the-table-information-leaflet-for-dining-customers",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/231"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=231"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 232,
+    "count": 3,
+    "description": "Brillian Postcard Mailers for PayInSight, PCI Compliance, and Wireless Payment Processing",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/brillian-postcard-mailers-for-payinsight-pci-compliance-and-wireless-payment-processing\/",
+    "name": "Brillian Postcard Mailers",
+    "slug": "brillian-postcard-mailers-for-payinsight-pci-compliance-and-wireless-payment-processing",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/232"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=232"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 218,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-landing-page-redesign\/",
+    "name": "BusinesSuites Landing Page Redesign",
+    "slug": "businessuites-landing-page-redesign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/218"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=218"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 222,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-landing-page-redesign-seo-and-ppc-traffic-flow-diagram\/",
+    "name": "BusinesSuites Landing Page Redesign SEO\/PPC Traffic Flow Diagram",
+    "slug": "businessuites-landing-page-redesign-seo-and-ppc-traffic-flow-diagram",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/222"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=222"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-new-office-opening-email-design\/",
+    "name": "BusinesSuites New Office Opening Email Design",
+    "slug": "businessuites-new-office-opening-email-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/63"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=63"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 219,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-office-services-landing-pages\/",
+    "name": "BusinesSuites Office Services Landing Pages",
+    "slug": "businessuites-office-services-landing-pages",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/219"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=219"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 217,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-prospective-client-email\/",
+    "name": "BusinesSuites Prospective Client Email",
+    "slug": "businessuites-prospective-client-email",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/217"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=217"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 221,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-printed-flyer-handout\/",
+    "name": "BusinesSuites Prospective Client Printed Flyer Handout",
+    "slug": "businessuites-printed-flyer-handout",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/221"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=221"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "count": 14,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-website-redesign\/",
+    "name": "BusinesSuites Website Redesign",
+    "slug": "businessuites-website-redesign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/42"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=42"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 223,
+    "count": 1,
+    "description": "Explorations analyzing 15 photo gallery layout and interaction possibilities. These initial directions were created to gauge scalability (number of photos) that could be easily presented using a small screen real estate footprint yet also keep the photo thumbnails large enough to be compelling and easy to navigate. A couple directions where then selected to present and gather feedback on from the client and learn of any exceptions they might have or additional needs before creating an interactive prototype for potential integration into the site.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-website-redesign-alternate-photo-gallery-layout-and-interaction-studies\/",
+    "name": "BusinesSuites Website Redesign Alternate Photo Gallery Layout and Interaction Studies",
+    "slug": "businessuites-website-redesign-alternate-photo-gallery-layout-and-interaction-studies",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/223"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=223"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 224,
+    "count": 1,
+    "description": "As part of the overall site redesign, I created wireframes for the individual property pages along with region and market pages. After client reviews and a couple rounds of changes to the page layouts and content organization directions were narrowed down before I began work on the visual design. Eventually I created prototypes to test the look and feel and gather feedback on before make the site redesign live.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/businessuites-website-redesign-subpage-wireframes\/",
+    "name": "BusinesSuites Website Redesign Subpage Wireframes",
+    "slug": "businessuites-website-redesign-subpage-wireframes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/224"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=224"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 770,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calarts-mfa-ii-dance-concert-poster\/",
+    "name": "CalArts MFA II Dance Concert Poster",
+    "slug": "calarts-mfa-ii-dance-concert-poster",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/770"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=770"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 517,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calarts-sticker-postcard\/",
+    "name": "CalArts Sticker Postcard",
+    "slug": "calarts-sticker-postcard",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/517"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=517"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 772,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calarts-typographic-illustration\/",
+    "name": "CalArts Typographic Illustration",
+    "slug": "calarts-typographic-illustration",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/772"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=772"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 554,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-bathroom-remodeling-contractors-campaign\/",
+    "name": "CalFinder \u201cBathroom Remodeling Contractors\u201d Campaign",
+    "slug": "calfinder-bathroom-remodeling-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/554"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=554"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 555,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-concrete-and-asphalt-contractors-campaign\/",
+    "name": "CalFinder \u201cConcrete and Asphalt Contractors\u201d Campaign",
+    "slug": "calfinder-concrete-and-asphalt-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/555"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=555"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 556,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-flooring-contractors-campaign\/",
+    "name": "CalFinder \u201cFlooring Contractors\u201d Campaign",
+    "slug": "calfinder-flooring-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/556"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=556"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 563,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-home-siding-contractors-campaign\/",
+    "name": "CalFinder \u201cHome Siding Contractors\u201d Campaign",
+    "slug": "calfinder-home-siding-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/563"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=563"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 553,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-house-addition-contractors-campaign\/",
+    "name": "CalFinder \u201cHouse Addition Contractors\u201d Campaign",
+    "slug": "calfinder-house-addition-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/553"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=553"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 557,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-kitchen-remodeling-contractors-campaign\/",
+    "name": "CalFinder \u201cKitchen Remodeling Contractors\u201d Campaign",
+    "slug": "calfinder-kitchen-remodeling-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/557"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=557"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 558,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-landscaping-contractors-campaign\/",
+    "name": "CalFinder \u201cLandscaping Contractors\u201d Campaign",
+    "slug": "calfinder-landscaping-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/558"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=558"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 559,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-painting-contractors-campaign\/",
+    "name": "CalFinder \u201cPainting Contractors\u201d Campaign",
+    "slug": "calfinder-painting-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/559"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=559"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 560,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-paving-contractors-campaign\/",
+    "name": "CalFinder \u201cPaving Contractors\u201d Campaign",
+    "slug": "calfinder-paving-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/560"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=560"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 561,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-remodeling-contractors-campaign\/",
+    "name": "CalFinder \u201cRemodeling Contractors\u201d Campaign",
+    "slug": "calfinder-remodeling-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/561"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=561"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 583,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-remodeling-get-free-quotes-now-banner-ad-designs\/",
+    "name": "CalFinder \u201cRemodeling? Get Free Quotes Now\u201d Banner Ad Designs",
+    "slug": "calfinder-remodeling-get-free-quotes-now-banner-ad-designs",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/583"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=583"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 562,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-roofing-contractors-campaign\/",
+    "name": "CalFinder \u201cRoofing Contractors\u201d Campaign",
+    "slug": "calfinder-roofing-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/562"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=562"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 564,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-solar-panel-contractors-campaign\/",
+    "name": "CalFinder \u201cSolar Panel Contractors\u201d Campaign",
+    "slug": "calfinder-solar-panel-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/564"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=564"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 271,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-window-contractor-banner-ad-creative-set-15-sizes\/",
+    "name": "CalFinder \u201cWindow Contractor\u201d Banner Ad Creative Set \u2013 15 sizes",
+    "slug": "calfinder-window-contractor-banner-ad-creative-set-15-sizes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/271"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=271"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 565,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-window-contractors-campaign\/",
+    "name": "CalFinder \u201cWindow Contractors\u201d Campaign",
+    "slug": "calfinder-window-contractors-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/565"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=565"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 587,
+    "count": 1,
+    "description": "After presenting four initial designs we settled on moving forward with this direction. The headline text, image on the left, button links, and supporting text could be updated (along with the email subject line) to match specific target audiences based on their potential needs such as window replacement, home remodeling, painting, roofing, siding, deck building, landscaping, and others. Images from the banner ads and landing pages were reused in the emails for branding consistency and to optimize production workflow.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-email-template-design\/",
+    "name": "CalFinder Email Template Design",
+    "slug": "calfinder-email-template-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/587"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=587"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 582,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-home-remodeling-before-and-after-banner-ads\/",
+    "name": "CalFinder Home Remodeling \u201cBefore and After\u201d Banner Ads",
+    "slug": "calfinder-home-remodeling-before-and-after-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/582"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=582"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 581,
+    "count": 3,
+    "description": "Three alternate images presented for the client to consider testing and see which resonates more with the target audience.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-house-remodeling-top-local-contractors-landing-page-design\/",
+    "name": "CalFinder House Remodeling \u201cTop Local Contractors\u201d Landing Page",
+    "slug": "calfinder-house-remodeling-top-local-contractors-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/581"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=581"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 585,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-one-step-signup-landing-page-design\/",
+    "name": "CalFinder One-Step Signup Landing Page Design",
+    "slug": "calfinder-one-step-signup-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/585"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=585"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 586,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-two-step-signup-landing-page-design\/",
+    "name": "CalFinder Two-Step Signup Landing Page Design",
+    "slug": "calfinder-two-step-signup-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/586"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=586"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-solar-power-contractors-landing-page-design\/",
+    "name": "CalFinder.com Solar Power Contractors Landing Page Design",
+    "slug": "calfinder-solar-power-contractors-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/43"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=43"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 178,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/california-backpacker-informational-service-website-storyboards\/",
+    "name": "California Backpacker Informational Service Website Storyboards",
+    "slug": "california-backpacker-informational-service-website-storyboards",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/178"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=178"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 773,
+    "count": 1,
+    "description": "A co-working friend of mine was involved with CSO and asked if I could help with that years invitations. The CSO logo was already designed and I echoed it's shape to create a simple clean background. It was exciting to think my work would be sent to the Kennedy's and other high profile people. This was the first time I had done any serious work for a non-profit and handled the project very business like making sure I received the non-profit corporate tax-exempt id and by negotiating the amount I could right off.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/california-special-olympics-invitation\/",
+    "name": "California Special Olympics Invitation",
+    "slug": "california-special-olympics-invitation",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/773"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=773"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 512,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/chamberlin-associates-hopyard-plaza-office-space-real-estate-brochure\/",
+    "name": "Chamberlin Associates Hopyard Plaza Office Space Real Estate Brochure",
+    "slug": "chamberlin-associates-hopyard-plaza-office-space-real-estate-brochure",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/512"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=512"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 395,
+    "count": 1,
+    "description": "Touch-screens attached to individual stadium seats, in club lounges, media areas, and suites. Developed for potential use at professional football, baseball, basketball and hockey facilities in the U.S. From Intel press release \u201cUsing ChoiceSeat, a fan can direct an interactive sports experience. At live events, 10-inch touch-screen monitors integrated into seat backs [or gooseneck mounts] offer features to make the game experience more interesting, informative and convenient. Fans can select from multiple camera angles, replays, real-time and historical statistics, team and venue information, or purchase merchandise and concessions. Interactive advertising and e-business capabilities are integrated into ChoiceSeat programming.\u201d",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/choiceseat-in-stadium-interactive-touch-screen-design\/",
+    "name": "ChoiceSeat In-Stadium Interactive Touch-Screen Design",
+    "slug": "choiceseat-in-stadium-interactive-touch-screen-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/395"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=395"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 743,
+    "count": 4,
+    "description": "Box sticker went on the outside of Linksys and NetGear router product packaging and the CD was inserted into the box to encourage folks who buy routers to try WebEx. You could see the NetGear routers with the sticker on the shelves in stores such as Fry\u2019s Electronics.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-cd\/",
+    "name": "Cisco WebEx CD",
+    "slug": "cisco-webex-cd",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/743"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=743"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 690,
+    "count": 1,
+    "description": "InDesign template was originally created by another designer. Occasionally I created new versions when needed by replacing text, images, and links while working with the product manager (such as to request a better customer logo sometimes), the copywriter, and then gathered feedback\/sign-offs from the art director before creating the final interactive PDF for distribution.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-customer-success-story-case-study-example\/",
+    "name": "Cisco WebEx Customer Success Story Case Study Example",
+    "slug": "cisco-webex-customer-success-story-case-study-example",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/690"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=690"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 691,
+    "count": 1,
+    "description": "Design created in-house based on brand guidelines.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-floor-display-banner-for-conference-event\/",
+    "name": "Cisco WebEx Floor Display Banner for Conference Event",
+    "slug": "cisco-webex-floor-display-banner-for-conference-event",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/691"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=691"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 245,
+    "count": 12,
+    "description": "To help explain what I was working on and the user experience which I based my decisions on, I created a quick user flow diagram showing screenshots along with short text explanations of the user journey both before and after interacting with the sign-up screens I was working on. This helped focus decisions to specific areas, optimize content to improve user experience, and identify most effective opportunities for multi-variant testing. Each of the variations were based on learnings from other Cisco Webex products, team input\/feedback, plus learnings I incorporated from studying best practices in form design, lead generation, and UX marketing design.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-free-trial-signup-step-2-form-multi-variant-test-variations\/",
+    "name": "Cisco Webex Free Trial Signup Step 2 Form, Multi-variant Test Variations",
+    "slug": "cisco-webex-free-trial-signup-step-2-form-multi-variant-test-variations",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/245"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=245"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 694,
+    "count": 5,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-meetings-plus-summer-campaign\/",
+    "name": "Cisco WebEx Meetings Plus Summer Campaign",
+    "slug": "cisco-webex-meetings-plus-summer-campaign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/694"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=694"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 693,
+    "count": 1,
+    "description": "Shows placement of &ldquo;Meetings Plus $59 Special Package&rdquo; promo graphic on the homepage, product pages, emails and associated landing pages, emails, and banner ads used to generate new subscribers. This presentation format worked well for capturing feedback in meetings when printed in landscape format since just one section printed per page and left room on the side to write notes about any changes discussed.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-meetings-plus-summer-campaign-prototypes-and-mockups-presentation\/",
+    "name": "Cisco WebEx Meetings Plus Summer Campaign Prototypes and Mockups Presentation",
+    "slug": "cisco-webex-meetings-plus-summer-campaign-prototypes-and-mockups-presentation",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/693"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=693"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 688,
+    "count": 1,
+    "description": "A few of the various banners I created based on the brand guidelines for use on the company website.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-meetmenow-banner-ads\/",
+    "name": "Cisco WebEx MeetMeNow Banner Ads",
+    "slug": "cisco-webex-meetmenow-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/688"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=688"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 681,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-meetmenow-co-branded-product-page-design\/",
+    "name": "Cisco WebEx MeetMeNow Co-branded Product Page Design",
+    "slug": "cisco-webex-meetmenow-co-branded-product-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/681"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=681"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 744,
+    "count": 1,
+    "description": "These dialogs would appear in MeetMeNow and PCNow web based application portals to assist and educate users. The modals would appear during events such as during the new user on-boarding process, when a new session is initiating, when the free trial is about to expire, when the credit card is about to expire, when there's a browser plugin update available, and after a session has ended. I created the look of the dialogs based on the visual gradient of some other areas in the products then created and stylized the icons indicating info, alert, and timely message topics. The \u201cUseful Tips\u201d area presented a Flash based slideshow I created by assembling screenshots from the products and adding text explanations in the overlayed green speech bubbles which animated in along with indicators pointing to the different subject areas of the users screen, such as where users can create a desktop shortcut.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-modal-dialogs-with-useful-tips-tutorials\/",
+    "name": "Cisco WebEx Modal Dialogs with \u201cUseful Tips\u201d Tutorials",
+    "slug": "cisco-webex-modal-dialogs-with-useful-tips-tutorials",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/744"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=744"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 689,
+    "count": 1,
+    "description": "A few of the various banners I created based on the brand guidelines for use on the company website.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cisco-webex-pcnow-banner-ads\/",
+    "name": "Cisco WebEx PCNow Banner Ads",
+    "slug": "cisco-webex-pcnow-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/689"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=689"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/clubvdo-website-redesign\/",
+    "name": "ClubVDO Website Redesign",
+    "slug": "clubvdo-website-redesign",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/148"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=148"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 173,
+    "count": 4,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/clubvdo-website-wireframes\/",
+    "name": "ClubVDO Website Wireframes",
+    "slug": "clubvdo-website-wireframes",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/173"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=173"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 399,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cnet-gamecenter-ecstatica-2-article-graphics\/",
+    "name": "CNET GameCenter Ecstatica 2 Article Graphics",
+    "slug": "cnet-gamecenter-ecstatica-2-article-graphics",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/399"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=399"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 401,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cnet-gamecenter-game-pcs-article-graphics\/",
+    "name": "CNET GameCenter Game PCs Article Graphics",
+    "slug": "cnet-gamecenter-game-pcs-article-graphics",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/401"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=401"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 402,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cnet-gamecenter-online-gaming-spectacular-article-graphics\/",
+    "name": "CNET GameCenter Online Gaming Spectacular Article Graphics",
+    "slug": "cnet-gamecenter-online-gaming-spectacular-article-graphics",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/402"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=402"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 189,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/commtouch-conference-booth-graphics\/",
+    "name": "Commtouch Conference Booth Graphics",
+    "slug": "commtouch-conference-booth-graphics",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/189"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=189"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 314,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/community-college-library-consortium-logo\/",
+    "name": "Community College Library Consortium Logo",
+    "slug": "community-college-library-consortium-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/314"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=314"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 642,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/concept-matrix-for-generating-ideas\/",
+    "name": "Concept Matrix for Generating Ideas",
+    "slug": "concept-matrix-for-generating-ideas",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/642"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=642"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 527,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/contractorsbid-microsite\/",
+    "name": "ContractorsBid Microsite",
+    "slug": "contractorsbid-microsite",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/527"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=527"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 394,
+    "count": 2,
+    "description": "Developed graphics for main menu and sub-screens. 3 months",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/cuc-shoppers-advantage-best-buys-catalogs-online-superstore\/",
+    "name": "CUC Shoppers Advantage Best Buys Catalog Online Superstore",
+    "slug": "cuc-shoppers-advantage-best-buys-catalogs-online-superstore",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/394"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=394"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 259,
+    "count": 1,
+    "description": "This was a short project for a startup I worked on while in college. Creating the playful gestural illustrations was fun.  After creating several of the elements by hand through various analog techniques, I cut them out and pasted-up my favs by hand to create somewhat abstract forms related to beauty, fashion, and cosmetics. Then I shot composites using a stat camera. The stat camera was one of those big cameras that included a long rail, perhaps ten feet, with a swivel mount to place your artwork on and a rotating door leading to a dark room with only a red light and a focus window to view your artwork on before placing a large piece of Agfa or Fuji film for exposure. You could put a magnifying loop on the focus window while cranking a gear about waist heigh to fine tune the distance of your artwork and sharpness (I usually just eyeballed it though). Final presentation was a 24x36 film negative spray-painted metallic gold on the back then mounted on poster board. It looked kinda shiny and slick I thought at the time. Once in the early \u201990s I applied for a job at Bijan on Rodeo Drive in L.A. and was called in to interview personally. This is one of the pieces the interviewer walked out of the room with to show to someone I never met before returning and asking to see more. After that I always figured maybe I should save this technique for a potential future project.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/dahbe-cosmetics-logo-mark\/",
+    "name": "Dahb\u00e9 Cosmetics Logo Mark",
+    "slug": "dahbe-cosmetics-logo-mark",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/259"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=259"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 403,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/daily-deal-summit-save-the-date-email\/",
+    "name": "Daily Deal Summit \u201cSave The Date\u201d Email",
+    "slug": "daily-deal-summit-save-the-date-email",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/403"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=403"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 389,
+    "count": 1,
+    "description": "These loop forever just for demo purposes. Final version only loops three times.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/daily-deal-summmit-125x125-animated-gif-ads-four-versions\/",
+    "name": "Daily Deal Summmit 125\u00d7125 Animated Gif Ads \u2013 Four Versions",
+    "slug": "daily-deal-summmit-125x125-animated-gif-ads-four-versions",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/389"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=389"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 756,
+    "count": 1,
+    "description": "Graphic created for use in email newsletters, on the website, and print to promote the event and sponsoring companies.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/dailydealsummit-com-attending-company-logo-collage\/",
+    "name": "DailyDealSummit.com Attending Company Logo Collage",
+    "slug": "dailydealsummit-com-attending-company-logo-collage",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/756"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=756"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 333,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/daily-deal-summit-website\/",
+    "name": "DailyDealSummit.com Website",
+    "slug": "daily-deal-summit-website",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/333"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=333"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 520,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/dan-poynor-design-business-card\/",
+    "name": "Dan Poynor Design Business Card",
+    "slug": "dan-poynor-design-business-card",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/520"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=520"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 519,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/dan-poynor-design-services-self-promotion-postcard\/",
+    "name": "Dan Poynor Design Services Self Promotion Postcard",
+    "slug": "dan-poynor-design-services-self-promotion-postcard",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/519"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=519"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/debt-relief-landing-page\/",
+    "name": "DebtRelief.org Landing Page",
+    "slug": "debt-relief-landing-page",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/66"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=66"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 419,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/descent-font\/",
+    "name": "Descent Font",
+    "slug": "descent-font",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/419"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=419"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/direct-marketing-confidential-email-newsletter-template-design\/",
+    "name": "Direct Marketing Confidential Email Newsletter Template Design",
+    "slug": "direct-marketing-confidential-email-newsletter-template-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/68"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=68"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "count": 7,
+    "description": "The DMconfidential.com site evolved from a marketing blog that was purchased and by integrating existing enterprise efforts from other sites which included adding multiple content authors, expanded topic areas including featured content, and integrating with existing promotional efforts and jobs database. After creating a half dozen wireframe layouts, visual design began on the overall look and feel. After about half a dozen visual designs were considered a look was chosen and prototyped before creating a prototype and integrating with a WordPress CMS. After launch adjustments were made to finalize the design and code before handing off to an internal team to manage the site.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/direct-marketing-confidential-website-design\/",
+    "name": "Direct Marketing Confidential Website Design",
+    "slug": "direct-marketing-confidential-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/44"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=44"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 165,
+    "count": 7,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/directv-email-campaigns\/",
+    "name": "DIRECTV Email Campaigns",
+    "slug": "directv-email-campaigns",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/165"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=165"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 545,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-discount-kitchen-remodeling-com-landing-page-design\/",
+    "name": "Discount-Kitchen-Remodeling.com Landing Page Design",
+    "slug": "calfinder-discount-kitchen-remodeling-com-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/545"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=545"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 544,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/calfinder-discount-window-replacement-com-landing-page-design\/",
+    "name": "Discount-Window-Replacement.com Landing Page Design",
+    "slug": "calfinder-discount-window-replacement-com-landing-page-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/544"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=544"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 473,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/dmconfidential-com-newsletter-subscriber-signup\/",
+    "name": "DMconfidential.com Newsletter Subscriber Signup",
+    "slug": "dmconfidential-com-newsletter-subscriber-signup",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/473"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=473"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 645,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-achieve-happiness-banner-ads\/",
+    "name": "EchoSign \u201cAchieve Happiness\u201d Banner Ads",
+    "slug": "echosign-achieve-happiness-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/645"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=645"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 727,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-last-day-of-the-quarter-campaign-banner-ads\/",
+    "name": "EchoSign \u201cLast Day of the Quarter\u201d Campaign Banner Ads",
+    "slug": "echosign-last-day-of-the-quarter-campaign-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/727"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=727"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 644,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-waiting-for-offers-banner-ads\/",
+    "name": "EchoSign \u201cWaiting for Offers\u201d Banner Ads",
+    "slug": "echosign-waiting-for-offers-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/644"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=644"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 754,
+    "count": 1,
+    "description": "24x36 poster created to hang around the office. There was an earlier version with drop shadows on the medallions similar to the JMP \u201cHot 100\u201d awards poster badges. I think the client didn't want the drop shadows in the version though.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-appexchange-best-of-award-poster\/",
+    "name": "EchoSign AppExchange \u201cBest Of\u201d Award Poster",
+    "slug": "echosign-appexchange-best-of-award-poster",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/754"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=754"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 646,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-click-through-landing-pages\/",
+    "name": "EchoSign Click-Through Landing Pages",
+    "slug": "echosign-click-through-landing-pages",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/646"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=646"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 734,
+    "count": 1,
+    "description": "Created in Adobe Illustrator. Gathering all the latest vector art for the logos and layout them out took a little time, but it'll made sure they look sharp when printed large.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-conference-booth-lighted-logo-panel-design\/",
+    "name": "EchoSign Conference Booth Lighted Logo Panel Design",
+    "slug": "echosign-conference-booth-lighted-logo-panel-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/734"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=734"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 728,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-electronic-signatures-value-bar-chart-banner-ads\/",
+    "name": "EchoSign Electronic Signatures Value Bar Chart Banner Ads",
+    "slug": "echosign-electronic-signatures-value-bar-chart-banner-ads",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/728"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=728"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 767,
+    "count": 2,
+    "description": "In case the website received too much traffic we had a couple failover plans in place, such as being able to switch to a revised homepage that was streamlined for lots of traffic. Version 1 removed the animated billboard image slider and didn't include any dynamic JSP so everything was static. In version 2 I also removed all links to internal pages including the billboard image CTA and no login plus the bottom section of the page content was removed. Version 1 HTTP resource requests went from 84 down to 41 and page weight went from ~972K to ~169K. Version 2 went down to 17 HTTP requests and ~88K page weight. Since most traffic doesn\u2019t go through the homepage necessarily but to sub-pages directly, I could also redirect all sub-pages to the version 2 homepage if needed.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-homepage-traffic-surge-streamlined-fallback-page-designs\/",
+    "name": "EchoSign Homepage \u201cTraffic Surge\u201d Streamlined Fallback Page Designs",
+    "slug": "echosign-homepage-traffic-surge-streamlined-fallback-page-designs",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/767"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=767"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 725,
+    "count": 1,
+    "description": "The look-and-feel for the EchoSign brand was already established by another designer. These are a few examples of the many I either created from scratch or repurposed\/updated within the established standards.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-homepage-billboard-image-design-examples\/",
+    "name": "EchoSign Homepage Billboard Image Design Examples",
+    "slug": "echosign-homepage-billboard-image-design-examples",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/725"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=725"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 753,
+    "count": 1,
+    "description": "24x36 poster created to hang around the office.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-jmp-hot-100-award-poster\/",
+    "name": "EchoSign JMP \u201cHot 100\u201d Award Poster",
+    "slug": "echosign-jmp-hot-100-award-poster",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/753"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=753"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 651,
+    "count": 3,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/echosign-lead-capture-landing-pages\/",
+    "name": "EchoSign Lead Capture Landing Pages",
+    "slug": "echosign-lead-capture-landing-pages",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/651"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=651"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 187,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/erbes-development-group-services-graphic\/",
+    "name": "Erbes Development Group Services Graphic",
+    "slug": "erbes-development-group-services-graphic",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/187"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=187"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 276,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/expedia-popup-ads-4-examples\/",
+    "name": "Expedia Popup Ads \u2013 4 Examples",
+    "slug": "expedia-popup-ads-4-examples",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/276"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=276"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 847,
+    "count": 0,
+    "description": "An exercise I created to demonstrate some of my basic video animation and editing abilities.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fallen-angel-animated-logotext-treatment\/",
+    "name": "Fallen Angel \u2013 Animated Logotext Treatment",
+    "slug": "fallen-angel-animated-logotext-treatment",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/847"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=847"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "count": 4,
+    "description": "A few quick mockups presented as a proposal for the commerce website administration and order management area of FiftyFlowers.com. By using colors that complimented the logo and improving the over layout of elements, this CMS user interface became immediately recognizable and aesthetically more pleasant to look at (and use) than interacting with the generic geeky look and feel that the engineers had initially developed.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fiftyflowers-com-ecommerce-order-management-system-interface-design-proposal-mockups\/",
+    "name": "FiftyFlowers.com eCommerce Order Management System Interface Design Proposal Mockups",
+    "slug": "fiftyflowers-com-ecommerce-order-management-system-interface-design-proposal-mockups",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/45"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=45"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 516,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/firepower-systems-tri-fold-power-pc-logic-board-brochure\/",
+    "name": "FirePower Systems Tri-fold Power PC Logic Board Brochure",
+    "slug": "firepower-systems-tri-fold-power-pc-logic-board-brochure",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/516"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=516"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 524,
+    "count": 1,
+    "description": "Created for a startup business idea I had way back when for designing and selling fonts. Used purple with silver metallic ink.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fonts-etc-business-card-design\/",
+    "name": "Fonts etc. Business Card Design",
+    "slug": "fonts-etc-business-card-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/524"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=524"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 300,
+    "count": 1,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fontsfontsfonts-com-logo\/",
+    "name": "FontsFontsFonts.com Logo",
+    "slug": "fontsfontsfonts-com-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/300"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=300"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 487,
+    "count": 1,
+    "description": "The Kwanzoo quiz widget ad serves 5 questions on a topic within the ad then presents personalized results with a button linking to the advertisers website.\r\n\r\nFor this banner ad test I wanted grab potential customers attention using the closeup photos of peoples faces looking directly at you. Once the banners captured users attention a compelling offer was needed to spark interest in taking the quiz, so we created at least three headline text variations to testing which was the most clicked on. After potential customers take the short quiz they are then presented one of three personalized results and the free credit report offer. ",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/freecreditreport-credit-report-quiz-banner-ad-variations\/",
+    "name": "FreeCreditReport.com Credit Report Quiz Banner Ad Variations",
+    "slug": "freecreditreport-credit-report-quiz-banner-ad-variations",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/487"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=487"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 540,
+    "count": 5,
+    "description": "In addition to creating templates for Free Gift World (FGW) similar templates were also created for Sample Promotions Group (SPG) and Consumer Opinion Group (COG).",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/freegiftworld-landing-page-templates\/",
+    "name": "FreeGiftWorld Landing Page Templates",
+    "slug": "freegiftworld-landing-page-templates",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/540"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=540"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 146,
+    "count": 1,
+    "description": "Related to the website design, this concept combines French curve shapes (a traditional design element) with an electric spark (signifying the electronic age or futuristic direction) to make it pop, giving the treatment kind of a retro Jetsons feel but still fun and futuristic.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/freelancewebdesigner-com-logo\/",
+    "name": "FreelanceWebDesigner.com Logo",
+    "slug": "freelancewebdesigner-com-logo",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/146"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=146"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 465,
+    "count": 6,
+    "description": "My old site promoting freelance services. The initial idea was to create a look that was inviting and fun to interact with but also futuristic and indicated a technical savviness, perhaps like an interface you'd see in a the Jetsons TV cartoon. This is the result of that direction which combines French curve shapes (a traditional design element) with an electric spark (signifying the electronic age or futuristic direction) to give the design element some life and make ot \u2018pop\u2019.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/freelance-web-designer-website-design\/",
+    "name": "FreelanceWebDesigner.com Website Design",
+    "slug": "freelance-web-designer-website-design",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/465"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=465"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 171,
+    "count": 3,
+    "description": "After reviewing the content outline, wireframing the flow, and designing individual screens I created a storyboard to explain the animation needed in written frame-by-frame form. Then I created a basic video slideshow storyboard to demonstrate some of the timing and effects we\u2019re going for so the client and animator has a better understanding of what the final version should look like.",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/projects\/fujitsu-lifebook-in-store-demo-presentation\/",
+    "name": "Fujitsu Lifebook In-Store Demo Presentation",
+    "slug": "fujitsu-lifebook-in-store-demo-presentation",
+    "taxonomy": "project",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project\/171"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/project"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/project"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?project=171"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

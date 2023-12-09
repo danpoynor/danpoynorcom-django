@@ -1,0 +1,242 @@
+[
+  {
+    "id": 152,
+    "count": 327,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/b2b\/",
+    "name": "Business-to-Business",
+    "slug": "b2b",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/152"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=152"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 153,
+    "count": 630,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/b2c\/",
+    "name": "Business-to-Consumer",
+    "slug": "b2c",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/153"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=153"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 154,
+    "count": 0,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/b2g\/",
+    "name": "Business-to-Government",
+    "slug": "b2g",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/154"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=154"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 155,
+    "count": 13,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/c2c\/",
+    "name": "Consumer-to-Consumer",
+    "slug": "c2c",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/155"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=155"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 156,
+    "count": 2,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/g2b\/",
+    "name": "Government-to-Business",
+    "slug": "g2b",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/156"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=156"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 157,
+    "count": 6,
+    "description": "",
+    "link": "http:\/\/danpoynor.com.localhost\/portfolio\/markets\/g2p\/",
+    "name": "Government-to-Public",
+    "slug": "g2p",
+    "taxonomy": "market",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market\/157"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/market"
+        }
+      ],
+      "about": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/taxonomies\/market"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http:\/\/danpoynor.com.localhost\/wp-json\/wp\/v2\/dpportfolio?market=157"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
