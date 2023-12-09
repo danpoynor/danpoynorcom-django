@@ -14,6 +14,7 @@ admin.site.register(Role)
 class ProjectItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('id', 'name', 'visible', 'status', 'project_name')
+    list_display_links = ('name',)
 
     def project_name(self, obj):
         return obj.project.name if obj.project else '-'
