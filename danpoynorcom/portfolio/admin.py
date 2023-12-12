@@ -71,12 +71,16 @@ admin.site.register(ProjectItem, ProjectItemAdmin)
 
 class ProjectAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'visible', 'client_name', 'industries', 'markets', 'roles')
+    list_display = ('id', 'name', 'visible', 'client_name', 'media_types', 'industries', 'markets', 'roles')
     list_display_links = ('name',)
 
     def client_name(self, obj):
         return obj.client.name if obj.client else '-'
     client_name.short_description = 'Client'
+
+    def media_types(self, obj):
+        return ", ".join([media_type.name for media_type in obj.mediatype.all()])
+    media_types.short_description = 'Media Types'
 
     def industries(self, obj):
         return ", ".join([industry.name for industry in obj.industry.all()])
