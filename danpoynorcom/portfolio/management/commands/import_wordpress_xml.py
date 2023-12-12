@@ -95,6 +95,38 @@ class Command(BaseCommand):
                 # Try to get the Project instance with the slug
                 project = Project.objects.get(slug=project_slug)
 
+                # Find the taxonomy categories for the item
+                # Try to get the model instances with these slugs
+                for taxonomy in ['client', 'industry', 'market', 'platform', 'role']:
+                    category_elems = item.findall(f".//category[@domain='{taxonomy}']", namespaces)
+                    for category_elem in category_elems:
+                        category_slug = category_elem.get('nicename')
+                        print(f"Fetching {taxonomy.capitalize()} with slug '{category_slug}'")
+                        # Try to get the model instance with the slug
+                        if taxonomy == 'platform':
+                            # If the taxonomy is 'platform', get the MediaType instance
+                            category_instance = MediaType.objects.get(slug=category_slug)
+                            # Add the category instance to the project's 'mediatypes' field
+                            project.mediatype.add(category_instance)
+                        else:
+                            category_instance = globals()[taxonomy.capitalize()].objects.get(slug=category_slug)
+                            # Add the category instance to the project's many-to-many field
+                            if taxonomy == 'client':
+                                project.client = category_instance
+                            else:
+                                getattr(project, f"{taxonomy}").add(category_instance)
+
+                # Find the year for the item
+                # Try to get the year from the wp:postmeta element
+                year_elem = item.find(".//wp:postmeta[wp:meta_key='_project_year']/wp:meta_value", namespaces)
+                if year_elem is not None:
+                    year = year_elem.text
+                    print(f"Setting year to '{year}'")
+                    # Set the year of the project item
+                    project.year = year
+
+                project.save()
+
             # Find the wp:meta_value element that has a sibling wp:meta_key element with text _wp_old_slug
             for meta in item.findall(".//wp:postmeta", namespaces):
                 meta_key_elem = meta.find('wp:meta_key', namespaces)
@@ -113,8 +145,9 @@ class Command(BaseCommand):
                     'html_content': content_encoded,
                 },
             )
+
             if created:
                 project_item.save()
 
-        if not error_occurred:
-            print('Data imported successfully.')
+            if not error_occurred:
+                print('Data imported successfully.')

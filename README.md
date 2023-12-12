@@ -110,7 +110,17 @@ python manage.py runserver
 <details>
   <summary>Click to expand</summary>
 
-### The `fixtures` directory contains JSON files that can be used to import data into the database using the custom admin commands located in the `portfolio/management/commands` directory
+### The `fixtures` directory contains an XML WordPress export file that can be used to import data into the database using the custom admin command located in the `portfolio/management/commands` directory
+
+```sh
+python manage.py import_wordpress_xml
+```
+
+NOTE: When importing the data a lot of debugging info will scroll past in the terminal. This is normal.
+
+NOTE: This command will import all the models and data from the XML file needed to run the site including the associations between the models.
+
+### The `fixtures` directory also contains JSON files that can be used to import data into the database using the custom admin commands located in the `portfolio/management/commands` directory
 
 ```sh
 python3 manage.py import_clients
@@ -124,6 +134,6 @@ python3 manage.py import_roles
 
 NOTE: When importing the project_items data a lot of debugging info will scroll past in the terminal. This is normal.
 
-TODO: Create proper fixtures so the `python3 manage.py importdata` command can be used.
+NOTE: This will import the individual models but not the associations between the models.
 
 </details>
