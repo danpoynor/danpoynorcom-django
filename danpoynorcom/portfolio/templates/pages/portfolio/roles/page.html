@@ -1,0 +1,51 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <main class="roles-page">
+    <div class="container">
+      <div class="intro">
+        <p>
+          Educated at CalArts in Visual Communications then U.C. Berkeley for Webmaster, Linux Server Administration, and Marketing degrees has given me a broad formal education. Combining that with years of hands-on experience, I’m able to step into multiple roles from concept development, to designing branding elements and page layouts, to running A/B tests and user testing, to final implementation. Working within multi-disciplinary teams I’m also able to communicate effectively with stakeholders using germane nomenclature to collaborate on design, development, and <span class="nowrap">marketing efforts.</span>
+        </p>
+      </div>
+      <header>
+        <h1><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">Roles</span></h1>
+      </header>
+      <section class="taxonomy-highlights role-highlights">
+        <div class="container">
+          <h2>Role Highlights</h2>
+          <ul class="showcase-list">
+            <li>
+              <a href="/portfolio/roles/front-end-developer/" title="View all project samples created for Front-end Developer"><span class="text-wrapper"><span class="taxonomy-name">Front-end Developer</span><span class="count">(273)</span></span></a>
+            </li>
+            <li>
+              <a href="/portfolio/roles/visual-designer/" title="View all project samples created for Visual Designer"><span class="text-wrapper"><span class="taxonomy-name">Visual Designer</span><span class="count">(547)</span></span></a>
+            </li>
+            <li>
+              <a href="/portfolio/roles/ux-designer/" title="View all project samples created for UX/CX Designer"><span class="text-wrapper"><span class="taxonomy-name">UX/CX Designer</span><span class="count">(116)</span></span></a>
+            </li>
+            <li>
+              <a href="/portfolio/roles/art-director/" title="View all project samples created for Art Director"><span class="text-wrapper"><span class="taxonomy-name">Art Director</span><span class="count">(533)</span></span></a>
+            </li>
+            <li>
+              <a href="/portfolio/roles/creative-director/" title="View all project samples created for Creative Director"><span class="text-wrapper"><span class="taxonomy-name">Creative Director</span><span class="count">(355)</span></span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="taxonomy-categories">
+        <h2>Roles Overview</h2>
+        <ul class="taxonomy-list">
+          {% for role in roles %}
+            <li>
+              <h3><a href="{{ role.get_absolute_url }}" title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.projects.count }} )</span></a></h3>
+              <p>{{ role.description|safe }}</p>
+            </li>
+            {% empty %}
+            <li>No roles available.</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </main>
+{% endblock %}

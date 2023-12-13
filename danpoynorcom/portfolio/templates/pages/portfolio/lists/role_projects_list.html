@@ -1,0 +1,23 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <main class="portfolio-taxonomy-term">
+    <header>
+      <div class="container">
+        <h1><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <a href="/portfolio/roles/">Roles</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span></h1>
+        <div class="taxonomy-meta">
+          <p>{{ object.description|safe }}</p>
+        </div>
+      </div>
+    </header>
+    <section class="thumbnails">
+      <div class="container">
+        <section class="thumbnail-previews">
+          <div class="container">
+            {% include 'partials/_taxonomy_projects.html' %}
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+{% endblock %}

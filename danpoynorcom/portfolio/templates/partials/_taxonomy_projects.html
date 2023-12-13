@@ -1,8 +1,22 @@
-<h2>Projects In This Taxonomy</h2>
-<ul>
+<p>Pagination bar will be added here.</p>
+<ul id="portfolio-container">
   {% for project in object.projects.all %}
-    <li>
-      <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
+    <li class="shown" style="outline: 1px solid red">
+      <a href="{{ project.get_absolute_url }}">
+        <figure>
+          <figcaption>
+            <p class="title">{{ project.name }}</p>
+            <p class="sub-title">{{ project.client }}</p>
+            <div class="text-wrapper">
+              <p class="description">
+                <span>Project Description:</span> {{ project.description }}
+              </p>
+              <p class="click-to-view">Click for project detail view.</p>
+            </div>
+          </figcaption>
+          <img src="" alt="{{ project.name }}" />
+        </figure>
+      </a>
     </li>
     {% empty %}
     <li>No projects to display in this taxonomy.</li>

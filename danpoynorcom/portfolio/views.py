@@ -4,76 +4,76 @@ from .models import Client, Industry, Market, MediaType, Role, Project
 
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'pages/home/page.html')
 
 
 def portfolio(request):
-    return render(request, 'portfolio.html')
+    return render(request, 'pages/portfolio/page.html')
 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'pages/about/page.html')
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request, 'pages/contact/page.html')
 
 
 def clients(request):
     clients = Client.objects.all()
-    return render(request, 'clients.html', {'clients': clients})
+    return render(request, 'pages/portfolio/clients/page.html', {'clients': clients})
 
 
 class ClientProjectsListView(generic.DetailView):
     model = Client
-    template_name = 'client_projects_list.html'
+    template_name = 'pages/portfolio/lists/client_projects_list.html'
 
 
 def industries(request):
     industries = Industry.objects.all()
-    return render(request, 'industries.html', {'industries': industries})
+    return render(request, 'pages/portfolio/industries/page.html', {'industries': industries})
 
 
 class IndustryProjectsListView(generic.DetailView):
     model = Industry
-    template_name = 'industry_projects_list.html'
+    template_name = 'pages/portfolio/lists/industry_projects_list.html'
 
 
 def markets(request):
     markets = Market.objects.all()
-    return render(request, 'markets.html', {'markets': markets})
+    return render(request, 'pages/portfolio/markets/page.html', {'markets': markets})
 
 
 class MarketProjectsListView(generic.DetailView):
     model = Market
-    template_name = 'market_projects_list.html'
+    template_name = 'pages/portfolio/lists/market_projects_list.html'
 
 
 def mediatypes(request):
     mediatypes = MediaType.objects.all()
-    return render(request, 'media_types.html', {'mediatypes': mediatypes})
+    return render(request, 'pages/portfolio/media_types/page.html', {'mediatypes': mediatypes})
 
 
 class MediaTypeProjectsListView(generic.DetailView):
     model = MediaType
-    template_name = 'media_type_projects_list.html'
+    template_name = 'pages/portfolio/lists/media_type_projects_list.html'
 
 
 def roles(request):
     roles = Role.objects.all()
-    return render(request, 'roles.html', {'roles': roles})
+    return render(request, 'pages/portfolio/roles/page.html', {'roles': roles})
 
 
 class RoleProjectsListView(generic.DetailView):
     model = Role
-    template_name = 'role_projects_list.html'
+    template_name = 'pages/portfolio/lists/role_projects_list.html'
 
 
 def projects(request):
     projects = Project.objects.all()
-    return render(request, 'projects.html', {'projects': projects})
+    return render(request, 'pages/portfolio/projects/page.html', {'projects': projects})
 
 
 class ProjectDetailsView(generic.DetailView):
     model = Project
-    template_name = 'project_details.html'
+    template_name = 'pages/portfolio/lists/project_details.html'

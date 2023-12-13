@@ -1,0 +1,73 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <main class="clients-page">
+    <div class="container">
+      <div class="intro">
+        <p>Working on both the agency-side and client-side of projects has provided me with knowledgable insight and experience on how to manage and achieve goals from both perspectives. Initially working on corporate projects in Holland before moving to Los Angeles and working in the entertainment business equipped me with a broad understanding of needs in projects intended for large multi-national markets. With that basis I always strive to effectively communicate with as many potential customers as possible within a variety of specific vertical markets.</p>
+      </div>
+      <header>
+        <h1><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">Industries</span></h1>
+      </header>
+      <div class="key-areas">
+        <section class="taxonomy-highlights industry-highlights">
+          <div class="container">
+            <h2>Industry Highlights</h2>
+            <ul class="showcase-list">
+              <li>
+                <a href="/portfolio/industries/financial-services/" title="View all project samples created for Financial Services"><span class="text-wrapper"><span class="taxonomy-name">Financial Services</span><span class="count">(122)</span></span></a>
+              </li>
+              <li>
+                <a href="/portfolio/industries/technology/" title="View all project samples created for Technology"><span class="text-wrapper"><span class="taxonomy-name">Technology</span><span class="count">(225)</span></span></a>
+              </li>
+              <li>
+                <a href="/portfolio/industries/consumer-goods/" title="View all project samples created for Consumer Goods"><span class="text-wrapper"><span class="taxonomy-name">Consumer Goods</span><span class="count">(205)</span></span></a>
+              </li>
+              <li>
+                <a href="/portfolio/industries/business-services/" title="View all project samples created for Business Services"><span class="text-wrapper"><span class="taxonomy-name">Business Services</span><span class="count">(205)</span></span></a>
+              </li>
+              <li>
+                <a href="/portfolio/industries/lead-generation/" title="View all project samples created for Lead Generation"><span class="text-wrapper"><span class="taxonomy-name">Lead Generation</span><span class="count">(162)</span></span></a>
+              </li>
+              <li>
+                <a href="/portfolio/industries/media-and-entertainment/" title="View all project samples created for Media and Entertainment"><span class="text-wrapper"><span class="taxonomy-name">Media and Entertainment</span><span class="count">(139)</span></span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="taxonomy-categories">
+          <h2>Major Markets</h2>
+          <ul class="taxonomy-list gray-bullets">
+            <li>
+              <a href="/portfolio/markets/b2b/" title="View all project samples created for Business-to-Business">Business-to-Business <span class="count">(327)</span></a>
+            </li>
+            <li>
+              <a href="/portfolio/markets/b2c/" title="View all project samples created for Business-to-Consumer">Business-to-Consumer <span class="count">(630)</span></a>
+            </li>
+            <li>
+              <a href="/portfolio/markets/c2c/" title="View all project samples created for Consumer-to-Consumer">Consumer-to-Consumer <span class="count">(13)</span></a>
+            </li>
+            <li>
+              <a href="/portfolio/markets/g2b/" title="View all project samples created for Government-to-Business">Government-to-Business <span class="count">(2)</span></a>
+            </li>
+            <li>
+              <a href="/portfolio/markets/g2p/" title="View all project samples created for Government-to-Public">Government-to-Public <span class="count">(6)</span></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="taxonomy-categories">
+        <h2>Industries Overview</h2>
+        <ul class="taxonomy-list gray-bullets">
+          {% for industry in industries %}
+            <li>
+              <a href="{{ industry.get_absolute_url }}">{{ industry.name }}</a>
+            </li>
+            {% empty %}
+            <li>No industries available.</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </main>
+{% endblock %}

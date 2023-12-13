@@ -1,7 +1,11 @@
 {% load static %}
 <header>
   <div class="container">
-    <h1>Dan Poynor</h1>
+    <div class="site-branding">
+      <h1 class="site-title">Dan Poynor</h1>
+      <p class="site-description">Designer <span>/</span> Developer <span>/</span> Director</p>
+    </div>
+
     <nav>
       <ul>
         <li{% if request.resolver_match.url_name == 'home' %} class="active"{% endif %}>
