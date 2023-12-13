@@ -1,0 +1,193 @@
+.taxonomy-selected {
+    margin: 2em 0 1em;
+    width: 100%;
+
+    h2 {
+    }
+
+}
+
+.showcase-list {
+    list-style-type: none;
+    margin: 1em -.25em;
+    padding: 0;
+    //
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    @supports (display: grid) and (not(display: -ms-grid)) { // test the browser understands display: grid and not MS Edge
+        margin: 1em 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: .5em;
+    }
+
+    li {
+        flex: 0 0 19.22%; // for MS Edge
+        margin: .25em;
+        //min-width: 222px;
+        min-height: 10em;
+        position: relative;
+        text-align: center;
+
+        @supports (display: grid) and (not(display: -ms-grid)) { // test the browser understands display: grid and not MS Edge
+            min-width: 0;
+            margin: 0;
+        }
+
+    }
+
+    // for firefox and older browsers
+    @supports not ( (-webkit-clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) ) {
+
+        // use gradient for top right triangle shaped notch
+        a {
+            background-image: linear-gradient(45deg, $white 0%,$white 92%,transparent 92%,transparent 100%);
+            display: block;
+            padding: 1em;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            min-height: 10em;
+            z-index: 10;
+            //
+            display: flex;
+            justify-content: center;
+            flex-flow: column nowrap;
+            //
+            transition: color $transition-speed ease-in-out;
+
+            &:before { // this enable transitioning the gradient background
+                background-image: linear-gradient(45deg, $theme-color 0%,$theme-color 92%,transparent 92%,transparent 100%);
+                background-image: linear-gradient(45deg, var(--t3) 0%,var(--t3) 92%,transparent 92%,transparent 100%);
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                z-index: -10;
+                transition: opacity $transition-speed ease-in-out;
+            }
+
+            &:hover {
+                color: $white;
+
+                &:before {
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+    }
+
+    // use clip-path for top right triangle shapd notch
+    // NOTE: This doesn't currently work in Firefox
+    @supports(-webkit-clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) {
+
+        a {
+            background-image: linear-gradient(45deg, $theme-color -100%,$theme-color 0%,white 0%,white 100%);
+            background-image: linear-gradient(45deg, var(--t3) -100%,var(--t3) 0%,white 0%,white 100%);
+            clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            overflow: hidden; // needed so Safri doesn't react when rolling over the unseen :before element
+            transition: color $transition-speed-slow ease-in-out;
+
+            &:before {
+                background:  $theme-color;
+                background:  var(--t3);
+                content: '';
+                display: block;
+                height: 300%;
+                width: 300%;
+                position: absolute;
+                left:-250%;
+                bottom: -250%;
+                transform: rotate(45deg);
+                z-index: -10;
+                transition: left $transition-speed-slow, bottom $transition-speed-slow ease-out;
+            }
+
+            &:hover {
+                color: $white;
+
+                &:before {
+                    left: -140%;
+                    bottom: -0%;
+                }
+
+            }
+
+        }
+
+    }
+
+    .text-wrapper {
+        height: 100%;
+        max-width: 10em;
+    margin: 0 auto;
+    //
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    .taxonomy-name {
+        display: block;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+    .count {
+            display: block;
+            font-size: .75em;
+        }
+
+    }
+
+
+
+}
+
+// just in selected
+.taxonomy-selected {
+
+    li {
+        flex: 1;
+    }
+
+}
+
+.clients-page {
+
+    .selected-list {
+        li {
+            max-width: 223.5px
+        }
+    }
+
+}
+
+body.home {
+
+    .selected-list {
+
+        a {
+            min-width: 0;
+        }
+
+    }
+
+}

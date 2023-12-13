@@ -1,0 +1,231 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    font: normal 100%/1.61803398875 'Source Sans Pro', sans-serif;
+    color: $body-text-color;
+    color: var(--t5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: normal 400 1em/1 'Bitter', sans-serif;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    color: $headline-text-color;
+    color: var(--t6);
+    font-size: 1.5em;
+}
+
+h3 {
+    color: $headline-text-color;
+    color: var(--t6);
+    font-size: 1.125em; // 18 / 16
+}
+
+h4 {
+    color: $body-text-color;
+    color: var(--t5);
+    font: normal 400 100%/1.61803398875 'Bitter', sans-serif;
+}
+
+a {
+  color: $text-link-color;
+  color: var(--t3);
+  transition: all $transition-speed ease-out;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+p a:hover {
+    //filter: brightness($hover-brightness-amount);
+}
+
+.portfolio-introduction,
+.selected-taxonomy-items p,
+.taxonomy-meta, 
+.sidebar-info,
+.contact-info,
+.site-info {
+    a:hover {
+        filter: brightness($hover-brightness-amount);
+    }
+}
+
+body > header a {
+    transition: none;
+}
+
+a:active,
+a:focus {
+//	border: 0 !important;
+    outline: none !important;
+}
+
+.site-title {
+  color: $text-link-color-hover;
+  color: var(--t3);
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: .5em;
+  margin: 0 0 -.5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  
+  a {
+        color: $text-link-color-hover;
+    color: var(--t3);
+        display: inline-block;
+        //padding: 0;
+        transition: color $transition-speed ease-in-out;
+
+    &:hover {
+        color: $white;
+    }
+
+  }
+  
+}
+
+.home-page h1 {
+    font-size: 2em;
+    margin: .5em 0;
+}
+
+main header {
+
+    h1 {
+        color: $headline-text-color;
+        color: var(--t6);
+        font-size: 2em;
+        line-height: 1.2;
+        margin: 0;
+
+        a {
+            &:hover {
+                filter: brightness($hover-brightness-amount);
+            }
+        }
+
+    }
+
+    .project-name { // for single project example pages
+        margin-top: 0;
+
+        span {
+            //color: $primary-700;
+        }
+
+    }
+
+    .page-projects-title {
+        margin-top: 1em;
+    }
+
+    h2 { // used on single portfolio only?
+        font: normal 700 1.3125em/1.4 'Bitter', sans-serif; // 21 / 16
+        margin: .5em 0;
+    }
+
+    .divider { // this is the "/" in the page titles
+        color: $body-text-color;
+        color: var(--t5);
+        font: 500 .82em/1 'Oswald', 'Bitter', sans-serif;
+        //margin: 0 -.1em 0 -.25em;
+    }
+
+}
+
+.taxonomy-categories {
+    h2 {
+        margin: 1.33em 0 .25em;
+    }
+}
+
+.taxonomy-project-list {
+    h2 {
+        margin: 1em 0 0;
+    }
+    h3 {
+        color: $body-text-color;
+    }
+}
+
+.page-template-page-clients {
+    main {
+        section.taxonomy-categories {
+            h2 {
+                margin-bottom: .25em;
+            }
+        }
+        section.taxonomy-project-list {
+        }
+    }
+}
+
+.sidebar-categories section.taxonomy-categories { // used on top level taxonomy pages
+
+    h2 {
+        color: $headline-text-color;
+        color: var(--t6);
+        font-size: 0.75em;
+        font-weight: 700;
+        letter-spacing: .25em;
+        margin: 0 0 1em .2em;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        //font-size: 1em;
+        //font-weight: 700;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+
+}
+
+article header h2.entry-title {
+}
+
+.site-description {
+    color: $white;
+    //color: var(--t7);
+    font: normal 1.125em/1 'Oswald', sans-serif; // 18 / 16
+    //margin: .25em 0 0;
+    margin: 1em 0 0;
+
+    span {
+        color: $theme-color;
+        color: var(--t3);
+    }
+
+}
+
+p:empty {
+    display: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+//.truncate {
+//  overflow: hidden;
+//  text-overflow: ellipsis;
+//}

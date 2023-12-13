@@ -1,0 +1,119 @@
+.list-view {
+    //padding-bottom: 2em;
+
+    ol {
+        //border-top: 1px dashed #ccc;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px dashed #ccc;
+            margin: 0;
+            padding: 2em 0;
+            &:first-of-type {
+                margin-top: 0;
+                padding-top: 1em;
+            }
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+    }
+
+    figure {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+
+    img {
+        max-width: 330px;
+        position: absolute;
+        left: -.2em;
+    top: -.5em;
+    transition: all $transition-speed ease-in-out;
+    //transform: rotate(-7deg) translate(-50%,-50%);
+    transform: rotate(-3deg) scale(1);
+    }
+
+    p {
+
+        &.title {
+            display: inline-block;
+            //font: normal 400 1.2em 'Oswald', sans-serif;
+            font: 400 1.6em/1.2 Bitter, sans-serif;
+            margin: 0;
+        }
+
+        &.description {
+            margin-top: 0;
+
+            span {
+                color: $headline-text-color;
+                color: var(--t6);
+                font: normal 100%/1.61803398875 'Oswald', sans-serif;
+                margin-right: .1em;
+            }
+
+        }
+
+    }
+
+    .count {
+        font-size: .8em;
+    }
+
+    .thumbnail {
+        background-color: $white;
+        width: 258px;
+        height: 220px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 1.5em;
+        //
+        flex: 0 0 258px;
+
+        &:hover,
+        &.hover-class { // for jquery
+
+            img {
+                 left: -1.75em;
+                 top: -1.5em;
+                 transform: rotate(-7deg) scale(1.2);
+            }
+
+        }
+
+    }
+
+    @media only screen and (max-width: $header-media-query-break-smaller) {
+
+        figure {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        .thumbnail {
+            margin-right: 0;
+        }
+
+        p {
+
+            &.title {
+                margin: 1em 0 .25em;
+            }
+
+            &.description {
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+}

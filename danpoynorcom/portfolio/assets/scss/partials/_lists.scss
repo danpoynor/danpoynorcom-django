@@ -1,0 +1,117 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+}
+
+.csv { 
+    display: inline;
+
+    li {
+        display: inline;
+
+        &:after {
+            content: ", ";
+        }
+        &:last-child:after {
+            content: "";
+        }
+
+    }
+
+}
+
+.colored-bullets {
+    margin: 1em 0;
+
+    li {
+        padding-left: .7em;
+    text-indent: -.7em;
+
+        + li {
+            margin-top: 1em;
+        }
+
+        &:before {
+            content: "• ";
+            color: $theme-color;
+            color: var(--t3);
+            font-size: 125%;
+            vertical-align: -.06em;
+            line-height: 1;
+        }
+
+    }
+
+}
+
+.gray-bullets {
+    margin: 1em 0;
+
+    li {
+        padding-left: .7em;
+    text-indent: -.7em;
+
+        + li {
+            margin-top: 1em;
+        }
+
+        &:before {
+            content: "• ";
+            color: #999;
+            font-size: 125%;
+            vertical-align: -.06em;
+            line-height: 1;
+        }
+
+    }
+
+}
+
+.taxonomy-list {
+
+    ul.colored-bullets {
+        column-count: 2;
+        column-gap: 1em;
+
+        li {
+            flex: none;
+            margin: 0 0 .5em 0;
+        }
+
+    }
+
+    p + ul.colored-bullets {
+        margin-top: -.5em;
+    }
+
+}
+
+.taxonomy-meta { // on taxonomy templates
+    ul.colored-bullets {
+        column-count: 4;
+        column-gap: 1em;
+
+        @media only screen and (max-width: 980px) {
+            column-count: 3;
+        }
+
+        @media only screen and (max-width: 820px) {
+            column-count: 2;
+        }
+
+        @media only screen and (max-width: 600px) {
+            column-count: 1;
+        }
+
+        li {
+            flex: none;
+            margin: 0 0 .5em 0;
+        }
+
+    }
+}

@@ -1,0 +1,138 @@
+.dpportfolio {
+
+    .stage {
+
+        table {
+
+            &.banner-ads {
+                margin: 0 auto;
+                //padding-bottom: 1em;
+                width: 100%;
+
+                + .banner-ads {
+                    border-top: 1px solid #ddd;
+                    margin-top: 2em;
+                    padding-top: 2em;
+                }
+
+                th, td {
+                    padding: .5em;
+                    text-align: left;
+                    vertical-align: top;
+                }
+
+                th {
+                    font-weight: 500;
+                }
+
+                .reduce-height {
+                    th, td {
+                        padding: 0 1em;
+                    }
+                }
+
+                .divider {
+                    padding: 1em .5em;
+
+                    span {
+                        background-color: #ddd;
+                        display: block;
+                        height: 1px;
+                    }
+
+                }
+
+                .presentation-title {
+                    color: $portfolio-nav-bg-color;
+                }
+
+                img {
+                    margin: 0;
+                    max-width: 100%;
+                }
+
+                &.center-images {
+                    img {
+                        margin: 1em auto;
+                    }
+                }
+
+                object {
+                    max-width: 100%;
+                }
+
+                &.skyscrappers {
+                    .column {
+                        width: 220px;
+                    }
+                }
+
+                &.cellpad0 {
+                    th,
+                    td {
+                        padding: 0;
+                    }
+                }
+
+                &.cellpad25 {
+                    th,
+                    td {
+                        padding: .25em;
+                    }
+                }
+
+            }
+
+            &.with-left-descript {
+                width: 100%;
+
+                .text {
+                    text-align: left;
+                }
+                .image {
+                    text-align: center;
+                }
+
+                img {
+                    margin: 0 auto;
+                }
+
+            }
+
+            .banner-ads { // for imvu localized banners
+                margin: 0;
+                padding-bottom: 0;
+                width: auto;
+
+                tr {
+
+                    &:first-of-type { // to keep td from expanding taller unecessarily
+                        //width: 300px;
+                        height: 250px;
+                    }
+
+                    + tr td { // to make 250x250 banner align higher
+                        padding: 0 .5em;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .cisco-mmn-pcn-banners {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            img {
+                margin: .5em;
+            }
+
+        }
+
+    }
+
+}

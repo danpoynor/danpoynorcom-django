@@ -1,0 +1,24 @@
+.notice-bar {
+    font-family: arial, sans-serif;
+    font-size: .8em;
+    margin: 0;
+    background: #f8f5e1;
+    color: #666;
+    padding: 1em;
+    text-align: center;
+    position:relative;
+    //z-index:2050;
+
+    p {
+        margin: 0;
+        + p {
+            margin: .5em 0 0;
+        }
+
+    }
+
+    a {
+        color: #00f;
+    }
+
+}

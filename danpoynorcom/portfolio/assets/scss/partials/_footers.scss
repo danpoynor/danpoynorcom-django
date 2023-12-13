@@ -1,0 +1,117 @@
+.entry-footer { // shows 'edit' link when logged in
+    width: 100%;
+}
+
+body > footer {
+
+    .container {
+        padding: 2em 1em;
+    }
+
+    .badges {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        //
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        a {
+            display: block;
+            height: 60px;
+            //
+            text-indent: -99999em;
+            color: transparent;
+        }
+
+        li {
+            margin: .5em;
+
+            &.illustrator {
+                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
+                background-size: 216px;
+                width: 216px;
+            }
+
+            &.photoshop {
+                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
+                background-size: 216px;
+                width: 216px;
+            }
+
+            &.acrobat {
+                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Acrobat_badge.png) 0 0 no-repeat;
+                background-size: 216px;
+                width: 216px;
+                display: none;
+            }
+
+            &.godaddy-pro {
+                background: url(/wp-content/themes/danpoynor-2017/images/badges/member_badge_light.91388461bbda.svg) 0 0 no-repeat;
+                background-size: 179px;
+                width: 179px;
+                display: none;
+            }
+
+        }
+
+    }
+
+}
+
+.site-info { // copyright
+    color: #999;
+    font-family: verdana, sans-serfif;
+    font-size: x-small;
+    margin-right: -.2em;
+    text-align: center;
+}
+
+.footer-navigation {
+
+    .nav-menu {
+        list-style-type: none;
+        margin: 0 0 1em;
+        padding: 1em 0 0;
+        //
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        li {
+            margin: 0 1em;
+            position: relative;
+
+            @media only screen and (max-width: $header-media-query-break-smallest) {
+                margin: 0 .5em;
+            }
+        }
+
+        a {
+            //color: $text-link-color;
+            display: inline-block;
+            font: normal 100%/1.61803398875 'Oswald', sans-serif;
+            white-space: nowrap;
+            transition: color $transition-speed ease-in-out;
+
+            &:hover {
+             color: $white;
+            }
+
+        }
+
+        .current-menu-item {
+
+            a {
+                color: $white
+            }
+
+            &:hover {
+            }
+
+        }
+
+    }
+
+}

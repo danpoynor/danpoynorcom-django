@@ -1,0 +1,117 @@
+.pagination-filter-bar {
+    background-color: $ui-panel-background-color;
+    background-color: var(--t7);
+    font-size: 0.8125em; // 13 / 16
+    margin: 0 0 1em;
+    padding: 0 .25em;
+    min-height: 3.75em; // need min-height for when there's no page numbers to expand the height
+    width: 100%;
+    //
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media only screen and (max-width: 640px) {
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: .5em;
+    }
+
+}
+
+.total-items {
+    margin-right: auto;
+    p {
+        color: $headline-text-color;
+        color: var(--t6);
+        margin: 0 1em 0 1em;
+        white-space: nowrap;
+    }
+
+    @media only screen and (max-width: 640px) {
+        margin: auto;
+    }
+
+}
+
+.items-sort-and-limit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    margin: 0 .5em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-left: 1em;
+        margin-right: .25em; // the .page-numbers have a .25em left/right margin already
+        padding: 0;
+
+        @media only screen and (max-width: 640px) {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 460px) {
+            display: none;
+        }
+
+    }
+
+    .page-numbers {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        a.page-numbers {
+            //background-color: $white;
+            cursor: pointer;
+            display: block;
+            margin: 0 .1em;
+            padding: .25em 1em;
+
+            &:hover {
+                background-color: $text-link-color;
+                background-color: var(--t11);
+            }
+
+        }
+
+        li:last-of-type {
+            a {
+                margin-right: 0;
+            }
+        }
+
+        span {
+            display: block;
+        }
+
+        .current {
+            background-color: $background-color;
+            background-color: var(--t4);
+            color: $body-text-color;
+            margin: 0 .25em;
+            padding: .25em 1em;
+        }
+        .dots {
+            padding: .75em .25em 0;
+        }
+
+        .prev {
+        }
+
+        .next {
+        }
+
+    }
+
+
+}

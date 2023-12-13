@@ -1,0 +1,172 @@
+main.home-page {
+  margin: 0;
+  padding: 0;
+
+  .welcome {
+    background-image: url(/wp-content/themes/danpoynor-2017/images/photos/dan-poynor-photo-202001.jpg);
+    //background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    @media only screen and (max-width: 960px) {
+      background-position: calc(100% - -16em) 0;
+    }
+
+    @media only screen and (max-width: 830px) {
+      background-position: calc(100% - -20em) 0;
+    }
+
+    @media only screen and (max-width: 780px) {
+      background-position: calc(100% - -22em) 0;
+    }
+
+    @media only screen and (max-width: 680px) {
+      background-image: none;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .text {
+      border: 1em solid transparent;
+      max-width: 580px;
+      margin: 2em 1em 3em;
+
+      @media only screen and (max-width: 960px) {
+        max-width: 460px;
+      }
+
+      @media only screen and (max-width: 680px) {
+        border: none;
+        margin: 1em 0;
+        max-width: 100%;
+      }
+
+    }
+
+    .header {
+      background-image: linear-gradient(45deg, white 0%, white 92%, transparent 92%, transparent 100%); // for MS Edge
+      background-image: linear-gradient(45deg, var(--t7, white) 0%, var(--t7, white) 92%, transparent 92%, transparent 100%);
+      padding: 1.5em 1.5em 1em;
+
+      @media only screen and (max-width: 680px) {
+        padding: 1em 1em .5em;
+      }
+
+    }
+
+    .body {
+      background-color: #e6f9fb; // for MS Edge
+      background-color: var(--t13);
+      border: 1em solid $white;
+      border: 1em solid var(--t7);
+      border-top: none;
+      padding: 1em 2em .5em;
+
+      @media only screen and (max-width: 680px) {
+        padding: 1em;
+      }
+
+    }
+
+    h1 {
+      color: $headline-text-color;
+      color: var(--t6);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 42px;
+      letter-spacing: .2em;
+      line-height: 1.2;
+      margin: 0;
+      text-align: center;
+      column-span: all;
+
+      @media only screen and (max-width: 470px) {
+        line-height: 1;
+      }
+
+      span {
+        display: block;
+        font-size: 27px;
+        font-weight: 400;
+        letter-spacing: .07em;
+        margin: 0;
+        padding: 0 0 0 1em;
+        text-transform: none;
+
+        &.nowrap {
+          display: inline-block;
+          padding: 0;
+        }
+
+      }
+    }
+
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    p {
+      color: $body-text-color;
+      color: var(--t5);
+      font-size: 1.125em; // 18 / 16
+      margin: 0 0 .5em 0;
+      width: 100%;
+
+      &.cta {
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+    }
+
+    .btn {
+      background-color: $text-link-color;
+      background-color: var(--t3);
+      color: $white;
+      color: var(--t7);
+      display: inline-block;
+      padding: .5em 1em;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      span {
+        z-index: 3;
+      }
+
+      &::before {
+        border: 0 solid $text-link-color;
+        border: 0 solid var(--t7);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: all $transition-speed ease-out;
+      }
+
+      &:hover {
+        color: $white;
+        color: var(--t3);
+
+        &::before {
+          border: 1.55em solid $text-link-color;
+          border: 1.55em solid var(--t7);
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,61 @@
+main {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+
+        }
+
+        nav {
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                //
+                display: flex;
+                justify-content: flex-start;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+
+                    + li {
+                        margin-left: 1em;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    button {
+        background: #ddd;
+        border: none;
+        font-size: .875em;
+        padding: .25em .5em;
+        outline: none;
+
+        &.on {
+            background: $white;
+        }
+
+    }
+
+    .layout-wrapper {
+        position: relative;
+
+        .list-view {
+            display: none;
+        }
+
+
+    }
+
+}

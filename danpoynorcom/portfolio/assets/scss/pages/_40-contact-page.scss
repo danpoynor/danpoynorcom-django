@@ -1,0 +1,45 @@
+main.contact-page {
+	padding-bottom: 3em;
+
+	.content  {
+		.container {
+		}
+	}
+	
+	section.intro {
+		padding-bottom: 1em;
+	}
+
+	.contact-info {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		//padding: 1em;
+		margin: 0 -.5em;
+
+		div {
+			background-color: $ui-panel-background-color;
+			background-color: var(--t7);
+			margin: .5em;
+			padding: 2em;
+			flex: 1 1 22%;
+			text-align: center;
+			min-width: 254px;
+		}
+		
+		p {
+			margin-bottom: 0;
+		}
+
+		.email {
+		}
+		
+		.twitter {
+		}
+	
+		.street-address {
+		}
+
+	}
+
+}

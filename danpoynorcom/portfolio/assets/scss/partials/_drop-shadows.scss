@@ -1,0 +1,31 @@
+#portfolio-container li,
+.list-view .thumbnail {
+
+    transition: box-shadow $transition-speed ease-in-out;
+
+    // deep shadows
+    & {
+        box-shadow: 0px 0px 32px rgba(0,0,0,.22);
+        &:hover {
+            box-shadow: 0px 8px 56px rgba(0,0,0,.26);
+        }
+    }
+
+    // medium shadows
+    & {
+        //box-shadow: 0px 8px 12px rgba(0,0,0,.1);
+        &:hover {
+            //box-shadow: 0px 14px 22px 2px rgba(0,0,0,.09);
+        }
+    }
+
+    // shallow shadows
+    & {
+        //box-shadow: 0 2px 6px rgba(black, 0.3);
+        &:hover {
+            //box-shadow: 0 6px 14px rgba(black, 0.35);
+        }
+    }
+
+}
+

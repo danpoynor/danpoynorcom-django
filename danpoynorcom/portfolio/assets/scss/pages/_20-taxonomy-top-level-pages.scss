@@ -1,0 +1,74 @@
+// used on top level taxonomy pages that list all taxonomy categories
+
+.taxonomy-categories {
+	padding-bottom: 2em;
+
+	.taxonomy-list {
+		width: 100%;
+		//
+		column-gap: 2em;
+		column-width: 220px;
+
+		li {
+			margin-bottom: .5em;
+		}
+		
+		a {
+			&:hover {
+				filter: brightness($hover-brightness-amount);
+			}
+		}
+
+	}
+
+}
+
+.industries-page,
+.platforms-page,
+.roles-page {
+
+	.taxonomy-highlights {
+	
+		.container {
+			padding: 0;
+		}
+	
+	}
+
+}
+
+.roles-page { // rols page has long taxonomy ("job type")descriptions
+
+	.taxonomy-categories {
+
+		.taxonomy-list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			
+			li {
+				flex: 0 1 49%;
+				
+				@media only screen and (max-width: 1020px) {
+					flex: 1 1 100%;
+				}
+				
+			}
+			
+			h3 {
+				margin: 1em 0 .33em;
+			}
+
+			p {
+				margin: 0 0 1em;
+			}
+		
+		}
+
+	}
+
+}

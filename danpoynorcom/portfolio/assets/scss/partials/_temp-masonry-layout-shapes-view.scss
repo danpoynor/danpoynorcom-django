@@ -1,0 +1,178 @@
+@keyframes scaleUp {
+    0% { }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleDownAndHide {
+    0% { }
+    100% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+}
+@keyframes loaderSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes fadeIn { 
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+$portfolio-item-max-width: 64px;
+
+#portfolio-container.shapes-view {
+    list-style-type: none;
+    margin: -1em auto 4em; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
+    padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
+    opacity: 1;
+    transition: opacity $transition-speed ease 800ms; // enables fade in
+    perspective: 1300px;
+
+    .portfolio-taxonomy-term & {
+        margin: -1em .2em 4em;
+    }
+
+    li.shown,
+    html:not(.js) & li, // test to make sure modernizr added .js class to opening html tag
+    .no-js & li,
+    .no-cssanimations & li {
+        opacity: 1;
+    }
+
+    li {
+        width: $portfolio-item-max-width;
+        background: $theme-color;
+        margin: .1em;
+        padding: 0;
+        transform-style: preserve-3d;
+        opacity: 1;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+
+        img {
+            max-width: $portfolio-item-max-width;
+            opacity: 0;
+        }
+
+        &:hover {
+
+            img {
+                opacity: 1;
+            }
+
+        }
+
+        & {
+            box-shadow: none;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+        &.animate {
+            transform: scale(0.6);
+            animation: scaleUp 0.66s ease-in-out forwards;
+        }
+
+        &.show {
+            opacity: 1;
+            li {
+                //animation: fadeIn 0.66s ease-in-out 0s forwards; // needs to be 0s so Firefox doesn't show briefly then hide and fadein.
+            }
+        }
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        transition-duration: .0s;
+        transition: all $transition-speed ease-in-out;
+        backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
+        //
+        overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    img {
+        width: $width-portfolio;
+        margin-bottom: -1px;
+        padding: 0;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+        transition: opacity $transition-speed ease-in-out;
+    }
+
+    figcaption {
+        font-size: .8125em; // 13 / 16
+        margin: 0;
+        position: relative;
+        width: 100%
+    }
+
+    .title {
+        background-color: $portfolio-nav-bg-color;
+        margin: 0;
+        padding: .95em 1.1em;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+    }
+
+    .sub-title {
+        background-color: $primary-500;
+        margin: 0;
+        padding: .75em .85em .75em;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+    }
+
+    .title.sub-title {
+    }
+
+    .text-wrapper {
+        color: $portfolio-nav-bg-color;
+        display: block;
+        opacity: 0;
+        padding: .75em 1em;
+        position: absolute;
+        width: 100%;
+        transition: opacity $transition-speed ease-in-out;
+
+        p {
+            margin: 0;
+            + p {
+                margin-top: .5em;
+            }
+        }
+
+        .description {
+        }
+
+        .year {
+        }
+
+        .click-to-view {
+            display: block;
+        }
+
+    }
+
+}
+
+.project-overview-page {
+
+    #portfolio-container {
+
+        li {
+            width: $width-project-overview;
+
+            figure,
+            img,
+            .title {
+                width: $width-project-overview;
+            }
+
+        }
+
+    }
+
+}

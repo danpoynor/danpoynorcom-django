@@ -1,0 +1,16 @@
+.btn {
+    background-color: $text-link-color;
+    //border: 1px solid $white;
+    color: $white;
+    display: inline-block;
+    padding: .75em 1.5em;
+    transition: all $transition-speed ease-in-out;
+    box-shadow: rgba(black, 0.3) 0 2px 6px;
+
+    &:hover {
+        background-color: $white;
+        color: $text-link-color;
+        box-shadow: rgba(black, 0.3) 0 4px 8px;
+    }
+
+}

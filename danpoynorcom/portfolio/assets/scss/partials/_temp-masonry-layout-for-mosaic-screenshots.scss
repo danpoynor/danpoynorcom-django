@@ -1,0 +1,222 @@
+@keyframes scaleUp {
+    0% { }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleDownAndHide {
+    0% { }
+    100% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+}
+@keyframes loaderSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes fadeIn { 
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+$width-portfolio: 120px;
+
+main > .container {
+    padding: 0;
+    max-width: none;
+}
+
+#loading-container {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    transform-style: preserve-3d;
+
+    .loading-indicator {
+    border: 6px solid $circle-color; //
+    border-top: 6px solid $circle-hightlight-color; //
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    animation: loaderSpin 0.66s linear infinite;
+    }
+
+    &.hideme {
+        animation: scaleDownAndHide 0.66s ease-in-out forwards;
+    }
+
+}
+
+#portfolio-container {
+    list-style-type: none;
+    margin: -1em auto 4em; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
+    padding: .5em .5em 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
+    opacity: 1;
+    transition: opacity $transition-speed ease 800ms; // enables fade in
+    //perspective: 1300px;
+    background: #00bcd4;
+
+    .portfolio-taxonomy-term & {
+        margin: -1em .2em 4em;
+    }
+
+    .shown,
+    html:not(.js) & li, // test to make sure modernizr added .js class to opening html tag
+    .no-js & li,
+    .no-cssanimations & li {
+        opacity: 1;
+    }
+
+    li {
+        width: $width-portfolio;
+        background: $white;
+        margin: .33em;
+        padding: 0;
+        transform-style: preserve-3d;
+        opacity: 1;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+
+        // deep shadows
+        & {
+            //box-shadow: 0px 24px 32px rgba(0,0,0,.08);
+            &:hover {
+                //box-shadow: 0px 48px 56px rgba(0,0,0,.16);
+
+                figcaption {
+                    display: block;
+                }
+
+            }
+        }
+
+        // shallow shadows
+//		& {
+//			box-shadow: rgba(black, 0.3) 0 2px 6px;
+//			&:hover {
+//				box-shadow: rgba(black, 0.35) 0 6px 14px;
+//			}
+//		}
+
+        &.animate {
+            transform: scale(0.6);
+            animation: scaleUp 0.66s ease-in-out forwards;
+        }
+
+        &.show {
+            opacity: 1;
+            li {
+                animation: fadeIn 0.66s ease-in-out 0s forwards; // needs to be 0s so Firefox doesn't show briefly then hide and fadein.
+            }
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+
+        }
+
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        transition-duration: .0s;
+        transition: all $transition-speed ease-in-out;
+        backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
+        //
+        overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    img {
+        width: $width-portfolio;
+        margin-bottom: -1px;
+        padding: 0;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+        transition: opacity $transition-speed ease-in-out;
+    }
+
+    figcaption {
+        font-size: .65em;
+        line-height: 1.3;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        display: none;
+    }
+
+    .title {
+        background-color: $portfolio-nav-bg-color;
+        margin: 0;
+        padding: .95em 1.1em;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+    }
+
+    .sub-title {
+        background-color: $primary-500;
+        margin: 0;
+        padding: .75em .85em .75em;
+        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+    }
+
+    .title.sub-title {
+    }
+
+    div.text-wrapper {
+        color: $portfolio-nav-bg-color;
+        display: block;
+        opacity: 0;
+        padding: .75em 1em;
+        position: absolute;
+        width: 100%;
+        transition: opacity $transition-speed ease-in-out;
+
+        p {
+            margin: 0;
+            + p {
+                margin-top: .5em;
+            }
+        }
+
+        .description {
+        }
+
+        .year {
+        }
+
+        .click-to-view {
+            display: block;
+        }
+
+    }
+
+}
+
+.project-overview-pageX {
+
+    #portfolio-container {
+
+        li {
+            width: $width-project-overview;
+
+            figure,
+            img,
+            .title {
+                width: $width-project-overview;
+            }
+
+        }
+
+    }
+
+}

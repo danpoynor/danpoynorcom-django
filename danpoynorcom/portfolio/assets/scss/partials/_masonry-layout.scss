@@ -1,0 +1,201 @@
+#loading-container {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform-style: preserve-3d;
+
+  .loading-indicator {
+    border: 6px solid $circle-color; //
+    border-top: 6px solid $circle-hightlight-color; //
+    border-top: 6px solid var(--t3);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    animation: loaderSpin 0.66s linear infinite;
+  }
+
+  &.hideme {
+    animation: scaleDownAndHide 0.66s ease-in-out forwards;
+  }
+
+}
+
+#portfolio-container {
+  list-style-type: none;
+  margin: -1em auto 4em !important; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
+  padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
+  // opacity: 0;
+  transition: opacity $transition-speed ease 800ms; // enables fade in
+  perspective: 1300px;
+
+  main.portfolio-taxonomy-term & {
+    margin: -1em .2em 1em;
+  }
+
+  li.shown,
+  html:not(.js) & li,
+  // test to make sure modernizr added .js class to opening html tag
+  .no-js & li,
+  .no-cssanimations & li {
+    opacity: 1;
+  }
+
+  li {
+    width: $width-portfolio;
+    background: $white;
+    margin: .85em;
+    padding: 0;
+    transform-style: preserve-3d;
+    opacity: 0;
+    backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+
+    &:hover {
+
+      .title {
+        background-color: $text-link-color;
+        background-color: $theme-color;
+        background-color: var(--t3);
+      }
+
+      .sub-title {
+        background-color: transparentize($text-link-color, .25);
+        background-color: var(--t12);
+      }
+
+      div.text-wrapper {
+        opacity: 1;
+      }
+
+      img {
+        opacity: 0;
+      }
+
+    }
+
+    &.animate {
+      transform: scale(0.6);
+      animation: scaleUp 0.66s ease-in-out forwards;
+    }
+
+    &.show {
+      opacity: 1;
+
+      li {
+        animation: fadeIn 0.66s ease-in-out 0s forwards; // needs to be 0s so Firefox doesn't show briefly then hide and fadein.
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+
+    }
+
+  }
+
+  figure {
+    margin: 0 0 -1px 0;
+    padding: 0;
+    transition-duration: .0s;
+    transition: all $transition-speed ease-in-out;
+    backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
+    //
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  img {
+    width: $width-portfolio;
+    padding: 0;
+    backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+    transition: opacity $transition-speed ease-in-out;
+  }
+
+  figcaption {
+    font-size: .8125em; // 13 / 16
+    margin: 0;
+    position: relative;
+    width: 100%
+  }
+
+  .title,
+  .sub-title {
+    //line-height: 1.38196601125;
+    margin: 0;
+    padding: .9em 1.2em 1.1em;
+    backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
+  }
+
+
+  .title {
+    background-color: $portfolio-nav-bg-color;
+  }
+
+  .sub-title {
+    background-color: $primary-500;
+    padding: .8em 1.2em 1em; // because sometimes sub-titles look like they're sinking to me for some reason
+  }
+
+  .title.sub-title {}
+
+  .text-wrapper {
+    color: $body-text-color;
+    //color: var(--t5);
+    display: block;
+    opacity: 0;
+    padding: .75em 1em;
+    position: absolute;
+    width: 100%;
+    transition: opacity $transition-speed ease-in-out;
+
+    p {
+      margin: 0;
+
+      +p {
+        margin-top: .5em;
+      }
+    }
+
+    .description {
+      span {
+        color: $headline-text-color;
+        //color: var(--t6);
+      }
+    }
+
+    .year {}
+
+    .click-to-view {
+      color: $text-link-color;
+      color: var(--t3);
+      display: block;
+    }
+
+  }
+
+}
+
+.project-overview-page {
+
+  #portfolio-container {
+
+    li {
+      width: $width-project-overview;
+
+      figure,
+      img,
+      .title {
+        width: $width-project-overview;
+      }
+
+    }
+
+  }
+
+}

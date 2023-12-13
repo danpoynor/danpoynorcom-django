@@ -1,0 +1,35 @@
+$header-media-query-break:						720.1px;
+$header-media-query-break-smaller:		640.1px;
+$header-media-query-break-smallest: 	420.1px;
+
+$portfolio-sub-nav-break-larger:			940.1px;
+$portfolio-sub-nav-break-smaller:			720.1px;
+
+$iphone-portrait-width:			320.1px;
+$iphone-landscape-width:		736.1px; // iphone 6+ landscape
+
+// 320x480 for iPhone Portrait mode
+// 480x320 for iPhone Landscape
+
+// 768x1024 for iPad Portrait
+// 1024x768 for iPad Landscape and Desktop
+
+
+// iPhone 6+ Landscape
+//@media only screen 
+//    and (min-device-width : 414px) 
+//    and (max-device-width : 736px) 
+//    and (orientation : landscape) 
+//    and (-webkit-min-device-pixel-ratio : 3) 
+//{ }
+
+// iPhone 6+ Portrait
+//@media only screen 
+//    and (min-device-width : 414px) 
+//    and (max-device-width : 736px)
+//    and (device-width : 414px)
+//    and (device-height : 736px)
+//    and (orientation : portrait) 
+//    and (-webkit-min-device-pixel-ratio : 3) 
+//    and (-webkit-device-pixel-ratio : 3)
+//{ }

@@ -1,0 +1,28 @@
+.color-bullets {
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0 0 0 .25em;
+
+    li {
+        padding-left: 1em;
+        text-indent: -.7em;
+
+        + li {
+            margin-top: .5em;
+        }
+
+        &:before {
+            content: "• ";
+            color: $theme-color;
+            font-size: 125%;
+            vertical-align: -.06em;
+            line-height: 1;
+        }
+
+//		&.no-bullet:before {
+//			content: "\00a0";
+//		}
+
+    }
+
+}

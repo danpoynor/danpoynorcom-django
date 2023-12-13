@@ -1,0 +1,132 @@
+.skip-link {
+  display: none;
+}
+
+body>header {
+  color: $white;
+  width: 100%;
+
+  .container {
+    position: relative;
+    overflow: visible;
+    //
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $header-media-query-break) {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .site-branding {
+        display: block;
+        padding: 1em 0 0;
+        text-align: center;
+      }
+
+      .site-description {
+        margin: 1em auto 0;
+      }
+
+      .nav-menu {
+        padding: 0;
+      }
+
+    }
+
+    @media only screen and (max-width: $header-media-query-break-smaller) {
+
+      .nav-menu {
+        a {
+          padding: .5em .5em .75em;
+        }
+      }
+
+    }
+
+  }
+
+  .site-branding {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+}
+
+.prev-next-taxonomy-term-navigation+header {
+  margin-top: 1.5em;
+}
+
+header nav {
+
+  ul {
+    list-style-type: none;
+    font: normal 1.3125em/1 'Oswald', sans-serif; // 21 / 16
+    margin: 0;
+    padding: 1.175em 0 0;
+    //
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    >li {
+      margin: 0;
+      position: relative;
+
+      >a {
+        color: $theme-color;
+        color: var(--t3);
+        display: inline-block;
+        padding: .5em .75em .75em;
+        position: relative;
+        white-space: nowrap;
+        transition: color $transition-speed ease-in-out;
+
+        &:hover {
+          color: $white;
+          ;
+        }
+
+      }
+
+      // make top level nav link look selected on sub pages
+      &.current-page-ancestor {
+        // we must be on a sub page
+
+        >a {
+          color: $white;
+        }
+
+      }
+
+    }
+
+    .current-menu-item {
+
+      a {
+        color: $white;
+      }
+
+    }
+
+  }
+
+  .resume-tab {
+    display: none;
+  }
+
+}
+
+// make sure portfolio sub sub pages still show the top nav link as selected
+.portfolio-sub-page {
+
+  li.menu-item-1041 a {
+    color: $white;
+  }
+
+}

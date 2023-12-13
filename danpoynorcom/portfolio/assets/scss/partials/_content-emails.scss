@@ -1,0 +1,76 @@
+article {
+
+    .stage {
+
+        .email-demo {
+            border-collapse: collapse;
+            margin: 0 auto;
+
+            tbody,
+            td {
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            //text-align: left;
+            }
+
+            img {
+                display: inline-block;
+            }
+
+        }
+
+        .email-demo-598 {
+            width: 598px;
+        }
+
+        .imvu-email {
+            background: white;
+            width: 600px;
+
+            td {
+                font-family: arial, helvetica, sans-serif;
+                text-align:left;
+                vertical-align: top;
+            }
+
+        }
+
+        .imvu-header {
+            background: black;
+            color: white;
+            margin-top: 1em;
+
+            td {
+                padding: .5em .25em;
+            }
+
+            h1 {
+                font-size: 18px;
+                margin: 0 0 0 10px;
+                padding: 0;
+                font-weight: normal;
+            }
+
+        }
+
+        .imvu-legal {
+            color: black;
+            font-family: verdana, arial, helvetica, sans-serif;
+            font-size: .9em;
+
+            td {
+                padding: 1em;
+            }
+
+            &.imvu-legal2 {
+                color: #666;
+                font-size: 9px;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+}

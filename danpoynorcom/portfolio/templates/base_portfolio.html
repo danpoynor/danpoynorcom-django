@@ -9,18 +9,16 @@
         My Site
       {% endblock %}
     </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
   </head>
   <body>
     {% include 'partials/_header.html' %}
-    {% include 'partials/_subnav-portfolio.html' %}
+    <div class="wrapper">
+      {% include 'partials/_subnav-portfolio.html' %}
+      {% block content %}
 
-    <main>
-      <div class="container">
-        {% block content %}
-
-        {% endblock %}
-      </div>
-    </main>
-    {% include 'partials/_footer.html' %}
+      {% endblock %}
+      {% include 'partials/_footer.html' %}
+    </div>
   </body>
 </html>

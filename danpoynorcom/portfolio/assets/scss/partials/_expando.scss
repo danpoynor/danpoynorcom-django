@@ -1,0 +1,122 @@
+.expando {
+    display: none; // initially hide expandos and use jQuery to make them visiable after they've been opened if needed.
+    background-color: $ui-panel-background-color;
+    background-color: var(--t7);
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::after {
+        border: .75em solid transparent;
+        border-top-color: transparentize(black, .86);
+        border-left-color: transparentize(black, .86);
+        content: '';
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        right: 0px;
+        bottom: -1.5em;
+    }
+
+    + .expando {
+        margin: 1em 0 0 0;
+    }
+
+}
+
+.expando-content {
+    display: none;
+    width: 100%;
+}
+
+.expando-content-wrapper {
+    margin: -.25em 0 0;
+    padding: 0 1em 1em;
+
+    a {
+        &:hover {
+            filter: brightness($hover-brightness-amount);
+        }
+    }
+
+}
+
+.project-additional-samples {
+    display: none;
+}
+ 
+html:not(.js),
+.no-js {
+ .expando-content {
+        display: block;
+    }
+    .expando,
+    .project-additional-samples {
+        display: block;
+    }
+}
+
+.expando-trigger {
+    cursor: pointer;
+    padding: .75em 1em;
+    &::before {
+        color: $text-link-color;
+        color: var(--t3);
+        content: "\25B6\FE0E";
+        display: inline-block;
+        font-size: .7em;
+        margin-right: .5em;
+        transition: all $transition-speed  ease-in-out;;
+        vertical-align: 12%;
+    }
+
+    &:hover {
+        &::before {
+            filter: brightness($hover-brightness-amount);
+        }
+    }
+
+}
+
+#tc {
+    .expando-trigger {
+        &::before {
+            content: none;
+        }
+        &::after {
+            color: $text-link-color;
+            color: var(--t3);
+            content: "\25bc\FE0E";
+            display: inline-block;
+            font-size: .7em;
+            margin-left: .5em;
+            transition: all $transition-speed  ease-in-out;;
+            vertical-align: 12%;
+            position: absolute;
+            right: 1em;
+        }
+    }
+
+    &.expanded {
+        .expando-trigger {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+
+.expando.expanded {
+
+    .expando-trigger {
+        &::before {
+            transform: rotate(90deg);
+        }
+        &:hover {
+            &::before {
+                //transform: rotate(45deg);
+            }
+        }
+    }
+
+}

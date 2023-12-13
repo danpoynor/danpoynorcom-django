@@ -1,0 +1,89 @@
+.capabilites {
+    background: $white;
+    background: var(--t7);
+
+    background-color: #e6f9fb; // for MS Edge
+    //background-color: desaturate(lighten($theme-color, 8%), 9%);
+    background-color: var(--t13);
+
+    .container {
+        display: flex;
+        font: normal 400 1.5em/1.4 'Bitter', sans-serif; // 24 / 16
+        //
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .strategy,
+    .design,
+    .development {
+        color: $headline-text-color;
+        color: var(--t6);
+        flex: 1;
+        margin: .5em .25em;
+        padding: .5em 0;
+        text-align: center;
+        opacity: 0;
+        position: relative;
+        animation: fadeinfrombottom .6s;
+        animation-fill-mode: forwards;
+    }
+
+    .strategy {
+        animation-delay: 0.2s;
+    }
+
+    .design {
+        animation-delay: 0.5s;
+    }
+
+    .development {
+        animation-delay: 0.8s;
+    }
+
+    .plus {
+        color: $theme-color;
+        color: var(--t3);
+        font-size: 1.4em;
+        font-weight: 700;
+        margin: .5em .25em;
+        padding: .5em 0;
+        text-align: center;
+    }
+
+    p {
+        display: inline-block;
+        margin: 0 1em; // for the capabilites sections only perhaps
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 810px) {
+
+        .container {
+            flex-direction: column;
+            padding: 1.5em 1em 1.75em;
+        }
+
+        .strategy,
+        .design,
+        .development,
+        .plus {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        br {
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 430px) {
+        br {
+            display: inherit;
+        }
+    }
+
+}

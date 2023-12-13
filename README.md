@@ -137,3 +137,26 @@ NOTE: When importing the project_items data a lot of debugging info will scroll 
 NOTE: This will import the individual models but not the associations between the models.
 
 </details>
+
+## Using SASS in Django
+
+<details>
+  <summary>Click to expand</summary>
+
+In this project command line SASS is used to generate the CSS.
+
+While developing, to compile the SASS files from `assets/scss/index.scss` into the CSS file `static/css/styles.css`, `cd` into the `portfolio` app directory and run SASS watch command using:
+
+```sh
+sass --watch assets/scss/index.scss:static/css/styles.css
+```
+
+You will have to refresh the browser to see the changes.
+
+When ready to deploy, run the SASS build command using:
+
+```sh
+sass assets/scss/index.scss:static/css/styles.css --style compressed
+```
+
+</details>
