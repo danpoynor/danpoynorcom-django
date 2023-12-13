@@ -26,7 +26,7 @@ class Command(BaseCommand):
                 defaults={'name': name, 'description': description},
             )
             if created:
-                print(f"Created new {model.__name__} instance with slug '{slug}'")
+                # print(f"Created new {model.__name__} instance with slug '{slug}'")
                 instance.save()
             return instance
 
@@ -47,7 +47,7 @@ class Command(BaseCommand):
                 term_description_elem = term.find('wp:term_description', namespaces)
                 description = term_description_elem.text if term_description_elem is not None else ''
 
-                print(f"Processing term with slug '{slug}'")
+                # print(f"Processing term with slug '{slug}'")
 
                 # Depending on the taxonomy, get or create a new instance of the appropriate model
                 try:
@@ -75,7 +75,7 @@ class Command(BaseCommand):
             post_name_elem = item.find('wp:post_name', namespaces)
             post_name = post_name_elem.text if post_name_elem is not None else ''
 
-            print(f"Processing item with post name '{post_name}'")
+            # print(f"Processing item with post name '{post_name}'")
 
             title_elem = item.find('title')
             title = title_elem.text if title_elem is not None else ''
@@ -83,6 +83,17 @@ class Command(BaseCommand):
             description_elem = item.find('description')
             description = description_elem.text if description_elem is not None else ''
 
+            # Ultimately, we want to get the 'content:encoded' element, but using this code does not work for some reason:
+            # content_encoded_elem = item.find('content:encoded', namespaces)
+            # The 'content:encoded' element is in a namespace, but the namespace might not be defined in the XML file itself.
+            # Therefore, we use a wildcard '*' for the namespace to match any 'encoded' element, regardless of its namespace.
+            # This will ensure that we find the 'encoded' element even if its namespace is not recognized correctly.
+            content_encoded_elem = item.find('{*}encoded')
+            if content_encoded_elem is not None:
+                content_encoded = content_encoded_elem.text
+            else:
+                content_encoded = ''
+                print(f"Did not find content:encoded element for '{title}'")
 
             # Try to get the item order from the wp:menu_order element
             item_order_elem = item.find('wp:menu_order', namespaces)
@@ -93,7 +104,7 @@ class Command(BaseCommand):
             project_category_elem = item.find(".//category[@domain='project']", namespaces)
             if project_category_elem is not None:
                 project_slug = project_category_elem.get('nicename')
-                print(f"Fetching Project with slug '{project_slug}'")
+                # print(f"Fetching Project with slug '{project_slug}'")
                 # Try to get the Project instance with the slug
                 project = Project.objects.get(slug=project_slug)
 
@@ -103,7 +114,7 @@ class Command(BaseCommand):
                     category_elems = item.findall(f".//category[@domain='{taxonomy}']", namespaces)
                     for category_elem in category_elems:
                         category_slug = category_elem.get('nicename')
-                        print(f"Fetching {taxonomy.capitalize()} with slug '{category_slug}'")
+                        # print(f"Fetching {taxonomy.capitalize()} with slug '{category_slug}'")
                         # Try to get the model instance with the slug
                         if taxonomy == 'platform':
                             # If the taxonomy is 'platform', get the MediaType instance
@@ -123,7 +134,7 @@ class Command(BaseCommand):
                 year_elem = item.find(".//wp:postmeta[wp:meta_key='_project_year']/wp:meta_value", namespaces)
                 if year_elem is not None:
                     year = year_elem.text
-                    print(f"Setting year to '{year}'")
+                    # print(f"Setting year to '{year}'")
                     # Set the year of the project item
                     project.year = year
 
@@ -145,11 +156,12 @@ class Command(BaseCommand):
                     'name': title,
                     'description': description,
                     'html_content': content_encoded,
+                    'item_order': item_order,
                 },
             )
 
             if created:
                 project_item.save()
 
-            if not error_occurred:
-                print('Data imported successfully.')
+        if not error_occurred:
+            print('Data imported successfully.')
