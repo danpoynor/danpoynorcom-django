@@ -83,8 +83,10 @@ class Command(BaseCommand):
             description_elem = item.find('description')
             description = description_elem.text if description_elem is not None else ''
 
-            content_encoded_elem = item.find('content:encoded')
-            content_encoded = content_encoded_elem.text if content_encoded_elem is not None else ''
+
+            # Try to get the item order from the wp:menu_order element
+            item_order_elem = item.find('wp:menu_order', namespaces)
+            item_order = int(item_order_elem.text) if item_order_elem is not None else 0
 
             # Find the project category for the item
             # Try to get the Project instance with this slug

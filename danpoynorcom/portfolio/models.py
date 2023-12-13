@@ -166,6 +166,7 @@ class ProjectItem(models.Model):
     description = models.TextField(help_text="Enter the project item description", blank=True, null=True)
     html_content = models.TextField(blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
+    item_order = models.IntegerField(help_text="Enter the project item order", blank=True, null=True, validators=[MinValueValidator(0)])
     image_sm = models.URLField(max_length=200, help_text="Enter the URL of the small image", blank=True, null=True, validators=[URLValidator()])
     image_md = models.URLField(max_length=200, help_text="Enter the URL of the medium image", blank=True, null=True, validators=[URLValidator()])
     image_lg = models.URLField(max_length=200, help_text="Enter the URL of the large image", blank=True, null=True, validators=[URLValidator()])
