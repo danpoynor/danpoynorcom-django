@@ -160,3 +160,79 @@ sass assets/scss/index.scss:static/css/styles.css --style compressed
 ```
 
 </details>
+
+---
+
+## PIP Notes
+
+<details>
+  <summary>Click to expand</summary>
+
+### Uninstall a package
+
+```sh
+pip uninstall <package_name>
+```
+
+### List installed packages
+
+```sh
+pip list
+```
+
+### List outdated packages
+
+```sh
+pip list --outdated
+```
+
+### Upgrade a package
+
+```sh
+pip install --upgrade <package_name>
+```
+
+### Install a specific version of a package
+
+```sh
+pip install <package_name>==<version_number>
+```
+
+### Install a package from a requirements file
+
+```sh
+pip install -r requirements.txt
+```
+
+### Create a requirements file
+
+```sh
+pip freeze > requirements.txt
+```
+
+</details>
+
+---
+
+### Notes on Exporting Static Files
+
+<details>
+  <summary>Click to expand</summary>
+
+### Package Options for Exporting Static Files from Django
+
+#### Static Files
+
+- [The staticfiles app](https://docs.djangoproject.com/en/5.0/ref/contrib/staticfiles/)
+- [How to manage static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/5.0/howto/static-files/)
+- - [Deploying static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+
+#### Exporting Page
+
+- [django-compressor](https://django-compressor.readthedocs.io/en/stable/), [django-compressor on GitHub](https://github.com/django-compressor/django-compressor)
+- [django-pipeline](https://django-pipeline.readthedocs.io/en/latest/), [django-pipeline on GitHub](https://github.com/jazzband/django-pipeline)
+- [django-bakery](https://django-bakery.readthedocs.io/en/latest/), [django-bakery on GitHub](https://github.com/palewire/django-bakery)
+- [django-static-precompiler](https://django-static-precompiler.readthedocs.io/en/stable/), [django-static-precompiler on GitHub](https://github.com/andreyfedoseev/django-static-precompiler)
+- [django-staticfiles](https://docs.djangoproject.com/en/3.1/ref/contrib/staticfiles/)
+
+</details>
