@@ -21,4 +21,5 @@ urlpatterns = [
     path('portfolio/projects/<slug:slug>/', views.ProjectItemsView.as_view(), name='project'),
     path('portfolio/project-details/<slug:slug>/', views.ProjectDetailsView.as_view(), name='project_detail'),
     path("__debug__/", include("debug_toolbar.urls")),
+    path("pages/", include("django.contrib.flatpages.urls")),
 ]
