@@ -51,6 +51,9 @@ class Industry(models.Model):
     def __str__(self):
         return self.name
 
+    def get_total_project_items(self):
+        return sum(project.items.count() for project in self.projects.all())
+
     def get_absolute_url(self):
         return reverse('industry_detail', args=[str(self.slug)])
 
@@ -73,6 +76,9 @@ class Market(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_total_project_items(self):
+        return sum(project.items.count() for project in self.projects.all())
 
     def get_absolute_url(self):
         return reverse('market_detail', args=[str(self.slug)])
@@ -98,6 +104,9 @@ class MediaType(models.Model):
     def __str__(self):
         return self.name
 
+    def get_total_project_items(self):
+        return sum(project.items.count() for project in self.projects.all())
+
     def get_absolute_url(self):
         return reverse('media_type_detail', args=[str(self.slug)])
 
@@ -120,6 +129,9 @@ class Role(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_total_project_items(self):
+        return sum(project.items.count() for project in self.projects.all())
 
     def get_absolute_url(self):
         return reverse('role_detail', args=[str(self.slug)])
@@ -144,14 +156,14 @@ class Project(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
+
     def get_ordered_items(self):
         return self.items.all().order_by('item_order')
 
     def get_first_item(self):
         return self.items.all().order_by('item_order').first()
-
-    def __str__(self):
-        return self.name
 
     def get_absolute_url(self):
         return reverse('project_detail', args=[str(self.slug)])
