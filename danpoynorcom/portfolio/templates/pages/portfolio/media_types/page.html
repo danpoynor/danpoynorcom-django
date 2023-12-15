@@ -7,28 +7,7 @@
         <p>In my opinion, the general process of design is not medium specific. From designing a 64×64 pixel size icon to designing a 48 foot wide highway billboard, communication goals are achieved through the thoughtful application of necessary elements and principles. As platforms have evolved though from print and television to interactive and online, so too have my design and production capabilities which enables me to maintain brand integrity across mediums, achieve high-quality results at a fast pace, and keep projects on budget.</p>
       </div>
       {% include 'partials/_header_taxonomy_term.html' %}
-      <section class="taxonomy-highlights media-type-highlights">
-        <div class="container">
-          <h2>Media Type Highlights</h2>
-          <ul class="showcase-list">
-            <li>
-              <a href="/portfolio/platforms/print/" title="View all project samples created for Print Collateral"><span class="text-wrapper"><span class="taxonomy-name">Print Collateral</span><span class="count">(126)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/platforms/banner-ads/" title="View all project samples created for Banner Ads"><span class="text-wrapper"><span class="taxonomy-name">Banner Ads</span><span class="count">(167)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/platforms/landing-pages/" title="View all project samples created for Landing Pages"><span class="text-wrapper"><span class="taxonomy-name">Landing Pages</span><span class="count">(190)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/platforms/websites/" title="View all project samples created for Websites"><span class="text-wrapper"><span class="taxonomy-name">Websites</span><span class="count">(230)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/platforms/wireframes/" title="View all project samples created for Wireframes"><span class="text-wrapper"><span class="taxonomy-name">Wireframes</span><span class="count">(53)</span></span></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      {% include 'partials/_highlighted_media_types.html' with media_types=highlighted_media_types %}
       <section class="taxonomy-categories">
         <h2>Media Types Overview</h2>
         <ul class="taxonomy-list gray-bullets">

@@ -1,0 +1,12 @@
+<section class="taxonomy-highlights industry-highlights">
+  <div class="container">
+    <h2>Role Highlights</h2>
+    <ul class="showcase-list">
+      {% for role in highlighted_roles %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=role %}
+      {% empty %}
+        <li>No highlighted roles available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

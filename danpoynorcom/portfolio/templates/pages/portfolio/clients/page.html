@@ -11,10 +11,8 @@
       <section class="taxonomy-categories">
         <ul class="showcase-list clients-list">
           {% for client in clients %}
-            <li>
-              <a href="{{ client.get_absolute_url }}" title="View all project samples created for {{ client.name }}" class="logo-{{ client.slug }}"><span class="text-wrapper"><span class="taxonomy-name">{{ client.name }}</span> <span class="count">({{ client.get_total_project_items }})</span></span></a>
-            </li>
-            {% empty %}
+            {% include 'partials/_taxonomy_term_item_card.html' with term=client %}
+          {% empty %}
             <li>No clients available.</li>
           {% endfor %}
         </ul>

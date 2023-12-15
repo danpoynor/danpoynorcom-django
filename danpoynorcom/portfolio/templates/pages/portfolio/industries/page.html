@@ -8,31 +8,7 @@
       </div>
       {% include 'partials/_header_taxonomy_term.html' %}
       <div class="key-areas">
-        <section class="taxonomy-highlights industry-highlights">
-          <div class="container">
-            <h2>Industry Highlights</h2>
-            <ul class="showcase-list">
-              <li>
-                <a href="/portfolio/industries/financial-services/" title="View all project samples created for Financial Services"><span class="text-wrapper"><span class="taxonomy-name">Financial Services</span><span class="count">(122)</span></span></a>
-              </li>
-              <li>
-                <a href="/portfolio/industries/technology/" title="View all project samples created for Technology"><span class="text-wrapper"><span class="taxonomy-name">Technology</span><span class="count">(225)</span></span></a>
-              </li>
-              <li>
-                <a href="/portfolio/industries/consumer-goods/" title="View all project samples created for Consumer Goods"><span class="text-wrapper"><span class="taxonomy-name">Consumer Goods</span><span class="count">(205)</span></span></a>
-              </li>
-              <li>
-                <a href="/portfolio/industries/business-services/" title="View all project samples created for Business Services"><span class="text-wrapper"><span class="taxonomy-name">Business Services</span><span class="count">(205)</span></span></a>
-              </li>
-              <li>
-                <a href="/portfolio/industries/lead-generation/" title="View all project samples created for Lead Generation"><span class="text-wrapper"><span class="taxonomy-name">Lead Generation</span><span class="count">(162)</span></span></a>
-              </li>
-              <li>
-                <a href="/portfolio/industries/media-and-entertainment/" title="View all project samples created for Media and Entertainment"><span class="text-wrapper"><span class="taxonomy-name">Media and Entertainment</span><span class="count">(139)</span></span></a>
-              </li>
-            </ul>
-          </div>
-        </section>
+        {% include 'partials/_highlighted_industries.html' with industries=highlighted_industries %}
         <section class="taxonomy-categories">
           <h2>Major Markets</h2>
           <ul class="taxonomy-list gray-bullets">

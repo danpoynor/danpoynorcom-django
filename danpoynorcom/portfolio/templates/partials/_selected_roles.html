@@ -1,0 +1,17 @@
+<section class="selected-taxonomy-items">
+  <div class="container">
+    <header>
+      <h2>Selected Roles</h2>
+      <p>
+        Benefit from working with a hands-on professional with experience in over {{ total_roles }} <a href="/portfolio/roles/">defined design and <span style="white-space:nowrap">development roles</span></a>.
+      </p>
+    </header>
+    <ul class="showcase-list">
+      {% for role in selected_roles %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=role %}
+      {% empty %}
+        <li>No selected roles available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

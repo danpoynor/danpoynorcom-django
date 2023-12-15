@@ -8,7 +8,26 @@ def home(request):
 
 
 def portfolio(request):
-    return render(request, 'pages/portfolio/page.html')
+    selected_client_ids = [42, 65, 4, 83, 37]  # Replace with your actual IDs
+    selected_clients = Client.objects.filter(id__in=selected_client_ids)
+
+    selected_industry_ids = [14, 32, 8, 3, 21]  # Replace with your actual IDs
+    selected_industries = Industry.objects.filter(id__in=selected_industry_ids)
+
+    selected_media_type_ids = [28, 3, 21, 36, 38]  # Replace with your actual IDs
+    selected_media_types = MediaType.objects.filter(id__in=selected_media_type_ids)
+
+    selected_role_ids = [12, 24, 22, 2, 8]  # Replace with your actual IDs
+    selected_roles = Role.objects.filter(id__in=selected_role_ids)
+
+    context = {
+        'selected_clients': selected_clients,
+        'selected_industries': selected_industries,
+        'selected_media_types': selected_media_types,
+        'selected_roles': selected_roles,
+    }
+
+    return render(request, 'pages/portfolio/page.html', context)
 
 
 def about(request):
@@ -30,8 +49,17 @@ class ClientProjectsListView(generic.DetailView):
 
 
 def industries(request):
+    highlighted_industry_ids = [3, 13, 32, 8, 21, 24]  # Replace with your actual IDs
+    highlighted_industries = Industry.objects.filter(id__in=highlighted_industry_ids)
     industries = Industry.objects.all()
-    return render(request, 'pages/portfolio/industries/page.html', {'industries': industries, 'object': Industry()})
+
+    context = {
+        'highlighted_industries': highlighted_industries,
+        'industries': industries,
+        'object': Industry(),
+    }
+
+    return render(request, 'pages/portfolio/industries/page.html', context)
 
 
 class IndustryProjectsListView(generic.DetailView):
@@ -50,8 +78,18 @@ class MarketProjectsListView(generic.DetailView):
 
 
 def mediatypes(request):
+    highlighted_media_type_ids = [28, 3, 21, 36, 38]  # Replace with your actual IDs
+    highlighted_media_types = MediaType.objects.filter(id__in=highlighted_media_type_ids)
     mediatypes = MediaType.objects.all()
-    return render(request, 'pages/portfolio/media_types/page.html', {'mediatypes': mediatypes, 'object': MediaType()})
+
+    context = {
+        'highlighted_media_types': highlighted_media_types,
+        'mediatypes': mediatypes,
+        'object': MediaType()
+    }
+
+    mediatypes = MediaType.objects.all()
+    return render(request, 'pages/portfolio/media_types/page.html', context)
 
 
 class MediaTypeProjectsListView(generic.DetailView):
@@ -60,8 +98,17 @@ class MediaTypeProjectsListView(generic.DetailView):
 
 
 def roles(request):
+    highlighted_role_ids = [12, 24, 22, 2, 8]
+    highlighted_roles = Role.objects.filter(id__in=highlighted_role_ids)
     roles = Role.objects.all()
-    return render(request, 'pages/portfolio/roles/page.html', {'roles': roles, 'object': Role()})
+
+    context = {
+        'highlighted_roles': highlighted_roles,
+        'roles': roles,
+        'object': Role()
+    }
+
+    return render(request, 'pages/portfolio/roles/page.html', context)
 
 
 class RoleProjectsListView(generic.DetailView):

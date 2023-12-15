@@ -1,0 +1,17 @@
+<section class="selected-taxonomy-items">
+  <div class="container">
+    <header>
+      <h2>Selected Industries</h2>
+      <p>
+        View a few <a href="/portfolio/industries/">successful strategic design results</a> from {{ total_industries }} markets <span style="white-space:nowrap">and industries served.</span>
+      </p>
+    </header>
+    <ul class="showcase-list">
+      {% for industry in selected_industries %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=industry %}
+      {% empty %}
+        <li>No selected industries available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -9,28 +9,7 @@
         </p>
       </div>
       {% include 'partials/_header_taxonomy_term.html' %}
-      <section class="taxonomy-highlights role-highlights">
-        <div class="container">
-          <h2>Role Highlights</h2>
-          <ul class="showcase-list">
-            <li>
-              <a href="/portfolio/roles/front-end-developer/" title="View all project samples created for Front-end Developer"><span class="text-wrapper"><span class="taxonomy-name">Front-end Developer</span><span class="count">(273)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/roles/visual-designer/" title="View all project samples created for Visual Designer"><span class="text-wrapper"><span class="taxonomy-name">Visual Designer</span><span class="count">(547)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/roles/ux-designer/" title="View all project samples created for UX/CX Designer"><span class="text-wrapper"><span class="taxonomy-name">UX/CX Designer</span><span class="count">(116)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/roles/art-director/" title="View all project samples created for Art Director"><span class="text-wrapper"><span class="taxonomy-name">Art Director</span><span class="count">(533)</span></span></a>
-            </li>
-            <li>
-              <a href="/portfolio/roles/creative-director/" title="View all project samples created for Creative Director"><span class="text-wrapper"><span class="taxonomy-name">Creative Director</span><span class="count">(355)</span></span></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      {% include 'partials/_highlighted_roles.html' with roles=highlighted_roles %}
       <section class="taxonomy-categories">
         <h2>Roles Overview</h2>
         <ul class="taxonomy-list">

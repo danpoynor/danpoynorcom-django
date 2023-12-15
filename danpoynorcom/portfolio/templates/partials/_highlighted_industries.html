@@ -1,0 +1,12 @@
+<section class="taxonomy-highlights industry-highlights">
+  <div class="container">
+    <h2>Industry Highlights</h2>
+    <ul class="showcase-list">
+      {% for industry in highlighted_industries %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=industry %}
+      {% empty %}
+        <li>No highlighted industries available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

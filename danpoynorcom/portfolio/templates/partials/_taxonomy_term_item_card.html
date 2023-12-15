@@ -1,0 +1,8 @@
+<li>
+  <a href="{{ term.get_absolute_url }}" title="View all project samples created for {{ term.name }}" class="logo-{{ term.slug }}">
+    <span class="text-wrapper">
+      <span class="taxonomy-name">{{ term.name }}</span>
+      <span class="count">({{ term.get_total_project_items }})</span>
+    </span>
+  </a>
+</li>
