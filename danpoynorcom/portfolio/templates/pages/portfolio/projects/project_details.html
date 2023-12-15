@@ -1,0 +1,54 @@
+{% extends 'base_portfolio.html' %}
+
+{% block content %}
+  <main class="project-details-page">
+    <article class="dpportfolio">
+      <header>
+        <div class="container">
+          <h1 class="project-name"><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span></h1>
+          <h2 class="entry-title">Name of current ProjectItem goes here</h2>
+        </div>
+      </header>
+      <section class="stage">
+        <div class="container">
+          <div class="display-column">
+            <p>Image goes here</p>
+          </div>
+          <div class="project-details">
+            {% include 'partials/_project_info_client.html' %}
+            {% include 'partials/_project_info_project.html' %}
+            <section class="project-additional-samples">
+              <h3>Samples In This Project</h3>
+              <section>
+                <ul class="prev-next-sample-navigation">
+                  <li class="samples-overview">
+                    <a href="https://danpoynor.com/portfolio/projects/fiftyflowers-com-ecommerce-order-management-system-interface-design-proposal-mockups/">Project Overview</a>
+                  </li>
+                  <li class="previous-sample">
+                    <a href="https://danpoynor.com/portfolio/project-details/fiftyflowers-commerce-management-system-order-summary/"><span></span>Previous</a>
+                  </li>
+                  <li class="next-sample">
+                    <a href="https://danpoynor.com/portfolio/project-details/fiftyflowers-commerce-management-system-orders-list/">Next<span></span></a>
+                  </li>
+                </ul>
+                <ul class="also-part-of-this-project">
+                  {% for item in object.items.all %}
+                    <li>
+                      <figure>
+                        <img src="#" alt="FPriject Name – Item Name" test="danpoynor.com" /><figcaption>
+                          <span class="youarehere">You<br />Are<br />Here</span><span>Welcome Page</span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    {% empty %}
+                    <li>No project items to display.</li>
+                  {% endfor %}
+                </ul>
+              </section>
+            </section>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+{% endblock %}

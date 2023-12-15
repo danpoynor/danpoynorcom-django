@@ -22,6 +22,12 @@ class Client(models.Model):
     def __str__(self):
         return self.name
 
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
+    def get_total_project_items(self):
+        return sum(project.items.count() for project in self.projects.all())
+
     def get_absolute_url(self):
         return reverse('client_detail', args=[str(self.slug)])
 
@@ -137,6 +143,12 @@ class Project(models.Model):
     year = models.IntegerField(help_text="Enter the project year as a 4-digit number", blank=True, null=True, validators=[MinValueValidator(1900), MaxValueValidator(datetime.date.today().year)])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def get_ordered_items(self):
+        return self.items.all().order_by('item_order')
+
+    def get_first_item(self):
+        return self.items.all().order_by('item_order').first()
 
     def __str__(self):
         return self.name

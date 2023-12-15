@@ -1,0 +1,78 @@
+<div class="sub-nav">
+  <div class="container">
+    <div class="totals">
+      <p>
+        Presenting <span>{{ total_projects }}</span> design projects <span style="white-space:nowrap">including <span>{{ total_project_items }}+</span> examples</span>
+      </p>
+    </div>
+
+    <div class="nav portfolio-sub-tabs">
+      <ul>
+        <li class="prompt">Browse by:</li>
+        <li>
+          {% if 'clients' in request.path %}
+            <div class="item current-menu-item">Clients</div>
+          {% else %}
+            <a class="item" target="_top" href="{% url 'clients' %}">Clients</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if 'industries' in request.path %}
+            <div class="item current-menu-item">Industries</div>
+          {% else %}
+            <a class="item" target="_top" href="{% url 'industries' %}">Industries</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if 'media-types' in request.path %}
+            <div class="item current-menu-item">Media Types</div>
+          {% else %}
+            <a class="item" target="_top" href="{% url 'mediatypes' %}">Media Types</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if 'roles' in request.path %}
+            <div class="item current-menu-item">Roles</div>
+          {% else %}
+            <a class="item" target="_top" href="{% url 'roles' %}">Roles</a>
+          {% endif %}
+        </li>
+        <li>
+          {% if 'projects-list' in request.path %}
+            <div class="item current-menu-item">Industries</div>
+          {% else %}
+            <a class="item" target="_top" href="{% url 'projects' %}">Project List</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+
+    <div class="dropdown portfolio-sub-nav">
+      <p class="prompt">Browse:</p>
+      <div class="dropdown-wrapper">
+        <ul class="current">
+          <li class="current-selection all-selection">
+            <a value="">Select...</a>
+          </li>
+        </ul>
+        <ul class="menu" role="menu">
+          <li>
+            <a target="_top" href="{% url 'clients' %}" {% if 'clients' in request.path %}aria-current="page"{% endif %}>Clients</a>
+          </li>
+          <li>
+            <a target="_top" href="{% url 'industries' %}" {% if 'industries' in request.path %}aria-current="page"{% endif %}>Industries</a>
+          </li>
+          <li>
+            <a target="_top" href="{% url 'mediatypes' %}" {% if 'media-types' in request.path %}aria-current="page"{% endif %}>Media Types</a>
+          </li>
+          <li>
+            <a target="_top" href="{% url 'roles' %}" {% if 'roles' in request.path %}aria-current="page"{% endif %}>Roles</a>
+          </li>
+          <li>
+            <a target="_top" href="{% url 'projects' %}" {% if 'project-list' in request.path %}aria-current="page"{% endif %}>Project List</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

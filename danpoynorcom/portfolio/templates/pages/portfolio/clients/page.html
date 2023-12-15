@@ -7,14 +7,12 @@
         <p>I’ve had the privilege of working with some amazing people and companies across the globe from small startups to large multi-national corporations. Client projects presented here range from short-term one-offs to long-term enterprise endeavors and were created either internally as a dedicated full-time employee or externally as a remote freelance consultant on an as-needed basis.</p>
         <p>Thanks to all my clients! 🙂</p>
       </div>
-      <header>
-        <h1><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">Clients</span></h1>
-      </header>
+      {% include 'partials/_header_taxonomy_term.html' %}
       <section class="taxonomy-categories">
         <ul class="showcase-list clients-list">
           {% for client in clients %}
             <li>
-              <a href="{{ client.get_absolute_url }}">{{ client.name }}</a>
+              <a href="{{ client.get_absolute_url }}" title="View all project samples created for {{ client.name }}" class="logo-{{ client.slug }}"><span class="text-wrapper"><span class="taxonomy-name">{{ client.name }}</span> <span class="count">({{ client.get_total_project_items }})</span></span></a>
             </li>
             {% empty %}
             <li>No clients available.</li>

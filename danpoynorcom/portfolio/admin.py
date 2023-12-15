@@ -58,7 +58,7 @@ admin.site.register(Role, RoleAdmin)
 
 class ProjectItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'visible', 'status', 'project_name')
+    list_display = ('id', 'name', 'visible', 'status', 'project_name', 'item_order')
     list_display_links = ('name',)
 
     def project_name(self, obj):

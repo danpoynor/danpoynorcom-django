@@ -1,0 +1,18 @@
+{% comment %}For example show 6 selected clients [202, 206, 201, 207, 190, 170]{% endcomment %}
+<section class="selected-taxonomy-items">
+  <div class="container">
+    <header>
+      <h2>Selected Clients</h2>
+      <p>
+        Check out work from 123 <a href="/portfolio/clients/">happy clients, employers, <span style="white-space:nowrap">and partnerships</span></a>.
+      </p>
+    </header>
+    <ul class="showcase-list">
+      {% for client in selected_clients %}
+        <li>
+          <a href="#" title="View all project samples created for name"><span class="text-wrapper"><span class="taxonomy-name">name</span><span class="count">(count)</span></span></a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

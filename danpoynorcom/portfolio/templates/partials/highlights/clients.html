@@ -1,0 +1,13 @@
+{% comment %} For example show 6 highlighted clients [202, 206, 201, 207, 190, 170] {% endcomment %}
+<section class="taxonomy-highlights client-highlights">
+  <div class="container">
+      <h2>Client Highlights</h2>
+      <ul class="highlights-list">
+        {{ for client in highlighted_clients }}
+          <li class="highlight">
+            <a href="#" title="View all project samples created for name"><span class="shape-wrapper"><span class="text-wrapper">name</span><span class="count">(###)</span></span></a>
+          </li>
+        {{ endfor }}
+      </ul>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+{% comment %}For example show 6 selected industries [111, 124, 132, 264, 144, 129]{% endcomment %}
+<section class="selected-taxonomy-items">
+  <div class="container">
+    <header>
+      <h2>Selected Industries</h2>
+      <p>
+        View a few <a href="/portfolio/industries/">successful strategic design results</a> from ### markets <span style="white-space:nowrap">and industries served.</span>
+      </p>
+    </header>
+    <ul class="showcase-list">
+      {# Each item in the showcase list #}
+      {% for industry in selected_insudtries %}
+        <li>
+          <a href="#" title="View all project samples created for name"><span class="text-wrapper"><span class="taxonomy-name">name</span><span class="count">(count)</span></span></a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

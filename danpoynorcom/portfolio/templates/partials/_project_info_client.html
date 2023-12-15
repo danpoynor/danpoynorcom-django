@@ -1,7 +1,33 @@
-<h3>Client Info</h3>
-
-<p>
-  Client: <a href="{{ object.client.get_absolute_url }}">{{ object.client.name }}</a>
-</p>
-
-<p>Description: {{ object.client.description }}</p>
+<section id="client-info" class="expando expanded">
+  <h3 class="expando-trigger">Client Info</h3>
+  <div class="expando-content">
+    <div class="expando-content-wrapper">
+      <section class="project-client-name">
+        <h4>Client</h4>
+        <ul class="csv">
+          <li>
+            <a href="/portfolio/clients/{{ object.client.slug }}/"><span style="white-space:nowrap">{{ object.client.name }}</span></a>
+          </li>
+        </ul>
+      </section>
+      {% if object.market.all %}
+        <section class="project-market-name">
+          <h4>Market</h4>
+          <ul class="csv">
+            {% for market in object.market.all %}
+              <li>
+                <a href="/portfolio/markets/{{ market.slug }}/">{{ market.name }}</a>{% if not forloop.last %}, {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+      {% if object.client.description %}
+        <section class="project-client-description">
+          <h4>Company Description</h4>
+          {{ object.client.description|safe }}
+        </section>
+      {% endif %}
+    </div>
+  </div>
+</section>

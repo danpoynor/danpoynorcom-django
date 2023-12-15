@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Client, Industry, Market, MediaType, Role, Project
+from .models import Client, Industry, Market, MediaType, ProjectItem, Role, Project
 
 
 def home(request):
@@ -21,7 +21,7 @@ def contact(request):
 
 def clients(request):
     clients = Client.objects.all()
-    return render(request, 'pages/portfolio/clients/page.html', {'clients': clients})
+    return render(request, 'pages/portfolio/clients/page.html', {'clients': clients, 'object': Client()})
 
 
 class ClientProjectsListView(generic.DetailView):
@@ -31,7 +31,7 @@ class ClientProjectsListView(generic.DetailView):
 
 def industries(request):
     industries = Industry.objects.all()
-    return render(request, 'pages/portfolio/industries/page.html', {'industries': industries})
+    return render(request, 'pages/portfolio/industries/page.html', {'industries': industries, 'object': Industry()})
 
 
 class IndustryProjectsListView(generic.DetailView):
@@ -41,7 +41,7 @@ class IndustryProjectsListView(generic.DetailView):
 
 def markets(request):
     markets = Market.objects.all()
-    return render(request, 'pages/portfolio/markets/page.html', {'markets': markets})
+    return render(request, 'pages/portfolio/markets/page.html', {'markets': markets, 'object': Market()})
 
 
 class MarketProjectsListView(generic.DetailView):
@@ -51,7 +51,7 @@ class MarketProjectsListView(generic.DetailView):
 
 def mediatypes(request):
     mediatypes = MediaType.objects.all()
-    return render(request, 'pages/portfolio/media_types/page.html', {'mediatypes': mediatypes})
+    return render(request, 'pages/portfolio/media_types/page.html', {'mediatypes': mediatypes, 'object': MediaType()})
 
 
 class MediaTypeProjectsListView(generic.DetailView):
@@ -61,7 +61,7 @@ class MediaTypeProjectsListView(generic.DetailView):
 
 def roles(request):
     roles = Role.objects.all()
-    return render(request, 'pages/portfolio/roles/page.html', {'roles': roles})
+    return render(request, 'pages/portfolio/roles/page.html', {'roles': roles, 'object': Role()})
 
 
 class RoleProjectsListView(generic.DetailView):
@@ -74,6 +74,11 @@ def projects(request):
     return render(request, 'pages/portfolio/projects/page.html', {'projects': projects})
 
 
+class ProjectItemsView(generic.DetailView):
+    model = Project
+    template_name = 'pages/portfolio/projects/project_items.html'
+
+
 class ProjectDetailsView(generic.DetailView):
     model = Project
-    template_name = 'pages/portfolio/lists/project_details.html'
+    template_name = 'pages/portfolio/projects/project_details.html'
