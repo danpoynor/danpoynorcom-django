@@ -45,7 +45,7 @@ def clients(request):
 
 class ClientProjectsListView(generic.DetailView):
     model = Client
-    template_name = 'pages/portfolio/lists/client_projects_list.html'
+    template_name = 'pages/portfolio/clients/projects_list.html'
 
 
 def industries(request):
@@ -64,7 +64,7 @@ def industries(request):
 
 class IndustryProjectsListView(generic.DetailView):
     model = Industry
-    template_name = 'pages/portfolio/lists/industry_projects_list.html'
+    template_name = 'pages/portfolio/industries/projects_list.html'
 
 
 def markets(request):
@@ -74,7 +74,7 @@ def markets(request):
 
 class MarketProjectsListView(generic.DetailView):
     model = Market
-    template_name = 'pages/portfolio/lists/market_projects_list.html'
+    template_name = 'pages/portfolio/markets/projects_list.html'
 
 
 def mediatypes(request):
@@ -94,7 +94,7 @@ def mediatypes(request):
 
 class MediaTypeProjectsListView(generic.DetailView):
     model = MediaType
-    template_name = 'pages/portfolio/lists/media_type_projects_list.html'
+    template_name = 'pages/portfolio/media_types/projects_list.html'
 
 
 def roles(request):
@@ -113,7 +113,7 @@ def roles(request):
 
 class RoleProjectsListView(generic.DetailView):
     model = Role
-    template_name = 'pages/portfolio/lists/role_projects_list.html'
+    template_name = 'pages/portfolio/roles/projects_list.html'
 
 
 def projects(request):

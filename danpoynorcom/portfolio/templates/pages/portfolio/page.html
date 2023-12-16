@@ -13,16 +13,16 @@
     </div>
 
     <section class="selects">
-      {% include 'partials/_selected_clients.html' with clients=selected_clients %}
-      {% include 'partials/_selected_industries.html' with industries=selected_industries %}
-      {% include 'partials/_selected_media_types.html' with media_types=selected_media_types %}
-      {% include 'partials/_selected_roles.html' with roles=selected_roles %}
+      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_clients item_name='clients' total_count=total_clients url='/portfolio/clients/' %}
+      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_industries item_name='industries' total_count=total_industries url='/portfolio/industries/' %}
+      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_media_types item_name='media_types' total_count=total_media_types url='/portfolio/media-types/' %}
+      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_roles item_name='roles' total_count=total_roles url='/portfolio/roles/' %}
     </section>
 
     <section class="value-statement">
       <div class="container">
         <div class="text">
-          <h2>With a solid background dedicated to design and development I’m sure I can make a valuable addition to your project <span class="nowrap">or organization.</span></h2>
+          <h2>With a solid background dedicated to design and development I&rsquo;m sure I can make a valuable addition to your project <span class="nowrap">or organization.</span></h2>
         </div>
       </div>
     </section>

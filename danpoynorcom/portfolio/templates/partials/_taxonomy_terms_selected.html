@@ -1,0 +1,26 @@
+{% load filters %}
+<section class="selected-taxonomy-items">
+  <div class="container">
+    <header>
+      <h2>Selected {{ item_name|replace_underscore|title }}</h2>
+      <p>
+        {% if item_name == 'clients' %}
+          Check out work from {{ total_count }} <a href="{{ url }}">happy clients, employers, <span style="white-space:nowrap">and partnerships</span></a>.
+        {% elif item_name == 'industries' %}
+          View a few <a href="{{ url }}">successful strategic design results</a> from {{ total_count }} markets <span style="white-space:nowrap">and industries served.</span>
+        {% elif item_name == 'media_types' %}
+          From print to interactive &ndash; explore {{ total_count }} of the <a href="{{ url }}">diverse media types and marketing vehicles</a> I&rsquo;ve <span style="white-space:nowrap">work with.</span>
+        {% elif item_name == 'roles' %}
+          Benefit from working with a hands-on professional with experience in over {{ total_count }} <a href="{{ url }}">defined design and <span style="white-space:nowrap">development roles</span></a>.
+        {% endif %}
+      </p>
+    </header>
+    <ul class="showcase-list">
+      {% for item in selected_items %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=item %}
+      {% empty %}
+        <li>No selected {{ item_name }} available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
