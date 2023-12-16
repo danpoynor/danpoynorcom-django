@@ -30,7 +30,7 @@ class Command(BaseCommand):
                 instance.save()
             return instance
 
-        # Iterate over the XML data
+        # Iterate over the XML for taxonomy term data
         error_occurred = False
         for term in root.findall('.//wp:term', namespaces):
             try:
@@ -83,7 +83,7 @@ class Command(BaseCommand):
             description_elem = item.find('description')
             description = description_elem.text if description_elem is not None else ''
 
-            # Ultimately, we want to get the 'content:encoded' element, but using this code does not work for some reason:
+            # Ultimately, we want to get the 'content:encoded' element, but using this next line does not work for some reason:
             # content_encoded_elem = item.find('content:encoded', namespaces)
             # The 'content:encoded' element is in a namespace, but the namespace might not be defined in the XML file itself.
             # Therefore, we use a wildcard '*' for the namespace to match any 'encoded' element, regardless of its namespace.
@@ -139,15 +139,6 @@ class Command(BaseCommand):
                     project.year = year
 
                 project.save()
-
-            # Find the wp:meta_value element that has a sibling wp:meta_key element with text _wp_old_slug
-            for meta in item.findall(".//wp:postmeta", namespaces):
-                meta_key_elem = meta.find('wp:meta_key', namespaces)
-                if meta_key_elem is not None and meta_key_elem.text == '_wp_old_slug':
-                    meta_value_elem = meta.find('wp:meta_value', namespaces)
-                    if meta_value_elem is not None:
-                        post_name = meta_value_elem.text
-                        break
 
             project_item, created = ProjectItem.objects.get_or_create(
                 slug=post_name,
