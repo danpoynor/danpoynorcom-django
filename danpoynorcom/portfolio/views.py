@@ -8,16 +8,16 @@ def home(request):
 
 
 def portfolio(request):
-    selected_client_ids = [42, 65, 4, 83, 37]  # Replace with your actual IDs
+    selected_client_ids = [42, 65, 4, 83, 37]
     selected_clients = Client.objects.filter(id__in=selected_client_ids)
 
-    selected_industry_ids = [14, 32, 8, 3, 21]  # Replace with your actual IDs
+    selected_industry_ids = [14, 32, 8, 3, 21]
     selected_industries = Industry.objects.filter(id__in=selected_industry_ids)
 
-    selected_media_type_ids = [28, 3, 21, 36, 38]  # Replace with your actual IDs
+    selected_media_type_ids = [28, 3, 21, 36, 38]
     selected_media_types = MediaType.objects.filter(id__in=selected_media_type_ids)
 
-    selected_role_ids = [12, 24, 22, 2, 8]  # Replace with your actual IDs
+    selected_role_ids = [12, 24, 22, 2, 8]
     selected_roles = Role.objects.filter(id__in=selected_role_ids)
 
     context = {
@@ -49,7 +49,7 @@ class ClientProjectsListView(generic.DetailView):
 
 
 def industries(request):
-    highlighted_industry_ids = [3, 13, 32, 8, 21, 24]  # Replace with your actual IDs
+    highlighted_industry_ids = [3, 13, 32, 8, 21, 24]
     highlighted_industries = Industry.objects.filter(id__in=highlighted_industry_ids)
     industries = Industry.objects.all()
 
@@ -78,7 +78,7 @@ class MarketProjectsListView(generic.DetailView):
 
 
 def mediatypes(request):
-    highlighted_media_type_ids = [28, 3, 21, 36, 38]  # Replace with your actual IDs
+    highlighted_media_type_ids = [28, 3, 21, 36, 38]
     highlighted_media_types = MediaType.objects.filter(id__in=highlighted_media_type_ids)
     mediatypes = MediaType.objects.all()
 

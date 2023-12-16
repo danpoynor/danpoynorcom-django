@@ -1,0 +1,12 @@
+<section class="taxonomy-highlights {{ item_name }}-highlights">
+  <div class="container">
+    <h2>{{ item_name|title }} Highlights</h2>
+    <ul class="showcase-list">
+      {% for item in highlighted_items %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=item %}
+      {% empty %}
+        <li>No highlighted {{ item_name }} available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

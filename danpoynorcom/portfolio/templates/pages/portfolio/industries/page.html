@@ -8,8 +8,7 @@
       </div>
       {% include 'partials/_header_taxonomy_term.html' %}
       <div class="key-areas">
-        {% include 'partials/_taxonomy_terms_highlighted_industries.html' with industries=highlighted_industries %}
-        <section class="taxonomy-categories">
+        {% include 'partials/_taxonomy_terms_highlighted.html' with item_name='industries' highlighted_items=highlighted_industries %}        <section class="taxonomy-categories">
           <h2>Major Markets</h2>
           <ul class="taxonomy-list gray-bullets">
             <li>
@@ -30,18 +29,7 @@
           </ul>
         </section>
       </div>
-      <section class="taxonomy-categories">
-        <h2>Industries Overview</h2>
-        <ul class="taxonomy-list gray-bullets">
-          {% for industry in industries %}
-            <li>
-              <a href="{{ industry.get_absolute_url }}">{{ industry.name }}</a>
-            </li>
-            {% empty %}
-            <li>No industries available.</li>
-          {% endfor %}
-        </ul>
-      </section>
+      {% include 'partials/_taxonomy_categories.html' with item_name='industries' items=industries %}
     </div>
   </main>
 {% endblock %}

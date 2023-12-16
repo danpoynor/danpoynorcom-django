@@ -1,0 +1,13 @@
+{% load filters %}
+<section class="taxonomy-categories">
+  <h2>{{ item_name|replace_underscore|title }} Overview</h2>
+  <ul class="taxonomy-list gray-bullets">
+    {% for item in items %}
+      <li>
+        <a href="{{ item.get_absolute_url }}">{{ item.name }}</a>
+      </li>
+      {% empty %}
+      <li>No {{ item_name }} available.</li>
+    {% endfor %}
+  </ul>
+</section>
