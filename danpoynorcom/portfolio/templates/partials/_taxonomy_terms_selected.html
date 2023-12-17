@@ -2,7 +2,7 @@
 <section class="selected-taxonomy-items">
   <div class="container">
     <header>
-      <h2>Selected {{ item_name|replace_underscore|title }}</h2>
+      <h2>Selected {{ item_name|replace_underscore_with_space|title }}</h2>
       <p>
         {% if item_name == 'clients' %}
           Check out work from {{ total_count }} <a href="{{ url }}">happy clients, employers, <span style="white-space:nowrap">and partnerships</span></a>.

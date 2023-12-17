@@ -29,29 +29,15 @@ body > footer {
             margin: .5em;
 
             &.illustrator {
-                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
+                background: url(/static/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
                 background-size: 216px;
                 width: 216px;
             }
 
             &.photoshop {
-                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
+                background: url(/static/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
                 background-size: 216px;
                 width: 216px;
-            }
-
-            &.acrobat {
-                background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Acrobat_badge.png) 0 0 no-repeat;
-                background-size: 216px;
-                width: 216px;
-                display: none;
-            }
-
-            &.godaddy-pro {
-                background: url(/wp-content/themes/danpoynor-2017/images/badges/member_badge_light.91388461bbda.svg) 0 0 no-repeat;
-                background-size: 179px;
-                width: 179px;
-                display: none;
             }
 
         }

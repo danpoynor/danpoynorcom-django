@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Client, Industry, Market, MediaType, ProjectItem, Role, Project
+from .models import Client, Industry, Market, MediaType, Role, Project
 
 
 def home(request):
@@ -15,7 +15,8 @@ def portfolio(request):
     selected_industries = Industry.objects.filter(id__in=selected_industry_ids)
 
     selected_media_type_ids = [28, 3, 21, 36, 38]
-    selected_media_types = MediaType.objects.filter(id__in=selected_media_type_ids)
+    selected_media_types = MediaType.objects.filter(
+        id__in=selected_media_type_ids)
 
     selected_role_ids = [12, 24, 22, 2, 8]
     selected_roles = Role.objects.filter(id__in=selected_role_ids)
@@ -45,12 +46,13 @@ def clients(request):
 
 class ClientProjectsListView(generic.DetailView):
     model = Client
-    template_name = 'pages/portfolio/clients/projects_list.html'
+    template_name = 'pages/portfolio/clients/projects_list_page.html'
 
 
 def industries(request):
     highlighted_industry_ids = [3, 13, 32, 8, 21, 24]
-    highlighted_industries = Industry.objects.filter(id__in=highlighted_industry_ids)
+    highlighted_industries = Industry.objects.filter(
+        id__in=highlighted_industry_ids)
     industries = Industry.objects.all()
 
     context = {
@@ -64,7 +66,7 @@ def industries(request):
 
 class IndustryProjectsListView(generic.DetailView):
     model = Industry
-    template_name = 'pages/portfolio/industries/projects_list.html'
+    template_name = 'pages/portfolio/industries/projects_list_page.html'
 
 
 def markets(request):
@@ -74,12 +76,13 @@ def markets(request):
 
 class MarketProjectsListView(generic.DetailView):
     model = Market
-    template_name = 'pages/portfolio/markets/projects_list.html'
+    template_name = 'pages/portfolio/markets/projects_list_page.html'
 
 
 def mediatypes(request):
     highlighted_media_type_ids = [28, 3, 21, 36, 38]
-    highlighted_media_types = MediaType.objects.filter(id__in=highlighted_media_type_ids)
+    highlighted_media_types = MediaType.objects.filter(
+        id__in=highlighted_media_type_ids)
     mediatypes = MediaType.objects.all()
 
     context = {
@@ -94,7 +97,7 @@ def mediatypes(request):
 
 class MediaTypeProjectsListView(generic.DetailView):
     model = MediaType
-    template_name = 'pages/portfolio/media_types/projects_list.html'
+    template_name = 'pages/portfolio/media_types/projects_list_page.html'
 
 
 def roles(request):
@@ -113,7 +116,7 @@ def roles(request):
 
 class RoleProjectsListView(generic.DetailView):
     model = Role
-    template_name = 'pages/portfolio/roles/projects_list.html'
+    template_name = 'pages/portfolio/roles/projects_list_page.html'
 
 
 def projects(request):

@@ -315,7 +315,7 @@ body {
   padding: 0;
   background-color: #424242;
   background-color: var(--t9);
-  background-image: url(/wp-content/themes/danpoynor-2017/images/backgrounds/tile.png);
+  background-image: url(/static/images/backgrounds/tile.png);
   background-attachment: fixed;
   transition: background-color 0.3s ease-out;
   overflow-anchor: none;
@@ -547,7 +547,8 @@ header nav .resume-tab {
 main header {
   flex: none;
   width: 100%;
-  margin: 1em 0;
+  margin: 0;
+  padding: 1rem 0;
 }
 main .taxonomy-meta p:first-of-type {
   margin-top: 0.5em;
@@ -943,25 +944,25 @@ body.home .selected-list a {
   }
 }
 .selected-projects .insightly-responsive-site-development .collage {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/collages/insightly.png);
+  background-image: url(/static/images/collages/insightly.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .reputation-promotional-banner-ads .collage {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/collages/reputation.png);
+  background-image: url(/static/images/collages/reputation.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .selected-projects .adobe-echosign-web-contracts-conference .collage {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/collages/web-contracts-conference.png);
+  background-image: url(/static/images/collages/web-contracts-conference.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .yahoo-lender-search .collage {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/collages/yahoo-lender-search.png);
+  background-image: url(/static/images/collages/yahoo-lender-search.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1064,13 +1065,8 @@ li {
   display: inline;
 }
 .csv li {
-  display: inline;
-}
-.csv li:after {
-  content: ", ";
-}
-.csv li:last-child:after {
-  content: "";
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .colored-bullets {
@@ -1323,10 +1319,12 @@ main > .prev-next:last-of-type .container {
 
 #portfolio-container {
   list-style-type: none;
-  margin: -1em auto 4em !important;
   padding: 0.5em 0 0;
   transition: opacity 0.3s ease 800ms;
   perspective: 1300px;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
 }
 main.portfolio-taxonomy-term #portfolio-container {
   margin: -1em 0.2em 1em;
@@ -1489,13 +1487,11 @@ main.portfolio-taxonomy-term #portfolio-container {
   .sub-nav .container .portfolio-sub-tabs ul li {
     margin: 0 2.5px;
     padding: 0;
-    transition: background-image 0.3s ease-out;
-    overflow: hidden;
   }
   .sub-nav .container .portfolio-sub-tabs ul li:last-of-type {
     margin-right: 0;
   }
-  .sub-nav .container .portfolio-sub-tabs ul li a {
+  .sub-nav .container .portfolio-sub-tabs ul li .item {
     color: rgb(255, 255, 255);
     display: block;
     margin: 0;
@@ -1503,69 +1499,38 @@ main.portfolio-taxonomy-term #portfolio-container {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
+    transition: background-image 0.3s ease-out;
+    clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0);
   }
 }
 @media only screen and (min-width: 720.1px) and (max-width: 1040px) {
-  .sub-nav .container .portfolio-sub-tabs ul li a {
+  .sub-nav .container .portfolio-sub-tabs ul li .item {
     padding: 0.5em 0.5em 1em;
   }
 }
 @media only screen and (min-width: 720.1px) {
-  @supports not (-webkit-clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0)) {
-    .sub-nav .container .portfolio-sub-tabs ul li a::before {
-      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 92%, transparent 92%, transparent 100%);
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-    .sub-nav .container .portfolio-sub-tabs ul li:not(.current-menu-item) a:hover:before {
-      opacity: 1;
-    }
+  .sub-nav .container .portfolio-sub-tabs ul li a.item::before {
+    background: rgba(255, 255, 255, 0.3);
+    content: "";
+    display: block;
+    height: 400%;
+    width: 330%;
+    position: absolute;
+    left: -330%;
+    bottom: -330%;
+    transform: rotate(45deg);
+    z-index: -10;
+    transition: left 0.5s, bottom 0.5s ease-out;
   }
-  @supports (-webkit-clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0)) {
-    .sub-nav .container .portfolio-sub-tabs ul li a {
-      clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0);
-    }
-    .sub-nav .container .portfolio-sub-tabs ul li a::before {
-      background: rgba(255, 255, 255, 0.3);
-      content: "";
-      display: block;
-      height: 400%;
-      width: 330%;
-      position: absolute;
-      left: -330%;
-      bottom: -330%;
-      transform: rotate(45deg);
-      z-index: -10;
-      transition: left 0.5s, bottom 0.5s ease-out;
-    }
-    .sub-nav .container .portfolio-sub-tabs ul li a:hover {
-      color: rgb(255, 255, 255);
-    }
-    .sub-nav .container .portfolio-sub-tabs ul li a:hover::before {
-      left: -150%;
-      bottom: -150%;
-    }
+  .sub-nav .container .portfolio-sub-tabs ul li a.item:hover {
+    color: rgb(255, 255, 255);
   }
-  .sub-nav .container .portfolio-sub-tabs ul li.current-menu-item a {
-    background-color: #f6f6f6;
+  .sub-nav .container .portfolio-sub-tabs ul li a.item:hover::before {
+    left: -150%;
+    bottom: -150%;
+  }
+  .sub-nav .container .portfolio-sub-tabs ul li .current-menu-item {
     background-color: var(--t4);
-    color: #20B2AA;
-    color: var(--t3);
-  }
-  .sub-nav .container .portfolio-sub-tabs ul li.current-menu-item a::before {
-    content: none;
-  }
-  .sub-nav .container .portfolio-sub-tabs ul li.current-menu-item a:hover {
-    background-color: #f6f6f6;
-    background-color: var(--t4);
-    color: #20B2AA;
     color: var(--t3);
   }
   .sub-nav .container .portfolio-sub-tabs ul li.prompt {
@@ -1949,26 +1914,14 @@ body > footer .badges li {
   margin: 0.5em;
 }
 body > footer .badges li.illustrator {
-  background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
+  background: url(/static/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
 }
 body > footer .badges li.photoshop {
-  background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
+  background: url(/static/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
-}
-body > footer .badges li.acrobat {
-  background: url(/wp-content/themes/danpoynor-2017/images/badges/Certified_Expert_Acrobat_badge.png) 0 0 no-repeat;
-  background-size: 216px;
-  width: 216px;
-  display: none;
-}
-body > footer .badges li.godaddy-pro {
-  background: url(/wp-content/themes/danpoynor-2017/images/badges/member_badge_light.91388461bbda.svg) 0 0 no-repeat;
-  background-size: 179px;
-  width: 179px;
-  display: none;
 }
 
 .site-info {
@@ -2495,7 +2448,7 @@ main.home-page {
   padding: 0;
 }
 main.home-page .welcome {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/photos/dan-poynor-photo-202001.jpg);
+  background-image: url(/static/images/photos/dan-poynor-photo-202001.jpg);
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3061,13 +3014,11 @@ main.portfolio-page header.page-header {
   filter: brightness(120%);
 }
 
-.industries-page .taxonomy-highlights .container,
-.platforms-page .taxonomy-highlights .container,
-.roles-page .taxonomy-highlights .container {
+.taxonomy-highlights .container {
   padding: 0;
 }
 
-.roles-page .taxonomy-categories .taxonomy-list {
+.roles-page.taxonomy-categories .taxonomy-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -3075,18 +3026,18 @@ main.portfolio-page header.page-header {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.roles-page .taxonomy-categories .taxonomy-list li {
-  flex: 0 1 49%;
+.roles-page.taxonomy-categories .taxonomy-list li {
+  flex: 0 1 48.5%;
 }
 @media only screen and (max-width: 1020px) {
-  .roles-page .taxonomy-categories .taxonomy-list li {
+  .roles-page.taxonomy-categories .taxonomy-list li {
     flex: 1 1 100%;
   }
 }
-.roles-page .taxonomy-categories .taxonomy-list h3 {
+.roles-page.taxonomy-categories .taxonomy-list h3 {
   margin: 1em 0 0.33em;
 }
-.roles-page .taxonomy-categories .taxonomy-list p {
+.roles-page.taxonomy-categories .taxonomy-list p {
   margin: 0 0 1em;
 }
 

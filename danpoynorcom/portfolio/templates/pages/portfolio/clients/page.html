@@ -1,22 +1,19 @@
-{% extends 'base_portfolio.html' %}
+{% extends 'base_taxonomy.html' %}
 
-{% block content %}
-  <main class="clients-page">
-    <div class="container">
-      <div class="intro">
-        <p>I’ve had the privilege of working with some amazing people and companies across the globe from small startups to large multi-national corporations. Client projects presented here range from short-term one-offs to long-term enterprise endeavors and were created either internally as a dedicated full-time employee or externally as a remote freelance consultant on an as-needed basis.</p>
-        <p>Thanks to all my clients! 🙂</p>
-      </div>
-      {% include 'partials/_header_taxonomy_term.html' %}
-      <section class="taxonomy-categories">
-        <ul class="showcase-list clients-list">
-          {% for client in clients %}
-            {% include 'partials/_taxonomy_term_item_card.html' with term=client %}
-          {% empty %}
-            <li>No clients available.</li>
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
-  </main>
+{% block intro %}
+    <p>I&rsquo;ve had the privilege of working with some amazing people and companies across the globe from small startups to large multi-national corporations. Client projects presented here range from short-term one-offs to long-term enterprise endeavors and were created either internally as a dedicated full-time employee or externally as a remote freelance consultant on an as-needed basis.</p>
+    <p>Thanks to all my clients! 🙂</p>
 {% endblock %}
+
+{% block taxonomy_content %}
+  <section class="taxonomy-categories">
+    <ul class="showcase-list clients-list">
+      {% for client in clients %}
+        {% include 'partials/_taxonomy_term_item_card.html' with term=client %}
+      {% empty %}
+        <li>No clients available.</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
+

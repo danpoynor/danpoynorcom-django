@@ -25,11 +25,15 @@
 
 #portfolio-container {
   list-style-type: none;
-  margin: -1em auto 4em !important; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
+  // margin: -1em auto 4em !important; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
   padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
   // opacity: 0;
   transition: opacity $transition-speed ease 800ms; // enables fade in
   perspective: 1300px;
+  //
+  background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
 
   main.portfolio-taxonomy-term & {
     margin: -1em .2em 1em;
