@@ -1,6 +1,6 @@
 {% extends 'base_portfolio.html' %}
 
-{% block content %}
+{% block portfolio_content %}
   <main class="project-overview-page">
     <header>
       <div class="container">
@@ -9,8 +9,8 @@
     </header>
     <div class="project-details">
       <div class="container">
-        {% include 'partials/_project_info_client.html' %}
-        {% include 'partials/_project_info_project.html' %}
+        {% include "partials/_project_info_client.html" with project=object %}
+        {% include "partials/_project_info_project.html" with project=object  %}
       </div>
     </div>
     <section class="thumbnails-header">
@@ -20,7 +20,7 @@
     </section>
     <section class="thumbnails">
       <div class="container taxonomy-project-page">
-        {% include 'partials/_project_items_list.html' %}
+        {% include "partials/_project_items_list.html" %}
       </div>
     </section>
   </main>

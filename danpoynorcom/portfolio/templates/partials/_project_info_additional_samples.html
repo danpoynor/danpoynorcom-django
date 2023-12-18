@@ -1,0 +1,39 @@
+{% load filters %}
+{% if items.count > 1 %}
+  <section class="project-additional-samples">
+    <h3>Samples In This Project</h3>
+    <section>
+      <nav class="prev-next-sample-navigation">
+        <a class="samples-overview" href="/portfolio/projects/{{ object.project.slug }}">Project Overview</a>
+        {% for item in items %}
+          {% if item == object %}
+            <a class="previous-sample" href="/portfolio/project-details/{{ items|previous_item:forloop.counter0 }}">Previous</a>
+            <a class="next-sample" href="/portfolio/project-details/{{ items|next_item:forloop.counter0 }}">Next</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <ol class="also-part-of-this-project">
+        {% for item in items %}
+          <li{% if item == object %} class="selected"{% endif %}>
+            {% if item != object %}
+              <a href="/portfolio/project-details/{{ item.slug }}">
+            {% endif %}
+              <figure>
+                <img src="#" alt="{{ item.name }}" /><figcaption>
+                  {% if item == object %}
+                    <span class="youarehere">You<br />Are<br />Here</span>
+                  {% endif %}
+                  <span>{{ item.name }}</span>
+                </figcaption>
+              </figure>
+            {% if item != object %}
+              </a>
+            {% endif %}
+          </li>
+          {% empty %}
+          <li>No project items to display.</li>
+        {% endfor %}
+      </ol>
+    </section>
+  </section>
+{% endif %}

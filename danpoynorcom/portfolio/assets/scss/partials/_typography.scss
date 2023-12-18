@@ -4,7 +4,7 @@ html {
 
 html,
 body {
-    font: normal 100%/1.61803398875 'Source Sans Pro', sans-serif;
+    font: normal 100%/1.61803398875 'Source Sans 3', sans-serif;
     color: $body-text-color;
     color: var(--t5);
 }
@@ -56,7 +56,7 @@ p a:hover {
 
 .portfolio-introduction,
 .selected-taxonomy-items p,
-.taxonomy-meta, 
+.taxonomy-meta,
 .sidebar-info,
 .contact-info,
 .site-info {
@@ -85,7 +85,7 @@ a:focus {
   text-transform: uppercase;
   white-space: nowrap;
   width: 100%;
-  
+
   a {
         color: $text-link-color-hover;
     color: var(--t3);
@@ -98,7 +98,7 @@ a:focus {
     }
 
   }
-  
+
 }
 
 .home-page h1 {

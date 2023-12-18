@@ -2,11 +2,11 @@
   <h3 class="expando-trigger">Project Info</h3>
   <div class="expando-content">
     <div class="expando-content-wrapper">
-      {% if object.industry.all %}
+      {% if project.industry.all %}
         <section class="project-industry-name">
           <h4>Industry</h4>
           <ul class="csv">
-            {% for industry in object.industry.all %}
+            {% for industry in project.industry.all %}
               <li>
                 <a href="/portfolio/industries/{{ industry.slug }}/">{{ industry.name }}</a>{% if not forloop.last %}, {% endif %}
               </li>
@@ -14,11 +14,11 @@
           </ul>
         </section>
       {% endif %}
-      {% if object.mediatype.all %}
+      {% if project.mediatype.all %}
         <section class="project-platorm-name">
           <h4>Media Type</h4>
           <ul class="csv">
-            {% for mediatype in object.mediatype.all %}
+            {% for mediatype in project.mediatype.all %}
               <li>
                 <a href="/portfolio/media-types/{{ mediatype.slug }}/">{{ mediatype.name }}</a>{% if not forloop.last %}, {% endif %}
               </li>
@@ -26,14 +26,14 @@
           </ul>
         </section>
       {% endif %}
-      {% if object.year %}
-        <p>Year: {{ object.year }}</p>
+      {% if project.year %}
+        <p>Year: {{ project.year }}</p>
       {% endif %}
-      {% if object.role.all %}
+      {% if project.role.all %}
         <section class="project-role-names">
           <h4>Role</h4>
           <ul class="csv">
-            {% for role in object.role.all %}
+            {% for role in project.role.all %}
               <li>
                 <a href="/portfolio/roles/{{ role.slug }}/">{{ role.name }}</a>{% if not forloop.last %}, {% endif %}
               </li>
@@ -41,11 +41,11 @@
           </ul>
         </section>
       {% endif %}
-      {% if object.description %}
+      {% if project.description %}
         <section class="project-description">
           <h4>Project Description</h4>
           <br />
-          {{ object.description|safe }}
+          {{ project.description|safe }}
         </section>
       {% endif %}
     </div>

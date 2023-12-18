@@ -30,8 +30,7 @@
   // opacity: 0;
   transition: opacity $transition-speed ease 800ms; // enables fade in
   perspective: 1300px;
-  //
-  background-color: yellow;
+  // These are temp till I figure out new masonry layout solution
   display: flex;
   flex-flow: row wrap;
 

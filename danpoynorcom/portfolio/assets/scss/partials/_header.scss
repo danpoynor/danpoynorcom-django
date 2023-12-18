@@ -2,7 +2,7 @@
   display: none;
 }
 
-body>header {
+body > header {
   color: $white;
   width: 100%;
 
@@ -74,11 +74,11 @@ header nav {
     align-items: flex-start;
 
 
-    >li {
+    li {
       margin: 0;
       position: relative;
 
-      >a {
+      a {
         color: $theme-color;
         color: var(--t3);
         display: inline-block;
@@ -89,27 +89,13 @@ header nav {
 
         &:hover {
           color: $white;
-          ;
         }
 
       }
 
-      // make top level nav link look selected on sub pages
-      &.current-page-ancestor {
-        // we must be on a sub page
-
-        >a {
-          color: $white;
-        }
-
-      }
-
-    }
-
-    .current-menu-item {
-
-      a {
+      [aria-current="page"] {
         color: $white;
+        transition: none;
       }
 
     }

@@ -16,7 +16,7 @@
 		display: inline;
 		margin: 0;
 	}
-	
+
 	.project-client-description {
 		p {
 			display: block;
@@ -28,10 +28,10 @@
 			&:last-of-type {
 				margin-bottom: 0;
 			}
-			
+
 		}
 	}
-	
+
 }
 
 .project-overview-page {
@@ -43,7 +43,7 @@
 			flex-flow: row nowrap;
 			justify-content: space-between;
 			align-items: flex-start;
-		
+
 			> section {
 				width: 48%;
 				//outline: 1px solid red;
@@ -57,28 +57,16 @@
 		}
 
 	}
-	
+
 }
 
 .project-details-page {
 
 	.project-details {
 
-		.container > section {
-
-			+ section {
-				//margin-top: 2em;
-			}
-		
-			section {
-				margin: .5em 0;
-			}
-		
-			section:last-of-type {
-				margin-bottom: 0;
-			}
-
-		}
+    section:last-of-type {
+      margin-bottom: 0;
+    }
 
 	}
 

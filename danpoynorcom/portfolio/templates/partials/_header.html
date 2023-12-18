@@ -6,21 +6,7 @@
       <p class="site-description">Designer <span>/</span> Developer <span>/</span> Director</p>
     </div>
 
-    <nav>
-      <ul>
-        <li{% if request.resolver_match.url_name == 'home' %} class="active"{% endif %}>
-          <a href="{% url 'home' %}">Home</a>
-        </li>
-        <li{% if request.resolver_match.url_name == 'portfolio' %} class="active"{% endif %}>
-          <a href="{% url 'portfolio' %}">Portfolio</a>
-        </li>
-        <li{% if request.resolver_match.url_name == 'about' %} class="active"{% endif %}>
-          <a href="{% url 'about' %}">About</a>
-        </li>
-        <li{% if request.resolver_match.url_name == 'contact' %} class="active"{% endif %}>
-          <a href="{% url 'contact' %}">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    {% include 'partials/_nav_main.html' %}
+
   </div>
 </header>

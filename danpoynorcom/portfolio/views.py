@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Client, Industry, Market, MediaType, Role, Project
+from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 
 
 def home(request):
@@ -130,5 +130,11 @@ class ProjectItemsView(generic.DetailView):
 
 
 class ProjectDetailsView(generic.DetailView):
-    model = Project
+    model = ProjectItem
     template_name = 'pages/portfolio/projects/project_details.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        project = self.object.project
+        context['items'] = project.get_ordered_items()
+        return context
