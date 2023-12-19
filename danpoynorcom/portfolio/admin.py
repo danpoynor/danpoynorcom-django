@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.db.models import Case, When, IntegerField
 
-from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
+from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, Image
 
 # admin.site.register(Client)
 # admin.site.register(Industry)
@@ -53,6 +53,11 @@ class RoleAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
+class ImageInline(admin.StackedInline):
+    model = Image
+    extra = 0  # this is the number of extra forms the formset will display
+
+
 admin.site.register(Role, RoleAdmin)
 
 
@@ -60,6 +65,7 @@ class ProjectItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('id', 'name', 'visible', 'status', 'project_name', 'item_order')
     list_display_links = ('name',)
+    inlines = [ImageInline]
 
     def project_name(self, obj):
         return obj.project.name if obj.project else '-'
