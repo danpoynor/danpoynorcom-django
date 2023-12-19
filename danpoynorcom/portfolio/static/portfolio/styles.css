@@ -514,7 +514,7 @@ header nav ul li a {
 header nav ul li a:hover {
   color: rgb(255, 255, 255);
 }
-header nav ul li [aria-current=page] {
+header nav ul li [aria-current] {
   color: rgb(255, 255, 255);
   transition: none;
 }
@@ -1142,6 +1142,10 @@ li {
 
 .prev-next {
   flex: none;
+  background-color: var(--t4);
+  transition: background-color 0.3s ease-out;
+  margin: 0 auto;
+  padding: 1rem 0;
   width: 100%;
 }
 .prev-next .container {
@@ -1323,9 +1327,6 @@ main > .prev-next:last-of-type .container {
   display: flex;
   flex-flow: row wrap;
 }
-main.portfolio-taxonomy-term #portfolio-container {
-  margin: -1em 0.2em 1em;
-}
 #portfolio-container li.shown, html:not(.js) #portfolio-container li, .no-js #portfolio-container li, .no-cssanimations #portfolio-container li {
   opacity: 1;
 }
@@ -1488,7 +1489,7 @@ main.portfolio-taxonomy-term #portfolio-container {
   .sub-nav .container .portfolio-sub-tabs ul li:last-of-type {
     margin-right: 0;
   }
-  .sub-nav .container .portfolio-sub-tabs ul li .item {
+  .sub-nav .container .portfolio-sub-tabs ul li a {
     color: rgb(255, 255, 255);
     display: block;
     margin: 0;
@@ -1501,12 +1502,12 @@ main.portfolio-taxonomy-term #portfolio-container {
   }
 }
 @media only screen and (min-width: 720.1px) and (max-width: 1040px) {
-  .sub-nav .container .portfolio-sub-tabs ul li .item {
+  .sub-nav .container .portfolio-sub-tabs ul li a {
     padding: 0.5em 0.5em 1em;
   }
 }
 @media only screen and (min-width: 720.1px) {
-  .sub-nav .container .portfolio-sub-tabs ul li a.item::before {
+  .sub-nav .container .portfolio-sub-tabs ul li a::before {
     background: rgba(255, 255, 255, 0.3);
     content: "";
     display: block;
@@ -1519,15 +1520,18 @@ main.portfolio-taxonomy-term #portfolio-container {
     z-index: -10;
     transition: left 0.5s, bottom 0.5s ease-out;
   }
-  .sub-nav .container .portfolio-sub-tabs ul li a.item:hover {
+  .sub-nav .container .portfolio-sub-tabs ul li a:hover {
     color: rgb(255, 255, 255);
   }
-  .sub-nav .container .portfolio-sub-tabs ul li a.item:hover::before {
+  .sub-nav .container .portfolio-sub-tabs ul li a:hover::before {
     left: -150%;
     bottom: -150%;
   }
-  .sub-nav .container .portfolio-sub-tabs ul li .current-menu-item {
+  .sub-nav .container .portfolio-sub-tabs ul li [aria-current] {
     background-color: var(--t4);
+    color: var(--t3);
+  }
+  .sub-nav .container .portfolio-sub-tabs ul li [aria-current]:hover {
     color: var(--t3);
   }
   .sub-nav .container .portfolio-sub-tabs ul li.prompt {

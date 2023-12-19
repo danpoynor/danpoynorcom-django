@@ -20,7 +20,6 @@
   &.hideme {
     animation: scaleDownAndHide 0.66s ease-in-out forwards;
   }
-
 }
 
 #portfolio-container {
@@ -34,10 +33,9 @@
   display: flex;
   flex-flow: row wrap;
 
-  main.portfolio-taxonomy-term & {
-    margin: -1em .2em 1em;
-  }
-
+  // main.portfolio-taxonomy-term & {
+  //   margin: -1em .2em 1em;
+  // }
   li.shown,
   html:not(.js) & li,
   // test to make sure modernizr added .js class to opening html tag
@@ -56,7 +54,6 @@
     backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
 
     &:hover {
-
       .title {
         background-color: $text-link-color;
         background-color: $theme-color;
@@ -75,7 +72,6 @@
       img {
         opacity: 0;
       }
-
     }
 
     &.animate {
@@ -97,9 +93,7 @@
       &:hover {
         color: #fff;
       }
-
     }
-
   }
 
   figure {
@@ -134,7 +128,6 @@
     padding: .9em 1.2em 1.1em;
     backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
   }
-
 
   .title {
     background-color: $portfolio-nav-bg-color;
@@ -179,15 +172,11 @@
       color: var(--t3);
       display: block;
     }
-
   }
-
 }
 
 .project-overview-page {
-
   #portfolio-container {
-
     li {
       width: $width-project-overview;
 
@@ -196,9 +185,6 @@
       .title {
         width: $width-project-overview;
       }
-
     }
-
   }
-
 }

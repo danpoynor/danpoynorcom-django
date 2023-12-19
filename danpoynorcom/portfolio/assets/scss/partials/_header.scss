@@ -2,7 +2,7 @@
   display: none;
 }
 
-body > header {
+body>header {
   color: $white;
   width: 100%;
 
@@ -32,19 +32,15 @@ body > header {
       .nav-menu {
         padding: 0;
       }
-
     }
 
     @media only screen and (max-width: $header-media-query-break-smaller) {
-
       .nav-menu {
         a {
           padding: .5em .5em .75em;
         }
       }
-
     }
-
   }
 
   .site-branding {
@@ -53,7 +49,6 @@ body > header {
     justify-content: flex-start;
     align-items: flex-start;
   }
-
 }
 
 .prev-next-taxonomy-term-navigation+header {
@@ -61,7 +56,6 @@ body > header {
 }
 
 header nav {
-
   ul {
     list-style-type: none;
     font: normal 1.3125em/1 'Oswald', sans-serif; // 21 / 16
@@ -72,7 +66,6 @@ header nav {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-
 
     li {
       margin: 0;
@@ -90,29 +83,23 @@ header nav {
         &:hover {
           color: $white;
         }
-
       }
 
-      [aria-current="page"] {
+      [aria-current] {
         color: $white;
         transition: none;
       }
-
     }
-
   }
 
   .resume-tab {
     display: none;
   }
-
 }
 
 // make sure portfolio sub sub pages still show the top nav link as selected
 .portfolio-sub-page {
-
   li.menu-item-1041 a {
     color: $white;
   }
-
 }
