@@ -22,6 +22,9 @@ class Client(models.Model):
     def __str__(self):
         return self.name
 
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
     def get_verbose_name_plural(self):
         return self._meta.verbose_name_plural
 
@@ -51,6 +54,12 @@ class Industry(models.Model):
     def __str__(self):
         return self.name
 
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
     def get_total_project_items(self):
         return sum(project.items.count() for project in self.projects.all())
 
@@ -76,6 +85,12 @@ class Market(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
         return sum(project.items.count() for project in self.projects.all())
@@ -104,6 +119,12 @@ class MediaType(models.Model):
     def __str__(self):
         return self.name
 
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
     def get_total_project_items(self):
         return sum(project.items.count() for project in self.projects.all())
 
@@ -129,6 +150,12 @@ class Role(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
         return sum(project.items.count() for project in self.projects.all())

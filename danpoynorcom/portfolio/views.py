@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views import generic
+from django.db.models.functions import Lower
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
+from .mixins import PrevNextMixin
 
 
 def home(request):
@@ -40,11 +42,11 @@ def contact(request):
 
 
 def clients(request):
-    clients = Client.objects.all()
+    clients = Client.objects.all().order_by(Lower('name'))
     return render(request, 'pages/portfolio/clients/page.html', {'clients': clients, 'object': Client()})
 
 
-class ClientProjectsListView(generic.DetailView):
+class ClientProjectsListView(PrevNextMixin, generic.DetailView):
     model = Client
     template_name = 'pages/portfolio/clients/projects_list_page.html'
 
@@ -64,7 +66,7 @@ def industries(request):
     return render(request, 'pages/portfolio/industries/page.html', context)
 
 
-class IndustryProjectsListView(generic.DetailView):
+class IndustryProjectsListView(PrevNextMixin, generic.DetailView):
     model = Industry
     template_name = 'pages/portfolio/industries/projects_list_page.html'
 
@@ -74,7 +76,7 @@ def markets(request):
     return render(request, 'pages/portfolio/markets/page.html', {'markets': markets, 'object': Market()})
 
 
-class MarketProjectsListView(generic.DetailView):
+class MarketProjectsListView(PrevNextMixin, generic.DetailView):
     model = Market
     template_name = 'pages/portfolio/markets/projects_list_page.html'
 
@@ -95,7 +97,7 @@ def mediatypes(request):
     return render(request, 'pages/portfolio/media_types/page.html', context)
 
 
-class MediaTypeProjectsListView(generic.DetailView):
+class MediaTypeProjectsListView(PrevNextMixin, generic.DetailView):
     model = MediaType
     template_name = 'pages/portfolio/media_types/projects_list_page.html'
 
@@ -114,7 +116,7 @@ def roles(request):
     return render(request, 'pages/portfolio/roles/page.html', context)
 
 
-class RoleProjectsListView(generic.DetailView):
+class RoleProjectsListView(PrevNextMixin, generic.DetailView):
     model = Role
     template_name = 'pages/portfolio/roles/projects_list_page.html'
 

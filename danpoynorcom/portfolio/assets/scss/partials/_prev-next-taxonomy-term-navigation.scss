@@ -1,241 +1,221 @@
 .prev-next {
-    flex: none;
-    width: 100%;
+  flex: none;
+  background-color: var(--t4);
+  transition: background-color 0.3s ease-out;
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 100%;
 
-    .container {
-        margin: 0 auto;
-        overflow: auto;
-        padding: 0 1em;
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 1em;
+  }
+
+  p {
+    margin: 0 0 -.25em;
+    padding: 0;
+  }
+
+  span {
+    &.prev-next-label {
+      color: $headline-text-color;
+      color: var(--t6);
+      display: block;
+      font: 700 .75em/1.61803398875 'Bitter', sans-serif;
+      letter-spacing: .25em;
+      position: relative;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: 100%;
     }
 
-    p {
-        margin: 0 0 -.25em;
-        padding: 0;
+    &.truncate {
+      display: block;
+      line-height: 1.4;
+      max-width: 90%;
+      width: 100%;
     }
+  }
 
-    span {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    //
+    display: flex;
+    flex-flow: row nowrap;
 
-        &.prev-next-label {
-            color: $headline-text-color;
-            color: var(--t6);
-            display: block;
-            font: 700 .75em/1.61803398875 'Bitter', sans-serif;
-            letter-spacing: .25em;
-            position: relative;
-            text-transform: uppercase;
-            white-space: nowrap;
-            width: 100%;
-        }
+    li {
+      flex: 1;
+      max-width: 50%;
 
-        &.truncate {
-            display: block;
-            line-height: 1.4;
-            max-width: 90%;
-            width: 100%;
-        }
-
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+      a {
+        display: block;
         overflow: hidden;
-        //
-        display: flex;
-        flex-flow: row nowrap;
+        padding: 1em 2em;
+        position: relative;
+        height: 100%;
 
-        li {
-            flex: 1;
-            max-width: 50%;
-
-            a {
-                display: block;
-                overflow: hidden;
-                padding: 1em 2em;
-                position: relative;
-                height: 100%;
-
-                &:before,
-                &:after {
-                    //background-color: transparentize($text-link-color-hover, .92);
-                    //background-color: var(--t12);
-                    background-color: $text-link-color-hover;
-                    background-color: var(--t3);
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    width: 2.25em;
-                    height: 2.65em;
-                    margin: auto;
-                    opacity: 0;
-                    transition: all $transition-speed ease-in-out;
-                }
-
-                &:hover {
-                    background-color: $white;
-                    background-color: var(--t7);
-                    transition: all $transition-speed ease-in-out;
-
-                    &:before,
-                    &:after {
-                        opacity: 1;
-                    }
-
-                }
-
-            }
-
-            &.previous-project-category {
-                border-right: 1px solid $div-line-color;
-                border-right: 1px solid var(--t8);
-                order: 1;
-                text-align: right;
-
-                span {
-                    &.prev-next-label {
-                        right: -.25em; // only needed if this text is flush right
-                    }
-                    &.truncate {
-                        // specified in typography.scss
-                        //float: right; // make sure text is flush right when truncated
-                        display: inline-block;
-                    }
-                }
-
-                a {
-                    padding-left: 4em;
-
-                    &:before { // note variable use in svg fill color attribute, also using ' quotes inside of " quotes for MS Edge
-                        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='30.5 0 36.2 0 41.8 0 11.3 57.5 41.8 115 36.2 115 30.5 115 0 57.5' class='a'/></svg>");
-                        background-position: center center;
-                        background-repeat: no-repeat;
-                        content: "";
-                        background-size: 10px;
-                        //
-                        left: 2em;
-                    }
-
-                    &:hover {
-
-                        &:before {
-                            left: 1em;
-                        }
-
-                    }
-                }
-
-            }
-
-            &.next-project-category {
-                order: 2;
-                text-align: left;
-
-                a {
-                    padding-right: 4em;
-
-                    &:after { // note variable use in svg fill color attribute, also using ' quotes inside of " quotes for MS Edge
-                        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='11.3 115 5.7 115 0 115 30.5 57.5 0 0 5.7 0 11.3 0 41.8 57.5' class='a'/></svg>");
-                        background-position: center center;
-                        background-repeat: no-repeat;
-                        background-size: 10px;
-                        content: "";
-                        //
-                        left: auto;
-                        right: 2em;
-                    }
-
-                    &:hover {
-
-                        &:after {
-                            right: 1em;
-                        }
-
-                    }
-
-                }
-
-            }
-
+        &:before,
+        &:after {
+          //background-color: transparentize($text-link-color-hover, .92);
+          //background-color: var(--t12);
+          background-color: $text-link-color-hover;
+          background-color: var(--t3);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 2.25em;
+          height: 2.65em;
+          margin: auto;
+          opacity: 0;
+          transition: all $transition-speed ease-in-out;
         }
 
+        &:hover {
+          background-color: $white;
+          background-color: var(--t7);
+          transition: all $transition-speed ease-in-out;
+
+          &:before,
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+
+      &.previous-project-category {
+        border-right: 1px solid $div-line-color;
+        border-right: 1px solid var(--t8);
+        order: 1;
+        text-align: right;
+
+        span {
+          &.prev-next-label {
+            right: -.25em; // only needed if this text is flush right
+          }
+
+          &.truncate {
+            // specified in typography.scss
+            //float: right; // make sure text is flush right when truncated
+            display: inline-block;
+          }
+        }
+
+        a {
+          padding-left: 4em;
+
+          &:before {
+            // note variable use in svg fill color attribute, also using ' quotes inside of " quotes for MS Edge
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='30.5 0 36.2 0 41.8 0 11.3 57.5 41.8 115 36.2 115 30.5 115 0 57.5' class='a'/></svg>");
+            background-position: center center;
+            background-repeat: no-repeat;
+            content: "";
+            background-size: 10px;
+            //
+            left: 2em;
+          }
+
+          &:hover {
+            &:before {
+              left: 1em;
+            }
+          }
+        }
+      }
+
+      &.next-project-category {
+        order: 2;
+        text-align: left;
+
+        a {
+          padding-right: 4em;
+
+          &:after {
+            // note variable use in svg fill color attribute, also using ' quotes inside of " quotes for MS Edge
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='11.3 115 5.7 115 0 115 30.5 57.5 0 0 5.7 0 11.3 0 41.8 57.5' class='a'/></svg>");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 10px;
+            content: "";
+            //
+            left: auto;
+            right: 2em;
+          }
+
+          &:hover {
+            &:after {
+              right: 1em;
+            }
+          }
+        }
+      }
     }
+  }
 
-    @media only screen and (max-width: $iphone-landscape-width) {
+  @media only screen and (max-width: $iphone-landscape-width) {
+    ul {
 
-        ul {
-            //display: block;
+      //display: block;
+      li {
+        max-width: none;
 
-            li {
+        //width: 100%;
+        &.previous-project-category {
+          border: none;
+          text-align: left;
+        }
+
+        &.next-project-category {
+          text-align: right;
+        }
+
+        &.next-project-category,
+        &.previous-project-category {
+          a {
+            padding: .75em;
+
+            &:before,
+            &:after {
+              background-image: none;
+              display: none;
+            }
+
+            span {
+              &.prev-next-label {
+                color: $theme-color;
+                color: var(--t3);
+                white-space: normal;
+              }
+
+              &.truncate {
+                display: none;
                 max-width: none;
-                //width: 100%;
+              }
 
-                &.previous-project-category {
-                    border: none;
-                    text-align: left;
-                }
-
-                &.next-project-category {
-                    text-align: right;
-                }
-
-                &.next-project-category,
-                &.previous-project-category {
-
-                    a {
-                        padding: .75em;
-
-                        &:before,
-                        &:after {
-                            background-image: none;
-                            display: none;
-                        }
-
-                        span {
-
-                            &.prev-next-label {
-                                color: $theme-color;
-                                color: var(--t3);
-                                white-space: normal;
-                            }
-
-                            &.truncate {
-                                display: none;
-                                max-width: none;
-                            }
-
-                            .sort-order {
-                                display: block;
-                            }
-
-                        }
-
-                    }
-
-                }
-
+              .sort-order {
+                display: block;
+              }
             }
-
+          }
         }
-
-
-
+      }
     }
-
+  }
 }
 
 main {
-
-    > .prev-next:first-of-type {
-        .container {
-            padding-top: 1em;
-        }
+  >.prev-next:first-of-type {
+    .container {
+      padding-top: 1em;
     }
+  }
 
-    > .prev-next:last-of-type {
-        .container {
-            padding-bottom: 1em; // added padding-bottom on main element
-        }
+  >.prev-next:last-of-type {
+    .container {
+      padding-bottom: 1em; // added padding-bottom on main element
     }
-
+  }
 }

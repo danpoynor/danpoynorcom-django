@@ -16,7 +16,6 @@
       p {
         margin: 0;
       }
-
     }
 
     @media only screen and (max-width: $portfolio-sub-nav-break-smaller) {
@@ -35,18 +34,16 @@
       .portfolio-sub-tabs {
         display: none;
       }
-
     }
 
     @media only screen and (min-width: $portfolio-sub-nav-break-smaller) {
-      // 720px min
 
+      // 720px min
       .dropdown {
         display: none;
       }
 
       .portfolio-sub-tabs {
-
         ul {
           display: flex;
           font: normal 1.125em/1.4 'Oswald', sans-serif; // 18 / 16
@@ -63,7 +60,7 @@
               margin-right: 0;
             }
 
-            .item {
+            a {
               color: $white;
               display: block;
               margin: 0;
@@ -77,9 +74,7 @@
               @media only screen and (max-width: 1040px) {
                 padding: .5em .5em 1em;
               }
-            }
 
-            a.item {
               &::before {
                 background: rgba(255, 255, 255, .3);
                 content: '';
@@ -104,9 +99,13 @@
               }
             }
 
-            .current-menu-item {
+            [aria-current] {
               background-color: var(--t4);
               color: var(--t3);
+
+              &:hover {
+                color: var(--t3);
+              }
             }
 
             &.prompt {
@@ -114,24 +113,18 @@
             }
           }
         }
-
       }
 
       // .portfolio-sub-tabs
-
       @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
         flex-direction: column;
 
         .totals {
           margin-bottom: 0;
         }
-
       }
-
     }
-
   }
-
 }
 
 .sub-nav.sub-nav-about-page {
@@ -157,8 +150,4 @@ body.tax-project .sub-nav .nav ul .projects-tab {
       content: none;
     }
   }
-}
-
-body .sub-nav .nav ul .projects-tab {
-  //display: none;
 }

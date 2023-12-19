@@ -10,39 +10,19 @@
       <ul>
         <li class="prompt">Browse by:</li>
         <li>
-          {% if 'clients' in request.path %}
-            <div class="item current-menu-item">Clients</div>
-          {% else %}
-            <a class="item" target="_top" href="{% url 'clients' %}">Clients</a>
-          {% endif %}
+          <a target="_top" href="{% url 'clients' %}" {% if 'clients' in request.path %}aria-current="true"{% endif %}>Clients</a>
         </li>
         <li>
-          {% if 'industries' in request.path %}
-            <div class="item current-menu-item">Industries</div>
-          {% else %}
-            <a class="item" target="_top" href="{% url 'industries' %}">Industries</a>
-          {% endif %}
+          <a target="_top" href="{% url 'industries' %}" {% if 'industries' in request.path %}aria-current="true"{% endif %}>Industries</a>
         </li>
         <li>
-          {% if 'media-types' in request.path %}
-            <div class="item current-menu-item">Media Types</div>
-          {% else %}
-            <a class="item" target="_top" href="{% url 'mediatypes' %}">Media Types</a>
-          {% endif %}
+          <a target="_top" href="{% url 'mediatypes' %}" {% if 'media-types' in request.path %}aria-current="true"{% endif %}>Media Types</a>
         </li>
         <li>
-          {% if 'roles' in request.path %}
-            <div class="item current-menu-item">Roles</div>
-          {% else %}
-            <a class="item" target="_top" href="{% url 'roles' %}">Roles</a>
-          {% endif %}
+          <a target="_top" href="{% url 'roles' %}" {% if 'roles' in request.path %}aria-current="true"{% endif %}>Roles</a>
         </li>
         <li>
-          {% if 'projects-list' in request.path %}
-            <div class="item current-menu-item">Industries</div>
-          {% else %}
-            <a class="item" target="_top" href="{% url 'projects' %}">Project List</a>
-          {% endif %}
+          <a target="_top" href="{% url 'projects' %}" {% if 'projects-list' in request.path %}aria-current="true"{% endif %}>Project List</a>
         </li>
       </ul>
     </div>
@@ -57,19 +37,19 @@
         </ul>
         <ul class="menu" role="menu">
           <li>
-            <a target="_top" href="{% url 'clients' %}" {% if 'clients' in request.path %}aria-current="page"{% endif %}>Clients</a>
+            <a target="_top" href="{% url 'clients' %}" {% if 'clients' in request.path %}aria-current="true"{% endif %}>Clients</a>
           </li>
           <li>
-            <a target="_top" href="{% url 'industries' %}" {% if 'industries' in request.path %}aria-current="page"{% endif %}>Industries</a>
+            <a target="_top" href="{% url 'industries' %}" {% if 'industries' in request.path %}aria-current="true"{% endif %}>Industries</a>
           </li>
           <li>
-            <a target="_top" href="{% url 'mediatypes' %}" {% if 'media-types' in request.path %}aria-current="page"{% endif %}>Media Types</a>
+            <a target="_top" href="{% url 'mediatypes' %}" {% if 'media-types' in request.path %}aria-current="true"{% endif %}>Media Types</a>
           </li>
           <li>
-            <a target="_top" href="{% url 'roles' %}" {% if 'roles' in request.path %}aria-current="page"{% endif %}>Roles</a>
+            <a target="_top" href="{% url 'roles' %}" {% if 'roles' in request.path %}aria-current="true"{% endif %}>Roles</a>
           </li>
           <li>
-            <a target="_top" href="{% url 'projects' %}" {% if 'project-list' in request.path %}aria-current="page"{% endif %}>Project List</a>
+            <a target="_top" href="{% url 'projects' %}" {% if 'project-list' in request.path %}aria-current="true"{% endif %}>Project List</a>
           </li>
         </ul>
       </div>

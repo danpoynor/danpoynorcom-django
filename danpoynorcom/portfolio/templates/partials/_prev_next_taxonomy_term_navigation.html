@@ -1,0 +1,22 @@
+{% load tags %}
+<section class="prev-next">
+  <div class="container">
+    <ul>
+      <li class='previous-project-category'>
+        <a href="{{ previous_object.get_absolute_url }}" rel='prev'>
+          <p>
+            <span class='prev-next-label'><span class='sort-order'>Previous </span>{% verbose_name object %}</span> <span class='truncate'>{{ previous_object.name }}</span>
+          </p>
+        </a>
+      </li>
+      <li class='next-project-category'>
+        <a href="{{ next_object.get_absolute_url }}" rel='next'>
+          <p>
+            <span class='prev-next-label'><span class='sort-order'>Next </span>{% verbose_name object %}</span> <span class='truncate'>{{ next_object.name }}</span>
+          </p>
+        </a>
+      </li>
+      </li>
+    </ul>
+  </div>
+</section>

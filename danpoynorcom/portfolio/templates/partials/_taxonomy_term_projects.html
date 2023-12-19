@@ -22,7 +22,7 @@
                         </div>
                       </figcaption>
                       {% if first_item.image %}
-                        <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:first_item.image.medium %}" alt="{{ project.name }}" />
+                        <img src="{% static 'portfolio/images/project-item-images/medium/'|add:first_item.image.medium %}" alt="{{ project.name }}" />
                       {% else %}
                         <p>No image found for this project item.</p>
                       {% endif %}
