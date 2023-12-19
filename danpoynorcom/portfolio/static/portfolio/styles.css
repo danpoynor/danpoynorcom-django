@@ -315,7 +315,7 @@ body {
   padding: 0;
   background-color: #424242;
   background-color: var(--t9);
-  background-image: url(/static/images/backgrounds/tile.png);
+  background-image: url(images/backgrounds/tile.png);
   background-attachment: fixed;
   transition: background-color 0.3s ease-out;
   overflow-anchor: none;
@@ -942,25 +942,25 @@ body.home .selected-list a {
   }
 }
 .selected-projects .insightly-responsive-site-development .collage {
-  background-image: url(/static/images/collages/insightly.png);
+  background-image: url(images/collages/insightly.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .reputation-promotional-banner-ads .collage {
-  background-image: url(/static/images/collages/reputation.png);
+  background-image: url(images/collages/reputation.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .selected-projects .adobe-echosign-web-contracts-conference .collage {
-  background-image: url(/static/images/collages/web-contracts-conference.png);
+  background-image: url(images/collages/web-contracts-conference.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .yahoo-lender-search .collage {
-  background-image: url(/static/images/collages/yahoo-lender-search.png);
+  background-image: url(images/collages/yahoo-lender-search.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1911,12 +1911,12 @@ body > footer .badges li {
   margin: 0.5em;
 }
 body > footer .badges li.illustrator {
-  background: url(/static/images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
+  background: url(images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
 }
 body > footer .badges li.photoshop {
-  background: url(/static/images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
+  background: url(images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
 }
@@ -2445,7 +2445,7 @@ main.home-page {
   padding: 0;
 }
 main.home-page .welcome {
-  background-image: url(/static/images/photos/dan-poynor-photo-202001.jpg);
+  background-image: url(images/photos/dan-poynor-photo-202001.jpg);
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;

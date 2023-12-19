@@ -1,3 +1,4 @@
+{% load static %}
 <ul class="show" id="portfolio-container">
   {% for item in object.get_ordered_items %}
     <li class="show">
@@ -9,7 +10,7 @@
               <p class="click-to-view">Click for project detail view.</p>
             </div>
           </figcaption>
-          <img src="#" alt="{{ item.name }}" />
+          <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:item.image.medium %}" alt="{{ item.name }}" />
         </figure>
       </a>
     </li>

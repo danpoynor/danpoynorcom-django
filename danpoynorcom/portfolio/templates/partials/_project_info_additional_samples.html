@@ -1,4 +1,5 @@
 {% load filters %}
+{% load static %}
 {% if items.count > 1 %}
   <section class="project-additional-samples">
     <h3>Samples In This Project</h3>
@@ -19,7 +20,8 @@
               <a href="/portfolio/project-details/{{ item.slug }}">
             {% endif %}
               <figure>
-                <img src="#" alt="{{ item.name }}" /><figcaption>
+                <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:item.image.thumbnail %}" alt="{{ item.name }}" />
+                <figcaption>
                   {% if item == object %}
                     <span class="youarehere">You<br />Are<br />Here</span>
                   {% endif %}

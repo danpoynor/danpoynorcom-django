@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
-from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
+from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, Image
 import xml.etree.ElementTree as ET
+import phpserialize
 
 
 class Command(BaseCommand):
@@ -70,6 +71,7 @@ class Command(BaseCommand):
                 print(f"Error saving model instance for term '{name}' with slug '{slug}': {e}")
                 error_occurred = True
 
+        # ProjectItems
         # Process the ProjectItem model in a separate loop
         for item in root.findall(".//item[wp:post_type='dpportfolio']", namespaces):
             post_name_elem = item.find('wp:post_name', namespaces)
@@ -153,6 +155,66 @@ class Command(BaseCommand):
 
             if created:
                 project_item.save()
+
+        # Images
+        # Process the Image model in a separate loop
+        # First, create a dictionary that maps _thumbnail_id to post_name for dpportfolio items
+        thumbnail_id_to_post_name = {}
+        for item in root.findall(".//item[wp:post_type='dpportfolio']", namespaces):
+            post_name_elem = item.find('wp:post_name', namespaces)
+            post_name = post_name_elem.text if post_name_elem is not None else None
+
+            thumbnail_id_elem = item.find(".//wp:postmeta[wp:meta_key='_thumbnail_id']/wp:meta_value", namespaces)
+            thumbnail_id = int(thumbnail_id_elem.text) if thumbnail_id_elem is not None else None
+
+            if post_name and thumbnail_id:
+                thumbnail_id_to_post_name[thumbnail_id] = post_name
+
+        # Then, in the image import loop, use this dictionary to get the post_name
+        for item in root.findall(".//item[wp:post_type='attachment']", namespaces):
+            post_id_elem = item.find('wp:post_id', namespaces)
+            post_id = int(post_id_elem.text) if post_id_elem is not None else None
+
+            post_name = thumbnail_id_to_post_name.get(post_id)
+            if post_name is None:
+                print(f"No dpportfolio item found with _thumbnail_id '{post_id}', skipping this attachment")
+                continue
+
+            # Get the ProjectItem with the slug that matches post_name
+            try:
+                project_item = ProjectItem.objects.get(slug=post_name)
+            except ProjectItem.DoesNotExist:
+                print(f"No ProjectItem found with slug '{post_name}'")
+                continue
+
+            # Get the attachment URL, which is the URL of the original image
+            attachment_url_elem = item.find('wp:attachment_url', namespaces)
+            attachment_url = attachment_url_elem.text if attachment_url_elem is not None else ''
+
+            # Get the metadata, which contains the URLs of the different image sizes
+            metadata_elem = item.find(".//wp:postmeta[wp:meta_key='_wp_attachment_metadata']/wp:meta_value", namespaces)
+            if metadata_elem is not None:
+                # The metadata is a serialized PHP array, so we need to deserialize it
+                metadata = phpserialize.loads(metadata_elem.text.encode(), decode_strings=True)
+
+                # Get the URLs of the different image sizes
+                thumbnail_url = metadata['sizes']['thumbnail']['file'] if 'thumbnail' in metadata['sizes'] else ''
+                medium_url = metadata['sizes']['medium']['file'] if 'medium' in metadata['sizes'] else ''
+                medium_large_url = metadata['sizes']['medium_large']['file'] if 'medium_large' in metadata['sizes'] else ''
+                large_url = metadata['sizes']['large']['file'] if 'large' in metadata['sizes'] else ''
+                admin_list_thumb_url = metadata['sizes']['admin-list-thumb']['file'] if 'admin-list-thumb' in metadata['sizes'] else ''
+
+                # Create a new Image instance with this data
+                image = Image.objects.create(
+                    project_item=project_item,
+                    original=attachment_url,
+                    thumbnail=thumbnail_url,
+                    medium=medium_url,
+                    medium_large=medium_large_url,
+                    large=large_url,
+                    admin_list_thumb=admin_list_thumb_url,
+                )
+                image.save()
 
         if not error_occurred:
             print('Data imported successfully.')

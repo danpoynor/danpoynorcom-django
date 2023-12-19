@@ -14,7 +14,7 @@
       <section class="stage">
         <div class="container">
           <div class="display-column">
-            <p>Image goes here</p>
+            {{ object.html_content|safe }}
           </div>
           <div class="project-details">
             {% include "partials/_project_info_client.html" with project=object.project %}

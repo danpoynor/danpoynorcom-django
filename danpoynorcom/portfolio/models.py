@@ -191,11 +191,21 @@ class ProjectItem(models.Model):
     html_content = models.TextField(blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
     item_order = models.IntegerField(help_text="Enter the project item order", blank=True, null=True, validators=[MinValueValidator(0)])
-    image_sm = models.URLField(max_length=200, help_text="Enter the URL of the small image", blank=True, null=True, validators=[URLValidator()])
-    image_md = models.URLField(max_length=200, help_text="Enter the URL of the medium image", blank=True, null=True, validators=[URLValidator()])
-    image_lg = models.URLField(max_length=200, help_text="Enter the URL of the large image", blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
+
+
+class Image(models.Model):
+    project_item = models.OneToOneField(ProjectItem, on_delete=models.CASCADE, related_name='image')
+    # project_item = models.ForeignKey(ProjectItem, on_delete=models.CASCADE, related_name='images')
+    original = models.URLField(max_length=200, validators=[URLValidator()])
+    thumbnail = models.URLField(max_length=200, validators=[URLValidator()])
+    medium = models.URLField(max_length=200, validators=[URLValidator()])
+    medium_large = models.URLField(max_length=200, validators=[URLValidator()])
+    large = models.URLField(max_length=200, validators=[URLValidator()])
+    admin_list_thumb = models.URLField(max_length=200, validators=[URLValidator()])
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
