@@ -6,7 +6,7 @@
         {% include 'partials/_pagination_filter_bar.html' %}
         <ul id="portfolio-container">
           {% for project in object.projects.all %}
-            <li class="shown" style="outline: 1px solid red">
+            <li class="shown">
               {% with project.get_first_item as first_item %}
                 {% if first_item %}
                   <a href="/portfolio/project-details/{{ first_item.slug }}">
@@ -22,7 +22,7 @@
                         </div>
                       </figcaption>
                       {% if first_item.image %}
-                        <img src="{% static 'images/uploads-all-sizes/'|add:first_item.image.medium %}" alt="{{ project.name }}" />
+                        <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:first_item.image.medium %}" alt="{{ project.name }}" />
                       {% else %}
                         <p>No image found for this project item.</p>
                       {% endif %}
