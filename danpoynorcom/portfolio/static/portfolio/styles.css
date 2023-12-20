@@ -408,6 +408,7 @@ body > header .container {
 }
 .stage .project-details {
   flex: 0 0 35.1945854484%;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 980px) {
@@ -553,6 +554,9 @@ main .taxonomy-meta p:last-of-type {
   margin-bottom: 0;
 }
 
+article > header {
+  padding-top: 2rem;
+}
 article + header {
   margin-top: 0;
 }

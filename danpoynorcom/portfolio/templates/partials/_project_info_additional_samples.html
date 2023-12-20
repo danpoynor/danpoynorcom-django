@@ -23,7 +23,7 @@
                             <a href="{% url 'project_detail' slug=item.slug %}">
                             {% endif %}
                             <figure>
-                                <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:item.image.thumbnail %}"
+                                <img src="{% static 'portfolio/images/project-item-images/thumbnail/'|add:item.image.thumbnail %}"
                                      alt="{{ item.name }}"
                                      height=""
                                      width="" />
