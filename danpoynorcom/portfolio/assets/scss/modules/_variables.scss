@@ -1,21 +1,20 @@
 //////////////////////////////
 // variables
 //////////////////////////////
-
 // portfolio image sizes
 //admin-list-thumb: 120x120 // this is a custom size set in functions.php
 $width-project-details-tnails: 192px; // x2 384 - smallest "thumbnail" size. Used in detail view sidebar related samples area.
 $width-portfolio: 258px; // x2 516 - "medium" size. Use in mosaic view for Portfolio areas including the project overview pages.
 $width-project-overview: 320px; // using the 516 "medium" thumbnail in here also even though it's not 2x the size.
 $width-project-detail: 686px; // x2 1372 - "large" size set in media settings
-
 // Legacy IE support
 $legacy-support-for-ie6: false;
 $legacy-support-for-ie7: false;
-$legacy-support-for-ie8: true;
-
+$legacy-support-for-ie8: false;
+$legacy-support-for-ie9: false;
+$legacy-support-for-ie10: false;
+$legacy-support-for-ie11: false;
 $transition-speed: .3s;
 $transition-speed-slow: .5s;
 $transition-speed-slower: .7s;
-
 $hover-brightness-amount: 120%;

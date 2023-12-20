@@ -16,7 +16,7 @@
         //display: inline-block;
         font-weight: 400;
         margin: 0;
-        padding: 0  .15em 0;
+        padding: 0 .15em 0;
         font-size: 2em;
     }
 
@@ -45,10 +45,9 @@
     .showcase-list {
         margin: 0 auto;
 
-        :nth-child(n+6) { // make sure only the first five are shown
+        :nth-child(n+6) {
+            // make sure only the first five are shown
             display: none;
         }
-
     }
-
 }

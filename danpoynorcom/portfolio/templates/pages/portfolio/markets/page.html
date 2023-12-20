@@ -1,14 +1,13 @@
-{% extends 'base_portfolio.html' %}
-
+{% extends "base_portfolio.html" %}
 {% block content %}
-  <h1>Markets</h1>
-  <ul>
-    {% for market in markets %}
-      <li>
-        <a href="{{ market.get_absolute_url }}">{{ market.name }}</a>
-      </li>
-      {% empty %}
-      <li>No markets available.</li>
-    {% endfor %}
-  </ul>
-{% endblock %}
+    <h1>Markets</h1>
+    <ul>
+        {% for market in markets %}
+            <li>
+                <a href="{{ market.get_absolute_url }}">{{ market.name }}</a>
+            </li>
+        {% empty %}
+            <li>No markets available.</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

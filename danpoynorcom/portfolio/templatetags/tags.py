@@ -5,9 +5,9 @@ register = template.Library()
 
 @register.simple_tag
 def verbose_name_plural(obj):
-    return obj._meta.verbose_name_plural
+    return obj.get_verbose_name_plural()
 
 
 @register.simple_tag
 def verbose_name(obj):
-    return obj._meta.verbose_name
+    return obj.get_verbose_name()

@@ -1,23 +1,25 @@
-{% extends 'base_taxonomy.html' %}
-
+{% extends "base_taxonomy.html" %}
 {% block intro %}
-  <p>
-    Educated at CalArts in Visual Communications then U.C. Berkeley for Webmaster, Linux Server Administration, and Marketing degrees has given me a broad formal education. Combining that with years of hands-on experience, I&rsquo;m able to step into multiple roles from concept development, to designing branding elements and page layouts, to running A/B tests and user testing, to final implementation. Working within multi-disciplinary teams I&rsquo;m also able to communicate effectively with stakeholders using germane nomenclature to collaborate on design, development, and <span class="nowrap">marketing efforts.</span>
-  </p>
-{% endblock %}
+    <p>
+        Educated at CalArts in Visual Communications then U.C. Berkeley for Webmaster, Linux Server Administration, and Marketing degrees has given me a broad formal education. Combining that with years of hands-on experience, I’m able to step into multiple roles from concept development, to designing branding elements and page layouts, to running A/B tests and user testing, to final implementation. Working within multi-disciplinary teams I’m also able to communicate effectively with stakeholders using germane nomenclature to collaborate on design, development, and <span class="nowrap">marketing efforts.</span>
+    </p>
+{% endblock intro %}
 {% block taxonomy_content %}
-    {% include 'partials/_taxonomy_terms_highlighted.html' with item_name='role' highlighted_items=highlighted_roles %}
+    {% include "partials/_taxonomy_terms_highlighted.html" with item_name="role" highlighted_items=highlighted_roles %}
     <section class="roles-page taxonomy-categories">
-      <h2>Roles Overview</h2>
-      <ul class="taxonomy-list">
-        {% for role in roles %}
-          <li>
-            <h3><a href="{{ role.get_absolute_url }}" title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.projects.count }} )</span></a></h3>
-            <p>{{ role.description|safe }}</p>
-          </li>
-          {% empty %}
-          <li>No roles available.</li>
-        {% endfor %}
-      </ul>
+        <h2>Roles Overview</h2>
+        <ul class="taxonomy-list">
+            {% for role in roles %}
+                <li>
+                    <h3>
+                        <a href="{{ role.get_absolute_url }}"
+                           title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.projects.count }} )</span></a>
+                    </h3>
+                    <p>{{ role.description|safe }}</p>
+                </li>
+            {% empty %}
+                <li>No roles available.</li>
+            {% endfor %}
+        </ul>
     </section>
-{% endblock %}
+{% endblock taxonomy_content %}

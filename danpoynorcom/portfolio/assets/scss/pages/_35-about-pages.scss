@@ -1,140 +1,121 @@
 .about-me-page {
-	padding-bottom: 3em;
+    padding-bottom: 3em;
 
-	header {
-		padding-top: 1em;
-	}
-	
-	h1 {
-		//margin: 1em 0 .75em;
-	}
-	
-	h2 {
-		margin: 1.5em 0 0;
-	}
-	
-	h3 {
-		margin: 1.5em 0 0;
-	}
-	
-	h2 + h3 {
-		margin-top: 1em;
-	}
+    header {
+        padding-top: 1em;
+    }
 
-	.content  {
-		
-		.container {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			align-items: flex-start;
-			//
-			@supports (display: grid) { // test the browser understand css variables
-				display: grid;
-				grid-template-columns: 66% 33%;
-				justify-items: stretch;
-				grid-gap: 1em;
-				
-				@media only screen and (max-width: $iphone-landscape-width) {
-					grid-template-columns: 100%;
-				}
-				
-			}
-		}
+    h2 {
+        margin: 1.5em 0 0;
+    }
 
-		.column {
-			background-color: $ui-panel-background-color;
-			background-color: var(--t7);
-			//
-			padding: 2em 2em 1em;
-		
-			&.prose {
-				flex: 0 0 66%;
-				order: 1;
-				margin-bottom: 1em;
-			
-				h2 {
-					margin-top: 0;
-				
-					span {
-						color: $body-text-color;
-						font-size: .58333333333333em; // 14 / 24
-					}
-				
-				}
-			
-			}
-	
-			&.sidebar-info {
-				flex: 0 0 31%;
-				order: 2;
-				min-width: 210px;
-			
-				h2 {
-					margin: 0;
-				}
-			
-				p {
-					font-size: .875em;
-					margin: .75em 0;
-				}
-			
-			}
-	
-		}
+    h3 {
+        margin: 1.5em 0 0;
+    }
 
-		section + section {
-			border-top: 1px solid $div-line-color;
-			border-top: 1px solid var(--t8);
-			margin-top: 2em;
-			padding-top: 2em;
-		}
+    h2 + h3 {
+        margin-top: 1em;
+    }
 
-	}
+    .content {
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
 
-	.photo {
-		
-		.container {
-			background-image: url(/wp-content/themes/danpoynor-2017/images/photos/about-page-03e.png);
-			//background-attachment: fixed;
-			background-position: center top;
-			background-repeat: no-repeat;
-			padding: 0 2em;
-			height: 516px;
-		}
+            //
+            @supports (display: grid) {
+                // test the browser understand css variables
+                display: grid;
+                grid-template-columns: 66% 33%;
+                justify-items: stretch;
+                grid-gap: 1em;
 
-	}
+                @media only screen and (max-width: $iphone-landscape-width) {
+                    grid-template-columns: 100%;
+                }
+            }
+        }
 
-	.professional-highlights,
-	.professional-recognitions {
-		ul {
-			column-gap: 1.25em;
-			column-count: 2;
-			column-fill: balance;
-			margin-bottom: -1em;
-			
-			@media only screen and (max-width: $iphone-landscape-width) {
-				column-count: 1;
-			}
-	
-			li {
-				margin: 0 0 1em;
-				padding-right: .5em;
-			}
-			
-		}
-	
-	}
-	
-	.key-dates {
-		ul {
-			li {
-				margin: 0 0 1em;
-			}
-		}
-	}
+        .column {
+            background-color: var(--t7);
+            //
+            padding: 2em 2em 1em;
 
-	.biography-expanded {
-	}
-	
+            &.prose {
+                flex: 0 0 66%;
+                order: 1;
+                margin-bottom: 1em;
+
+                h2 {
+                    margin-top: 0;
+
+                    span {
+                        color: $body-text-color;
+                        font-size: .58333333333333em; // 14 / 24
+                    }
+                }
+            }
+
+            &.sidebar-info {
+                flex: 0 0 31%;
+                order: 2;
+                min-width: 210px;
+
+                h2 {
+                    margin: 0;
+                }
+
+                p {
+                    font-size: .875em;
+                    margin: .75em 0;
+                }
+            }
+        }
+
+        section + section {
+            border-top: 1px solid var(--t8);
+            margin-top: 2em;
+            padding-top: 2em;
+        }
+    }
+
+    .photo {
+        .container {
+            background-image: url(/wp-content/themes/danpoynor-2017/images/photos/about-page-03e.png);
+            //background-attachment: fixed;
+            background-position: center top;
+            background-repeat: no-repeat;
+            padding: 0 2em;
+            height: 516px;
+        }
+    }
+
+    .professional-highlights,
+    .professional-recognitions {
+        ul {
+            column-gap: 1.25em;
+            column-count: 2;
+            column-fill: balance;
+            margin-bottom: -1em;
+
+            @media only screen and (max-width: $iphone-landscape-width) {
+                column-count: 1;
+            }
+
+            li {
+                margin: 0 0 1em;
+                padding-right: .5em;
+            }
+        }
+    }
+
+    .key-dates {
+        ul {
+            li {
+                margin: 0 0 1em;
+            }
+        }
+    }
 }

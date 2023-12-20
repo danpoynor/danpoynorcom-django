@@ -1,12 +1,14 @@
 {% load static %}
 <header>
-  <div class="container">
-    <div class="site-branding">
-      <h1 class="site-title"><a href="{% url 'home' %}" rel="home">Dan Poynor</a></h1>
-      <p class="site-description">Designer <span>/</span> Developer <span>/</span> Director</p>
+    <div class="container">
+        <div class="site-branding">
+            <h1 class="site-title">
+                <a href="{% url 'home' %}" rel="home">Dan Poynor</a>
+            </h1>
+            <p class="site-description">
+                Designer <span>/</span> Developer <span>/</span> Director
+            </p>
+        </div>
+        {% include "partials/_nav_main.html" %}
     </div>
-
-    {% include 'partials/_nav_main.html' %}
-
-  </div>
 </header>

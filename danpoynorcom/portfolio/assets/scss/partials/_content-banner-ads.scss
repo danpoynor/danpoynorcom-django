@@ -1,12 +1,8 @@
 .dpportfolio {
-
     .stage {
-
         table {
-
             &.banner-ads {
                 margin: 0 auto;
-                //padding-bottom: 1em;
                 width: 100%;
 
                 + .banner-ads {
@@ -15,7 +11,8 @@
                     padding-top: 2em;
                 }
 
-                th, td {
+                th,
+                td {
                     padding: .5em;
                     text-align: left;
                     vertical-align: top;
@@ -26,7 +23,9 @@
                 }
 
                 .reduce-height {
-                    th, td {
+
+                    th,
+                    td {
                         padding: 0 1em;
                     }
                 }
@@ -39,7 +38,6 @@
                         display: block;
                         height: 1px;
                     }
-
                 }
 
                 .presentation-title {
@@ -68,6 +66,7 @@
                 }
 
                 &.cellpad0 {
+
                     th,
                     td {
                         padding: 0;
@@ -75,12 +74,12 @@
                 }
 
                 &.cellpad25 {
+
                     th,
                     td {
                         padding: .25em;
                     }
                 }
-
             }
 
             &.with-left-descript {
@@ -89,6 +88,7 @@
                 .text {
                     text-align: left;
                 }
+
                 .image {
                     text-align: center;
                 }
@@ -96,43 +96,38 @@
                 img {
                     margin: 0 auto;
                 }
-
             }
 
-            .banner-ads { // for imvu localized banners
+            .banner-ads {
+                // for imvu localized banners
                 margin: 0;
                 padding-bottom: 0;
                 width: auto;
 
                 tr {
-
-                    &:first-of-type { // to keep td from expanding taller unecessarily
+                    &:first-of-type {
+                        // to keep td from expanding taller unecessarily
                         //width: 300px;
                         height: 250px;
                     }
 
-                    + tr td { // to make 250x250 banner align higher
+                    + tr td {
+                        // to make 250x250 banner align higher
                         padding: 0 .5em;
                     }
-
                 }
-
             }
-
         }
 
         .cisco-mmn-pcn-banners {
+            align-items: flex-start;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-            align-items: flex-start;
 
             img {
                 margin: .5em;
             }
-
         }
-
     }
-
 }

@@ -1,6 +1,5 @@
 .expando {
-    display: none; // initially hide expandos and use jQuery to make them visiable after they've been opened if needed.
-    background-color: $ui-panel-background-color;
+    display: none; // initially hide expandos and use jQuery to make them visible after they've been opened if needed.
     background-color: var(--t7);
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@
     + .expando {
         margin: 1em 0 0 0;
     }
-
 }
 
 .expando-content {
@@ -38,18 +36,18 @@
             filter: brightness($hover-brightness-amount);
         }
     }
-
 }
 
 .project-additional-samples {
     display: none;
 }
- 
+
 html:not(.js),
 .no-js {
- .expando-content {
+    .expando-content {
         display: block;
     }
+
     .expando,
     .project-additional-samples {
         display: block;
@@ -59,6 +57,7 @@ html:not(.js),
 .expando-trigger {
     cursor: pointer;
     padding: .75em 1em;
+
     &::before {
         color: $text-link-color;
         color: var(--t3);
@@ -66,7 +65,8 @@ html:not(.js),
         display: inline-block;
         font-size: .7em;
         margin-right: .5em;
-        transition: all $transition-speed  ease-in-out;;
+        transition: all $transition-speed ease-in-out;
+        ;
         vertical-align: 12%;
     }
 
@@ -75,7 +75,6 @@ html:not(.js),
             filter: brightness($hover-brightness-amount);
         }
     }
-
 }
 
 #tc {
@@ -83,6 +82,7 @@ html:not(.js),
         &::before {
             content: none;
         }
+
         &::after {
             color: $text-link-color;
             color: var(--t3);
@@ -90,7 +90,8 @@ html:not(.js),
             display: inline-block;
             font-size: .7em;
             margin-left: .5em;
-            transition: all $transition-speed  ease-in-out;;
+            transition: all $transition-speed ease-in-out;
+            ;
             vertical-align: 12%;
             position: absolute;
             right: 1em;
@@ -107,16 +108,9 @@ html:not(.js),
 }
 
 .expando.expanded {
-
     .expando-trigger {
         &::before {
             transform: rotate(90deg);
         }
-        &:hover {
-            &::before {
-                //transform: rotate(45deg);
-            }
-        }
     }
-
 }

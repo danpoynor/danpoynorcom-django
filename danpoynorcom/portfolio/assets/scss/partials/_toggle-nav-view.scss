@@ -1,16 +1,10 @@
 main {
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        h1 {
-
-        }
-
         nav {
-
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -26,13 +20,9 @@ main {
                     + li {
                         margin-left: 1em;
                     }
-
                 }
-
             }
-
         }
-
     }
 
     button {
@@ -45,7 +35,6 @@ main {
         &.on {
             background: $white;
         }
-
     }
 
     .layout-wrapper {
@@ -54,8 +43,5 @@ main {
         .list-view {
             display: none;
         }
-
-
     }
-
 }

@@ -17,8 +17,7 @@ def portfolio(request):
     selected_industries = Industry.objects.filter(id__in=selected_industry_ids)
 
     selected_media_type_ids = [28, 3, 21, 36, 38]
-    selected_media_types = MediaType.objects.filter(
-        id__in=selected_media_type_ids)
+    selected_media_types = MediaType.objects.filter(id__in=selected_media_type_ids)
 
     selected_role_ids = [12, 24, 22, 2, 8]
     selected_roles = Role.objects.filter(id__in=selected_role_ids)
@@ -46,6 +45,10 @@ def clients(request):
     return render(request, 'pages/portfolio/clients/page.html', {'clients': clients, 'object': Client()})
 
 
+def getty_legal_notice(request):
+    return render(request, 'pages/legal-notice-to-picscout-getty-images-picscout-clients-cyveillance-you-are-prohibited-from-accessing-this-site/page.html')
+
+
 class ClientProjectsListView(PrevNextMixin, generic.DetailView):
     model = Client
     template_name = 'pages/portfolio/clients/projects_list_page.html'
@@ -53,13 +56,14 @@ class ClientProjectsListView(PrevNextMixin, generic.DetailView):
 
 def industries(request):
     highlighted_industry_ids = [3, 13, 32, 8, 21, 24]
-    highlighted_industries = Industry.objects.filter(
-        id__in=highlighted_industry_ids)
+    highlighted_industries = Industry.objects.filter(id__in=highlighted_industry_ids)
     industries = Industry.objects.all()
+    markets = Market.objects.all()
 
     context = {
         'highlighted_industries': highlighted_industries,
         'industries': industries,
+        'markets': markets,
         'object': Industry(),
     }
 
@@ -83,8 +87,7 @@ class MarketProjectsListView(PrevNextMixin, generic.DetailView):
 
 def mediatypes(request):
     highlighted_media_type_ids = [28, 3, 21, 36, 38]
-    highlighted_media_types = MediaType.objects.filter(
-        id__in=highlighted_media_type_ids)
+    highlighted_media_types = MediaType.objects.filter(id__in=highlighted_media_type_ids)
     mediatypes = MediaType.objects.all()
 
     context = {

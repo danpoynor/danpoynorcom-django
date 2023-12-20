@@ -1,14 +1,10 @@
 // Modules and Variables
 @import "modules/";
-
 // Normalization / HTML Boilerplate Top
 @import "partials/000-normalize/h5bp-begin";
-
 // Standard Partials
 @import "partials/";
-
 // Pages (individual pages come after partials so standards styles can be customized per page if needed)
 @import "pages/";
-
 // HTML Boilerplate Bottom
 @import "partials/000-normalize/h5bp-end"; // I'm not using any of these classes

@@ -1,27 +1,26 @@
-{% extends 'base_portfolio.html' %}
-
+{% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-  <main class="project-overview-page">
-    <header>
-      <div class="container">
-        <h1 class="project-name"><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span></h1>
-      </div>
-    </header>
-    <div class="project-details">
-      <div class="container">
-        {% include "partials/_project_info_client.html" with project=object %}
-        {% include "partials/_project_info_project.html" with project=object  %}
-      </div>
-    </div>
-    <section class="thumbnails-header">
-      <div class="container">
-        <h3>Project Overview Previews</h3>
-      </div>
-    </section>
-    <section class="thumbnails">
-      <div class="container taxonomy-project-page">
-        {% include "partials/_project_items_list.html" %}
-      </div>
-    </section>
-  </main>
-{% endblock %}
+    <main class="project-overview-page">
+        <header>
+            <div class="container">
+                <h1 class="project-name">
+                    <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span>
+                </h1>
+            </div>
+        </header>
+        <div class="project-details">
+            <div class="container">
+                {% include "partials/_project_info_client.html" with project=object %}
+                {% include "partials/_project_info_project.html" with project=object %}
+            </div>
+        </div>
+        <section class="thumbnails-header">
+            <div class="container">
+                <h3>Project Overview Previews</h3>
+            </div>
+        </section>
+        <section class="thumbnails">
+            <div class="container taxonomy-project-page">{% include "partials/_project_items_list.html" %}</div>
+        </section>
+    </main>
+{% endblock portfolio_content %}

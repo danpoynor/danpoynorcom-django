@@ -1,7 +1,5 @@
 .dpportfolio section.stage {
-
     .product-photos {
-
         figure + figure {
             margin: 0;
         }
@@ -12,18 +10,14 @@
         }
 
         figure {
-
             img {
                 margin: 0 auto;
                 padding: 1.5em 2em;
             }
-
         }
 
         p {
             margin-bottom: 0;
         }
-
     }
-
 }

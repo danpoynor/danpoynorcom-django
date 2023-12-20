@@ -1,20 +1,19 @@
 .contact-form {
-  background-color: $ui-panel-background-color;
-  background-color: var(--t7);
-  margin-bottom: .5em;
-  padding: 1em 2em;
+    background-color: var(--t7);
+    margin-bottom: .5em;
+    padding: 1em 2em;
 }
 
 .gform_button {
-  background-color: #20b2aa;
-  background-color: var(--t3);
-  border-width: 0;
-  color: rgb(255, 255, 255);
-  color: var(--t7);
-  cursor: pointer;
-  display: inline-block;
-  padding: .75em 1.25em;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+    background-color: #20b2aa;
+    background-color: var(--t3);
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    color: var(--t7);
+    cursor: pointer;
+    display: inline-block;
+    padding: .75em 1.25em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }

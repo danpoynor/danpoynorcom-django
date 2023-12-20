@@ -1,23 +1,19 @@
 article {
-
     .stage {
-
         .email-demo {
             border-collapse: collapse;
             margin: 0 auto;
 
             tbody,
             td {
-            margin: 0;
-            padding: 0;
-            vertical-align: top;
-            //text-align: left;
+                margin: 0;
+                padding: 0;
+                vertical-align: top;
             }
 
             img {
                 display: inline-block;
             }
-
         }
 
         .email-demo-598 {
@@ -30,10 +26,9 @@ article {
 
             td {
                 font-family: arial, helvetica, sans-serif;
-                text-align:left;
+                text-align: left;
                 vertical-align: top;
             }
-
         }
 
         .imvu-header {
@@ -51,7 +46,6 @@ article {
                 padding: 0;
                 font-weight: normal;
             }
-
         }
 
         .imvu-legal {
@@ -68,9 +62,6 @@ article {
                 font-size: 9px;
                 text-align: center;
             }
-
         }
-
     }
-
 }

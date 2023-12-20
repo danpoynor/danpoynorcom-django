@@ -1,8 +1,7 @@
-{% extends 'admin/base.html' %}
-
+{% extends "admin/base.html" %}
 {% block extrastyle %}
-  {{ block.super }}
-  <style>
+    {{ block.super }}
+    <style>
     html[data-theme="dark"],
     :root {
       --primary: #9774d5;
@@ -11,5 +10,5 @@
       --link-selected-fg: #8f5bb2;
       --breadcrumbs-bg: var(--primary);
     }
-  </style>
-{% endblock %}
+    </style>
+{% endblock extrastyle %}

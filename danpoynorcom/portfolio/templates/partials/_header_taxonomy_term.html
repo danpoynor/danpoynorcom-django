@@ -1,5 +1,7 @@
 {% load tags %}
 {% load static %}
 <header>
-  <h1><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> {% verbose_name_plural object %}</h1>
+    <h1>
+        <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> {% verbose_name_plural object %}
+    </h1>
 </header>

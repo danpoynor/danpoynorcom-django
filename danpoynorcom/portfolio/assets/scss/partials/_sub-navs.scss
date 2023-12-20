@@ -1,136 +1,135 @@
 .sub-nav {
-  background: $theme-color;
-  background: var(--t3);
+    background: var(--t3);
 
-  .container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: $header-link-text-color;
-
-    .totals {
-      font: normal 1.125em/1.4 'Oswald', sans-serif; // 18 / 16
-      margin: 1em 0;
-
-      p {
-        margin: 0;
-      }
-    }
-
-    @media only screen and (max-width: $portfolio-sub-nav-break-smaller) {
-      // 720px max
-      flex-direction: column;
-
-      .totals {
-        margin: .5em 0 0;
-        text-align: center;
-      }
-
-      .dropdown {
-        margin: .75em 0 .5em;
-      }
-
-      .portfolio-sub-tabs {
-        display: none;
-      }
-    }
-
-    @media only screen and (min-width: $portfolio-sub-nav-break-smaller) {
-
-      // 720px min
-      .dropdown {
-        display: none;
-      }
-
-      .portfolio-sub-tabs {
-        ul {
-          display: flex;
-          font: normal 1.125em/1.4 'Oswald', sans-serif; // 18 / 16
-          flex-flow: row wrap;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-top: .5em;
-
-          li {
-            margin: 0 2.5px;
-            padding: 0;
-
-            &:last-of-type {
-              margin-right: 0;
-            }
-
-            a {
-              color: $white;
-              display: block;
-              margin: 0;
-              padding: .5em 1em 1em;
-              position: relative;
-              overflow: hidden; // needed so Safari doesn't react when rolling over the unseen :before element
-              white-space: nowrap;
-              transition: background-image $transition-speed ease-out;
-              clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0); // use clip-path for top right triangle shaped notch
-
-              @media only screen and (max-width: 1040px) {
-                padding: .5em .5em 1em;
-              }
-
-              &::before {
-                background: rgba(255, 255, 255, .3);
-                content: '';
-                display: block;
-                height: 400%;
-                width: 330%;
-                position: absolute;
-                left: -330%;
-                bottom: -330%;
-                transform: rotate(45deg);
-                z-index: -10;
-                transition: left $transition-speed-slow, bottom $transition-speed-slow ease-out;
-              }
-
-              &:hover {
-                color: $white;
-
-                &::before {
-                  left: -150%;
-                  bottom: -150%;
-                }
-              }
-            }
-
-            [aria-current] {
-              background-color: var(--t4);
-              color: var(--t3);
-
-              &:hover {
-                color: var(--t3);
-              }
-            }
-
-            &.prompt {
-              padding: .5em 1em 1em; // bottom value keeps the selected tab aligned with the bottom
-            }
-          }
-        }
-      }
-
-      // .portfolio-sub-tabs
-      @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-        flex-direction: column;
+    .container {
+        align-items: center;
+        color: $header-link-text-color;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
 
         .totals {
-          margin-bottom: 0;
+            font: normal 1.125em/1.4 'Oswald', sans-serif; // 18 / 16
+            margin: 1em 0;
+
+            p {
+                margin: 0;
+            }
         }
-      }
+
+        @media only screen and (max-width: $portfolio-sub-nav-break-smaller) {
+            // 720px max
+            flex-direction: column;
+
+            .totals {
+                margin: .5em 0 0;
+                text-align: center;
+            }
+
+            .dropdown {
+                margin: .75em 0 .5em;
+            }
+
+            .portfolio-sub-tabs {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: $portfolio-sub-nav-break-smaller) {
+
+            // 720px min
+            .dropdown {
+                display: none;
+            }
+
+            .portfolio-sub-tabs {
+                ul {
+                    align-items: flex-start;
+                    display: flex;
+                    flex-flow: row wrap;
+                    font: normal 1.125em/1.4 'Oswald', sans-serif; // 18 / 16
+                    justify-content: flex-start;
+                    margin-top: .5em;
+
+                    li {
+                        margin: 0 2.5px;
+                        padding: 0;
+
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0); // use clip-path for top right triangle shaped notch
+                            color: $white;
+                            display: block;
+                            margin: 0;
+                            overflow: hidden; // needed so Safari doesn't react when rolling over the unseen :before element
+                            padding: .5em 1em 1em;
+                            position: relative;
+                            transition: background-image $transition-speed ease-out;
+                            white-space: nowrap;
+
+                            @media only screen and (max-width: 1040px) {
+                                padding: .5em .5em 1em;
+                            }
+
+                            &::before {
+                                background: rgba(255, 255, 255, .3);
+                                bottom: -330%;
+                                content: '';
+                                display: block;
+                                height: 400%;
+                                left: -330%;
+                                position: absolute;
+                                transform: rotate(45deg);
+                                transition: left $transition-speed-slow, bottom $transition-speed-slow ease-out;
+                                width: 330%;
+                                z-index: -10;
+                            }
+
+                            &:hover {
+                                color: $white;
+
+                                &::before {
+                                    left: -150%;
+                                    bottom: -150%;
+                                }
+                            }
+                        }
+
+                        [aria-current] {
+                            background-color: var(--t4);
+                            color: var(--t3);
+
+                            &:hover {
+                                color: var(--t3);
+                            }
+                        }
+
+                        &.prompt {
+                            padding: .5em 1em 1em; // bottom value keeps the selected tab aligned with the bottom
+                        }
+                    }
+                }
+            }
+
+            // .portfolio-sub-tabs
+            @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
+                flex-direction: column;
+
+                .totals {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
-  }
 }
 
 .sub-nav.sub-nav-about-page {
-  .container {
-    justify-content: flex-end;
-  }
+    .container {
+        justify-content: flex-end;
+    }
 }
 
 // selected tabs
@@ -140,14 +139,12 @@ body.tax-market .sub-nav .nav ul .markets-tab,
 body.tax-platform .sub-nav .nav ul .formats-tab,
 body.tax-role .sub-nav .nav ul .roles-tab,
 body.tax-project .sub-nav .nav ul .projects-tab {
-  a {
-    background-color: $background-color;
-    background-color: var(--t4);
-    color: $portfolio-nav-selected-text;
-    color: var(--t3);
+    a {
+        background-color: var(--t4);
+        color: var(--t3);
 
-    &::before {
-      content: none;
+        &::before {
+            content: none;
+        }
     }
-  }
 }

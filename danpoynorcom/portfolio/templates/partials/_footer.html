@@ -1,22 +1,44 @@
 {% load static %}
 <footer>
-  <div class='container'>
-    <ul class='badges'>
-      <li class='illustrator'><a href='https://www.youracclaim.com/badges/7d763963-9355-4948-a065-355bbc1fe3ce' target='_blank'>Adobe Illustrator Expert</a></li>
-      <li class='photoshop'><a href='https://www.youracclaim.com/badges/a8ebce17-d432-4551-adc1-b05bc8bd2345' target='_blank'>Adobe Photoshop Expert</a></li>
-    </ul>
-    <p class="site-info">Crafted with&nbsp;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="11.3px" viewBox="0 0 13 11.3" x="0px" y="0px" class='footer-heart' aria-label='heart' role='img'>
-      <title>heart</title>
-      <path id="heart-path" d="M11.7,1.2c-0.6-0.6-1.4-0.8-2.4-0.8C9,0.4,8.7,0.5,8.5,0.5S7.9,0.8,7.6,0.9S7.2,1.3,7,1.4
-C6.8,1.6,6.6,1.7,6.5,1.9C6.3,1.7,6.1,1.5,6,1.4S5.6,1.1,5.3,0.9C5.1,0.8,4.8,0.6,4.5,0.5C4.2,0.4,3.9,0.4,3.7,0.4
-c-1,0-1.8,0.3-2.4,0.8C0.7,1.8,0.4,2.5,0.4,3.5c0,0.3,0.1,0.6,0.2,0.9c0.1,0.3,0.2,0.6,0.4,0.8C1.1,5.5,1.2,5.7,1.4,6
-c0.2,0.2,0.3,0.4,0.4,0.4C1.9,6.5,1.9,6.5,2,6.6l4.2,4.1c0.1,0.1,0.3,0.3,0.3,0.3s0.2-0.2,0.3-0.3L11,6.6c1-1,1.6-2,1.6-3
-C12.5,2.6,12.2,1.8,11.7,1.2z" />
-    </svg>&nbsp;in Ausin, Texas&nbsp; | &nbsp;<span class='nowrap'>&copy; Dan Poynor. All rights reserved.</span><br>
-    Website development based on custom <span style='white-space:nowrap'>WordPress theme and plugins environment.</span><br>
-    Feedback welcome. Any opportunities to improve this site <span style='white-space:nowrap'>please <a href='/contact/'>let me know</a>.</span><br>
-    Web hosting provided by Amazon Web Services (AWS) using an Elastic Beanstalk app config to manage <br>EC2 instances for computing, an RDS database, S3 buckets for files, and a Load Balancer to allow for TLS Certificate Use.<br>
-    All product names, logos, photographs, graphic design, and brands are property of their <span class='nowrap'>respective owners.</span><br>
-    <a href='/legal-notice-to-picscout-getty-images-picscout-clients-cyveillance-you-are-prohibited-from-accessing-this-site/' target='_top'>LEGAL NOTICE TO PICSCOUT, GETTY IMAGES, PICSCOUT CLIENTS, CYVEILLANCE: You are prohibited from accessing this site.</a></p>
-  </div>
+    <div class="container">
+        <ul class="badges">
+            <li class="illustrator">
+                <a href="https://www.youracclaim.com/badges/7d763963-9355-4948-a065-355bbc1fe3ce"
+                   target="_blank">Adobe Illustrator Expert</a>
+            </li>
+            <li class="photoshop">
+                <a href="https://www.youracclaim.com/badges/a8ebce17-d432-4551-adc1-b05bc8bd2345"
+                   target="_blank">Adobe Photoshop Expert</a>
+            </li>
+        </ul>
+        <p class="site-info">
+            Crafted with&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="13px"
+                 height="11.3px"
+                 viewBox="0 0 13 11.3"
+                 x="0px"
+                 y="0px"
+                 class="footer-heart"
+                 aria-label="heart"
+                 role="img">
+                <title>heart</title>
+                <path id="heart-path" d="M11.7,1.2c-0.6-0.6-1.4-0.8-2.4-0.8C9,0.4,8.7,0.5,8.5,0.5S7.9,0.8,7.6,0.9S7.2,1.3,7,1.4 C6.8,1.6,6.6,1.7,6.5,1.9C6.3,1.7,6.1,1.5,6,1.4S5.6,1.1,5.3,0.9C5.1,0.8,4.8,0.6,4.5,0.5C4.2,0.4,3.9,0.4,3.7,0.4 c-1,0-1.8,0.3-2.4,0.8C0.7,1.8,0.4,2.5,0.4,3.5c0,0.3,0.1,0.6,0.2,0.9c0.1,0.3,0.2,0.6,0.4,0.8C1.1,5.5,1.2,5.7,1.4,6 c0.2,0.2,0.3,0.4,0.4,0.4C1.9,6.5,1.9,6.5,2,6.6l4.2,4.1c0.1,0.1,0.3,0.3,0.3,0.3s0.2-0.2,0.3-0.3L11,6.6c1-1,1.6-2,1.6-3 C12.5,2.6,12.2,1.8,11.7,1.2z" />
+            </svg>
+            in Ausin, Texas | <span class="nowrap">© Dan Poynor. All rights reserved.</span>
+            <br>
+            Website development based on custom <span class="nowrap">WordPress theme and plugins environment.</span>
+            <br>
+            Feedback welcome. Any opportunities to improve this site <span class="nowrap">please <a href='{% url 'contact' %}'>let me know</a>.</span>
+            <br>
+            Web hosting provided by Amazon Web Services (AWS) using an Elastic Beanstalk app config to manage
+            <br>
+            EC2 instances for computing, an RDS database, S3 buckets for files, and a Load Balancer to allow for TLS Certificate Use.
+            <br>
+            All product names, logos, photographs, graphic design, and brands are property of their <span class="nowrap">respective owners.</span>
+            <br>
+            <a href="{% url 'getty_legal_notice' %}" target="_top">LEGAL NOTICE TO PICSCOUT, GETTY IMAGES, PICSCOUT CLIENTS, CYVEILLANCE: You are prohibited from accessing this site.</a>
+        </p>
+    </div>
 </footer>

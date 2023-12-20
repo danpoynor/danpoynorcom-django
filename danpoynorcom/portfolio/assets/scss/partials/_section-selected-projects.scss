@@ -1,5 +1,4 @@
 .selected-projects {
-    background: $white;
     background: var(--t7);
 
     .container {
@@ -10,17 +9,14 @@
         color: $headline-text-color;
         color: var(--t6);
         display: block;
+        font-size: 2em;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
         text-align: center;
-
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    font-size: 2em;
     }
 
     .project {
-        background-color: #e6f9fb; // for MS Edge
-        //background-color: desaturate(lighten($theme-color, 8%), 9%);
         background-color: var(--t13);
         box-shadow: 0px 0px 0px 40px white inset; // for MS Edge
         box-shadow: 0px 0px 0px 50px var(--t7) inset;
@@ -38,11 +34,11 @@
         }
 
         //@media only screen and (max-width: 1080px) {
-        @media only screen and (max-width: 1079px) { // for MS Edge
+        @media only screen and (max-width: 1079px) {
+            // for MS Edge
             box-shadow: 0px 0px 0px 20px $white inset;
             height: auto;
         }
-
     }
 
     .collage {
@@ -55,10 +51,10 @@
         pointer-events: none;
 
         //@media only screen and (max-width: 1080px) {
-        @media only screen and (max-width: 1079px) { // for MS Edge
+        @media only screen and (max-width: 1079px) {
+            // for MS Edge
             display: none;
         }
-
     }
 
     .insightly-responsive-site-development .collage {
@@ -79,7 +75,8 @@
         background-image: url(images/collages/web-contracts-conference.png);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: 100%;;
+        background-size: 100%;
+        ;
     }
 
     .yahoo-lender-search .collage {
@@ -90,7 +87,6 @@
     }
 
     .text {
-        //background: var(--t11);
         margin: 1em 4em;
         max-width: 340px;
         padding: 2em;
@@ -100,16 +96,15 @@
         }
 
         //@media only screen and (max-width: 1080px) {
-        @media only screen and (max-width: 1079px) { // for MS Edge
+        @media only screen and (max-width: 1079px) {
+            // for MS Edge
             margin: 3em;
             max-width: none;
             padding: 0;
         }
-
     }
 
     h3 {
-        color: $headline-text-color;
         color: var(--t6); // not working in night mode when titles go white
         display: block;
         font-size: 1.3em;
@@ -117,25 +112,18 @@
     }
 
     p {
-        color: $body-text-color;
         color: var(--t5); // not working in night mode when text turns light gray
         margin: .5em 0 1em;
-
-        &:last-of-type {
-            //margin-bottom: 0;
-        }
-
     }
 
     .btn {
         background-color: $white;
-        color:  $text-link-color;
         color: var(--t3);
         display: inline-block;
         margin: 0;
+        overflow: hidden;
         padding: .5em 1em;
         position: relative;
-        overflow: hidden;
         z-index: 1;
 
         span {
@@ -143,30 +131,24 @@
         }
 
         &::before {
-            border: 0 solid $text-link-color;
             border: 0 solid var(--t3);
             content: '';
             display: block;
             height: 100%;
-            width: 100%;
-            position: absolute;
             left: 0;
+            position: absolute;
             top: 0;
-            z-index: -1;
             transition: all $transition-speed ease-out;
+            width: 100%;
+            z-index: -1;
         }
 
         &:hover {
             color: $white;
 
             &::before {
-                border: 1.55em solid $text-link-color;
                 border: 1.55em solid var(--t3);
             }
-
         }
-
     }
-
-
 }

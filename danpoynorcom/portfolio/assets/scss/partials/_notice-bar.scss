@@ -6,19 +6,18 @@
     color: #666;
     padding: 1em;
     text-align: center;
-    position:relative;
-    //z-index:2050;
+    position: relative;
 
+    //z-index:2050;
     p {
         margin: 0;
+
         + p {
             margin: .5em 0 0;
         }
-
     }
 
     a {
         color: #00f;
     }
-
 }

@@ -1,32 +1,16 @@
-{% extends 'base_taxonomy.html' %}
-
+{% extends "base_taxonomy.html" %}
 {% block intro %}
-  <p>Working on both the agency-side and client-side of projects has provided me with knowledgable insight and experience on how to manage and achieve goals from both perspectives. Initially working on corporate projects in Holland before moving to Los Angeles and working in the entertainment business equipped me with a broad understanding of needs in projects intended for large multi-national markets. With that basis I always strive to effectively communicate with as many potential customers as possible within a variety of specific vertical markets.</p>
-{% endblock %}
-
+    <p>
+        Working on both the agency-side and client-side of projects has provided me with knowledgable insight and experience on how to manage and achieve goals from both perspectives. Initially working on corporate projects in Holland before moving to Los Angeles and working in the entertainment business equipped me with a broad understanding of needs in projects intended for large multi-national markets. With that basis I always strive to effectively communicate with as many potential customers as possible within a variety of specific vertical markets.
+    </p>
+{% endblock intro %}
 {% block taxonomy_content %}
-  <div class="key-areas">
-    {% include 'partials/_taxonomy_terms_highlighted.html' with item_name='industry' highlighted_items=highlighted_industries %}
-    <section class="taxonomy-categories">
-      <h2>Major Markets</h2>
-      <ul class="taxonomy-list gray-bullets">
-        <li>
-          <a href="/portfolio/markets/b2b/" title="View all project samples created for Business-to-Business">Business-to-Business <span class="count">(327)</span></a>
-        </li>
-        <li>
-          <a href="/portfolio/markets/b2c/" title="View all project samples created for Business-to-Consumer">Business-to-Consumer <span class="count">(630)</span></a>
-        </li>
-        <li>
-          <a href="/portfolio/markets/c2c/" title="View all project samples created for Consumer-to-Consumer">Consumer-to-Consumer <span class="count">(13)</span></a>
-        </li>
-        <li>
-          <a href="/portfolio/markets/g2b/" title="View all project samples created for Government-to-Business">Government-to-Business <span class="count">(2)</span></a>
-        </li>
-        <li>
-          <a href="/portfolio/markets/g2p/" title="View all project samples created for Government-to-Public">Government-to-Public <span class="count">(6)</span></a>
-        </li>
-      </ul>
-    </section>
-  </div>
-  {% include 'partials/_taxonomy_categories.html' with item_name='industries' items=industries %}
-{% endblock %}
+    <div class="key-areas">
+        {% include "partials/_taxonomy_terms_highlighted.html" with item_name="industry" highlighted_items=highlighted_industries %}
+        <section class="taxonomy-categories">
+            <h2>Major Markets</h2>
+            {% include "partials/_taxonomy_categories.html" with item_name="markets" items=markets %}
+        </section>
+    </div>
+    {% include "partials/_taxonomy_categories.html" with item_name="industries" items=industries %}
+{% endblock taxonomy_content %}

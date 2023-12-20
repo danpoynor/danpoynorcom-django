@@ -1,45 +1,30 @@
 main.contact-page {
-	padding-bottom: 3em;
+    padding-bottom: 3em;
 
-	.content  {
-		.container {
-		}
-	}
-	
-	section.intro {
-		padding-bottom: 1em;
-	}
+    section.intro {
+        padding-bottom: 1em;
+    }
 
-	.contact-info {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		//padding: 1em;
-		margin: 0 -.5em;
+    .contact-info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 -.5em;
 
-		div {
-			background-color: $ui-panel-background-color;
-			background-color: var(--t7);
-			margin: .5em;
-			padding: 2em;
-			flex: 1 1 22%;
-			text-align: center;
-			min-width: 254px;
-		}
-		
-		p {
-			margin-bottom: 0;
-		}
+        div.center-center {
+            align-items: center;
+            background-color: var(--t7);
+            display: flex;
+            flex: 1 1 22%;
+            justify-content: center;
+            margin: .5em;
+            min-width: 254px;
+            padding: 2em;
+            text-align: center;
+        }
 
-		.email {
-		}
-		
-		.twitter {
-		}
-	
-		.street-address {
-		}
-
-	}
-
+        p {
+            margin-bottom: 0;
+        }
+    }
 }

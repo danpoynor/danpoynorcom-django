@@ -1,43 +1,43 @@
 {% load static %}
 <section class="thumbnails">
-  <div class="container">
-    <section class="thumbnail-previews">
-      <div class="container">
-        {% include 'partials/_pagination_filter_bar.html' %}
-        <ul id="portfolio-container">
-          {% for project in object.projects.all %}
-            <li class="shown">
-              {% with project.get_first_item as first_item %}
-                {% if first_item %}
-                  <a href="/portfolio/project-details/{{ first_item.slug }}">
-                    <figure>
-                      <figcaption>
-                        <p class="title">{{ project.name }}</p>
-                        <p class="sub-title">{{ project.client }}</p>
-                        <div class="text-wrapper">
-                          <p class="description">
-                            <span>Project Description:</span> {{ project.description }}
-                          </p>
-                          <p class="click-to-view">Click for project detail view.</p>
-                        </div>
-                      </figcaption>
-                      {% if first_item.image %}
-                        <img src="{% static 'portfolio/images/project-item-images/medium/'|add:first_item.image.medium %}" alt="{{ project.name }}" />
-                      {% else %}
-                        <p>No image found for this project item.</p>
-                      {% endif %}
-                    </figure>
-                  </a>
-                {% else %}
-                  <p>No related ProjectItem instances found for this project.</p>
-                {% endif %}
-              {% endwith %}
-            </li>
-            {% empty %}
-            <li>No projects to display in this taxonomy.</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </section>
-  </div>
+    <div class="container">
+        <section class="thumbnail-previews">
+            <div class="container">
+                {% include "partials/_pagination_filter_bar.html" %}
+                <ul id="portfolio-container">
+                    {% for project in object.projects.all %}
+                        <li class="shown">
+                            {% with project.get_first_item as first_item %}
+                                {% if first_item %}
+                                    <a href="{% url 'project_detail' slug=first_item.slug %}">
+                                        <figure>
+                                            <figcaption>
+                                                <p class="title">{{ project.name }}</p>
+                                                <p class="sub-title">{{ project.client }}</p>
+                                                <div class="text-wrapper">
+                                                    <p class="description">
+                                                        <span>Project Description:</span> {{ project.description }}
+                                                    </p>
+                                                    <p class="click-to-view">Click for project detail view.</p>
+                                                </div>
+                                            </figcaption>
+                                            {% if first_item.image %}
+                                                <img src="{% static "portfolio/images/project-item-images/medium/"|add:first_item.image.medium %}" alt="{{ project.name }}" height="" width="" />
+                                            {% else %}
+                                                <p>No image found for this project item.</p>
+                                            {% endif %}
+                                        </figure>
+                                    </a>
+                                {% else %}
+                                    <p>No related ProjectItem instances found for this project.</p>
+                                {% endif %}
+                            {% endwith %}
+                        </li>
+                    {% empty %}
+                        <li>No projects to display in this taxonomy.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
 </section>

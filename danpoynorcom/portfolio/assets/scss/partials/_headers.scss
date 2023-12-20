@@ -1,54 +1,43 @@
 .intro {
-  padding: 2em 0 1em;
-  opacity: 0;
-  position: relative;
-  animation: fadeinfrombottom $transition-speed-slower;
-  animation-fill-mode: forwards;
-  animation-delay: .1s;
+    padding: 2em 0;
+    opacity: 0;
+    position: relative;
+    animation: fadeinfrombottom $transition-speed-slower;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
 
-  p {
-    font: normal 1.5em/1.61803398875 'Bitter', sans-serif;
-    margin: 0;
+    p {
+        font: normal 1.5em/1.61803398875 'Bitter', sans-serif;
+        margin: 0;
 
-    +p {
-      margin-top: .5em;
+        + p {
+            margin-top: .5em;
+        }
     }
-
-  }
-
 }
 
 main {
-
-  header {
-    flex: none; // needed for Safari
-    width: 100%;
-    margin: 0;
-    padding: 1rem 0;
-  }
-
-  .taxonomy-meta {
-    // taxonomy term descriptions
-    //margin-bottom: 1.5em;
-
-    p:first-of-type {
-      margin-top: .5em;
+    header {
+        flex: none; // needed for Safari
+        margin: 0;
+        padding: 0 0 1rem;
+        width: 100%;
     }
 
-    p:last-of-type {
-      margin-bottom: 0;
+    .taxonomy-meta {
+
+        // taxonomy term descriptions
+        //margin-bottom: 1.5em;
+        p:first-of-type {
+            margin-top: .5em;
+        }
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
     }
-
-  }
-
 }
 
-.portfolio-page {
-  .intro {
-    //padding-bottom: 1em; // becuase the list of thumbnails appearing below .intro on this page has top padding already
-  }
-}
-
-article+header {
-  margin-top: 0; // some articles include .intro content which already has some margin assigned
+article + header {
+    margin-top: 0; // some articles include .intro content which already has some margin assigned
 }

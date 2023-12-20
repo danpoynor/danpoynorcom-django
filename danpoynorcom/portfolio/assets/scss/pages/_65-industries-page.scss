@@ -1,46 +1,37 @@
 .key-areas {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 
-	.taxonomy-highlights {
-		flex: 3;
-		margin: 0 1.5em 0 0;
-		
-		.showcase-list {
-			li {
-				flex: 0 0 32.29%; // for MS Edge
-			}
-		}
-		
-	}
-	
-	.taxonomy-categories {
-		flex: 1;
-		min-width: 240px;
-		padding-bottom: 0;
+    .taxonomy-highlights {
+        flex: 3;
+        margin: 0 1.5em 0 0;
 
-		h2 {
-			margin: 0;
-		}
-		
-		.market-categories {
-		}
-	
-	}
-	
-	@media only screen and (max-width: 780px) {
-		display: block;
-		
-		.taxonomy-categories {
-		
-			h2 {
-				margin-top: 1.33em;
-			}
+        .showcase-list {
+            li {
+                flex: 0 0 32.29%; // for MS Edge
+            }
+        }
+    }
 
-		}
-		
-	}
+    .taxonomy-categories {
+        flex: 1;
+        min-width: 240px;
+        padding-bottom: 0;
 
+        h2 {
+            margin: 0;
+        }
+    }
+
+    @media only screen and (max-width: 780px) {
+        display: block;
+
+        .taxonomy-categories {
+            h2 {
+                margin-top: 1.33em;
+            }
+        }
+    }
 }

@@ -1,5 +1,4 @@
 .pagination-filter-bar {
-    background-color: $ui-panel-background-color;
     background-color: var(--t7);
     font-size: 0.8125em; // 13 / 16
     margin: 0 0 1em;
@@ -17,11 +16,11 @@
         justify-content: center;
         padding: .5em;
     }
-
 }
 
 .total-items {
     margin-right: auto;
+
     p {
         color: $headline-text-color;
         color: var(--t6);
@@ -32,7 +31,6 @@
     @media only screen and (max-width: 640px) {
         margin: auto;
     }
-
 }
 
 .items-sort-and-limit {
@@ -61,7 +59,6 @@
         @media only screen and (max-width: 460px) {
             display: none;
         }
-
     }
 
     .page-numbers {
@@ -71,17 +68,14 @@
         align-items: flex-start;
 
         a.page-numbers {
-            //background-color: $white;
             cursor: pointer;
             display: block;
             margin: 0 .1em;
             padding: .25em 1em;
 
             &:hover {
-                background-color: $text-link-color;
                 background-color: var(--t11);
             }
-
         }
 
         li:last-of-type {
@@ -101,17 +95,9 @@
             margin: 0 .25em;
             padding: .25em 1em;
         }
+
         .dots {
             padding: .75em .25em 0;
         }
-
-        .prev {
-        }
-
-        .next {
-        }
-
     }
-
-
 }

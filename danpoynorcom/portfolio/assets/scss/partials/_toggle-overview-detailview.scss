@@ -13,9 +13,9 @@
     }
 
     p {
+        display: none;
         margin: 0 1em 0 1em;
         white-space: nowrap;
-        display: none;
     }
 
     nav {
@@ -45,8 +45,7 @@
         padding: .25em .75em;
 
         &:hover {
-            background-color: $hightlight-tint;
+            background-color: $highlight-tint;
         }
     }
-
 }

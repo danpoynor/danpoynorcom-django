@@ -1,28 +1,25 @@
-{% extends 'base_portfolio.html' %}
-
+{% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-  <main class="project-details-page">
-    <article class="dpportfolio">
-      <header>
-        <div class="container">
-          <h1 class="project-name"><a href="/portfolio/">Portfolio</a> <span class="divider">/</span> <span class="current-section">{{ object.project.name }}</span></h1>
-          {% if object.project.name != object.name %}
-            <h2 class="entry-title">{{ object.name }}</h2>
-          {% endif %}
-        </div>
-      </header>
-      <section class="stage">
-        <div class="container">
-          <div class="display-column">
-            {{ object.html_content|safe }}
-          </div>
-          <div class="project-details">
-            {% include "partials/_project_info_client.html" with project=object.project %}
-            {% include "partials/_project_info_project.html" with project=object.project  %}
-            {% include "partials/_project_info_additional_samples.html" %}
-          </div>
-        </div>
-      </section>
-    </article>
-  </main>
-{% endblock %}
+    <main class="project-details-page">
+        <article class="dpportfolio">
+            <header>
+                <div class="container">
+                    <h1 class="project-name">
+                        <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <span class="current-section">{{ object.project.name }}</span>
+                    </h1>
+                    {% if object.project.name != object.name %}<h2 class="entry-title">{{ object.name }}</h2>{% endif %}
+                </div>
+            </header>
+            <section class="stage">
+                <div class="container">
+                    <div class="display-column">{{ object.html_content|safe }}</div>
+                    <div class="project-details">
+                        {% include "partials/_project_info_client.html" with project=object.project %}
+                        {% include "partials/_project_info_project.html" with project=object.project %}
+                        {% include "partials/_project_info_additional_samples.html" %}
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+{% endblock portfolio_content %}

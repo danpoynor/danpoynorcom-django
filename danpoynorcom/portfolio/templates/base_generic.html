@@ -1,24 +1,27 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>
-      {% block title %}
-        My Site
-      {% endblock %}
-    </title>
-    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/styles.css' %}" />
-    {% include 'partials/_fonts.html' %}
-  </head>
-  <body>
-    {% include 'partials/_header.html' %}
-    <div class="wrapper">
-      {% block content %}
-
-      {% endblock %}
-    </div>
-    {% include 'partials/_footer.html' %}
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            {% block title %}
+                My Site
+            {% endblock title %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="My portfolio site" />
+        <meta name="keywords" content="your, keywords, here" />
+        <link rel="stylesheet"
+              type="text/css"
+              href="{% static 'portfolio/styles.css' %}" />
+        {% include "partials/_fonts.html" %}
+    </head>
+    <body>
+        {% include "partials/_header.html" %}
+        <div class="wrapper">
+            {% block content %}
+            {% endblock content %}
+        </div>
+        {% include "partials/_footer.html" %}
+    </body>
 </html>

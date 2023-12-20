@@ -12,17 +12,11 @@
         }
 
         &:before {
-            content: "• ";
             color: $theme-color;
+            content: "• ";
             font-size: 125%;
-            vertical-align: -.06em;
             line-height: 1;
+            vertical-align: -.06em;
         }
-
-//		&.no-bullet:before {
-//			content: "\00a0";
-//		}
-
     }
-
 }

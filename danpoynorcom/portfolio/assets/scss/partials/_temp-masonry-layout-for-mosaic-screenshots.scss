@@ -1,26 +1,40 @@
 @keyframes scaleUp {
-    0% { }
+    0% {}
+
     100% {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 @keyframes scaleDownAndHide {
-    0% { }
+    0% {}
+
     100% {
         transform: scale(0.6);
         opacity: 0;
     }
 }
+
 @keyframes loaderSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-@keyframes fadeIn { 
-    from { opacity: 0; }
-    to { opacity: 1; }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 $width-portfolio: 120px;
 
@@ -30,27 +44,26 @@ main > .container {
 }
 
 #loading-container {
-    position: absolute;
-    top: 5em;
     left: 0;
+    position: absolute;
     text-align: center;
-    width: 100%;
+    top: 5em;
     transform-style: preserve-3d;
+    width: 100%;
 
     .loading-indicator {
-    border: 6px solid $circle-color; //
-    border-top: 6px solid $circle-hightlight-color; //
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    margin: 0 auto;
-    animation: loaderSpin 0.66s linear infinite;
+        animation: loaderSpin 0.66s linear infinite;
+        border-radius: 50%;
+        border-top: 6px solid $circle-highlight-color;
+        border: 6px solid $circle-color;
+        height: 48px;
+        margin: 0 auto;
+        width: 48px;
     }
 
     &.hideme {
         animation: scaleDownAndHide 0.66s ease-in-out forwards;
     }
-
 }
 
 #portfolio-container {
@@ -67,7 +80,8 @@ main > .container {
     }
 
     .shown,
-    html:not(.js) & li, // test to make sure modernizr added .js class to opening html tag
+    html:not(.js) & li,
+    // test to make sure modernizr added .js class to opening html tag
     .no-js & li,
     .no-cssanimations & li {
         opacity: 1;
@@ -84,25 +98,24 @@ main > .container {
 
         // deep shadows
         & {
+
             //box-shadow: 0px 24px 32px rgba(0,0,0,.08);
             &:hover {
-                //box-shadow: 0px 48px 56px rgba(0,0,0,.16);
 
+                //box-shadow: 0px 48px 56px rgba(0,0,0,.16);
                 figcaption {
                     display: block;
                 }
-
             }
         }
 
         // shallow shadows
-//		& {
-//			box-shadow: rgba(black, 0.3) 0 2px 6px;
-//			&:hover {
-//				box-shadow: rgba(black, 0.35) 0 6px 14px;
-//			}
-//		}
-
+        //		& {
+        //			box-shadow: rgba(black, 0.3) 0 2px 6px;
+        //			&:hover {
+        //				box-shadow: rgba(black, 0.35) 0 6px 14px;
+        //			}
+        //		}
         &.animate {
             transform: scale(0.6);
             animation: scaleUp 0.66s ease-in-out forwards;
@@ -110,6 +123,7 @@ main > .container {
 
         &.show {
             opacity: 1;
+
             li {
                 animation: fadeIn 0.66s ease-in-out 0s forwards; // needs to be 0s so Firefox doesn't show briefly then hide and fadein.
             }
@@ -121,9 +135,7 @@ main > .container {
             &:hover {
                 color: #fff;
             }
-
         }
-
     }
 
     figure {
@@ -134,7 +146,7 @@ main > .container {
         backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
         //
         overflow: hidden;
-    text-overflow: ellipsis;
+        text-overflow: ellipsis;
     }
 
     img {
@@ -169,8 +181,7 @@ main > .container {
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
     }
 
-    .title.sub-title {
-    }
+    .title.sub-title {}
 
     div.text-wrapper {
         color: $portfolio-nav-bg-color;
@@ -183,29 +194,24 @@ main > .container {
 
         p {
             margin: 0;
+
             + p {
                 margin-top: .5em;
             }
         }
 
-        .description {
-        }
+        .description {}
 
-        .year {
-        }
+        .year {}
 
         .click-to-view {
             display: block;
         }
-
     }
-
 }
 
 .project-overview-pageX {
-
     #portfolio-container {
-
         li {
             width: $width-project-overview;
 
@@ -214,9 +220,6 @@ main > .container {
             .title {
                 width: $width-project-overview;
             }
-
         }
-
     }
-
 }

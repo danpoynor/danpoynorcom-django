@@ -1,29 +1,29 @@
 <ul id="portfolio-container">
-  {% for project in object.projects.all %}
-    <li class="shown" style="outline: 1px solid red">
-      {% with project.get_first_item as first_item %}
-        {% if first_item %}
-          <a href="/portfolio/project-details/{{ first_item.slug }}">
-            <figure>
-              <figcaption>
-                <p class="title">{{ project.name }}</p>
-                <p class="sub-title">{{ project.client }}</p>
-                <div class="text-wrapper">
-                  <p class="description">
-                    <span>Project Description:</span> {{ project.description }}
-                  </p>
-                  <p class="click-to-view">Click for project detail view.</p>
-                </div>
-              </figcaption>
-              <img src="" alt="{{ project.name }}" />
-            </figure>
-          </a>
-        {% else %}
-          <p>No related ProjectItem instances found for this project.</p>
-        {% endif %}
-      {% endwith %}
-    </li>
+    {% for project in object.projects.all %}
+        <li class="shown">
+            {% with project.get_first_item as first_item %}
+                {% if first_item %}
+                    <a href="{% url 'project_detail' slug=first_item.slug %}">
+                        <figure>
+                            <figcaption>
+                                <p class="title">{{ project.name }}</p>
+                                <p class="sub-title">{{ project.client }}</p>
+                                <div class="text-wrapper">
+                                    <p class="description">
+                                        <span>Project Description:</span> {{ project.description }}
+                                    </p>
+                                    <p class="click-to-view">Click for project detail view.</p>
+                                </div>
+                            </figcaption>
+                            <img src="" alt="{{ project.name }}" height="" width="" />
+                        </figure>
+                    </a>
+                {% else %}
+                    <p>No related ProjectItem instances found for this project.</p>
+                {% endif %}
+            {% endwith %}
+        </li>
     {% empty %}
-    <li>No projects to display in this taxonomy.</li>
-  {% endfor %}
+        <li>No projects to display in this taxonomy.</li>
+    {% endfor %}
 </ul>

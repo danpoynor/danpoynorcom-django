@@ -1,9 +1,10 @@
-{% extends 'base_taxonomy.html' %}
-
+{% extends "base_taxonomy.html" %}
 {% block intro %}
-  <p>In my opinion, the general process of design is not medium specific. From designing a 64&times;64 pixel size icon to designing a 48 foot wide highway billboard, communication goals are achieved through the thoughtful application of necessary elements and principles. As platforms have evolved though from print and television to interactive and online, so too have my design and production capabilities which enables me to maintain brand integrity across mediums, achieve high-quality results at a fast pace, and keep projects on budget.</p>
-{% endblock %}
+    <p>
+        In my opinion, the general process of design is not medium specific. From designing a 64×64 pixel size icon to designing a 48 foot wide highway billboard, communication goals are achieved through the thoughtful application of necessary elements and principles. As platforms have evolved though from print and television to interactive and online, so too have my design and production capabilities which enables me to maintain brand integrity across mediums, achieve high-quality results at a fast pace, and keep projects on budget.
+    </p>
+{% endblock intro %}
 {% block taxonomy_content %}
-  {% include 'partials/_taxonomy_terms_highlighted.html' with item_name='media_type' highlighted_items=highlighted_media_types %}
-  {% include 'partials/_taxonomy_categories.html' with item_name='media_types' items=mediatypes %}
-{% endblock %}
+    {% include "partials/_taxonomy_terms_highlighted.html" with item_name="media_type" highlighted_items=highlighted_media_types %}
+    {% include "partials/_taxonomy_categories.html" with item_name="media_types" items=mediatypes %}
+{% endblock taxonomy_content %}

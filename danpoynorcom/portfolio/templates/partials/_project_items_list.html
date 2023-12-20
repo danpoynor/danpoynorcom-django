@@ -1,18 +1,21 @@
 {% load static %}
 <ul class="show" id="portfolio-container">
-  {% for item in object.get_ordered_items %}
-    <li class="show">
-      <a href="/portfolio/project-details/{{ item.slug }}/">
-        <figure>
-          <figcaption>
-            <p class="title sub-title">{{ item.name }}</p>
-            <div class="text-wrapper">
-              <p class="click-to-view">Click for project detail view.</p>
-            </div>
-          </figcaption>
-          <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:item.image.medium %}" alt="{{ item.name }}" />
-        </figure>
-      </a>
-    </li>
-  {% endfor %}
+    {% for item in object.get_ordered_items %}
+        <li class="show">
+            <a href="{% url 'project_detail' slug=item.slug %}">
+                <figure>
+                    <figcaption>
+                        <p class="title sub-title">{{ item.name }}</p>
+                        <div class="text-wrapper">
+                            <p class="click-to-view">Click for project detail view.</p>
+                        </div>
+                    </figcaption>
+                    <img src="{% static 'portfolio/images/uploads-all-sizes/'|add:item.image.medium %}"
+                         alt="{{ item.name }}"
+                         height=""
+                         width="" />
+                </figure>
+            </a>
+        </li>
+    {% endfor %}
 </ul>

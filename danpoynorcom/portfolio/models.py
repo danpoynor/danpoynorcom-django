@@ -1,7 +1,7 @@
+import datetime
 from django.core.validators import URLValidator, MinValueValidator, MaxValueValidator
 from django.urls import reverse
 from django.db import models
-import datetime
 
 
 # Client taxonomy model

@@ -1,33 +1,51 @@
-@keyframes fadeinfromtop{
-    from { top: -30px; opacity: 0 }
-    to   { top: 0px; opacity: 1 }
+@keyframes fadeinfromtop {
+    from {
+        top: -30px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
 }
 
-@keyframes fadeinfrombottom{
-    from { bottom: -30px; opacity: 0 }
-    to   { bottom: 0px; opacity: 1 }
+@keyframes fadeinfrombottom {
+    from {
+        bottom: -30px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
 @keyframes scaleUp {
-    0% { }
+    0% {}
+
     100% {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 @keyframes scaleDownAndHide {
-    0% { }
+    0% {}
+
     100% {
         transform: scale(0.6);
         opacity: 0;
     }
 }
-@keyframes loaderSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
-//@keyframes fadeIn { 
-//	from { opacity: 0; }
-//	to { opacity: 1; }
-//}
+@keyframes loaderSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,30 +1,30 @@
-{% extends 'base_portfolio.html' %}
-
+{% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-  <main id="main" class="site-main portfolio-page" role="main">
-    <div class="container">
-      <div class="intro">
-        <p>Thanks for looking! Note this portfolio presents more than artistic talent from just me, it represents solutions to strategic business communication requirements within team environments with a variety of goals. Presented here are creative accomplishments between myself, a client, and other&nbsp;collaborators.</p>
-      </div>
-
-      <header class="page-header">
-        <h1>Portfolio</h1>
-      </header>
-    </div>
-
-    <section class="selects">
-      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_clients item_name='clients' total_count=total_clients url='/portfolio/clients/' %}
-      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_industries item_name='industries' total_count=total_industries url='/portfolio/industries/' %}
-      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_media_types item_name='media_types' total_count=total_media_types url='/portfolio/media-types/' %}
-      {% include 'partials/_taxonomy_terms_selected.html' with selected_items=selected_roles item_name='roles' total_count=total_roles url='/portfolio/roles/' %}
-    </section>
-
-    <section class="value-statement">
-      <div class="container">
-        <div class="text">
-          <h2>With a solid background dedicated to design and development I&rsquo;m sure I can make a valuable addition to your project <span class="nowrap">or organization.</span></h2>
+    <main id="main" class="site-main portfolio-page" role="main">
+        <div class="container">
+            <div class="intro">
+                <p>
+                    Thanks for looking! Note this portfolio presents more than artistic talent from just me, it represents solutions to strategic business communication requirements within team environments with a variety of goals. Presented here are creative accomplishments between myself, a client, and other&nbsp;collaborators.
+                </p>
+            </div>
+            <header class="page-header">
+                <h1>Portfolio</h1>
+            </header>
         </div>
-      </div>
-    </section>
-  </main>
-{% endblock %}
+        <section class="selects">
+            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_clients item_name="clients" total_count=total_clients url="/portfolio/clients/" %}
+            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_industries item_name="industries" total_count=total_industries url="/portfolio/industries/" %}
+            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_media_types item_name="media_types" total_count=total_media_types url="/portfolio/media-types/" %}
+            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_roles item_name="roles" total_count=total_roles url="/portfolio/roles/" %}
+        </section>
+        <section class="value-statement">
+            <div class="container">
+                <div class="text">
+                    <h2>
+                        With a solid background dedicated to design and development I’m sure I can make a valuable addition to your project <span class="nowrap">or organization.</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock portfolio_content %}

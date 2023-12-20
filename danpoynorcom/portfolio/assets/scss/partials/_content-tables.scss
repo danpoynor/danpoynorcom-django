@@ -1,60 +1,54 @@
-.dpportfolio section.stage  {
-
+.dpportfolio section.stage {
     .content-two-up-table {
 
-            th, td {
-                padding: .5em 1em;
-                text-align: left;
-                vertical-align: top;
-            }
+        th,
+        td {
+            padding: .5em 1em;
+            text-align: left;
+            vertical-align: top;
+        }
 
-            th {
-                font-weight: 500;
-            }
+        th {
+            font-weight: 500;
+        }
 
-            td {
+        td {
+            &.divider {
+                padding: 1em;
 
-                &.divider {
-                    padding: 1em;
-
-                    span {
-                        background-color: #ddd;
-                        display: block;
-                        height: 1px;
-                    }
-
+                span {
+                    background-color: #ddd;
+                    display: block;
+                    height: 1px;
                 }
+            }
 
-                &.version-and-note {
-                    p {
-                        + p {
-                            margin-bottom: 0;
-                        }
+            &.version-and-note {
+                p {
+                    + p {
+                        margin-bottom: 0;
                     }
-
                 }
+            }
 
-                &.description-with-image {
-                    font-size: .8em;
+            &.description-with-image {
+                font-size: .8em;
 
-                    img {
-                        margin-top: .5em;
-                        padding: .25em;
-                    }
-
+                img {
+                    margin-top: .5em;
+                    padding: .25em;
                 }
-
             }
+        }
 
-            .presentation-title,
-            .version {
-                color: $portfolio-nav-bg-color;
-            }
+        .presentation-title,
+        .version {
+            color: $portfolio-nav-bg-color;
+        }
 
-            img {
-                max-width: 100%;
-            }
-
+        img {
+            max-width: 100%;
+        }
     }
 
     .imvu-persuasion-table {
@@ -62,7 +56,8 @@
         font-size: .8em;
         margin: 0 auto;
 
-        th, td {
+        th,
+        td {
             color: #666;
             padding: .5em;
             text-align: left;
@@ -78,7 +73,8 @@
 
         .vs {
             display: block;
-            margin: .75em 0 0 .75em;;
+            margin: .75em 0 0 .75em;
+            ;
         }
 
         ul {
@@ -88,15 +84,10 @@
             li {
                 margin: .5em 0;
             }
-
-        }
-
-        .profile {
-            //outline: 1px solid #ccc;
         }
 
         .halo {
-            box-shadow: inset 0 0 26px  transparentize(#3c0, .7);
+            box-shadow: inset 0 0 26px transparentize(#3c0, .7);
 
             h3 {
                 background-color: #3c0;
@@ -108,16 +99,13 @@
             }
 
             &:hover {
-                box-shadow: inset 0 0 32px  transparentize(#3c0, .3);
+                box-shadow: inset 0 0 32px transparentize(#3c0, .3);
 
                 h3 {
                     background-color: #02b70b;
                 }
-
             }
-
         }
-
     }
 
     .matrix-example {
@@ -141,7 +129,6 @@
             border-top: none;
             margin-top: 1em;
         }
-
     }
 
     .align-left-text {
@@ -149,5 +136,4 @@
             text-align: left;
         }
     }
-
 }

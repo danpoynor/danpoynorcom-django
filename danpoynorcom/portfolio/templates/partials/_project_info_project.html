@@ -1,53 +1,54 @@
 <section id="project-info" class="expando expanded">
-  <h3 class="expando-trigger">Project Info</h3>
-  <div class="expando-content">
-    <div class="expando-content-wrapper">
-      {% if project.industry.all %}
-        <section class="project-industry-name">
-          <h4>Industry</h4>
-          <ul class="csv">
-            {% for industry in project.industry.all %}
-              <li>
-                <a href="/portfolio/industries/{{ industry.slug }}/">{{ industry.name }}</a>{% if not forloop.last %}, {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      {% endif %}
-      {% if project.mediatype.all %}
-        <section class="project-platorm-name">
-          <h4>Media Type</h4>
-          <ul class="csv">
-            {% for mediatype in project.mediatype.all %}
-              <li>
-                <a href="/portfolio/media-types/{{ mediatype.slug }}/">{{ mediatype.name }}</a>{% if not forloop.last %}, {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      {% endif %}
-      {% if project.year %}
-        <p>Year: {{ project.year }}</p>
-      {% endif %}
-      {% if project.role.all %}
-        <section class="project-role-names">
-          <h4>Role</h4>
-          <ul class="csv">
-            {% for role in project.role.all %}
-              <li>
-                <a href="/portfolio/roles/{{ role.slug }}/">{{ role.name }}</a>{% if not forloop.last %}, {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      {% endif %}
-      {% if project.description %}
-        <section class="project-description">
-          <h4>Project Description</h4>
-          <br />
-          {{ project.description|safe }}
-        </section>
-      {% endif %}
+    <h3 class="expando-trigger">Project Info</h3>
+    <div class="expando-content">
+        <div class="expando-content-wrapper">
+            {% if project.industry.all %}
+                <section class="project-industry-name">
+                    <h4>Industry</h4>
+                    <ul class="csv">
+                        {% for industry in project.industry.all %}
+                            <li>
+                                <a href="{% url 'industry_detail' slug=industry.slug %}">{{ industry.name }}</a>
+                                {% if not forloop.last %},{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+            {% if project.mediatype.all %}
+                <section class="project-platorm-name">
+                    <h4>Media Type</h4>
+                    <ul class="csv">
+                        {% for mediatype in project.mediatype.all %}
+                            <li>
+                                <a href="{% url 'media_type_detail' slug=mediatype.slug %}">{{ mediatype.name }}</a>
+                                {% if not forloop.last %},{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+            {% if project.year %}<p>Year: {{ project.year }}</p>{% endif %}
+            {% if project.role.all %}
+                <section class="project-role-names">
+                    <h4>Role</h4>
+                    <ul class="csv">
+                        {% for role in project.role.all %}
+                            <li>
+                                <a href="{% url 'role_detail' slug=role.slug %}">{{ role.name }}</a>
+                                {% if not forloop.last %},{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+            {% if project.description %}
+                <section class="project-description">
+                    <h4>Project Description</h4>
+                    <br />
+                    {{ project.description|safe }}
+                </section>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </section>

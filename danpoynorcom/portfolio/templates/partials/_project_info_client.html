@@ -1,33 +1,34 @@
 <section id="client-info" class="expando expanded">
-  <h3 class="expando-trigger">Client Info</h3>
-  <div class="expando-content">
-    <div class="expando-content-wrapper">
-      <section class="project-client-name">
-        <h4>Client</h4>
-        <ul class="csv">
-          <li>
-            <a href="/portfolio/clients/{{ project.client.slug }}/"><span style="white-space:nowrap">{{ project.client.name }}</span></a>
-          </li>
-        </ul>
-      </section>
-      {% if project.market.all %}
-        <section class="project-market-name">
-          <h4>Market</h4>
-          <ul class="csv">
-            {% for market in project.market.all %}
-              <li>
-                <a href="/portfolio/markets/{{ market.slug }}/">{{ market.name }}</a>{% if not forloop.last %}, {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      {% endif %}
-      {% if project.client.description %}
-        <section class="project-client-description">
-          <h4>Company Description</h4>
-          {{ project.client.description|safe }}
-        </section>
-      {% endif %}
+    <h3 class="expando-trigger">Client Info</h3>
+    <div class="expando-content">
+        <div class="expando-content-wrapper">
+            <section class="project-client-name">
+                <h4>Client</h4>
+                <ul class="csv">
+                    <li>
+                        <a href="{% url 'client_detail' slug=project.client.slug %}"><span class="nowrap">{{ project.client.name }}</span></a>
+                    </li>
+                </ul>
+            </section>
+            {% if project.market.all %}
+                <section class="project-market-name">
+                    <h4>Market</h4>
+                    <ul class="csv">
+                        {% for market in project.market.all %}
+                            <li>
+                                <a href="{% url 'market_detail' slug=market.slug %}">{{ market.name }}</a>
+                                {% if not forloop.last %},{% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+            {% if project.client.description %}
+                <section class="project-client-description">
+                    <h4>Company Description</h4>
+                    {{ project.client.description|safe }}
+                </section>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </section>

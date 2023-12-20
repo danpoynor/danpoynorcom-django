@@ -1,6 +1,11 @@
 from django.urls import include, path
 
-from portfolio import views
+# Make sure the 'portfolio' module is installed and accessible in the Python environment
+try:
+    from portfolio import views
+except ImportError:
+    # if the module is not installed, use the 'portfolio' module in the current directory
+    from . import views
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -20,6 +25,7 @@ urlpatterns = [
     path("portfolio/projects/", views.projects, name="projects"),
     path('portfolio/projects/<slug:slug>/', views.ProjectItemsView.as_view(), name='project'),
     path('portfolio/project-details/<slug:slug>/', views.ProjectDetailsView.as_view(), name='project_detail'),
+    path("legal-notice-to-picscout-getty-images-picscout-clients-cyveillance-you-are-prohibited-from-accessing-this-site/", views.getty_legal_notice, name="getty_legal_notice"),
     path("__debug__/", include("debug_toolbar.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),
 ]

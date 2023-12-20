@@ -1,28 +1,17 @@
 body.error404 {
-	
-	main {
-	
-		.page-content {
-			margin-top: 1em;
-		}
-	
-	}
-
+    main {
+        .page-content {
+            margin-top: 1em;
+        }
+    }
 }
 
 header {
-
-	&.error-message {
-
-		&.plugin-not-active {
-			h1 {
-				color: #424242;;
-			}
-			p {
-		
-			}
-		}
-
-	}
-	
+    &.error-message {
+        &.plugin-not-active {
+            h1 {
+                color: #424242;
+            }
+        }
+    }
 }

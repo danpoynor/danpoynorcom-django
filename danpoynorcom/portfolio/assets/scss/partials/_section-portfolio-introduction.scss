@@ -1,11 +1,4 @@
 .portfolio-introduction {
-    //background-color: desaturate(lighten($theme-color, 8%), 9%);
-    //background-color: var(--t3);
-    //background-image: url('/wp-content/themes/danpoynor-2017/images/backgrounds/mosaic-16-smaller-blurred.png');
-    //background-attachment: fixed;
-    //background-position: center center;
-    //background-repeat: no-repeat;
-    //background-size: cover;
     padding: 1em 0 2.5em;
 
     .expando-content-wrapper {
@@ -15,57 +8,4 @@
             margin-top: .5em;
         }
     }
-
-
-    .textX {
-        background: $white;
-        background: var(--t7);
-        margin: 2em auto 3.5em;
-        padding: 2em;
-        position: relative;
-
-        &::after {
-            border: 1em solid transparent;
-            border-top-color: desaturate(lighten($theme-color, 20%), 5%);
-            border-left-color: desaturate(lighten($theme-color, 20%), 5%);
-            border-top-color: var(--t8);
-            border-left-color: var(--t8);
-            content: '';
-            height: 0px;
-            width: 0px;
-            position: absolute;
-            right: 0px;
-            bottom: -2em;
-        }
-
-    }
-
-    headerX {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        //text-align: center;
-
-        p {
-            font-size: 1.125em;
-            margin: 0;
-        }
-
-    }
-
-    pX {
-        margin: 1em 0 0 0;
-
-        .sub-head {
-            color: $headline-text-color;
-            color: var(--t6);
-            font-family: 'Oswald', sans-serif;
-            margin-right: .15em;
-        }
-
-    }
-
 }

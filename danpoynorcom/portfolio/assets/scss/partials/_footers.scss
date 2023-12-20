@@ -1,9 +1,9 @@
-.entry-footer { // shows 'edit' link when logged in
+.entry-footer {
+    // shows 'edit' link when logged in
     width: 100%;
 }
 
 body > footer {
-
     .container {
         padding: 2em 1em;
     }
@@ -39,23 +39,20 @@ body > footer {
                 background-size: 216px;
                 width: 216px;
             }
-
         }
-
     }
-
 }
 
-.site-info { // copyright
+.site-info {
+    // copyright
     color: #999;
-    font-family: verdana, sans-serfif;
+    font-family: verdana, sans-serif;
     font-size: x-small;
     margin-right: -.2em;
     text-align: center;
 }
 
 .footer-navigation {
-
     .nav-menu {
         list-style-type: none;
         margin: 0 0 1em;
@@ -82,22 +79,14 @@ body > footer {
             transition: color $transition-speed ease-in-out;
 
             &:hover {
-             color: $white;
+                color: $white;
             }
-
         }
 
         .current-menu-item {
-
             a {
                 color: $white
             }
-
-            &:hover {
-            }
-
         }
-
     }
-
 }

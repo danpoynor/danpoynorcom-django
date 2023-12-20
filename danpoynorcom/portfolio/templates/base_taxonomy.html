@@ -1,17 +1,14 @@
-{% extends 'base_portfolio.html' %}
-
+{% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-  <main class="portfolio-taxonomy-term">
-    <div class="container">
-      <div class="intro">
-        {% block intro %}
-
-        {% endblock %}
-      </div>
-      {% include 'partials/_header_taxonomy_term.html' %}
-      {% block taxonomy_content %}
-
-      {% endblock %}
-    </div>
-  </main>
-{% endblock %}
+    <main class="portfolio-taxonomy-term">
+        <div class="container">
+            <div class="intro">
+                {% block intro %}
+                {% endblock intro %}
+            </div>
+            {% include "partials/_header_taxonomy_term.html" %}
+            {% block taxonomy_content %}
+            {% endblock taxonomy_content %}
+        </div>
+    </main>
+{% endblock portfolio_content %}

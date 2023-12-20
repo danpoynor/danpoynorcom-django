@@ -1,277 +1,263 @@
 .dpportfolio {
+    .project-details {
+        > .container {
+            padding: 0;
+        }
 
-	.project-details {
-
-		> .container {
-			padding: 0;
-		}
-
-		.expando + .expando {
-			margin-top: 2em;
-		}
-
-	}
-
-	.project-additional-samples {
-		flex: 0 0 100%;
-		margin: 2em 0 0;
-
-		h3 {
-			margin-left: 2px;
-		}
-
-    > section {
-      margin-top: .5em;
+        .expando + .expando {
+            margin-top: 2em;
+        }
     }
 
-		.prev-next-sample-navigation {
-			background-color: $ui-panel-background-color;
-			background-color: var(--t7);
-			display: flex;
-			flex-flow: row wrap;
-			list-style-type: none;
-			margin: 0 0 .5em 0;
-			padding: .5em .33em;
+    .project-additional-samples {
+        flex: 0 0 100%;
+        margin: 2em 0 0;
 
-			a {
-				margin: .25em;
+        h3 {
+            margin-left: 2px;
+        }
 
-				&.samples-overview {
-					width: 100%;
-				}
+        > section {
+            margin-top: .5em;
+        }
 
-				&.previous-sample,
-				&.next-sample {
-					flex: 1 0 0;
-					span:before {
-						color: $text-link-color;
-						color: var(--t3);
-						content: "\25C0\FE0E";
-						display: inline-block;
-						font-size: .7em;
-						transition: transform $transition-speed ease;
-						//
-						position: absolute;
-						left: 1em;
-						top: -.5em;
-						bottom: 0;
-						width: 1em;
-						height: 1em;
-						margin: auto;
-						margin-right: .5em;
-					}
-				}
+        .prev-next-sample-navigation {
+            background-color: var(--t7);
+            display: flex;
+            flex-flow: row wrap;
+            list-style-type: none;
+            margin: 0 0 .5em 0;
+            padding: .5em .33em;
 
-				&.next-sample {
-					span:before {
-						content: "\25B6\FE0E";
-						left: auto;
-						right: 1em;
-						margin-left: .5em;
-					}
-				}
+            a {
+                margin: .25em;
 
-			}
+                &.samples-overview {
+                    width: 100%;
+                }
 
-			a {
-				background-color: transparentize($text-link-color-hover, .92);
-				background-color: var(--t13);
-				display: block;
-				padding: .33em 1em;
-				position: relative;
-				text-align: center;
-				white-space: nowrap;
-				transition: color $transition-speed ease-in-out, background-color $transition-speed ease-in-out;
-				width: 100%;
+                &.previous-sample,
+                &.next-sample {
+                    flex: 1 0 0;
 
-				&:hover {
-					color: $white;
-					background-color: $text-link-color;
-					background-color: var(--t3);
+                    span:before {
+                        color: var(--t3);
+                        content: "\25C0\FE0E";
+                        display: inline-block;
+                        font-size: .7em;
+                        transition: transform $transition-speed ease;
+                        //
+                        position: absolute;
+                        left: 1em;
+                        top: -.5em;
+                        bottom: 0;
+                        width: 1em;
+                        height: 1em;
+                        margin: auto;
+                        margin-right: .5em;
+                    }
+                }
 
-					span:before {
-						color: $white;
-						transition: color $transition-speed ease-in-out;
-					}
+                &.next-sample {
+                    span:before {
+                        content: "\25B6\FE0E";
+                        left: auto;
+                        right: 1em;
+                        margin-left: .5em;
+                    }
+                }
+            }
 
-				}
+            a {
+                background-color: var(--t13);
+                display: block;
+                padding: .33em 1em;
+                position: relative;
+                text-align: center;
+                white-space: nowrap;
+                transition: color $transition-speed ease-in-out, background-color $transition-speed ease-in-out;
+                width: 100%;
 
-			}
+                &:hover {
+                    color: $white;
+                    background-color: var(--t3);
 
-		}
+                    span:before {
+                        color: $white;
+                        transition: color $transition-speed ease-in-out;
+                    }
+                }
+            }
+        }
 
-		.nav-links {
-			margin-bottom: .5em;
+        .nav-links {
+            margin-bottom: .5em;
 
-			.nav-previous {
-				border-right: 1px solid #ccc;
-				display: inline-block;
-				margin-right: 1em;
-				padding-right: 1em;
-			}
-			.nav-next {
-				display: inline-block;
-			}
-		}
+            .nav-previous {
+                border-right: 1px solid #ccc;
+                display: inline-block;
+                margin-right: 1em;
+                padding-right: 1em;
+            }
 
-		.also-part-of-this-project {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: flex-start;
-			align-items: flex-start;
+            .nav-next {
+                display: inline-block;
+            }
+        }
 
-			@supports (display: grid) and (not(display: -ms-grid)) { // test the browser understands display: grid and not MS Edge
-				margin: 1em 0;
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: auto;
-				grid-gap: .5em;
-			}
+        .also-part-of-this-project {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
 
-			li {
-				flex: 0 1 49%;
-				margin: 0;
-				padding: .5em;
+            @supports (display: grid) and (not(display: -ms-grid)) {
+                // test the browser understands display: grid and not MS Edge
+                margin: 1em 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                grid-gap: .5em;
+            }
 
-				@supports (display: grid) and (not(display: -ms-grid)) { // test the browser understands display: grid and not MS Edge
-					flex: none;
-					margin: 0;
-				}
+            li {
+                flex: 0 1 49%;
+                margin: 0;
+                padding: .5em;
 
-				&.selected {
-					background-color: $highlight-color;
-					background-color: var(--t11);
+                @supports (display: grid) and (not(display: -ms-grid)) {
+                    // test the browser understands display: grid and not MS Edge
+                    flex: none;
+                    margin: 0;
+                }
 
-					img {
-						border: none;
-						opacity: 1;
-						filter: blur(0);
+                &.selected {
+                    background-color: var(--t11);
 
-						@media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-							padding: .5em;
-						}
+                    img {
+                        border: none;
+                        opacity: 1;
+                        filter: blur(0);
 
-					}
+                        @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
+                            padding: .5em;
+                        }
+                    }
 
-					figcaption {
-						background: none;
-					}
+                    figcaption {
+                        background: none;
+                    }
 
-					span {
-						display: none;
+                    span {
+                        display: none;
 
-						&.youarehere {
-							background: transparentize($text-link-color, .25);
-							background: var(--t12);
-							position: absolute;
-							top: 0;
-							left: 0;
-							bottom: 0;
-							right: 0;
-							margin: auto;
-							height: 60%;
-							width: 60%;
-							text-align: center;
-							transition: all $transition-speed cubic-bezier(0.165, 0.780, 0.395, 1.520); // custom curve add a little bounce :)
-							opacity: 0;
-							//
-							display: flex;
-							align-items: center; /* Vertical center alignment */
-							justify-content: center; /* Horizontal center alignment */
-						}
+                        &.youarehere {
+                            background: var(--t12);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            margin: auto;
+                            height: 60%;
+                            width: 60%;
+                            text-align: center;
+                            transition: all $transition-speed cubic-bezier(0.165, 0.780, 0.395, 1.520); // custom curve add a little bounce :)
+                            opacity: 0;
+                            //
+                            display: flex;
+                            align-items: center;
+                            /* Vertical center alignment */
+                            justify-content: center;
+                            /* Horizontal center alignment */
+                        }
+                    }
+                }
+            }
 
-					}
+            figure {
+                margin: 0;
+                overflow: hidden;
+                position: relative;
+                transition-property: left, color;
+                transition-duration: $transition-speed;
+            }
 
-				}
+            img {
+                background-color: $white;
+                border: 1px solid #ddd;
+                max-width: 100%;
+                padding: .5em;
+                opacity: .5;
+                filter: blur(1px);
+                transition-property: opacity, blur;
+                transition-duration: $transition-speed;
+            }
 
-			}
+            figcaption {
+                background: var(--t10);
+                color: white;
+                display: block;
+                font-size: .8em;
+                line-height: 1.4;
+                text-align: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                transition: $transition-speed;
 
-			figure {
-				margin: 0;
-				overflow: hidden;
-				position: relative;
-				transition-property: left, color;
-				transition-duration: $transition-speed;
-			}
+                @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
+                    font-size: 1em;
+                }
+            }
 
-			img {
-				background-color: $white;
-				border: 1px solid #ddd;
-				max-width: 100%;
-				padding: .5em;
-				opacity: .5;
-				filter: blur(1px);
-				transition-property: opacity, blur;
-				transition-duration: $transition-speed;
-			}
+            span {
+                background: var(--t12);
+                position: absolute;
+                width: 100%;
+                padding: .66em .75em;
+                opacity: 1;
+            }
 
-			figcaption {
-				background: transparentize($text-link-color, .95);
-				background: var(--t10);
-				color: white;
-				display: block;
-				font-size: .8em;
-				line-height: 1.4;
-				text-align: left;
-				position: absolute;
-				top: 0;
-				left: 0;
-				margin: 0;
-				width: 100%;
-				height: 100%;
-				transition: $transition-speed;
+            figure:hover {
+                img {
+                    opacity: 1;
+                    filter: blur(0);
+                    transition: all $transition-speed ease-in-out;
+                }
+            }
 
-				@media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-					font-size: 1em;
-				}
+            li {
+                &:nth-of-type(even) figure:hover {
+                    figcaption {
+                        left: 100%;
+                    }
+                }
 
-			}
+                &:nth-of-type(odd) figure:hover {
+                    figcaption {
+                        left: -100%;
+                    }
+                }
 
-			span {
-				background: transparentize($text-link-color, .175);
-				background: var(--t12);
-				position: absolute;
-				width: 100%;
-				padding: .66em .75em;
-				opacity: 1;
-			}
+                &.selected figure:hover {
+                    figcaption {
+                        left: 0;
+                    }
 
-			figure:hover {
-				img {
-					opacity: 1;
-					filter: blur(0);
-					transition: all $transition-speed ease-in-out;
-				}
-			}
-
-			li {
-				&:nth-of-type(even) figure:hover {
-					figcaption {
-						left: 100%;
-					}
-				}
-				&:nth-of-type(odd) figure:hover {
-					figcaption {
-						left: -100%;
-					}
-				}
-				&.selected figure:hover {
-					figcaption {
-						left: 0;
-					}
-					.youarehere {
-						opacity: 1;
-						height: calc(100% - .5em);
-						width: calc(100% - .5em);
-					}
-				}
-			}
-
-		}
-
-	}
-
+                    .youarehere {
+                        opacity: 1;
+                        height: calc(100% - .5em);
+                        width: calc(100% - .5em);
+                    }
+                }
+            }
+        }
+    }
 }

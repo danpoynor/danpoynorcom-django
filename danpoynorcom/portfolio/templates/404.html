@@ -1,8 +1,7 @@
-{% extends 'base-generic.html' %}
-
+{% extends "base-generic.html" %}
 {% block content %}
-  <h1>404: Page not found</h1>
-  <p>
-    The requested page was not found. Please check the URL or return to the <a href="{% url 'home' %}">home page</a>.
-  </p>
-{% endblock %}
+    <h1>404: Page not found</h1>
+    <p>
+        The requested page was not found. Please check the URL or return to the <a href="{% url 'home' %}">home page</a>.
+    </p>
+{% endblock content %}
