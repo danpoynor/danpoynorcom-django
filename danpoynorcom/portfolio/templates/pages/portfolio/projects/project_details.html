@@ -14,9 +14,9 @@
                 <div class="container">
                     <div class="display-column">{{ object.html_content|safe }}</div>
                     <div class="project-details">
-                        {% include "partials/_project_info_client.html" with project=object.project %}
-                        {% include "partials/_project_info_project.html" with project=object.project %}
-                        {% include "partials/_project_info_additional_samples.html" %}
+                        {% include "partials/_project_details_client.html" with project=object.project %}
+                        {% include "partials/_project_details_project.html" with project=object.project %}
+                        {% include "partials/_project_details_additional_samples.html" %}
                     </div>
                 </div>
             </section>
