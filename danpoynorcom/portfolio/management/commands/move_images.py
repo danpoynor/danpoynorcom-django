@@ -3,24 +3,24 @@ import shutil
 from urllib.parse import urlparse
 from django.conf import settings
 from django.core.management.base import BaseCommand
-from portfolio.models import Image
+from portfolio.models import ProjectItemImage
 
 
 class Command(BaseCommand):
     help = 'Moves image files for "images/uploads-all-sizes/" to appropriate directories based on their sizes'
 
     def handle(self, *args, **options):
-        # Get all Image instances
-        images = Image.objects.all()
+        # Get all ProjectItemImage instances
+        images = ProjectItemImage.objects.all()
 
-        # Iterate over the Image instances
+        # Iterate over the ProjectItemImage instances
         for image in images:
             # Replace 'http://danpoynor.com.localhost/wp-content/uploads/' with '' in original
             image.original = image.original.replace('http://danpoynor.com.localhost/wp-content/uploads/', '')
-            # Save the Image instance
+            # Save the ProjectItemImage instance
             image.save()
 
-        self.stdout.write(self.style.SUCCESS('Successfully updated original field of Image instances'))
+        self.stdout.write(self.style.SUCCESS('Successfully updated original field of ProjectItemImage instances'))
 
         # Log the number of image instances found
         self.stdout.write(self.style.SUCCESS(f'Found {images.count()} image instances'))
@@ -36,9 +36,9 @@ class Command(BaseCommand):
             'original': os.path.join(settings.BASE_DIR, 'portfolio/static/portfolio/images/project-item-images/original'),
         }
 
-        # Iterate over the Image instances
+        # Iterate over the ProjectItemImage instances
         for image in images:
-            # Iterate over the fields in the Image model
+            # Iterate over the fields in the ProjectItemImage model
             for field_name, target_dir in target_dirs.items():
                 # Get the filename from the field
                 url = getattr(image, field_name)

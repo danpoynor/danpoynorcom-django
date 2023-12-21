@@ -225,9 +225,8 @@ class ProjectItem(models.Model):
         return self.name
 
 
-class Image(models.Model):
+class ProjectItemImage(models.Model):
     project_item = models.OneToOneField(ProjectItem, on_delete=models.CASCADE, related_name='image')
-    # project_item = models.ForeignKey(ProjectItem, on_delete=models.CASCADE, related_name='images')
     original = models.URLField(max_length=200, validators=[URLValidator()])
     thumbnail = models.URLField(max_length=200, validators=[URLValidator()])
     medium = models.URLField(max_length=200, validators=[URLValidator()])
@@ -236,3 +235,16 @@ class Image(models.Model):
     admin_list_thumb = models.URLField(max_length=200, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+
+class ProjectItemAttachment(models.Model):
+    project_item = models.ForeignKey(ProjectItem, on_delete=models.CASCADE, related_name='attachments')
+    file = models.FileField(upload_to='portfolio_attachments/')
+    description = models.TextField(blank=True, null=True)
+    link_text = models.CharField(max_length=200)
+    is_visible = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.file.name

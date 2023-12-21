@@ -2,13 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.db.models import Case, When, IntegerField
 
-from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, Image
-
-# admin.site.register(Client)
-# admin.site.register(Industry)
-# admin.site.register(Market)
-# admin.site.register(MediaType)
-# admin.site.register(Role)
+from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
 
 
 class ClientAdmin(admin.ModelAdmin):
@@ -17,16 +11,10 @@ class ClientAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
-admin.site.register(Client, ClientAdmin)
-
-
 class IndustryAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('id', 'name', 'slug', 'description')
     list_display_links = ('name',)
-
-
-admin.site.register(Industry, IndustryAdmin)
 
 
 class MarketAdmin(admin.ModelAdmin):
@@ -35,16 +23,10 @@ class MarketAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
-admin.site.register(Market, MarketAdmin)
-
-
 class MediaTypeAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('id', 'name', 'slug', 'description')
     list_display_links = ('name',)
-
-
-admin.site.register(MediaType, MediaTypeAdmin)
 
 
 class RoleAdmin(admin.ModelAdmin):
@@ -53,26 +35,25 @@ class RoleAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
-class ImageInline(admin.StackedInline):
-    model = Image
-    extra = 0  # this is the number of extra forms the formset will display
+class ProjectItemImageInline(admin.StackedInline):
+    model = ProjectItemImage
+    extra = 0
 
 
-admin.site.register(Role, RoleAdmin)
+class ProjectItemAttachmentInline(admin.StackedInline):
+    model = ProjectItemAttachment
+    extra = 0
 
 
 class ProjectItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('id', 'name', 'visible', 'status', 'project_name', 'item_order')
     list_display_links = ('name',)
-    inlines = [ImageInline]
+    inlines = [ProjectItemImageInline, ProjectItemAttachmentInline]
 
     def project_name(self, obj):
         return obj.project.name if obj.project else '-'
     project_name.short_description = 'Project'
-
-
-admin.site.register(ProjectItem, ProjectItemAdmin)
 
 
 class ProjectAdmin(admin.ModelAdmin):
@@ -117,4 +98,13 @@ class ProjectAdmin(admin.ModelAdmin):
         return cell
 
 
+# Register the models
+admin.site.register(Client, ClientAdmin)
+admin.site.register(Industry, IndustryAdmin)
+admin.site.register(Market, MarketAdmin)
+admin.site.register(MediaType, MediaTypeAdmin)
+admin.site.register(Role, RoleAdmin)
+admin.site.register(ProjectItem, ProjectItemAdmin)
+admin.site.register(ProjectItemImage)
+admin.site.register(ProjectItemAttachment)
 admin.site.register(Project, ProjectAdmin)
