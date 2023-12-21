@@ -41,7 +41,7 @@ class ProjectItemImageInline(admin.StackedInline):
 
 
 class ProjectItemImageAdmin(admin.ModelAdmin):
-    search_fields = ['file']
+    search_fields = ['original']
     list_display = ('id', 'admin_list_thumb', 'thumbnail', 'medium', 'medium_large', 'large', 'original')
 
 
