@@ -11,8 +11,6 @@ class Command(BaseCommand):
 
         # Iterate over the ProjectItem instances
         for item in project_items:
-            # Replace 'http://danpoynor.com.localhost/wp-content/uploads/' with 'images/uploads-all-sizes/' in html_content
-            item.html_content = item.html_content.replace('http://danpoynor.com.localhost/wp-content/uploads/', 'images/uploads-all-sizes/')
             # Replace '/wp-content/themes/danpoynor-2017/images/adteractive-email-images/' with '/static/portfolio/images/adteractive-email-images/' in html_content
             item.html_content = item.html_content.replace('/wp-content/themes/danpoynor-2017/images/', '/static/images/')
             # Replace '/static/portfolio/images/adteractive-email-images/adteractive-landing-page-images/' with '/static/portfolio/images/adteractive-landing-page-images/' in html_content
