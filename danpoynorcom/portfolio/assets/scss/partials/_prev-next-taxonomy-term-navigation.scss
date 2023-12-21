@@ -198,16 +198,6 @@
     }
 }
 
-main {
-    > .prev-next:first-of-type {
-        .container {
-            padding-top: 1em;
-        }
-    }
-
-    > .prev-next:last-of-type {
-        .container {
-            padding-bottom: 1em; // added padding-bottom on main element
-        }
-    }
+.prev-next:first-of-type {
+    padding-bottom: 0;
 }

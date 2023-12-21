@@ -181,7 +181,7 @@ a:hover {
 .sidebar-info a:hover,
 .contact-info a:hover,
 .site-info a:hover {
-  filter: brightness(120%);
+  filter: brightness(150%);
 }
 
 body > header a {
@@ -200,8 +200,17 @@ a:focus {
 
 p a,
 p a:visited,
-p a:hover {
+p a:hover,
+.project-details a,
+.project-details a:visited,
+.project-details a:hover {
   text-decoration: underline;
+}
+
+.project-additional-samples a,
+.project-additional-samples a:visited,
+.project-additional-samples a:hover {
+  text-decoration: none;
 }
 
 .site-title {
@@ -235,7 +244,7 @@ main header h1 {
   margin: 0;
 }
 main header h1 a:hover {
-  filter: brightness(120%);
+  filter: brightness(150%);
 }
 main header .project-name {
   margin-top: 0;
@@ -526,7 +535,7 @@ header nav .resume-tab {
 }
 
 .intro {
-  padding: 2em 0;
+  padding: 2em 0 0;
   opacity: 0;
   position: relative;
   animation: fadeinfrombottom 0.7s;
@@ -542,9 +551,7 @@ header nav .resume-tab {
 }
 
 main header {
-  flex: none;
-  margin: 0;
-  padding: 0 0 1rem;
+  padding: 2rem 0 1rem;
   width: 100%;
 }
 main .taxonomy-meta p:first-of-type {
@@ -554,9 +561,6 @@ main .taxonomy-meta p:last-of-type {
   margin-bottom: 0;
 }
 
-article > header {
-  padding-top: 2rem;
-}
 article + header {
   margin-top: 0;
 }
@@ -1013,6 +1017,7 @@ li {
 }
 .csv li {
   display: inline-block;
+  margin-right: 0.33rem;
   white-space: nowrap;
 }
 
@@ -1236,11 +1241,8 @@ li {
   }
 }
 
-main > .prev-next:first-of-type .container {
-  padding-top: 1em;
-}
-main > .prev-next:last-of-type .container {
-  padding-bottom: 1em;
+.prev-next:first-of-type {
+  padding-bottom: 0;
 }
 
 #loading-container {
@@ -1735,7 +1737,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   padding: 0 1em 1em;
 }
 .expando-content-wrapper a:hover {
-  filter: brightness(120%);
+  filter: brightness(150%);
 }
 
 .project-additional-samples {
@@ -1768,7 +1770,7 @@ html:not(.js) .project-additional-samples,
   vertical-align: 12%;
 }
 .expando-trigger:hover::before {
-  filter: brightness(120%);
+  filter: brightness(150%);
 }
 
 #tc .expando-trigger::before {
@@ -2939,7 +2941,7 @@ main.portfolio-page header.page-header {
   margin-bottom: 0.5em;
 }
 .taxonomy-categories .taxonomy-list a:hover {
-  filter: brightness(120%);
+  filter: brightness(150%);
 }
 
 .taxonomy-highlights .container {

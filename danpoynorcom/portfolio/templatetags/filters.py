@@ -1,4 +1,7 @@
 from django import template
+from django.urls import reverse
+from django.utils.safestring import mark_safe
+from django.utils.html import format_html, format_html_join
 
 register = template.Library()
 
@@ -26,3 +29,9 @@ def previous_item(items, i):
 @register.filter
 def class_name(value):
     return value.__class__.__name__
+
+
+@register.filter
+def join_as_links(items, url_name):
+    links = [format_html('<li><a href="{}">{}</a>{}</li>', reverse(url_name, args=[item.slug]), item.name, ',' if not item == items.last() else '') for item in items]
+    return mark_safe(''.join(links))
