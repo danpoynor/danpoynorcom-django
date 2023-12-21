@@ -1,0 +1,15 @@
+<section id="project-attachments" class="expando expanded">
+    <h3 class="expando-trigger">Project Artifacts</h3>
+    <div class="expando-content">
+        <div class="expando-content-wrapper">
+            {% for attachment in project.attachments.all %}
+                {% if attachment.file and attachment.visible %}
+                    <section class="link-to-pdf-file">
+                        <h4>File</h4>
+                        <a href="{{ attachment.file.url }}" rel="nofollow" download>{{ attachment.link_text }}</a>
+                    </section>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

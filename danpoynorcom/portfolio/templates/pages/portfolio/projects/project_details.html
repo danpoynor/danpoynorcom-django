@@ -16,6 +16,7 @@
                     <div class="project-details">
                         {% include "partials/_project_details_client.html" with project=object.project %}
                         {% include "partials/_project_details_project.html" with project=object.project %}
+                        {% include "partials/_project_details_artifacts.html" with project=object %}
                         {% include "partials/_project_details_additional_samples.html" %}
                     </div>
                 </div>

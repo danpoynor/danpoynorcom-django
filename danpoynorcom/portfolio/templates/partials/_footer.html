@@ -28,17 +28,18 @@
             </svg>
             in Ausin, Texas | <span class="nowrap">© Dan Poynor. All rights reserved.</span>
             <br>
-            Website development based on custom <span class="nowrap">WordPress theme and plugins environment.</span>
-            <br>
-            Feedback welcome. Any opportunities to improve this site <span class="nowrap">please <a href='{% url 'contact' %}'>let me know</a>.</span>
-            <br>
-            Web hosting provided by Amazon Web Services (AWS) using an Elastic Beanstalk app config to manage
-            <br>
-            EC2 instances for computing, an RDS database, S3 buckets for files, and a Load Balancer to allow for TLS Certificate Use.
-            <br>
-            All product names, logos, photographs, graphic design, and brands are property of their <span class="nowrap">respective owners.</span>
-            <br>
-            <a href="{% url 'getty_legal_notice' %}" target="_top">LEGAL NOTICE TO PICSCOUT, GETTY IMAGES, PICSCOUT CLIENTS, CYVEILLANCE: You are prohibited from accessing this site.</a>
-        </p>
-    </div>
+            <!-- djlint:off -->
+                    Website development based on <a class="nowrap"
+    href="https://www.djangoproject.com/"
+    title="The web framework for perfectionists with deadlines"
+    target="_blank">Django Python web framework</a>
+        <!-- djlint:on -->
+        <br>
+        Feedback welcome. Any opportunities to improve this site <span class="nowrap">please <a href='{% url 'contact' %}'>let me know</a>.</span>
+        <br>
+        All product names, logos, photographs, graphic design, and brands are property of their <span class="nowrap">respective owners.</span>
+        <br>
+        <a href="{% url 'getty_legal_notice' %}" target="_top">LEGAL NOTICE TO PICSCOUT, GETTY IMAGES, PICSCOUT CLIENTS, CYVEILLANCE: You are prohibited from accessing this site.</a>
+    </p>
+</div>
 </footer>

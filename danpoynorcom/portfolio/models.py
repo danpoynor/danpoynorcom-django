@@ -247,7 +247,7 @@ class ProjectItemAttachment(models.Model):
         verbose_name_plural = 'Project Attachments'
         db_table = 'portfolio_project_item_attachment'
     project_item = models.ForeignKey(ProjectItem, on_delete=models.CASCADE, related_name='attachments')
-    file = models.FileField(upload_to='portfolio_attachments/')
+    file = models.FileField(upload_to='')
     description = models.TextField(blank=True, null=True)
     link_text = models.CharField(max_length=200)
     visible = models.BooleanField(default=True)
