@@ -226,6 +226,10 @@ class ProjectItem(models.Model):
 
 
 class ProjectItemImage(models.Model):
+    class Meta:
+        verbose_name = 'Project Image'
+        verbose_name_plural = 'Project Images'
+        db_table = 'portfolio_project_item_image'
     project_item = models.OneToOneField(ProjectItem, on_delete=models.CASCADE, related_name='image')
     original = models.URLField(max_length=200, validators=[URLValidator()])
     thumbnail = models.URLField(max_length=200, validators=[URLValidator()])
@@ -238,11 +242,15 @@ class ProjectItemImage(models.Model):
 
 
 class ProjectItemAttachment(models.Model):
+    class Meta:
+        verbose_name = 'Project Attachment'
+        verbose_name_plural = 'Project Attachments'
+        db_table = 'portfolio_project_item_attachment'
     project_item = models.ForeignKey(ProjectItem, on_delete=models.CASCADE, related_name='attachments')
     file = models.FileField(upload_to='portfolio_attachments/')
     description = models.TextField(blank=True, null=True)
     link_text = models.CharField(max_length=200)
-    is_visible = models.BooleanField(default=True)
+    visible = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

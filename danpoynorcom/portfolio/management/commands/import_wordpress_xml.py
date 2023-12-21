@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, Image
+from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
 import xml.etree.ElementTree as ET
 import phpserialize
 
@@ -156,8 +156,27 @@ class Command(BaseCommand):
             if created:
                 project_item.save()
 
-        # Images
-        # Process the Image model in a separate loop
+            # Handle attachments (usually PDF files)
+            # Find the <wp:postmeta> child elements with the <wp:meta_key> text 'PDF File' and 'PDF File Link Text'
+            attachment_file_elem = item.find(".//wp:postmeta[wp:meta_key='PDF File']/wp:meta_value", namespaces)
+            attachment_file_link_text_elem = item.find(".//wp:postmeta[wp:meta_key='PDF File Link Text']/wp:meta_value", namespaces)
+
+            # Get the text of the <wp:meta_value> child elements
+            attachment_file = attachment_file_elem.text if attachment_file_elem is not None else ''
+            attachment_file = attachment_file.replace('/wp-content/uploads/', '')
+            attachment_file_link_text = attachment_file_link_text_elem.text if attachment_file_link_text_elem is not None else ''
+
+            # Create a new ProjectItemAttachment instance with this data only if attachment_file is not an empty string
+            if attachment_file:
+                attachment = ProjectItemAttachment.objects.create(
+                    project_item=project_item,
+                    file=attachment_file,
+                    link_text=attachment_file_link_text,
+                )
+                attachment.save()
+
+        # ProjectItemImages
+        # Process the ProjectItemImage model in a separate loop
         # First, create a dictionary that maps _thumbnail_id to post_name for dpportfolio items
         thumbnail_id_to_post_name = {}
         for item in root.findall(".//item[wp:post_type='dpportfolio']", namespaces):
@@ -190,6 +209,7 @@ class Command(BaseCommand):
             # Get the attachment URL, which is the URL of the original image
             attachment_url_elem = item.find('wp:attachment_url', namespaces)
             attachment_url = attachment_url_elem.text if attachment_url_elem is not None else ''
+            attachment_url = attachment_url.replace('http://danpoynor.com.localhost/wp-content/uploads/', '')
 
             # Get the metadata, which contains the URLs of the different image sizes
             metadata_elem = item.find(".//wp:postmeta[wp:meta_key='_wp_attachment_metadata']/wp:meta_value", namespaces)
@@ -204,8 +224,8 @@ class Command(BaseCommand):
                 large_url = metadata['sizes']['large']['file'] if 'large' in metadata['sizes'] else ''
                 admin_list_thumb_url = metadata['sizes']['admin-list-thumb']['file'] if 'admin-list-thumb' in metadata['sizes'] else ''
 
-                # Create a new Image instance with this data
-                image = Image.objects.create(
+                # Create a new ProjectItemImage instance with this data
+                image = ProjectItemImage.objects.create(
                     project_item=project_item,
                     original=attachment_url,
                     thumbnail=thumbnail_url,

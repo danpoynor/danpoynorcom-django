@@ -40,9 +40,19 @@ class ProjectItemImageInline(admin.StackedInline):
     extra = 0
 
 
+class ProjectItemImageAdmin(admin.ModelAdmin):
+    search_fields = ['file']
+    list_display = ('id', 'admin_list_thumb', 'thumbnail', 'medium', 'medium_large', 'large', 'original')
+
+
 class ProjectItemAttachmentInline(admin.StackedInline):
     model = ProjectItemAttachment
     extra = 0
+
+
+class ProjectItemAttachmentAdmin(admin.ModelAdmin):
+    search_fields = ['file']
+    list_display = ('id', 'file', 'link_text', 'visible')
 
 
 class ProjectItemAdmin(admin.ModelAdmin):
@@ -105,6 +115,6 @@ admin.site.register(Market, MarketAdmin)
 admin.site.register(MediaType, MediaTypeAdmin)
 admin.site.register(Role, RoleAdmin)
 admin.site.register(ProjectItem, ProjectItemAdmin)
-admin.site.register(ProjectItemImage)
-admin.site.register(ProjectItemAttachment)
+admin.site.register(ProjectItemImage, ProjectItemImageAdmin)
+admin.site.register(ProjectItemAttachment, ProjectItemAttachmentAdmin)
 admin.site.register(Project, ProjectAdmin)
