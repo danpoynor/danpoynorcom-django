@@ -82,7 +82,7 @@
                 }
             }
 
-            &.previous-project-category {
+            &.prev {
                 border-right: 1px solid var(--t8);
                 order: 1;
                 text-align: right;
@@ -121,7 +121,7 @@
                 }
             }
 
-            &.next-project-category {
+            &.next {
                 order: 2;
                 text-align: left;
 
@@ -155,17 +155,17 @@
             li {
                 max-width: none;
 
-                &.previous-project-category {
+                &.prev {
                     border: none;
                     text-align: left;
                 }
 
-                &.next-project-category {
+                &.next {
                     text-align: right;
                 }
 
-                &.next-project-category,
-                &.previous-project-category {
+                &.next,
+                &.prev {
                     a {
                         padding: .75em;
 

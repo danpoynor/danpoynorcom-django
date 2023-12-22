@@ -186,6 +186,12 @@ class Project(models.Model):
     def __str__(self):
         return self.name
 
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
     def get_ordered_items(self):
         return self.items.all().order_by('item_order')
 
@@ -193,7 +199,7 @@ class Project(models.Model):
         return self.items.all().order_by('item_order').first()
 
     def get_absolute_url(self):
-        return reverse('project_detail', args=[str(self.slug)])
+        return reverse('project', args=[str(self.slug)])
 
 
 # ProjectItem model: Each project item has a project assigned to it
@@ -223,6 +229,15 @@ class ProjectItem(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
+    def get_absolute_url(self):
+        return reverse('project_detail', args=[str(self.slug)])
 
 
 class ProjectItemImage(models.Model):

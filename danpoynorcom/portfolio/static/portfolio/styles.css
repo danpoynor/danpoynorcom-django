@@ -1165,21 +1165,21 @@ li {
 .prev-next ul li a:hover:before, .prev-next ul li a:hover:after {
   opacity: 1;
 }
-.prev-next ul li.previous-project-category {
+.prev-next ul li.prev {
   border-right: 1px solid var(--t8);
   order: 1;
   text-align: right;
 }
-.prev-next ul li.previous-project-category span.prev-next-label {
+.prev-next ul li.prev span.prev-next-label {
   right: -0.25em;
 }
-.prev-next ul li.previous-project-category span.truncate {
+.prev-next ul li.prev span.truncate {
   display: inline-block;
 }
-.prev-next ul li.previous-project-category a {
+.prev-next ul li.prev a {
   padding-left: 4em;
 }
-.prev-next ul li.previous-project-category a:before {
+.prev-next ul li.prev a:before {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='30.5 0 36.2 0 41.8 0 11.3 57.5 41.8 115 36.2 115 30.5 115 0 57.5' class='a'/></svg>");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1187,17 +1187,17 @@ li {
   content: "";
   left: 2em;
 }
-.prev-next ul li.previous-project-category a:hover:before {
+.prev-next ul li.prev a:hover:before {
   left: 1em;
 }
-.prev-next ul li.next-project-category {
+.prev-next ul li.next {
   order: 2;
   text-align: left;
 }
-.prev-next ul li.next-project-category a {
+.prev-next ul li.next a {
   padding-right: 4em;
 }
-.prev-next ul li.next-project-category a:after {
+.prev-next ul li.next a:after {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='115' viewBox='0 0 41.8 115'><style>.a{fill:white;}</style><polygon points='11.3 115 5.7 115 0 115 30.5 57.5 0 0 5.7 0 11.3 0 41.8 57.5' class='a'/></svg>");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1206,37 +1206,37 @@ li {
   left: auto;
   right: 2em;
 }
-.prev-next ul li.next-project-category a:hover:after {
+.prev-next ul li.next a:hover:after {
   right: 1em;
 }
 @media only screen and (max-width: 736.1px) {
   .prev-next ul li {
     max-width: none;
   }
-  .prev-next ul li.previous-project-category {
+  .prev-next ul li.prev {
     border: none;
     text-align: left;
   }
-  .prev-next ul li.next-project-category {
+  .prev-next ul li.next {
     text-align: right;
   }
-  .prev-next ul li.next-project-category a, .prev-next ul li.previous-project-category a {
+  .prev-next ul li.next a, .prev-next ul li.prev a {
     padding: 0.75em;
   }
-  .prev-next ul li.next-project-category a:before, .prev-next ul li.next-project-category a:after, .prev-next ul li.previous-project-category a:before, .prev-next ul li.previous-project-category a:after {
+  .prev-next ul li.next a:before, .prev-next ul li.next a:after, .prev-next ul li.prev a:before, .prev-next ul li.prev a:after {
     background-image: none;
     display: none;
   }
-  .prev-next ul li.next-project-category a span.prev-next-label, .prev-next ul li.previous-project-category a span.prev-next-label {
+  .prev-next ul li.next a span.prev-next-label, .prev-next ul li.prev a span.prev-next-label {
     color: #20B2AA;
     color: var(--t3);
     white-space: normal;
   }
-  .prev-next ul li.next-project-category a span.truncate, .prev-next ul li.previous-project-category a span.truncate {
+  .prev-next ul li.next a span.truncate, .prev-next ul li.prev a span.truncate {
     display: none;
     max-width: none;
   }
-  .prev-next ul li.next-project-category a span .sort-order, .prev-next ul li.previous-project-category a span .sort-order {
+  .prev-next ul li.next a span .sort-order, .prev-next ul li.prev a span .sort-order {
     display: block;
   }
 }

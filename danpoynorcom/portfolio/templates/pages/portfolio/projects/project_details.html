@@ -1,5 +1,6 @@
 {% extends "base_portfolio.html" %}
 {% block portfolio_content %}
+    {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
     <main class="project-details-page">
         <article class="dpportfolio">
             <header>
@@ -23,4 +24,5 @@
             </section>
         </article>
     </main>
+    {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
 {% endblock portfolio_content %}

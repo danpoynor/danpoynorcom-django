@@ -128,12 +128,12 @@ def projects(request):
     return render(request, 'pages/portfolio/projects/page.html', {'projects': project_list})
 
 
-class ProjectItemsView(generic.DetailView):
+class ProjectItemsView(PrevNextMixin, generic.DetailView):
     model = Project
     template_name = 'pages/portfolio/projects/project_items.html'
 
 
-class ProjectDetailsView(generic.DetailView):
+class ProjectDetailsView(PrevNextMixin, generic.DetailView):
     model = ProjectItem
     template_name = 'pages/portfolio/projects/project_details.html'
 
