@@ -2,6 +2,10 @@ class PrevNextMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
+        # Ensure self.object and self.model are not None
+        if self.object is None or self.model is None:
+            return context
+
         # Get the current object
         current_object = self.object
 
