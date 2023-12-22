@@ -6,11 +6,11 @@
 {% endblock intro %}
 {% block taxonomy_content %}
     <div class="key-areas">
-        {% include "partials/_taxonomy_terms_highlighted.html" with item_name="industry" highlighted_items=highlighted_industries %}
+        {% include "partials/taxonomy/term/_highlighted.html" with item_name="industry" highlighted_items=highlighted_industries %}
         <section class="taxonomy-categories">
             <h2>Major Markets</h2>
-            {% include "partials/_taxonomy_categories.html" with item_name="markets" items=markets %}
+            {% include "partials/taxonomy/_categories.html" with item_name="markets" items=markets %}
         </section>
     </div>
-    {% include "partials/_taxonomy_categories.html" with item_name="industries" items=industries %}
+    {% include "partials/taxonomy/_categories.html" with item_name="industries" items=industries %}
 {% endblock taxonomy_content %}

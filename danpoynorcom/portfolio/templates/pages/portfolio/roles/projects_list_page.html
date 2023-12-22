@@ -1,6 +1,6 @@
 {% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-    {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
+    {% include "partials/nav/_prev_next_taxonomy_term.html" %}
     <main class="portfolio-taxonomy-term">
         <header>
             <div class="container">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </header>
-        {% include "partials/_taxonomy_term_projects.html" %}
+        {% include "partials/taxonomy/term/_projects.html" %}
     </main>
-    {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
+    {% include "partials/nav/_prev_next_taxonomy_term.html" %}
 {% endblock portfolio_content %}

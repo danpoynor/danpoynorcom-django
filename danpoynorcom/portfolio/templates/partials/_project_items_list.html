@@ -1,4 +1,5 @@
 {% load static %}
+{% comment %} TEMPLATE INFO: This partial is used to display a list of project items on the Overview page. {% endcomment %}
 <ul class="show" id="portfolio-container">
     {% for item in object.get_ordered_items %}
         <li class="show">

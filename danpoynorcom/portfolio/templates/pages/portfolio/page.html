@@ -12,10 +12,10 @@
             </header>
         </div>
         <section class="selects">
-            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_clients item_name="clients" total_count=total_clients url="/portfolio/clients/" %}
-            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_industries item_name="industries" total_count=total_industries url="/portfolio/industries/" %}
-            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_media_types item_name="media_types" total_count=total_media_types url="/portfolio/media-types/" %}
-            {% include "partials/_taxonomy_terms_selected.html" with selected_items=selected_roles item_name="roles" total_count=total_roles url="/portfolio/roles/" %}
+            {% include "partials/taxonomy/term/_selected.html" with selected_items=selected_clients item_name="clients" total_count=total_clients url="/portfolio/clients/" %}
+            {% include "partials/taxonomy/term/_selected.html" with selected_items=selected_industries item_name="industries" total_count=total_industries url="/portfolio/industries/" %}
+            {% include "partials/taxonomy/term/_selected.html" with selected_items=selected_media_types item_name="media_types" total_count=total_media_types url="/portfolio/media-types/" %}
+            {% include "partials/taxonomy/term/_selected.html" with selected_items=selected_roles item_name="roles" total_count=total_roles url="/portfolio/roles/" %}
         </section>
         <section class="value-statement">
             <div class="container">

@@ -1,18 +1,18 @@
 {% extends "base_portfolio.html" %}
 {% block portfolio_content %}
-  {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
-  <main class="portfolio-taxonomy-term">
-    <header>
-      <div class="container">
-        <h1>
-          <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <a href="{% url 'industries' %}">Industries</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span>
-        </h1>
-        <div class="taxonomy-meta">
-          <p>{{ object.description|safe }}</p>
-        </div>
-      </div>
-    </header>
-    {% include "partials/_taxonomy_term_projects.html" %}
-  </main>
-  {% include "partials/_prev_next_taxonomy_term_navigation.html" %}
+    {% include "partials/nav/_prev_next_taxonomy_term.html" %}
+    <main class="portfolio-taxonomy-term">
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <a href="{% url 'industries' %}">Industries</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span>
+                </h1>
+                <div class="taxonomy-meta">
+                    <p>{{ object.description|safe }}</p>
+                </div>
+            </div>
+        </header>
+        {% include "partials/taxonomy/term/_projects.html" %}
+    </main>
+    {% include "partials/nav/_prev_next_taxonomy_term.html" %}
 {% endblock portfolio_content %}
