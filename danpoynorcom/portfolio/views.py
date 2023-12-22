@@ -41,8 +41,8 @@ def contact(request):
 
 
 def clients(request):
-    clients = Client.objects.all().order_by(Lower('name'))
-    return render(request, 'pages/portfolio/clients/page.html', {'clients': clients, 'object': Client()})
+    client_list = Client.objects.all().order_by(Lower('name'))
+    return render(request, 'pages/portfolio/clients/page.html', {'clients': client_list, 'object': Client()})
 
 
 def getty_legal_notice(request):
@@ -57,13 +57,13 @@ class ClientProjectsListView(PrevNextMixin, generic.DetailView):
 def industries(request):
     highlighted_industry_ids = [3, 13, 32, 8, 21, 24]
     highlighted_industries = Industry.objects.filter(id__in=highlighted_industry_ids)
-    industries = Industry.objects.all()
-    markets = Market.objects.all()
+    industry_list = Industry.objects.all()
+    market_list = Market.objects.all()
 
     context = {
         'highlighted_industries': highlighted_industries,
-        'industries': industries,
-        'markets': markets,
+        'industries': industry_list,
+        'markets': market_list,
         'object': Industry(),
     }
 
@@ -76,8 +76,8 @@ class IndustryProjectsListView(PrevNextMixin, generic.DetailView):
 
 
 def markets(request):
-    markets = Market.objects.all()
-    return render(request, 'pages/portfolio/markets/page.html', {'markets': markets, 'object': Market()})
+    market_list = Market.objects.all()
+    return render(request, 'pages/portfolio/markets/page.html', {'markets': market_list, 'object': Market()})
 
 
 class MarketProjectsListView(PrevNextMixin, generic.DetailView):
@@ -88,15 +88,14 @@ class MarketProjectsListView(PrevNextMixin, generic.DetailView):
 def mediatypes(request):
     highlighted_media_type_ids = [28, 3, 21, 36, 38]
     highlighted_media_types = MediaType.objects.filter(id__in=highlighted_media_type_ids)
-    mediatypes = MediaType.objects.all()
+    mediatype_list = MediaType.objects.all()
 
     context = {
         'highlighted_media_types': highlighted_media_types,
-        'mediatypes': mediatypes,
+        'mediatypes': mediatype_list,
         'object': MediaType()
     }
 
-    mediatypes = MediaType.objects.all()
     return render(request, 'pages/portfolio/media_types/page.html', context)
 
 
@@ -108,11 +107,11 @@ class MediaTypeProjectsListView(PrevNextMixin, generic.DetailView):
 def roles(request):
     highlighted_role_ids = [12, 24, 22, 2, 8]
     highlighted_roles = Role.objects.filter(id__in=highlighted_role_ids)
-    roles = Role.objects.all()
+    role_list = Role.objects.all()
 
     context = {
         'highlighted_roles': highlighted_roles,
-        'roles': roles,
+        'roles': role_list,
         'object': Role()
     }
 
@@ -125,8 +124,8 @@ class RoleProjectsListView(PrevNextMixin, generic.DetailView):
 
 
 def projects(request):
-    projects = Project.objects.all()
-    return render(request, 'pages/portfolio/projects/page.html', {'projects': projects})
+    project_list = Project.objects.all()
+    return render(request, 'pages/portfolio/projects/page.html', {'projects': project_list})
 
 
 class ProjectItemsView(generic.DetailView):
