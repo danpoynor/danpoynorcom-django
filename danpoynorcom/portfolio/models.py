@@ -231,12 +231,12 @@ class ProjectItemImage(models.Model):
         verbose_name_plural = 'Project Images'
         db_table = 'portfolio_project_item_image'
     project_item = models.OneToOneField(ProjectItem, on_delete=models.CASCADE, related_name='image')
-    original = models.URLField(max_length=200, validators=[URLValidator()])
-    thumbnail = models.URLField(max_length=200, validators=[URLValidator()])
-    medium = models.URLField(max_length=200, validators=[URLValidator()])
-    medium_large = models.URLField(max_length=200, validators=[URLValidator()], blank=True, null=True)
-    large = models.URLField(max_length=200, validators=[URLValidator()], blank=True, null=True)
-    admin_list_thumb = models.URLField(max_length=200, validators=[URLValidator()])
+    original = models.CharField(max_length=200)
+    thumbnail = models.CharField(max_length=200)
+    medium = models.CharField(max_length=200)
+    medium_large = models.CharField(max_length=200, blank=True, null=True)
+    large = models.CharField(max_length=200, blank=True, null=True)
+    admin_list_thumb = models.CharField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
