@@ -42,7 +42,7 @@
 
         // use gradient for top right triangle shaped notch
         a {
-            background-image: linear-gradient(45deg, $white 0%, $white 92%, transparent 92%, transparent 100%);
+            background-image: linear-gradient(45deg, var(--t7) 0%, var(--t7) 92%, transparent 92%, transparent 100%);
             display: block;
             padding: 1em;
             position: relative;
@@ -55,11 +55,10 @@
             justify-content: center;
             flex-flow: column nowrap;
             //
-            transition: color $transition-speed ease-in-out;
+            transition: color var(--transition-speed) ease-in-out;
 
             &:before {
                 // this enable transitioning the gradient background
-                background-image: linear-gradient(45deg, $theme-color 0%, $theme-color 92%, transparent 92%, transparent 100%);
                 background-image: linear-gradient(45deg, var(--t3) 0%, var(--t3) 92%, transparent 92%, transparent 100%);
                 content: '';
                 display: block;
@@ -70,11 +69,11 @@
                 left: 0;
                 opacity: 0;
                 z-index: -10;
-                transition: opacity $transition-speed ease-in-out;
+                transition: opacity var(--transition-speed) ease-in-out;
             }
 
             &:hover {
-                color: $white;
+                color: var(--t7);
 
                 &:before {
                     opacity: 1;
@@ -87,8 +86,7 @@
     // NOTE: This doesn't currently work in Firefox
     @supports(-webkit-clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) {
         a {
-            background-image: linear-gradient(45deg, $theme-color -100%, $theme-color 0%, white 0%, white 100%);
-            background-image: linear-gradient(45deg, var(--t3) -100%, var(--t3) 0%, white 0%, white 100%);
+            background-image: linear-gradient(45deg, var(--t3) -100%, var(--t3) 0%, var(--t7) 0%, var(--t7) 100%);
             clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
             display: block;
             position: absolute;
@@ -96,7 +94,7 @@
             height: 100%;
             padding: 0;
             overflow: hidden; // needed so Safri doesn't react when rolling over the unseen :before element
-            transition: color $transition-speed-slow ease-in-out;
+            transition: color var(--transition-speed-slow) ease-in-out;
 
             &:before {
                 background: var(--t3);
@@ -109,11 +107,11 @@
                 bottom: -250%;
                 transform: rotate(45deg);
                 z-index: -10;
-                transition: left $transition-speed-slow, bottom $transition-speed-slow ease-out;
+                transition: left var(--transition-speed-slow), bottom var(--transition-speed-slow) ease-out;
             }
 
             &:hover {
-                color: $white;
+                color: var(--t7);
 
                 &:before {
                     left: -140%;

@@ -3,7 +3,7 @@
 }
 
 body > header {
-    color: $white;
+    color: var(--t7);
     width: 100%;
 
     .container {
@@ -72,21 +72,20 @@ header nav {
             position: relative;
 
             a {
-                color: $theme-color;
                 color: var(--t12);
                 display: inline-block;
                 padding: .5em .75em .75em;
                 position: relative;
                 white-space: nowrap;
-                transition: color $transition-speed ease-in-out;
+                transition: color var(--transition-speed) ease-in-out;
 
                 &:hover {
-                    color: $white;
+                    color: var(--t7);
                 }
             }
 
             [aria-current] {
-                color: $white;
+                color: var(--t7);
                 transition: none;
             }
         }
@@ -100,6 +99,6 @@ header nav {
 // make sure portfolio sub sub pages still show the top nav link as selected
 .portfolio-sub-page {
     li.menu-item-1041 a {
-        color: $white;
+        color: var(--t7);
     }
 }

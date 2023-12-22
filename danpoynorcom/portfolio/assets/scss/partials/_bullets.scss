@@ -12,7 +12,7 @@
         }
 
         &:before {
-            color: $theme-color;
+            color: var(--t3);
             content: "• ";
             font-size: 125%;
             line-height: 1;

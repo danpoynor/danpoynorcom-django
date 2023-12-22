@@ -1,4 +1,3 @@
-// in case javascript is disabled yet the browser still supports css variables
 :root {
     // --t3: #9acd32; // YellowGreen
     // --t3: #5e7e1c; // A11Y Fix 1
@@ -14,4 +13,13 @@
     --t11: rgba(154, 205, 50, .1);
     --t12: rgba(154, 205, 50, .825);
     --t13: #f5faeb;
+    --black: #000000;
+    --darkgrays-500: #5c5c5c;
+    --width-portfolio: 258px; // x2 516 - "medium" size. Use in mosaic view for Portfolio areas including the project overview pages.
+    --width-project-overview: 320px; // using the 516 "medium" thumbnail in here also even though it's not 2x the size.
+    --transition-speed: .3s;
+    --transition-speed-slow: .5s;
+    --transition-speed-slower: .7s;
+    --hover-brightness-amount: 150%;
+    --portfolio-img-outline: #eee;
 }

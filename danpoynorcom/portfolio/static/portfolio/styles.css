@@ -11,6 +11,15 @@
   --t11: rgba(154, 205, 50, .1);
   --t12: rgba(154, 205, 50, .825);
   --t13: #f5faeb;
+  --black: #000000;
+  --darkgrays-500: #5c5c5c;
+  --width-portfolio: 258px;
+  --width-project-overview: 320px;
+  --transition-speed: .3s;
+  --transition-speed-slow: .5s;
+  --transition-speed-slower: .7s;
+  --hover-brightness-amount: 150%;
+  --portfolio-img-outline: #eee;
 }
 
 /*
@@ -28,7 +37,7 @@ button,
 input,
 select,
 textarea {
-  color: #666666;
+  color: var(--t5);
 }
 
 /*
@@ -166,7 +175,7 @@ h4 {
 
 a {
   color: var(--t3);
-  transition: all 0.3s ease-out;
+  transition: all var(--transition-speed) ease-out;
 }
 
 a,
@@ -181,7 +190,7 @@ a:hover {
 .sidebar-info a:hover,
 .contact-info a:hover,
 .site-info a:hover {
-  filter: brightness(150%);
+  filter: brightness(var(--hover-brightness-amount));
 }
 
 body > header a {
@@ -226,10 +235,10 @@ p a:hover,
 .site-title a {
   color: var(--t12);
   display: inline-block;
-  transition: color 0.3s ease-in-out;
+  transition: color var(--transition-speed) ease-in-out;
 }
 .site-title a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 
 .home-page h1 {
@@ -244,7 +253,7 @@ main header h1 {
   margin: 0;
 }
 main header h1 a:hover {
-  filter: brightness(150%);
+  filter: brightness(var(--hover-brightness-amount));
 }
 main header .project-name {
   margin-top: 0;
@@ -269,7 +278,7 @@ main header .divider {
   margin: 1em 0 0;
 }
 .taxonomy-project-list h3 {
-  color: #666666;
+  color: var(--t5);
 }
 
 .page-template-page-clients main section.taxonomy-categories h2 {
@@ -289,7 +298,7 @@ main header .divider {
 }
 
 .site-description {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   font: normal 1.125em/1 "Oswald", sans-serif;
   margin: 1em 0 0;
 }
@@ -326,7 +335,7 @@ body {
   margin: 0;
   overflow-anchor: none;
   padding: 0;
-  transition: background-color 0.3s ease-out;
+  transition: background-color var(--transition-speed) ease-out;
   width: 100%;
 }
 
@@ -354,7 +363,7 @@ main {
   margin: 0 auto;
   min-height: 20em;
   padding: 0;
-  transition: background-color 0.3s ease-out;
+  transition: background-color var(--transition-speed) ease-out;
   width: 100%;
 }
 
@@ -452,7 +461,7 @@ main header.error-message {
 }
 
 body > header {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   width: 100%;
 }
 body > header .container {
@@ -511,19 +520,18 @@ header nav ul li {
   position: relative;
 }
 header nav ul li a {
-  color: #20B2AA;
   color: var(--t12);
   display: inline-block;
   padding: 0.5em 0.75em 0.75em;
   position: relative;
   white-space: nowrap;
-  transition: color 0.3s ease-in-out;
+  transition: color var(--transition-speed) ease-in-out;
 }
 header nav ul li a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 header nav ul li [aria-current] {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   transition: none;
 }
 header nav .resume-tab {
@@ -531,14 +539,14 @@ header nav .resume-tab {
 }
 
 .portfolio-sub-page li.menu-item-1041 a {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 
 .intro {
   padding: 2em 0 0;
   opacity: 0;
   position: relative;
-  animation: fadeinfrombottom 0.7s;
+  animation: fadeinfrombottom var(--transition-speed-slower);
   animation-fill-mode: forwards;
   animation-delay: 0.1s;
 }
@@ -603,7 +611,7 @@ article + header {
 }
 @supports not ((-webkit-clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0))) {
   .showcase-list a {
-    background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 92%, transparent 92%, transparent 100%);
+    background-image: linear-gradient(45deg, var(--t7) 0%, var(--t7) 92%, transparent 92%, transparent 100%);
     display: block;
     padding: 1em;
     position: relative;
@@ -614,10 +622,9 @@ article + header {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-    transition: color 0.3s ease-in-out;
+    transition: color var(--transition-speed) ease-in-out;
   }
   .showcase-list a:before {
-    background-image: linear-gradient(45deg, #20B2AA 0%, #20B2AA 92%, transparent 92%, transparent 100%);
     background-image: linear-gradient(45deg, var(--t3) 0%, var(--t3) 92%, transparent 92%, transparent 100%);
     content: "";
     display: block;
@@ -628,10 +635,10 @@ article + header {
     left: 0;
     opacity: 0;
     z-index: -10;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity var(--transition-speed) ease-in-out;
   }
   .showcase-list a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--t7);
   }
   .showcase-list a:hover:before {
     opacity: 1;
@@ -639,8 +646,7 @@ article + header {
 }
 @supports (-webkit-clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(86% 0, 100% 22%, 100% 100%, 0 100%, 0 0)) {
   .showcase-list a {
-    background-image: linear-gradient(45deg, #20B2AA -100%, #20B2AA 0%, white 0%, white 100%);
-    background-image: linear-gradient(45deg, var(--t3) -100%, var(--t3) 0%, white 0%, white 100%);
+    background-image: linear-gradient(45deg, var(--t3) -100%, var(--t3) 0%, var(--t7) 0%, var(--t7) 100%);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
     display: block;
     position: absolute;
@@ -648,7 +654,7 @@ article + header {
     height: 100%;
     padding: 0;
     overflow: hidden;
-    transition: color 0.5s ease-in-out;
+    transition: color var(--transition-speed-slow) ease-in-out;
   }
   .showcase-list a:before {
     background: var(--t3);
@@ -661,10 +667,10 @@ article + header {
     bottom: -250%;
     transform: rotate(45deg);
     z-index: -10;
-    transition: left 0.5s, bottom 0.5s ease-out;
+    transition: left var(--transition-speed-slow), bottom var(--transition-speed-slow) ease-out;
   }
   .showcase-list a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--t7);
   }
   .showcase-list a:hover:before {
     left: -140%;
@@ -742,11 +748,6 @@ body.home .selected-list a {
   margin: 0.5em 0.25em;
   padding: 0.5em 0;
   text-align: center;
-}
-.capabilities p {
-  display: inline-block;
-  margin: 0 1em;
-  padding: 0;
 }
 @media only screen and (max-width: 810px) {
   .capabilities .container {
@@ -854,7 +855,6 @@ body.home .selected-list a {
   padding: 2em 1em;
 }
 .selected-projects h2 {
-  color: #424242;
   color: var(--t6);
   display: block;
   font-size: 2em;
@@ -865,7 +865,6 @@ body.home .selected-list a {
 }
 .selected-projects .project {
   background-color: var(--t13);
-  box-shadow: 0px 0px 0px 40px white inset;
   box-shadow: 0px 0px 0px 50px var(--t7) inset;
   height: 525px;
   margin: 2em auto;
@@ -880,7 +879,7 @@ body.home .selected-list a {
 }
 @media only screen and (max-width: 1079px) {
   .selected-projects .project {
-    box-shadow: 0px 0px 0px 20px rgb(255, 255, 255) inset;
+    box-shadow: 0px 0px 0px 20px var(--t7) inset;
     height: auto;
   }
 }
@@ -949,7 +948,7 @@ body.home .selected-list a {
   margin: 0.5em 0 1em;
 }
 .selected-projects .btn {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--t7);
   color: var(--t3);
   display: inline-block;
   margin: 0;
@@ -969,12 +968,12 @@ body.home .selected-list a {
   left: 0;
   position: absolute;
   top: 0;
-  transition: all 0.3s ease-out;
+  transition: all var(--transition-speed) ease-out;
   width: 100%;
   z-index: -1;
 }
 .selected-projects .btn:hover {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 .selected-projects .btn:hover::before {
   border: 1.55em solid var(--t3);
@@ -994,7 +993,6 @@ a[target=_blank]:after {
 
 #heart-path {
   fill: none;
-  stroke: #20B2AA;
   stroke: var(--t12);
   stroke-width: 1px;
   stroke-linejoin: round;
@@ -1030,7 +1028,6 @@ li {
   margin-top: 1em;
 }
 .colored-bullets li:before {
-  color: #20B2AA;
   color: var(--t3);
   content: "• ";
   font-size: 125%;
@@ -1097,7 +1094,7 @@ li {
   flex: none;
   margin: 0 auto;
   padding: 1rem 0;
-  transition: background-color 0.3s ease-out;
+  transition: background-color var(--transition-speed) ease-out;
   width: 100%;
 }
 .prev-next .container {
@@ -1110,7 +1107,6 @@ li {
   padding: 0;
 }
 .prev-next span.prev-next-label {
-  color: #424242;
   color: var(--t6);
   display: block;
   font: 700 0.75em/1.6180339888 "Bitter", sans-serif;
@@ -1153,12 +1149,12 @@ li {
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
   width: 2.25em;
 }
 .prev-next ul li a:hover {
   background-color: var(--t7);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
 }
 .prev-next ul li a:hover:before, .prev-next ul li a:hover:after {
   opacity: 1;
@@ -1226,7 +1222,6 @@ li {
     display: none;
   }
   .prev-next ul li.next a span.prev-next-label, .prev-next ul li.prev a span.prev-next-label {
-    color: #20B2AA;
     color: var(--t3);
     white-space: normal;
   }
@@ -1252,8 +1247,7 @@ li {
   transform-style: preserve-3d;
 }
 #loading-container .loading-indicator {
-  border: 6px solid white;
-  border-top: 6px solid #20B2AA;
+  border: 6px solid var(--t3);
   border-top: 6px solid var(--t3);
   border-radius: 50%;
   width: 48px;
@@ -1268,7 +1262,7 @@ li {
 #portfolio-container {
   list-style-type: none;
   padding: 0.5em 0 0;
-  transition: opacity 0.3s ease 800ms;
+  transition: opacity var(--transition-speed) ease 800ms;
   perspective: 1300px;
   display: flex;
   flex-flow: row wrap;
@@ -1277,8 +1271,8 @@ li {
   opacity: 1;
 }
 #portfolio-container li {
-  width: 258px;
-  background: rgb(255, 255, 255);
+  width: var(--width-portfolio);
+  background: var(--t7);
   margin: 0.85em;
   padding: 0;
   transform-style: preserve-3d;
@@ -1289,7 +1283,6 @@ li {
   background-color: var(--t3);
 }
 #portfolio-container li:hover .sub-title {
-  background-color: rgba(32, 178, 170, 0.75);
   background-color: var(--t12);
 }
 #portfolio-container li:hover div.text-wrapper {
@@ -1318,16 +1311,16 @@ li {
   margin: 0 0 -1px 0;
   padding: 0;
   transition-duration: 0s;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
   backface-visibility: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 #portfolio-container img {
-  width: 258px;
+  width: var(--width-portfolio);
   padding: 0;
   backface-visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-speed) ease-in-out;
 }
 #portfolio-container figcaption {
   font-size: 0.8125em;
@@ -1342,20 +1335,20 @@ li {
   backface-visibility: hidden;
 }
 #portfolio-container .title {
-  background-color: #424242;
+  background-color: var(--t9);
 }
 #portfolio-container .sub-title {
-  background-color: #5c5c5c;
+  background-color: var(--darkgrays-500);
   padding: 0.8em 1.2em 1em;
 }
 #portfolio-container .text-wrapper {
-  color: #666666;
+  color: var(--t5);
   display: block;
   opacity: 0;
   padding: 0.75em 1em;
   position: absolute;
   width: 100%;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-speed) ease-in-out;
 }
 #portfolio-container .text-wrapper p {
   margin: 0;
@@ -1364,21 +1357,20 @@ li {
   margin-top: 0.5em;
 }
 #portfolio-container .text-wrapper .description span {
-  color: #424242;
+  color: var(--t9);
 }
 #portfolio-container .text-wrapper .click-to-view {
-  color: #20B2AA;
   color: var(--t3);
   display: block;
 }
 
 .project-overview-page #portfolio-container li {
-  width: 320px;
+  width: var(--width-project-overview);
 }
 .project-overview-page #portfolio-container li figure,
 .project-overview-page #portfolio-container li img,
 .project-overview-page #portfolio-container li .title {
-  width: 320px;
+  width: var(--width-project-overview);
 }
 
 .sub-nav {
@@ -1386,7 +1378,7 @@ li {
 }
 .sub-nav .container {
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1434,13 +1426,13 @@ li {
   }
   .sub-nav .container .portfolio-sub-tabs ul li a {
     clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0);
-    color: rgb(255, 255, 255);
+    color: var(--t7);
     display: block;
     margin: 0;
     overflow: hidden;
     padding: 0.5em 1em 1em;
     position: relative;
-    transition: background-image 0.3s ease-out;
+    transition: background-image var(--transition-speed) ease-out;
     white-space: nowrap;
   }
 }
@@ -1459,12 +1451,12 @@ li {
     left: -330%;
     position: absolute;
     transform: rotate(45deg);
-    transition: left 0.5s, bottom 0.5s ease-out;
+    transition: left var(--transition-speed-slow), bottom var(--transition-speed-slow) ease-out;
     width: 330%;
     z-index: -10;
   }
   .sub-nav .container .portfolio-sub-tabs ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--t7);
   }
   .sub-nav .container .portfolio-sub-tabs ul li a:hover::before {
     left: -150%;
@@ -1525,7 +1517,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   position: relative;
 }
 .dropdown .dropdown-wrapper:hover ul.current {
-  border-color: #c2c2c2;
   border-color: var(--t11);
 }
 .dropdown .dropdown-wrapper:hover ul.menu {
@@ -1537,7 +1528,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   z-index: 2;
 }
 .dropdown ul a {
-  color: #20B2AA;
   color: var(--t3);
   cursor: pointer;
   display: block;
@@ -1552,11 +1542,9 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   border-bottom: none;
 }
 .dropdown .current li.current-selection a {
-  color: #20B2AA;
   color: var(--t3);
 }
 .dropdown .current li.current-selection a:after {
-  color: #20B2AA;
   color: var(--t3);
   content: "▼︎";
   display: inline-block;
@@ -1572,7 +1560,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   width: 100%;
   display: none;
   background-color: var(--t7);
-  border: 1px solid #c2c2c2;
+  border: 1px solid var(--t11);
   border-color: var(--t11);
   border-top: none;
 }
@@ -1590,14 +1578,12 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 }
 .dropdown.portfolio-sub-nav ul.current {
   background-color: var(--t7);
-  border-color: #c2c2c2;
   border-color: var(--t11);
 }
 .dropdown.portfolio-sub-nav ul.current a {
   position: relative;
 }
 .dropdown.portfolio-sub-nav ul.current a:after {
-  color: #20B2AA;
   color: var(--t3);
   content: "▼︎";
   display: inline-block;
@@ -1631,7 +1617,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   margin-right: auto;
 }
 .total-items p {
-  color: #424242;
   color: var(--t6);
   margin: 0 1em 0 1em;
   white-space: nowrap;
@@ -1693,9 +1678,8 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   display: block;
 }
 .pagination .page-numbers .current {
-  background-color: var(--t13);
   background-color: var(--t4);
-  color: #666666;
+  color: var(--t5);
   margin: 0 0.25em;
   padding: 0.25em 1em;
 }
@@ -1735,7 +1719,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   padding: 0 1em 1em;
 }
 .expando-content-wrapper a:hover {
-  filter: brightness(150%);
+  filter: brightness(var(--hover-brightness-amount));
 }
 
 .project-additional-samples {
@@ -1758,30 +1742,28 @@ html:not(.js) .project-additional-samples,
   padding: 0.75em 1em;
 }
 .expando-trigger::before {
-  color: #20B2AA;
   color: var(--t3);
   content: "▶︎";
   display: inline-block;
   font-size: 0.7em;
   margin-right: 0.5em;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
   vertical-align: 12%;
 }
 .expando-trigger:hover::before {
-  filter: brightness(150%);
+  filter: brightness(var(--hover-brightness-amount));
 }
 
 #tc .expando-trigger::before {
   content: none;
 }
 #tc .expando-trigger::after {
-  color: #20B2AA;
   color: var(--t3);
   content: "▼︎";
   display: inline-block;
   font-size: 0.7em;
   margin-left: 0.5em;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
   vertical-align: 12%;
   position: absolute;
   right: 1em;
@@ -1816,7 +1798,7 @@ html:not(.js) .project-additional-samples,
 
 #portfolio-container li,
 .list-view .thumbnail {
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow var(--transition-speed) ease-in-out;
 }
 #portfolio-container li,
 .list-view .thumbnail {
@@ -1891,13 +1873,13 @@ body > footer .badges li.photoshop {
   display: inline-block;
   font: normal 100%/1.6180339888 "Oswald", sans-serif;
   white-space: nowrap;
-  transition: color 0.3s ease-in-out;
+  transition: color var(--transition-speed) ease-in-out;
 }
 .footer-navigation .nav-menu a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 .footer-navigation .nav-menu .current-menu-item a {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 
 .list-view ol {
@@ -1930,7 +1912,7 @@ body > footer .badges li.photoshop {
   position: absolute;
   top: -0.5em;
   transform: rotate(-3deg) scale(1);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
 }
 .list-view p.title {
   display: inline-block;
@@ -1941,7 +1923,6 @@ body > footer .badges li.photoshop {
   margin-top: 0;
 }
 .list-view p.description span {
-  color: #424242;
   color: var(--t6);
   font: normal 100%/1.6180339888 "Oswald", sans-serif;
   margin-right: 0.1em;
@@ -1950,7 +1931,7 @@ body > footer .badges li.photoshop {
   font-size: 0.8em;
 }
 .list-view .thumbnail {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--t7);
   height: 220px;
   margin-right: 1.5em;
   overflow: hidden;
@@ -2010,7 +1991,7 @@ body > footer .badges li.photoshop {
   height: 1px;
 }
 .dpportfolio .stage table.banner-ads .presentation-title {
-  color: #424242;
+  color: var(--t9);
 }
 .dpportfolio .stage table.banner-ads img {
   margin: 0;
@@ -2083,7 +2064,7 @@ article .stage .email-demo-598 {
   width: 598px;
 }
 article .stage .imvu-email {
-  background: white;
+  background: var(--t7);
   width: 600px;
 }
 article .stage .imvu-email td {
@@ -2093,7 +2074,7 @@ article .stage .imvu-email td {
 }
 article .stage .imvu-header {
   background: black;
-  color: white;
+  color: var(--t7);
   margin-top: 1em;
 }
 article .stage .imvu-header td {
@@ -2148,7 +2129,7 @@ article .stage .imvu-legal.imvu-legal2 {
 }
 .dpportfolio section.stage .content-two-up-table .presentation-title,
 .dpportfolio section.stage .content-two-up-table .version {
-  color: #424242;
+  color: var(--t9);
 }
 .dpportfolio section.stage .content-two-up-table img {
   max-width: 100%;
@@ -2167,7 +2148,7 @@ article .stage .imvu-legal.imvu-legal2 {
 }
 .dpportfolio section.stage .imvu-persuasion-table h3 {
   background-color: #999999;
-  color: white;
+  color: var(--t7);
   font-weight: 700;
   padding: 0.75em 0.5em;
 }
@@ -2202,7 +2183,7 @@ article .stage .imvu-legal.imvu-legal2 {
   text-align: left;
 }
 .dpportfolio section.stage .matrix-example h4 {
-  color: rgb(0, 0, 0);
+  color: var(--black);
   font-weight: 500;
 }
 .dpportfolio section.stage .matrix-example th h4 {
@@ -2379,7 +2360,7 @@ article .stage .imvu-legal.imvu-legal2 {
   margin-top: 0.5em;
 }
 .color-bullets li:before {
-  color: #20B2AA;
+  color: var(--t3);
   content: "• ";
   font-size: 125%;
   line-height: 1;
@@ -2395,7 +2376,7 @@ main.home-page .welcome {
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: var(--t7);
 }
 @media only screen and (max-width: 960px) {
   main.home-page .welcome {
@@ -2439,7 +2420,7 @@ main.home-page .welcome .text {
   }
 }
 main.home-page .welcome .header {
-  background-image: linear-gradient(45deg, var(--t7, white) 0%, var(--t7, white) 92%, transparent 92%, transparent 100%);
+  background-image: linear-gradient(45deg, var(--t7, var(--t7)) 0%, var(--t7, var(--t7)) 92%, transparent 92%, transparent 100%);
   padding: 1.5em 1.5em 1em;
 }
 @media only screen and (max-width: 680px) {
@@ -2450,7 +2431,7 @@ main.home-page .welcome .header {
 main.home-page .welcome .body {
   background-color: var(--t13);
   border-top: none;
-  border: 1em solid rgb(255, 255, 255);
+  border: 1em solid var(--t7);
   border: 1em solid var(--t7);
   padding: 1em 2em 0.5em;
 }
@@ -2504,12 +2485,13 @@ main.home-page .welcome p.cta {
 }
 main.home-page .welcome .btn {
   background-color: var(--t3);
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   color: var(--t7);
   display: inline-block;
   overflow: hidden;
   padding: 0.5em 1em;
   position: relative;
+  text-decoration: none;
   z-index: 1;
 }
 main.home-page .welcome .btn span {
@@ -2523,7 +2505,7 @@ main.home-page .welcome .btn::before {
   left: 0;
   position: absolute;
   top: 0;
-  transition: all 0.3s ease-out;
+  transition: all var(--transition-speed) ease-out;
   width: 100%;
   z-index: -1;
 }
@@ -2613,7 +2595,7 @@ main.portfolio-page header.page-header {
   }
 }
 .dpportfolio .stage .display-column {
-  background: rgb(255, 255, 255);
+  background: var(--t7);
   margin: 0 0 1em 0;
   padding: 1em;
 }
@@ -2632,7 +2614,7 @@ main.portfolio-page header.page-header {
   max-width: 100%;
 }
 .dpportfolio .stage img.outline {
-  border: 1px solid #eee;
+  border: 1px solid var(--portfolio-img-outline);
 }
 .dpportfolio .stage .center-images img {
   display: block;
@@ -2750,7 +2732,7 @@ main.portfolio-page header.page-header {
   content: "◀︎";
   display: inline-block;
   font-size: 0.7em;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-speed) ease;
   position: absolute;
   left: 1em;
   top: -0.5em;
@@ -2773,16 +2755,16 @@ main.portfolio-page header.page-header {
   position: relative;
   text-align: center;
   white-space: nowrap;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color var(--transition-speed) ease-in-out, background-color var(--transition-speed) ease-in-out;
   width: 100%;
 }
 .dpportfolio .project-additional-samples .prev-next-sample-navigation a:hover {
-  color: rgb(255, 255, 255);
+  color: var(--t7);
   background-color: var(--t3);
 }
 .dpportfolio .project-additional-samples .prev-next-sample-navigation a:hover span:before {
-  color: rgb(255, 255, 255);
-  transition: color 0.3s ease-in-out;
+  color: var(--t7);
+  transition: color var(--transition-speed) ease-in-out;
 }
 .dpportfolio .project-additional-samples .nav-links {
   margin-bottom: 0.5em;
@@ -2855,7 +2837,7 @@ main.portfolio-page header.page-header {
   height: 60%;
   width: 60%;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.165, 0.78, 0.395, 1.52);
+  transition: all var(--transition-speed) cubic-bezier(0.165, 0.78, 0.395, 1.52);
   opacity: 0;
   display: flex;
   align-items: center;
@@ -2868,21 +2850,21 @@ main.portfolio-page header.page-header {
   overflow: hidden;
   position: relative;
   transition-property: left, color;
-  transition-duration: 0.3s;
+  transition-duration: var(--transition-speed);
 }
 .dpportfolio .project-additional-samples .also-part-of-this-project img {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--t7);
   border: 1px solid #ddd;
   max-width: 100%;
   padding: 0.5em;
   opacity: 0.5;
   filter: blur(1px);
   transition-property: opacity, blur;
-  transition-duration: 0.3s;
+  transition-duration: var(--transition-speed);
 }
 .dpportfolio .project-additional-samples .also-part-of-this-project figcaption {
   background: var(--t10);
-  color: white;
+  color: var(--t7);
   display: block;
   font-size: 0.8em;
   line-height: 1.4;
@@ -2893,7 +2875,7 @@ main.portfolio-page header.page-header {
   margin: 0;
   width: 100%;
   height: 100%;
-  transition: 0.3s;
+  transition: var(--transition-speed);
 }
 @media only screen and (max-width: 940.1px) {
   .dpportfolio .project-additional-samples .also-part-of-this-project figcaption {
@@ -2910,7 +2892,7 @@ main.portfolio-page header.page-header {
 .dpportfolio .project-additional-samples .also-part-of-this-project figure:hover img {
   opacity: 1;
   filter: blur(0);
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
 }
 .dpportfolio .project-additional-samples .also-part-of-this-project li:nth-of-type(even) figure:hover figcaption {
   left: 100%;
@@ -2939,7 +2921,7 @@ main.portfolio-page header.page-header {
   margin-bottom: 0.5em;
 }
 .taxonomy-categories .taxonomy-list a:hover {
-  filter: brightness(150%);
+  filter: brightness(var(--hover-brightness-amount));
 }
 
 .taxonomy-highlights .container {
@@ -3016,7 +2998,7 @@ main.portfolio-page header.page-header {
   margin-top: 0;
 }
 .about-me-page .content .column.prose h2 span {
-  color: #666666;
+  color: var(--t5);
   font-size: 0.5833333333em;
 }
 .about-me-page .content .column.sidebar-info {
@@ -3169,7 +3151,7 @@ main.contact-page .contact-info p {
   margin-top: 0;
 }
 .resume-page .column.jobs-and-eduction h2 span {
-  color: #666666;
+  color: var(--t5);
   font-size: 0.5833333333em;
 }
 .resume-page .column.sidebar-info {

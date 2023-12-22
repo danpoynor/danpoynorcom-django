@@ -35,7 +35,7 @@ header section#tc {
     }
 
     h3 {
-        color: $white;
+        color: var(--t7);
         font-size: 1em;
         text-align: left;
         width: 100%;
@@ -112,7 +112,7 @@ header section#tc {
                         }
 
                         &:hover {
-                            filter: brightness($hover-brightness-amount);
+                            filter: brightness(var(--hover-brightness-amount));
                         }
                     }
                 }

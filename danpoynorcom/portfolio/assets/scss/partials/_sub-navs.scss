@@ -3,7 +3,7 @@
 
     .container {
         align-items: center;
-        color: $header-link-text-color;
+        color: var(--t7);
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -61,13 +61,13 @@
 
                         a {
                             clip-path: polygon(calc(100% - 1em) 0, 100% 1em, 100% 100%, 0 100%, 0 0); // use clip-path for top right triangle shaped notch
-                            color: $white;
+                            color: var(--t7);
                             display: block;
                             margin: 0;
                             overflow: hidden; // needed so Safari doesn't react when rolling over the unseen :before element
                             padding: .5em 1em 1em;
                             position: relative;
-                            transition: background-image $transition-speed ease-out;
+                            transition: background-image var(--transition-speed) ease-out;
                             white-space: nowrap;
 
                             @media only screen and (max-width: 1040px) {
@@ -83,13 +83,13 @@
                                 left: -330%;
                                 position: absolute;
                                 transform: rotate(45deg);
-                                transition: left $transition-speed-slow, bottom $transition-speed-slow ease-out;
+                                transition: left var(--transition-speed-slow), bottom var(--transition-speed-slow) ease-out;
                                 width: 330%;
                                 z-index: -10;
                             }
 
                             &:hover {
-                                color: $white;
+                                color: var(--t7);
 
                                 &::before {
                                     left: -150%;

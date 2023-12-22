@@ -36,7 +36,7 @@ h4 {
 
 a {
     color: var(--t3);
-    transition: all $transition-speed ease-out;
+    transition: all var(--transition-speed) ease-out;
 }
 
 a,
@@ -52,7 +52,7 @@ a:hover {
 .contact-info,
 .site-info {
     a:hover {
-        filter: brightness($hover-brightness-amount);
+        filter: brightness(var(--hover-brightness-amount));
     }
 }
 
@@ -102,10 +102,10 @@ p,
     a {
         color: var(--t12);
         display: inline-block;
-        transition: color $transition-speed ease-in-out;
+        transition: color var(--transition-speed) ease-in-out;
 
         &:hover {
-            color: $white;
+            color: var(--t7);
         }
     }
 }
@@ -124,7 +124,7 @@ main header {
 
         a {
             &:hover {
-                filter: brightness($hover-brightness-amount);
+                filter: brightness(var(--hover-brightness-amount));
             }
         }
     }
@@ -163,7 +163,7 @@ main header {
     }
 
     h3 {
-        color: $body-text-color;
+        color: var(--t5);
     }
 }
 
@@ -195,7 +195,7 @@ main header {
 }
 
 .site-description {
-    color: $white;
+    color: var(--t7);
     font: normal 1.125em/1 'Oswald', sans-serif; // 18 / 16
     margin: 1em 0 0;
 

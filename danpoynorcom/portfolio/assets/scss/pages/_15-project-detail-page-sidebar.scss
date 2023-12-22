@@ -45,7 +45,7 @@
                         content: "\25C0\FE0E";
                         display: inline-block;
                         font-size: .7em;
-                        transition: transform $transition-speed ease;
+                        transition: transform var(--transition-speed) ease;
                         //
                         position: absolute;
                         left: 1em;
@@ -75,16 +75,16 @@
                 position: relative;
                 text-align: center;
                 white-space: nowrap;
-                transition: color $transition-speed ease-in-out, background-color $transition-speed ease-in-out;
+                transition: color var(--transition-speed) ease-in-out, background-color var(--transition-speed) ease-in-out;
                 width: 100%;
 
                 &:hover {
-                    color: $white;
+                    color: var(--t7);
                     background-color: var(--t3);
 
                     span:before {
-                        color: $white;
-                        transition: color $transition-speed ease-in-out;
+                        color: var(--t7);
+                        transition: color var(--transition-speed) ease-in-out;
                     }
                 }
             }
@@ -165,7 +165,7 @@
                             height: 60%;
                             width: 60%;
                             text-align: center;
-                            transition: all $transition-speed cubic-bezier(0.165, 0.780, 0.395, 1.520); // custom curve add a little bounce :)
+                            transition: all var(--transition-speed) cubic-bezier(0.165, 0.780, 0.395, 1.520); // custom curve add a little bounce :)
                             opacity: 0;
                             //
                             display: flex;
@@ -183,23 +183,23 @@
                 overflow: hidden;
                 position: relative;
                 transition-property: left, color;
-                transition-duration: $transition-speed;
+                transition-duration: var(--transition-speed);
             }
 
             img {
-                background-color: $white;
+                background-color: var(--t7);
                 border: 1px solid #ddd;
                 max-width: 100%;
                 padding: .5em;
                 opacity: .5;
                 filter: blur(1px);
                 transition-property: opacity, blur;
-                transition-duration: $transition-speed;
+                transition-duration: var(--transition-speed);
             }
 
             figcaption {
                 background: var(--t10);
-                color: white;
+                color: var(--t7);
                 display: block;
                 font-size: .8em;
                 line-height: 1.4;
@@ -210,7 +210,7 @@
                 margin: 0;
                 width: 100%;
                 height: 100%;
-                transition: $transition-speed;
+                transition: var(--transition-speed);
 
                 @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
                     font-size: 1em;
@@ -229,7 +229,7 @@
                 img {
                     opacity: 1;
                     filter: blur(0);
-                    transition: all $transition-speed ease-in-out;
+                    transition: all var(--transition-speed) ease-in-out;
                 }
             }
 

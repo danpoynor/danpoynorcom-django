@@ -7,7 +7,7 @@ main.home-page {
         background-position: center 0;
         background-repeat: no-repeat;
         background-size: cover;
-        color: $white;
+        color: var(--t7);
 
         @media only screen and (max-width: 960px) {
             background-position: calc(100% - -16em) 0;
@@ -47,7 +47,7 @@ main.home-page {
         }
 
         .header {
-            background-image: linear-gradient(45deg, var(--t7, white) 0%, var(--t7, white) 92%, transparent 92%, transparent 100%);
+            background-image: linear-gradient(45deg, var(--t7, var(--t7)) 0%, var(--t7, var(--t7)) 92%, transparent 92%, transparent 100%);
             padding: 1.5em 1.5em 1em;
 
             @media only screen and (max-width: 680px) {
@@ -58,7 +58,7 @@ main.home-page {
         .body {
             background-color: var(--t13);
             border-top: none;
-            border: 1em solid $white;
+            border: 1em solid var(--t7);
             border: 1em solid var(--t7);
             padding: 1em 2em .5em;
 
@@ -117,12 +117,13 @@ main.home-page {
 
         .btn {
             background-color: var(--t3);
-            color: $white;
+            color: var(--t7);
             color: var(--t7);
             display: inline-block;
             overflow: hidden;
             padding: .5em 1em;
             position: relative;
+            text-decoration: none;
             z-index: 1;
 
             span {
@@ -137,7 +138,7 @@ main.home-page {
                 left: 0;
                 position: absolute;
                 top: 0;
-                transition: all $transition-speed ease-out;
+                transition: all var(--transition-speed) ease-out;
                 width: 100%;
                 z-index: -1;
             }

@@ -72,20 +72,19 @@ body > footer {
         }
 
         a {
-            //color: $text-link-color;
             display: inline-block;
             font: normal 100%/1.61803398875 'Oswald', sans-serif;
             white-space: nowrap;
-            transition: color $transition-speed ease-in-out;
+            transition: color var(--transition-speed) ease-in-out;
 
             &:hover {
-                color: $white;
+                color: var(--t7);
             }
         }
 
         .current-menu-item {
             a {
-                color: $white
+                color: var(--t7)
             }
         }
     }

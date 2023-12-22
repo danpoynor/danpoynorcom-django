@@ -1,9 +1,15 @@
+$background-color: var(--t4);
+$label-color: var(--t6);
+$icon-background-color: var(--t3);
+$icon-background-color-hover: var(--t7);
+$divider-color: var(--t8);
+
 .prev-next {
-    background-color: var(--t4);
+    background-color: $background-color;
     flex: none;
     margin: 0 auto;
     padding: 1rem 0;
-    transition: background-color 0.3s ease-out;
+    transition: background-color var(--transition-speed) ease-out;
     width: 100%;
 
     .container {
@@ -19,8 +25,7 @@
 
     span {
         &.prev-next-label {
-            color: $headline-text-color;
-            color: var(--t6);
+            color: $label-color;
             display: block;
             font: 700 .75em/1.61803398875 'Bitter', sans-serif;
             letter-spacing: .25em;
@@ -60,20 +65,20 @@
 
                 &:before,
                 &:after {
-                    background-color: var(--t3);
+                    background-color: $icon-background-color;
                     bottom: 0;
                     height: 2.65em;
                     margin: auto;
                     opacity: 0;
                     position: absolute;
                     top: 0;
-                    transition: all $transition-speed ease-in-out;
+                    transition: all var(--transition-speed) ease-in-out;
                     width: 2.25em;
                 }
 
                 &:hover {
-                    background-color: var(--t7);
-                    transition: all $transition-speed ease-in-out;
+                    background-color: $icon-background-color-hover;
+                    transition: all var(--transition-speed) ease-in-out;
 
                     &:before,
                     &:after {
@@ -83,7 +88,7 @@
             }
 
             &.prev {
-                border-right: 1px solid var(--t8);
+                border-right: 1px solid $divider-color;
                 order: 1;
                 text-align: right;
 
@@ -177,8 +182,7 @@
 
                         span {
                             &.prev-next-label {
-                                color: $theme-color;
-                                color: var(--t3);
+                                color: $icon-background-color;
                                 white-space: normal;
                             }
 

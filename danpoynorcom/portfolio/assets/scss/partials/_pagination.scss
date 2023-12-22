@@ -22,7 +22,6 @@
     margin-right: auto;
 
     p {
-        color: $headline-text-color;
         color: var(--t6);
         margin: 0 1em 0 1em;
         white-space: nowrap;
@@ -89,9 +88,8 @@
         }
 
         .current {
-            background-color: $background-color;
             background-color: var(--t4);
-            color: $body-text-color;
+            color: var(--t5);
             margin: 0 .25em;
             padding: .25em 1em;
         }

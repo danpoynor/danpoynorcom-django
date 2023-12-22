@@ -6,7 +6,6 @@
     }
 
     h2 {
-        color: $headline-text-color;
         color: var(--t6);
         display: block;
         font-size: 2em;
@@ -18,7 +17,6 @@
 
     .project {
         background-color: var(--t13);
-        box-shadow: 0px 0px 0px 40px white inset; // for MS Edge
         box-shadow: 0px 0px 0px 50px var(--t7) inset;
         height: 525px;
         margin: 2em auto;
@@ -36,7 +34,7 @@
         //@media only screen and (max-width: 1080px) {
         @media only screen and (max-width: 1079px) {
             // for MS Edge
-            box-shadow: 0px 0px 0px 20px $white inset;
+            box-shadow: 0px 0px 0px 20px var(--t7) inset;
             height: auto;
         }
     }
@@ -95,7 +93,6 @@
             margin: 1em 3em;
         }
 
-        //@media only screen and (max-width: 1080px) {
         @media only screen and (max-width: 1079px) {
             // for MS Edge
             margin: 3em;
@@ -117,7 +114,7 @@
     }
 
     .btn {
-        background-color: $white;
+        background-color: var(--t7);
         color: var(--t3);
         display: inline-block;
         margin: 0;
@@ -138,13 +135,13 @@
             left: 0;
             position: absolute;
             top: 0;
-            transition: all $transition-speed ease-out;
+            transition: all var(--transition-speed) ease-out;
             width: 100%;
             z-index: -1;
         }
 
         &:hover {
-            color: $white;
+            color: var(--t7);
 
             &::before {
                 border: 1.55em solid var(--t3);

@@ -33,7 +33,7 @@
 
     a {
         &:hover {
-            filter: brightness($hover-brightness-amount);
+            filter: brightness(var(--hover-brightness-amount));
         }
     }
 }
@@ -59,20 +59,19 @@ html:not(.js),
     padding: .75em 1em;
 
     &::before {
-        color: $text-link-color;
         color: var(--t3);
         content: "\25B6\FE0E";
         display: inline-block;
         font-size: .7em;
         margin-right: .5em;
-        transition: all $transition-speed ease-in-out;
+        transition: all var(--transition-speed) ease-in-out;
         ;
         vertical-align: 12%;
     }
 
     &:hover {
         &::before {
-            filter: brightness($hover-brightness-amount);
+            filter: brightness(var(--hover-brightness-amount));
         }
     }
 }
@@ -84,13 +83,12 @@ html:not(.js),
         }
 
         &::after {
-            color: $text-link-color;
             color: var(--t3);
             content: "\25bc\FE0E";
             display: inline-block;
             font-size: .7em;
             margin-left: .5em;
-            transition: all $transition-speed ease-in-out;
+            transition: all var(--transition-speed) ease-in-out;
             ;
             vertical-align: 12%;
             position: absolute;

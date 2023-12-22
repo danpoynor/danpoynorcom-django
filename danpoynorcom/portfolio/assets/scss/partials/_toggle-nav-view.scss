@@ -33,7 +33,7 @@ main {
         outline: none;
 
         &.on {
-            background: $white;
+            background: var(--t7);
         }
     }
 

@@ -34,7 +34,7 @@
         position: absolute;
         top: -.5em;
         transform: rotate(-3deg) scale(1);
-        transition: all $transition-speed ease-in-out;
+        transition: all var(--transition-speed) ease-in-out;
     }
 
     p {
@@ -48,7 +48,6 @@
             margin-top: 0;
 
             span {
-                color: $headline-text-color;
                 color: var(--t6);
                 font: normal 100%/1.61803398875 'Oswald', sans-serif;
                 margin-right: .1em;
@@ -61,7 +60,7 @@
     }
 
     .thumbnail {
-        background-color: $white;
+        background-color: var(--t7);
         height: 220px;
         margin-right: 1.5em;
         overflow: hidden;

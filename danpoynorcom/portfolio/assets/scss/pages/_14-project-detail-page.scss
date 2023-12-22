@@ -27,7 +27,7 @@
         }
 
         .display-column {
-            background: $white;
+            background: var(--t7);
             margin: 0 0 1em 0;
             padding: 1em;
         }
@@ -52,7 +52,7 @@
             max-width: 100%;
 
             &.outline {
-                border: 1px solid $portfolio-img-outline;
+                border: 1px solid var(--portfolio-img-outline);
             }
         }
 

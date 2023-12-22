@@ -23,7 +23,7 @@ body {
     margin: 0;
     overflow-anchor: none; // in Chrome, removes freezing the page scroll till content below the fold is loaded
     padding: 0;
-    transition: background-color $transition-speed ease-out;
+    transition: background-color var(--transition-speed) ease-out;
     width: 100%;
 }
 
@@ -51,7 +51,7 @@ main {
     margin: 0 auto;
     min-height: 20em;
     padding: 0;
-    transition: background-color $transition-speed ease-out;
+    transition: background-color var(--transition-speed) ease-out;
     width: 100%;
 }
 

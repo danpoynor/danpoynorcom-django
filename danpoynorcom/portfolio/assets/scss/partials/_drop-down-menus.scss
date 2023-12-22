@@ -13,7 +13,6 @@
 
         &:hover {
             ul.current {
-                border-color: lighten($header-bg-color, 50%);
                 border-color: var(--t11);
             }
 
@@ -29,7 +28,6 @@
         z-index: 2;
 
         a {
-            color: $text-link-color;
             color: var(--t3);
             cursor: pointer;
             display: block;
@@ -48,11 +46,9 @@
 
         li.current-selection {
             a {
-                color: $text-link-color;
                 color: var(--t3);
 
                 &:after {
-                    color: $text-link-color;
                     color: var(--t3);
                     content: "\25bc\FE0E";
                     display: inline-block;
@@ -72,7 +68,7 @@
         width: 100%;
         display: none;
         background-color: var(--t7);
-        border: 1px solid lighten($header-bg-color, 50%);
+        border: 1px solid var(--t11);
         border-color: var(--t11);
         border-top: none;
 
@@ -94,14 +90,12 @@
 
         ul.current {
             background-color: var(--t7);
-            border-color: lighten($header-bg-color, 50%);
             border-color: var(--t11);
 
             a {
                 position: relative;
 
                 &:after {
-                    color: $text-link-color;
                     color: var(--t3);
                     content: "\25bc\FE0E";
                     display: inline-block;

@@ -14,7 +14,7 @@
 
         a {
             &:hover {
-                filter: brightness($hover-brightness-amount);
+                filter: brightness(var(--hover-brightness-amount));
             }
         }
     }

@@ -7,8 +7,7 @@
     transform-style: preserve-3d;
 
     .loading-indicator {
-        border: 6px solid $circle-color; //
-        border-top: 6px solid $circle-highlight-color; //
+        border: 6px solid var(--t3);
         border-top: 6px solid var(--t3);
         border-radius: 50%;
         width: 48px;
@@ -27,7 +26,7 @@
     // margin: -1em auto 4em !important; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
     padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
     // opacity: 0;
-    transition: opacity $transition-speed ease 800ms; // enables fade in
+    transition: opacity var(--transition-speed) ease 800ms; // enables fade in
     perspective: 1300px;
     // These are temp till I figure out new masonry layout solution
     display: flex;
@@ -45,8 +44,8 @@
     }
 
     li {
-        width: $width-portfolio;
-        background: $white;
+        width: var(--width-portfolio);
+        background: var(--t7);
         margin: .85em;
         padding: 0;
         transform-style: preserve-3d;
@@ -59,7 +58,6 @@
             }
 
             .sub-title {
-                background-color: transparentize($text-link-color, .25);
                 background-color: var(--t12);
             }
 
@@ -98,7 +96,7 @@
         margin: 0 0 -1px 0;
         padding: 0;
         transition-duration: .0s;
-        transition: all $transition-speed ease-in-out;
+        transition: all var(--transition-speed) ease-in-out;
         backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
         //
         overflow: hidden;
@@ -106,10 +104,10 @@
     }
 
     img {
-        width: $width-portfolio;
+        width: var(--width-portfolio);
         padding: 0;
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-        transition: opacity $transition-speed ease-in-out;
+        transition: opacity var(--transition-speed) ease-in-out;
     }
 
     figcaption {
@@ -128,23 +126,22 @@
     }
 
     .title {
-        background-color: $portfolio-nav-bg-color;
+        background-color: var(--t9);
     }
 
     .sub-title {
-        background-color: $primary-500;
+        background-color: var(--darkgrays-500);
         padding: .8em 1.2em 1em; // because sometimes sub-titles look like they're sinking to me for some reason
     }
 
     .text-wrapper {
-        color: $body-text-color;
-        //color: var(--t5);
+        color: var(--t5);
         display: block;
         opacity: 0;
         padding: .75em 1em;
         position: absolute;
         width: 100%;
-        transition: opacity $transition-speed ease-in-out;
+        transition: opacity var(--transition-speed) ease-in-out;
 
         p {
             margin: 0;
@@ -156,7 +153,7 @@
 
         .description {
             span {
-                color: $headline-text-color;
+                color: var(--t9);
                 //color: var(--t6);
             }
         }
@@ -164,7 +161,6 @@
         .year {}
 
         .click-to-view {
-            color: $text-link-color;
             color: var(--t3);
             display: block;
         }
@@ -174,12 +170,12 @@
 .project-overview-page {
     #portfolio-container {
         li {
-            width: $width-project-overview;
+            width: var(--width-project-overview);
 
             figure,
             img,
             .title {
-                width: $width-project-overview;
+                width: var(--width-project-overview);
             }
         }
     }

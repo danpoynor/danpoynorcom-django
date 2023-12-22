@@ -21,7 +21,7 @@ article {
         }
 
         .imvu-email {
-            background: white;
+            background: var(--t7);
             width: 600px;
 
             td {
@@ -33,7 +33,7 @@ article {
 
         .imvu-header {
             background: black;
-            color: white;
+            color: var(--t7);
             margin-top: 1em;
 
             td {

@@ -43,7 +43,7 @@ $portfolio-item-max-width: 64px;
     margin: -1em auto 4em; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
     padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
     opacity: 1;
-    transition: opacity $transition-speed ease 800ms; // enables fade in
+    transition: opacity var(--transition-speed) ease 800ms; // enables fade in
     perspective: 1300px;
 
     .portfolio-taxonomy-term & {
@@ -60,7 +60,7 @@ $portfolio-item-max-width: 64px;
 
     li {
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-        background: $theme-color;
+        background: var(--t3);
         margin: .1em;
         opacity: 1;
         padding: 0;
@@ -101,7 +101,7 @@ $portfolio-item-max-width: 64px;
         margin: 0;
         padding: 0;
         transition-duration: .0s;
-        transition: all $transition-speed ease-in-out;
+        transition: all var(--transition-speed) ease-in-out;
         //
         overflow: hidden;
         text-overflow: ellipsis;
@@ -111,8 +111,8 @@ $portfolio-item-max-width: 64px;
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
         margin-bottom: -1px;
         padding: 0;
-        transition: opacity $transition-speed ease-in-out;
-        width: $width-portfolio;
+        transition: opacity var(--transition-speed) ease-in-out;
+        width: var(--width-portfolio);
     }
 
     figcaption {
@@ -124,14 +124,14 @@ $portfolio-item-max-width: 64px;
 
     .title {
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-        background-color: $portfolio-nav-bg-color;
+        background-color: var(--t9);
         margin: 0;
         padding: .95em 1.1em;
     }
 
     .sub-title {
         backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-        background-color: $primary-500;
+        background-color: var(--darkgrays-500);
         margin: 0;
         padding: .75em .85em .75em;
     }
@@ -139,12 +139,12 @@ $portfolio-item-max-width: 64px;
     .title.sub-title {}
 
     .text-wrapper {
-        color: $portfolio-nav-bg-color;
+        color: var(--t9);
         display: block;
         opacity: 0;
         padding: .75em 1em;
         position: absolute;
-        transition: opacity $transition-speed ease-in-out;
+        transition: opacity var(--transition-speed) ease-in-out;
         width: 100%;
 
         p {
@@ -164,12 +164,12 @@ $portfolio-item-max-width: 64px;
 .project-overview-page {
     #portfolio-container {
         li {
-            width: $width-project-overview;
+            width: var(--width-project-overview);
 
             figure,
             img,
             .title {
-                width: $width-project-overview;
+                width: var(--width-project-overview);
             }
         }
     }
