@@ -5,14 +5,14 @@
         <header>
             <div class="container">
                 <h1>
-                    <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <a href="{% url 'markets' %}">Markets</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span>
+                    <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> <a href="{% url 'clients' %}">Clients</a> <span class="divider">/</span> <span class="current-section">{{ object.name }}</span>
                 </h1>
                 <div class="taxonomy-meta">
                     <p>{{ object.description|safe }}</p>
                 </div>
             </div>
         </header>
-        {% include "partials/taxonomy/term/_projects.html" %}
+        {% include "partials/taxonomy/term/_items.html" %}
     </main>
     {% include "partials/nav/_prev_next_taxonomy_term.html" %}
 {% endblock portfolio_content %}

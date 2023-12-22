@@ -13,7 +13,7 @@
                 <li>
                     <h3>
                         <a href="{{ role.get_absolute_url }}"
-                           title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.projects.count }} )</span></a>
+                           title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.get_total_project_items }} )</span></a>
                     </h3>
                     <p>{{ role.description|safe }}</p>
                 </li>

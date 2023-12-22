@@ -2,13 +2,13 @@
 {% comment %} TEMPLATE INFO: This partial is used to display a list of project items on the Overview page. {% endcomment %}
 <ul class="show" id="portfolio-container">
     {% for item in object.get_ordered_items %}
-        <li class="show">
+        <li class="shown  portfolio-item">
             <a href="{% url 'project_detail' slug=item.slug %}">
                 <figure>
                     <figcaption>
                         <p class="title sub-title">{{ item.name }}</p>
                         <div class="text-wrapper">
-                            <p class="click-to-view">Click for project detail view.</p>
+                            <p class="click-to-view">Click for project detail view</p>
                         </div>
                     </figcaption>
                     <img src="{% static 'portfolio/images/project-item-images/medium/'|add:item.image.medium %}"

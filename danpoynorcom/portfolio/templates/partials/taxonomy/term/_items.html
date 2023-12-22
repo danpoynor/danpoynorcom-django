@@ -1,0 +1,37 @@
+{% load static %}
+<section class="thumbnails">
+    <div class="container">
+        <section class="thumbnail-previews">
+            <div class="container">
+                {% include "partials/_pagination_filter_bar.html" with total_items=object.get_total_project_items item_name="items" %}
+                <ul id="portfolio-container">
+                    {% for item in all_items %}
+                        <li class="shown portfolio-item">
+                            <a href="{% url 'project_detail' slug=item.slug %}">
+                                <figure>
+                                    <figcaption>
+                                        <h3 class="title">{{ item.project.name }}</h3>
+                                        {% if item.project.name != item.name %}<p class="sub-title">{{ item.name }}</p>{% endif %}
+                                        <div class="text-wrapper">
+                                            <p class="description">
+                                                <span>Project Description:</span> {{ item.project.description }}
+                                            </p>
+                                            <p class="click-to-view">Click for project detail view</p>
+                                        </div>
+                                    </figcaption>
+                                    {% if item.image %}
+                                        <img src="{% static "portfolio/images/project-item-images/medium/"|add:item.image.medium %}" alt="Image of {{ item.name }}" height="" width="" />
+                                    {% else %}
+                                        <p class="no-image">No image found for this project item.</p>
+                                    {% endif %}
+                                </figure>
+                            </a>
+                        </li>
+                    {% empty %}
+                        <li>No project items to display in this taxonomy.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>

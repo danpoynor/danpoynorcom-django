@@ -51,7 +51,12 @@ def getty_legal_notice(request):
 
 class ClientProjectsListView(PrevNextMixin, generic.DetailView):
     model = Client
-    template_name = 'pages/portfolio/clients/projects_list_page.html'
+    template_name = 'pages/portfolio/clients/term_items_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.all())
+        return context
 
 
 def industries(request):
@@ -72,7 +77,12 @@ def industries(request):
 
 class IndustryProjectsListView(PrevNextMixin, generic.DetailView):
     model = Industry
-    template_name = 'pages/portfolio/industries/projects_list_page.html'
+    template_name = 'pages/portfolio/industries/term_items_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.all())
+        return context
 
 
 def markets(request):
@@ -82,7 +92,12 @@ def markets(request):
 
 class MarketProjectsListView(PrevNextMixin, generic.DetailView):
     model = Market
-    template_name = 'pages/portfolio/markets/projects_list_page.html'
+    template_name = 'pages/portfolio/markets/term_items_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.all())
+        return context
 
 
 def mediatypes(request):
@@ -101,7 +116,12 @@ def mediatypes(request):
 
 class MediaTypeProjectsListView(PrevNextMixin, generic.DetailView):
     model = MediaType
-    template_name = 'pages/portfolio/media_types/projects_list_page.html'
+    template_name = 'pages/portfolio/media_types/term_items_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.all())
+        return context
 
 
 def roles(request):
@@ -120,7 +140,12 @@ def roles(request):
 
 class RoleProjectsListView(PrevNextMixin, generic.DetailView):
     model = Role
-    template_name = 'pages/portfolio/roles/projects_list_page.html'
+    template_name = 'pages/portfolio/roles/term_items_page.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.all())
+        return context
 
 
 def projects(request):

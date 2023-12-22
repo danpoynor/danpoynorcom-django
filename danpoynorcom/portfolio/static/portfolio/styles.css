@@ -1301,10 +1301,10 @@ li {
   display: flex;
   flex-flow: row wrap;
 }
-#portfolio-container li.shown, html:not(.js) #portfolio-container li, .no-js #portfolio-container li, .no-cssanimations #portfolio-container li {
-  opacity: 1;
+.project-overview-page #portfolio-container {
+  justify-content: center;
 }
-#portfolio-container li {
+#portfolio-container .portfolio-item {
   width: var(--width-portfolio);
   background: var(--t7);
   margin: 0.85em;
@@ -1313,32 +1313,35 @@ li {
   opacity: 0;
   backface-visibility: hidden;
 }
-#portfolio-container li:hover .title {
-  background-color: var(--t3);
-}
-#portfolio-container li:hover .sub-title {
-  background-color: var(--t12);
-}
-#portfolio-container li:hover div.text-wrapper {
+#portfolio-container .portfolio-item.shown {
   opacity: 1;
 }
-#portfolio-container li:hover img {
+#portfolio-container .portfolio-item:hover figcaption {
+  background-color: var(--t3);
+}
+#portfolio-container .portfolio-item:hover .sub-title {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#portfolio-container .portfolio-item:hover div.text-wrapper {
+  opacity: 1;
+}
+#portfolio-container .portfolio-item:hover img {
   opacity: 0;
 }
-#portfolio-container li.animate {
+#portfolio-container .portfolio-item.animate {
   transform: scale(0.6);
   animation: scaleUp 0.66s ease-in-out forwards;
 }
-#portfolio-container li.show {
+#portfolio-container .portfolio-item.show {
   opacity: 1;
 }
-#portfolio-container li.show li {
+#portfolio-container .portfolio-item.show li {
   animation: fadeIn 0.66s ease-in-out 0s forwards;
 }
-#portfolio-container li a {
+#portfolio-container .portfolio-item a {
   color: #fff;
 }
-#portfolio-container li a:hover {
+#portfolio-container .portfolio-item a:hover {
   color: #fff;
 }
 #portfolio-container figure {
@@ -1357,6 +1360,7 @@ li {
   transition: opacity var(--transition-speed) ease-in-out;
 }
 #portfolio-container figcaption {
+  background-color: var(--t9);
   font-size: 0.8125em;
   margin: 0;
   position: relative;
@@ -1364,12 +1368,14 @@ li {
 }
 #portfolio-container .title,
 #portfolio-container .sub-title {
+  line-height: 1.3819660113;
   margin: 0;
   padding: 0.9em 1.2em 1.1em;
   backface-visibility: hidden;
 }
 #portfolio-container .title {
-  background-color: var(--t9);
+  color: var(--t7);
+  font: normal 100%/1.6180339888 "Source Sans Pro", sans-serif;
 }
 #portfolio-container .sub-title {
   background-color: var(--darkgrays-500);
@@ -1396,6 +1402,7 @@ li {
 #portfolio-container .text-wrapper .click-to-view {
   color: var(--t3);
   display: block;
+  text-decoration: underline;
 }
 
 .project-overview-page #portfolio-container li {
