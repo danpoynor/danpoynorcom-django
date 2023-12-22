@@ -3,7 +3,7 @@
     <div class="container">
         <section class="thumbnail-previews">
             <div class="container">
-                {% include "partials/_pagination_filter_bar.html" %}
+                {% include "partials/_pagination_filter_bar.html" with total_items=object.get_total_project_items item_name="items" %}
                 <ul id="portfolio-container">
                     {% for project in object.projects.all %}
                         <li class="shown">
