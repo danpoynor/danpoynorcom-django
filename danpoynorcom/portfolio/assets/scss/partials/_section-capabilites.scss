@@ -1,23 +1,24 @@
-.capabilites {
-    background: var(--t7);
-    background-color: var(--t13);
+$background-color: var(--t13);
+$text-color: var(--t6);
+$plus-color: var(--t3);
+
+.capabilities {
+    background-color: $background-color;
 
     .container {
-        display: flex;
-        font: normal 400 1.5em/1.4 'Bitter', sans-serif; // 24 / 16
-        //
         align-items: center;
+        display: flex;
         flex-flow: row wrap;
+        font: normal 400 1.5em/1.4 'Bitter', sans-serif; // 24 / 16
         justify-content: space-between;
     }
 
     .strategy,
     .design,
     .development {
-        animation-fill-mode: forwards;
         animation: fadeinfrombottom .6s;
-        color: $headline-text-color;
-        color: var(--t6);
+        animation-fill-mode: forwards;
+        color: $text-color;
         flex: 1;
         margin: .5em .25em;
         opacity: 0;
@@ -39,18 +40,12 @@
     }
 
     .plus {
-        color: var(--t3);
+        color: $plus-color;
         font-size: 1.4em;
         font-weight: 700;
         margin: .5em .25em;
         padding: .5em 0;
         text-align: center;
-    }
-
-    p {
-        display: inline-block;
-        margin: 0 1em; // for the capabilities sections only perhaps
-        padding: 0;
     }
 
     @media only screen and (max-width: 810px) {

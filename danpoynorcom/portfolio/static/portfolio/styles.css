@@ -703,23 +703,21 @@ body.home .selected-list a {
   min-width: 0;
 }
 
-.capabilites {
-  background: var(--t7);
+.capabilities {
   background-color: var(--t13);
 }
-.capabilites .container {
-  display: flex;
-  font: normal 400 1.5em/1.4 "Bitter", sans-serif;
+.capabilities .container {
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  font: normal 400 1.5em/1.4 "Bitter", sans-serif;
   justify-content: space-between;
 }
-.capabilites .strategy,
-.capabilites .design,
-.capabilites .development {
-  animation-fill-mode: forwards;
+.capabilities .strategy,
+.capabilities .design,
+.capabilities .development {
   animation: fadeinfrombottom 0.6s;
-  color: #424242;
+  animation-fill-mode: forwards;
   color: var(--t6);
   flex: 1;
   margin: 0.5em 0.25em;
@@ -728,16 +726,16 @@ body.home .selected-list a {
   position: relative;
   text-align: center;
 }
-.capabilites .strategy {
+.capabilities .strategy {
   animation-delay: 0.2s;
 }
-.capabilites .design {
+.capabilities .design {
   animation-delay: 0.5s;
 }
-.capabilites .development {
+.capabilities .development {
   animation-delay: 0.8s;
 }
-.capabilites .plus {
+.capabilities .plus {
   color: var(--t3);
   font-size: 1.4em;
   font-weight: 700;
@@ -745,30 +743,30 @@ body.home .selected-list a {
   padding: 0.5em 0;
   text-align: center;
 }
-.capabilites p {
+.capabilities p {
   display: inline-block;
   margin: 0 1em;
   padding: 0;
 }
 @media only screen and (max-width: 810px) {
-  .capabilites .container {
+  .capabilities .container {
     flex-direction: column;
     padding: 1.5em 1em 1.75em;
   }
-  .capabilites .strategy,
-  .capabilites .design,
-  .capabilites .development,
-  .capabilites .plus {
+  .capabilities .strategy,
+  .capabilities .design,
+  .capabilities .development,
+  .capabilities .plus {
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  .capabilites br {
+  .capabilities br {
     display: none;
   }
 }
 @media only screen and (max-width: 430px) {
-  .capabilites br {
+  .capabilities br {
     display: inherit;
   }
 }
@@ -1695,7 +1693,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   display: block;
 }
 .pagination .page-numbers .current {
-  background-color: #f6f6f6;
+  background-color: var(--t13);
   background-color: var(--t4);
   color: #666666;
   margin: 0 0.25em;
