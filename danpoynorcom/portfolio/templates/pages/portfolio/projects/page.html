@@ -1,13 +1,56 @@
 {% extends "base_portfolio.html" %}
-{% block content %}
-    <h1>Project</h1>
-    <ul>
-        {% for project in projects %}
-            <li>
-                <a href="{{ project.get_absolute_url }}">{{ project.name }}</a>
-            </li>
-        {% empty %}
-            <li>No projects available.</li>
-        {% endfor %}
-    </ul>
-{% endblock content %}
+{% load static %}
+{% block portfolio_content %}
+    <main class="portfolio-projects-page">
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> Projects {{ object.get_total_project_items }}
+                </h1>
+            </div>
+        </header>
+        <section class="thumbnails">
+            <div class="container">
+                <section class="thumbnail-previews">
+                    <div class="container">
+                        {% include "partials/_pagination_filter_bar.html" with total_items=projects.count item_name="projects" %}
+                        <section class="list-view">
+                            <ol>
+                                {% for project in projects %}
+                                    <li>
+                                        {% with project.get_first_item as first_item %}
+                                            {% if first_item %}
+                                                <figure>
+                                                    <a href="{% url 'project_detail' slug=first_item.slug %}"
+                                                       class="thumbnail">
+                                                        {% if first_item.image %}
+                                                            <img src="{% static "portfolio/images/project-item-images/medium/"|add:first_item.image.medium %}" alt="{{ project.name }}" height="" width="" />
+                                                        {% else %}
+                                                            <p>No image found for this project item.</p>
+                                                        {% endif %}
+                                                    </a>
+                                                    <figcaption>
+                                                        <p class="title">
+                                                            <a href="{% url 'project_detail' slug=first_item.slug %}" target="_top">{{ project.name }}</a>
+                                                        </p>
+                                                        <p class="description">
+                                                            <span>Project Description:</span>{{ project.description|safe }}
+                                                        </p>
+                                                    </figcaption>
+                                                </figure>
+                                            {% else %}
+                                                <p>No related ProjectItem instances found for this project.</p>
+                                            {% endif %}
+                                        {% endwith %}
+                                    </li>
+                                {% empty %}
+                                    <li>No projects available.</li>
+                                {% endfor %}
+                            </ol>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+{% endblock portfolio_content %}

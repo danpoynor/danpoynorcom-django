@@ -16,9 +16,11 @@
   --width-portfolio: 258px;
   --width-project-overview: 320px;
   --transition-speed: .3s;
+  --transition-speed-faster: .2s;
   --transition-speed-slow: .5s;
   --transition-speed-slower: .7s;
   --hover-brightness-amount: 150%;
+  --hover-brightness-amount-less: 120%;
   --portfolio-img-outline: #eee;
 }
 
@@ -175,7 +177,7 @@ h4 {
 
 a {
   color: var(--t3);
-  transition: all var(--transition-speed) ease-out;
+  transition: all var(--transition-speed-faster) ease-out;
 }
 
 a,
@@ -184,13 +186,54 @@ a:hover {
   text-decoration: none;
 }
 
+p a,
+.project-details a,
+.taxonomy-list a,
+.portfolio-introduction a,
+.selected-taxonomy-items p a,
+.taxonomy-meta a,
+.sidebar-info a,
+.contact-info a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em;
+}
+p a:hover,
+.project-details a:hover,
+.taxonomy-list a:hover,
 .portfolio-introduction a:hover,
 .selected-taxonomy-items p a:hover,
 .taxonomy-meta a:hover,
 .sidebar-info a:hover,
-.contact-info a:hover,
-.site-info a:hover {
+.contact-info a:hover {
   filter: brightness(var(--hover-brightness-amount));
+  text-underline-offset: 0.18em;
+}
+
+.site-info a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.site-info a:hover {
+  filter: brightness(var(--hover-brightness-amount-less));
+  text-underline-offset: 0.28em;
+}
+
+.list-view p.title {
+  font: 400 1.6em/1.2 Bitter, sans-serif;
+}
+.list-view p.title a {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.1em;
+}
+.list-view p.title a:hover {
+  filter: brightness(var(--hover-brightness-amount));
+  text-underline-offset: 0.2em;
+}
+.list-view p.description span {
+  color: var(--t6);
+  font: normal 100%/1.6180339888 "Oswald", sans-serif;
 }
 
 body > header a {
@@ -205,15 +248,6 @@ body > footer a {
 a:active,
 a:focus {
   outline: none !important;
-}
-
-p a,
-p a:visited,
-p a:hover,
-.project-details a,
-.project-details a:visited,
-.project-details a:hover {
-  text-decoration: underline;
 }
 
 .project-additional-samples a,
@@ -235,7 +269,7 @@ p a:hover,
 .site-title a {
   color: var(--t12);
   display: inline-block;
-  transition: color var(--transition-speed) ease-in-out;
+  transition: color var(--transition-speed-faster) ease-in-out;
 }
 .site-title a:hover {
   color: var(--t7);
@@ -525,7 +559,7 @@ header nav ul li a {
   padding: 0.5em 0.75em 0.75em;
   position: relative;
   white-space: nowrap;
-  transition: color var(--transition-speed) ease-in-out;
+  transition: color var(--transition-speed-faster) ease-in-out;
 }
 header nav ul li a:hover {
   color: var(--t7);
@@ -1916,15 +1950,12 @@ body > footer .badges li.photoshop {
 }
 .list-view p.title {
   display: inline-block;
-  font: 400 1.6em/1.2 Bitter, sans-serif;
   margin: 0;
 }
 .list-view p.description {
   margin-top: 0;
 }
 .list-view p.description span {
-  color: var(--t6);
-  font: normal 100%/1.6180339888 "Oswald", sans-serif;
   margin-right: 0.1em;
 }
 .list-view .count {
@@ -2907,6 +2938,10 @@ main.portfolio-page header.page-header {
   opacity: 1;
   height: calc(100% - 0.5em);
   width: calc(100% - 0.5em);
+}
+
+main.portfolio-projects-page {
+  padding-bottom: 2rem;
 }
 
 .taxonomy-categories {

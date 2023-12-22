@@ -18,8 +18,10 @@
     --width-portfolio: 258px; // x2 516 - "medium" size. Use in mosaic view for Portfolio areas including the project overview pages.
     --width-project-overview: 320px; // using the 516 "medium" thumbnail in here also even though it's not 2x the size.
     --transition-speed: .3s;
+    --transition-speed-faster: .2s;
     --transition-speed-slow: .5s;
     --transition-speed-slower: .7s;
     --hover-brightness-amount: 150%;
+    --hover-brightness-amount-less: 120%;
     --portfolio-img-outline: #eee;
 }

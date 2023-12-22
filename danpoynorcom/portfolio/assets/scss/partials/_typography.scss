@@ -36,7 +36,7 @@ h4 {
 
 a {
     color: var(--t3);
-    transition: all var(--transition-speed) ease-out;
+    transition: all var(--transition-speed-faster) ease-out;
 }
 
 a,
@@ -45,14 +45,61 @@ a:hover {
     text-decoration: none;
 }
 
+p,
+.project-details,
+.taxonomy-list,
 .portfolio-introduction,
 .selected-taxonomy-items p,
 .taxonomy-meta,
 .sidebar-info,
-.contact-info,
+.contact-info {
+    a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.1em;
+
+        &:hover {
+            filter: brightness(var(--hover-brightness-amount));
+            text-underline-offset: 0.18em;
+        }
+    }
+}
+
 .site-info {
+    a {
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+    }
+
     a:hover {
-        filter: brightness(var(--hover-brightness-amount));
+        filter: brightness(var(--hover-brightness-amount-less));
+        text-underline-offset: 0.28em;
+    }
+}
+
+.list-view {
+    p {
+        &.title {
+            font: 400 1.6em/1.2 Bitter, sans-serif;
+
+            a {
+                text-decoration: underline;
+                text-decoration-thickness: 1.5px;
+                text-underline-offset: .1em;
+
+                &:hover {
+                    filter: brightness(var(--hover-brightness-amount));
+                    text-underline-offset: 0.2em;
+                }
+            }
+        }
+
+        &.description {
+            span {
+                color: var(--t6);
+                font: normal 100%/1.61803398875 'Oswald', sans-serif;
+            }
+        }
     }
 }
 
@@ -68,16 +115,6 @@ body > footer a {
 a:active,
 a:focus {
     outline: none !important;
-}
-
-p,
-.project-details {
-
-    a,
-    a:visited,
-    a:hover {
-        text-decoration: underline;
-    }
 }
 
 .project-additional-samples {
@@ -102,7 +139,7 @@ p,
     a {
         color: var(--t12);
         display: inline-block;
-        transition: color var(--transition-speed) ease-in-out;
+        transition: color var(--transition-speed-faster) ease-in-out;
 
         &:hover {
             color: var(--t7);
