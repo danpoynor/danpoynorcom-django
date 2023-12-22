@@ -2,6 +2,7 @@ import datetime
 from django.core.validators import URLValidator, MinValueValidator, MaxValueValidator
 from django.urls import reverse
 from django.db import models
+from django.db.models import Count, Sum
 
 
 # Client taxonomy model
@@ -29,7 +30,7 @@ class Client(models.Model):
         return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
-        return sum(project.items.count() for project in self.projects.all())
+        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
 
     def get_absolute_url(self):
         return reverse('client_detail', args=[str(self.slug)])
@@ -61,7 +62,7 @@ class Industry(models.Model):
         return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
-        return sum(project.items.count() for project in self.projects.all())
+        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
 
     def get_absolute_url(self):
         return reverse('industry_detail', args=[str(self.slug)])
@@ -93,7 +94,7 @@ class Market(models.Model):
         return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
-        return sum(project.items.count() for project in self.projects.all())
+        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
 
     def get_absolute_url(self):
         return reverse('market_detail', args=[str(self.slug)])
@@ -126,7 +127,7 @@ class MediaType(models.Model):
         return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
-        return sum(project.items.count() for project in self.projects.all())
+        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
 
     def get_absolute_url(self):
         return reverse('media_type_detail', args=[str(self.slug)])
@@ -158,7 +159,7 @@ class Role(models.Model):
         return self._meta.verbose_name_plural
 
     def get_total_project_items(self):
-        return sum(project.items.count() for project in self.projects.all())
+        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
 
     def get_absolute_url(self):
         return reverse('role_detail', args=[str(self.slug)])
