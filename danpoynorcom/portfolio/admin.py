@@ -7,31 +7,31 @@ from .models import Client, Industry, Market, MediaType, Role, Project, ProjectI
 
 class ClientAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'visible', 'name', 'slug', 'description')
     list_display_links = ('name',)
 
 
 class IndustryAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'visible', 'name', 'slug', 'description')
     list_display_links = ('name',)
 
 
 class MarketAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'visible', 'name', 'slug', 'description')
     list_display_links = ('name',)
 
 
 class MediaTypeAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'visible', 'name', 'slug', 'description')
     list_display_links = ('name',)
 
 
 class RoleAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'slug', 'description')
+    list_display = ('id', 'visible', 'name', 'slug', 'description')
     list_display_links = ('name',)
 
 
@@ -52,12 +52,12 @@ class ProjectItemAttachmentInline(admin.StackedInline):
 
 class ProjectItemAttachmentAdmin(admin.ModelAdmin):
     search_fields = ['file']
-    list_display = ('id', 'file', 'link_text', 'visible')
+    list_display = ('id', 'visible', 'file', 'link_text')
 
 
 class ProjectItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'visible', 'status', 'project_name', 'item_order')
+    list_display = ('id', 'visible', 'name', 'status', 'project_name', 'item_order')
     list_display_links = ('name',)
     inlines = [ProjectItemImageInline, ProjectItemAttachmentInline]
 
@@ -68,7 +68,7 @@ class ProjectItemAdmin(admin.ModelAdmin):
 
 class ProjectAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('id', 'name', 'visible', 'client_name', 'media_types', 'industries', 'markets', 'roles', 'year')
+    list_display = ('id', 'visible', 'name', 'client_name', 'media_types', 'industries', 'markets', 'roles', 'year')
     list_display_links = ('name',)
 
     def client_name(self, obj):
