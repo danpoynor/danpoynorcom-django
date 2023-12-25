@@ -2,11 +2,27 @@ import datetime
 from django.core.validators import URLValidator, MinValueValidator, MaxValueValidator
 from django.urls import reverse
 from django.db import models
-from django.db.models import Count, Sum
+
+
+class TaxonomyMixin(models.Model):
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return self.name
+
+    def get_verbose_name(self):
+        return self._meta.verbose_name
+
+    def get_verbose_name_plural(self):
+        return self._meta.verbose_name_plural
+
+    def get_absolute_url(self):
+        return reverse(f'{self._meta.model_name}_detail', args=[str(self.slug)])
 
 
 # Client taxonomy model
-class Client(models.Model):
+class Client(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = 'Client'
         verbose_name_plural = 'Clients'
@@ -20,24 +36,9 @@ class Client(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
-    def get_total_project_items(self):
-        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
-
-    def get_absolute_url(self):
-        return reverse('client_detail', args=[str(self.slug)])
-
 
 # Industry taxonomy model
-class Industry(models.Model):
+class Industry(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = 'Industry'
         verbose_name_plural = 'Industries'
@@ -52,24 +53,9 @@ class Industry(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
-    def get_total_project_items(self):
-        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
-
-    def get_absolute_url(self):
-        return reverse('industry_detail', args=[str(self.slug)])
-
 
 # Market taxonomy model
-class Market(models.Model):
+class Market(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = 'Market'
         verbose_name_plural = 'Markets'
@@ -84,24 +70,9 @@ class Market(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
-    def get_total_project_items(self):
-        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
-
-    def get_absolute_url(self):
-        return reverse('market_detail', args=[str(self.slug)])
-
 
 # MediaType taxonomy model
-class MediaType(models.Model):
+class MediaType(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = 'Media Type'
         verbose_name_plural = 'Media Types'
@@ -117,24 +88,9 @@ class MediaType(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
-    def get_total_project_items(self):
-        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
-
-    def get_absolute_url(self):
-        return reverse('media_type_detail', args=[str(self.slug)])
-
 
 # Role taxonomy model
-class Role(models.Model):
+class Role(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = 'Role'
         verbose_name_plural = 'Roles'
@@ -148,21 +104,6 @@ class Role(models.Model):
     image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
-    def get_total_project_items(self):
-        return self.projects.all().annotate(items_count=Count('item')).aggregate(total=Sum('items_count'))['total']
-
-    def get_absolute_url(self):
-        return reverse('role_detail', args=[str(self.slug)])
 
 
 # Project model: Each project has a client, industry, market, media type, and role assigned to it

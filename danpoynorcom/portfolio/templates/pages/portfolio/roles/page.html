@@ -6,20 +6,5 @@
 {% endblock intro %}
 {% block taxonomy_content %}
     {% include "partials/taxonomy/term/_highlighted.html" with item_name="role" highlighted_items=highlighted_roles %}
-    <section class="roles-page taxonomy-categories">
-        <h2>Roles Overview</h2>
-        <ul class="taxonomy-list">
-            {% for role in roles %}
-                <li>
-                    <h3>
-                        <a href="{{ role.get_absolute_url }}"
-                           title="View all project samples created for 3D Designer">{{ role.name }} <span class="count">( {{ role.get_total_project_items }} )</span></a>
-                    </h3>
-                    <p>{{ role.description|safe }}</p>
-                </li>
-            {% empty %}
-                <li>No roles available.</li>
-            {% endfor %}
-        </ul>
-    </section>
+    {% include "partials/taxonomy/_categories.html" with item_name="roles" items=roles %}
 {% endblock taxonomy_content %}

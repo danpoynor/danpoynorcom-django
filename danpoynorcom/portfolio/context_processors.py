@@ -1,14 +1,15 @@
 from .models import Project, ProjectItem, Client, Industry, Market, MediaType, Role
+from .utils import get_visible_objects
 
 
 def project_counts(request):
-    total_projects = Project.objects.count()
-    total_project_items = ProjectItem.objects.count()
-    total_clients = Client.objects.count()
-    total_industries = Industry.objects.count()
-    total_markets = Market.objects.count()
-    total_media_types = MediaType.objects.count()
-    total_roles = Role.objects.count()
+    total_projects = get_visible_objects(Project).count()
+    total_project_items = get_visible_objects(ProjectItem).count()
+    total_clients = get_visible_objects(Client).count()
+    total_industries = get_visible_objects(Industry).count()
+    total_markets = get_visible_objects(Market).count()
+    total_media_types = get_visible_objects(MediaType).count()
+    total_roles = get_visible_objects(Role).count()
 
     return {
         'total_projects': total_projects,
