@@ -4,7 +4,7 @@ from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
 from django.core.paginator import Paginator
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
-from .mixins import PrevNextMixin, ProjectDetailsPrevNextMixin
+from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
 
 
@@ -116,7 +116,18 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
         visible_projects = get_visible_objects(Project).filter(client=self.object)
 
         # Get visible items for the visible projects
-        context['all_items'] = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items)
+
+        context.update({
+            'all_items': page_obj,
+            'order': order,
+            'pages': elided_page_range,
+            'total_projects': total_projects,
+            'count_type': 'items',  # Specify that we want to display the count of items
+        })
 
         return context
 
@@ -160,13 +171,30 @@ def industries(request):
     return render(request, 'pages/portfolio/industries/page.html', context)
 
 
-class IndustryProjectsListView(PrevNextMixin, generic.DetailView):
+class IndustryProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     model = Industry
     template_name = 'pages/portfolio/industries/term_items_page.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['all_items'] = get_visible_objects(ProjectItem).filter(project__in=self.object.projects.all())
+
+        # Get visible projects for the current industry
+        visible_projects = get_visible_objects(Project).filter(industry=self.object)
+
+        # Get visible items for the visible projects
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items)
+
+        context.update({
+            'all_items': page_obj,
+            'order': order,
+            'pages': elided_page_range,
+            'total_projects': total_projects,
+            'count_type': 'items',  # Specify that we want to display the count of items
+        })
+
         return context
 
 
@@ -184,7 +212,7 @@ def markets(request):
     return render(request, 'pages/portfolio/markets/page.html', {'markets': market_list, 'object': Market()})
 
 
-class MarketProjectsListView(PrevNextMixin, generic.DetailView):
+class MarketProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     model = Market
     template_name = 'pages/portfolio/markets/term_items_page.html'
 
@@ -240,13 +268,30 @@ def mediatypes(request):
     return render(request, 'pages/portfolio/media_types/page.html', context)
 
 
-class MediaTypeProjectsListView(PrevNextMixin, generic.DetailView):
+class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     model = MediaType
     template_name = 'pages/portfolio/media_types/term_items_page.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['all_items'] = get_visible_objects(ProjectItem).filter(project__in=self.object.projects.all())
+
+        # Get visible projects for the current media type
+        visible_projects = get_visible_objects(Project).filter(mediatype=self.object)
+
+        # Get visible items for the visible projects
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items)
+
+        context.update({
+            'all_items': page_obj,
+            'order': order,
+            'pages': elided_page_range,
+            'total_projects': total_projects,
+            'count_type': 'items',  # Specify that we want to display the count of items
+        })
+
         return context
 
 
@@ -275,13 +320,30 @@ def roles(request):
     return render(request, 'pages/portfolio/roles/page.html', context)
 
 
-class RoleProjectsListView(PrevNextMixin, generic.DetailView):
+class RoleProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     model = Role
     template_name = 'pages/portfolio/roles/term_items_page.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['all_items'] = get_visible_objects(ProjectItem, self.object).filter(project__in=self.object.projects.all())
+
+        # Get visible projects for the current role
+        visible_projects = get_visible_objects(Project).filter(role=self.object)
+
+        # Get visible items for the visible projects
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items)
+
+        context.update({
+            'all_items': page_obj,
+            'order': order,
+            'pages': elided_page_range,
+            'total_projects': total_projects,
+            'count_type': 'items',  # Specify that we want to display the count of items
+        })
+
         return context
 
 

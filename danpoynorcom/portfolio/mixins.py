@@ -1,6 +1,25 @@
 from django.db.models import Exists, OuterRef
 from django.db.models.functions import Lower
+from django.core.paginator import Paginator
 from .models import Project
+
+
+class PaginationMixin:
+    paginate_by = 25
+
+    def paginate_queryset(self, queryset, order_by='name'):
+        order = self.request.GET.get('order', 'asc')
+        if order == 'desc':
+            queryset = queryset.order_by(f'-{order_by}')
+        else:
+            queryset = queryset.order_by(order_by)
+
+        paginator = Paginator(queryset, self.paginate_by)
+        page_number = self.request.GET.get("page")
+        page_obj = paginator.get_page(page_number)
+        elided_page_range = paginator.get_elided_page_range(number=page_obj.number)
+
+        return page_obj, order, elided_page_range, paginator.count
 
 
 class PrevNextMixin:
