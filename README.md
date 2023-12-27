@@ -236,3 +236,9 @@ pip freeze > requirements.txt
 - [django-staticfiles](https://docs.djangoproject.com/en/3.1/ref/contrib/staticfiles/)
 
 </details>
+
+## TODO
+
+- Update `get_visible_objects` util to filter out 'visible=False' terms within the current Project taxonomy.
+- Update pagination on taxonomy page to include Previous/Next First/Last links like on the Projects list page.
+-
