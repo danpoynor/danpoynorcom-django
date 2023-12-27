@@ -94,17 +94,18 @@ def getty_legal_notice(request):
 def clients(request):
     client_list = get_visible_objects(Client).order_by(Lower('name'))
     for client in client_list:
-        visible_project_items = ProjectItem.objects.filter(
-            project__client=client,
-            project__visible=True,
-            visible=True
-        )
+        # Get visible projects for the current client
+        visible_projects = get_visible_objects(Project).filter(client=client)
+
+        # Get visible items for the visible projects
+        visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
         client.project_item_count = visible_project_items.count()
 
     return render(request, 'pages/portfolio/clients/page.html', {'clients': client_list, 'object': Client()})
 
 
-class ClientProjectsListView(PrevNextMixin, generic.DetailView):
+class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     model = Client
     template_name = 'pages/portfolio/clients/term_items_page.html'
 
@@ -172,11 +173,12 @@ class IndustryProjectsListView(PrevNextMixin, generic.DetailView):
 def markets(request):
     market_list = get_taxonomy_objects_with_visible_projects(Market)
     for market in market_list:
-        visible_project_items = ProjectItem.objects.filter(
-            project__market=market,
-            project__visible=True,
-            visible=True
-        )
+        # Get visible projects for the current market
+        visible_projects = get_visible_objects(Project).filter(market=market)
+
+        # Get visible items for the visible projects
+        visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
         market.project_item_count = visible_project_items.count()
 
     return render(request, 'pages/portfolio/markets/page.html', {'markets': market_list, 'object': Market()})
@@ -188,7 +190,24 @@ class MarketProjectsListView(PrevNextMixin, generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['all_items'] = ProjectItem.objects.filter(project__in=self.object.projects.filter(visible=True))
+
+        # Get visible projects for the current market
+        visible_projects = get_visible_objects(Project).filter(market=self.object)
+
+        # Get visible items for the visible projects
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items)
+
+        context.update({
+            'all_items': page_obj,
+            'order': order,
+            'pages': elided_page_range,
+            'total_projects': total_projects,
+            'count_type': 'items',  # Specify that we want to display the count of items
+        })
+
         return context
 
 
