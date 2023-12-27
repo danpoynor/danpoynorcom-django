@@ -1,0 +1,48 @@
+<nav class="pagination">
+    <form class="dropdown items-sort">
+        <label for="order" class="prompt">Sort by:</label>
+        <select id="order" name="order" onchange="this.form.submit()">
+            <option value="asc" {% if order == 'asc' %}selected{% endif %}>A-Z</option>
+            <option value="desc" {% if order == 'desc' %}selected{% endif %}>Z-A</option>
+        </select>
+    </form>
+    <div class="step-links">
+        {% if page_obj.has_previous %}
+            <div class="back-links">
+                <a href="?page=1&order={{ order }}"
+                   class="prev page-number"
+                   title="Last page"><span class="arrow">«</span></a>
+                <a href="?page={{ page_obj.previous_page_number }}&order={{ order }}"
+                   class="prev page-number"
+                   title="Previous page">Prev</a>
+            </div>
+        {% endif %}
+        <ol class="page-numbers">
+            {% for i in pages %}
+                {% if page_obj.number == i %}
+                    <li aria-current="page">
+                        <span class="current">{{ i }}</span>
+                    </li>
+                {% elif i == '…' %}
+                    <li>
+                        <span class="ellipsis">{{ i }}</span>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="?page={{ i }}&order={{ order }}" class="page-number">{{ i }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+        {% if page_obj.has_next %}
+            <div class="forward-links">
+                <a href="?page={{ page_obj.next_page_number }}&order={{ order }}"
+                   class="prev page-number"
+                   title="Next page">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}&order={{ order }}"
+                   class="prev page-number arrow"
+                   title="Last page"><span class="arrow">»</span></a>
+            </div>
+        {% endif %}
+    </div>
+</nav>

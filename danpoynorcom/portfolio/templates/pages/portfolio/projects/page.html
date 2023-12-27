@@ -13,10 +13,10 @@
             <div class="container">
                 <section class="thumbnail-previews">
                     <div class="container">
-                        {% include "partials/_pagination_filter_bar.html" with total_items=projects.count item_name="projects" %}
+                        {% include "partials/pagination/_bar.html" with total_items=projects.count item_name="projects" %}
                         <section class="list-view">
                             <ol>
-                                {% for project in projects %}
+                                {% for project in page_obj %}
                                     <li>
                                         {% with project.get_first_item as first_item %}
                                             {% if first_item %}
@@ -33,9 +33,11 @@
                                                         <p class="title">
                                                             <a href="{% url 'project_detail' slug=first_item.slug %}" target="_top">{{ project.name }}</a>
                                                         </p>
-                                                        <p class="description">
-                                                            <span>Project Description:</span>{{ project.description|safe }}
-                                                        </p>
+                                                        {% if project.description %}
+                                                            <p class="description">
+                                                                <span>Project Description:</span>{{ project.description|safe }}
+                                                            </p>
+                                                        {% endif %}
                                                     </figcaption>
                                                 </figure>
                                             {% else %}

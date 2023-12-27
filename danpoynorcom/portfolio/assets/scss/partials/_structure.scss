@@ -1,3 +1,13 @@
+// Define SASS variables
+$iphone-landscape-width: 640px;
+$transition-speed: 0.3s;
+$min-height: 20rem;
+$container-max-width: 1182px;
+$container-padding: 1rem;
+$thumbnail-min-height: 16rem;
+$project-details-flex: 35.1945854483926%; // 416px / 1182
+$error-message-padding: 2rem;
+
 // structure css
 // include padding in box widths
 // re: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -23,7 +33,7 @@ body {
     margin: 0;
     overflow-anchor: none; // in Chrome, removes freezing the page scroll till content below the fold is loaded
     padding: 0;
-    transition: background-color var(--transition-speed) ease-out;
+    transition: background-color $transition-speed ease-out;
     width: 100%;
 }
 
@@ -33,25 +43,12 @@ body {
     position: relative;
 }
 
-/* for older browsers */
-header,
-main,
-section,
-article,
-aside,
-nav,
-figure,
-figcaption,
-footer {
-    display: block;
-}
-
 main {
     background-color: var(--t4);
     margin: 0 auto;
-    min-height: 20em;
+    min-height: $min-height;
     padding: 0;
-    transition: background-color var(--transition-speed) ease-out;
+    transition: background-color $transition-speed ease-out;
     width: 100%;
 }
 
@@ -66,14 +63,14 @@ section {
     width: 100%;
 
     &.thumbnails {
-        min-height: 16em;
+        min-height: $thumbnail-min-height;
     }
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1182px;
-    padding: 0 1em;
+    max-width: $container-max-width;
+    padding: 0 $container-padding;
     position: relative;
     width: 100%;
 
@@ -100,44 +97,27 @@ img {
 body {
     > header {
         .container {
-            height: 7em;
+            height: auto;
         }
     }
 
-    @media only screen and (max-width: $iphone-landscape-width) {
+    .wrapper {
+        padding-top: 0;
+    }
+
+    @media only screen and (min-width: $iphone-landscape-width) {
         > header {
             position: relative;
 
             .container {
-                height: auto;
+                height: 6rem;
             }
-        }
-
-        .wrapper {
-            padding-top: 0;
         }
     }
 }
 
 .stage {
     .display-column {
-        flex: 0 1 63.4517766497462%; // 750px (766-16 for right margin) / 1182
-        min-width: 320px;
-
-        p:first-of-type {
-            margin-top: 0;
-        }
-    }
-
-    .project-details {
-        flex: 0 0 35.1945854483926%; // 416px / 1182
-        padding-bottom: 2rem;
-    }
-}
-
-//@media only screen and (max-width: $iphone-landscape-width) {
-@media only screen and (max-width: 980px) {
-    .stage .display-column {
         flex: none;
         min-width: 100%;
         text-align: center;
@@ -151,21 +131,39 @@ body {
         table {
             display: initial;
         }
+
+        p:first-of-type {
+            margin-top: 0;
+        }
     }
 
-    .stage .project-details {
+    .project-details {
+        flex: 0 0 $project-details-flex;
+        padding-bottom: 2rem;
         min-width: 100%;
     }
 
-    #main .stage .business-card,
-    #main .stage .promo-postcard {
-        img {
-            max-width: 100%;
+    @media only screen and (min-width: 980px) {
+        .display-column {
+            flex: 0 1 63.4517766497462%; // 750px (766-16 for right margin) / 1182
+            min-width: 320px;
+            text-align: left;
+        }
+
+        .project-details {
+            min-width: 0;
+        }
+
+        #main .stage .business-card,
+        #main .stage .promo-postcard {
+            img {
+                max-width: none;
+            }
         }
     }
 }
 
 main header.error-message {
     margin: 0;
-    padding: 2em 0;
+    padding: $error-message-padding 0;
 }

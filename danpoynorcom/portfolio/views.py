@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
+from django.core.paginator import Paginator
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 from .mixins import PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
@@ -281,7 +282,19 @@ def projects(request):
         has_visible_items=True
     )
 
-    return render(request, 'pages/portfolio/projects/page.html', {'projects': project_list})
+    total_projects = project_list.count()
+
+    order = request.GET.get('order', 'asc')
+    if order == 'desc':
+        project_list = project_list.order_by('-name')
+    else:
+        project_list = project_list.order_by('name')
+
+    paginator = Paginator(project_list, 25)  # Show 25 contacts per page.
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    elided_page_range = paginator.get_elided_page_range(number=page_obj.number)
+    return render(request, "pages/portfolio/projects/page.html", {"page_obj": page_obj, "order": order, "pages": elided_page_range, "total_projects": total_projects})
 
 
 class ProjectItemsView(PrevNextMixin, generic.DetailView):
