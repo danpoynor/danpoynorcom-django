@@ -920,25 +920,25 @@ body.home .selected-list a {
   }
 }
 .selected-projects .insightly-responsive-site-development .collage {
-  background-image: url(images/collages/insightly.png);
+  background-image: url(images/collages/insightly.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .reputation-promotional-banner-ads .collage {
-  background-image: url(images/collages/reputation.png);
+  background-image: url(images/collages/reputation.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .selected-projects .adobe-echosign-web-contracts-conference .collage {
-  background-image: url(images/collages/web-contracts-conference.png);
+  background-image: url(images/collages/web-contracts-conference.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .selected-projects .yahoo-lender-search .collage {
-  background-image: url(images/collages/yahoo-lender-search.png);
+  background-image: url(images/collages/yahoo-lender-search.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
