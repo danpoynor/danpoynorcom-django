@@ -13,7 +13,7 @@
             <div class="container">
                 <section class="thumbnail-previews">
                     <div class="container">
-                        {% include "partials/pagination/_bar.html" with total_items=projects.count item_name="projects" %}
+                        {% include "partials/pagination/_bar.html" with total_items=total_projects %}
                         <section class="list-view">
                             <ol>
                                 {% for project in page_obj %}

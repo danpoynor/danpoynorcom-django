@@ -1619,10 +1619,10 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 
 .pagination-bar {
   background-color: var(--t7);
-  font-size: 0.8125em;
-  margin: 0 0 1em;
+  font-size: 0.8125rem;
+  margin: 0 0 1rem;
   padding: 0.5rem;
-  min-height: 3.75em;
+  min-height: 3.75rem;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -1640,7 +1640,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 }
 .total-items p {
   color: var(--black);
-  margin: 0 1em;
+  margin: 0 0.5rem;
   white-space: nowrap;
 }
 @media only screen and (min-width: 900px) {
@@ -1663,10 +1663,15 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   margin-right: 0.25rem;
 }
 .pagination .items-sort select {
+  appearance: none;
   border-color: var(--t8);
   border-radius: 0.25rem;
+  cursor: pointer;
   font-size: 0.75rem;
-  padding: 0.25rem;
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M5 8l5 5 5-5z' fill='%23568000' /></svg>") no-repeat;
+  background-position: right 0.1rem center;
+  background-size: 1.5rem auto;
 }
 .pagination .step-links,
 .pagination .back-links,
@@ -1687,7 +1692,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 }
 @media only screen and (min-width: 900px) {
   .pagination p {
-    margin-left: 1em;
+    margin-left: 1rem;
     margin-right: 0.25rem;
     display: block;
   }
@@ -1713,7 +1718,7 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   padding: 0.25rem 0.5rem;
 }
 .pagination .page-numbers .dots {
-  padding: 0.75em 0.25rem 0;
+  padding: 0.75rem 0.25rem 0;
 }
 .pagination .page-number,
 .pagination .prev,

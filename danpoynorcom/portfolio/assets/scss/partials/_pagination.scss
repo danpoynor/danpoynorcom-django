@@ -7,10 +7,10 @@ $breakpoint: 900px;
 
 .pagination-bar {
     background-color: var(--t7);
-    font-size: 0.8125em;
-    margin: 0 0 1em;
+    font-size: 0.8125rem;
+    margin: 0 0 1rem;
     padding: $padding-medium;
-    min-height: 3.75em;
+    min-height: 3.75rem;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -27,7 +27,7 @@ $breakpoint: 900px;
 
     p {
         color: var(--black);
-        margin: 0 1em;
+        margin: 0 .5rem;
         white-space: nowrap;
     }
 
@@ -51,10 +51,16 @@ $breakpoint: 900px;
         }
 
         select {
+            $url-theme-color: str-slice("#{ $theme-color }", 2); // Remove the # from the color
+            appearance: none; // Remove default select style
             border-color: var(--t8);
             border-radius: .25rem;
+            cursor: pointer;
             font-size: $font-small;
-            padding: $padding-small;
+            padding: $padding-small 1.75rem $padding-small $padding-medium;
+            background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M5 8l5 5 5-5z' fill='%23#{ $url-theme-color }' /></svg>") no-repeat; // Add custom arrow
+            background-position: right .1rem center; // Position the custom arrow
+            background-size: 1.5rem auto; // Size the custom arrow
         }
     }
 
@@ -78,7 +84,7 @@ $breakpoint: 900px;
         padding: 0;
 
         @media only screen and (min-width: $breakpoint) {
-            margin-left: 1em;
+            margin-left: 1rem;
             margin-right: $padding-small;
             display: block;
         }
@@ -110,7 +116,7 @@ $breakpoint: 900px;
         }
 
         .dots {
-            padding: .75em $padding-small 0;
+            padding: .75rem $padding-small 0;
         }
     }
 

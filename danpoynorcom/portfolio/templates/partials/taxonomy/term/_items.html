@@ -3,9 +3,9 @@
     <div class="container">
         <section class="thumbnail-previews">
             <div class="container">
-                {% include "partials/pagination/_bar.html" with total_items=object.get_total_project_items item_name="items" %}
+                {% include "partials/pagination/_bar.html" with total_items=object.get_total_project_items %}
                 <ul id="portfolio-container">
-                    {% for item in all_items %}
+                    {% for item in page_obj %}
                         <li class="shown portfolio-item">
                             <a href="{% url 'project_detail' slug=item.slug %}">
                                 <figure>

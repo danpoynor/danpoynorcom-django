@@ -1,10 +1,6 @@
 <div class="pagination-bar">
     <div class="total-items">
-        {% if count_type == 'items' %}
-            <p>Presenting {{ total_projects }} items</p>
-        {% else %}
-            <p>Presenting {{ total_projects }} projects</p>
-        {% endif %}
+        <p>Presenting {{ total_projects }} {{ count_type }}</p>
     </div>
     {% include "./_paginator.html" %}
 </div>
