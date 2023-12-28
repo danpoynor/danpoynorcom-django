@@ -1603,11 +1603,13 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 .dropdown.portfolio-sub-nav ul.current {
   background-color: var(--t7);
   border-color: var(--t11);
+  color: var(--t3);
 }
-.dropdown.portfolio-sub-nav ul.current a {
+.dropdown.portfolio-sub-nav ul.current div {
+  padding: 0.5em 1em;
   position: relative;
 }
-.dropdown.portfolio-sub-nav ul.current a:after {
+.dropdown.portfolio-sub-nav ul.current div:after {
   color: var(--t3);
   content: "▼︎";
   display: inline-block;
