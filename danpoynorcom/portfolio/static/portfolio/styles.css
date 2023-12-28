@@ -364,7 +364,7 @@ html,
 body {
   background-attachment: fixed;
   background-color: var(--t9);
-  background-image: url(images/backgrounds/tile.png);
+  background-image: url(images/backgrounds/tile.webp);
   height: 100%;
   margin: 0;
   overflow-anchor: none;
@@ -1892,12 +1892,12 @@ body > footer .badges li {
   margin: 0.5em;
 }
 body > footer .badges li.illustrator {
-  background: url(images/badges/Certified_Expert_Illustrator_CC_badge.png) 0 0 no-repeat;
+  background: url(images/badges/Certified_Expert_Illustrator_CC_badge.webp) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
 }
 body > footer .badges li.photoshop {
-  background: url(images/badges/Certified_Expert_Photoshop_CC_badge.png) 0 0 no-repeat;
+  background: url(images/badges/Certified_Expert_Photoshop_CC_badge.webp) 0 0 no-repeat;
   background-size: 216px;
   width: 216px;
 }
