@@ -5,6 +5,7 @@ from django.db.models import OuterRef, Exists
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
+from .constants import SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
 
 
 def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
@@ -28,8 +29,7 @@ def home(request):
 
 
 def portfolio(request):
-    selected_client_ids = [42, 65, 4, 83, 37]
-    selected_clients = Client.objects.filter(id__in=selected_client_ids)
+    selected_clients = Client.objects.filter(id__in=SELECTED_CLIENT_IDS)
     for client in selected_clients:
         visible_project_items = ProjectItem.objects.filter(
             project__client=client,
@@ -38,8 +38,7 @@ def portfolio(request):
         )
         client.project_item_count = visible_project_items.count()
 
-    selected_industry_ids = [14, 32, 8, 3, 21]
-    selected_industries = Industry.objects.filter(id__in=selected_industry_ids)
+    selected_industries = Industry.objects.filter(id__in=SELECTED_INDUSTRY_IDS)
     for industry in selected_industries:
         visible_project_items = ProjectItem.objects.filter(
             project__industry=industry,
@@ -48,8 +47,7 @@ def portfolio(request):
         )
         industry.project_item_count = visible_project_items.count()
 
-    selected_media_type_ids = [28, 3, 21, 36, 38]
-    selected_media_types = MediaType.objects.filter(id__in=selected_media_type_ids)
+    selected_media_types = MediaType.objects.filter(id__in=SELECTED_MEDIA_TYPE_IDS)
     for mediatype in selected_media_types:
         visible_project_items = ProjectItem.objects.filter(
             project__mediatype=mediatype,
@@ -58,8 +56,7 @@ def portfolio(request):
         )
         mediatype.project_item_count = visible_project_items.count()
 
-    selected_role_ids = [12, 24, 22, 2, 8]
-    selected_roles = Role.objects.filter(id__in=selected_role_ids)
+    selected_roles = Role.objects.filter(id__in=SELECTED_ROLE_IDS)
     for role in selected_roles:
         visible_project_items = ProjectItem.objects.filter(
             project__role=role,
@@ -132,8 +129,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
 
 
 def industries(request):
-    highlighted_industry_ids = [3, 13, 32, 8, 21, 24]
-    highlighted_industries = get_visible_objects(Industry).filter(id__in=highlighted_industry_ids)
+    highlighted_industries = get_visible_objects(Industry).filter(id__in=HIGHLIGHTED_INDUSTRY_IDS)
     for industry in highlighted_industries:
         visible_project_items = ProjectItem.objects.filter(
             project__industry=industry,
@@ -239,8 +235,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
 
 
 def mediatypes(request):
-    highlighted_media_type_ids = [28, 3, 21, 36, 38]
-    highlighted_media_types = get_visible_objects(MediaType).filter(id__in=highlighted_media_type_ids)
+    highlighted_media_types = get_visible_objects(MediaType).filter(id__in=HIGHLIGHTED_MEDIA_TYPE_IDS)
     for mediatype in highlighted_media_types:
         visible_project_items = ProjectItem.objects.filter(
             project__mediatype=mediatype,
@@ -295,8 +290,7 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVi
 
 
 def roles(request):
-    highlighted_role_ids = [12, 24, 22, 2, 8]
-    highlighted_roles = get_visible_objects(Role).filter(id__in=highlighted_role_ids)
+    highlighted_roles = get_visible_objects(Role).filter(id__in=HIGHLIGHTED_ROLE_IDS)
     for role in highlighted_roles:
         visible_project_items = ProjectItem.objects.filter(
             project__role=role,

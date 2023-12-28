@@ -2,10 +2,11 @@ from django.db.models import Exists, OuterRef
 from django.db.models.functions import Lower
 from django.core.paginator import Paginator
 from .models import Project
+from .constants import PAGINATE_BY
 
 
 class PaginationMixin:
-    paginate_by = 25
+    paginate_by = PAGINATE_BY
 
     def paginate_queryset(self, queryset, order_by='name'):
         order = self.request.GET.get('order', 'asc')
