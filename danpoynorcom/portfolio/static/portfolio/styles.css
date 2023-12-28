@@ -2427,7 +2427,7 @@ main.home-page {
   padding: 0;
 }
 main.home-page .welcome {
-  background-image: url(images/photos/dan-poynor-photo-202001.jpg);
+  background-image: url(images/photos/dan-poynor-photo-202001.webp);
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
