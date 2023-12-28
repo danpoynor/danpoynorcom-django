@@ -1670,8 +1670,8 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   font-size: 0.75rem;
   padding: 0.25rem 1.75rem 0.25rem 0.5rem;
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M5 8l5 5 5-5z' fill='%23568000' /></svg>") no-repeat;
-  background-position: right 0.1rem center;
-  background-size: 1.5rem auto;
+  background-position: right 0.25rem center;
+  background-size: 1.25rem auto;
 }
 .pagination .step-links,
 .pagination .back-links,

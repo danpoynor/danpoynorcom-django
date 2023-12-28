@@ -59,8 +59,8 @@ $breakpoint: 900px;
             font-size: $font-small;
             padding: $padding-small 1.75rem $padding-small $padding-medium;
             background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M5 8l5 5 5-5z' fill='%23#{ $url-theme-color }' /></svg>") no-repeat; // Add custom arrow
-            background-position: right .1rem center; // Position the custom arrow
-            background-size: 1.5rem auto; // Size the custom arrow
+            background-position: right .25rem center; // Position the custom arrow
+            background-size: 1.25rem auto; // Size the custom arrow
         }
     }
 
