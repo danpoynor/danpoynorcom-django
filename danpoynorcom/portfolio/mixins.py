@@ -1,26 +1,83 @@
 from django.db.models import Exists, OuterRef
 from django.db.models.functions import Lower
-from django.core.paginator import Paginator
-from .models import Project
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.shortcuts import redirect
+from .models import Project, ProjectItem
 from .constants import PAGINATE_BY
+from .utils import get_visible_objects
 
 
 class PaginationMixin:
+    paginator_template_name = "partials/pagination/_paginator.html"
     paginate_by = PAGINATE_BY
+    count_type = None
+    view_name = None
+    filter_field = None
 
-    def paginate_queryset(self, queryset, order_by='name'):
-        order = self.request.GET.get('order', 'asc')
+    def post(self, request, *args, **kwargs):
+        # Get the selected order from the POST data
+        order = request.POST.get('order', 'asc')
+
+        # Get the slug from the URL
+        slug = self.kwargs.get('slug')
+
+        # Redirect to the first page with the selected order
+        return redirect(self.view_name, slug=slug, page=1, order=order)
+
+    def paginate_queryset(self, queryset, page_number, order='asc'):
         if order == 'desc':
-            queryset = queryset.order_by(f'-{order_by}')
+            queryset = queryset.order_by(Lower('name').desc())
         else:
-            queryset = queryset.order_by(order_by)
+            queryset = queryset.order_by(Lower('name'))
 
         paginator = Paginator(queryset, self.paginate_by)
-        page_number = self.request.GET.get("page")
-        page_obj = paginator.get_page(page_number)
+        try:
+            page_obj = paginator.page(page_number)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            page_obj = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            page_obj = paginator.page(paginator.num_pages)
+
         elided_page_range = paginator.get_elided_page_range(number=page_obj.number)
 
         return page_obj, order, elided_page_range, paginator.count
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        # Get visible projects
+        if self.filter_field is not None:
+            # If a filter field is specified, filter by the current object
+            filter_kwargs = {self.filter_field: self.object}
+            visible_projects = get_visible_objects(Project).filter(**filter_kwargs)
+        else:
+            # If no filter field is specified, get all visible projects
+            visible_projects = get_visible_objects(Project)
+
+        # Get visible items for the visible projects
+        all_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+        # Get the page number and order from the URL
+        page = self.kwargs.get('page')
+        order = self.kwargs.get('order', 'asc')
+
+        # Paginate items
+        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items, page, order)
+
+        context.update({
+            "paginator_template_name": self.paginator_template_name,
+            "page_obj": page_obj,
+            "order": order,
+            "pages": elided_page_range,
+            "total_projects": total_projects,
+            "count_type": self.count_type,  # Specify that we want to display the count of items
+            "view_name": self.view_name,  # The name of the current view
+            "taxonomy_item_slug": getattr(self, 'object', None) and self.object.slug,  # The object's slug
+        })
+
+        return context
 
 
 class PrevNextMixin:
