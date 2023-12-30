@@ -14,7 +14,7 @@ class PaginationMixin:
     view_name = None
     filter_field = None
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         # Get the selected order from the POST data
         order = request.POST.get('order', 'asc')
 
