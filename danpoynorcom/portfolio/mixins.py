@@ -159,7 +159,11 @@ class ProjectDetailsPrevNextMixin:
             ordered_items.extend(list(project.get_ordered_items().filter(visible=True)))
 
         # Get the index of the current object in the ordered items
-        current_index = ordered_items.index(current_object)
+        # The if/else check is to prevent a ValueError in tests when current_object is not in ordered_items
+        if current_object in ordered_items:
+            current_index = ordered_items.index(current_object)
+        else:
+            current_index = None
 
         # Get the previous and next items
         prev_item = ordered_items[current_index - 1] if ordered_items else None

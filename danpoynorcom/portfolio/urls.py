@@ -38,6 +38,7 @@ urlpatterns = [
     path('portfolio/design-and-development-projects/page/<int:page>/', views.ProjectsView.as_view(), name='projects_page'),
     path('portfolio/design-and-development-projects/page/<int:page>/<str:order>/', views.ProjectsView.as_view(), name='projects_page_order'),
     path('portfolio/design-and-development-projects/page/<int:page>/<str:order>/<str:slug>/', views.ProjectsView.as_view(), name='projects_page_order_slug'),
+
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project"),
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
 

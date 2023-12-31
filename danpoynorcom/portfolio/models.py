@@ -27,8 +27,8 @@ class Client(TaxonomyMixin, models.Model):
         verbose_name = "Client"
         verbose_name_plural = "Clients"
         ordering = ["name"]
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the client description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the client should be visible")
     logo = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
@@ -43,8 +43,8 @@ class Industry(TaxonomyMixin, models.Model):
         verbose_name = "Industry"
         verbose_name_plural = "Industries"
         ordering = ["name"]
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the industry description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the industry should be visible")
     image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
@@ -60,8 +60,8 @@ class Market(TaxonomyMixin, models.Model):
         verbose_name = "Market"
         verbose_name_plural = "Markets"
         ordering = ["name"]
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the market description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the market should be visible")
     image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
@@ -78,8 +78,8 @@ class MediaType(TaxonomyMixin, models.Model):
         verbose_name_plural = "Media Types"
         ordering = ["name"]
         db_table = "portfolio_media_type"
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the media type description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the media type should be visible")
     image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
@@ -95,8 +95,8 @@ class Role(TaxonomyMixin, models.Model):
         verbose_name = "Role"
         verbose_name_plural = "Roles"
         ordering = ["name"]
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the role description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the role should be visible")
     image_sm = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
@@ -112,8 +112,8 @@ class Project(models.Model):
         verbose_name = "Project"
         verbose_name_plural = "Projects"
         ordering = ["name"]
-    name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    name = models.CharField(max_length=200, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=200, unique=True, blank=False, null=False)
     description = models.TextField(help_text="Enter the project description", blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project should be visible")
     client = models.ForeignKey(Client, on_delete=models.PROTECT, related_name="projects", related_query_name="project", blank=True, null=True)
@@ -160,8 +160,8 @@ class ProjectItem(models.Model):
         ordering = ["project"]
         db_table = "portfolio_project_item"
     project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name="items", related_query_name="item")
-    name = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200)
+    name = models.CharField(max_length=200, blank=False, null=False)
+    slug = models.SlugField(max_length=200, blank=False, null=False)
     description = models.TextField(help_text="Enter the project item description", blank=True, null=True)
     html_content = models.TextField(blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
