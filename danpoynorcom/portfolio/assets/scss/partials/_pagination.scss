@@ -17,6 +17,10 @@ $breakpoint: 900px;
     justify-content: center;
     align-items: center;
 
+    &:last-child {
+        margin: 1rem 0 0 0;
+    }
+
     @media only screen and (min-width: $breakpoint) {
         flex-flow: row wrap;
     }

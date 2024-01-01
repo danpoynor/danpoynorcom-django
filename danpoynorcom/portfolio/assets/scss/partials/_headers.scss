@@ -9,6 +9,7 @@
     p {
         font: normal 1.5em/1.61803398875 'Bitter', sans-serif;
         margin: 0;
+        text-wrap: pretty;
 
         + p {
             margin-top: .5em;

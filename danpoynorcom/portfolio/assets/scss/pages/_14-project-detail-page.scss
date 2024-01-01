@@ -30,6 +30,10 @@
             background: var(--t7);
             margin: 0 0 1em 0;
             padding: 1em;
+
+            > img {
+                display: block;
+            }
         }
 
         p {

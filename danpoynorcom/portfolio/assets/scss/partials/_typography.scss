@@ -17,6 +17,7 @@ h6 {
     font: normal 400 1em/1 'Bitter', sans-serif;
     margin: 0;
     text-rendering: optimizeLegibility;
+    text-wrap: pretty;
 }
 
 h2 {
@@ -45,6 +46,10 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    text-wrap: pretty;
+}
+
 p,
 .project-details,
 .taxonomy-list,
@@ -66,6 +71,8 @@ p,
 }
 
 .site-info {
+    text-wrap: pretty;
+
     a {
         text-decoration: underline;
         text-underline-offset: 0.2em;
