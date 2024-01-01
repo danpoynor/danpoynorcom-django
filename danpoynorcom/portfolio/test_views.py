@@ -162,16 +162,16 @@ class ClientProjectsListViewTest(TestCase):
             )
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/clients/test-client/')
+        response = self.client.get('/portfolio/clients/test-client-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/clients/test-client/')
+        response = self.client.get('/portfolio/clients/test-client-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/clients/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/clients/test-client/')
+        response = self.client.get('/portfolio/clients/test-client-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
@@ -195,16 +195,16 @@ class IndustryProjectsListViewTest(TestCase):
             project.industry.add(industry)
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/industries/test-industry/')
+        response = self.client.get('/portfolio/industries/test-industry-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/industries/test-industry/')
+        response = self.client.get('/portfolio/industries/test-industry-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/industries/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/industries/test-industry/')
+        response = self.client.get('/portfolio/industries/test-industry-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
@@ -228,16 +228,16 @@ class MarketProjectsListViewTest(TestCase):
             project.market.add(market)
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/markets/test-market/')
+        response = self.client.get('/portfolio/markets/test-market-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/markets/test-market/')
+        response = self.client.get('/portfolio/markets/test-market-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/markets/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/markets/test-market/')
+        response = self.client.get('/portfolio/markets/test-market-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
@@ -261,16 +261,16 @@ class MediaTypeProjectsListViewTest(TestCase):
             project.mediatype.add(mediatype)
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype/')
+        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype/')
+        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/media_types/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype/')
+        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
@@ -294,16 +294,16 @@ class RoleProjectsListViewTest(TestCase):
             project.role.add(role)
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/roles/test-role/')
+        response = self.client.get('/portfolio/roles/test-role-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/roles/test-role/')
+        response = self.client.get('/portfolio/roles/test-role-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/roles/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/roles/test-role/')
+        response = self.client.get('/portfolio/roles/test-role-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)

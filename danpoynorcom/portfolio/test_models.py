@@ -33,7 +33,7 @@ class ClientModelTest(TestCase):
     def test_get_absolute_url(self):
         client = Client.objects.get(id=1)
         # This will also fail if the urlconf is not defined.
-        self.assertEqual(client.get_absolute_url(), '/portfolio/clients/test-client/')
+        self.assertEqual(client.get_absolute_url(), '/portfolio/clients/test-client-projects/')
 
     def test_description_is_optional(self):
         client = Client.objects.get(id=1)
@@ -78,7 +78,7 @@ class IndustryModelTest(TestCase):
     def test_get_absolute_url(self):
         industry = Industry.objects.get(id=1)
         # This will also fail if the urlconf is not defined.
-        self.assertEqual(industry.get_absolute_url(), '/portfolio/industries/test-industry/')
+        self.assertEqual(industry.get_absolute_url(), '/portfolio/industries/test-industry-projects/')
 
     def test_description_is_optional(self):
         industry = Industry.objects.get(id=1)
@@ -121,7 +121,7 @@ class MarketModelTest(TestCase):
 
     def test_get_absolute_url(self):
         market = Market.objects.get(id=1)
-        self.assertEqual(market.get_absolute_url(), '/portfolio/markets/test-market/')
+        self.assertEqual(market.get_absolute_url(), '/portfolio/markets/test-market-projects/')
 
     def test_description_is_optional(self):
         market = Market.objects.get(id=1)
@@ -155,7 +155,7 @@ class MediaTypeModelTest(TestCase):
 
     def test_get_absolute_url(self):
         mediatype = MediaType.objects.get(id=1)
-        self.assertEqual(mediatype.get_absolute_url(), '/portfolio/media-types/test-mediatype/')
+        self.assertEqual(mediatype.get_absolute_url(), '/portfolio/media-types/test-mediatype-projects/')
 
     def test_description_is_optional(self):
         mediatype = MediaType.objects.get(id=1)
@@ -230,7 +230,7 @@ class RoleModelTest(TestCase):
 
     def test_get_absolute_url(self):
         role = Role.objects.get(id=1)
-        self.assertEqual(role.get_absolute_url(), '/portfolio/roles/test-role/')
+        self.assertEqual(role.get_absolute_url(), '/portfolio/roles/test-role-projects/')
 
     def test_description_is_optional(self):
         role = Role.objects.get(id=1)
