@@ -56,14 +56,19 @@ class ProjectItemAttachmentAdmin(admin.ModelAdmin):
 
 
 class ProjectItemAdmin(admin.ModelAdmin):
-    search_fields = ["name"]
-    list_display = ("id", "visible", "name", "status", "project_name", "item_order")
+    search_fields = ["name", "project__name"]
+    list_display = ("id", "visible", "name", "status", "project_name", "client_name", "item_order")
     list_display_links = ("name",)
     inlines = [ProjectItemImageInline, ProjectItemAttachmentInline]
 
     def project_name(self, obj):
         return obj.project.name if obj.project else "-"
     project_name.short_description = "Project"
+    project_name.admin_order_field = 'project__name'  # Allows column order sorting
+
+    def client_name(self, obj):
+        return obj.project.client.name if obj.project and obj.project.client else "-"
+    client_name.short_description = "Client"
 
 
 class ProjectAdmin(admin.ModelAdmin):
