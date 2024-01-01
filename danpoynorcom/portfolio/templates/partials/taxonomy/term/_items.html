@@ -3,7 +3,7 @@
     <div class="container">
         <section class="thumbnail-previews">
             <div class="container">
-                {% include "partials/pagination/_bar.html" with total_items=object.get_total_project_items %}
+                {% include "partials/pagination/_bar.html" with total_projects=total_projects count_type=count_type pages=pages %}
                 <ul id="portfolio-container">
                     {% for item in page_obj %}
                         <li class="shown portfolio-item">
@@ -31,6 +31,7 @@
                         <li>No project items to display in this taxonomy.</li>
                     {% endfor %}
                 </ul>
+                {% include "partials/pagination/_bar.html" with total_projects=total_projects count_type=count_type pages=pages %}
             </div>
         </section>
     </div>

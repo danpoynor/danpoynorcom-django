@@ -14,7 +14,7 @@ class PaginationMixin:
     view_name = None
     filter_field = None
 
-    def post(self, request):
+    def post(self, request, *args, **kwargs):
         # Get the selected order from the POST data
         order = request.POST.get('order', 'asc')
 
@@ -66,11 +66,14 @@ class PaginationMixin:
         # Paginate items
         page_obj, order, elided_page_range, total_projects = self.paginate_queryset(all_items, page, order)
 
+        # Convert the elided page range to a list
+        pages = list(elided_page_range)
+
         context.update({
             "paginator_template_name": self.paginator_template_name,
             "page_obj": page_obj,
             "order": order,
-            "pages": elided_page_range,
+            "pages": pages,
             "total_projects": total_projects,
             "count_type": self.count_type,  # Specify that we want to display the count of items
             "view_name": self.view_name,  # The name of the current view
