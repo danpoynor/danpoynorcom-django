@@ -167,8 +167,8 @@ def show_toolbar(request):
 
 
 DEBUG_TOOLBAR_CONFIG = {
-    # "SHOW_TOOLBAR_CALLBACK": show_toolbar,
-    'SHOW_TOOLBAR_CALLBACK': lambda r: False,  # Disables the debug toolbar
+    "SHOW_TOOLBAR_CALLBACK": show_toolbar,
+    # 'SHOW_TOOLBAR_CALLBACK': lambda r: False,  # Disables the debug toolbar
 }
 
 DEBUG_TOOLBAR_PANELS = [
