@@ -2595,7 +2595,7 @@ main.portfolio-page header.page-header {
   color: var(--t6);
   display: inline;
   font: normal 100%/1.6180339888 "Oswald", sans-serif;
-  margin-right: 0.4em;
+  margin-right: 0.25em;
 }
 .project-details h4:after {
   content: ":";
