@@ -42,7 +42,6 @@ urlpatterns = [
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project"),
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
 
-    path("legal-notice-to-picscout-getty-images-picscout-clients-cyveillance-you-are-prohibited-from-accessing-this-site/", views.getty_legal_notice, name="getty_legal_notice"),
     path("__debug__/", include("debug_toolbar.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),
 ]

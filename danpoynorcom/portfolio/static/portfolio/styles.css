@@ -2285,7 +2285,7 @@ article .stage .imvu-legal.imvu-legal2 {
   width: 560px;
 }
 .dpportfolio section.stage .fgw-lp-header {
-  background: url("/wp-content/themes/danpoynor-2017/images/adteractive-landing-page-images/fgw-lp-hdr.jpg");
+  background: url("/static/portfolio/images/adteractive-landing-page-images/fgw-lp-hdr.jpg");
   font-size: 26px;
   font-weight: bold;
   height: 52px;
@@ -3095,9 +3095,6 @@ main.portfolio-projects-page {
   padding-top: 2em;
 }
 .about-me-page .photo .container {
-  background-image: url(/wp-content/themes/danpoynor-2017/images/photos/about-page-03e.png);
-  background-position: center top;
-  background-repeat: no-repeat;
   padding: 0 2em;
   height: 516px;
 }
@@ -3276,13 +3273,6 @@ main.contact-page .contact-info p {
   .key-areas .taxonomy-categories h2 {
     margin-top: 1.33em;
   }
-}
-
-main.legal-notice-to-picscout-page header {
-  padding: 1em 0 0;
-}
-main.legal-notice-to-picscout-page section.content {
-  padding: 0 0 1em;
 }
 
 body.error404 main .page-content {

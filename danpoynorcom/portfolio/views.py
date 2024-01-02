@@ -84,10 +84,6 @@ def contact(request):
     return render(request, "pages/contact/page.html")
 
 
-def getty_legal_notice(request):
-    return render(request, "pages/legal-notice-to-picscout-getty-images-picscout-clients-cyveillance-you-are-prohibited-from-accessing-this-site/page.html")
-
-
 def clients(request):
     client_list = get_visible_objects(Client).order_by(Lower("name"))
     for client in client_list:
