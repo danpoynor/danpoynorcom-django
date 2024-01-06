@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "portfolio",
     "requests_panel",
     "flatblocks",
+    "django_minify_html",
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.contrib.flatpages.middleware.FlatpageFallbackMiddleware",
+    "django_minify_html.middleware.MinifyHtmlMiddleware",
 ]
 
 ROOT_URLCONF = "danpoynorcom.urls"
@@ -158,6 +160,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "portfolio/media")
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 if DEBUG:
+    # Note django_minify_html must be before debug_toolbar in INSTALLED_APPS
     INSTALLED_APPS += ["debug_toolbar"]
     MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
 

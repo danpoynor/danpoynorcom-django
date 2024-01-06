@@ -1,53 +1,22 @@
-#loading-container {
-    position: absolute;
-    top: 5em;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    transform-style: preserve-3d;
+$gap-between-images: .86rem;
+$max-description-lines: 5;
+$transition-opacity: opacity 0.5s ease-out;
 
-    .loading-indicator {
-        border: 6px solid var(--t3);
-        border-top: 6px solid var(--t3);
-        border-radius: 50%;
-        width: 48px;
-        height: 48px;
-        margin: 0 auto;
-        animation: loaderSpin 0.66s linear infinite;
-    }
-
-    &.hideme {
-        animation: scaleDownAndHide 0.66s ease-in-out forwards;
-    }
+@mixin transition-opacity {
+    transition: $transition-opacity;
 }
 
-#portfolio-container {
-    list-style-type: none;
-    // margin: -1em auto 4em !important; // -1em top to compensate for the li tags having 1em margin tops in each column. Fixes Safari rollover bug.
-    padding: .5em 0 0; // adding padding on sides with negative margins so shadows render with list items and don't 'pop' in after everything else
-    // opacity: 0;
-    transition: opacity var(--transition-speed) ease 800ms; // enables fade in
-    perspective: 1300px;
-    // These are temp till I figure out new masonry layout solution
+ul.grid {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    opacity: 0;
+    @include transition-opacity;
 
-    .project-overview-page & {
-        justify-content: center;
-    }
-
-    .portfolio-item {
-        width: var(--width-portfolio);
+    li.grid-item {
         background: var(--t7);
-        margin: .85em;
+        margin: $gap-between-images;
         padding: 0;
-        transform-style: preserve-3d;
-        opacity: 0;
-        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-
-        &.shown {
-            opacity: 1;
-        }
+        width: 258px;
 
         &:hover {
             figcaption {
@@ -66,71 +35,44 @@
                 opacity: 0;
             }
         }
-
-        &.animate {
-            transform: scale(0.6);
-            animation: scaleUp 0.66s ease-in-out forwards;
-        }
-
-        &.show {
-            opacity: 1;
-
-            li {
-                animation: fadeIn 0.66s ease-in-out 0s forwards; // needs to be 0s so Firefox doesn't show briefly then hide and fadein.
-            }
-        }
-
-        a {
-            color: #fff;
-
-            &:hover {
-                color: #fff;
-            }
-        }
     }
 
     figure {
         margin: 0 0 -1px 0;
         padding: 0;
-        transition-duration: .0s;
-        transition: all var(--transition-speed) ease-in-out;
-        backface-visibility: hidden; // avoid sublt shift whne opacity changes to 1
-        //
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
     img {
-        width: var(--width-portfolio);
         padding: 0;
-        backface-visibility: hidden; // avoid suble pixel shift bug when opacity changes to 1
-        transition: opacity var(--transition-speed) ease-in-out;
+        width: var(--width-portfolio-column);
     }
 
     figcaption {
         background-color: var(--t9);
-        font-size: .8125em; // 13 / 16
+        font-size: .8125em;
         margin: 0;
         position: relative;
         width: 100%
     }
 
-    .title,
+    h3,
     .sub-title {
         line-height: 1.38196601125;
         margin: 0;
         padding: .9em 1.2em 1.1em;
-        backface-visibility: hidden; // avoid subtle pixel shift bug when opacity changes to 1
     }
 
-    .title {
+    h3 {
         color: var(--t7);
         font: normal 100%/1.61803398875 'Source Sans Pro', sans-serif;
     }
 
     .sub-title {
-        background-color: var(--darkgrays-500);
-        padding: .8em 1.2em 1em; // because sometimes sub-titles look like they're sinking to me for some reason
+        background-color: var(--dark-grays-500);
+        color: var(--t7);
+        padding: .8em 1.2em 1em;
     }
 
     .text-wrapper {
@@ -140,7 +82,6 @@
         padding: .75em 1em;
         position: absolute;
         width: 100%;
-        transition: opacity var(--transition-speed) ease-in-out;
 
         p {
             margin: 0;
@@ -151,9 +92,13 @@
         }
 
         .description {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: $max-description-lines;
+
             span {
                 color: var(--t9);
-                //color: var(--t6);
             }
         }
 
@@ -161,20 +106,6 @@
             color: var(--t3);
             display: block;
             text-decoration: underline;
-        }
-    }
-}
-
-.project-overview-page {
-    #portfolio-container {
-        li {
-            width: var(--width-project-overview);
-
-            figure,
-            img,
-            .title {
-                width: var(--width-project-overview);
-            }
         }
     }
 }

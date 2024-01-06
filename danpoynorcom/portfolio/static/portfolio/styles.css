@@ -12,8 +12,8 @@
   --t12: rgba(154, 205, 50, .825);
   --t13: #f5faeb;
   --black: #000000;
-  --darkgrays-500: #5c5c5c;
-  --width-portfolio: 258px;
+  --dark-grays-500: #5c5c5c;
+  --width-portfolio-column: 258px;
   --width-project-overview: 320px;
   --transition-speed: .3s;
   --transition-speed-faster: .2s;
@@ -104,41 +104,6 @@ textarea {
     transform: rotate(360deg);
   }
 }
-.notice-bar {
-  font-family: arial, sans-serif;
-  font-size: 0.8em;
-  margin: 0;
-  background: #f8f5e1;
-  color: #666;
-  padding: 1em;
-  text-align: center;
-  position: relative;
-}
-.notice-bar p {
-  margin: 0;
-}
-.notice-bar p + p {
-  margin: 0.5em 0 0;
-}
-.notice-bar a {
-  color: #00f;
-}
-
-.unsupported-browser {
-  background: #fc0;
-  color: #000;
-  font-family: arial, sans-serif;
-  font-size: 0.9em;
-  margin: 0;
-  padding: 2em;
-  position: relative;
-  text-align: center;
-  z-index: 2050;
-}
-.unsupported-browser a {
-  color: #00f;
-}
-
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -1269,146 +1234,89 @@ li {
   padding-bottom: 0;
 }
 
-#loading-container {
-  position: absolute;
-  top: 5em;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  transform-style: preserve-3d;
-}
-#loading-container .loading-indicator {
-  border: 6px solid var(--t3);
-  border-top: 6px solid var(--t3);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-  animation: loaderSpin 0.66s linear infinite;
-}
-#loading-container.hideme {
-  animation: scaleDownAndHide 0.66s ease-in-out forwards;
-}
-
-#portfolio-container {
-  list-style-type: none;
-  padding: 0.5em 0 0;
-  transition: opacity var(--transition-speed) ease 800ms;
-  perspective: 1300px;
+ul.grid {
   display: flex;
-  flex-flow: row wrap;
-}
-.project-overview-page #portfolio-container {
-  justify-content: center;
-}
-#portfolio-container .portfolio-item {
-  width: var(--width-portfolio);
-  background: var(--t7);
-  margin: 0.85em;
-  padding: 0;
-  transform-style: preserve-3d;
+  flex-wrap: wrap;
   opacity: 0;
-  backface-visibility: hidden;
+  transition: opacity 0.5s ease-out;
 }
-#portfolio-container .portfolio-item.shown {
-  opacity: 1;
+ul.grid li.grid-item {
+  background: var(--t7);
+  margin: 0.86rem;
+  padding: 0;
+  width: 258px;
 }
-#portfolio-container .portfolio-item:hover figcaption {
+ul.grid li.grid-item:hover figcaption {
   background-color: var(--t3);
 }
-#portfolio-container .portfolio-item:hover .sub-title {
+ul.grid li.grid-item:hover .sub-title {
   background-color: rgba(255, 255, 255, 0.3);
 }
-#portfolio-container .portfolio-item:hover div.text-wrapper {
+ul.grid li.grid-item:hover div.text-wrapper {
   opacity: 1;
 }
-#portfolio-container .portfolio-item:hover img {
+ul.grid li.grid-item:hover img {
   opacity: 0;
 }
-#portfolio-container .portfolio-item.animate {
-  transform: scale(0.6);
-  animation: scaleUp 0.66s ease-in-out forwards;
-}
-#portfolio-container .portfolio-item.show {
-  opacity: 1;
-}
-#portfolio-container .portfolio-item.show li {
-  animation: fadeIn 0.66s ease-in-out 0s forwards;
-}
-#portfolio-container .portfolio-item a {
-  color: #fff;
-}
-#portfolio-container .portfolio-item a:hover {
-  color: #fff;
-}
-#portfolio-container figure {
+ul.grid figure {
   margin: 0 0 -1px 0;
   padding: 0;
-  transition-duration: 0s;
-  transition: all var(--transition-speed) ease-in-out;
-  backface-visibility: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#portfolio-container img {
-  width: var(--width-portfolio);
+ul.grid img {
   padding: 0;
-  backface-visibility: hidden;
-  transition: opacity var(--transition-speed) ease-in-out;
+  width: var(--width-portfolio-column);
 }
-#portfolio-container figcaption {
+ul.grid figcaption {
   background-color: var(--t9);
   font-size: 0.8125em;
   margin: 0;
   position: relative;
   width: 100%;
 }
-#portfolio-container .title,
-#portfolio-container .sub-title {
+ul.grid h3,
+ul.grid .sub-title {
   line-height: 1.3819660113;
   margin: 0;
   padding: 0.9em 1.2em 1.1em;
-  backface-visibility: hidden;
 }
-#portfolio-container .title {
+ul.grid h3 {
   color: var(--t7);
   font: normal 100%/1.6180339888 "Source Sans Pro", sans-serif;
 }
-#portfolio-container .sub-title {
-  background-color: var(--darkgrays-500);
+ul.grid .sub-title {
+  background-color: var(--dark-grays-500);
+  color: var(--t7);
   padding: 0.8em 1.2em 1em;
 }
-#portfolio-container .text-wrapper {
+ul.grid .text-wrapper {
   color: var(--t5);
   display: block;
   opacity: 0;
   padding: 0.75em 1em;
   position: absolute;
   width: 100%;
-  transition: opacity var(--transition-speed) ease-in-out;
 }
-#portfolio-container .text-wrapper p {
+ul.grid .text-wrapper p {
   margin: 0;
 }
-#portfolio-container .text-wrapper p + p {
+ul.grid .text-wrapper p + p {
   margin-top: 0.5em;
 }
-#portfolio-container .text-wrapper .description span {
+ul.grid .text-wrapper .description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+ul.grid .text-wrapper .description span {
   color: var(--t9);
 }
-#portfolio-container .text-wrapper .click-to-view {
+ul.grid .text-wrapper .click-to-view {
   color: var(--t3);
   display: block;
   text-decoration: underline;
-}
-
-.project-overview-page #portfolio-container li {
-  width: var(--width-project-overview);
-}
-.project-overview-page #portfolio-container li figure,
-.project-overview-page #portfolio-container li img,
-.project-overview-page #portfolio-container li .title {
-  width: var(--width-project-overview);
 }
 
 .sub-nav {
@@ -1867,15 +1775,15 @@ html:not(.js) .project-additional-samples,
   z-index: 1;
 }
 
-#portfolio-container li,
+.grid-item,
 .list-view .thumbnail {
   transition: box-shadow var(--transition-speed) ease-in-out;
 }
-#portfolio-container li,
+.grid-item,
 .list-view .thumbnail {
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.22);
 }
-#portfolio-container li:hover,
+.grid-item:hover,
 .list-view .thumbnail:hover {
   box-shadow: 0px 8px 56px rgba(0, 0, 0, 0.26);
 }
@@ -3145,96 +3053,6 @@ main.contact-page .contact-info div.center-center {
 }
 main.contact-page .contact-info p {
   margin-bottom: 0;
-}
-
-.hire-me-page section h1 {
-  font: normal 500 1.6180339888em/1 arial, sans-serif;
-}
-.hire-me-page section.rates .container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin: 0 -0.5em;
-}
-.hire-me-page .package {
-  border: 1px solid #ccc;
-  margin: 1em 0.5em;
-  padding: 1em;
-}
-.hire-me-page .package h1 {
-  color: black;
-  font: normal 500 1.6180339888em/1 arial, sans-serif;
-  margin: 0.5em 0.5em 0.5em;
-  text-align: center;
-}
-.hire-me-page .package h2 {
-  color: #333;
-  font: normal 500 1.2em/1 arial, sans-serif;
-  text-align: center;
-}
-.hire-me-page .package p.list-heading {
-  margin-bottom: 0;
-}
-.hire-me-page .package ul li {
-  padding: 0.25em 0.5em;
-}
-.hire-me-page .package .cta {
-  font: normal 500 1.6180339888em/1 arial, sans-serif;
-  padding: 1em 0;
-  text-align: center;
-}
-
-.resume-page .jobs-and-eduction-experience .container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.resume-page .job-profiles,
-.resume-page .education-profiles {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.resume-page .job-profiles li + li,
-.resume-page .education-profiles li + li {
-  border-top: 1px solid #ccc;
-  margin-top: 2em;
-  padding-top: 2em;
-}
-.resume-page .job-profiles h2,
-.resume-page .education-profiles h2 {
-  line-height: 1.4;
-}
-.resume-page .job-profiles h3,
-.resume-page .education-profiles h3 {
-  line-height: 1.4;
-}
-.resume-page .column {
-  background: var(--t7);
-  padding: 2em;
-}
-.resume-page .column.jobs-and-eduction {
-  flex: 0 0 72%;
-  order: 1;
-  margin-bottom: 2em;
-}
-.resume-page .column.jobs-and-eduction h2 {
-  margin-top: 0;
-}
-.resume-page .column.jobs-and-eduction h2 span {
-  color: var(--t5);
-  font-size: 0.5833333333em;
-}
-.resume-page .column.sidebar-info {
-  flex: 0 0 26%;
-  order: 2;
-  min-width: 210px;
-}
-.resume-page .column.sidebar-info p {
-  font-size: 0.875em;
-  margin: 0.75em 0;
 }
 
 .rate-page section + section {

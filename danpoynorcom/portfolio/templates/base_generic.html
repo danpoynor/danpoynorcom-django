@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <meta charset="UTF-8" />
         <title>
             {% block title %}
@@ -23,5 +25,54 @@
             {% endblock content %}
         </div>
         {% include "partials/_footer.html" %}
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                var elem = document.querySelector('.grid');
+                if (elem) {
+                    imagesLoaded(elem, function() {
+                        // init Isotope after all images have loaded
+                        var iso = new Isotope( elem, {
+                            itemSelector: '.grid-item',
+                            layoutMode: 'masonry',
+                            masonry: {
+                                columnWidth: '.grid-item'
+                            }
+                        });
+        
+                        // select all grid items
+                        var gridItems = document.querySelectorAll('.grid-item');
+        
+                        // set initial opacity to 0
+                        gridItems.forEach(function(item) {
+                            item.style.opacity = 0;
+                        });
+        
+                        // create observer
+                        var observer = new IntersectionObserver(function(entries) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                    // fade in observed elements that are in view
+                                    entry.target.style.transition = 'opacity 1.5s ease-out';
+                                    entry.target.style.opacity = 1;
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        });
+        
+                        // start observing each grid item
+                        gridItems.forEach(function(item) {
+                            observer.observe(item);
+                        });
+
+                        // show the grid after a delay
+                        setTimeout(function() {
+                            elem.style.opacity = 1;
+                        }, 250); // delay in milliseconds
+                    });
+                } else {
+                    console.error('Could not find element with class "grid"');
+                }
+            });
+        </script>
     </body>
 </html>

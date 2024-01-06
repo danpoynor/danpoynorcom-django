@@ -4,13 +4,13 @@
         <section class="thumbnail-previews">
             <div class="container">
                 {% include "partials/pagination/_bar.html" with total_projects=total_projects count_type=count_type %}
-                <ul id="portfolio-container">
+                <ul class="grid">
                     {% for item in page_obj %}
-                        <li class="shown portfolio-item">
+                        <li class="grid-item">
                             <a href="{% url 'project_detail' slug=item.slug %}">
                                 <figure>
                                     <figcaption>
-                                        <h3 class="title">{{ item.project.name }}</h3>
+                                        <h3>{{ item.project.name }}</h3>
                                         {% if item.project.name != item.name %}<p class="sub-title">{{ item.name }}</p>{% endif %}
                                         <div class="text-wrapper">
                                             <p class="description">
