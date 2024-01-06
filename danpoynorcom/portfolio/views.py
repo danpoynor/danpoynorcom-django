@@ -26,7 +26,10 @@ def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
 
 
 def home(request):
-    return render(request, "pages/home/page.html")
+    context = {
+        'title': 'Howdy World! It’s me, Dan Poynor – Designer, Developer, Director',
+    }
+    return render(request, "pages/home/page.html", context)
 
 
 def portfolio(request):
@@ -71,17 +74,24 @@ def portfolio(request):
         "selected_industries": selected_industries,
         "selected_media_types": selected_media_types,
         "selected_roles": selected_roles,
+        "title": "Portfolio",
     }
 
     return render(request, "pages/portfolio/page.html", context)
 
 
 def about(request):
-    return render(request, "pages/about/page.html")
+    context = {
+        'title': 'About Me',
+    }
+    return render(request, "pages/about/page.html", context)
 
 
 def contact(request):
-    return render(request, "pages/contact/page.html")
+    context = {
+        'title': 'Contact Me',
+    }
+    return render(request, "pages/contact/page.html", context)
 
 
 def clients(request):
@@ -95,7 +105,13 @@ def clients(request):
 
         client.project_item_count = visible_project_items.count()
 
-    return render(request, "pages/portfolio/clients/page.html", {"clients": client_list, "object": Client()})
+    context = {
+        "clients": client_list,
+        "object": Client(),
+        "title": "Portfolio: Client Name List",
+    }
+
+    return render(request, "pages/portfolio/clients/page.html", context)
 
 
 class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
@@ -140,6 +156,7 @@ def industries(request):
         "industries": industry_list,
         "markets": market_list,
         "object": Industry(),
+        "title": "Portfolio: Industry Name List",
     }
 
     return render(request, "pages/portfolio/industries/page.html", context)
@@ -199,7 +216,8 @@ def mediatypes(request):
     context = {
         "highlighted_media_types": highlighted_media_types,
         "mediatypes": mediatype_list,
-        "object": MediaType()
+        "object": MediaType(),
+        "title": "Portfolio: Media Type Name List",
     }
 
     return render(request, "pages/portfolio/media_types/page.html", context)
@@ -232,7 +250,8 @@ def roles(request):
     context = {
         "highlighted_roles": highlighted_roles,
         "roles": role_list,
-        "object": Role()
+        "object": Role(),
+        "title": "Portfolio: Role Name List",
     }
 
     return render(request, "pages/portfolio/roles/page.html", context)
@@ -294,6 +313,7 @@ class ProjectsView(PaginationMixin, TemplateView):
             "count_type": "projects",  # Specify that we want to display the count of projects
             "view_name": self.view_name,  # The name of the current view
             "taxonomy_item_slug": "",  # There is no taxonomy item for this view
+            "title": "Portfolio: Project Name List",
         })
 
         return context
