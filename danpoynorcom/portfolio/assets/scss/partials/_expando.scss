@@ -1,12 +1,16 @@
 .expando {
-    display: none; // initially hide expandos and use jQuery to make them visible after they've been opened if needed.
     background-color: var(--t7);
     margin: 0;
     padding: 0;
     position: relative;
 
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    // Bottom right triangle
     &::after {
-        border: .75em solid transparent;
+        border: .75rem solid transparent;
         border-top-color: transparentize(black, .86);
         border-left-color: transparentize(black, .86);
         content: '';
@@ -14,27 +18,11 @@
         width: 0px;
         position: absolute;
         right: 0px;
-        bottom: -1.5em;
+        bottom: -1.5rem;
     }
 
     + .expando {
-        margin: 1em 0 0 0;
-    }
-}
-
-.expando-content {
-    display: none;
-    width: 100%;
-}
-
-.expando-content-wrapper {
-    margin: -.25em 0 0;
-    padding: 0 1em 1em;
-
-    a {
-        &:hover {
-            filter: brightness(var(--hover-brightness-amount));
-        }
+        margin: 1rem 0 0 0;
     }
 }
 
@@ -42,31 +30,21 @@
     display: none;
 }
 
-html:not(.js),
-.no-js {
-    .expando-content {
-        display: block;
-    }
-
-    .expando,
-    .project-additional-samples {
-        display: block;
-    }
-}
-
+// Checkbox hack to show/hide content
 .expando-trigger {
     cursor: pointer;
-    padding: .75em 1em;
+    padding: .75rem 1rem .75rem 2.15rem;
 
+    // Arrow
     &::before {
         color: var(--t3);
         content: "\25B6\FE0E";
         display: inline-block;
-        font-size: .7em;
-        margin-right: .5em;
-        transition: all var(--transition-speed) ease-in-out;
-        ;
-        vertical-align: 12%;
+        font-size: .7rem;
+        transition: all 1s ease-in-out, transform var(--transition-speed-slow) ease-in-out .5s;
+        position: absolute;
+        left: 1.15rem;
+        top: .975rem;
     }
 
     &:hover {
@@ -76,39 +54,35 @@ html:not(.js),
     }
 }
 
-#tc {
-    .expando-trigger {
-        &::before {
-            content: none;
-        }
+.expando-content {
+    margin: -.25rem 0 0;
+    padding: 0 1rem 0;
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height .6s ease-in-out 0.3s, padding 0.5s ease-in-out .6s; // hiding content
 
-        &::after {
-            color: var(--t3);
-            content: "\25bc\FE0E";
-            display: inline-block;
-            font-size: .7em;
-            margin-left: .5em;
-            transition: all var(--transition-speed) ease-in-out;
-            ;
-            vertical-align: 12%;
-            position: absolute;
-            right: 1em;
-        }
-    }
-
-    &.expanded {
-        .expando-trigger {
-            &::after {
-                transform: rotate(-180deg);
-            }
+    a {
+        &:hover {
+            filter: brightness(var(--hover-brightness-amount));
         }
     }
 }
 
-.expando.expanded {
+// If .expando has checkbox checked attribute, show content
+.expando:has(.expando-toggle:checked) {
+    .expando-content {
+        opacity: 1;
+        max-height: 500px;
+        padding: 0 1rem 1rem;
+        transition: opacity 0.5s ease-in-out .6s, max-height 0.5s ease-in-out; // showing content
+    }
+
     .expando-trigger {
         &::before {
             transform: rotate(90deg);
+            transition: transform var(--transition-speed-faster) ease-in-out;
         }
     }
 }

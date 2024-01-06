@@ -19,6 +19,30 @@
                         {% include "partials/project_details/_project.html" with project=object.project %}
                         {% include "partials/project_details/_artifacts.html" with project=object %}
                         {% include "partials/project_details/_additional_samples.html" %}
+                        <script>
+                            // Run this code when the page has finished loading
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Define the IDs of your checkboxes
+                                const checkboxIds = ['client-details-toggle', 'project-details-toggle', 'project-artifacts-toggle'];
+
+                                checkboxIds.forEach(function(id) {
+                                    const checkbox = document.getElementById(id);
+
+                                    if (checkbox) {
+                                        // When the checkbox state changes, store the new state in localStorage
+                                        checkbox.addEventListener('change', function() {
+                                            localStorage.setItem(id, this.checked);
+                                        });
+
+                                        // When the page loads, set the checkbox state based on what's stored in localStorage
+                                        const storedState = localStorage.getItem(id);
+                                        if (storedState !== null) {
+                                            checkbox.checked = (storedState === 'true');
+                                        }
+                                    }
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </section>

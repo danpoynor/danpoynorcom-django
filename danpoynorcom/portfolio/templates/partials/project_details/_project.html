@@ -1,45 +1,46 @@
 {% load filters %}
 <section id="project-details" class="expando expanded">
-    <h3 class="expando-trigger">Project Info</h3>
+    <input type="checkbox" id="project-details-toggle" class="expando-toggle">
+    <label for="project-details-toggle" class="expando-label">
+        <h3 class="expando-trigger" aria-expanded="true">Project Info</h3>
+    </label>
     <div class="expando-content">
-        <div class="expando-content-wrapper">
-            {% if project.industry.all %}
-                <section class="project-industry-name">
-                    <h4>Industry</h4>
-                    <ul class="csv">
-                        {{ project.industry.all|join_as_links:'industry_detail' }}
-                    </ul>
-                </section>
-            {% endif %}
-            {% if project.mediatype.all %}
-                <section class="project-platorm-name">
-                    <h4>Media Type</h4>
-                    <ul class="csv">
-                        {{ project.mediatype.all|join_as_links:'mediatype_detail' }}
-                    </ul>
-                </section>
-            {% endif %}
-            {% if project.role.all %}
-                <section class="project-role-names">
-                    <h4>Role</h4>
-                    <ul class="csv">
-                        {{ project.role.all|join_as_links:'role_detail' }}
-                    </ul>
-                </section>
-            {% endif %}
-            {% if project.year %}
-                <section class="project-platorm-name">
-                    <h4>Year</h4>
-                    <p>{{ project.year }}</p>
-                </section>
-            {% endif %}
-            {% if project.description %}
-                <section class="project-description">
-                    <h4>Project Description</h4>
-                    <br />
-                    {{ project.description|safe }}
-                </section>
-            {% endif %}
-        </div>
+        {% if project.industry.all %}
+            <section class="project-industry-name">
+                <h4>Industry</h4>
+                <ul class="csv">
+                    {{ project.industry.all|join_as_links:'industry_detail' }}
+                </ul>
+            </section>
+        {% endif %}
+        {% if project.mediatype.all %}
+            <section class="project-platorm-name">
+                <h4>Media Type</h4>
+                <ul class="csv">
+                    {{ project.mediatype.all|join_as_links:'mediatype_detail' }}
+                </ul>
+            </section>
+        {% endif %}
+        {% if project.role.all %}
+            <section class="project-role-names">
+                <h4>Role</h4>
+                <ul class="csv">
+                    {{ project.role.all|join_as_links:'role_detail' }}
+                </ul>
+            </section>
+        {% endif %}
+        {% if project.year %}
+            <section class="project-platorm-name">
+                <h4>Year</h4>
+                <p>{{ project.year }}</p>
+            </section>
+        {% endif %}
+        {% if project.description %}
+            <section class="project-description">
+                <h4>Project Description</h4>
+                <br />
+                {{ project.description|safe }}
+            </section>
+        {% endif %}
     </div>
 </section>

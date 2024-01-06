@@ -1,22 +1,26 @@
 $gap-between-images: .86rem;
 $max-description-lines: 5;
-$transition-opacity: opacity 0.5s ease-out;
+$transition-opacity: opacity .5s ease-out;
+$transition-transform: transform .5s ease-out;
 
-@mixin transition-opacity {
-    transition: $transition-opacity;
+@mixin transition-opacity-transform {
+    transition: $transition-opacity, $transition-transform;
 }
 
 ul.grid {
-    display: flex;
-    flex-wrap: wrap;
-    opacity: 0;
-    @include transition-opacity;
-
     li.grid-item {
         background: var(--t7);
         margin: $gap-between-images;
         padding: 0;
         width: 258px;
+        transform: translateY(50px) scale(0.5);
+        opacity: 0;
+        @include transition-opacity-transform;
+
+        &.in-view {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
 
         &:hover {
             figcaption {
@@ -25,14 +29,6 @@ ul.grid {
 
             .sub-title {
                 background-color: rgba(255, 255, 255, 0.3) // filter: brightness(var(--hover-brightness-amount));
-            }
-
-            div.text-wrapper {
-                opacity: 1;
-            }
-
-            img {
-                opacity: 0;
             }
         }
     }

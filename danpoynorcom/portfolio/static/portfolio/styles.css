@@ -1234,29 +1234,24 @@ li {
   padding-bottom: 0;
 }
 
-ul.grid {
-  display: flex;
-  flex-wrap: wrap;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
 ul.grid li.grid-item {
   background: var(--t7);
   margin: 0.86rem;
   padding: 0;
   width: 258px;
+  transform: translateY(50px) scale(0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+ul.grid li.grid-item.in-view {
+  transform: translateY(0) scale(1);
+  opacity: 1;
 }
 ul.grid li.grid-item:hover figcaption {
   background-color: var(--t3);
 }
 ul.grid li.grid-item:hover .sub-title {
   background-color: rgba(255, 255, 255, 0.3);
-}
-ul.grid li.grid-item:hover div.text-wrapper {
-  opacity: 1;
-}
-ul.grid li.grid-item:hover img {
-  opacity: 0;
 }
 ul.grid figure {
   margin: 0 0 -1px 0;
@@ -1667,14 +1662,16 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 }
 
 .expando {
-  display: none;
   background-color: var(--t7);
   margin: 0;
   padding: 0;
   position: relative;
 }
+.expando input[type=checkbox] {
+  display: none;
+}
 .expando::after {
-  border: 0.75em solid transparent;
+  border: 0.75rem solid transparent;
   border-top-color: rgba(0, 0, 0, 0.14);
   border-left-color: rgba(0, 0, 0, 0.14);
   content: "";
@@ -1682,77 +1679,56 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   width: 0px;
   position: absolute;
   right: 0px;
-  bottom: -1.5em;
+  bottom: -1.5rem;
 }
 .expando + .expando {
-  margin: 1em 0 0 0;
-}
-
-.expando-content {
-  display: none;
-  width: 100%;
-}
-
-.expando-content-wrapper {
-  margin: -0.25em 0 0;
-  padding: 0 1em 1em;
-}
-.expando-content-wrapper a:hover {
-  filter: brightness(var(--hover-brightness-amount));
+  margin: 1rem 0 0 0;
 }
 
 .project-additional-samples {
   display: none;
 }
 
-html:not(.js) .expando-content,
-.no-js .expando-content {
-  display: block;
-}
-html:not(.js) .expando,
-html:not(.js) .project-additional-samples,
-.no-js .expando,
-.no-js .project-additional-samples {
-  display: block;
-}
-
 .expando-trigger {
   cursor: pointer;
-  padding: 0.75em 1em;
+  padding: 0.75rem 1rem 0.75rem 2.15rem;
 }
 .expando-trigger::before {
   color: var(--t3);
   content: "▶︎";
   display: inline-block;
-  font-size: 0.7em;
-  margin-right: 0.5em;
-  transition: all var(--transition-speed) ease-in-out;
-  vertical-align: 12%;
+  font-size: 0.7rem;
+  transition: all 1s ease-in-out, transform var(--transition-speed-slow) ease-in-out 0.5s;
+  position: absolute;
+  left: 1.15rem;
+  top: 0.975rem;
 }
 .expando-trigger:hover::before {
   filter: brightness(var(--hover-brightness-amount));
 }
 
-#tc .expando-trigger::before {
-  content: none;
+.expando-content {
+  margin: -0.25rem 0 0;
+  padding: 0 1rem 0;
+  width: 100%;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.6s ease-in-out 0.3s, padding 0.5s ease-in-out 0.6s;
 }
-#tc .expando-trigger::after {
-  color: var(--t3);
-  content: "▼︎";
-  display: inline-block;
-  font-size: 0.7em;
-  margin-left: 0.5em;
-  transition: all var(--transition-speed) ease-in-out;
-  vertical-align: 12%;
-  position: absolute;
-  right: 1em;
-}
-#tc.expanded .expando-trigger::after {
-  transform: rotate(-180deg);
+.expando-content a:hover {
+  filter: brightness(var(--hover-brightness-amount));
 }
 
-.expando.expanded .expando-trigger::before {
+.expando:has(.expando-toggle:checked) .expando-content {
+  opacity: 1;
+  max-height: 500px;
+  padding: 0 1rem 1rem;
+  transition: opacity 0.5s ease-in-out 0.6s, max-height 0.5s ease-in-out;
+}
+.expando:has(.expando-toggle:checked) .expando-trigger::before {
   transform: rotate(90deg);
+  transition: transform var(--transition-speed-faster) ease-in-out;
 }
 
 .contact-form {
