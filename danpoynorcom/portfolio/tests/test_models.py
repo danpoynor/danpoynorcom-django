@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
+from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
 
 # Run tests with one of these commands:
 # `python manage.py test portfolio`
