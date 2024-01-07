@@ -3,6 +3,8 @@ from django.views import generic
 from django.views.generic import TemplateView
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
+import inflect
+import re
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
@@ -25,9 +27,60 @@ def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
     return taxonomy_objects
 
 
+def capitalize_special_words(word):
+    special_words = {
+        "aol": "AOL",
+        "specification": "Specifications",
+        "html": "HTML",
+        "pop": "POP",
+        "video": "Video Editing",
+        "ux": "UX",
+        "cx": "CX",
+        "ui": "UI",
+        "uc": "UC",
+        "hp": "HP",
+        "fm": "FM",
+        "fyi": "FYI",
+        "vdo": "VDO",
+        "adp": "ADP",
+        "khn": "KHN",
+        "ppc": "PPC",
+        "rgb": "RGB",
+        "kcea": "KCEA",
+        "cnet": "CNET",
+        "cort": "CORT",
+        "imvu": "IMVU",
+        "calarts": "CalArts",
+        "calfinder": "CalFinder",
+        "blufire": "BluFire",
+        "tixnix": "TixNix",
+        "singlefeed": "SingleFeed",
+        "adbrite": "AdBrite",
+        "bactrack": "BACtrack",
+        "inetdvd": "iNetDVD",
+        "jarmedia": "JarMedia",
+        "echosign": "EchoSign",
+        "workbright": "WorkBright",
+        "businessuites": "BusinesSuites",
+        "tacitlogic": "TacitLogic",
+        "peoplesoft": "PeopleSoft",
+        "myofferpal": "MyOfferPal",
+        "grandmutual": "GrandMutual",
+        "macphee": "MacPhee",
+        "webex": "WebEx",
+        "stellaservice": "StellaService",
+        "quantbench": "QuantBench",
+        "nextcustomer": "NextCustomer",
+        "reallygreatrate": "ReallyGreatRate",
+        "homerun.com": "HomeRun.com",
+        "fiftyflowers.com": "FiftyFlowers.com"
+    }
+    return special_words.get(word.lower(), word)
+
+
 def home(request):
     context = {
-        'title': 'Howdy World! It’s me, Dan Poynor – Designer, Developer, Director',
+        'title': 'Dan Poynor - Visual, UX, Web Design & Development | Austin, TX',
     }
     return render(request, "pages/home/page.html", context)
 
@@ -74,7 +127,7 @@ def portfolio(request):
         "selected_industries": selected_industries,
         "selected_media_types": selected_media_types,
         "selected_roles": selected_roles,
-        "title": "Portfolio",
+        "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry and Medium",
     }
 
     return render(request, "pages/portfolio/page.html", context)
@@ -108,7 +161,7 @@ def clients(request):
     context = {
         "clients": client_list,
         "object": Client(),
-        "title": "Portfolio: Client Name List",
+        "title": "Startups to Global Brands: My Extensive Design & Development Client List",
     }
 
     return render(request, "pages/portfolio/clients/page.html", context)
@@ -121,6 +174,20 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
     view_name = "client_page_order"
     filter_field = "client"
     paginator_template_name = "partials/pagination/_paginator.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add the title to the context
+        client_name = self.object.name.title()
+        words = re.split(r'(\s|/)', client_name)
+        words = [capitalize_special_words(word) for word in words]
+        client_name = "".join(words)
+        # Check if ".Com" is in the name and replace it with ".com"
+        if ".Com" in client_name:
+            client_name = client_name.replace(".Com", ".com")
+        context['title'] = f'{client_name} Design and Development Projects | Austin, Texas'
+        return context
 
 
 def industries(request):
@@ -156,7 +223,7 @@ def industries(request):
         "industries": industry_list,
         "markets": market_list,
         "object": Industry(),
-        "title": "Portfolio: Industry Name List",
+        "title": "Making a Mark in Every Market: My Design & Development Industry List",
     }
 
     return render(request, "pages/portfolio/industries/page.html", context)
@@ -169,6 +236,20 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVie
     view_name = "industry_page_order"
     filter_field = "industry"
     paginator_template_name = "partials/pagination/_paginator.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add the title to the context
+        industry_name = self.object.name.title()
+        words = re.split(r'(\s|/)', industry_name)
+        words = [capitalize_special_words(word) for word in words]
+        industry_name = "".join(words)
+        # Check if "Projects" is already in the name
+        if "Projects" in industry_name:
+            industry_name = industry_name.replace("Projects", "").strip()
+        context['title'] = f'{industry_name} Design Projects | Austin, Texas'
+        return context
 
 
 def markets(request):
@@ -192,6 +273,13 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
     view_name = "market_page_order"
     filter_field = "market"
     paginator_template_name = "partials/pagination/_paginator.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add the title to the context
+        context['title'] = f'Portfolio Market: {self.object.name}'
+        return context
 
 
 def mediatypes(request):
@@ -217,7 +305,8 @@ def mediatypes(request):
         "highlighted_media_types": highlighted_media_types,
         "mediatypes": mediatype_list,
         "object": MediaType(),
-        "title": "Portfolio: Media Type Name List",
+        # "title": "From Pixels to Print & Beyond: Mastering the Medium for Engaging Design & Development",
+        "title": "Pixels to Print & Beyond: Engaging Design & Development Mastery",
     }
 
     return render(request, "pages/portfolio/media_types/page.html", context)
@@ -230,6 +319,32 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVi
     view_name = "mediatype_page_order"
     filter_field = "mediatype"
     paginator_template_name = "partials/pagination/_paginator.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Create an engine
+        p = inflect.engine()
+        # Try to convert plural to singular
+        singular_name = p.singular_noun(self.object.name)
+        # If singular_noun returned False, use the original name
+        if not singular_name:
+            singular_name = self.object.name
+        else:
+            # Capitalize the first letter of each word
+            singular_name = singular_name.title()
+        # Replace "Displays" with "Display"
+        singular_name = singular_name.replace("Displays", "Display")
+        # Replace words
+        words = singular_name.split()
+        words = [capitalize_special_words(word) for word in words]
+        singular_name = " ".join(words)
+        # Check if "Design" is already in the name
+        if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
+            context['title'] = f'{singular_name} Portfolio | Austin, Texas'
+        else:
+            context['title'] = f'{singular_name} Designer Portfolio | Austin, Texas'
+        return context
 
 
 def roles(request):
@@ -251,7 +366,7 @@ def roles(request):
         "highlighted_roles": highlighted_roles,
         "roles": role_list,
         "object": Role(),
-        "title": "Portfolio: Role Name List",
+        "title": "Concept to Creation: My Diverse Design & Development Experience",
     }
 
     return render(request, "pages/portfolio/roles/page.html", context)
@@ -264,6 +379,17 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
     view_name = "role_page_order"
     filter_field = "role"
     paginator_template_name = "partials/pagination/_paginator.html"
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add the title to the context
+        role_name = self.object.name.title()
+        words = re.split(r'(\s|/)', role_name)
+        words = [capitalize_special_words(word) for word in words]
+        role_name = "".join(words)
+        context['title'] = f'{role_name} Portfolio | Austin, Texas'
+        return context
 
 
 class ProjectsView(PaginationMixin, TemplateView):
@@ -313,7 +439,7 @@ class ProjectsView(PaginationMixin, TemplateView):
             "count_type": "projects",  # Specify that we want to display the count of projects
             "view_name": self.view_name,  # The name of the current view
             "taxonomy_item_slug": "",  # There is no taxonomy item for this view
-            "title": "Portfolio: Project Name List",
+            "title": "Design & Development Results: Solving Problems, Crafting Solutions",
         })
 
         return context
@@ -326,6 +452,7 @@ class ProjectItemsView(PrevNextMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["items"] = self.object.items.filter(visible=True)
+        context["title"] = f'Project Items: {self.object.name}'
         return context
 
 
@@ -340,4 +467,11 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, generic.DetailView):
         context = super().get_context_data(**kwargs)
         project = self.object.project
         context["items"] = project.get_ordered_items().filter(visible=True, project__visible=True)
+
+        # Check if project item name and project name are the same
+        if self.object.name == project.name:
+            context['title'] = f'Project Detail: {self.object.name}'
+        else:
+            context['title'] = f'Project Detail: {project.name}: {self.object.name}'
+
         return context

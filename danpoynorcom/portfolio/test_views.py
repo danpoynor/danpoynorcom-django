@@ -250,33 +250,56 @@ class MediaTypeProjectsListViewTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up data for the whole TestCase
-        mediatype = MediaType.objects.create(name='Test Media Type', slug='test-mediatype')
-        number_of_projects = 5
-        for project_id in range(number_of_projects):
-            project = Project.objects.create(
-                name=f'Project {project_id}',
-                slug=f'project-{project_id}',
-                visible=True,
-            )
-            project.mediatype.add(mediatype)
+        mediatype_names = ['Children', 'Test Media Type', 'Designer', 'Displays', 'Aol', 'Specifications', 'Html', 'Pop', 'Videos']
+        for name in mediatype_names:
+            mediatype = MediaType.objects.create(name=name, slug=name.lower().replace(' ', '-'))
+            number_of_projects = 5
+            for project_id in range(number_of_projects):
+                project = Project.objects.create(
+                    name=f'{name} Project {project_id}',
+                    slug=f"{name.lower().replace(' ', '-')}-project-{project_id}",
+                    visible=True,
+                )
+                project.mediatype.add(mediatype)
 
     def test_view_url_exists_at_desired_location(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
+        response = self.client.get('/portfolio/media-types/test-media-type-projects/')
         self.assertEqual(response.status_code, 200)
 
     def test_view_uses_correct_template(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
+        response = self.client.get('/portfolio/media-types/test-media-type-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'pages/portfolio/media_types/term_items_page.html')
 
     def test_context_data(self):
-        response = self.client.get('/portfolio/media-types/test-mediatype-projects/')
+        response = self.client.get('/portfolio/media-types/test-media-type-projects/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
         self.assertTrue('pages' in response.context)
         self.assertTrue('total_projects' in response.context)
         self.assertTrue('count_type' in response.context)
+
+    def check_title(self, url, expected_title):
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue('title' in response.context)
+        self.assertEqual(response.context['title'], expected_title)
+
+    def test_title_processing(self):
+        self.check_title('/portfolio/media-types/children-projects/', 'Child Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/test-media-type-projects/', 'Test Media Type Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/designer-projects/', 'Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/displays-projects/', 'Display Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/aol-projects/', 'AOL Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/specifications-projects/', 'Specifications Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/html-projects/', 'HTML Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/pop-projects/', 'POP Designer Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/videos-projects/', 'Video Editing Portfolio | Austin, Texas')
+
+    def test_nonexistent_media_type(self):
+        response = self.client.get('/portfolio/media-types/nonexistent-projects/')
+        self.assertEqual(response.status_code, 404)
 
 
 class RoleProjectsListViewTest(TestCase):
