@@ -186,7 +186,13 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
         # Check if ".Com" is in the name and replace it with ".com"
         if ".Com" in client_name:
             client_name = client_name.replace(".Com", ".com")
-        context['title'] = f'{client_name} Design and Development Projects | Austin, Texas'
+
+        # Get the page number and order from the request's query parameters
+        page = self.kwargs.get('page', '1')
+        order = self.kwargs.get('order', 'asc')
+        order_text = "Asc" if order == "asc" else "Desc"
+
+        context['title'] = f'{client_name} Design and Development Projects | Austin, Texas - Page {page} {order_text}'
         return context
 
 
@@ -248,7 +254,13 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVie
         # Check if "Projects" is already in the name
         if "Projects" in industry_name:
             industry_name = industry_name.replace("Projects", "").strip()
-        context['title'] = f'{industry_name} Design Projects | Austin, Texas'
+
+        # Get the page number and order from the request's query parameters
+        page = self.kwargs.get('page', '1')
+        order = self.kwargs.get('order', 'asc')
+        order_text = "Asc" if order == "asc" else "Desc"
+
+        context['title'] = f'{industry_name} Design Projects | Austin, Texas - Page {page} {order_text}'
         return context
 
 
@@ -339,11 +351,17 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVi
         words = singular_name.split()
         words = [capitalize_special_words(word) for word in words]
         singular_name = " ".join(words)
+
+        # Get the page number and order from the URL path parameters
+        page = self.kwargs.get('page', '1')
+        order = self.kwargs.get('order', 'asc')
+        order_text = "Asc" if order == "asc" else "Desc"
+
         # Check if "Design" is already in the name
         if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
-            context['title'] = f'{singular_name} Portfolio | Austin, Texas'
+            context['title'] = f'{singular_name} Portfolio | Austin, Texas - Page {page} {order_text}'
         else:
-            context['title'] = f'{singular_name} Designer Portfolio | Austin, Texas'
+            context['title'] = f'{singular_name} Designer Portfolio | Austin, Texas - Page {page} {order_text}'
         return context
 
 
@@ -388,7 +406,13 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
         words = re.split(r'(\s|/)', role_name)
         words = [capitalize_special_words(word) for word in words]
         role_name = "".join(words)
-        context['title'] = f'{role_name} Portfolio | Austin, Texas'
+
+        # Get the page number and order from the URL path parameters
+        page = self.kwargs.get('page', '1')
+        order = self.kwargs.get('order', 'asc')
+        order_text = "Asc" if order == "asc" else "Desc"
+
+        context['title'] = f'{role_name} Portfolio | Austin, Texas - Page {page} {order_text}'
         return context
 
 
@@ -422,14 +446,18 @@ class ProjectsView(PaginationMixin, TemplateView):
             has_visible_items=True
         )
 
-        # Get the page number from the URL
-        page = self.kwargs.get("page")
+        # Get the page number and order from the URL
+        page = self.kwargs.get("page", '1')
 
         # Get the order from the URL, default to 'asc' if not provided
         order = self.kwargs.get("order", "asc")
 
         # Paginate items
         page_obj, order, elided_page_range, total_projects = self.paginate_queryset(project_list, page, order)
+
+        # Create a title that includes the page number and order
+        order_text = "Asc" if order == "asc" else "Desc"
+        title = f"Design & Development Project Successes - Page {page} {order_text}"
 
         context.update({
             "page_obj": page_obj,
@@ -439,7 +467,7 @@ class ProjectsView(PaginationMixin, TemplateView):
             "count_type": "projects",  # Specify that we want to display the count of projects
             "view_name": self.view_name,  # The name of the current view
             "taxonomy_item_slug": "",  # There is no taxonomy item for this view
-            "title": "Design & Development Results: Solving Problems, Crafting Solutions",
+            "title": title,
         })
 
         return context
