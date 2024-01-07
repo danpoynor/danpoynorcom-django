@@ -1,3 +1,4 @@
+import django
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
@@ -8,6 +9,11 @@ try:
 except ImportError:
     # if the module is not installed, use the "portfolio" module in the current directory
     from . import views
+
+
+def custom_page_not_found(request):
+    return django.views.defaults.page_not_found(request, None)
+
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -41,6 +47,9 @@ urlpatterns = [
 
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project"),
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
+
+    # Test the 404 page at http://localhost:8000/404/
+    path("404/", custom_page_not_found),
 
     path("__debug__/", include("debug_toolbar.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),

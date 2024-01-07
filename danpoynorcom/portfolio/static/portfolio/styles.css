@@ -3069,8 +3069,12 @@ main.contact-page .contact-info p {
   }
 }
 
-body.error404 main .page-content {
+main.error-404-page .page-content {
   margin-top: 1em;
+}
+main.error-404-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 header.error-message.plugin-not-active h1 {
