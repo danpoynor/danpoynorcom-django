@@ -20,7 +20,7 @@ load_dotenv()
 
 # Access environment variables
 DJANGO_SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
-DJANGO_DEBUG = os.getenv("DJANGO_DEBUG")
+DJANGO_DEBUG = os.getenv('DJANGO_DEBUG') == 'True'  # Convert string to boolean
 DJANGO_ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS")
 DJANGO_STATIC_URL = os.getenv("DJANGO_STATIC_URL")
 DJANGO_DB_NAME = os.getenv("DJANGO_DB_NAME")
@@ -71,6 +71,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.contrib.flatpages.middleware.FlatpageFallbackMiddleware",
     "django_minify_html.middleware.MinifyHtmlMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "danpoynorcom.urls"
@@ -78,7 +79,7 @@ ROOT_URLCONF = "danpoynorcom.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -153,6 +154,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "portfolio/media")
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
