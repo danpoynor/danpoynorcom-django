@@ -58,6 +58,7 @@
 
     .thumbnail {
         background-color: var(--t7);
+        box-shadow: var(--box-shadow-initial);
         height: 220px;
         margin-right: 1.5em;
         overflow: hidden;
@@ -68,6 +69,7 @@
 
         &:hover,
         &.hover-class {
+            box-shadow: var(--box-shadow-hover);
 
             // for jquery
             img {

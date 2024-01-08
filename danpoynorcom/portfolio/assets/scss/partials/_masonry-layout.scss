@@ -2,20 +2,22 @@ $gap-between-images: .86rem;
 $max-description-lines: 5;
 $transition-opacity: opacity .5s ease-out;
 $transition-transform: transform .5s ease-out;
+$transition-box-shadow: box-shadow 0.3s ease-in-out;
 
-@mixin transition-opacity-transform {
-    transition: $transition-opacity, $transition-transform;
+@mixin transition-properties {
+    transition: $transition-opacity, $transition-transform, $transition-box-shadow;
 }
 
 ul.grid {
     li.grid-item {
         background: var(--t7);
+        box-shadow: var(--box-shadow-initial);
         margin: $gap-between-images;
         padding: 0;
         width: 258px;
         transform: translateY(50px) scale(0.5);
         opacity: 0;
-        @include transition-opacity-transform;
+        @include transition-properties;
 
         &.in-view {
             transform: translateY(0) scale(1);
@@ -23,6 +25,9 @@ ul.grid {
         }
 
         &:hover {
+            box-shadow: var(--box-shadow-hover);
+            transform: scale(1.10);
+
             figcaption {
                 background-color: var(--t3);
             }

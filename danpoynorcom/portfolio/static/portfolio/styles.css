@@ -22,6 +22,8 @@
   --hover-brightness-amount: 150%;
   --hover-brightness-amount-less: 120%;
   --portfolio-img-outline: #eee;
+  --box-shadow-initial: 0px 0px 32px rgba(0, 0, 0, .22);
+  --box-shadow-hover: 0px 8px 56px rgba(0, 0, 0, .26);
 }
 
 /*
@@ -1236,16 +1238,21 @@ li {
 
 ul.grid li.grid-item {
   background: var(--t7);
+  box-shadow: var(--box-shadow-initial);
   margin: 0.86rem;
   padding: 0;
   width: 258px;
   transform: translateY(50px) scale(0.5);
   opacity: 0;
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, box-shadow 0.3s ease-in-out;
 }
 ul.grid li.grid-item.in-view {
   transform: translateY(0) scale(1);
   opacity: 1;
+}
+ul.grid li.grid-item:hover {
+  box-shadow: var(--box-shadow-hover);
+  transform: scale(1.1);
 }
 ul.grid li.grid-item:hover figcaption {
   background-color: var(--t3);
@@ -1685,10 +1692,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   margin: 1rem 0 0 0;
 }
 
-.project-additional-samples {
-  display: none;
-}
-
 .expando-trigger {
   cursor: pointer;
   padding: 0.75rem 1rem 0.75rem 2.15rem;
@@ -1749,19 +1752,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   position: relative;
   overflow: hidden;
   z-index: 1;
-}
-
-.grid-item,
-.list-view .thumbnail {
-  transition: box-shadow var(--transition-speed) ease-in-out;
-}
-.grid-item,
-.list-view .thumbnail {
-  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.22);
-}
-.grid-item:hover,
-.list-view .thumbnail:hover {
-  box-shadow: 0px 8px 56px rgba(0, 0, 0, 0.26);
 }
 
 .entry-footer {
@@ -1884,12 +1874,16 @@ body > footer .badges li.photoshop {
 }
 .list-view .thumbnail {
   background-color: var(--t7);
+  box-shadow: var(--box-shadow-initial);
   height: 220px;
   margin-right: 1.5em;
   overflow: hidden;
   position: relative;
   width: 258px;
   flex: 0 0 258px;
+}
+.list-view .thumbnail:hover, .list-view .thumbnail.hover-class {
+  box-shadow: var(--box-shadow-hover);
 }
 .list-view .thumbnail:hover img, .list-view .thumbnail.hover-class img {
   left: -1.75em;
