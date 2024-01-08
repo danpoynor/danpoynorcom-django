@@ -1,7 +1,8 @@
+from bakery.views import BuildableTemplateView
 import re
 import inflect
+from bakery.views import BuildableDetailView, BuildableTemplateView
 from django.shortcuts import render, redirect
-from django.views import generic
 from django.views.generic import TemplateView
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
@@ -78,96 +79,117 @@ def capitalize_special_words(word):
     return special_words.get(word.lower(), word)
 
 
-def home(request):
-    context = {
-        'title': 'Dan Poynor - Visual, UX, Web Design & Development | Austin, TX',
-    }
-    return render(request, "pages/home/page.html", context)
+class HomeView(BuildableTemplateView):
+    template_name = "pages/home/page.html"
+    build_path = 'index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Dan Poynor - Visual, UX, Web Design & Development | Austin, TX'
+        return context
 
 
-def portfolio(request):
-    selected_clients = Client.objects.filter(id__in=SELECTED_CLIENT_IDS)
-    for client in selected_clients:
-        visible_project_items = ProjectItem.objects.filter(
-            project__client=client,
-            project__visible=True,
-            visible=True
-        )
-        client.project_item_count = visible_project_items.count()
+class PortfolioView(BuildableTemplateView):
+    template_name = "pages/portfolio/page.html"
+    build_path = 'portfolio.html'
 
-    selected_industries = Industry.objects.filter(id__in=SELECTED_INDUSTRY_IDS)
-    for industry in selected_industries:
-        visible_project_items = ProjectItem.objects.filter(
-            project__industry=industry,
-            project__visible=True,
-            visible=True
-        )
-        industry.project_item_count = visible_project_items.count()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-    selected_media_types = MediaType.objects.filter(id__in=SELECTED_MEDIA_TYPE_IDS)
-    for mediatype in selected_media_types:
-        visible_project_items = ProjectItem.objects.filter(
-            project__mediatype=mediatype,
-            project__visible=True,
-            visible=True
-        )
-        mediatype.project_item_count = visible_project_items.count()
+        selected_clients = Client.objects.filter(id__in=SELECTED_CLIENT_IDS)
+        for client in selected_clients:
+            visible_project_items = ProjectItem.objects.filter(
+                project__client=client,
+                project__visible=True,
+                visible=True
+            )
+            client.project_item_count = visible_project_items.count()
 
-    selected_roles = Role.objects.filter(id__in=SELECTED_ROLE_IDS)
-    for role in selected_roles:
-        visible_project_items = ProjectItem.objects.filter(
-            project__role=role,
-            project__visible=True,
-            visible=True
-        )
-        role.project_item_count = visible_project_items.count()
+        selected_industries = Industry.objects.filter(id__in=SELECTED_INDUSTRY_IDS)
+        for industry in selected_industries:
+            visible_project_items = ProjectItem.objects.filter(
+                project__industry=industry,
+                project__visible=True,
+                visible=True
+            )
+            industry.project_item_count = visible_project_items.count()
 
-    context = {
-        "selected_clients": selected_clients,
-        "selected_industries": selected_industries,
-        "selected_media_types": selected_media_types,
-        "selected_roles": selected_roles,
-        "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry & Medium",
-    }
+        selected_media_types = MediaType.objects.filter(id__in=SELECTED_MEDIA_TYPE_IDS)
+        for mediatype in selected_media_types:
+            visible_project_items = ProjectItem.objects.filter(
+                project__mediatype=mediatype,
+                project__visible=True,
+                visible=True
+            )
+            mediatype.project_item_count = visible_project_items.count()
 
-    return render(request, "pages/portfolio/page.html", context)
+        selected_roles = Role.objects.filter(id__in=SELECTED_ROLE_IDS)
+        for role in selected_roles:
+            visible_project_items = ProjectItem.objects.filter(
+                project__role=role,
+                project__visible=True,
+                visible=True
+            )
+            role.project_item_count = visible_project_items.count()
 
+        context.update({
+            "selected_clients": selected_clients,
+            "selected_industries": selected_industries,
+            "selected_media_types": selected_media_types,
+            "selected_roles": selected_roles,
+            "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry & Medium",
+        })
 
-def about(request):
-    context = {
-        'title': 'About Me',
-    }
-    return render(request, "pages/about/page.html", context)
-
-
-def contact(request):
-    context = {
-        'title': 'Contact Me',
-    }
-    return render(request, "pages/contact/page.html", context)
+        return context
 
 
-def clients(request):
-    client_list = get_visible_objects(Client).order_by(Lower("name"))
-    for client in client_list:
-        # Get visible projects for the current client
-        visible_projects = get_visible_objects(Project).filter(client=client)
+class AboutView(BuildableTemplateView):
+    template_name = "pages/about/page.html"
+    build_path = 'about.html'
 
-        # Get visible items for the visible projects
-        visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
-
-        client.project_item_count = visible_project_items.count()
-
-    context = {
-        "clients": client_list,
-        "object": Client(),
-        "title": "Startups to Global Brands: My Extensive Design & Development Client List",
-    }
-
-    return render(request, "pages/portfolio/clients/page.html", context)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'About Me'
+        return context
 
 
-class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
+class ContactView(BuildableTemplateView):
+    template_name = "pages/contact/page.html"
+    build_path = 'contact.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Contact Me'
+        return context
+
+
+class ClientsView(BuildableTemplateView):
+    template_name = "pages/portfolio/clients/page.html"
+    build_path = 'clients.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        client_list = get_visible_objects(Client).order_by(Lower("name"))
+        for client in client_list:
+            # Get visible projects for the current client
+            visible_projects = get_visible_objects(Project).filter(client=client)
+
+            # Get visible items for the visible projects
+            visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+            client.project_item_count = visible_project_items.count()
+
+        context.update({
+            "clients": client_list,
+            "object": Client(),
+            "title": "Startups to Global Brands: My Extensive Design & Development Client List",
+        })
+
+        return context
+
+
+class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Client
     template_name = "pages/portfolio/clients/term_items_page.html"
     count_type = "client items"
@@ -196,46 +218,52 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
         return context
 
 
-def industries(request):
-    highlighted_industries = get_visible_objects(Industry).filter(id__in=HIGHLIGHTED_INDUSTRY_IDS)
-    for industry in highlighted_industries:
-        visible_project_items = ProjectItem.objects.filter(
-            project__industry=industry,
-            project__visible=True,
-            visible=True
-        )
-        industry.project_item_count = visible_project_items.count()
+class IndustriesView(BuildableTemplateView):
+    template_name = "pages/portfolio/industries/page.html"
+    build_path = 'industries.html'
 
-    industry_list = get_visible_objects(Industry)
-    for industry in industry_list:
-        visible_project_items = ProjectItem.objects.filter(
-            project__industry=industry,
-            project__visible=True,
-            visible=True
-        )
-        industry.project_item_count = visible_project_items.count()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-    market_list = get_visible_objects(Market)
-    for market in market_list:
-        visible_project_items = ProjectItem.objects.filter(
-            project__market=market,
-            project__visible=True,
-            visible=True
-        )
-        market.project_item_count = visible_project_items.count()
+        highlighted_industries = get_visible_objects(Industry).filter(id__in=HIGHLIGHTED_INDUSTRY_IDS)
+        for industry in highlighted_industries:
+            visible_project_items = ProjectItem.objects.filter(
+                project__industry=industry,
+                project__visible=True,
+                visible=True
+            )
+            industry.project_item_count = visible_project_items.count()
 
-    context = {
-        "highlighted_industries": highlighted_industries,
-        "industries": industry_list,
-        "markets": market_list,
-        "object": Industry(),
-        "title": "Making a Mark in Every Market: My Design & Development Industry List",
-    }
+        industry_list = get_visible_objects(Industry)
+        for industry in industry_list:
+            visible_project_items = ProjectItem.objects.filter(
+                project__industry=industry,
+                project__visible=True,
+                visible=True
+            )
+            industry.project_item_count = visible_project_items.count()
 
-    return render(request, "pages/portfolio/industries/page.html", context)
+        market_list = get_visible_objects(Market)
+        for market in market_list:
+            visible_project_items = ProjectItem.objects.filter(
+                project__market=market,
+                project__visible=True,
+                visible=True
+            )
+            market.project_item_count = visible_project_items.count()
+
+        context.update({
+            "highlighted_industries": highlighted_industries,
+            "industries": industry_list,
+            "markets": market_list,
+            "object": Industry(),
+            "title": "Making a Mark in Every Market: My Design & Development Industry List",
+        })
+
+        return context
 
 
-class IndustryProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
+class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Industry
     template_name = "pages/portfolio/industries/term_items_page.html"
     count_type = "industry items"
@@ -264,21 +292,32 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVie
         return context
 
 
-def markets(request):
-    market_list = get_taxonomy_objects_with_visible_projects(Market)
-    for market in market_list:
-        # Get visible projects for the current market
-        visible_projects = get_visible_objects(Project).filter(market=market)
+class MarketsView(BuildableTemplateView):
+    template_name = "pages/portfolio/markets/page.html"
+    build_path = 'markets.html'
 
-        # Get visible items for the visible projects
-        visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-        market.project_item_count = visible_project_items.count()
+        market_list = get_taxonomy_objects_with_visible_projects(Market)
+        for market in market_list:
+            # Get visible projects for the current market
+            visible_projects = get_visible_objects(Project).filter(market=market)
 
-    return render(request, "pages/portfolio/markets/page.html", {"markets": market_list, "object": Market()})
+            # Get visible items for the visible projects
+            visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+
+            market.project_item_count = visible_project_items.count()
+
+        context.update({
+            "markets": market_list,
+            "object": Market(),
+        })
+
+        return context
 
 
-class MarketProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
+class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Market
     template_name = "pages/portfolio/markets/term_items_page.html"
     count_type = "market items"
@@ -294,37 +333,42 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
         return context
 
 
-def mediatypes(request):
-    highlighted_media_types = get_visible_objects(MediaType).filter(id__in=HIGHLIGHTED_MEDIA_TYPE_IDS)
-    for mediatype in highlighted_media_types:
-        visible_project_items = ProjectItem.objects.filter(
-            project__mediatype=mediatype,
-            project__visible=True,
-            visible=True
-        )
-        mediatype.project_item_count = visible_project_items.count()
+class MediaTypesView(BuildableTemplateView):
+    template_name = "pages/portfolio/media_types/page.html"
+    build_path = 'media_types.html'
 
-    mediatype_list = get_visible_objects(MediaType)
-    for mediatype in mediatype_list:
-        visible_project_items = ProjectItem.objects.filter(
-            project__mediatype=mediatype,
-            project__visible=True,
-            visible=True
-        )
-        mediatype.project_item_count = visible_project_items.count()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-    context = {
-        "highlighted_media_types": highlighted_media_types,
-        "mediatypes": mediatype_list,
-        "object": MediaType(),
-        # "title": "From Pixels to Print & Beyond: Mastering the Medium for Engaging Design & Development",
-        "title": "Pixels to Print & Beyond: Engaging Design & Development Mastery",
-    }
+        highlighted_media_types = get_visible_objects(MediaType).filter(id__in=HIGHLIGHTED_MEDIA_TYPE_IDS)
+        for mediatype in highlighted_media_types:
+            visible_project_items = ProjectItem.objects.filter(
+                project__mediatype=mediatype,
+                project__visible=True,
+                visible=True
+            )
+            mediatype.project_item_count = visible_project_items.count()
 
-    return render(request, "pages/portfolio/media_types/page.html", context)
+        mediatype_list = get_visible_objects(MediaType)
+        for mediatype in mediatype_list:
+            visible_project_items = ProjectItem.objects.filter(
+                project__mediatype=mediatype,
+                project__visible=True,
+                visible=True
+            )
+            mediatype.project_item_count = visible_project_items.count()
+
+        context.update({
+            "highlighted_media_types": highlighted_media_types,
+            "mediatypes": mediatype_list,
+            "object": MediaType(),
+            "title": "Pixels to Print & Beyond: Engaging Design & Development Mastery",
+        })
+
+        return context
 
 
-class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
+class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = MediaType
     template_name = "pages/portfolio/media_types/term_items_page.html"
     count_type = "media type items"
@@ -365,32 +409,38 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailVi
         return context
 
 
-def roles(request):
-    highlighted_roles = get_visible_objects(Role).filter(id__in=HIGHLIGHTED_ROLE_IDS)
-    for role in highlighted_roles:
-        visible_project_items = ProjectItem.objects.filter(
-            project__role=role,
-            project__visible=True,
-            visible=True
-        )
-        role.project_item_count = visible_project_items.count()
+class RolesView(BuildableTemplateView):
+    template_name = "pages/portfolio/roles/page.html"
+    build_path = 'roles.html'
 
-    role_list = get_visible_objects(Role)
-    for role in role_list:
-        visible_project_items = get_visible_objects(ProjectItem, role)
-        role.project_item_count = len(visible_project_items)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-    context = {
-        "highlighted_roles": highlighted_roles,
-        "roles": role_list,
-        "object": Role(),
-        "title": "Concept to Creation: My Diverse Design & Development Experience",
-    }
+        highlighted_roles = get_visible_objects(Role).filter(id__in=HIGHLIGHTED_ROLE_IDS)
+        for role in highlighted_roles:
+            visible_project_items = ProjectItem.objects.filter(
+                project__role=role,
+                project__visible=True,
+                visible=True
+            )
+            role.project_item_count = visible_project_items.count()
 
-    return render(request, "pages/portfolio/roles/page.html", context)
+        role_list = get_visible_objects(Role)
+        for role in role_list:
+            visible_project_items = get_visible_objects(ProjectItem, role)
+            role.project_item_count = len(visible_project_items)
+
+        context.update({
+            "highlighted_roles": highlighted_roles,
+            "roles": role_list,
+            "object": Role(),
+            "title": "Concept to Creation: My Diverse Design & Development Experience",
+        })
+
+        return context
 
 
-class RoleProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView):
+class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Role
     template_name = "pages/portfolio/roles/term_items_page.html"
     count_type = "role items"
@@ -473,7 +523,7 @@ class ProjectsView(PaginationMixin, TemplateView):
         return context
 
 
-class ProjectItemsView(PrevNextMixin, generic.DetailView):
+class ProjectItemsView(PrevNextMixin, BuildableDetailView):
     model = Project
     template_name = "pages/portfolio/projects/project_items.html"
 
@@ -484,7 +534,7 @@ class ProjectItemsView(PrevNextMixin, generic.DetailView):
         return context
 
 
-class ProjectDetailsView(ProjectDetailsPrevNextMixin, generic.DetailView):
+class ProjectDetailsView(ProjectDetailsPrevNextMixin, BuildableDetailView):
     model = ProjectItem
     template_name = "pages/portfolio/projects/project_details.html"
 

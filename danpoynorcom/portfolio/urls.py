@@ -29,27 +29,27 @@ sitemaps = {
 }
 
 urlpatterns = [
-    path("", views.home, name="home"),
-    path("portfolio/", views.portfolio, name="portfolio"),
-    path("about/", views.about, name="about"),
-    path("contact/", views.contact, name="contact"),
-    path("portfolio/clients/", views.clients, name="clients"),
+    path("", views.HomeView.as_view(), name="home"),
+    path("portfolio/", views.PortfolioView.as_view(), name="portfolio"),
+    path("about/", views.AboutView.as_view(), name="about"),
+    path("contact/", views.ContactView.as_view(), name="contact"),
+    path("portfolio/clients/", views.ClientsView.as_view(), name="clients"),
     path("portfolio/clients/<slug:slug>-projects/", views.ClientProjectsListView.as_view(), name="client_detail"),
     path("portfolio/clients/<slug:slug>-projects/page/<int:page>/<str:order>/", views.ClientProjectsListView.as_view(), name="client_page_order"),
 
-    path("portfolio/industries/", views.industries, name="industries"),
+    path("portfolio/industries/", views.IndustriesView.as_view(), name="industries"),
     path("portfolio/industries/<slug:slug>-projects/", views.IndustryProjectsListView.as_view(), name="industry_detail"),
     path("portfolio/industries/<slug:slug>-projects/page/<int:page>/<str:order>/", views.IndustryProjectsListView.as_view(), name="industry_page_order"),
 
-    path("portfolio/markets/", views.markets, name="markets"),
+    path("portfolio/markets/", views.MarketsView.as_view(), name="markets"),
     path("portfolio/markets/<slug:slug>-projects/", views.MarketProjectsListView.as_view(), name="market_detail"),
     path("portfolio/markets/<slug:slug>-projects/page/<int:page>/<str:order>/", views.MarketProjectsListView.as_view(), name="market_page_order"),
 
-    path("portfolio/media-types/", views.mediatypes, name="mediatypes"),
+    path("portfolio/media-types/", views.MediaTypesView.as_view(), name="mediatypes"),
     path("portfolio/media-types/<slug:slug>-projects/", views.MediaTypeProjectsListView.as_view(), name="mediatype_detail"),
     path("portfolio/media-types/<slug:slug>-projects/page/<int:page>/<str:order>/", views.MediaTypeProjectsListView.as_view(), name="mediatype_page_order"),
 
-    path("portfolio/roles/", views.roles, name="roles"),
+    path("portfolio/roles/", views.RolesView.as_view(), name="roles"),
     path("portfolio/roles/<slug:slug>-projects/", views.RoleProjectsListView.as_view(), name="role_detail"),
     path("portfolio/roles/<slug:slug>-projects/page/<int:page>/<str:order>/", views.RoleProjectsListView.as_view(), name="role_page_order"),
 
