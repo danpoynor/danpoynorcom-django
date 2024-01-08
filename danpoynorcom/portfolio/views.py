@@ -1,10 +1,10 @@
+import re
+import inflect
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic import TemplateView
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
-import inflect
-import re
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
@@ -127,7 +127,7 @@ def portfolio(request):
         "selected_industries": selected_industries,
         "selected_media_types": selected_media_types,
         "selected_roles": selected_roles,
-        "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry and Medium",
+        "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry & Medium",
     }
 
     return render(request, "pages/portfolio/page.html", context)
@@ -192,7 +192,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, generic.DetailView)
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{client_name} Design and Development Projects | Austin, Texas - Page {page} {order_text}'
+        context['title'] = f'{client_name} Design & Development Projects | Austin, Texas - Page {page} {order_text}'
         return context
 
 

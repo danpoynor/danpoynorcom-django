@@ -2,6 +2,8 @@ import django
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticViewSitemap, ClientSitemap, IndustrySitemap, MarketSitemap, MediaTypeSitemap, RoleSitemap, ProjectSitemap, ProjectItemSitemap
 
 # Make sure the "portfolio" module is installed and accessible in the Python environment
 try:
@@ -14,6 +16,17 @@ except ImportError:
 def custom_page_not_found(request):
     return django.views.defaults.page_not_found(request, None)
 
+
+sitemaps = {
+    'static': StaticViewSitemap,
+    'client': ClientSitemap,
+    'industry': IndustrySitemap,
+    'market': MarketSitemap,
+    'mediatype': MediaTypeSitemap,
+    'role': RoleSitemap,
+    'project': ProjectSitemap,
+    'projectitem': ProjectItemSitemap,
+}
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -47,6 +60,13 @@ urlpatterns = [
 
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project"),
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
+
+    # Sitemap
+    # TODO: Fix sitemap urls
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+
+    # Robots.txt
+    # path("robots.txt", views.robots, name="robots"),
 
     # Test the 404 page at http://localhost:8000/404/
     path("404/", custom_page_not_found),

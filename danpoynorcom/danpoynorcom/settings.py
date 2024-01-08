@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     "requests_panel",
     "flatblocks",
     "django_minify_html",
+    "django.contrib.sitemaps",
 ]
 
 MIDDLEWARE = [
