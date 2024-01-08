@@ -1,18 +1,3 @@
-"""
-To run the tests in this file, use the following command:
-
-python manage.py test portfolio.tests.test_urls
-
-This command tells Django to run the tests in the 'test_urls' module of the 'tests' package in the 'portfolio' app.
-
-Make sure to replace 'portfolio' with the actual name of your Django app if it's different.
-
-You can also use the '-k' option followed by the test method name to run a specific test. For example:
-
-python manage.py test portfolio.tests.test_urls -k test_home_url
-
-This command will only run the 'test_home_url' test.
-"""
 from django.test import TestCase
 from django.urls import reverse, resolve
 from portfolio import views
@@ -21,23 +6,23 @@ from portfolio import views
 class TestUrls(TestCase):
     def test_home_url(self):
         path = reverse('home')
-        self.assertEqual(resolve(path).func, views.home)
+        self.assertEqual(resolve(path).func.__name__, views.HomeView.as_view().__name__)
 
     def test_portfolio_url(self):
         path = reverse('portfolio')
-        self.assertEqual(resolve(path).func, views.portfolio)
+        self.assertEqual(resolve(path).func.__name__, views.PortfolioView.as_view().__name__)
 
     def test_about_url(self):
         path = reverse('about')
-        self.assertEqual(resolve(path).func, views.about)
+        self.assertEqual(resolve(path).func.__name__, views.AboutView.as_view().__name__)
 
     def test_contact_url(self):
         path = reverse('contact')
-        self.assertEqual(resolve(path).func, views.contact)
+        self.assertEqual(resolve(path).func.__name__, views.ContactView.as_view().__name__)
 
     def test_clients_url(self):
         path = reverse('clients')
-        self.assertEqual(resolve(path).func, views.clients)
+        self.assertEqual(resolve(path).func.__name__, views.ContactView.as_view().__name__)
 
     def test_client_detail_url(self):
         path = reverse('client_detail', kwargs={'slug': 'test-slug'})
@@ -49,7 +34,7 @@ class TestUrls(TestCase):
 
     def test_industries_url(self):
         path = reverse('industries')
-        self.assertEqual(resolve(path).func, views.industries)
+        self.assertEqual(resolve(path).func.__name__, views.IndustriesView.as_view().__name__)
 
     def test_industry_detail_url(self):
         path = reverse('industry_detail', kwargs={'slug': 'test-slug'})
@@ -61,7 +46,7 @@ class TestUrls(TestCase):
 
     def test_markets_url(self):
         path = reverse('markets')
-        self.assertEqual(resolve(path).func, views.markets)
+        self.assertEqual(resolve(path).func.__name__, views.MarketsView.as_view().__name__)
 
     def test_market_detail_url(self):
         path = reverse('market_detail', kwargs={'slug': 'test-slug'})
@@ -73,7 +58,7 @@ class TestUrls(TestCase):
 
     def test_mediatypes_url(self):
         path = reverse('mediatypes')
-        self.assertEqual(resolve(path).func, views.mediatypes)
+        self.assertEqual(resolve(path).func.__name__, views.MediaTypesView.as_view().__name__)
 
     def test_mediatype_detail_url(self):
         path = reverse('mediatype_detail', kwargs={'slug': 'test-slug'})
@@ -85,7 +70,7 @@ class TestUrls(TestCase):
 
     def test_roles_url(self):
         path = reverse('roles')
-        self.assertEqual(resolve(path).func, views.roles)
+        self.assertEqual(resolve(path).func.__name__, views.RolesView.as_view().__name__)
 
     def test_role_detail_url(self):
         path = reverse('role_detail', kwargs={'slug': 'test-slug'})

@@ -1,18 +1,6 @@
 from django.test import TestCase
 from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
 
-# Run tests with one of these commands:
-# `python manage.py test portfolio`
-# `python manage.py test portfolio.tests.test_models`
-# `python manage.py test portfolio.tests.test_models.ClientModelTest`
-#
-# Use the --verbosity option: Django's test command has a --verbosity option
-# that you can use to control the amount of output. The default verbosity
-# level is 1. If you set it to 2 (python manage.py test --verbosity=2),
-# Django will print a lot more information about each test,
-# which can make it easier to see what's going wrong.
-# `python manage.py test --verbosity=2`
-
 
 class ClientModelTest(TestCase):
     @classmethod

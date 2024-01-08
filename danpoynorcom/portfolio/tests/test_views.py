@@ -1,13 +1,68 @@
 import unittest
-from django.urls import reverse
-from django.test import TestCase
+from django.urls import reverse, resolve
+from django.test import TestCase, RequestFactory
 from portfolio.models import Project, ProjectItem, Client, Industry, Market, MediaType, Role
-from portfolio.views import ClientProjectsListView
-import pdb
+from portfolio.views import HomeView, AboutView, ContactView
 
-# Run tests with one of these commands:
-# `python manage.py test portfolio`
-# `python manage.py test portfolio.tests.test_views`
+
+class HomeViewTest(TestCase):
+    def setUp(self):
+        self.factory = RequestFactory()
+
+    def test_home_view_uses_correct_template(self):
+        request = self.factory.get(reverse('home'))
+        response = HomeView.as_view()(request)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.template_name[0], 'pages/home/page.html')
+
+    def test_home_view_has_correct_title_in_context(self):
+        request = self.factory.get(reverse('home'))
+        response = HomeView.as_view()(request)
+        self.assertEqual(response.context_data['title'], 'Dan Poynor : Visual / UX / Web Design & Development : Austin, TX')
+
+    def test_home_url_resolves_home_view(self):
+        view = resolve('/')
+        self.assertEqual(view.func.__name__, HomeView.as_view().__name__)
+
+
+class AboutViewTest(TestCase):
+    def setUp(self):
+        self.factory = RequestFactory()
+
+    def test_about_view_uses_correct_template(self):
+        request = self.factory.get(reverse('about'))
+        response = AboutView.as_view()(request)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.template_name[0], 'pages/about/page.html')
+
+    def test_about_view_has_correct_title_in_context(self):
+        request = self.factory.get(reverse('about'))
+        response = AboutView.as_view()(request)
+        self.assertEqual(response.context_data['title'], 'Dan Poynor : UI/UX Design & Web Development : Austin, TX')
+
+    def test_about_url_resolves_about_view(self):
+        view = resolve('/about/')
+        self.assertEqual(view.func.__name__, AboutView.as_view().__name__)
+
+
+class ContactViewTest(TestCase):
+    def setUp(self):
+        self.factory = RequestFactory()
+
+    def test_contact_view_uses_correct_template(self):
+        request = self.factory.get(reverse('contact'))
+        response = ContactView.as_view()(request)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.template_name[0], 'pages/contact/page.html')
+
+    def test_contact_view_has_correct_title_in_context(self):
+        request = self.factory.get(reverse('about'))
+        response = ContactView.as_view()(request)
+        self.assertEqual(response.context_data['title'], 'Let’s Connect! : UI/UX Design & Web Development : Austin, TX')
+
+    def test_contact_url_resolves_about_view(self):
+        view = resolve('/contact/')
+        self.assertEqual(view.func.__name__, ContactView.as_view().__name__)
 
 
 class ProjectsViewTest(TestCase):
@@ -287,15 +342,15 @@ class MediaTypeProjectsListViewTest(TestCase):
         self.assertEqual(response.context['title'], expected_title)
 
     def test_title_processing(self):
-        self.check_title('/portfolio/media-types/children-projects/', 'Child Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/test-media-type-projects/', 'Test Media Type Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/designer-projects/', 'Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/displays-projects/', 'Display Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/aol-projects/', 'AOL Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/specifications-projects/', 'Specifications Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/html-projects/', 'HTML Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/pop-projects/', 'POP Designer Portfolio | Austin, Texas')
-        self.check_title('/portfolio/media-types/videos-projects/', 'Video Editing Portfolio | Austin, Texas')
+        self.check_title('/portfolio/media-types/children-projects/', 'Child Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/test-media-type-projects/', 'Test Media Type Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/designer-projects/', 'Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/displays-projects/', 'Display Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/aol-projects/', 'AOL Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/specifications-projects/', 'Specifications Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/html-projects/', 'HTML Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/pop-projects/', 'POP Designer Portfolio : Austin, TX : Page 1 Asc')
+        self.check_title('/portfolio/media-types/videos-projects/', 'Video Editing Portfolio : Austin, TX : Page 1 Asc')
 
     def test_nonexistent_media_type(self):
         response = self.client.get('/portfolio/media-types/nonexistent-projects/')
