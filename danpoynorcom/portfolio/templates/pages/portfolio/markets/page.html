@@ -1,13 +1,12 @@
-{% extends "base_portfolio.html" %}
-{% block content %}
-    <h1>Markets</h1>
-    <ul>
-        {% for market in markets %}
-            <li>
-                <a href="{{ market.get_absolute_url }}">{{ market.name }}</a>
-            </li>
-        {% empty %}
-            <li>No markets available.</li>
-        {% endfor %}
-    </ul>
-{% endblock content %}
+{% extends "base_taxonomy.html" %}
+{% block taxonomy_content %}
+    <section class="taxonomy-categories">
+        <ul class="showcase-list clients-list">
+            {% for market in markets %}
+                {% include "partials/taxonomy/term/_item_card.html" with term=market %}
+            {% empty %}
+                <li>No markets available.</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock taxonomy_content %}
