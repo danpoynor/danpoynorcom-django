@@ -74,7 +74,7 @@
 .expando:has(.expando-toggle:checked) {
     .expando-content {
         opacity: 1;
-        max-height: 500px;
+        max-height: 600px;
         padding: 0 1rem 1rem;
         transition: opacity 0.5s ease-in-out .6s, max-height 0.5s ease-in-out; // showing content
     }
