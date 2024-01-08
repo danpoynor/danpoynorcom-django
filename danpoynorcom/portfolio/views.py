@@ -85,7 +85,7 @@ class HomeView(BuildableTemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Dan Poynor - Visual, UX, Web Design & Development | Austin, TX'
+        context['title'] = 'Dan Poynor : Visual / UX / Web Design & Development : Austin, TX'
         return context
 
 
@@ -137,7 +137,7 @@ class PortfolioView(BuildableTemplateView):
             "selected_industries": selected_industries,
             "selected_media_types": selected_media_types,
             "selected_roles": selected_roles,
-            "title": "Design + Dev Alchemy: Crafting Solutions for Every Industry & Medium",
+            "title": "Strategic Design + Dev Solutions for Every Industry & Medium",
         })
 
         return context
@@ -149,7 +149,7 @@ class AboutView(BuildableTemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'About Me'
+        context['title'] = 'Dan Poynor : UI/UX Design & Web Development : Austin, TX'
         return context
 
 
@@ -159,7 +159,7 @@ class ContactView(BuildableTemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Contact Me'
+        context['title'] = 'Let’s Connect! : UI/UX Design & Web Development : Austin, TX'
         return context
 
 
@@ -183,7 +183,7 @@ class ClientsView(BuildableTemplateView):
         context.update({
             "clients": client_list,
             "object": Client(),
-            "title": "Startups to Global Brands: My Extensive Design & Development Client List",
+            "title": "Startups to Global Brands : Checkout My Design & Dev Clients",
         })
 
         return context
@@ -214,7 +214,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{client_name} Design & Development Projects | Austin, Texas - Page {page} {order_text}'
+        context['title'] = f'{client_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
         return context
 
 
@@ -257,7 +257,7 @@ class IndustriesView(BuildableTemplateView):
             "industries": industry_list,
             "markets": market_list,
             "object": Industry(),
-            "title": "Making a Mark in Every Market: My Design & Development Industry List",
+            "title": "Making a Mark in Every Market: My Design & Dev Industry List",
         })
 
         return context
@@ -288,7 +288,7 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailVi
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{industry_name} Design Projects | Austin, Texas - Page {page} {order_text}'
+        context['title'] = f'{industry_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
         return context
 
 
@@ -312,6 +312,7 @@ class MarketsView(BuildableTemplateView):
         context.update({
             "markets": market_list,
             "object": Market(),
+            "title": "Market-Driven Design & Development: View Tailored Solutions",
         })
 
         return context
@@ -329,7 +330,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
         # Add the title to the context
-        context['title'] = f'Portfolio Market: {self.object.name}'
+        context['title'] = f'{self.object.name} Design & Development Expertise :  Austin, TX'
         return context
 
 
@@ -362,7 +363,7 @@ class MediaTypesView(BuildableTemplateView):
             "highlighted_media_types": highlighted_media_types,
             "mediatypes": mediatype_list,
             "object": MediaType(),
-            "title": "Pixels to Print & Beyond: Engaging Design & Development Mastery",
+            "title": "Pixels to Print & Beyond : View Engaging Design & Dev Mastery",
         })
 
         return context
@@ -403,9 +404,9 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailV
 
         # Check if "Design" is already in the name
         if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
-            context['title'] = f'{singular_name} Portfolio | Austin, Texas - Page {page} {order_text}'
+            context['title'] = f'{singular_name} Portfolio : Austin, TX : Page {page} {order_text}'
         else:
-            context['title'] = f'{singular_name} Designer Portfolio | Austin, Texas - Page {page} {order_text}'
+            context['title'] = f'{singular_name} Designer Portfolio : Austin, TX : Page {page} {order_text}'
         return context
 
 
@@ -434,7 +435,7 @@ class RolesView(BuildableTemplateView):
             "highlighted_roles": highlighted_roles,
             "roles": role_list,
             "object": Role(),
-            "title": "Concept to Creation: My Diverse Design & Development Experience",
+            "title": "Concept to Creation: View My Diverse Design & Dev Experience",
         })
 
         return context
@@ -462,7 +463,7 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{role_name} Portfolio | Austin, Texas - Page {page} {order_text}'
+        context['title'] = f'{role_name} Portfolio : Austin, TX : Page {page} {order_text}'
         return context
 
 
@@ -507,7 +508,7 @@ class ProjectsView(PaginationMixin, TemplateView):
 
         # Create a title that includes the page number and order
         order_text = "Asc" if order == "asc" else "Desc"
-        title = f"Design & Development Project Successes - Page {page} {order_text}"
+        title = f"Visual/UX/UI Design & Software Development Successes - Page {page} {order_text}"
 
         context.update({
             "page_obj": page_obj,
@@ -548,8 +549,8 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, BuildableDetailView):
 
         # Check if project item name and project name are the same
         if self.object.name == project.name:
-            context['title'] = f'Project Detail: {self.object.name}'
+            context['title'] = f'Project: {self.object.name}'
         else:
-            context['title'] = f'Project Detail: {project.name}: {self.object.name}'
+            context['title'] = f'Project: {project.name} : {self.object.name}'
 
         return context
