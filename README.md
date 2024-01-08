@@ -1,6 +1,55 @@
-# WIP: Dan Poynor Portfolio
+# Dan Poynor Portfolio
 
-## Initial steps used to create this project
+Personal portfolio website for danpoynor.com built in Django.
+
+Notes below are primarily for my own reference.
+
+## Some Notable Django Features and Frequently Used Commands
+
+- [Django Models](https://docs.djangoproject.com/en/5.0/#the-model-layer)
+- [Django Views](https://docs.djangoproject.com/en/5.0/#the-view-layer)
+- [Django Templates](https://docs.djangoproject.com/en/5.0/#the-template-layer)
+- [Django Custom Tags and Filters](https://docs.djangoproject.com/en/5.0/howto/custom-template-tags/)
+- [Django Admin](https://docs.djangoproject.com/en/5.0/#the-admin)
+- [Custom Django Management Commands](https://docs.djangoproject.com/en/5.0/howto/custom-management-commands/)
+- [Django urlpatterns](https://docs.djangoproject.com/en/5.0/topics/http/urls/)
+- [Django Unit Tests](https://docs.djangoproject.com/en/5.0/topics/testing/)
+- [Django Tests Integration with Coverage](https://docs.djangoproject.com/en/5.0/topics/testing/advanced/#integration-with-coverage-py)
+- [Django Pagination](https://docs.djangoproject.com/en/5.0/topics/pagination/)
+- [Django Performance and Optimization](https://docs.djangoproject.com/en/5.0/topics/performance/)
+- [Django Settings](https://docs.djangoproject.com/en/5.0/topics/settings/)
+- Django Static Files
+- [SQLite database in Django](https://docs.djangoproject.com/en/5.0/ref/databases/#sqlite-notes)
+- [makemigrations](https://docs.djangoproject.com/en/5.0/ref/django-admin/#makemigrations) and [migrate](https://docs.djangoproject.com/en/5.0/ref/django-admin/#migrate) management commands
+- [dumpdata](https://docs.djangoproject.com/en/5.0/ref/django-admin/#dumpdata) and [loaddata](https://docs.djangoproject.com/en/5.0/ref/django-admin/#loaddata) management commands
+- [test](https://docs.djangoproject.com/en/5.0/ref/django-admin/#test) management command
+
+Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#the-template-layer) section of the Django documentation.
+
+[Django How-To's](https://docs.djangoproject.com/en/5.0/howto/)
+
+## Some Notable `pip` Packages Used
+
+- [Django](https://docs.djangoproject.com/en/5.0/topics/install/): Python web framework
+- [python-dotenv](https://pypi.org/project/python-dotenv/): Python library used to read key-value pairs from a `.env` environment file
+- [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/): Django library used to debug code
+- [`django-requests-debug-toolbar`](https://pypi.org/project/django-requests-debug-toolbar/): Django library used to debug requests (not working?)
+- [`django-flatblocks`](https://github.com/cartwheelweb/django-flatblocks): Django library used to create small text-blocks on websites, similar to Django's own flatpages.
+- [`djlint`](https://www.djlint.com/): Django library used to lint and format Django templates
+- [`phpserialize`](https://pypi.org/project/phpserialize/): Python library used to serialize PHP data. Used by scripts in this project to convert WordPress data to Python data.
+- [`inflect`](https://github.com/jaraco/inflect): Python library used to convert plural nouns to singular
+- [`coverage`](https://coverage.readthedocs.io/en/latest/): Python library used to measure code coverage.
+- [`whitenoise`](http://whitenoise.evans.io/en/stable/): serve static files when Debug is False and after running `python manage.py collectstatic`.
+- [bakery](https://palewi.re/docs/django-bakery/): Django helpers for baking your Django site out as flat files.
+
+## Other Features Include
+
+- [SQLite](https://www.sqlite.org/): Database used in development
+- [SASS CSS](https://sass-lang.com/install/): Command line SASS is used in this project to generate the CSS. Dart Sass installed using `brew` on Mac.
+- [Google Fonts](https://fonts.google.com/)
+- Google Analytics
+
+## Initial Steps Used To Create This Project From Scratch
 
 <details>
   <summary>Click to expand</summary>
@@ -103,55 +152,20 @@ python manage.py runserver
 
 </details>
 
----
-
-## Importing Data Fixtures
+## Use SASS CSS in Django
 
 <details>
   <summary>Click to expand</summary>
 
-### The `fixtures` directory contains an XML WordPress export file that can be used to import data into the database using the custom admin command located in the `portfolio/management/commands` directory
+Command line SASS is used in this project to generate the CSS.
 
-```sh
-python manage.py import_wordpress_xml
-```
-
-NOTE: When importing the data a lot of debugging info will scroll past in the terminal. This is normal.
-
-NOTE: This command will import all the models and data from the XML file needed to run the site including the associations between the models.
-
-### The `fixtures` directory also contains JSON files that can be used to import data into the database using the custom admin commands located in the `portfolio/management/commands` directory
-
-```sh
-python3 manage.py import_clients
-python3 manage.py import_industries
-python3 manage.py import_markets
-python3 manage.py import_media_types
-python3 manage.py import_projects
-python3 manage.py import_project_items
-python3 manage.py import_roles
-```
-
-NOTE: When importing the project_items data a lot of debugging info will scroll past in the terminal. This is normal.
-
-NOTE: This will import the individual models but not the associations between the models.
-
-</details>
-
-## Using SASS in Django
-
-<details>
-  <summary>Click to expand</summary>
-
-In this project command line SASS is used to generate the CSS.
-
-While developing, to compile the SASS files from `assets/scss/index.scss` into the CSS file `static/css/styles.css`, `cd` into the `portfolio` app directory and run SASS watch command using:
+To compile the SASS files from `assets/scss/index.scss` into the CSS file `static/css/styles.css`, `cd` into the `portfolio` app directory and run SASS watch command using:
 
 ```sh
 sass --watch assets/scss/index.scss:static/css/styles.css
 ```
 
-You will have to refresh the browser to see the changes.
+You'll have to refresh the browser to see the changes.
 
 When ready to deploy, run the SASS build command using:
 
@@ -160,8 +174,6 @@ sass assets/scss/index.scss:static/css/styles.css --style compressed
 ```
 
 </details>
-
----
 
 ## PIP Notes
 
@@ -212,9 +224,150 @@ pip freeze > requirements.txt
 
 </details>
 
----
+## Run unit tests
 
-### Notes on Exporting Static Files
+There are 146 passing unit tests so far located in the `tests/` directory.
+
+NOTE: I couldn't figure out how to run tests in VS Code, so I run them from the command line for now.
+
+<details>
+  <summary>Click to expand</summary>
+
+### Run all tests
+
+```sh
+python manage.py test --verbosity=2
+```
+
+### Run a specific test suite
+
+```sh
+python manage.py test portfolio.tests.test_models
+python manage.py test portfolio.tests.test_views
+python manage.py test portfolio.tests.test_urls
+```
+
+or run one specific test in a test file
+
+```sh
+python manage.py test portfolio.tests.test_models.TestModelName
+```
+
+### Run a specific test method
+
+```sh
+python manage.py test portfolio.tests.test_models.TestModelName.test_method_name
+```
+
+</details>
+
+## Run code coverage
+
+<details>
+  <summary>Click to expand</summary>
+
+### Install coverage
+
+```sh
+pip install coverage
+```
+
+### Run coverage in Django
+
+```sh
+coverage run --source='.' manage.py test
+```
+
+Or for a specific app
+
+```sh
+coverage run --source='.' manage.py test portfolio
+```
+
+Then view the report
+
+```sh
+coverage report
+```
+
+or view the report in HTML
+
+```sh
+coverage html
+```
+
+or output the report to and XML file
+
+```show
+coverage xml
+```
+
+### View coverage in VS Code
+
+Install the [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters) extension.
+
+Then click the 'Watch' icon in the bottom status bar of the VS Code window and files with coverage will be highlighted in the editor gutter.
+
+## Use `linkchecker` to crawl the site and check for broken links
+
+<details>
+  <summary>Click to expand</summary>
+
+#### Install `linkchecker` if not already installed
+
+```sh
+pip install linkchecker
+```
+
+#### Run `linkchecker`
+
+```sh
+linkchecker http://localhost:8000 --check-extern
+```
+
+or to do a slower crawl to account for latency and ouput errors to a file use:
+
+```sh
+linkchecker --timeout=20 --threads=1 -F text/linkchecker_output.txt http://localhost:8000
+```
+
+Note the `--check-extern` option tells `linkchecker` to check external links as well as internal links.
+
+To output a file with the results of the `linkchecker` run, use the `-F` option followed by the path to the file to output to. For example:
+
+```sh
+linkchecker --timeout=5 --ignore-url='.*\.swf$' -F text/linkchecker_output.txt http://localhost:8000  
+```
+
+If you want to check only HTML pages and ignore other resources, you can use the `--no-warnings` option. This will make `linkchecker` faster and reduce the number of URLs checked. However, it will also make `linkchecker` less thorough, as it won't check if your CSS, JavaScript, images, and other resources are loading correctly.
+
+`linkchecker` will crawl all pages of your website and check all links on each page. It will print a report to the console, showing any broken links it found.
+
+Also, please be aware that `linkchecker` can generate a lot of traffic and may be blocked by some websites. Always use it responsibly and respect the terms of service of the websites you're checking.
+
+#### Other options
+
+Increase the timeout that `linkchecker` uses when accessing URLs by using the `--timeout` option followed by the number of seconds to wait. For example, to wait up to 10 seconds for a response, you can use:
+
+```sh
+linkchecker --timeout=10 http://localhost:8000
+```
+
+**Ignore URLs**: If there are certain URLs you want `linkchecker` to ignore, you can use the `-i` or `--ignore-url` option followed by a regular expression that matches the URLs to ignore. For example, to ignore all URLs that contain `example.com`, you can use `-i example.com`.
+
+**Set the User-Agent**: Some websites may block or limit requests from `linkchecker` because it identifies itself as a bot. You can change the User-Agent string that `linkchecker` sends with the `-u` or `--user-agent` option. For example, to identify as a regular Chrome browser, you can use `-u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3`".
+
+**Limit the Depth**: By default, `linkchecker` follows all links it finds, no matter how deep. You can limit the depth of the crawl with the `-r` or `--recursion-level` option followed by a number. For example, to only check links on the homepage and one level deep, you can use `-r 2`.
+
+**Check Only Certain File Types**: If you're only interested in certain types of files, you can use the `--file-extension` option followed by a comma-separated list of file extensions. For example, to check only HTML and CSS files, you can use `--file-extension=html,css`.
+
+Use `linkchecker --list-plugins` to see a list of all available plugins.
+
+`linkchecker -h` or `linkchecker --help` will show a list of all available options.
+
+</details>
+
+## Notes on Exporting Static Website Files from Django
 
 <details>
   <summary>Click to expand</summary>
@@ -227,7 +380,9 @@ pip freeze > requirements.txt
 - [How to manage static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/5.0/howto/static-files/)
 - - [Deploying static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
 
-#### Exporting Page
+---
+
+#### Exporting Pages
 
 - [django-compressor](https://django-compressor.readthedocs.io/en/stable/), [django-compressor on GitHub](https://github.com/django-compressor/django-compressor)
 - [django-pipeline](https://django-pipeline.readthedocs.io/en/latest/), [django-pipeline on GitHub](https://github.com/jazzband/django-pipeline)
@@ -236,9 +391,3 @@ pip freeze > requirements.txt
 - [django-staticfiles](https://docs.djangoproject.com/en/3.1/ref/contrib/staticfiles/)
 
 </details>
-
-## TODO
-
-- Update `get_visible_objects` util to filter out 'visible=False' terms within the current Project taxonomy.
-- Update pagination on taxonomy page to include Previous/Next First/Last links like on the Projects list page.
--
