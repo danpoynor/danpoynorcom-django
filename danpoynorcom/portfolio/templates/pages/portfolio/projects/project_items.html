@@ -22,6 +22,46 @@
         </section>
         <section class="thumbnails">
             <div class="container taxonomy-project-page">{% include "partials/_project_items_list.html" %}</div>
+            <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const elem = document.querySelector('.grid');
+                    if (elem) {
+                        if (typeof imagesLoaded === 'undefined' || typeof Isotope === 'undefined') {
+                            console.error('Could not load imagesLoaded or Isotope');
+                            return;
+                        }
+                        imagesLoaded(elem, function() {
+                            // init Isotope after all images have loaded
+                            const iso = new Isotope( elem, {
+                                itemSelector: '.grid-item',
+                                layoutMode: 'masonry',
+                                percentPosition: true,
+                                masonry: {
+                                    columnWidth: '.grid-item'
+                                }
+                            });
+
+                            // create observer
+                            const observer = new IntersectionObserver(function(entries) {
+                                entries.forEach(function(entry) {
+                                    if (entry.isIntersecting) {
+                                        entry.target.classList.add('in-view');
+                                        observer.unobserve(entry.target);
+                                    }
+                                });
+                            });
+
+                            document.querySelectorAll('li.grid-item').forEach(item => {
+                                observer.observe(item);
+                            });
+                        });
+                    } else {
+                        console.error('Could not find element with class "grid"');
+                    }
+                });
+            </script>
         </section>
     </main>
     {% include "partials/nav/_prev_next_taxonomy_term.html" %}

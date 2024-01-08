@@ -100,7 +100,6 @@ $divider-color: var(--t8);
 
                     &.truncate {
                         // specified in typography.scss
-                        //float: right; // make sure text is flush right when truncated
                         display: inline-block;
                         text-wrap: balance;
                     }

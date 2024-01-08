@@ -8,13 +8,3 @@ main.error-404-page {
         margin-bottom: 0.5em;
     }
 }
-
-header {
-    &.error-message {
-        &.plugin-not-active {
-            h1 {
-                color: #424242;
-            }
-        }
-    }
-}

@@ -1,7 +1,3 @@
-.skip-link {
-    display: none;
-}
-
 body > header {
     color: var(--t7);
     width: 100%;
@@ -28,18 +24,6 @@ body > header {
             .site-description {
                 margin: 1em auto 0;
             }
-
-            .nav-menu {
-                padding: 0;
-            }
-        }
-
-        @media only screen and (max-width: $header-media-query-break-smaller) {
-            .nav-menu {
-                a {
-                    padding: .5em .5em .75em;
-                }
-            }
         }
     }
 
@@ -49,10 +33,6 @@ body > header {
         justify-content: flex-start;
         align-items: flex-start;
     }
-}
-
-.prev-next-taxonomy-term-navigation + header {
-    margin-top: 1.5em;
 }
 
 header nav {
@@ -89,16 +69,5 @@ header nav {
                 transition: none;
             }
         }
-    }
-
-    .resume-tab {
-        display: none;
-    }
-}
-
-// make sure portfolio sub sub pages still show the top nav link as selected
-.portfolio-sub-page {
-    li.menu-item-1041 a {
-        color: var(--t7);
     }
 }

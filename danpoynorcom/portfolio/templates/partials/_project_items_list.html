@@ -1,8 +1,8 @@
 {% load static %}
 {% comment %} TEMPLATE INFO: This partial is used to display a list of project items on the Overview page. {% endcomment %}
-<ul class="show" id="portfolio-container">
+<ul class="grid">
     {% for item in object.get_ordered_items %}
-        <li class="shown  portfolio-item">
+        <li class="grid-item">
             <a href="{% url 'project_detail' slug=item.slug %}">
                 <figure>
                     <figcaption>

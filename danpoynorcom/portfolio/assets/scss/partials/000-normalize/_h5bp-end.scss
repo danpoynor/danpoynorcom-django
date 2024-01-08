@@ -9,10 +9,9 @@
    Helper classes
    ========================================================================== */
 /* Prevent callout */
-.nocallout {
-    -webkit-touch-callout: none;
-}
-
+// .nocallout {
+//     -webkit-touch-callout: none;
+// }
 .pressed {
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -24,11 +23,10 @@ textarea[contenteditable] {
 
 /* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
    they have been set as display: none */
-.gifhidden {
-    position: absolute;
-    left: -100%;
-}
-
+// .gifhidden {
+//     position: absolute;
+//     left: -100%;
+// }
 /*
  * Image replacement
  */
@@ -58,52 +56,47 @@ textarea[contenteditable] {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
+// .visuallyhidden {
+//     border: 0;
+//     clip: rect(0 0 0 0);
+//     height: 1px;
+//     margin: -1px;
+//     overflow: hidden;
+//     padding: 0;
+//     position: absolute;
+//     width: 1px;
+// }
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
+// .visuallyhidden.focusable:active,
+// .visuallyhidden.focusable:focus {
+//     clip: auto;
+//     height: auto;
+//     margin: 0;
+//     overflow: visible;
+//     position: static;
+//     width: auto;
+// }
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-.invisible {
-    visibility: hidden;
-}
-
+// .invisible {
+//     visibility: hidden;
+// }
 /**
  * Clearfix helper
  * Used to contain floats: h5bp.com/q
  */
-.clearfix::before,
-.clearfix::after {
-    content: "";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
+// .clearfix::before,
+// .clearfix::after {
+//     content: "";
+//     display: table;
+// }
+// .clearfix::after {
+//     clear: both;
+// }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.

@@ -53,7 +53,6 @@ p {
 p,
 .project-details,
 .taxonomy-list,
-.portfolio-introduction,
 .selected-taxonomy-items p,
 .taxonomy-meta,
 .sidebar-info,
@@ -178,10 +177,6 @@ main header {
         margin-top: 0;
     }
 
-    .page-projects-title {
-        margin-top: 1em;
-    }
-
     h2 {
         // used on single portfolio only?
         font: normal 700 1.3125em/1.4 'Bitter', sans-serif; // 21 / 16
@@ -198,43 +193,6 @@ main header {
 .taxonomy-categories {
     h2 {
         margin: 1.33em 0 .25em;
-    }
-}
-
-.taxonomy-project-list {
-    h2 {
-        margin: 1em 0 0;
-    }
-
-    h3 {
-        color: var(--t5);
-    }
-}
-
-.page-template-page-clients {
-    main {
-        section.taxonomy-categories {
-            h2 {
-                margin-bottom: .25em;
-            }
-        }
-    }
-}
-
-.sidebar-categories section.taxonomy-categories {
-
-    // used on top level taxonomy pages
-    h2 {
-        color: var(--t6);
-        font-size: 0.75em;
-        font-weight: 700;
-        letter-spacing: .25em;
-        margin: 0 0 1em .2em;
-        text-transform: uppercase;
-    }
-
-    ul {
-        font-size: 1em;
     }
 }
 

@@ -161,7 +161,6 @@ p {
 p a,
 .project-details a,
 .taxonomy-list a,
-.portfolio-introduction a,
 .selected-taxonomy-items p a,
 .taxonomy-meta a,
 .sidebar-info a,
@@ -173,7 +172,6 @@ p a,
 p a:hover,
 .project-details a:hover,
 .taxonomy-list a:hover,
-.portfolio-introduction a:hover,
 .selected-taxonomy-items p a:hover,
 .taxonomy-meta a:hover,
 .sidebar-info a:hover,
@@ -267,9 +265,6 @@ main header h1 a:hover {
 main header .project-name {
   margin-top: 0;
 }
-main header .page-projects-title {
-  margin-top: 1em;
-}
 main header h2 {
   font: normal 700 1.3125em/1.4 "Bitter", sans-serif;
   margin: 0.5em 0;
@@ -281,29 +276,6 @@ main header .divider {
 
 .taxonomy-categories h2 {
   margin: 1.33em 0 0.25em;
-}
-
-.taxonomy-project-list h2 {
-  margin: 1em 0 0;
-}
-.taxonomy-project-list h3 {
-  color: var(--t5);
-}
-
-.page-template-page-clients main section.taxonomy-categories h2 {
-  margin-bottom: 0.25em;
-}
-
-.sidebar-categories section.taxonomy-categories h2 {
-  color: var(--t6);
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  margin: 0 0 1em 0.2em;
-  text-transform: uppercase;
-}
-.sidebar-categories section.taxonomy-categories ul {
-  font-size: 1em;
 }
 
 .site-description {
@@ -382,7 +354,7 @@ section.thumbnails {
   position: relative;
   width: 100%;
 }
-.container.portfolio-page, .container.client-page, .container.taxonomy-project-page {
+.container.portfolio-page, .container.taxonomy-project-page {
   max-width: none;
 }
 .container .thumbnail-previews .container {
@@ -392,10 +364,6 @@ section.thumbnails {
 img {
   border-style: none;
   display: block;
-}
-
-.screen-reader-text {
-  display: none;
 }
 
 body > header .container {
@@ -450,10 +418,6 @@ main header.error-message {
   padding: 2rem 0;
 }
 
-.skip-link {
-  display: none;
-}
-
 body > header {
   color: var(--t7);
   width: 100%;
@@ -479,24 +443,12 @@ body > header .container {
   body > header .container .site-description {
     margin: 1em auto 0;
   }
-  body > header .container .nav-menu {
-    padding: 0;
-  }
-}
-@media only screen and (max-width: 640.1px) {
-  body > header .container .nav-menu a {
-    padding: 0.5em 0.5em 0.75em;
-  }
 }
 body > header .site-branding {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.prev-next-taxonomy-term-navigation + header {
-  margin-top: 1.5em;
 }
 
 header nav ul {
@@ -527,13 +479,6 @@ header nav ul li a:hover {
 header nav ul li [aria-current] {
   color: var(--t7);
   transition: none;
-}
-header nav .resume-tab {
-  display: none;
-}
-
-.portfolio-sub-page li.menu-item-1041 a {
-  color: var(--t7);
 }
 
 .intro {
@@ -566,11 +511,6 @@ main .taxonomy-meta p:last-of-type {
 
 article + header {
   margin-top: 0;
-}
-
-.taxonomy-selected {
-  margin: 2em 0 1em;
-  width: 100%;
 }
 
 .showcase-list {
@@ -690,18 +630,6 @@ article + header {
 .showcase-list .text-wrapper .count {
   display: block;
   font-size: 0.75em;
-}
-
-.taxonomy-selected li {
-  flex: 1;
-}
-
-.clients-page .selected-list li {
-  max-width: 223.5px;
-}
-
-body.home .selected-list a {
-  min-width: 0;
 }
 
 .capabilities {
@@ -832,16 +760,6 @@ body.home .selected-list a {
   .value-statement h2 {
     font-size: 1.6em;
   }
-}
-
-.portfolio-introduction {
-  padding: 1em 0 2.5em;
-}
-.portfolio-introduction .expando-content-wrapper {
-  padding: 0 1.5em 1em;
-}
-.portfolio-introduction .expando-content-wrapper h3:first-of-type {
-  margin-top: 0.5em;
 }
 
 .selected-projects {
@@ -1424,28 +1342,6 @@ ul.grid .text-wrapper .click-to-view {
   }
 }
 
-.sub-nav.sub-nav-about-page .container {
-  justify-content: flex-end;
-}
-
-body.tax-client .sub-nav .nav ul .clients-tab a,
-body.tax-industry .sub-nav .nav ul .industries-tab a,
-body.tax-market .sub-nav .nav ul .markets-tab a,
-body.tax-platform .sub-nav .nav ul .formats-tab a,
-body.tax-role .sub-nav .nav ul .roles-tab a,
-body.tax-project .sub-nav .nav ul .projects-tab a {
-  background-color: var(--t4);
-  color: var(--t3);
-}
-body.tax-client .sub-nav .nav ul .clients-tab a::before,
-body.tax-industry .sub-nav .nav ul .industries-tab a::before,
-body.tax-market .sub-nav .nav ul .markets-tab a::before,
-body.tax-platform .sub-nav .nav ul .formats-tab a::before,
-body.tax-role .sub-nav .nav ul .roles-tab a::before,
-body.tax-project .sub-nav .nav ul .projects-tab a::before {
-  content: none;
-}
-
 .dropdown {
   position: relative;
 }
@@ -1638,7 +1534,9 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
 .pagination .page-numbers .current {
   background-color: var(--t4);
   color: var(--t5);
+  min-width: 1.75rem;
   padding: 0.25rem 0.5rem;
+  text-align: center;
 }
 .pagination .page-numbers .dots {
   padding: 0.75rem 0.25rem 0;
@@ -1649,7 +1547,9 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   cursor: pointer;
   display: block;
   margin: 0;
+  min-width: 1.75rem;
   padding: 0.25rem 0.5rem;
+  text-align: center;
 }
 .pagination .page-number:hover,
 .pagination .prev:hover,
@@ -1734,30 +1634,6 @@ body.tax-project .sub-nav .nav ul .projects-tab a::before {
   transition: transform var(--transition-speed-faster) ease-in-out;
 }
 
-.contact-form {
-  background-color: var(--t7);
-  margin-bottom: 0.5em;
-  padding: 1em 2em;
-}
-
-.gform_button {
-  background-color: #20b2aa;
-  background-color: var(--t3);
-  border-width: 0;
-  color: rgb(255, 255, 255);
-  color: var(--t7);
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.75em 1.25em;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.entry-footer {
-  width: 100%;
-}
-
 body > footer .container {
   padding: 2em 1em;
 }
@@ -1795,36 +1671,6 @@ body > footer .badges li.photoshop {
   font-size: x-small;
   margin-right: -0.2em;
   text-align: center;
-}
-
-.footer-navigation .nav-menu {
-  list-style-type: none;
-  margin: 0 0 1em;
-  padding: 1em 0 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-.footer-navigation .nav-menu li {
-  margin: 0 1em;
-  position: relative;
-}
-@media only screen and (max-width: 420.1px) {
-  .footer-navigation .nav-menu li {
-    margin: 0 0.5em;
-  }
-}
-.footer-navigation .nav-menu a {
-  display: inline-block;
-  font: normal 100%/1.6180339888 "Oswald", sans-serif;
-  white-space: nowrap;
-  transition: color var(--transition-speed) ease-in-out;
-}
-.footer-navigation .nav-menu a:hover {
-  color: var(--t7);
-}
-.footer-navigation .nav-menu .current-menu-item a {
-  color: var(--t7);
 }
 
 .list-view ol {
@@ -1882,10 +1728,10 @@ body > footer .badges li.photoshop {
   width: 258px;
   flex: 0 0 258px;
 }
-.list-view .thumbnail:hover, .list-view .thumbnail.hover-class {
+.list-view .thumbnail:hover {
   box-shadow: var(--box-shadow-hover);
 }
-.list-view .thumbnail:hover img, .list-view .thumbnail.hover-class img {
+.list-view .thumbnail:hover img {
   left: -1.75em;
   top: -1.5em;
   transform: rotate(-7deg) scale(1.2);
@@ -2283,16 +2129,6 @@ article .stage .imvu-legal.imvu-legal2 {
   margin-bottom: 0;
 }
 
-.wp-video {
-  margin: 1em auto;
-  text-align: center;
-}
-
-.mejs-container {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .color-bullets {
   list-style-type: none;
   margin: 1em 0;
@@ -2575,9 +2411,6 @@ main.portfolio-page header.page-header {
 .dpportfolio .stage .center-images img:last-of-type {
   margin-bottom: 0;
 }
-.dpportfolio .stage .center-images.without-tb-margin img {
-  margin: auto;
-}
 .dpportfolio .stage .max-width-80 img {
   max-width: 80%;
 }
@@ -2593,13 +2426,6 @@ main.portfolio-page header.page-header {
 }
 .dpportfolio .stage .aol-2market-promos img:first-of-type {
   margin-top: 0.5em;
-}
-.dpportfolio .stage .aol-internet-adventure .wp-video {
-  margin: 0 auto;
-}
-.dpportfolio .stage .aol-internet-adventure .wp-video #mep_0 {
-  width: 360px;
-  height: 240px !important;
 }
 .dpportfolio .stage .avs-logo {
   background-color: #921d92;
@@ -2714,18 +2540,6 @@ main.portfolio-page header.page-header {
 .dpportfolio .project-additional-samples .prev-next-sample-navigation a:hover span:before {
   color: var(--t7);
   transition: color var(--transition-speed) ease-in-out;
-}
-.dpportfolio .project-additional-samples .nav-links {
-  margin-bottom: 0.5em;
-}
-.dpportfolio .project-additional-samples .nav-links .nav-previous {
-  border-right: 1px solid #ccc;
-  display: inline-block;
-  margin-right: 1em;
-  padding-right: 1em;
-}
-.dpportfolio .project-additional-samples .nav-links .nav-next {
-  display: inline-block;
 }
 .dpportfolio .project-additional-samples .also-part-of-this-project {
   list-style-type: none;
@@ -2881,30 +2695,6 @@ main.portfolio-projects-page {
   padding: 0;
 }
 
-.roles-page.taxonomy-categories .taxonomy-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.roles-page.taxonomy-categories .taxonomy-list li {
-  flex: 0 1 48.5%;
-}
-@media only screen and (max-width: 1020px) {
-  .roles-page.taxonomy-categories .taxonomy-list li {
-    flex: 1 1 100%;
-  }
-}
-.roles-page.taxonomy-categories .taxonomy-list h3 {
-  margin: 1em 0 0.33em;
-}
-.roles-page.taxonomy-categories .taxonomy-list p {
-  margin: 0 0 1em;
-  text-wrap: balance;
-}
-
 .about-me-page {
   padding-bottom: 3em;
 }
@@ -2976,7 +2766,6 @@ main.portfolio-projects-page {
   padding: 0 2em;
   height: 516px;
 }
-.about-me-page .professional-highlights ul,
 .about-me-page .professional-recognitions ul {
   column-gap: 1.25em;
   column-count: 2;
@@ -2984,18 +2773,13 @@ main.portfolio-projects-page {
   margin-bottom: -1em;
 }
 @media only screen and (max-width: 640px) {
-  .about-me-page .professional-highlights ul,
   .about-me-page .professional-recognitions ul {
     column-count: 1;
   }
 }
-.about-me-page .professional-highlights ul li,
 .about-me-page .professional-recognitions ul li {
   margin: 0 0 1em;
   padding-right: 0.5em;
-}
-.about-me-page .key-dates ul li {
-  margin: 0 0 1em;
 }
 
 main.contact-page {
@@ -3023,14 +2807,6 @@ main.contact-page .contact-info div.center-center {
 }
 main.contact-page .contact-info p {
   margin-bottom: 0;
-}
-
-.rate-page section + section {
-  margin-top: 2em;
-}
-.rate-page .sub {
-  color: #333333;
-  font-weight: bold;
 }
 
 .key-areas {
@@ -3071,10 +2847,6 @@ main.error-404-page h1 {
   margin-bottom: 0.5em;
 }
 
-header.error-message.plugin-not-active h1 {
-  color: #424242;
-}
-
 img {
   vertical-align: top;
 }
@@ -3090,10 +2862,6 @@ img {
    Helper classes
    ========================================================================== */
 /* Prevent callout */
-.nocallout {
-  -webkit-touch-callout: none;
-}
-
 .pressed {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -3105,11 +2873,6 @@ textarea[contenteditable] {
 
 /* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
    they have been set as display: none */
-.gifhidden {
-  position: absolute;
-  left: -100%;
-}
-
 /*
  * Image replacement
  */
@@ -3139,52 +2902,17 @@ textarea[contenteditable] {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-.invisible {
-  visibility: hidden;
-}
-
 /**
  * Clearfix helper
  * Used to contain floats: h5bp.com/q
  */
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.

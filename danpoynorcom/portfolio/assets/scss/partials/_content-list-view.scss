@@ -67,8 +67,7 @@
         //
         flex: 0 0 258px;
 
-        &:hover,
-        &.hover-class {
+        &:hover {
             box-shadow: var(--box-shadow-hover);
 
             // for jquery

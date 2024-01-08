@@ -116,7 +116,9 @@ $breakpoint: 900px;
         .current {
             background-color: var(--t4);
             color: var(--t5);
+            min-width: 1.75rem;
             padding: $padding-small $padding-medium;
+            text-align: center;
         }
 
         .dots {
@@ -130,7 +132,9 @@ $breakpoint: 900px;
         cursor: pointer;
         display: block;
         margin: 0;
+        min-width: 1.75rem;
         padding: $padding-small $padding-medium;
+        text-align: center;
 
         &:hover {
             background-color: var(--t11);

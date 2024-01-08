@@ -130,37 +130,6 @@ $breakpoint: 900px;
                     }
                 }
             }
-
-            // .portfolio-sub-tabs
-            // @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-            //     flex-direction: column;
-            //     .totals {
-            //         margin-bottom: 0;
-            //     }
-            // }
-        }
-    }
-}
-
-.sub-nav.sub-nav-about-page {
-    .container {
-        justify-content: flex-end;
-    }
-}
-
-// selected tabs
-body.tax-client .sub-nav .nav ul .clients-tab,
-body.tax-industry .sub-nav .nav ul .industries-tab,
-body.tax-market .sub-nav .nav ul .markets-tab,
-body.tax-platform .sub-nav .nav ul .formats-tab,
-body.tax-role .sub-nav .nav ul .roles-tab,
-body.tax-project .sub-nav .nav ul .projects-tab {
-    a {
-        background-color: var(--t4);
-        color: var(--t3);
-
-        &::before {
-            content: none;
         }
     }
 }

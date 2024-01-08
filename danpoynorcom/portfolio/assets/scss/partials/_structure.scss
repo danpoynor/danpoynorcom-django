@@ -19,7 +19,6 @@ $error-message-padding: 2rem;
     box-sizing: border-box;
 }
 
-//*:focus,
 *:active {
     outline: none !important;
 }
@@ -75,7 +74,6 @@ section {
     width: 100%;
 
     &.portfolio-page,
-    &.client-page,
     &.taxonomy-project-page {
         max-width: none;
     }
@@ -88,10 +86,6 @@ section {
 img {
     border-style: none;
     display: block;
-}
-
-.screen-reader-text {
-    display: none;
 }
 
 body {
@@ -127,10 +121,6 @@ body {
             max-width: 100%;
         }
 
-        // img,
-        // table {
-        //     display: initial;
-        // }
         p:first-of-type {
             margin-top: 0;
         }

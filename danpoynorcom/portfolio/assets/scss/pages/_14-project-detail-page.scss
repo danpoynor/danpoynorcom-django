@@ -73,12 +73,6 @@
                     margin-bottom: 0;
                 }
             }
-
-            &.without-tb-margin {
-                img {
-                    margin: auto;
-                }
-            }
         }
 
         .max-width-80 {
@@ -98,19 +92,7 @@
                 margin: .5em .5em 1.5em;
 
                 &:first-of-type {
-                    // offset .center-images margin
                     margin-top: .5em;
-                }
-            }
-        }
-
-        .aol-internet-adventure {
-            .wp-video {
-                margin: 0 auto;
-
-                #mep_0 {
-                    width: 360px;
-                    height: 240px !important;
                 }
             }
         }

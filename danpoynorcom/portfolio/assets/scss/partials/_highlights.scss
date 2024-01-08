@@ -1,8 +1,7 @@
-.taxonomy-selected {
-    margin: 2em 0 1em;
-    width: 100%;
-}
-
+// .taxonomy-selected {
+//     margin: 2em 0 1em;
+//     width: 100%;
+// }
 .showcase-list {
     list-style-type: none;
     margin: 1em -.25em;
@@ -141,29 +140,6 @@
         .count {
             display: block;
             font-size: .75em;
-        }
-    }
-}
-
-// just in selected
-.taxonomy-selected {
-    li {
-        flex: 1;
-    }
-}
-
-.clients-page {
-    .selected-list {
-        li {
-            max-width: 223.5px
-        }
-    }
-}
-
-body.home {
-    .selected-list {
-        a {
-            min-width: 0;
         }
     }
 }
