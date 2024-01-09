@@ -25,3 +25,36 @@
         padding: 0;
     }
 }
+
+.roles-page.taxonomy-categories {
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .taxonomy-list {
+        columns: 1;
+
+        @media (min-width: 768px) {
+            columns: 2;
+        }
+
+        @media (min-width: 1024px) {
+            columns: 3;
+        }
+
+        li {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            // break-before: column;
+            margin: 0 0 .33rem;
+        }
+
+        p {
+            margin: 0 0 1rem;
+            text-wrap: balance;
+        }
+    }
+}

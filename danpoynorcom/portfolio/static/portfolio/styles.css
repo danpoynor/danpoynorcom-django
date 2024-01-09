@@ -2824,6 +2824,34 @@ main.portfolio-projects-page {
   padding: 0;
 }
 
+.roles-page.taxonomy-categories h2 {
+  margin-bottom: 1.5rem;
+}
+.roles-page.taxonomy-categories .taxonomy-list {
+  columns: 1;
+}
+@media (min-width: 768px) {
+  .roles-page.taxonomy-categories .taxonomy-list {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .roles-page.taxonomy-categories .taxonomy-list {
+    columns: 3;
+  }
+}
+.roles-page.taxonomy-categories .taxonomy-list li {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+.roles-page.taxonomy-categories .taxonomy-list h3 {
+  margin: 0 0 0.33rem;
+}
+.roles-page.taxonomy-categories .taxonomy-list p {
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
 .about-me-page {
   padding-bottom: 3em;
 }
