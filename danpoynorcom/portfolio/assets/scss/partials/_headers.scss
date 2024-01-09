@@ -2,9 +2,9 @@
     padding: 2em 0 0;
     opacity: 0;
     position: relative;
-    animation: fadeinfrombottom var(--transition-speed-slower);
+    animation: fadeinfrombottom var(--transition-speed-slowest);
     animation-fill-mode: forwards;
-    animation-delay: .1s;
+    animation-delay: .6s;
 
     p {
         font: normal 1.5em/1.61803398875 'Bitter', sans-serif;
