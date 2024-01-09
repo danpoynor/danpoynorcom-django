@@ -163,11 +163,16 @@ p a:link,
 p a:visited,
 p a:hover,
 p a:active,
-.project-details a,
-.project-details a:link,
-.project-details a:visited,
-.project-details a:hover,
-.project-details a:active,
+.project-details .display-column a,
+.project-details .display-column a:link,
+.project-details .display-column a:visited,
+.project-details .display-column a:hover,
+.project-details .display-column a:active,
+.project-details .expando a,
+.project-details .expando a:link,
+.project-details .expando a:visited,
+.project-details .expando a:hover,
+.project-details .expando a:active,
 .taxonomy-list a,
 .taxonomy-list a:link,
 .taxonomy-list a:visited,
@@ -208,11 +213,16 @@ p a:link:hover,
 p a:visited:hover,
 p a:hover:hover,
 p a:active:hover,
-.project-details a:hover,
-.project-details a:link:hover,
-.project-details a:visited:hover,
-.project-details a:hover:hover,
-.project-details a:active:hover,
+.project-details .display-column a:hover,
+.project-details .display-column a:link:hover,
+.project-details .display-column a:visited:hover,
+.project-details .display-column a:hover:hover,
+.project-details .display-column a:active:hover,
+.project-details .expando a:hover,
+.project-details .expando a:link:hover,
+.project-details .expando a:visited:hover,
+.project-details .expando a:hover:hover,
+.project-details .expando a:active:hover,
 .taxonomy-list a:hover,
 .taxonomy-list a:link:hover,
 .taxonomy-list a:visited:hover,
@@ -252,11 +262,16 @@ p a:link[target=_blank]:after,
 p a:visited[target=_blank]:after,
 p a:hover[target=_blank]:after,
 p a:active[target=_blank]:after,
-.project-details a[target=_blank]:after,
-.project-details a:link[target=_blank]:after,
-.project-details a:visited[target=_blank]:after,
-.project-details a:hover[target=_blank]:after,
-.project-details a:active[target=_blank]:after,
+.project-details .display-column a[target=_blank]:after,
+.project-details .display-column a:link[target=_blank]:after,
+.project-details .display-column a:visited[target=_blank]:after,
+.project-details .display-column a:hover[target=_blank]:after,
+.project-details .display-column a:active[target=_blank]:after,
+.project-details .expando a[target=_blank]:after,
+.project-details .expando a:link[target=_blank]:after,
+.project-details .expando a:visited[target=_blank]:after,
+.project-details .expando a:hover[target=_blank]:after,
+.project-details .expando a:active[target=_blank]:after,
 .taxonomy-list a[target=_blank]:after,
 .taxonomy-list a:link[target=_blank]:after,
 .taxonomy-list a:visited[target=_blank]:after,
@@ -1061,56 +1076,66 @@ li {
 }
 
 .colored-bullets {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 .colored-bullets li {
-  padding-left: 0.7em;
-  text-indent: -0.7em;
+  padding-left: 0.7rem;
+  position: relative;
 }
 .colored-bullets li + li {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
-.colored-bullets li:before {
-  color: var(--t3);
-  content: "• ";
-  font-size: 125%;
-  line-height: 1;
-  vertical-align: -0.06em;
+.colored-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--t3);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .gray-bullets {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 .gray-bullets li {
-  padding-left: 0.7em;
-  text-indent: -0.7em;
+  padding-left: 0.7rem;
+  position: relative;
 }
 .gray-bullets li + li {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
-.gray-bullets li:before {
-  color: #999;
-  content: "• ";
-  font-size: 125%;
-  line-height: 1;
-  vertical-align: -0.06em;
+.gray-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #999;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .taxonomy-list ul.colored-bullets {
   column-count: 2;
-  column-gap: 1em;
+  column-gap: 1rem;
 }
 .taxonomy-list ul.colored-bullets li {
   flex: none;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 .taxonomy-list p + ul.colored-bullets {
-  margin-top: -0.5em;
+  margin-top: -0.5rem;
 }
 
 .taxonomy-meta ul.colored-bullets {
   column-count: 4;
-  column-gap: 1em;
+  column-gap: 1rem;
 }
 @media only screen and (max-width: 980px) {
   .taxonomy-meta ul.colored-bullets {
@@ -1129,7 +1154,7 @@ li {
 }
 .taxonomy-meta ul.colored-bullets li {
   flex: none;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .prev-next {
