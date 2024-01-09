@@ -159,25 +159,143 @@ p {
 }
 
 p a,
+p a:link,
+p a:visited,
+p a:hover,
+p a:active,
 .project-details a,
+.project-details a:link,
+.project-details a:visited,
+.project-details a:hover,
+.project-details a:active,
 .taxonomy-list a,
+.taxonomy-list a:link,
+.taxonomy-list a:visited,
+.taxonomy-list a:hover,
+.taxonomy-list a:active,
 .selected-taxonomy-items p a,
+.selected-taxonomy-items p a:link,
+.selected-taxonomy-items p a:visited,
+.selected-taxonomy-items p a:hover,
+.selected-taxonomy-items p a:active,
 .taxonomy-meta a,
+.taxonomy-meta a:link,
+.taxonomy-meta a:visited,
+.taxonomy-meta a:hover,
+.taxonomy-meta a:active,
 .sidebar-info a,
-.contact-info a {
+.sidebar-info a:link,
+.sidebar-info a:visited,
+.sidebar-info a:hover,
+.sidebar-info a:active,
+.contact-info a,
+.contact-info a:link,
+.contact-info a:visited,
+.contact-info a:hover,
+.contact-info a:active,
+.about-references a,
+.about-references a:link,
+.about-references a:visited,
+.about-references a:hover,
+.about-references a:active {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.1em;
+  text-underline-offset: 0.2em;
+  display: inline-block;
 }
 p a:hover,
+p a:link:hover,
+p a:visited:hover,
+p a:hover:hover,
+p a:active:hover,
 .project-details a:hover,
+.project-details a:link:hover,
+.project-details a:visited:hover,
+.project-details a:hover:hover,
+.project-details a:active:hover,
 .taxonomy-list a:hover,
+.taxonomy-list a:link:hover,
+.taxonomy-list a:visited:hover,
+.taxonomy-list a:hover:hover,
+.taxonomy-list a:active:hover,
 .selected-taxonomy-items p a:hover,
+.selected-taxonomy-items p a:link:hover,
+.selected-taxonomy-items p a:visited:hover,
+.selected-taxonomy-items p a:hover:hover,
+.selected-taxonomy-items p a:active:hover,
 .taxonomy-meta a:hover,
+.taxonomy-meta a:link:hover,
+.taxonomy-meta a:visited:hover,
+.taxonomy-meta a:hover:hover,
+.taxonomy-meta a:active:hover,
 .sidebar-info a:hover,
-.contact-info a:hover {
+.sidebar-info a:link:hover,
+.sidebar-info a:visited:hover,
+.sidebar-info a:hover:hover,
+.sidebar-info a:active:hover,
+.contact-info a:hover,
+.contact-info a:link:hover,
+.contact-info a:visited:hover,
+.contact-info a:hover:hover,
+.contact-info a:active:hover,
+.about-references a:hover,
+.about-references a:link:hover,
+.about-references a:visited:hover,
+.about-references a:hover:hover,
+.about-references a:active:hover {
+  background-position: left;
   filter: brightness(var(--hover-brightness-amount));
-  text-underline-offset: 0.18em;
+  text-underline-offset: 0.3em;
+}
+p a[target=_blank]:after,
+p a:link[target=_blank]:after,
+p a:visited[target=_blank]:after,
+p a:hover[target=_blank]:after,
+p a:active[target=_blank]:after,
+.project-details a[target=_blank]:after,
+.project-details a:link[target=_blank]:after,
+.project-details a:visited[target=_blank]:after,
+.project-details a:hover[target=_blank]:after,
+.project-details a:active[target=_blank]:after,
+.taxonomy-list a[target=_blank]:after,
+.taxonomy-list a:link[target=_blank]:after,
+.taxonomy-list a:visited[target=_blank]:after,
+.taxonomy-list a:hover[target=_blank]:after,
+.taxonomy-list a:active[target=_blank]:after,
+.selected-taxonomy-items p a[target=_blank]:after,
+.selected-taxonomy-items p a:link[target=_blank]:after,
+.selected-taxonomy-items p a:visited[target=_blank]:after,
+.selected-taxonomy-items p a:hover[target=_blank]:after,
+.selected-taxonomy-items p a:active[target=_blank]:after,
+.taxonomy-meta a[target=_blank]:after,
+.taxonomy-meta a:link[target=_blank]:after,
+.taxonomy-meta a:visited[target=_blank]:after,
+.taxonomy-meta a:hover[target=_blank]:after,
+.taxonomy-meta a:active[target=_blank]:after,
+.sidebar-info a[target=_blank]:after,
+.sidebar-info a:link[target=_blank]:after,
+.sidebar-info a:visited[target=_blank]:after,
+.sidebar-info a:hover[target=_blank]:after,
+.sidebar-info a:active[target=_blank]:after,
+.contact-info a[target=_blank]:after,
+.contact-info a:link[target=_blank]:after,
+.contact-info a:visited[target=_blank]:after,
+.contact-info a:hover[target=_blank]:after,
+.contact-info a:active[target=_blank]:after,
+.about-references a[target=_blank]:after,
+.about-references a:link[target=_blank]:after,
+.about-references a:visited[target=_blank]:after,
+.about-references a:hover[target=_blank]:after,
+.about-references a:active[target=_blank]:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23568000' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
 
 .site-info {
@@ -213,9 +331,28 @@ body > header a {
   transition: none;
 }
 
-body > footer a {
+body > footer a,
+body > footer a:link,
+body > footer a:visited,
+body > footer a:hover,
+body > footer a:active {
   color: var(--t12);
   text-decoration: underline;
+}
+body > footer a[target=_blank]:after,
+body > footer a:link[target=_blank]:after,
+body > footer a:visited[target=_blank]:after,
+body > footer a:hover[target=_blank]:after,
+body > footer a:active[target=_blank]:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%239acd32' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
 
 a:active,
@@ -891,14 +1028,6 @@ article + header {
 }
 .selected-projects .btn:hover::before {
   border: 1.55em solid var(--t3);
-}
-
-a[target=_blank]:after {
-  content: "⧉";
-  font-size: 1.1em;
-  font-weight: 700;
-  line-height: 1;
-  padding-left: 0.33em;
 }
 
 .footer-heart {
@@ -2711,22 +2840,14 @@ main.portfolio-projects-page {
   margin-top: 1em;
 }
 .about-me-page .content .container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 66% 33%;
+  justify-items: stretch;
+  grid-gap: 1em;
 }
-@supports (display: grid) {
+@media only screen and (max-width: 640px) {
   .about-me-page .content .container {
-    display: grid;
-    grid-template-columns: 66% 33%;
-    justify-items: stretch;
-    grid-gap: 1em;
-  }
-  @media only screen and (max-width: 640px) {
-    .about-me-page .content .container {
-      grid-template-columns: 100%;
-    }
+    grid-template-columns: 100%;
   }
 }
 .about-me-page .content .column {
@@ -2759,12 +2880,35 @@ main.portfolio-projects-page {
 }
 .about-me-page .content section + section {
   border-top: 1px solid var(--t8);
-  margin-top: 2em;
+  margin-top: 1em;
   padding-top: 2em;
 }
 .about-me-page .photo .container {
   padding: 0 2em;
   height: 516px;
+}
+.about-me-page .about-references {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.about-me-page .about-references li {
+  text-align: center;
+  flex: 1 0 200px;
+  padding: 1rem;
+}
+.about-me-page .about-references .svg-wrapper {
+  display: block;
+  margin: 0 auto 0.25rem;
+  width: 50px;
+  height: auto;
+}
+.about-me-page .about-references svg {
+  width: 100%;
+  height: auto;
 }
 .about-me-page .professional-recognitions ul {
   column-gap: 1.25em;

@@ -19,28 +19,18 @@
 
     .content {
         .container {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 66% 33%;
+            justify-items: stretch;
+            grid-gap: 1em;
 
-            //
-            @supports (display: grid) {
-                // test the browser understand css variables
-                display: grid;
-                grid-template-columns: 66% 33%;
-                justify-items: stretch;
-                grid-gap: 1em;
-
-                @media only screen and (max-width: $iphone-landscape-width) {
-                    grid-template-columns: 100%;
-                }
+            @media only screen and (max-width: $iphone-landscape-width) {
+                grid-template-columns: 100%;
             }
         }
 
         .column {
             background-color: var(--t7);
-            //
             padding: 2em 2em 1em;
 
             &.prose {
@@ -53,7 +43,7 @@
 
                     span {
                         color: var(--t5);
-                        font-size: .58333333333333em; // 14 / 24
+                        font-size: .58333333333333em;
                     }
                 }
             }
@@ -76,7 +66,7 @@
 
         section + section {
             border-top: 1px solid var(--t8);
-            margin-top: 2em;
+            margin-top: 1em;
             padding-top: 2em;
         }
     }
@@ -85,6 +75,33 @@
         .container {
             padding: 0 2em;
             height: 516px;
+        }
+    }
+
+    .about-references {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        li {
+            text-align: center;
+            flex: 1 0 200px;
+            padding: 1rem;
+        }
+
+        .svg-wrapper {
+            display: block;
+            margin: 0 auto 0.25rem;
+            width: 50px;
+            height: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -105,12 +122,4 @@
             }
         }
     }
-
-    // .key-dates {
-    //     ul {
-    //         li {
-    //             margin: 0 0 1em;
-    //         }
-    //     }
-    // }
 }

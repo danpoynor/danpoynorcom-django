@@ -56,15 +56,35 @@ p,
 .selected-taxonomy-items p,
 .taxonomy-meta,
 .sidebar-info,
-.contact-info {
-    a {
+.contact-info,
+.about-references {
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
         text-decoration: underline;
         text-decoration-thickness: 1px;
-        text-underline-offset: 0.1em;
+        text-underline-offset: 0.2em;
+        display: inline-block;
 
         &:hover {
+            background-position: left;
             filter: brightness(var(--hover-brightness-amount));
-            text-underline-offset: 0.18em;
+            text-underline-offset: 0.3em;
+        }
+
+        &[target='_blank']:after {
+            content: "";
+            width: 11px;
+            height: 11px;
+            margin-left: 5px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
         }
     }
 }
@@ -113,9 +133,28 @@ body > header a {
     transition: none;
 }
 
-body > footer a {
-    color: var(--t12);
-    text-decoration: underline;
+body > footer {
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: var(--t12);
+        text-decoration: underline;
+
+        &[target='_blank']:after {
+            content: "";
+            width: 11px;
+            height: 11px;
+            margin-left: 5px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-highlight-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
 }
 
 a:active,
