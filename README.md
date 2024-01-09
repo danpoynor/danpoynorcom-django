@@ -39,7 +39,9 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 - [`phpserialize`](https://pypi.org/project/phpserialize/): Python library used to serialize PHP data. Used by scripts in this project to convert WordPress data to Python data.
 - [`inflect`](https://github.com/jaraco/inflect): Python library used to convert plural nouns to singular
 - [`coverage`](https://coverage.readthedocs.io/en/latest/): Python library used to measure code coverage.
+- [`django.contrib.sitemaps`](https://docs.djangoproject.com/en/5.0/ref/contrib/sitemaps/): Django library used to generate sitemaps.
 - [`whitenoise`](http://whitenoise.evans.io/en/stable/): serve static files when Debug is False and after running `python manage.py collectstatic`.
+- [`jango_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django.
 - [bakery](https://palewi.re/docs/django-bakery/): Django helpers for baking your Django site out as flat files.
 
 ## Other Features Include
@@ -391,3 +393,16 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 - [django-staticfiles](https://docs.djangoproject.com/en/3.1/ref/contrib/staticfiles/)
 
 </details>
+
+## To Do
+
+<details>
+  <summary>Click to expand</summary>
+
+- [ ] Add a favicon
+- [ ] Add a robots.txt file
+- [ ] Add a sitemap.xml file
+- [ ] Add a humans.txt file
+- [ ] Populate MediaType column in Project Items table
+- [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places
+- [ ] May need to refactor schema so taxonomies are associated with ProjectItems instead of Projects
