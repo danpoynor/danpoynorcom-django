@@ -162,6 +162,7 @@ class ProjectItem(models.Model):
     project = models.ForeignKey(Project, on_delete=models.PROTECT, related_name="items", related_query_name="item")
     name = models.CharField(max_length=200, blank=False, null=False)
     slug = models.SlugField(max_length=200, blank=False, null=False)
+    media_type = models.ForeignKey(MediaType, on_delete=models.CASCADE, null=True)
     description = models.TextField(help_text="Enter the project item description", blank=True, null=True)
     html_content = models.TextField(blank=True, null=True)
     visible = models.BooleanField(default=True, help_text="Check if the project item should be visible")
