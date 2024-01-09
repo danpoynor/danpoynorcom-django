@@ -5,12 +5,26 @@
         <meta charset="UTF-8" />
         <title>{{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="My portfolio site" />
-        <meta name="keywords" content="your, keywords, here" />
         <link rel="stylesheet"
               type="text/css"
               href="{% static 'portfolio/styles.css' %}" />
         {% include "partials/_fonts.html" %}
+        <!-- Meta tags -->
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="your, keywords, here" />
+        <meta name="author" content="Dan Poynor" />
+        <meta name="Classification" content="Business" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="HandheldFriendly" content="true" />
+        <!-- OpenGraph tags -->
+        <meta name="og:title" content="Dan Poynor Design + Development Portfolio" />
+        <meta name="og:description"
+              content="Dan Poynor is a web developer and UI/UX designer in Austin, TX who has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands." />
+        <meta name="og:url" content="%PUBLIC_URL%/" />
+        <meta name="og:site_name"
+              content="Dan Poynor Design and Devlopment Portfolio" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:type" content="website" />
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

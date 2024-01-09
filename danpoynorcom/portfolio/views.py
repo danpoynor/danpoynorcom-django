@@ -11,6 +11,8 @@ from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
 from .constants import SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
 
+default_page_description = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
+
 
 def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
     # Subquery to check if a taxonomy object has any visible projects with visible items
@@ -86,6 +88,7 @@ class HomeView(BuildableTemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Dan Poynor : Visual / UX / Web Design & Development : Austin, TX'
+        context['description'] = "UX/UI + ⚡️ Code: I solve business problems with creative strategy & technical expertise. I don't just make it pretty, I make it work."
         return context
 
 
@@ -138,6 +141,7 @@ class PortfolioView(BuildableTemplateView):
             "selected_media_types": selected_media_types,
             "selected_roles": selected_roles,
             "title": "Strategic Design + Dev Solutions for Every Industry & Medium",
+            "description": "From Fortune 500s to startups, I've crafted award-winning UX/UI & web solutions across industries. Ready to unleash your brand's potential? ✨",
         })
 
         return context
@@ -150,6 +154,7 @@ class AboutView(BuildableTemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Dan Poynor : UI/UX Design & Web Development : Austin, TX'
+        context['description'] = "Meet your new design secret weapon! Quick-witted, multi-talented UX/UI design and development wiz with a proven track record of slaying digital dragons for diverse clients, big & small. Ready to unleash your brand's full potential? Let's chat."
         return context
 
 
@@ -160,6 +165,7 @@ class ContactView(BuildableTemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Let’s Connect! : UI/UX Design & Web Development : Austin, TX'
+        context['description'] = "Don't be shy, partner! I'm just a click, call, or email away. Let's discuss how my design alchemy can transform your business. Send me your wildest ideas, and watch them become reality. ✨"
         return context
 
 
@@ -184,6 +190,7 @@ class ClientsView(BuildableTemplateView):
             "clients": client_list,
             "object": Client(),
             "title": "Startups to Global Brands : Checkout My Design & Dev Clients",
+            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner.",
         })
 
         return context
@@ -215,6 +222,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{client_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
+        context['description'] = f'Explore design and development projects for {client_name}. Page {page} {order_text}.'
         return context
 
 
@@ -258,6 +266,7 @@ class IndustriesView(BuildableTemplateView):
             "markets": market_list,
             "object": Industry(),
             "title": "Making a Mark in Every Market: My Design & Dev Industry List",
+            "description": "B2B, B2C, entertainment, non-profit? Conquered them all. Explore my industry expertise & unlock your brand's full potential.",
         })
 
         return context
@@ -289,6 +298,7 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailVi
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{industry_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
+        context['description'] = f'Explore design and development projects for {industry_name}. Page {page} {order_text}.'
         return context
 
 
@@ -313,6 +323,7 @@ class MarketsView(BuildableTemplateView):
             "markets": market_list,
             "object": Market(),
             "title": "Market-Driven Design & Development: View Tailored Solutions",
+            "description": "From niche audiences to global markets, view my award-winning UX/UI & web solutions that speak their language. Built for success and maximum impact.",
         })
 
         return context
@@ -331,6 +342,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         context = super().get_context_data(**kwargs)
         # Add the title to the context
         context['title'] = f'{self.object.name} Design & Development Expertise :  Austin, TX'
+        context['description'] = f'Explore design and development projects for {self.object.name}.'
         return context
 
 
@@ -364,6 +376,7 @@ class MediaTypesView(BuildableTemplateView):
             "mediatypes": mediatype_list,
             "object": MediaType(),
             "title": "Pixels to Print & Beyond : View Engaging Design & Dev Mastery",
+            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate.",
         })
 
         return context
@@ -405,8 +418,10 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailV
         # Check if "Design" is already in the name
         if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
             context['title'] = f'{singular_name} Portfolio : Austin, TX : Page {page} {order_text}'
+            context['description'] = f'Explore the {singular_name} portfolio. Page {page} {order_text}.'
         else:
             context['title'] = f'{singular_name} Designer Portfolio : Austin, TX : Page {page} {order_text}'
+            context['description'] = f'Explore the {singular_name} designer portfolio. Page {page} {order_text}.'
         return context
 
 
@@ -436,6 +451,7 @@ class RolesView(BuildableTemplateView):
             "roles": role_list,
             "object": Role(),
             "title": "Concept to Creation: View My Diverse Design & Dev Experience",
+            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project.",
         })
 
         return context
@@ -464,6 +480,7 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{role_name} Portfolio : Austin, TX : Page {page} {order_text}'
+        context['description'] = f'Explore my {role_name} portfolio. Page {page} {order_text}.'
         return context
 
 
@@ -519,6 +536,7 @@ class ProjectsView(PaginationMixin, TemplateView):
             "view_name": self.view_name,  # The name of the current view
             "taxonomy_item_slug": "",  # There is no taxonomy item for this view
             "title": title,
+            "description": default_page_description,
         })
 
         return context
@@ -532,6 +550,7 @@ class ProjectItemsView(PrevNextMixin, BuildableDetailView):
         context = super().get_context_data(**kwargs)
         context["items"] = self.object.items.filter(visible=True)
         context["title"] = f'Project Items: {self.object.name}'
+        context['description'] = default_page_description
         return context
 
 
@@ -550,7 +569,9 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, BuildableDetailView):
         # Check if project item name and project name are the same
         if self.object.name == project.name:
             context['title'] = f'Project: {self.object.name}'
+            context['description'] = f'Details about the project: {self.object.name}'
         else:
             context['title'] = f'Project: {project.name} : {self.object.name}'
+            context['description'] = f'Details about the project: {project.name} and item: {self.object.name}'
 
         return context
