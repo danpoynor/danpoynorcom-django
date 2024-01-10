@@ -100,29 +100,27 @@ class ProjectsViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/design-and-development-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'portfolio/projects_list.html')
+        self.assertTemplateUsed(response, 'portfolio/project_list.html')
 
     def test_post_redirects_to_first_page_with_selected_order(self):
         response = self.client.post('/portfolio/design-and-development-projects/', {'order': 'desc'})
-        self.assertRedirects(response, '/portfolio/design-and-development-projects/page/1/desc/')
+        self.assertRedirects(response, '/portfolio/design-and-development-projects/1/desc/')
 
     def test_get_context_data(self):
-        response = self.client.get('/portfolio/design-and-development-projects/page/1/asc/')
+        response = self.client.get('/portfolio/design-and-development-projects/1/asc/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
-        self.assertTrue('pages' in response.context)
         self.assertTrue('total_projects' in response.context)
         self.assertTrue('count_type' in response.context)
         self.assertEqual(response.context['view_name'], 'projects_page_order')
         self.assertEqual(response.context['taxonomy_item_slug'], '')
 
     def test_pagination(self):
-        response = self.client.get('/portfolio/design-and-development-projects/page/1/asc/')
+        response = self.client.get('/portfolio/design-and-development-projects/1/asc/')
         self.assertEqual(response.status_code, 200)
         self.assertTrue('page_obj' in response.context)
         self.assertTrue('order' in response.context)
-        self.assertTrue('pages' in response.context)
         self.assertTrue('total_projects' in response.context)
         self.assertTrue('count_type' in response.context)
         self.assertEqual(response.context['page_obj'].number, 1)

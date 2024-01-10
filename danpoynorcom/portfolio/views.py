@@ -4,12 +4,13 @@ import inflect
 from django.shortcuts import redirect
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
+from .constants import PAGINATE_BY
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
 from .constants import SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
 
-default_page_description = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
+DEFAULT_PAGE_DESCRIPTION = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
 
 
 def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
@@ -482,11 +483,12 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
         return context
 
 
-class ProjectsView(PaginationMixin, BuildableListView):
+class ProjectsView(BuildableListView):
+    model = Project
+    paginate_by = PAGINATE_BY
     template_name = "portfolio/project_list.html"
     view_name = "projects_page_order"
     paginator_template_name = "partials/pagination/_projects_paginator.html"
-    model = Project
     build_path = 'portfolio/design-and-development-projects/index.html'
 
     def get(self, request, *args, **kwargs):
@@ -509,6 +511,12 @@ class ProjectsView(PaginationMixin, BuildableListView):
             has_visible_items=True
         )
 
+        # Get the order from the URL, default to 'asc' if not provided
+        order = self.kwargs.get("order", "asc")
+
+        # Order the project list
+        project_list = project_list.order_by('name' if order == 'asc' else '-name')
+
         return project_list
 
     def post(self, request, *args, **kwargs):
@@ -521,44 +529,28 @@ class ProjectsView(PaginationMixin, BuildableListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        # Subquery to check if a project has any visible items
-        has_visible_items_subquery = ProjectItem.objects.filter(
-            project=OuterRef("pk"),
-            visible=True  # Check for visible items
-        )
-
-        # Get projects that have any visible items
-        project_list = Project.objects.filter(
-            visible=True
-        ).annotate(
-            has_visible_items=Exists(has_visible_items_subquery)
-        ).filter(
-            has_visible_items=True
-        )
-
-        # Get the page number and order from the URL
-        page = self.kwargs.get("page", '1')
+        # Get the page number from the URL
+        page_number = self.kwargs.get("page", '1')
 
         # Get the order from the URL, default to 'asc' if not provided
         order = self.kwargs.get("order", "asc")
 
-        # Paginate items
-        page_obj, order, elided_page_range, total_projects = self.paginate_queryset(project_list, page, order)
+        # Get the elided page range
+        elided_page_range = context['paginator'].get_elided_page_range(context['page_obj'].number)
 
         # Create a title that includes the page number and order
         order_text = "Asc" if order == "asc" else "Desc"
-        title = f"Visual/UX/UI Design & Software Development Successes - Page {page} {order_text}"
+        title = f"Visual/UX/UI Design & Software Development Successes - Page {page_number} {order_text}"
 
         context.update({
-            "page_obj": page_obj,
             "order": order,
-            "pages": elided_page_range,
-            "total_projects": total_projects,
             "count_type": "projects",  # Specify that we want to display the count of projects
             "view_name": self.view_name,  # The name of the current view
             "taxonomy_item_slug": "",  # There is no taxonomy item for this view
             "title": title,
-            "description": default_page_description,
+            "description": DEFAULT_PAGE_DESCRIPTION,
+            "paginator_template_name": self.paginator_template_name,
+            "elided_page_range": elided_page_range,
         })
 
         return context
@@ -572,7 +564,7 @@ class ProjectItemsView(PrevNextMixin, BuildableDetailView):
         context = super().get_context_data(**kwargs)
         context["items"] = self.object.items.filter(visible=True)
         context["title"] = f'Project Items: {self.object.name}'
-        context['description'] = default_page_description
+        context['description'] = DEFAULT_PAGE_DESCRIPTION
         return context
 
 

@@ -36,28 +36,28 @@ urlpatterns = [
 
     path("portfolio/clients/", views.ClientsView.as_view(), name="client_list"),
     path("portfolio/clients/<slug:slug>-projects/", views.ClientProjectsListView.as_view(), name="client_detail"),
-    path("portfolio/clients/<slug:slug>-projects/page/<int:page>/<str:order>/", views.ClientProjectsListView.as_view(), name="client_page_order"),
+    path("portfolio/clients/<slug:slug>-projects/<int:page>/<str:order>/", views.ClientProjectsListView.as_view(), name="client_page_order"),
 
     path("portfolio/industries/", views.IndustriesView.as_view(), name="industry_list"),
     path("portfolio/industries/<slug:slug>-projects/", views.IndustryProjectsListView.as_view(), name="industry_detail"),
-    path("portfolio/industries/<slug:slug>-projects/page/<int:page>/<str:order>/", views.IndustryProjectsListView.as_view(), name="industry_page_order"),
+    path("portfolio/industries/<slug:slug>-projects/<int:page>/<str:order>/", views.IndustryProjectsListView.as_view(), name="industry_page_order"),
 
     path("portfolio/markets/", views.MarketsView.as_view(), name="market_list"),
     path("portfolio/markets/<slug:slug>-projects/", views.MarketProjectsListView.as_view(), name="market_detail"),
-    path("portfolio/markets/<slug:slug>-projects/page/<int:page>/<str:order>/", views.MarketProjectsListView.as_view(), name="market_page_order"),
+    path("portfolio/markets/<slug:slug>-projects/<int:page>/<str:order>/", views.MarketProjectsListView.as_view(), name="market_page_order"),
 
     path("portfolio/media-types/", views.MediaTypesView.as_view(), name="mediatype_list"),
     path("portfolio/media-types/<slug:slug>-projects/", views.MediaTypeProjectsListView.as_view(), name="mediatype_detail"),
-    path("portfolio/media-types/<slug:slug>-projects/page/<int:page>/<str:order>/", views.MediaTypeProjectsListView.as_view(), name="mediatype_page_order"),
+    path("portfolio/media-types/<slug:slug>-projects/<int:page>/<str:order>/", views.MediaTypeProjectsListView.as_view(), name="mediatype_page_order"),
 
     path("portfolio/roles/", views.RolesView.as_view(), name="role_list"),
     path("portfolio/roles/<slug:slug>-projects/", views.RoleProjectsListView.as_view(), name="role_detail"),
-    path("portfolio/roles/<slug:slug>-projects/page/<int:page>/<str:order>/", views.RoleProjectsListView.as_view(), name="role_page_order"),
+    path("portfolio/roles/<slug:slug>-projects/<int:page>/<str:order>/", views.RoleProjectsListView.as_view(), name="role_page_order"),
 
     path("portfolio/design-and-development-projects/", views.ProjectsView.as_view(), name="project_list"),
-    path('portfolio/design-and-development-projects/page/<int:page>/', views.ProjectsView.as_view(), name='projects_page'),
-    path('portfolio/design-and-development-projects/page/<int:page>/<str:order>/', views.ProjectsView.as_view(), name='projects_page_order'),
-    path('portfolio/design-and-development-projects/page/<int:page>/<str:order>/<str:slug>/', views.ProjectsView.as_view(), name='projects_page_order_slug'),
+    path('portfolio/design-and-development-projects/<int:page>/', views.ProjectsView.as_view(), name='projects_page'),
+    path('portfolio/design-and-development-projects/<int:page>/<str:order>/', views.ProjectsView.as_view(), name='projects_page_order'),
+    path('portfolio/design-and-development-projects/<int:page>/<str:order>/<str:slug>/', views.ProjectsView.as_view(), name='projects_page_order_slug'),
 
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project_items_detail"),
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),

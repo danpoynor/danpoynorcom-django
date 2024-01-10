@@ -19,7 +19,7 @@
             </div>
         {% endif %}
         <ol class="page-numbers">
-            {% for i in pages %}
+            {% for i in elided_page_range %}
                 {% if page_obj.number == i %}
                     <li aria-current="page">
                         <span class="current">{{ i }}</span>
