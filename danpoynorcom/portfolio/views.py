@@ -80,7 +80,7 @@ def capitalize_special_words(word):
 
 
 class HomeView(BuildableTemplateView):
-    template_name = "pages/home/page.html"
+    template_name = "portfolio/home.html"
     build_path = 'index.html'
 
     def get_context_data(self, **kwargs):
@@ -91,7 +91,7 @@ class HomeView(BuildableTemplateView):
 
 
 class PortfolioView(BuildableTemplateView):
-    template_name = "pages/portfolio/page.html"
+    template_name = "portfolio/portfolio.html"
     build_path = 'portfolio/index.html'
 
     def get_context_data(self, **kwargs):
@@ -146,7 +146,7 @@ class PortfolioView(BuildableTemplateView):
 
 
 class AboutView(BuildableTemplateView):
-    template_name = "pages/about/page.html"
+    template_name = "portfolio/about.html"
     build_path = 'about/index.html'
 
     def get_context_data(self, **kwargs):
@@ -157,7 +157,7 @@ class AboutView(BuildableTemplateView):
 
 
 class ContactView(BuildableTemplateView):
-    template_name = "pages/contact/page.html"
+    template_name = "portfolio/contact.html"
     build_path = 'contact/index.html'
 
     def get_context_data(self, **kwargs):
@@ -168,7 +168,7 @@ class ContactView(BuildableTemplateView):
 
 
 class ClientsView(BuildableTemplateView):
-    template_name = "pages/portfolio/clients/page.html"
+    template_name = "portfolio/client_list.html"
     build_path = 'portfolio/clients/index.html'
 
     def get_context_data(self, **kwargs):
@@ -196,7 +196,7 @@ class ClientsView(BuildableTemplateView):
 
 class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Client
-    template_name = "pages/portfolio/clients/term_items_page.html"
+    template_name = "portfolio/client_detail.html"
     count_type = "client items"
     view_name = "client_page_order"
     filter_field = "client"
@@ -225,7 +225,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
 
 
 class IndustriesView(BuildableTemplateView):
-    template_name = "pages/portfolio/industries/page.html"
+    template_name = "portfolio/industry_list.html"
     build_path = 'portfolio/industries/index.html'
 
     def get_context_data(self, **kwargs):
@@ -272,7 +272,7 @@ class IndustriesView(BuildableTemplateView):
 
 class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Industry
-    template_name = "pages/portfolio/industries/term_items_page.html"
+    template_name = "portfolio/industry_detail.html"
     count_type = "industry items"
     view_name = "industry_page_order"
     filter_field = "industry"
@@ -301,7 +301,7 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailVi
 
 
 class MarketsView(BuildableTemplateView):
-    template_name = "pages/portfolio/markets/page.html"
+    template_name = "portfolio/market_list.html"
     build_path = 'portfolio/markets/index.html'
 
     def get_context_data(self, **kwargs):
@@ -329,7 +329,7 @@ class MarketsView(BuildableTemplateView):
 
 class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Market
-    template_name = "pages/portfolio/markets/term_items_page.html"
+    template_name = "portfolio/market_detail.html"
     count_type = "market items"
     view_name = "market_page_order"
     filter_field = "market"
@@ -345,7 +345,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
 
 
 class MediaTypesView(BuildableTemplateView):
-    template_name = "pages/portfolio/media_types/page.html"
+    template_name = "portfolio/mediatype_list.html"
     build_path = 'contact/index.html''portfolio/media_types/index.html'
 
     def get_context_data(self, **kwargs):
@@ -382,7 +382,7 @@ class MediaTypesView(BuildableTemplateView):
 
 class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = MediaType
-    template_name = "pages/portfolio/media_types/term_items_page.html"
+    template_name = "portfolio/mediatype_detail.html"
     count_type = "media type items"
     view_name = "mediatype_page_order"
     filter_field = "mediatype"
@@ -424,7 +424,7 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailV
 
 
 class RolesView(BuildableTemplateView):
-    template_name = "pages/portfolio/roles/page.html"
+    template_name = "portfolio/role_list.html"
     build_path = 'portfolio/roles/index.html'
 
     def get_context_data(self, **kwargs):
@@ -457,7 +457,7 @@ class RolesView(BuildableTemplateView):
 
 class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
     model = Role
-    template_name = "pages/portfolio/roles/term_items_page.html"
+    template_name = "portfolio/role_detail.html"
     count_type = "role items"
     view_name = "role_page_order"
     filter_field = "role"
@@ -483,11 +483,11 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
 
 
 class ProjectsView(PaginationMixin, BuildableListView):
-    template_name = "pages/portfolio/projects/page.html"
+    template_name = "portfolio/project_list.html"
     view_name = "projects_page_order"
     paginator_template_name = "partials/pagination/_projects_paginator.html"
     model = Project
-    build_path = 'portfolio//design-and-development-projects//index.html'
+    build_path = 'portfolio/design-and-development-projects/index.html'
 
     def get(self, request, *args, **kwargs):
         self.kwargs = kwargs
@@ -566,7 +566,7 @@ class ProjectsView(PaginationMixin, BuildableListView):
 
 class ProjectItemsView(PrevNextMixin, BuildableDetailView):
     model = Project
-    template_name = "pages/portfolio/projects/project_items.html"
+    template_name = "portfolio/project_items_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -578,7 +578,7 @@ class ProjectItemsView(PrevNextMixin, BuildableDetailView):
 
 class ProjectDetailsView(ProjectDetailsPrevNextMixin, BuildableDetailView):
     model = ProjectItem
-    template_name = "pages/portfolio/projects/project_details.html"
+    template_name = "portfolio/project_details.html"
 
     def get_class_name(self):
         return self.__class__.__name__

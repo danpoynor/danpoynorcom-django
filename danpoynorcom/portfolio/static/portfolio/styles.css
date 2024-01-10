@@ -2983,8 +2983,8 @@ main.portfolio-projects-page {
 main.contact-page {
   padding-bottom: 3em;
 }
-main.contact-page section.intro {
-  padding-bottom: 1em;
+main.contact-page header {
+  padding-top: 1em;
 }
 main.contact-page .contact-info {
   display: flex;

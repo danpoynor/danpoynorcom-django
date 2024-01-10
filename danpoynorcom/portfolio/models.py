@@ -141,7 +141,7 @@ class Project(models.Model):
         return self.items.all().order_by("item_order").first()
 
     def get_absolute_url(self):
-        return reverse("project", args=[str(self.slug)])
+        return reverse("project_items_detail", args=[str(self.slug)])
 
 
 # ProjectItem model: Each project item has a project assigned to it

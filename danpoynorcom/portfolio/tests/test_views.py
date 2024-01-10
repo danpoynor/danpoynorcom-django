@@ -13,7 +13,7 @@ class HomeViewTest(TestCase):
         request = self.factory.get(reverse('home'))
         response = HomeView.as_view()(request)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.template_name[0], 'pages/home/page.html')
+        self.assertEqual(response.template_name[0], 'portfolio/home.html')
 
     def test_home_view_has_correct_title_in_context(self):
         request = self.factory.get(reverse('home'))
@@ -33,7 +33,7 @@ class AboutViewTest(TestCase):
         request = self.factory.get(reverse('about'))
         response = AboutView.as_view()(request)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.template_name[0], 'pages/about/page.html')
+        self.assertEqual(response.template_name[0], 'portfolio/about.html')
 
     def test_about_view_has_correct_title_in_context(self):
         request = self.factory.get(reverse('about'))
@@ -53,7 +53,7 @@ class ContactViewTest(TestCase):
         request = self.factory.get(reverse('contact'))
         response = ContactView.as_view()(request)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.template_name[0], 'pages/contact/page.html')
+        self.assertEqual(response.template_name[0], 'portfolio/contact.html')
 
     def test_contact_view_has_correct_title_in_context(self):
         request = self.factory.get(reverse('about'))
@@ -100,7 +100,7 @@ class ProjectsViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/design-and-development-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/projects/page.html')
+        self.assertTemplateUsed(response, 'portfolio/projects_list.html')
 
     def test_post_redirects_to_first_page_with_selected_order(self):
         response = self.client.post('/portfolio/design-and-development-projects/', {'order': 'desc'})
@@ -153,7 +153,7 @@ class ProjectItemsViewTest(TestCase):
         project = Project.objects.get(slug='test-project')
         response = self.client.get(f'/portfolio/design-and-development-projects/{project.slug}/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/projects/project_items.html')
+        self.assertTemplateUsed(response, 'portfolio/project_items_detail.html')
 
     def test_context_data(self):
         project = Project.objects.get(slug='test-project')
@@ -186,7 +186,7 @@ class ProjectDetailsViewTest(TestCase):
         project_item = ProjectItem.objects.get(slug='test-project-item')
         response = self.client.get(f'/portfolio/project-details/{project_item.slug}/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/projects/project_details.html')
+        self.assertTemplateUsed(response, 'portfolio/project_details.html')
 
     def test_context_data(self):
         project_item = ProjectItem.objects.get(slug='test-project-item')
@@ -223,7 +223,7 @@ class ClientProjectsListViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/clients/test-client-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/clients/term_items_page.html')
+        self.assertTemplateUsed(response, 'portfolio/client_detail.html')
 
     def test_context_data(self):
         response = self.client.get('/portfolio/clients/test-client-projects/')
@@ -256,7 +256,7 @@ class IndustryProjectsListViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/industries/test-industry-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/industries/term_items_page.html')
+        self.assertTemplateUsed(response, 'portfolio/industry_detail.html')
 
     def test_context_data(self):
         response = self.client.get('/portfolio/industries/test-industry-projects/')
@@ -289,7 +289,7 @@ class MarketProjectsListViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/markets/test-market-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/markets/term_items_page.html')
+        self.assertTemplateUsed(response, 'portfolio/market_detail.html')
 
     def test_context_data(self):
         response = self.client.get('/portfolio/markets/test-market-projects/')
@@ -324,7 +324,7 @@ class MediaTypeProjectsListViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/media-types/test-media-type-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/media_types/term_items_page.html')
+        self.assertTemplateUsed(response, 'portfolio/mediatype_detail.html')
 
     def test_context_data(self):
         response = self.client.get('/portfolio/media-types/test-media-type-projects/')
@@ -378,7 +378,7 @@ class RoleProjectsListViewTest(TestCase):
     def test_view_uses_correct_template(self):
         response = self.client.get('/portfolio/roles/test-role-projects/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/portfolio/roles/term_items_page.html')
+        self.assertTemplateUsed(response, 'portfolio/role_detail.html')
 
     def test_context_data(self):
         response = self.client.get('/portfolio/roles/test-role-projects/')

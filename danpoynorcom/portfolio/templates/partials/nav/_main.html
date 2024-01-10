@@ -1,28 +1,28 @@
 <nav>
     <ul>
         <li>
-            {% if 'home' in request.path %}
+            {% if request.resolver_match.url_name == 'home' %}
                 <a href="{% url 'home' %}" aria-current="true">Home</a>
             {% else %}
                 <a href="{% url 'home' %}">Home</a>
             {% endif %}
         </li>
         <li>
-            {% if 'portfolio' in request.path %}
+            {% if request.resolver_match.url_name == 'portfolio' %}
                 <a href="{% url 'portfolio' %}" aria-current="true">Portfolio</a>
             {% else %}
                 <a href="{% url 'portfolio' %}">Portfolio</a>
             {% endif %}
         </li>
         <li>
-            {% if 'about' in request.path %}
+            {% if request.resolver_match.url_name == 'about' %}
                 <a href="{% url 'about' %}" aria-current="true">About</a>
             {% else %}
                 <a href="{% url 'about' %}">About</a>
             {% endif %}
         </li>
         <li>
-            {% if 'contact' in request.path %}
+            {% if request.resolver_match.url_name == 'contact' %}
                 <a href="{% url 'contact' %}" aria-current="true">Contact</a>
             {% else %}
                 <a href="{% url 'contact' %}">Contact</a>

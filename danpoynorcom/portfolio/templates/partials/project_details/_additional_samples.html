@@ -6,7 +6,7 @@
         <section>
             <nav class="prev-next-sample-navigation">
                 <a class="samples-overview"
-                   href="{% url 'project' slug=object.project.slug %}">Project Overview</a>
+                   href="{% url 'project_items_detail' slug=object.project.slug %}">Project Overview</a>
                 {% for item in items %}
                     {% if item == object %}
                         <a class="previous-sample"
