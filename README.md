@@ -376,21 +376,69 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 
 ### Package Options for Exporting Static Files from Django
 
-#### Static Files
+#### Django Bakery Static Files
 
-- [The staticfiles app](https://docs.djangoproject.com/en/5.0/ref/contrib/staticfiles/)
-- [How to manage static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/5.0/howto/static-files/)
-- - [Deploying static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+[django-bakery](https://palewi.re/docs/django-bakery/index.html) - Django helpers for baking your Django site out as flat files
 
----
+##### Setup
 
-#### Exporting Pages
+Go through the [Getting Started](https://palewi.re/docs/django-bakery/gettingstarted.html) guide to set up the project.
 
-- [django-compressor](https://django-compressor.readthedocs.io/en/stable/), [django-compressor on GitHub](https://github.com/django-compressor/django-compressor)
-- [django-pipeline](https://django-pipeline.readthedocs.io/en/latest/), [django-pipeline on GitHub](https://github.com/jazzband/django-pipeline)
-- [django-bakery](https://django-bakery.readthedocs.io/en/latest/), [django-bakery on GitHub](https://github.com/palewire/django-bakery)
-- [django-static-precompiler](https://django-static-precompiler.readthedocs.io/en/stable/), [django-static-precompiler on GitHub](https://github.com/andreyfedoseev/django-static-precompiler)
-- [django-staticfiles](https://docs.djangoproject.com/en/3.1/ref/contrib/staticfiles/)
+##### Usage
+
+Run the following command to bake the site:
+
+```sh
+python manage.py build
+```
+
+It is not necessary to run `python manage.py collectstatic` before running `python manage.py build`.
+
+Also you don't need have `python manage.py runserver` running of have `DEBUG=False` before running `python manage.py build`.
+
+NOTE: This will create a `build/` directory in the project root directory.
+
+##### Output a list of all URLs
+
+```sh
+python manage.py build --list
+```
+
+##### Output a list of all URLs to a file
+
+```sh
+python manage.py build --list > build/urls.txt
+```
+
+##### Output a single view on demand
+
+Rebuild a view without deleting everything else in the existing build directory, you could pass it as an argument to the standard build command with instructions to skip everything else it normally does.
+
+```sh
+python manage.py build portfolio.views.AboutView --keep-build-dir --skip-static --skip-media
+python manage.py build portfolio.views.ContactView --keep-build-dir --skip-static --skip-media
+python manage.py build portfolio.views.ProjectsView --keep-build-dir --skip-static --skip-media
+```
+
+##### Testing the build
+
+After running `python manage.py build`...
+
+```sh
+python manage.py buildserver
+```
+
+or to set the port to something different,  `cd` into the`build/` directory and run:
+
+```sh
+python -m http.server 9876
+```
+
+Could then run `linkchecker` on the build directory to check for broken links and output the results to a file:
+
+```sh
+linkchecker --timeout=20 --threads=2 -F text/linkchecker_output.txt http://localhost:9876
+```
 
 </details>
 
@@ -404,5 +452,5 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 - [ ] Add a sitemap.xml file
 - [ ] Add a humans.txt file
 - [ ] Populate MediaType column in Project Items table
-- [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places
-- [ ] May need to refactor schema so taxonomies are associated with ProjectItems instead of Projects
+  - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places
+  - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects
