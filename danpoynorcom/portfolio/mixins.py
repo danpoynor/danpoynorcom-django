@@ -169,8 +169,14 @@ class ProjectDetailsPrevNextMixin:
             current_index = None
 
         # Get the previous and next items
-        prev_item = ordered_items[current_index - 1] if ordered_items else None
-        next_item = ordered_items[(current_index + 1) % len(ordered_items)] if ordered_items else None
+        if ordered_items and current_index is not None:
+            prev_item = ordered_items[current_index - 1]
+        else:
+            prev_item = None
+        if ordered_items and current_index is not None:
+            next_item = ordered_items[(current_index + 1) % len(ordered_items)]
+        else:
+            next_item = None
 
         # Add the previous and next items to the context
         context['previous_object'] = prev_item

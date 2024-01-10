@@ -1,9 +1,7 @@
-from bakery.views import BuildableTemplateView
 import re
+from bakery.views import BuildableDetailView, BuildableTemplateView, BuildableListView
 import inflect
-from bakery.views import BuildableDetailView, BuildableTemplateView
-from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
+from django.shortcuts import redirect
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
@@ -94,7 +92,7 @@ class HomeView(BuildableTemplateView):
 
 class PortfolioView(BuildableTemplateView):
     template_name = "pages/portfolio/page.html"
-    build_path = 'portfolio.html'
+    build_path = 'portfolio/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -149,7 +147,7 @@ class PortfolioView(BuildableTemplateView):
 
 class AboutView(BuildableTemplateView):
     template_name = "pages/about/page.html"
-    build_path = 'about.html'
+    build_path = 'about/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -160,7 +158,7 @@ class AboutView(BuildableTemplateView):
 
 class ContactView(BuildableTemplateView):
     template_name = "pages/contact/page.html"
-    build_path = 'contact.html'
+    build_path = 'contact/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -171,7 +169,7 @@ class ContactView(BuildableTemplateView):
 
 class ClientsView(BuildableTemplateView):
     template_name = "pages/portfolio/clients/page.html"
-    build_path = 'clients.html'
+    build_path = 'portfolio/clients/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -228,7 +226,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
 
 class IndustriesView(BuildableTemplateView):
     template_name = "pages/portfolio/industries/page.html"
-    build_path = 'industries.html'
+    build_path = 'portfolio/industries/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -304,7 +302,7 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailVi
 
 class MarketsView(BuildableTemplateView):
     template_name = "pages/portfolio/markets/page.html"
-    build_path = 'markets.html'
+    build_path = 'portfolio/markets/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -348,7 +346,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
 
 class MediaTypesView(BuildableTemplateView):
     template_name = "pages/portfolio/media_types/page.html"
-    build_path = 'media_types.html'
+    build_path = 'contact/index.html''portfolio/media_types/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -427,7 +425,7 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailV
 
 class RolesView(BuildableTemplateView):
     template_name = "pages/portfolio/roles/page.html"
-    build_path = 'roles.html'
+    build_path = 'portfolio/roles/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -484,10 +482,34 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
         return context
 
 
-class ProjectsView(PaginationMixin, TemplateView):
+class ProjectsView(PaginationMixin, BuildableListView):
     template_name = "pages/portfolio/projects/page.html"
     view_name = "projects_page_order"
     paginator_template_name = "partials/pagination/_projects_paginator.html"
+    model = Project
+    build_path = 'portfolio//design-and-development-projects//index.html'
+
+    def get(self, request, *args, **kwargs):
+        self.kwargs = kwargs
+        return super().get(request, *args, **kwargs)
+
+    def get_queryset(self):
+        # Subquery to check if a project has any visible items
+        has_visible_items_subquery = ProjectItem.objects.filter(
+            project=OuterRef("pk"),
+            visible=True  # Check for visible items
+        )
+
+        # Get projects that have any visible items
+        project_list = Project.objects.filter(
+            visible=True
+        ).annotate(
+            has_visible_items=Exists(has_visible_items_subquery)
+        ).filter(
+            has_visible_items=True
+        )
+
+        return project_list
 
     def post(self, request, *args, **kwargs):
         # Get the selected order from the POST data

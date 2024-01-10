@@ -173,6 +173,11 @@ if DEBUG:
     INSTALLED_APPS += ["debug_toolbar"]
     MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
 
+if DEBUG:
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+else:
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 
 def show_toolbar(request):
     return DEBUG and not request.path.startswith("/admin")
@@ -219,4 +224,7 @@ BAKERY_VIEWS = [
     "portfolio.views.MediaTypeProjectsListView",
     "portfolio.views.RolesView",
     "portfolio.views.RoleProjectsListView",
+    "portfolio.views.ProjectsView",
+    "portfolio.views.ProjectItemsView",
+    "portfolio.views.ProjectDetailsView",
 ]
