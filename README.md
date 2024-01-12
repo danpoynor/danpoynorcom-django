@@ -40,8 +40,7 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 - [`inflect`](https://github.com/jaraco/inflect): Python library used to convert plural nouns to singular
 - [`coverage`](https://coverage.readthedocs.io/en/latest/): Python library used to measure code coverage.
 - [`django.contrib.sitemaps`](https://docs.djangoproject.com/en/5.0/ref/contrib/sitemaps/): Django library used to generate sitemaps.
-- [`whitenoise`](http://whitenoise.evans.io/en/stable/): serve static files when Debug is False and after running `python manage.py collectstatic`.
-- [`jango_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django.
+- [`django_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django. Note that responses are minified even when DEBUG is True. This is recommended because HTML minification can reveal bugs in your templates, so it’s best to always work with your HTML as it will appear in production. Minified HTML is hard to read with “View Source” - it’s best to rely on the inspector in your browser’s developer tools.
 
 ## Other Features Include
 
@@ -227,7 +226,7 @@ pip freeze > requirements.txt
 
 ## Run unit tests
 
-There are 146 passing unit tests so far located in the `tests/` directory.
+There are 144 passing unit tests so far located in the `tests/` directory.
 
 NOTE: I couldn't figure out how to run tests in VS Code, so I run them from the command line for now.
 
@@ -259,6 +258,20 @@ python manage.py test portfolio.tests.test_models.TestModelName
 ```sh
 python manage.py test portfolio.tests.test_models.TestModelName.test_method_name
 ```
+
+Run tests with warnings
+
+```sh
+python -Wa manage.py test portfolio
+```
+
+The `-Wa` flag tells Python to display deprecation warnings. Django, like many other Python libraries, uses these warnings to flag when features are going away. It also might flag areas in your code that aren’t strictly wrong but could benefit from a better implementation.
+
+### Other test options include
+
+- `--debug-mode`: This may help troubleshoot test failures.
+- `--failfast`: Stops running tests and reports the failure immediately after a test fails.
+- `--keepdb`: This option keeps the test database between test runs. This can be useful if you want to run tests faster.
 
 </details>
 
