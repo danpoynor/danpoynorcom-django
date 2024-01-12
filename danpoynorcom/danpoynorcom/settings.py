@@ -42,7 +42,6 @@ ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.admin",
@@ -60,6 +59,7 @@ INSTALLED_APPS = [
     "django.contrib.sitemaps",
 ]
 
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -69,7 +69,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.contrib.flatpages.middleware.FlatpageFallbackMiddleware",
-    "django_minify_html.middleware.MinifyHtmlMiddleware",
+    "danpoynorcom.middleware.ProjectMinifyHtmlMiddleware",
 ]
 
 ROOT_URLCONF = "danpoynorcom.urls"
