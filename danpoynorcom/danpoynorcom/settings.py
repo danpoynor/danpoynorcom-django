@@ -20,9 +20,7 @@ load_dotenv()
 
 # Access environment variables
 DJANGO_SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
-DJANGO_DEBUG = os.getenv('DJANGO_DEBUG') == 'True'  # Convert string to boolean
 DJANGO_ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS")
-DJANGO_STATIC_URL = os.getenv("DJANGO_STATIC_URL")
 DJANGO_DB_NAME = os.getenv("DJANGO_DB_NAME")
 
 # Build paths inside the project like this: BASE_DIR / "subdir".
@@ -37,7 +35,7 @@ SECRET_KEY = DJANGO_SECRET_KEY
 # SECRET_KEY = "django-insecure-df=*f2sakwq77op*+j7^1n_+wte^tb6i1&m*8zh05mu%mitbe!"
 
 # SECURITY WARNING: don"t run with debug turned on in production!
-DEBUG = DJANGO_DEBUG
+DEBUG = True
 
 # ALLOWED_HOSTS = [DJANGO_ALLOWED_HOSTS]
 ALLOWED_HOSTS = ["*"]
