@@ -42,7 +42,6 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 - [`django.contrib.sitemaps`](https://docs.djangoproject.com/en/5.0/ref/contrib/sitemaps/): Django library used to generate sitemaps.
 - [`whitenoise`](http://whitenoise.evans.io/en/stable/): serve static files when Debug is False and after running `python manage.py collectstatic`.
 - [`jango_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django.
-- [bakery](https://palewi.re/docs/django-bakery/): Django helpers for baking your Django site out as flat files.
 
 ## Other Features Include
 
@@ -172,7 +171,7 @@ You'll have to refresh the browser to see the changes.
 When ready to deploy, run the SASS build command using:
 
 ```sh
-sass assets/scss/index.scss:static/css/styles.css --style compressed
+sass assets/scss/index.scss:static/portfolio/styles.css --style=compressed --no-source-map
 ```
 
 </details>
@@ -376,48 +375,62 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 
 ### Package Options for Exporting Static Files from Django
 
-#### Django Bakery Static Files
-
-[django-bakery](https://palewi.re/docs/django-bakery/index.html) - Django helpers for baking your Django site out as flat files
+#### Use `wget` To Generate Static Files
 
 ##### Setup
 
-Go through the [Getting Started](https://palewi.re/docs/django-bakery/gettingstarted.html) guide to set up the project.
+Install `wget` if not already installed.
+
+```sh
+brew install wget
+```
+
+Prep Django for static file export:
+
+- Set `DJANGO_DEBUG=False` in `.env`.
+- Minify SASS using `sass assets/scss/index.scss:static/portfolio/styles.css --style=compressed --no-source-map`
 
 ##### Usage
 
-Run the following command to bake the site:
+`-N`(or `--timestamping`): Tells `wget` to only download files that are newer than the local copies
+`--recursive`: download the entire website.
+`--no-clobber`: don't overwrite any existing files (useful for updating your local copy).
+`--page-requisites`: download all the files that are necessary to properly display a given HTML page (including images and stylesheets).
+`--html-extension`: save files with the `.html` extension.
+`--convert-links`: convert all links so that they work offline.
+`--restrict-file-names=windows`: modify filenames so that they will work in Windows as well.
+`--domains localhost`: don't follow links outside of the specified domain.
+`--no-parent`: don't follow links outside of the directory hierarchy that the starting URL specifies.
+
+To download files to your current directory, use:
 
 ```sh
-python manage.py build
+wget -N --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains localhost --no-parent http://localhost:8000/
 ```
 
-It is not necessary to run `python manage.py collectstatic` before running `python manage.py build`.
+The URL to start downloading from should be the last argument in the command.
 
-Also you don't need have `python manage.py runserver` running of have `DEBUG=False` before running `python manage.py build`.
+Note: The --domains option expects a domain name, not a URL. You should remove http:// from the --domains option.
 
-NOTE: This will create a `build/` directory in the project root directory.
+#### The `--mirror` Option
 
-##### Output a list of all URLs
+The --mirror option in wget is a shortcut for enabling several options that are useful for mirroring a website. Specifically, it's equivalent to -r -N -l inf --no-remove-listing.
+
+Here's what each of these options does:
+
+- `-r` or `--recursive`: This option tells `wget` to follow links and download pages recursively.
+- `-N` or `--timestamping`: This option tells `wget` to only download files that are newer than the local copies. It's useful for updating your local copy of the website without re-downloading everything.
+- `-l inf` or `--level=inf`: This option sets the maximum recursion depth to infinite, meaning `wget` will follow links indefinitely. B**y default, `wget` only follows links up to 5 levels deep**.
+- `--no-remove-listing`: This option prevents `wget` from removing the temporary `.listing` files generated when downloading directories using FTP. This is generally not relevant when downloading websites over HTTP or HTTPS.
+
+So, when you use `--mirror`, `wget` will download the **entire website**, including all linked pages, and only download files that have changed since the last download. It's a convenient option for creating a local mirror of a website.
+
+The `--mirror` option also sets `-l inf` which means it will follow links **indefinitely deep**, while **the default for --recursive is to follow links up to 5 levels deep**.
+
+Use the --mirror convenience option:
 
 ```sh
-python manage.py build --list
-```
-
-##### Output a list of all URLs to a file
-
-```sh
-python manage.py build --list > build/urls.txt
-```
-
-##### Output a single view on demand
-
-Rebuild a view without deleting everything else in the existing build directory, you could pass it as an argument to the standard build command with instructions to skip everything else it normally does.
-
-```sh
-python manage.py build portfolio.views.AboutView --keep-build-dir --skip-static --skip-media
-python manage.py build portfolio.views.ContactView --keep-build-dir --skip-static --skip-media
-python manage.py build portfolio.views.ProjectsView --keep-build-dir --skip-static --skip-media
+wget --mirror --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains localhost --no-parent http://localhost:8000/
 ```
 
 ##### Testing the build

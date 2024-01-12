@@ -1,5 +1,4 @@
 import re
-from bakery.views import BuildableDetailView, BuildableTemplateView, BuildableListView
 import inflect
 from django.shortcuts import redirect
 from django.db.models.functions import Lower
@@ -9,6 +8,7 @@ from .models import Client, Industry, Market, MediaType, Role, Project, ProjectI
 from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
 from .utils import get_visible_objects
 from .constants import SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
+from django.views.generic import TemplateView, DetailView, ListView
 
 DEFAULT_PAGE_DESCRIPTION = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
 
@@ -80,9 +80,8 @@ def capitalize_special_words(word):
     return special_words.get(word.lower(), word)
 
 
-class HomeView(BuildableTemplateView):
+class HomeView(TemplateView):
     template_name = "portfolio/home.html"
-    build_path = 'index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -91,9 +90,8 @@ class HomeView(BuildableTemplateView):
         return context
 
 
-class PortfolioView(BuildableTemplateView):
+class PortfolioView(TemplateView):
     template_name = "portfolio/portfolio.html"
-    build_path = 'portfolio/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -146,9 +144,8 @@ class PortfolioView(BuildableTemplateView):
         return context
 
 
-class AboutView(BuildableTemplateView):
+class AboutView(TemplateView):
     template_name = "portfolio/about.html"
-    build_path = 'about/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -157,9 +154,8 @@ class AboutView(BuildableTemplateView):
         return context
 
 
-class ContactView(BuildableTemplateView):
+class ContactView(TemplateView):
     template_name = "portfolio/contact.html"
-    build_path = 'contact/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -168,9 +164,8 @@ class ContactView(BuildableTemplateView):
         return context
 
 
-class ClientsView(BuildableTemplateView):
+class ClientsView(TemplateView):
     template_name = "portfolio/client_list.html"
-    build_path = 'portfolio/clients/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -195,7 +190,7 @@ class ClientsView(BuildableTemplateView):
         return context
 
 
-class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
+class ClientProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
     model = Client
     template_name = "portfolio/client_detail.html"
     count_type = "client items"
@@ -225,9 +220,8 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         return context
 
 
-class IndustriesView(BuildableTemplateView):
+class IndustriesView(TemplateView):
     template_name = "portfolio/industry_list.html"
-    build_path = 'portfolio/industries/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -271,7 +265,7 @@ class IndustriesView(BuildableTemplateView):
         return context
 
 
-class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
+class IndustryProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
     model = Industry
     template_name = "portfolio/industry_detail.html"
     count_type = "industry items"
@@ -301,9 +295,8 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailVi
         return context
 
 
-class MarketsView(BuildableTemplateView):
+class MarketsView(TemplateView):
     template_name = "portfolio/market_list.html"
-    build_path = 'portfolio/markets/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -328,7 +321,7 @@ class MarketsView(BuildableTemplateView):
         return context
 
 
-class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
+class MarketProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
     model = Market
     template_name = "portfolio/market_detail.html"
     count_type = "market items"
@@ -345,9 +338,8 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView
         return context
 
 
-class MediaTypesView(BuildableTemplateView):
+class MediaTypesView(TemplateView):
     template_name = "portfolio/mediatype_list.html"
-    build_path = 'contact/index.html''portfolio/media_types/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -381,7 +373,7 @@ class MediaTypesView(BuildableTemplateView):
         return context
 
 
-class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
+class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
     model = MediaType
     template_name = "portfolio/mediatype_detail.html"
     count_type = "media type items"
@@ -424,9 +416,8 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailV
         return context
 
 
-class RolesView(BuildableTemplateView):
+class RolesView(TemplateView):
     template_name = "portfolio/role_list.html"
-    build_path = 'portfolio/roles/index.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -456,7 +447,7 @@ class RolesView(BuildableTemplateView):
         return context
 
 
-class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
+class RoleProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
     model = Role
     template_name = "portfolio/role_detail.html"
     count_type = "role items"
@@ -483,13 +474,12 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, BuildableDetailView):
         return context
 
 
-class ProjectsView(BuildableListView):
+class ProjectsView(ListView):
     model = Project
     paginate_by = PAGINATE_BY
     template_name = "portfolio/project_list.html"
     view_name = "projects_page_order"
     paginator_template_name = "partials/pagination/_projects_paginator.html"
-    build_path = 'portfolio/design-and-development-projects/index.html'
 
     def get(self, request, *args, **kwargs):
         self.kwargs = kwargs
@@ -556,7 +546,7 @@ class ProjectsView(BuildableListView):
         return context
 
 
-class ProjectItemsView(PrevNextMixin, BuildableDetailView):
+class ProjectItemsView(PrevNextMixin, DetailView):
     model = Project
     template_name = "portfolio/project_items_detail.html"
 
@@ -568,7 +558,7 @@ class ProjectItemsView(PrevNextMixin, BuildableDetailView):
         return context
 
 
-class ProjectDetailsView(ProjectDetailsPrevNextMixin, BuildableDetailView):
+class ProjectDetailsView(ProjectDetailsPrevNextMixin, DetailView):
     model = ProjectItem
     template_name = "portfolio/project_details.html"
 

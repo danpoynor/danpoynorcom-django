@@ -60,7 +60,6 @@ INSTALLED_APPS = [
     "flatblocks",
     "django_minify_html",
     "django.contrib.sitemaps",
-    "bakery",
 ]
 
 MIDDLEWARE = [
@@ -202,28 +201,4 @@ DEBUG_TOOLBAR_PANELS = [
     "debug_toolbar.panels.redirects.RedirectsPanel",
     "debug_toolbar.panels.profiling.ProfilingPanel",
     "requests_panel.panel.RequestsDebugPanel",
-]
-
-# django-bakery settings
-
-BUILD_DIR = os.path.join(BASE_DIR, "build")
-
-BAKERY_VIEWS = [
-    "portfolio.views.HomeView",
-    "portfolio.views.PortfolioView",
-    "portfolio.views.AboutView",
-    "portfolio.views.ContactView",
-    "portfolio.views.ClientsView",
-    "portfolio.views.ClientProjectsListView",
-    "portfolio.views.IndustriesView",
-    "portfolio.views.IndustryProjectsListView",
-    "portfolio.views.MarketsView",
-    "portfolio.views.MarketProjectsListView",
-    "portfolio.views.MediaTypesView",
-    "portfolio.views.MediaTypeProjectsListView",
-    "portfolio.views.RolesView",
-    "portfolio.views.RoleProjectsListView",
-    "portfolio.views.ProjectsView",
-    "portfolio.views.ProjectItemsView",
-    "portfolio.views.ProjectDetailsView",
 ]
