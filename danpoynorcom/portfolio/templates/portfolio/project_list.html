@@ -1,6 +1,8 @@
 {% extends "portfolio/base_portfolio.html" %}
-{% load static %}
+{% load static tags %}
 {% block portfolio_content %}
+    {% debug_mode as DEBUG %}
+    {% include "partials/_detect_debug_state.html" %}
     <main class="portfolio-projects-page">
         <header>
             <div class="container">

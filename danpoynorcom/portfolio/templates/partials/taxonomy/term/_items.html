@@ -1,4 +1,6 @@
-{% load static %}
+{% load static tags %}
+{% debug_mode as DEBUG %}
+{% include "partials/_detect_debug_state.html" %}
 <section class="thumbnails">
     <div class="container">
         <section class="thumbnail-previews">
