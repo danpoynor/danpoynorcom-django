@@ -4,18 +4,31 @@
     <head>
         <meta charset="UTF-8" />
         <title>{{ title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet"
-              type="text/css"
-              href="{% static 'portfolio/styles.css' %}" />
-        {% include "partials/_fonts.html" %}
+        <link rel="icon" href="{% static 'portfolio/dan-poynor-300x300.png' %}" />
         <!-- Meta tags -->
         <meta name="description" content="{{ description }}">
-        <meta name="keywords" content="your, keywords, here" />
-        <meta name="author" content="Dan Poynor" />
-        <meta name="Classification" content="Business" />
+        <meta name="canonical" content="https://www.danpoynor.com/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords"
+              content="Visual Designer, UX Designer, Front-end Developer, Front End Developer, UI Engineer, web developer, web development, Software Developer, Austin, Texas, UX/UI, performance, A11Y, strategic marketing, React, Next, Django, WordPress, React, Python, HTML, CSS, Javascript, Developer, SEO, U.S. citizen" />
+        <meta name="author" content="Dan Poynor, danpoynor@gmail.com" />
+        <meta name="designer" content="Dan Poynor" />
+        <meta name="publisher" content="Dan Poynor" />
+        <meta name="web_author" content="Dan Poynor" />
+        <meta name="owner" content="Dan Poynor" />
+        <meta name="classification" content="Business" />
+        <meta name="subject" content="Personal">
+        <meta name="rating" content="general">
+        <meta name="rating" content="safe for kids">
         <meta name="format-detection" content="telephone=yes" />
         <meta name="HandheldFriendly" content="true" />
+        <meta name="reply-to" content="danpoynor@gmail.com" />
+        <meta name="city" content="Austin" />
+        <meta name="state" content="Texas" />
+        <meta name="country" content="USA" />
+        <meta name="distribution" content="global" />
+        <meta name="distribution" content="web">
         <!-- OpenGraph tags -->
         <meta name="og:title" content="Dan Poynor Design + Development Portfolio" />
         <meta name="og:description"
@@ -33,6 +46,10 @@
             })(window,document,'script','dataLayer','GTM-W7JVPGC');
         </script>
         <!-- End Google Tag Manager -->
+        <link rel="stylesheet"
+              type="text/css"
+              href="{% static 'portfolio/styles.css' %}" />
+        {% include "partials/_fonts.html" %}
     </head>
     <body>
         {% include "partials/header/_main.html" %}
