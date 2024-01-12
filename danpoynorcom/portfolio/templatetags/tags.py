@@ -1,4 +1,5 @@
 from django import template
+from django.conf import settings
 
 register = template.Library()
 
@@ -11,3 +12,8 @@ def verbose_name_plural(obj):
 @register.simple_tag
 def verbose_name(obj):
     return obj.get_verbose_name()
+
+
+@register.simple_tag
+def debug_mode():
+    return str(settings.DEBUG)
