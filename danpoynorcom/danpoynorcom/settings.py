@@ -35,6 +35,9 @@ SECRET_KEY = DJANGO_SECRET_KEY
 # SECRET_KEY = "django-insecure-df=*f2sakwq77op*+j7^1n_+wte^tb6i1&m*8zh05mu%mitbe!"
 
 # SECURITY WARNING: don"t run with debug turned on in production!
+# If testing production with DEBUG=False, restart server using
+# python manage.py runserver --insecure
+# REF: https://docs.djangoproject.com/en/5.0/ref/contrib/staticfiles/#cmdoption-runserver-insecure
 DEBUG = True
 
 # ALLOWED_HOSTS = [DJANGO_ALLOWED_HOSTS]
