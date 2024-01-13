@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "flatblocks",
     "django_minify_html",
     "django.contrib.sitemaps",
+    "django_extensions",
 ]
 
 

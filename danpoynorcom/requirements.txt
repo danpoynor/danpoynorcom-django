@@ -2,8 +2,8 @@ annotated-types==0.6.0
 appdirs==1.4.4
 asgiref==3.7.2
 beautifulsoup4==4.12.2
-boto3==1.34.11
-botocore==1.34.11
+boto3==1.34.18
+botocore==1.34.18
 certifi==2023.11.17
 chardet==5.2.0
 charset-normalizer==3.3.2
@@ -13,9 +13,11 @@ coverage==7.4.0
 css-html-js-minify==2.5.5
 cssbeautifier==1.14.11
 cssselect2==0.7.0
-Django==5.0
+Django==5.0.1
 django-classy-tags==4.1.0
+django-cms==4.1.0
 django-debug-toolbar==4.2.0
+django-extensions==3.2.3
 django-filer==3.1.1
 django-flatblocks==1.0.0
 django-formtools==2.5.1
@@ -28,7 +30,7 @@ django-sekizai==4.1.0
 django-treebeard==4.7
 djangocms-admin-style==3.2.7
 djangocms-page-meta==1.4.3
-djlint==1.34.0
+djlint==1.34.1
 easy-thumbnails==2.8.5
 EditorConfig==0.12.3
 fs==2.4.16
@@ -46,7 +48,7 @@ mdit-py-plugins==0.4.0
 mdurl==0.1.2
 minify_html==0.15.0
 packaging==23.2
-pathspec==0.11.2
+pathspec==0.12.1
 pep8==1.7.1
 phpserialize==1.3
 pillow==10.2.0
@@ -57,7 +59,7 @@ python-dateutil==2.8.2
 python-dotenv==1.0.0
 pywatchman==1.4.1
 PyYAML==6.0.1
-regex==2023.10.3
+regex==2023.12.25
 reportlab==4.0.9
 requests==2.31.0
 rich==13.7.0

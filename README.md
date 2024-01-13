@@ -31,13 +31,21 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 ## Some Notable `pip` Packages Used
 
 - [Django](https://docs.djangoproject.com/en/5.0/topics/install/): Python web framework
-- [python-dotenv](https://pypi.org/project/python-dotenv/): Python library used to read key-value pairs from a `.env` environment file
-- [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/): Django library used to debug code
-- [`django-requests-debug-toolbar`](https://pypi.org/project/django-requests-debug-toolbar/): Django library used to debug requests (not working?)
-- [`django-flatblocks`](https://github.com/cartwheelweb/django-flatblocks): Django library used to create small text-blocks on websites, similar to Django's own flatpages.
+- [`python-dotenv`](https://pypi.org/project/python-dotenv/): Python library used to read key-value pairs from a `.env` environment file.
+- ['django-extensions'](https://pypi.org/project/django-extensions/): Collection of custom extensions for the Django Framework. Example commands:
+  - `python manage.py validate_templates`: Validates Django template syntax.
+  - `python manage.py show_urls`: Displays all of the url matching routes for the project.
+  - `python manage.py generate_password [--length=<length>]`: Generates a random password.
+  - `python manage.py print_settings`: Prints all of the settings for the project.
+  - `python manage.py notes`: Prints all TODO, FIXME, and XXX comments in the project.
+  - `python manage.py pipchecker`: Scan pip requirement files for out-of-date packages (or just use `pip list --outdated` instead).
+  - Database Model Extensions: Implements commonly used patterns like holding the model’s creation and last modification dates: `class MyModel(TitleSlugDescriptionModel, TimeStampedModel, ActivatorModel, models.Model)`
+- [`django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/): Django library used to debug code.
+- [`django-requests-debug-toolbar`](https://pypi.org/project/django-requests-debug-toolbar/): Django library used to debug requests (not working?).
+- [`django-flatblocks`](https://github.com/cartwheelweb/django-flatblocks): Django library used to create small text-blocks on websites, similar to Django's own flatpages (Unused).
 - [`djlint`](https://www.djlint.com/): Django library used to lint and format Django templates
 - [`phpserialize`](https://pypi.org/project/phpserialize/): Python library used to serialize PHP data. Used by scripts in this project to convert WordPress data to Python data.
-- [`inflect`](https://github.com/jaraco/inflect): Python library used to convert plural nouns to singular
+- [`inflect`](https://github.com/jaraco/inflect): Python library used to convert plural nouns to singular.
 - [`coverage`](https://coverage.readthedocs.io/en/latest/): Python library used to measure code coverage.
 - [`django.contrib.sitemaps`](https://docs.djangoproject.com/en/5.0/ref/contrib/sitemaps/): Django library used to generate sitemaps.
 - [`django_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django. Note that responses are minified even when DEBUG is True. This is recommended because HTML minification can reveal bugs in your templates, so it’s best to always work with your HTML as it will appear in production. Minified HTML is hard to read with “View Source” - it’s best to rely on the inspector in your browser’s developer tools.
@@ -159,10 +167,10 @@ python manage.py runserver
 
 Command line SASS is used in this project to generate the CSS.
 
-To compile the SASS files from `assets/scss/index.scss` into the CSS file `static/css/styles.css`, `cd` into the `portfolio` app directory and run SASS watch command using:
+To compile the SASS files from `portfolio/assets/scss/index.scss` into the CSS file `portfolio/static/portfolio/styles.css`, `cd` into the project `danpoynorcom` directory and run SASS watch command using:
 
 ```sh
-sass --watch assets/scss/index.scss:static/css/styles.css
+sass --watch portfolio/assets/scss/index.scss:portfolio/static/portfolio/styles.css
 ```
 
 You'll have to refresh the browser to see the changes.
@@ -170,7 +178,7 @@ You'll have to refresh the browser to see the changes.
 When ready to deploy, run the SASS build command using:
 
 ```sh
-sass assets/scss/index.scss:static/portfolio/styles.css --style=compressed --no-source-map
+sass --watch portfolio/assets/scss/index.scss:portfolio/static/portfolio/styles.css --style=compressed --no-source-map
 ```
 
 </details>
@@ -400,8 +408,16 @@ brew install wget
 
 Prep Django for static file export:
 
-- Set `DJANGO_DEBUG=False` in `.env`.
+- Set `DJANGO_DEBUG=False` in `.env`. (NOTE: I'm not sure if this is necessary anymore)
 - Minify SASS using `sass assets/scss/index.scss:static/portfolio/styles.css --style=compressed --no-source-map`
+- - In `settings.py` disable the `django-debug-toolbar` by commenting out the `DEBUG_TOOLBAR_CONFIG` setting.
+
+```python
+DEBUG_TOOLBAR_CONFIG = {
+    # "SHOW_TOOLBAR_CALLBACK": show_toolbar,
+    'SHOW_TOOLBAR_CALLBACK': lambda r: False,  # Disables the debug toolbar
+}
+```
 
 ##### Usage
 
@@ -448,22 +464,24 @@ wget --mirror --no-clobber --page-requisites --html-extension --convert-links --
 
 ##### Testing the build
 
-After running `python manage.py build`...
-
-```sh
-python manage.py buildserver
-```
-
-or to set the port to something different,  `cd` into the`build/` directory and run:
+To run a server in the directory containing the output, `cd` into `localhost+8000` directory and run:
 
 ```sh
 python -m http.server 9876
 ```
 
-Could then run `linkchecker` on the build directory to check for broken links and output the results to a file:
+Then visit <http://localhost:9876> in a web browser.
+
+You can then run `linkchecker` on the build directory to check for broken links and output the results to a file:
 
 ```sh
 linkchecker --timeout=20 --threads=2 -F text/linkchecker_output.txt http://localhost:9876
+```
+
+Check for unused CSS. If the [PurgeCSS CLI](https://purgecss.com/CLI.html) is installed, you can run it from inside the `localhost+8000` directory to create an output file with only the used CSS and compare it to the original CSS file.
+
+```sh
+purgecss --css static/portfolio/styles.css --content **/*.html --output static/portfolio/styles.purged.css
 ```
 
 </details>
