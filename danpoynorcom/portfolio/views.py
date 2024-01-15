@@ -93,7 +93,7 @@ def website_seo_overview(request):
     view_names = ['home', 'portfolio', 'about', 'contact', 'client_list', 'industry_list', 'market_list', 'mediatype_list', 'role_list']
 
     # List of models for the URLs
-    models = [Industry, Market, MediaType, Role, Project, ProjectItem]
+    models = [Client, Industry, Market, MediaType, Role, Project, ProjectItem]
 
     # Build the list of URLs
     urls = [request.build_absolute_uri(reverse(view_name)) for view_name in view_names]
