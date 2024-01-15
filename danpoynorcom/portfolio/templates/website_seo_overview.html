@@ -1,0 +1,679 @@
+{% load seo_filters %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website SEO Overview</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 0 1rem;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #ccc;
+            }
+            #dark-mode-toggle {
+                background: none;
+                border: none;
+                cursor: pointer;
+                margin: 0 0 0 1rem;
+                opacity: .5;
+                padding: 0;
+            }
+            
+            #dark-mode-toggle svg {
+                width: 24px;
+                height: 24px;
+            }
+            h1 {
+                margin: 0;
+            }
+            .header-right {
+                display: flex;
+                align-items: flex-end;
+                flex-flow: column nowrap;
+            }
+            .header-right p {
+                margin: .33rem 0 0;
+            }
+            table#seo-table {
+                width: 100%;
+                border-collapse: collapse;
+                padding: 1rem;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                font-size: 0.9rem;
+                padding: 1rem;
+            }
+            th {
+                background-color: #f2f2f2;
+                text-align: left;
+            }
+            td:nth-child(4) {
+                text-align: right;
+            }
+            .google-search-result {
+                font-size: 1.2rem;
+                color: #1a0dab;
+            }
+            .google-search-result-description {
+                color: #333;
+                margin-top: .5rem;
+            }
+            .google-search-result-cell {
+                background-color: hsl(0 0% 99% / 1);
+            }
+            .low-word-count {
+                background-color: #ffe6e6;
+                color: red;
+            }
+            .high-word-count {
+                background-color: #e6ffe6;
+                color: green;
+            }
+            .excess-characters {
+                color: red;
+            }
+            .url-cell a {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .url-cell .h1-tags {
+                font-size: 1.2rem;
+                color: #333;
+            }
+            .info-bar {
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.9em;
+                margin-top: 1rem;
+                padding: .5rem 1rem;
+            }
+            .search-and-pagination {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5rem 1rem;
+            }
+            .timestamp {
+                font-size: 0.75rem;
+                margin-left: auto;
+                text-align: right;
+            }
+            .pagination {
+                font-size: 0.85rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                {% comment %} padding: .5rem 1rem; {% endcomment %}
+            }
+            .pagination-label {
+                margin: 0 1rem 0;
+            }
+            .step-links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+            .color-red {
+                color: red;
+            }
+            .search-form {
+                align-items: center;
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: .9em;
+                gap: 1rem;
+                justify-content: flex-start;
+                padding: 1rem;
+            }
+            .search-form p {
+                margin: .5rem 0 0 0;
+            }
+            input[type="search"] {
+                border: 1px solid #333;
+                border-radius: 5px;
+                padding: 0.5rem;
+                width: 100%;%
+            }
+            .color-coding-explanation {
+                font-size: 0.75rem;
+                margin: .5rem 0 .75rem;
+                padding: 0 1rem;
+            }
+            .color-coding-explanation p {
+                margin: 0;
+            }
+            .refresh-data-form {
+                align-items: center;
+                display: flex;
+                gap: 0.5rem;
+            }
+            .refresh-data-form p {
+                font-size: 0.75rem;
+                margin: 0;
+            }
+            .potential-icons {
+                background-color: #ececec;
+                font-size: 0.5rem;
+            }
+            .potential-icons details .icon-lists {
+                columns: 5;
+                gap: 1rem;
+            }
+            .potential-icons details .icon-lists span {
+                font-size: 1.25rem;
+            }
+            /* Dark mode */
+            body.dark-mode {
+                background-color: #333;
+                color: #fff;
+            }
+            .dark-mode a {
+                color: #ffa500;
+            }
+            .dark-mode .google-search-result {
+                color: #4c8bf5;
+            }
+            .dark-mode .google-search-result-description {
+                color: #ccc;
+            }
+            .dark-mode .pagination a {
+                color: #ffa500;
+            }
+            .dark-mode .pagination .current {
+                color: #fff;
+            }
+            .dark-mode .pagination .step-links a {
+                color: #fff;
+            }
+            .dark-mode th,
+            .dark-mode td {
+                border-color: #444;
+            }
+            .dark-mode th {
+                background-color: #444;
+                color: #fff;
+            }
+            .dark-mode .info-bar,
+            .dark-mode th {
+                background-color: #202020;
+                color: #fff;
+            }
+            .dark-mode .google-search-result-cell {
+                background-color: #202124;
+            }
+            .dark-mode header {
+                border-bottom: 1px solid #444;
+            }
+            .totals-wrapper p {
+                margin: 0;
+            }
+            .dark-mode .potential-icons {
+                background-color: #202124;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Website SEO Overview</h1>
+            <div class="header-right">
+                <button id="dark-mode-toggle">
+                    <svg id="moon-icon"
+                         xmlns="http://www.w3.org/2000/svg"
+                         width="24"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         class="feather feather-moon">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun-icon"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         style="display: none">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <p class="timestamp">Current time: {% now "Y-m-d H:i:s" %}</p>
+            </div>
+        </header>
+        <!-- Search form -->
+        <form method="get"
+              action="{% url 'website_seo_overview' %}"
+              class="search-form">
+            <label for="search_term">Search:</label>
+            <input type="search"
+                   id="search_term"
+                   name="search_term"
+                   value="{{ request.GET.search_term }}">
+            <button type="submit">Search</button>
+        </form>
+        <!-- Data refresh form -->
+        <form method="get"
+              action="{% url 'website_seo_overview' %}"
+              class="refresh-data-form">
+            <button type="submit" name="refresh_seo_data">Refresh SEO Data</button>
+            {% if last_modified %}
+                <p>Data last refreshed: {{ last_modified }}</p>
+            {% else %}
+                <p>No data file found.</p>
+            {% endif %}
+            <p>Note: Refreshing data can take 15 minutes to parse.</p>
+        </form>
+        <div class="info-bar">
+            <div class="totals-wrapper">
+                <p>Total Number of URLs: {{ seo_data_total_length }}</p>
+                {% if page_obj %}
+                    <p>Total items: {{ total_items }}</p>
+                {% elif search_query %}
+                    <p>No results found with the text '{{ search_query }}'.</p>
+                {% endif %}
+            </div>
+            {% if page_obj.paginator.count > 0 %}
+                <div class="pagination">
+                    <p class="pagination-label">Page:</p>
+                    <span class="step-links">
+                        {% if page_obj.has_previous %}
+                            <a href="?page=1">« first</a>
+                            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                        {% endif %}
+                        <!-- Display clickable page numbers. -->
+                        {% for i in page_obj.paginator.page_range %}
+                            {% if page_obj.number == i %}
+                                <span class="current">{{ i }}</span>
+                            {% else %}
+                                <a href="?page={{ i }}">{{ i }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">next</a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}">last »</a>
+                        {% endif %}
+                    </span>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="color-coding-explanation">
+        <p>
+            <strong>Color Coding:</strong>
+        </p>
+        <p>
+            <span class="color-red">Red</span> in Title and Description indicates that the text length exceeds the optimal limit.
+        </p>
+        <p>
+            <span class="high-word-count">Green</span> Word Count indicates an optimal number of words (between 300 and 1000). <span class="low-word-count">Red</span> indicates too few or too many words.
+        </p>
+    </div>
+    <table id="seo-table">
+        <tr>
+            <th>Title and Description (Google Search Result Simulation)</th>
+            <th>URL and H1 Tags</th>
+            <th>Word Count</th>
+        </tr>
+        <tr class="potential-icons">
+            <td colspan="3">
+                <details>
+                    <summary>Potential icons to include in URLs</summary>
+                    <div class="icon-lists">
+                        <ul>
+                            <li>
+                                Camera: <span>📷</span>
+                            </li>
+                            <li>
+                                Camera with Flash: <span>📸</span>
+                            </li>
+                            <li>
+                                Video Camera: <span>📹</span>
+                            </li>
+                            <li>
+                                Film Projector: <span>📽️</span>
+                            </li>
+                            <li>
+                                Light Bulb: <span>💡</span>
+                            </li>
+                            <li>
+                                Palette: <span>🎨</span>
+                            </li>
+                            <li>
+                                Rainbow: <span>🌈</span>
+                            </li>
+                            <li>
+                                Star: <span>⭐</span>
+                            </li>
+                            <li>
+                                Sparkles: <span>✨</span>
+                            </li>
+                            <li>
+                                Fire: <span>🔥</span>
+                            </li>
+                            <li>
+                                Rocket: <span>🚀</span>
+                            </li>
+                            <li>
+                                Sunglasses: <span>😎</span>
+                            </li>
+                            <li>
+                                Top Hat: <span>🎩</span>
+                            </li>
+                            <li>
+                                Mask: <span>🎭</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Gear: <span>⚙️</span>
+                            </li>
+                            <li>
+                                Hammer and Wrench: <span>🛠️</span>
+                            </li>
+                            <li>
+                                Nut and Bolt: <span>🔩</span>
+                            </li>
+                            <li>
+                                Robot: <span>🤖</span>
+                            </li>
+                            <li>
+                                Microscope: <span>🔬</span>
+                            </li>
+                            <li>
+                                Telescope: <span>🔭</span>
+                            </li>
+                            <li>
+                                Satellite Antenna: <span>📡</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Guitar (for country music): <span>🎸</span>
+                            </li>
+                            <li>
+                                Star (for the Lone Star State): <span>⭐</span>
+                            </li>
+                            <li>
+                                Flag of United States: <span>🇺🇸</span>
+                            </li>
+                            <li>
+                                Hot Pepper (for Tex-Mex cuisine): <span>🌶️</span>
+                            </li>
+                            <li>
+                                Taco (for Tex-Mex cuisine): <span>🌮</span>
+                            </li>
+                            <li>
+                                Gun: <span>🔫</span>
+                            </li>
+                            <li>
+                                Cactus: <span>🌵</span>
+                            </li>
+                            <li>
+                                Cowboy Hat Face: <span>🤠</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Top Hat: <span>🎩</span>
+                            </li>
+                            <li>
+                                Crown: <span>👑</span>
+                            </li>
+                            <li>
+                                Billed Cap: <span>🧢</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Person in Suit Levitating: <span>🕴️</span>
+                            </li>
+                            <li>
+                                Genie: <span>🧞</span>
+                            </li>
+                            <li>
+                                Angel: <span>👼</span>
+                            </li>
+                            <li>
+                                Rainbow: <span>🌈</span>
+                            </li>
+                            <li>
+                                Crystal Ball: <span>🔮</span>
+                            </li>
+                            <li>
+                                Sagittarius: <span>♐</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Eyes: <span>👀</span>
+                            </li>
+                            <li>
+                                Eye: <span>👁</span>
+                            </li>
+                            <li>
+                                Military Helmet: <span>🪖</span>
+                            </li>
+                            <li>
+                                Collision: <span>💥</span>
+                            </li>
+                            <li>
+                                Globe Showing Americas: <span>🌎</span>
+                            </li>
+                            <li>
+                                Sun: <span>🌞</span>
+                            </li>
+                            <li>
+                                Full Moon: <span>🌝</span>
+                            </li>
+                            <li>
+                                Trophy: <span>🏆</span>
+                            </li>
+                            <li>
+                                Direct Hit: <span>🎯</span>
+                            </li>
+                            <li>
+                                Magnet: <span>🧲</span>
+                            </li>
+                            <li>
+                                Wrench: <span>🔧</span>
+                            </li>
+                            <li>
+                                Gem Stone: <span>💎</span>
+                            </li>
+                            <li>
+                                Syringe: <span>💉</span>
+                            </li>
+                            <li>
+                                Drop of Blood: <span>🩸</span>
+                            </li>
+                            <li>
+                                DNA: <span>🧬</span>
+                            </li>
+                            <li>
+                                Test Tube: <span>🧪</span>
+                            </li>
+                            <li>
+                                Magic Wand: <span>🪄</span>
+                            </li>
+                            <li>
+                                Green Heart: <span>💚</span>
+                            </li>
+                            <li>
+                                Heart on Fire: <span>❤️‍🔥</span>
+                            </li>
+                            <li>
+                                Check Mark: <span>✅</span>
+                            </li>
+                            <li>
+                                Exclamation Mark: <span>❗️</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Copyright: <span>©</span>
+                            </li>
+                            <li>
+                                Registered: <span>®</span>
+                            </li>
+                            <li>
+                                Bullet Point: <span>•</span>
+                            </li>
+                            <li>
+                                White Heart: <span>♡</span>
+                            </li>
+                            <li>
+                                Black Chess Queen: <span>♛</span>
+                            </li>
+                            <li>
+                                Black Chess King: <span>♚</span>
+                            </li>
+                            <li>
+                                Black Chess Rook: <span>♜</span>
+                            </li>
+                            <li>
+                                Black Chess Bishop: <span>♝</span>
+                            </li>
+                            <li>
+                                Black Chess Knight: <span>♞</span>
+                            </li>
+                            <li>
+                                Black Chess Pawn: <span>♟</span>
+                            </li>
+                            <li>
+                                White Chess King: <span>♔</span>
+                            </li>
+                            <li>
+                                White Chess Queen: <span>♕</span>
+                            </li>
+                            <li>
+                                White Chess Rook: <span>♖</span>
+                            </li>
+                            <li>
+                                White Chess Bishop: <span>♗</span>
+                            </li>
+                            <li>
+                                White Chess Knight: <span>♘</span>
+                            </li>
+                            <li>
+                                White Chess Pawn: <span>♙</span>
+                            </li>
+                            <li>
+                                Black Smiling Face: <span>☻</span>
+                            </li>
+                            <li>
+                                White Smiling Face: <span>☺︎</span>
+                            </li>
+                            <li>
+                                Atom Symbol: <span>⚛︎</span>
+                            </li>
+                            <li>
+                                Hammer and Pick: <span>⚒︎</span>
+                            </li>
+                            <li>
+                                Pointing Index Right: <span>☞</span>
+                            </li>
+                            <li>
+                                Rightwards Arrow: <span>➜</span>
+                            </li>
+                            <li>
+                                Black Rightwards Arrow: <span>➡︎</span>
+                            </li>
+                            <li>
+                                Rightwards Arrow: <span>➧</span>
+                            </li>
+                            <li>
+                                Rightwards Arrow: <span>⇛</span>
+                            </li>
+                            <li>
+                                Rightwards Arrow: <span>⇶</span>
+                            </li>
+                            <li>
+                                Rightwards Arrow: <span>⇉</span>
+                            </li>
+                            <li>
+                                Heavy Check Mark: <span>✔️</span>
+                            </li>
+                            <li>
+                                White Medium Star: <span>⭐</span>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </details>
+        </td>
+    </tr>
+    {% for url in page_obj %}
+        <tr>
+            <td class="google-search-result-cell">
+                <div class="google-search-result">
+                    {{ url.title|first_part:60 }}<span class="excess-characters">{{ url.title|excess_part:60 }}</span>
+                </div>
+                <div class="google-search-result-description">
+                    {{ url.description|first_part:160 }}<span class="excess-characters">{{ url.description|excess_part:160 }}</span>
+                </div>
+            </td>
+            <td class="url-cell">
+                <a href="{{ url.url }}">{{ url.url }}</a>
+                <div class="h1-tags">{{ url.h1_tags|join:", " }}</div>
+            </td>
+            <td class="{% if url.word_count < 300 %}low-word-count{% elif url.word_count > 1000 %}high-word-count{% endif %}">
+                {{ url.word_count }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+<script>
+        var moonIcon = document.getElementById('moon-icon');
+        var sunIcon = document.getElementById('sun-icon');
+    
+        // Check for saved 'dark-mode' in localStorage
+        if (localStorage.getItem('dark-mode') === 'true') {
+            document.body.classList.add('dark-mode');
+            moonIcon.style.display = 'none';
+            sunIcon.style.display = '';
+            sunIcon.style.stroke = '#fff'; // make the sun icon white in dark mode
+        } else {
+            moonIcon.style.display = '';
+            sunIcon.style.display = 'none';
+            sunIcon.style.stroke = '#000'; // make the sun icon black in light mode
+        }
+    
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = '';
+                sunIcon.style.stroke = '#fff'; // make the sun icon white in dark mode
+                localStorage.setItem('dark-mode', 'true'); // save dark mode state
+            } else {
+                moonIcon.style.display = '';
+                sunIcon.style.display = 'none';
+                sunIcon.style.stroke = '#000'; // make the sun icon black in light mode
+                localStorage.setItem('dark-mode', 'false'); // save light mode state
+            }
+        });
+</script>
+</body>
+</html>
