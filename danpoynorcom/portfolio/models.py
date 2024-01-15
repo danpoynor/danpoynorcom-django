@@ -107,7 +107,7 @@ class Role(TaxonomyMixin, models.Model):
 
 
 # Project model: Each project has a client, industry, market, media type, and role assigned to it
-class Project(models.Model):
+class Project(TaxonomyMixin, models.Model):
     class Meta:
         verbose_name = "Project"
         verbose_name_plural = "Projects"
@@ -125,23 +125,11 @@ class Project(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
-
-    def get_verbose_name(self):
-        return self._meta.verbose_name
-
-    def get_verbose_name_plural(self):
-        return self._meta.verbose_name_plural
-
     def get_ordered_items(self):
-        return self.items.all().order_by("item_order")
+        return self.items.filter(visible=True).order_by("item_order")
 
     def get_first_item(self):
-        return self.items.all().order_by("item_order").first()
-
-    def get_absolute_url(self):
-        return reverse("project_items_detail", args=[str(self.slug)])
+        return self.items.filter(visible=True).order_by("item_order").first()
 
 
 # ProjectItem model: Each project item has a project assigned to it
