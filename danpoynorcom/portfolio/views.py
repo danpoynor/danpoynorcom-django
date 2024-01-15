@@ -185,7 +185,7 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Dan Poynor : Visual / UX / Web Design & Development : Austin, TX'
+        context['title'] = 'Dan Poynor Visual/UX/Web Design & Development : Austin,TX 🤠'
         context['description'] = "UX/UI + ⚡️ Code: I solve business problems with creative strategy & technical expertise. I don't just make it pretty, I make it work."
         return context
 
@@ -250,7 +250,7 @@ class AboutView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Dan Poynor : UI/UX Design & Web Development : Austin, TX'
-        context['description'] = "Meet your new design secret weapon! Quick-witted, multi-talented UX/UI design and development wiz with a proven track record of slaying digital dragons for diverse clients, big & small. Ready to unleash your brand's full potential? Let's chat."
+        context['description'] = "Multi-talented UX/UI design and development wiz with a proven track record of slaying digital dragons for diverse clients, big & small. Let's chat! 😀"
         return context
 
 
@@ -260,7 +260,7 @@ class ContactView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Let’s Connect! : UI/UX Design & Web Development : Austin, TX'
-        context['description'] = "Don't be shy, partner! I'm just a click, call, or email away. Let's discuss how my design alchemy can transform your business. Send me your wildest ideas, and watch them become reality. ✨"
+        context['description'] = "I'm just a click, call, or email away. Let's discuss how we can transform your business. Send me your wildest ideas, and watch them become reality. 📲"
         return context
 
 
@@ -284,7 +284,7 @@ class ClientsView(TemplateView):
             "clients": client_list,
             "object": Client(),
             "title": "Startups to Global Brands : Checkout My Design & Dev Clients",
-            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner.",
+            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner. ♥️",
         })
 
         return context
@@ -315,7 +315,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{client_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
+        context['title'] = f'{client_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
         context['description'] = f'Explore design and development projects for {client_name}. Page {page} {order_text}.'
         return context
 
@@ -390,8 +390,8 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         order = self.kwargs.get('order', 'asc')
         order_text = "Asc" if order == "asc" else "Desc"
 
-        context['title'] = f'{industry_name} : Design & Dev Projects : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'Explore design and development projects for {industry_name}. Page {page} {order_text}.'
+        context['title'] = f'{industry_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
+        context['description'] = f'Explore design and development projects for {industry_name}. Page {page} {order_text}. ⚙️'
         return context
 
 
@@ -414,7 +414,7 @@ class MarketsView(TemplateView):
         context.update({
             "markets": market_list,
             "object": Market(),
-            "title": "Market-Driven Design & Development: View Tailored Solutions",
+            "title": "Market-Driven Design & Development: View Tailored Solutions 🤑",
             "description": "From niche audiences to global markets, view my award-winning UX/UI & web solutions that speak their language. Built for success and maximum impact.",
         })
 
@@ -467,7 +467,7 @@ class MediaTypesView(TemplateView):
             "mediatypes": mediatype_list,
             "object": MediaType(),
             "title": "Pixels to Print & Beyond : View Engaging Design & Dev Mastery",
-            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate.",
+            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate. 🖨📺🕸",
         })
 
         return context
@@ -541,7 +541,7 @@ class RolesView(TemplateView):
             "roles": role_list,
             "object": Role(),
             "title": "Concept to Creation: View My Diverse Design & Dev Experience",
-            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project.",
+            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project. 🧢🎓🪖🎩",
         })
 
         return context
