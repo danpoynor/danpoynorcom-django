@@ -594,7 +594,8 @@ class ProjectsView(ListView):
 
         # Get projects that have any visible items
         project_list = Project.objects.filter(
-            visible=True
+            visible=True,
+            client__visible=True  # Check for visible client
         ).annotate(
             has_visible_items=Exists(has_visible_items_subquery)
         ).filter(
