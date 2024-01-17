@@ -491,10 +491,10 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
 <details>
   <summary>Click to expand</summary>
 
-- [ ] Add a favicon
 - [ ] Add a robots.txt file
-- [ ] Add a sitemap.xml file
-- [ ] Add a humans.txt file
+- [ ] Need to cross check [WGET Sitemap](http://localhost:8000/wget_sitemap/), [sitemap.xml](http://localhost:8000/sitemap.xml), and [SEO audit](http://localhost:8000/website-seo-overview/) to make sure urls match up.
 - [ ] Populate MediaType column in Project Items table
   - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places
   - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects
+
+</details>
