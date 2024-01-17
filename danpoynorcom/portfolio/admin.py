@@ -11,11 +11,17 @@ class ClientAdmin(admin.ModelAdmin):
     list_display = ("id", "visible", "name", "slug", "description")
     list_display_links = ("name",)
 
+    def get_queryset(self, request):
+        return super().get_queryset(request).model.all_objects.all()
+
 
 class IndustryAdmin(admin.ModelAdmin):
     search_fields = ["name"]
     list_display = ("id", "visible", "name", "slug", "description")
     list_display_links = ("name",)
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).model.all_objects.all()
 
 
 class MarketAdmin(admin.ModelAdmin):
@@ -23,17 +29,26 @@ class MarketAdmin(admin.ModelAdmin):
     list_display = ("id", "visible", "name", "slug", "description")
     list_display_links = ("name",)
 
+    def get_queryset(self, request):
+        return super().get_queryset(request).model.all_objects.all()
+
 
 class MediaTypeAdmin(admin.ModelAdmin):
     search_fields = ["name"]
     list_display = ("id", "visible", "name", "slug", "description")
     list_display_links = ("name",)
 
+    def get_queryset(self, request):
+        return super().get_queryset(request).model.all_objects.all()
+
 
 class RoleAdmin(admin.ModelAdmin):
     search_fields = ["name"]
     list_display = ("id", "visible", "name", "slug", "description")
     list_display_links = ("name",)
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).model.all_objects.all()
 
 
 class ProjectItemImageInline(admin.StackedInline):

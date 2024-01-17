@@ -13,7 +13,31 @@ class VisibleManager(models.Manager):
 
 class ProjectVisibleManager(models.Manager):
     def get_queryset(self):
-        return super().get_queryset().filter(visible=True).annotate(visible_item_count=Count('item', filter=Q(item__visible=True))).filter(visible_item_count__gt=0)
+        return super().get_queryset().filter(
+            visible=True,
+            client__visible=True,
+            industry__visible=True,
+            market__visible=True,
+            mediatype__visible=True,
+            role__visible=True,
+        ).annotate(
+            visible_item_count=Count('item', filter=Q(item__visible=True))
+        ).filter(
+            visible_item_count__gt=0
+        )
+
+
+class ProjectItemVisibleManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(
+            visible=True,
+            project__visible=True,
+            project__client__visible=True,
+            project__industry__visible=True,
+            project__market__visible=True,
+            project__mediatype__visible=True,
+            project__role__visible=True,
+        ).distinct()
 
 
 class TaxonomyMixin(models.Model):
@@ -48,6 +72,9 @@ class Client(TaxonomyMixin, models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    objects = VisibleManager()
+    all_objects = models.Manager()
+
 
 # Industry taxonomy model
 class Industry(TaxonomyMixin, models.Model):
@@ -65,6 +92,9 @@ class Industry(TaxonomyMixin, models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    objects = VisibleManager()
+    all_objects = models.Manager()
+
 
 # Market taxonomy model
 class Market(TaxonomyMixin, models.Model):
@@ -81,6 +111,9 @@ class Market(TaxonomyMixin, models.Model):
     image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    objects = VisibleManager()
+    all_objects = models.Manager()
 
 
 # MediaType taxonomy model
@@ -100,6 +133,9 @@ class MediaType(TaxonomyMixin, models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    objects = VisibleManager()
+    all_objects = models.Manager()
+
 
 # Role taxonomy model
 class Role(TaxonomyMixin, models.Model):
@@ -116,6 +152,9 @@ class Role(TaxonomyMixin, models.Model):
     image_lg = models.URLField(max_length=200, blank=True, null=True, validators=[URLValidator()])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    objects = VisibleManager()
+    all_objects = models.Manager()
 
 
 # Project model: Each project has a client, industry, market, media type, and role assigned to it
@@ -180,7 +219,7 @@ class ProjectItem(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    objects = VisibleManager()
+    objects = ProjectItemVisibleManager()
     all_objects = models.Manager()
 
     def __str__(self):
