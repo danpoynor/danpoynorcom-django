@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.db.models import Count
 from django.utils.html import format_html
 from django.db.models import Case, When, IntegerField
 
@@ -61,6 +62,9 @@ class ProjectItemAdmin(admin.ModelAdmin):
     list_display_links = ("name",)
     inlines = [ProjectItemImageInline, ProjectItemAttachmentInline]
 
+    def get_queryset(self, request):
+        return ProjectItem.all_objects.get_queryset().select_related('project__client')  # Use all_objects manager
+
     def project_name(self, obj):
         return obj.project.name if obj.project else "-"
     project_name.short_description = "Project"
@@ -72,8 +76,8 @@ class ProjectItemAdmin(admin.ModelAdmin):
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    search_fields = ["name"]
-    list_display = ("id", "visible", "name", "client_name", "media_types", "industries", "markets", "roles", "year")
+    search_fields = ["name", "slug"]
+    list_display = ("id", "visible", "name", "client_name", "media_types", "industries", "markets", "roles", "year", "items_count")
     list_display_links = ("name",)
 
     def client_name(self, obj):
@@ -90,21 +94,29 @@ class ProjectAdmin(admin.ModelAdmin):
 
     def markets(self, obj):
         return ", ".join([market.name for market in obj.market.all()])
+
     markets.short_description = "Markets"
 
     def roles(self, obj):
         return ", ".join([role.name for role in obj.role.all()])
     roles.short_description = "Roles"
 
+    def items_count(self, obj):
+        return obj.items_count
+    items_count.admin_order_field = 'items_count'  # make column sortable
+    items_count.short_description = 'Items Count'
+
     def get_queryset(self, request):
-        qs = super().get_queryset(request)
-        return qs.annotate(
+        qs = Project.all_objects.get_queryset()  # Use all_objects manager
+        qs = qs.annotate(
+            items_count=Count('item'),  # add items_count field
             is_default=Case(
                 When(name="[Default Project]", then=0),
                 default=1,
                 output_field=IntegerField(),
             )
-        ).order_by("is_default", "name")
+        )
+        return qs.order_by("is_default", "name")
 
     def format_cell(self, obj, field):
         cell = super().format_cell(obj, field)

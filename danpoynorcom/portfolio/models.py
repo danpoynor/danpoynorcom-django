@@ -1,7 +1,19 @@
 import datetime
 from django.core.validators import URLValidator, MinValueValidator, MaxValueValidator
+from django.db.models import Count, Q
 from django.urls import reverse
 from django.db import models
+
+
+# Custom managers
+class VisibleManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(visible=True)
+
+
+class ProjectVisibleManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(visible=True).annotate(visible_item_count=Count('item', filter=Q(item__visible=True))).filter(visible_item_count__gt=0)
 
 
 class TaxonomyMixin(models.Model):
@@ -125,11 +137,21 @@ class Project(TaxonomyMixin, models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    objects = ProjectVisibleManager()
+    all_objects = models.Manager()
+
     def get_ordered_items(self):
         return self.items.filter(visible=True).order_by("item_order")
 
     def get_first_item(self):
         return self.items.filter(visible=True).order_by("item_order").first()
+
+    def get_absolute_url(self):
+        first_item = self.get_first_item()
+        if first_item is not None:
+            return first_item.get_absolute_url()
+        else:
+            return reverse('project_detail', kwargs={'slug': self.slug})
 
 
 # ProjectItem model: Each project item has a project assigned to it
@@ -158,6 +180,9 @@ class ProjectItem(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    objects = VisibleManager()
+    all_objects = models.Manager()
+
     def __str__(self):
         return self.name
 
@@ -167,6 +192,7 @@ class ProjectItem(models.Model):
     def get_verbose_name_plural(self):
         return self._meta.verbose_name_plural
 
+    # Concatenate the project name and first project item name
     def get_absolute_url(self):
         return reverse("project_detail", args=[str(self.slug)])
 
