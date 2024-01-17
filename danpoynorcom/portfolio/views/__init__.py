@@ -1,0 +1,20 @@
+from .main_views import (
+    HomeView,
+    PortfolioView,
+    AboutView,
+    ContactView,
+    ClientsView,
+    ClientProjectsListView,
+    IndustriesView,
+    IndustryProjectsListView,
+    MarketsView,
+    MarketProjectsListView,
+    MediaTypesView,
+    MediaTypeProjectsListView,
+    RolesView,
+    RoleProjectsListView,
+    ProjectsView,
+    ProjectItemsView,
+    ProjectDetailsView,
+)
+from .seo_views import WebsiteSeoView

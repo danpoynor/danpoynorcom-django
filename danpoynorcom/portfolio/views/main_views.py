@@ -1,24 +1,45 @@
-from os import path, stat
-from datetime import datetime
 import re
-import json
+import random
 import inflect
-import requests
-from bs4 import BeautifulSoup
-from django.core.cache import cache
-from django.shortcuts import render, redirect
-from django.core.paginator import Paginator
-from django.urls import reverse
+from django.shortcuts import redirect
 from django.db.models.functions import Lower
 from django.db.models import OuterRef, Exists
 from django.views.generic import TemplateView, DetailView, ListView
-from .constants import PAGINATE_BY
-from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
-from .mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
-from .utils import get_visible_objects
-from .constants import SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
+from ..mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
+from ..utils import get_visible_objects
+from ..models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
+from ..constants import PAGINATE_BY, SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
 
 DEFAULT_PAGE_DESCRIPTION = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
+
+# List of verbs to use at the beginning of the page title or description
+SYNONYMS_FOR_EXPLORE = [
+    "Analyze",
+    "Browse",
+    "Check Out",
+    "Discover",
+    "Examine",
+    "Experience",
+    "Explore",
+    "Eye",
+    "Eyeball",
+    "Inspect",
+    "Investigate",
+    "Look At",
+    "Look Into",
+    "Look Over",
+    "Peek At",
+    "Peruse",
+    "Research",
+    "Review",
+    "Spy On"
+    "Study",
+    "Survey",
+    "View",
+]
+
+# Select a random word from the list
+random_synonym_for_explore = random.choice(SYNONYMS_FOR_EXPLORE)
 
 
 def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
@@ -86,98 +107,6 @@ def capitalize_special_words(word):
         "fiftyflowers.com": "FiftyFlowers.com"
     }
     return special_words.get(word.lower(), word)
-
-
-def website_seo_overview(request):
-    # List of view names for the URLs
-    view_names = ['home', 'portfolio', 'about', 'contact', 'client_list', 'industry_list', 'market_list', 'mediatype_list', 'role_list']
-
-    # List of models for the URLs
-    models = [Client, Industry, Market, MediaType, Role, Project, ProjectItem]
-
-    # Build the list of URLs
-    urls = [request.build_absolute_uri(reverse(view_name)) for view_name in view_names]
-    for model in models:
-        urls.extend(request.build_absolute_uri(obj.get_absolute_url()) for obj in model.objects.all())
-    for client in Client.objects.all():
-        urls.append(request.build_absolute_uri(client.get_absolute_url()))
-
-    # Fetch and save the data when the refresh button is clicked
-    if 'refresh_seo_data' in request.GET:
-        seo_data = []
-        for url in urls:
-            # Try to get the data from the cache
-            data = cache.get(f'seo_data_{url}')
-
-            # If the data is not in the cache, fetch it from the web page
-            if not data:
-                try:
-                    response = requests.get(url, timeout=5)
-                    soup = BeautifulSoup(response.text, 'html.parser')
-                    title = str(soup.title.string) if soup.title else ''
-                    description_tag = soup.find('meta', attrs={'name': 'description'})
-                    description = str(description_tag['content']) if description_tag else ''
-                    h1_tags = [str(tag.get_text(strip=True)) for tag in soup.find_all('h1')]
-                    word_count = len(soup.get_text().split())
-                    data = {
-                        'url': url,
-                        'title': title,
-                        'description': description,
-                        'h1_tags': h1_tags,
-                        'word_count': word_count,
-                    }
-                    cache.set(f'seo_data_{url}', data, 3600)  # Cache the data for 1 hour
-                except requests.exceptions.RequestException as e:
-                    print(f'Error fetching {url}: {e}')
-                    continue
-
-            seo_data.append(data)
-
-        # Save the data to a JSON file
-        with open('portfolio/output/seo_data.json', 'w', encoding='utf-8') as f:
-            json.dump(seo_data, f)
-
-    # Load the data from the JSON file
-    try:
-        with open('portfolio/output/seo_data.json', 'r', encoding='utf-8') as f:
-            seo_data = json.load(f)
-    except FileNotFoundError:
-        seo_data = []
-
-    # Get the total number of items before filtering
-    seo_data_total_length = len(seo_data)
-
-    # Filter the data based on the search query
-    search_query = request.GET.get('search_term', '')  # Default to empty string if not provided
-    if search_query:
-        seo_data = [item for item in seo_data if search_query.lower() in item['url'].lower() or search_query.lower() in item['title'].lower() or search_query.lower() in item['description'].lower()]
-
-    # Limit the number of items if specified
-    total_items = request.GET.get('total_items', 'all')  # Default number of items if not provided
-    if total_items != 'all':
-        seo_data = seo_data[:int(total_items)]  # Convert to int because GET parameters are always strings
-
-    # Paginate the data
-    paginator = Paginator(seo_data, 100)  # Increase PAGINATE_BY to see more results per page
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-
-    total_items = len(seo_data)
-
-    # Define the path to the JSON file
-    json_file_path = 'seo_data.json'
-
-    # Check if the file exists
-    if path.exists(json_file_path):
-        # Get the time the file was last modified
-        timestamp = stat(json_file_path).st_mtime
-        # Convert the timestamp to a datetime object
-        last_modified = datetime.fromtimestamp(timestamp)
-    else:
-        last_modified = None
-
-    # Pass the last_modified date to the template
-    return render(request, 'website_seo_overview.html', {'page_obj': page_obj, 'total_items': total_items, 'seo_data_total_length': seo_data_total_length, 'search_query': search_query, 'last_modified': last_modified})
 
 
 class HomeView(TemplateView):
@@ -284,7 +213,7 @@ class ClientsView(TemplateView):
             "clients": client_list,
             "object": Client(),
             "title": "Startups to Global Brands : Checkout My Design & Dev Clients",
-            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner. ♥️",
+            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner. 💓",
         })
 
         return context
@@ -316,7 +245,7 @@ class ClientProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{client_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'Explore design and development projects for {client_name}. Page {page} {order_text}.'
+        context['description'] = f'{random_synonym_for_explore} design and development projects for {client_name}. Page {page} {order_text}.'
         return context
 
 
@@ -391,7 +320,7 @@ class IndustryProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{industry_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'Explore design and development projects for {industry_name}. Page {page} {order_text}. ⚙️'
+        context['description'] = f'{random_synonym_for_explore} design and development projects for {industry_name}. Page {page} {order_text}. ⚙️'
         return context
 
 
@@ -434,7 +363,7 @@ class MarketProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         context = super().get_context_data(**kwargs)
         # Add the title to the context
         context['title'] = f'{self.object.name} Design & Development Expertise :  Austin, TX'
-        context['description'] = f'Explore design and development projects for {self.object.name}.'
+        context['description'] = f'{random_synonym_for_explore} design and development projects for {self.object.name}.'
         return context
 
 
@@ -466,8 +395,8 @@ class MediaTypesView(TemplateView):
             "highlighted_media_types": highlighted_media_types,
             "mediatypes": mediatype_list,
             "object": MediaType(),
-            "title": "Pixels to Print & Beyond : View Engaging Design & Dev Mastery",
-            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate. 🖨📺🕸",
+            "title": "Pixels 2 Print & Beyond : View Engaging Design & Dev Mastery",
+            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate. 🕸",
         })
 
         return context
@@ -509,10 +438,10 @@ class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         # Check if "Design" is already in the name
         if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
             context['title'] = f'{singular_name} Portfolio : Austin, TX : Page {page} {order_text}'
-            context['description'] = f'Explore the {singular_name} portfolio. Page {page} {order_text}.'
+            context['description'] = f'{random_synonym_for_explore} the {singular_name} portfolio. Page {page} {order_text}.'
         else:
             context['title'] = f'{singular_name} Designer Portfolio : Austin, TX : Page {page} {order_text}'
-            context['description'] = f'Explore the {singular_name} designer portfolio. Page {page} {order_text}.'
+            context['description'] = f'{random_synonym_for_explore} the {singular_name} designer portfolio. Page {page} {order_text}.'
         return context
 
 
@@ -541,7 +470,7 @@ class RolesView(TemplateView):
             "roles": role_list,
             "object": Role(),
             "title": "Concept to Creation: View My Diverse Design & Dev Experience",
-            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project. 🧢🎓🪖🎩",
+            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project. 🧢🎓🎩",
         })
 
         return context
@@ -570,7 +499,7 @@ class RoleProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
         order_text = "Asc" if order == "asc" else "Desc"
 
         context['title'] = f'{role_name} Portfolio : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'Explore my {role_name} portfolio. Page {page} {order_text}.'
+        context['description'] = f'{random_synonym_for_explore} my {role_name} portfolio. Page {page} {order_text}.'
         return context
 
 
@@ -674,9 +603,9 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, DetailView):
         # Check if project item name and project name are the same
         if self.object.name == project.name:
             context['title'] = f'Project: {self.object.name}'
-            context['description'] = f'Details about the project: {self.object.name}'
+            context['description'] = f'View Details: {self.object.name}'
         else:
             context['title'] = f'Project: {project.name} : {self.object.name}'
-            context['description'] = f'Details about the project: {project.name} and item: {self.object.name}'
+            context['description'] = f'View Details: {project.name} and item: {self.object.name}'
 
         return context
