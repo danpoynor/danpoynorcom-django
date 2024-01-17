@@ -78,8 +78,11 @@ urlpatterns = [
     # Test the 404 page at http://localhost:8000/404/
     path("404/", custom_page_not_found),
 
-    # Page create for use with wget and for reviewing some SEO factors of each page
-    path('website-seo-overview/', views.website_seo_overview, name='website_seo_overview'),
+    # Page created for use with wget
+    path('wget_sitemap/', views.WgetSitemapView.as_view(), name='wget_sitemap'),
+
+    # Page created for reviewing some SEO factors of each page
+    path('website-seo-overview/', views.WebsiteSeoView.as_view(), name='website_seo_overview'),
 
     path("__debug__/", include("debug_toolbar.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),

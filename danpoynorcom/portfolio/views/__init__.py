@@ -18,3 +18,4 @@ from .main_views import (
     ProjectDetailsView,
 )
 from .seo_views import WebsiteSeoView
+from .wget_views import WgetSitemapView

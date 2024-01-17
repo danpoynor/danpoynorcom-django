@@ -2,7 +2,6 @@ from django.contrib.sitemaps import Sitemap
 from django.core.paginator import Paginator
 from django.urls import reverse
 from .constants import PAGINATE_BY
-
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 
 
