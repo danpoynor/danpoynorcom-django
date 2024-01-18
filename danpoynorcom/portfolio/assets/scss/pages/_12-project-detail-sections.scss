@@ -1,11 +1,11 @@
 .project-details {
-    margin-bottom: 2em; // needed for layouts without additional samples
+    margin-bottom: 2rem; // needed for layouts without additional samples
 
-    h4 {
+    h3 {
         color: var(--t6);
         display: inline;
         font: normal 100%/1.61803398875 'Oswald', sans-serif;
-        margin-right: .25em;
+        margin-right: .25rem;
 
         &:after {
             content: ":";
@@ -20,7 +20,7 @@
     .project-client-description {
         p {
             display: block;
-            margin: 1em 0;
+            margin: 1rem 0;
 
             &:first-of-type {
                 margin-top: 0;

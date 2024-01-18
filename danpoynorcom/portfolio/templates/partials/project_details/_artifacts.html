@@ -2,13 +2,13 @@
     <section id="project-attachments" class="expando expanded">
         <input type="checkbox" id="project-artifacts-toggle" class="expando-toggle">
         <label for="project-artifacts-toggle" class="expando-label">
-            <h3 class="expando-trigger" aria-expanded="true">Project Artifacts</h3>
+            <h2 class="expando-trigger" aria-expanded="true">Project Artifacts</h2>
         </label>
         <div class="expando-content">
             {% for attachment in project.attachments.all %}
                 {% if attachment.file and attachment.visible %}
                     <section class="link-to-pdf-file">
-                        <h4>File</h4>
+                        <h3>File</h3>
                         <a href="{{ attachment.file.url }}" rel="nofollow" download>{{ attachment.link_text }}</a>
                     </section>
                 {% endif %}

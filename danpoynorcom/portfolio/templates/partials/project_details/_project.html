@@ -2,12 +2,12 @@
 <section id="project-details" class="expando expanded">
     <input type="checkbox" id="project-details-toggle" class="expando-toggle">
     <label for="project-details-toggle" class="expando-label">
-        <h3 class="expando-trigger" aria-expanded="true">Project Info</h3>
+        <h2 class="expando-trigger" aria-expanded="true">Project Info</h2>
     </label>
     <div class="expando-content">
         {% if project.industry.all %}
             <section class="project-industry-name">
-                <h4>Industry</h4>
+                <h3>Industry</h3>
                 <ul class="csv">
                     {{ project.industry.all|join_as_links:'industry_detail' }}
                 </ul>
@@ -15,7 +15,7 @@
         {% endif %}
         {% if project.mediatype.all %}
             <section class="project-platorm-name">
-                <h4>Media Type</h4>
+                <h3>Media Type</h3>
                 <ul class="csv">
                     {{ project.mediatype.all|join_as_links:'mediatype_detail' }}
                 </ul>
@@ -23,7 +23,7 @@
         {% endif %}
         {% if project.role.all %}
             <section class="project-role-names">
-                <h4>Role</h4>
+                <h3>Role</h3>
                 <ul class="csv">
                     {{ project.role.all|join_as_links:'role_detail' }}
                 </ul>
@@ -31,13 +31,13 @@
         {% endif %}
         {% if project.year %}
             <section class="project-platorm-name">
-                <h4>Year</h4>
+                <h3>Year</h3>
                 <p>{{ project.year }}</p>
             </section>
         {% endif %}
         {% if project.description %}
             <section class="project-description">
-                <h4>Project Description</h4>
+                <h3>Project Description</h3>
                 <br />
                 {{ project.description|safe }}
             </section>

@@ -1,4 +1,4 @@
-.dpportfolio {
+.project-details-page article {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -18,7 +18,7 @@
                 display: grid;
                 grid-template-columns: 66% 33%;
                 grid-template-rows: auto;
-                grid-gap: 1em;
+                grid-gap: 1rem;
             }
 
             @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
@@ -28,8 +28,8 @@
 
         .display-column {
             background: var(--t7);
-            margin: 0 0 1em 0;
-            padding: 1em;
+            margin: 0 0 1rem 0;
+            padding: 1rem;
 
             > img {
                 display: block;
@@ -38,15 +38,15 @@
 
         p {
             &.sample-description {
-                padding: .75em;
+                padding: .75rem;
                 text-align: left;
 
                 + table {
-                    margin-top: -1em;
+                    margin-top: -1rem;
                 }
 
                 + img {
-                    margin-top: -1em;
+                    margin-top: -1rem;
                 }
             }
         }
@@ -63,7 +63,7 @@
         .center-images {
             img {
                 display: block;
-                margin: 1em auto;
+                margin: 1rem auto;
 
                 &:first-of-type {
                     margin-top: 0;
@@ -86,29 +86,29 @@
             flex-flow: row wrap;
             justify-content: space-around;
             align-items: flex-start;
-            padding: .5em 0;
+            padding: .5rem 0;
 
             img {
-                margin: .5em .5em 1.5em;
+                margin: .5rem .5rem 1.5rem;
 
                 &:first-of-type {
-                    margin-top: .5em;
+                    margin-top: .5rem;
                 }
             }
         }
 
         .avs-logo {
             background-color: #921d92;
-            padding: 2em 1em;
+            padding: 2rem 1rem;
         }
 
         .bugs-n-friends {
-            padding: 2em;
+            padding: 2rem;
         }
 
         .business-card {
             img {
-                margin: 2em auto;
+                margin: 2rem auto;
                 max-width: 480px;
             }
         }
@@ -120,13 +120,13 @@
             align-items: flex-start;
 
             img {
-                margin: 1em;
+                margin: 1rem;
             }
         }
 
         .promo-postcard {
             img {
-                margin: 2em auto;
+                margin: 2rem auto;
                 max-width: 540px;
 
                 + img {
@@ -140,12 +140,12 @@
             background-color: #ddd;
             width: 552px;
             height: 402px;
-            margin: 2em auto;
+            margin: 2rem auto;
             padding: 1px;
         }
 
         .vdo-phone-interface {
-            padding: 2em 1em;
+            padding: 2rem 1rem;
         }
 
         .inline-block-images {

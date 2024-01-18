@@ -52,20 +52,20 @@ ul.grid {
 
     figcaption {
         background-color: var(--t9);
-        font-size: .8125em;
+        font-size: .8125rem;
         margin: 0;
         position: relative;
         width: 100%
     }
 
-    h3,
+    h2,
     .sub-title {
         line-height: 1.38196601125;
         margin: 0;
-        padding: .9em 1.2em 1.1em;
+        padding: .9rem 1.2rem 1.1rem;
     }
 
-    h3 {
+    h2 {
         color: var(--t7);
         font: normal 100%/1.61803398875 'Source Sans Pro', sans-serif;
     }
@@ -73,14 +73,14 @@ ul.grid {
     .sub-title {
         background-color: var(--dark-grays-500);
         color: var(--t7);
-        padding: .8em 1.2em 1em;
+        padding: .8rem 1.2rem 1rem;
     }
 
     .text-wrapper {
         color: var(--t5);
         display: block;
         opacity: 0;
-        padding: .75em 1em;
+        padding: .75rem 1rem;
         position: absolute;
         width: 100%;
 
@@ -88,7 +88,7 @@ ul.grid {
             margin: 0;
 
             + p {
-                margin-top: .5em;
+                margin-top: .5rem;
             }
         }
 

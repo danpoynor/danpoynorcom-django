@@ -1,9 +1,9 @@
-.dpportfolio section.stage {
+.project-detail-page section.stage {
     .content-two-up-table {
 
         th,
         td {
-            padding: .5em 1em;
+            padding: .5rem 1rem;
             text-align: left;
             vertical-align: top;
         }
@@ -14,7 +14,7 @@
 
         td {
             &.divider {
-                padding: 1em;
+                padding: 1rem;
 
                 span {
                     background-color: #ddd;
@@ -32,11 +32,11 @@
             }
 
             &.description-with-image {
-                font-size: .8em;
+                font-size: .8rem;
 
                 img {
-                    margin-top: .5em;
-                    padding: .25em;
+                    margin-top: .5rem;
+                    padding: .25rem;
                 }
             }
         }
@@ -53,13 +53,13 @@
 
     .imvu-persuasion-table {
         border-collapse: collapse;
-        font-size: .8em;
+        font-size: .8rem;
         margin: 0 auto;
 
         th,
         td {
             color: #666;
-            padding: .5em;
+            padding: .5rem;
             text-align: left;
             vertical-align: top;
         }
@@ -68,21 +68,21 @@
             background-color: #999999;
             color: var(--t7);
             font-weight: 700;
-            padding: .75em .5em;
+            padding: .75rem .5rem;
         }
 
         .vs {
             display: block;
-            margin: .75em 0 0 .75em;
+            margin: .75rem 0 0 .75rem;
             ;
         }
 
         ul {
-            margin: 1em;
+            margin: 1rem;
             padding: 0;
 
             li {
-                margin: .5em 0;
+                margin: .5rem 0;
             }
         }
 
@@ -127,7 +127,7 @@
 
         + table.matrix-example {
             border-top: none;
-            margin-top: 1em;
+            margin-top: 1rem;
         }
     }
 

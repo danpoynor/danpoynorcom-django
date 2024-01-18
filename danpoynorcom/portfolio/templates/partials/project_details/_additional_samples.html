@@ -2,7 +2,7 @@
 {% load static %}
 {% if items.count > 1 %}
     <section class="project-additional-samples">
-        <h3>Samples In This Project</h3>
+        <h2>Samples In This Project</h2>
         <section>
             <nav class="prev-next-sample-navigation">
                 <a class="samples-overview"
@@ -24,7 +24,7 @@
                             {% endif %}
                             <figure>
                                 <img src="{% static 'portfolio/images/project-item-images/thumbnail/'|add:item.image.thumbnail %}"
-                                     alt="{{ item.name }}"
+                                     alt=""
                                      height=""
                                      width="" />
                                 <figcaption>

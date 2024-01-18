@@ -1,24 +1,25 @@
-.dpportfolio {
+.project-details-page {
     .project-details {
         > .container {
             padding: 0;
         }
 
         .expando + .expando {
-            margin-top: 2em;
+            margin-top: 2rem;
         }
     }
 
     .project-additional-samples {
         flex: 0 0 100%;
-        margin: 2em 0 0;
+        margin: 2rem 0 0;
 
-        h3 {
+        h2 {
+            font-size: 1.125rem;
             margin-left: 2px;
         }
 
         > section {
-            margin-top: .5em;
+            margin-top: .5rem;
         }
 
         .prev-next-sample-navigation {
@@ -26,11 +27,11 @@
             display: flex;
             flex-flow: row wrap;
             list-style-type: none;
-            margin: 0 0 .5em 0;
-            padding: .5em .33em;
+            margin: 0 0 .5rem 0;
+            padding: .5rem .33rem;
 
             a {
-                margin: .25em;
+                margin: .25rem;
 
                 &.samples-overview {
                     width: 100%;
@@ -44,17 +45,17 @@
                         color: var(--t3);
                         content: "\25C0\FE0E";
                         display: inline-block;
-                        font-size: .7em;
+                        font-size: .7rem;
                         transition: transform var(--transition-speed) ease;
                         //
                         position: absolute;
-                        left: 1em;
-                        top: -.5em;
+                        left: 1rem;
+                        top: -.5rem;
                         bottom: 0;
-                        width: 1em;
-                        height: 1em;
+                        width: 1rem;
+                        height: 1rem;
                         margin: auto;
-                        margin-right: .5em;
+                        margin-right: .5rem;
                     }
                 }
 
@@ -62,8 +63,8 @@
                     span:before {
                         content: "\25B6\FE0E";
                         left: auto;
-                        right: 1em;
-                        margin-left: .5em;
+                        right: 1rem;
+                        margin-left: .5rem;
                     }
                 }
             }
@@ -71,7 +72,7 @@
             a {
                 background-color: var(--t13);
                 display: block;
-                padding: .33em 1em;
+                padding: .33rem 1rem;
                 position: relative;
                 text-align: center;
                 white-space: nowrap;
@@ -101,17 +102,17 @@
 
             @supports (display: grid) and (not(display: -ms-grid)) {
                 // test the browser understands display: grid and not MS Edge
-                margin: 1em 0;
+                margin: 1rem 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
-                grid-gap: .5em;
+                grid-gap: .5rem;
             }
 
             li {
                 flex: 0 1 49%;
                 margin: 0;
-                padding: .5em;
+                padding: .5rem;
 
                 @supports (display: grid) and (not(display: -ms-grid)) {
                     // test the browser understands display: grid and not MS Edge
@@ -128,7 +129,7 @@
                         filter: blur(0);
 
                         @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-                            padding: .5em;
+                            padding: .5rem;
                         }
                     }
 
@@ -175,7 +176,7 @@
                 background-color: var(--t7);
                 border: 1px solid #ddd;
                 max-width: 100%;
-                padding: .5em;
+                padding: .5rem;
                 opacity: .5;
                 filter: blur(1px);
                 transition-property: opacity, blur;
@@ -186,7 +187,7 @@
                 background: var(--t10);
                 color: var(--t7);
                 display: block;
-                font-size: .8em;
+                font-size: .8rem;
                 line-height: 1.4;
                 text-align: left;
                 position: absolute;
@@ -198,7 +199,7 @@
                 transition: var(--transition-speed);
 
                 @media only screen and (max-width: $portfolio-sub-nav-break-larger) {
-                    font-size: 1em;
+                    font-size: 1rem;
                 }
             }
 
@@ -206,7 +207,7 @@
                 background: var(--t12);
                 position: absolute;
                 width: 100%;
-                padding: .66em .75em;
+                padding: .66rem .75rem;
                 opacity: 1;
             }
 
@@ -238,8 +239,8 @@
 
                     .youarehere {
                         opacity: 1;
-                        height: calc(100% - .5em);
-                        width: calc(100% - .5em);
+                        height: calc(100% - .5rem);
+                        width: calc(100% - .5rem);
                     }
                 }
             }
