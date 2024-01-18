@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font: normal 400 1em/1 'Bitter', sans-serif;
+    font: normal 400 1rem/1 'Bitter', sans-serif;
     margin: 0;
     text-rendering: optimizeLegibility;
     text-wrap: pretty;
@@ -25,12 +25,12 @@ h6 {
 
 h2 {
     color: var(--t6);
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h3 {
     color: var(--t6);
-    font-size: 1.125em; // 18 / 16
+    font-size: 1.125rem; // 18 / 16
 }
 
 h4 {
@@ -70,13 +70,12 @@ p,
     a:active {
         text-decoration: underline;
         text-decoration-thickness: 1px;
-        text-underline-offset: 0.2em;
+        text-underline-offset: 0.2rem;
         display: inline-block;
 
         &:hover {
-            background-position: left;
             filter: brightness(var(--hover-brightness-amount));
-            text-underline-offset: 0.3em;
+            text-underline-offset: 0.3rem;
         }
 
         &[target='_blank']:after {
@@ -85,7 +84,6 @@ p,
             height: 11px;
             margin-left: 5px;
             background-image: url($external-link-icon);
-            background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             display: inline-block;
@@ -98,28 +96,28 @@ p,
 
     a {
         text-decoration: underline;
-        text-underline-offset: 0.2em;
+        text-underline-offset: 0.2rem;
     }
 
     a:hover {
         filter: brightness(var(--hover-brightness-amount-less));
-        text-underline-offset: 0.28em;
+        text-underline-offset: 0.28rem;
     }
 }
 
 .list-view {
     p {
         &.title {
-            font: 400 1.6em/1.2 Bitter, sans-serif;
+            font: 400 1.6rem/1.2 Bitter, sans-serif;
 
             a {
                 text-decoration: underline;
                 text-decoration-thickness: 1.5px;
-                text-underline-offset: .1em;
+                text-underline-offset: .1rem;
 
                 &:hover {
                     filter: brightness(var(--hover-brightness-amount));
-                    text-underline-offset: 0.2em;
+                    text-underline-offset: 0.2rem;
                 }
             }
         }
@@ -137,7 +135,7 @@ body > header a {
     transition: none;
 }
 
-body > footer {
+body > footer .site-info {
 
     a,
     a:link,
@@ -153,7 +151,6 @@ body > footer {
             height: 11px;
             margin-left: 5px;
             background-image: url($external-link-icon-footer);
-            background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             display: inline-block;
@@ -177,10 +174,10 @@ a:focus {
 
 .site-title {
     color: var(--t12);
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 700;
-    letter-spacing: .5em;
-    margin: 0 0 -.5em 0;
+    letter-spacing: .5rem;
+    margin: 0 0 -.5rem 0;
     text-transform: uppercase;
     white-space: nowrap;
     width: 100%;
@@ -197,14 +194,14 @@ a:focus {
 }
 
 .home-page h1 {
-    font-size: 2em;
-    margin: .5em 0;
+    font-size: 2rem;
+    margin: .5rem 0;
 }
 
 main header {
     h1 {
         color: var(--t6);
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 1.2;
         margin: 0;
 
@@ -222,27 +219,27 @@ main header {
 
     h2 {
         // used on single portfolio only?
-        font: normal 700 1.3125em/1.4 'Bitter', sans-serif; // 21 / 16
-        margin: .5em 0;
+        font: normal 700 1.3125rem/1.4 'Bitter', sans-serif; // 21 / 16
+        margin: .5rem 0;
     }
 
     .divider {
         // this is the "/" in the page titles
         color: var(--t5);
-        font: 500 .82em/1 'Oswald', 'Bitter', sans-serif;
+        font: 500 .82rem/1 'Oswald', 'Bitter', sans-serif;
     }
 }
 
 .taxonomy-categories {
     h2 {
-        margin: 1.33em 0 .25em;
+        margin: 1.33rem 0 .25rem;
     }
 }
 
 .site-description {
     color: var(--t7);
-    font: normal 1.125em/1 'Oswald', sans-serif; // 18 / 16
-    margin: 1em 0 0;
+    font: normal 1.125rem/1 'Oswald', sans-serif; // 18 / 16
+    margin: 1rem 0 0;
 
     span {
         color: var(--t3);
@@ -255,4 +252,33 @@ p:empty {
 
 .nowrap {
     white-space: nowrap;
+}
+
+// Make green links on light gray background more readable for Lighthouse accessibility score
+.prev-next,
+.selects header,
+.taxonomy-categories,
+.prev-next-sample-navigation,
+.project-details-page header h1,
+.portfolio-taxonomy-term header h1,
+.portfolio-projects-page header h1 {
+    a {
+        color: hsl(80, 100%, 22%);
+    }
+}
+
+.project-details-page header h1,
+.portfolio-taxonomy-term header h1,
+.portfolio-projects-page header h1 {
+    a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.1rem;
+        display: inline-block;
+
+        &:hover {
+            filter: brightness(var(--hover-brightness-amount));
+            text-underline-offset: 0.2rem;
+        }
+    }
 }

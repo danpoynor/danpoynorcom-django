@@ -1,6 +1,39 @@
 {% load static %}
 <footer>
     <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    {% if request.resolver_match.url_name == 'home' %}
+                        <a href="{% url 'home' %}" aria-current="true"><span>Home</span></a>
+                    {% else %}
+                        <a href="{% url 'home' %}"><span>Home</span></a>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if request.resolver_match.url_name == 'portfolio' %}
+                        <a href="{% url 'portfolio' %}" aria-current="true"><span>Portfolio</span></a>
+                    {% else %}
+                        <a href="{% url 'portfolio' %}"><span>Portfolio</span></a>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if request.resolver_match.url_name == 'about' %}
+                        <a href="{% url 'about' %}" aria-current="true"><span>About</span></a>
+                    {% else %}
+                        <a href="{% url 'about' %}"><span>About</span></a>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if request.resolver_match.url_name == 'contact' %}
+                        <a href="{% url 'contact' %}" aria-current="true"><span>Contact</span></a>
+                    {% else %}
+                        <a href="{% url 'contact' %}"><span>Contact</span></a>
+                    {% endif %}
+                </li>
+            </ul>
+        </nav>
+        {% include "partials/_phone_email.html" %}
         <ul class="badges">
             <li class="illustrator">
                 <a href="https://www.credly.com/badges/7d763963-9355-4948-a065-355bbc1fe3ce"
