@@ -3,49 +3,48 @@ body > header {
     width: 100%;
 
     .container {
-        position: relative;
+        flex-direction: column;
+        justify-content: center;
         overflow: visible;
-        //
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        position: relative;
+        text-align: center;
 
-        @media only screen and (max-width: $header-media-query-break) {
-            flex-direction: column;
-            justify-content: flex-start;
+        .site-branding {
+            display: block;
+            padding: 1rem 0 0;
+        }
 
-            .site-branding {
-                display: block;
-                padding: 1em 0 0;
-                text-align: center;
-            }
+        .site-description {
+            margin: 1rem auto 0;
+        }
 
-            .site-description {
-                margin: 1em auto 0;
-            }
+        @media only screen and (min-width: $header-media-query-break) {
+            align-items: left;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            text-align: left;
         }
     }
 
     .site-branding {
+        align-items: flex-start;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
-        align-items: flex-start;
     }
 }
 
 header nav {
     ul {
         list-style-type: none;
-        font: normal 1.3125em/1 'Oswald', sans-serif; // 21 / 16
-        margin: 0;
-        padding: 1.175em 0 0;
+        font: normal 1.3125rem/1 'Oswald', sans-serif; // 21 / 16
+        margin: .25rem auto .5rem;
+        padding: 0;
         //
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
 
         li {
             margin: 0;
@@ -54,7 +53,7 @@ header nav {
             a {
                 color: var(--t12);
                 display: inline-block;
-                padding: .5em .75em .75em;
+                padding: .5rem 1rem .75rem;
                 position: relative;
                 white-space: nowrap;
                 transition: color var(--transition-speed-faster) ease-in-out;
@@ -68,6 +67,14 @@ header nav {
                 color: var(--t7);
                 transition: none;
             }
+        }
+
+        @media only screen and (min-width: $header-media-query-break) {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: .65rem;
+            right: 0;
         }
     }
 }
