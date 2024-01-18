@@ -1,4 +1,6 @@
-.selects {
+.services {
+    padding: 0 0 1rem;
+    //
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -11,11 +13,14 @@
         font-size: 2rem;
     }
 
-    p {
+    h3 {
+        color: var(--t6);
         font-size: 1.125rem;
-        margin: .75rem .33rem .5rem;
-        padding: 0;
-        text-align: center;
+        margin: 0 0 0.33rem;
+    }
+
+    p {
+        margin: 0 0 1rem;
         text-wrap: pretty;
     }
 
@@ -28,16 +33,17 @@
         padding: 1rem 0 .5rem;
     }
 
-    section.selected-taxonomy-items {
-        margin: 1rem 0 2.75rem;
-    }
+    .services-list {
+        columns: 2;
+        padding: 1.5rem 0;
 
-    .showcase-list {
-        margin: 0 auto;
+        @media (min-width: 768px) {
+            columns: 2;
+        }
 
-        :nth-child(n+6) {
-            // make sure only the first five are shown
-            display: none;
+        li {
+            break-inside: avoid;
+            margin-bottom: 1rem;
         }
     }
 }

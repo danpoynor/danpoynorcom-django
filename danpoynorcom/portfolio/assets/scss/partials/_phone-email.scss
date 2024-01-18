@@ -86,7 +86,7 @@ $email-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:s
             @include icon-style($phone-pad-icon);
             background-image: url($email-icon);
             height: 11.787px;
-            transform: translateY(56%);
+            transform: translateY(50%);
             width: 14.484px;
         }
     }

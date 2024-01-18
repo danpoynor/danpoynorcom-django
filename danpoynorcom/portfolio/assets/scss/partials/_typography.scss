@@ -226,7 +226,7 @@ main header {
     .divider {
         // this is the "/" in the page titles
         color: var(--t5);
-        font: 500 .82rem/1 'Oswald', 'Bitter', sans-serif;
+        font: 500 1.625rem/1 'Oswald', 'Bitter', sans-serif;
     }
 }
 
@@ -273,12 +273,12 @@ p:empty {
     a {
         text-decoration: underline;
         text-decoration-thickness: 1px;
-        text-underline-offset: 0.1rem;
+        text-underline-offset: 0.2rem;
         display: inline-block;
 
         &:hover {
             filter: brightness(var(--hover-brightness-amount));
-            text-underline-offset: 0.2rem;
+            text-underline-offset: 0.3rem;
         }
     }
 }
