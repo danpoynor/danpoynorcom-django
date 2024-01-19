@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /privatestuff/
+
+# Allow all web crawlers access to all content
+User-agent: * Disallow: 
+
+# The sitemap URL must be a fully-qualified URL, including the protocol
+Sitemap: https://www.danpoynor.com/sitemap.xml
+

@@ -17,5 +17,6 @@ from .main_views import (
     ProjectItemsView,
     ProjectDetailsView,
 )
+from .robots_views import RobotsTxtView
 from .seo_views import WebsiteSeoView
 from .wget_views import WgetSitemapView

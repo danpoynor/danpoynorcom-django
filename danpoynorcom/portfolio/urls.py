@@ -71,9 +71,9 @@ urlpatterns = [
         name="django.contrib.sitemaps.views.sitemap",
     ),
 
-
     # Robots.txt
-    # path("robots.txt", views.robots, name="robots"),
+    # Specify text/plain rather than the default format of text/html
+    path("robots.txt", views.RobotsTxtView.as_view(content_type="text/plain"), name="robots"),
 
     # Test the 404 page at http://localhost:8000/404/
     path("404/", custom_page_not_found),

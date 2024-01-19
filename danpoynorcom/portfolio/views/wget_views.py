@@ -85,6 +85,10 @@ class WgetSitemapView(View):
         # Get the URLs for the static views
         static_urls = [reverse(view_name) for view_name in ['home', 'portfolio', 'about', 'contact', 'client_list', 'industry_list', 'market_list', 'mediatype_list', 'role_list']]
 
+        # Add the URLs for sitemap.xml, robots.txt
+        # TODO: Add favicon.ico without using staticfiles somehow
+        static_urls.extend(['/sitemap.xml', '/robots.txt'])
+
         # Create a list to store all the URLs
         urls = []
 
@@ -119,6 +123,8 @@ class WgetSitemapView(View):
         return static_urls + urls
 
     def get(self, request, *args, **kwargs):
+        base_url = 'http://localhost:8000'
         urls = self.items()
-        response = HttpResponse('\n'.join(urls), content_type='text/plain')
+        full_urls = [base_url + url for url in urls]
+        response = HttpResponse('\n'.join(full_urls), content_type='text/plain')
         return response
