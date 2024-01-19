@@ -16,17 +16,23 @@ $email-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:s
     font-size: 0.875rem;
     gap: 1rem;
     justify-content: center;
+    margin: 1rem auto 0;
     white-space: nowrap;
 
     p {
-        color: var(--t7);
-        margin: 0;
+        display: none;
 
-        span {
-            color: #bcbaba;
-            // color: var(--t12);
-            margin-right: .5rem;
-            text-transform: uppercase;
+        @media screen and (min-width: $phone-email-media-query-break) {
+            display: block;
+            color: var(--t7);
+            margin: 0;
+
+            span {
+                color: #bcbaba;
+                // color: var(--t12);
+                margin-right: .5rem;
+                text-transform: uppercase;
+            }
         }
     }
 
@@ -98,7 +104,7 @@ header {
             margin: 0;
             position: absolute;
             right: 1rem;
-            top: .0;
+            top: .33rem;
         }
     }
 }

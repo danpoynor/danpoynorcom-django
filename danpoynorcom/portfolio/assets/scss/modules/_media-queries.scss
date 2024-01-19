@@ -1,4 +1,6 @@
-$header-media-query-break: 720px;
+// These should all be based on min-width, not max-width for mobile-first design
+$phone-email-media-query-break: 580px;
+$header-media-query-break: 840px;
 $header-media-query-break-smaller: 640px;
 $header-media-query-break-smallest: 420px;
 $portfolio-sub-nav-break-larger: 940px;

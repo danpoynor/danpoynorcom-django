@@ -19,7 +19,6 @@ body > header {
         }
 
         @media only screen and (min-width: $header-media-query-break) {
-            align-items: left;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
