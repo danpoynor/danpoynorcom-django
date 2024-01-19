@@ -49,7 +49,7 @@ class WebsiteSeoView(View):
                 # If the data is not in the cache, fetch it from the web page
                 if not data:
                     try:
-                        response = requests.get(url, timeout=10)
+                        response = requests.get(url, timeout=20)
                         soup = BeautifulSoup(response.text, 'html.parser')
                         title = str(soup.title.string) if soup.title else ''
                         description_tag = soup.find('meta', attrs={'name': 'description'})
