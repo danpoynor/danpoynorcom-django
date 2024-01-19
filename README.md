@@ -2,6 +2,15 @@
 
 Personal portfolio website for danpoynor.com built in Django.
 
+Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  `http://localhost:8000`` and generate static`.html` files to deploy to the live site.
+
+Note some aspects of the Django website are slow to load because of heavy filtering (customer mangers) I'm using to display the data on the front-end. I'm working on optimizing the code to speed things up but this is a low priority since I'm the only one using this repo.
+
+Special URLs:
+
+- <http://localhost:8000/wget_sitemap/>: Generates a sitemap for `wget` to use when generating static files.
+- <http://localhost:8000/website-seo-overview/>: Generates a SEO audit of the site.
+
 Notes below are primarily for my own reference.
 
 ## Some Notable Django Features and Frequently Used Commands
@@ -396,6 +405,8 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 
 ### Package Options for Exporting Static Files from Django
 
+After testing Bakery and studying other Django static site generators, I decided to use `wget` to generate the static files for this project since I can get it to capture the paginated pages as needed and it's already installed on my Mac.
+
 #### Use `wget` To Generate Static Files
 
 ##### Setup
@@ -427,7 +438,7 @@ DEBUG_TOOLBAR_CONFIG = {
 `--page-requisites`: download all the files that are necessary to properly display a given HTML page (including images and stylesheets).
 `--html-extension`: save files with the `.html` extension.
 `--convert-links`: convert all links so that they work offline.
-`--restrict-file-names=windows`: modify filenames so that they will work in Windows as well.
+`--restrict-file-names=windows`: modify filenames so that they will work in Windows as well (converts a colon to a plus sign for example).
 `--domains localhost`: don't follow links outside of the specified domain.
 `--no-parent`: don't follow links outside of the directory hierarchy that the starting URL specifies.
 
@@ -462,6 +473,23 @@ Use the --mirror convenience option:
 wget --mirror --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains localhost --no-parent http://localhost:8000/
 ```
 
+If you are not working on a Windows machine, you can remove the `--restrict-file-names=windows` option.
+
+#### Use `wget` To Generate Static Files From A Sitemap from <http://localhost:8000/wget_sitemap/>
+
+Download or copy the output from <http://localhost:8000/wget_sitemap/> to a file named `urls_for_wget.txt`.
+
+Create directory `docs` and download files to it:
+
+```sh
+mkdir docs
+wget -i urls_for_wget.txt --mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent -P docs
+```
+
+NOTE: Might need to manually move the files from `docs/localhost:8000` to `docs/` and delete the `docs/localhost:8000` directory. Also might need to manually add the `sitemap.xml` and `robots.txt` files to the `docs/` directory.
+
+TODO: Automate the above NOTE steps before testing and pushing the site live.
+
 ##### Testing the build
 
 To run a server in the directory containing the output, `cd` into `localhost+8000` directory and run:
@@ -491,10 +519,15 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
 <details>
   <summary>Click to expand</summary>
 
-- [ ] Add a robots.txt file
-- [ ] Need to cross check [WGET Sitemap](http://localhost:8000/wget_sitemap/), [sitemap.xml](http://localhost:8000/sitemap.xml), and [SEO audit](http://localhost:8000/website-seo-overview/) to make sure urls match up.
-- [ ] Populate MediaType column in Project Items table
-  - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places
-  - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects
+- [ ] Add a robots.txt file.
+- [ ] Need to cross check links to make sure urls match up:
+  - [WGET Sitemap](http://localhost:8000/wget_sitemap/)
+  - [sitemap.xml](http://localhost:8000/sitemap.xml)
+  - [SEO audit](http://localhost:8000/website-seo-overview/)
+- [ ] Populate MediaType column in Project Items table.
+  - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places.
+  - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects.
+- [ ] Automate the steps in the 'Use `wget` To Generate Static Files' section above.
+- [ ] Automate adding the `sitemap.xml` and `robots.txt` files to the `docs/` directory.
 
 </details>
