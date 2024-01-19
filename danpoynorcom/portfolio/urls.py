@@ -82,7 +82,7 @@ urlpatterns = [
     path('wget_sitemap/', views.WgetSitemapView.as_view(), name='wget_sitemap'),
 
     # Page created for reviewing some SEO factors of each page
-    path('website-seo-overview/', views.WebsiteSeoView.as_view(), name='website_seo_overview'),
+    path('seo-overview/', views.WebsiteSeoView.as_view(), name='seo_overview'),
 
     path("__debug__/", include("debug_toolbar.urls")),
     path("pages/", include("django.contrib.flatpages.urls")),

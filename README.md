@@ -9,7 +9,7 @@ Note some aspects of the Django website are slow to load because of heavy filter
 Special URLs:
 
 - <http://localhost:8000/wget_sitemap/>: Generates a sitemap for `wget` to use when generating static files.
-- <http://localhost:8000/website-seo-overview/>: Generates a SEO audit of the site.
+- <http://localhost:8000/seo-overview/>: Generates a SEO audit of the site.
 
 Notes below are primarily for my own reference.
 

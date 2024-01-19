@@ -111,4 +111,4 @@ class WebsiteSeoView(View):
         # Get the total number of items after filtering
         total_items = len(seo_data)
 
-        return render(request, 'website_seo_overview.html', {'page_obj': page_obj, 'total_items': total_items, 'all_urls': urls, 'seo_data_total_length': seo_data_total_length, 'search_query': search_query, 'last_modified': last_modified})
+        return render(request, 'seo_overview.html', {'page_obj': page_obj, 'total_items': total_items, 'all_urls': urls, 'seo_data_total_length': seo_data_total_length, 'search_query': search_query, 'last_modified': last_modified})
