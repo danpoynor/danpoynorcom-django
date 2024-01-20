@@ -2,7 +2,7 @@
 
 Personal portfolio website for danpoynor.com built in Django.
 
-Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  `http://localhost:8000`` and generate static`.html` files to deploy to the live site.
+Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  `http://localhost:8000` and generate static `.html` files to deploy to the live site.
 
 Note some aspects of the Django website are slow to load because of heavy filtering (customer mangers) I'm using to display the data on the front-end. I'm working on optimizing the code to speed things up but this is a low priority since I'm the only one using this repo.
 
@@ -41,7 +41,7 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 
 - [Django](https://docs.djangoproject.com/en/5.0/topics/install/): Python web framework
 - [`python-dotenv`](https://pypi.org/project/python-dotenv/): Python library used to read key-value pairs from a `.env` environment file.
-- ['django-extensions'](https://pypi.org/project/django-extensions/): Collection of custom extensions for the Django Framework. Example commands:
+- [`django-extensions`](https://pypi.org/project/django-extensions/): Collection of custom extensions for the Django Framework. Example commands:
   - `python manage.py validate_templates`: Validates Django template syntax.
   - `python manage.py show_urls`: Displays all of the url matching routes for the project.
   - `python manage.py generate_password [--length=<length>]`: Generates a random password.
@@ -475,20 +475,60 @@ wget --mirror --no-clobber --page-requisites --html-extension --convert-links --
 
 If you are not working on a Windows machine, you can remove the `--restrict-file-names=windows` option.
 
-#### Use `wget` To Generate Static Files From A Sitemap from <http://localhost:8000/wget_sitemap/>
+#### Use `wget` To Generate Static Files From <http://localhost:8000/wget_sitemap/>
 
-Download or copy the output from <http://localhost:8000/wget_sitemap/> to a file named `urls_for_wget.txt`.
+Download or copy the output from <http://localhost:8000/wget_sitemap/> to a plain text file named `wget_urls.txt`.
 
-Create directory `docs` and download files to it:
+`cd` to the project root directory and run:
 
 ```sh
 mkdir docs
-wget -i urls_for_wget.txt --mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent -P docs
+wget -i wget_urls.txt --mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent
 ```
 
-NOTE: Might need to manually move the files from `docs/localhost:8000` to `docs/` and delete the `docs/localhost:8000` directory. Also might need to manually add the `sitemap.xml` and `robots.txt` files to the `docs/` directory.
+NOTE: A `.wgetrc` file can be used to set default options for `wget`. For example, for example to set the default options to `--mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent`, create a `.wgetrc` file in the project root directory with the following contents:
 
-TODO: Automate the above NOTE steps before testing and pushing the site live.
+```sh
+# Set the default download directory to docs/
+directory_prefix = docs/
+
+# Set the default options
+mirror = on
+
+no-clobber = on
+
+page-requisites = on
+
+html-extension = on
+
+convert-links = on
+
+domains = localhost
+
+no-parent = on
+```
+
+Then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
+
+```sh
+ wget --config=.wgetrc -i wget_urls.txt
+```
+
+`wget` will create a directory name `localhost:8000` in the current directory and download the files there.
+
+Create a `docs/` symlink if it doesn't exist already using:
+
+```sh
+ln -s localhost:8000 docs
+```
+
+NOTE: Symbolic links are not followed by default in Git. If you want Git to follow the symbolic link, you need to set the `core.symlinks` configuration option to `true`:
+
+```sh
+git config core.symlinks true
+```
+
+Now you can add the `docs/` directory to Git and push it to GitHub and GitHub Pages will serve the static files from there.
 
 ##### Testing the build
 
