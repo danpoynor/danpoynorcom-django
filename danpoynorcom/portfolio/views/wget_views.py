@@ -6,6 +6,10 @@ from ..constants import PAGINATE_BY
 from ..models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
 
 
+# NOTE: There is a bug causing the sitemap to generate URLs for pages that at 404.
+# HACK: Instead just copy the <loc> URLs from the sitemap.xml file and paste them into wget_urls.txt.
+
+
 class PaginatedSitemapMixin:
     def get_queryset(self):
         raise NotImplementedError
@@ -71,14 +75,14 @@ class WgetSitemapView(View):
             'detail_url_name': 'role_detail',
             'page_order_url_name': 'role_page_order',
         },
-        {
-            'queryset': Project.objects.filter(visible=True),
-            'detail_url_name': 'project_detail',
-        },
-        {
-            'queryset': ProjectItem.objects.filter(visible=True),
-            'detail_url_name': 'project_items_detail',
-        },
+        # {
+        #     'queryset': Project.objects.filter(visible=True),
+        #     'detail_url_name': 'project_detail',
+        # },
+        # {
+        #     'queryset': ProjectItem.objects.filter(visible=True),
+        #     'detail_url_name': 'project_items_detail',
+        # },
     ]
 
     def items(self):
