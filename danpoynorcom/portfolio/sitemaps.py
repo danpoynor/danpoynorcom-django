@@ -161,12 +161,12 @@ class ProjectItemDetailSitemap(BaseSitemap, Sitemap):
 
 # Do no include these pages because they have similar content to the /project-detail/ pages.
 # For example http://localhost:8000/portfolio/design-and-development-projects/bactrack-breathalyzers-website-redesign/
-# class ProjectItemsSitemap(BaseSitemap, Sitemap):
-#     def items(self):
-#         return ProjectItem.objects.filter(visible=True)
+class ProjectItemsSitemap(BaseSitemap, Sitemap):
+    def items(self):
+        return ProjectItem.objects.filter(visible=True)
 
-#     def location(self, item):
-#         return reverse('project_items_detail', args=[item.slug])
+    def location(self, item):
+        return reverse('project_items_detail', args=[item.slug])
 
-#     def lastmod(self, item):
-#         return item.updated_at
+    def lastmod(self, item):
+        return item.updated_at
