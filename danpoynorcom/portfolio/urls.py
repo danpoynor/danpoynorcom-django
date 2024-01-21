@@ -59,8 +59,8 @@ urlpatterns = [
     path('portfolio/design-and-development-projects/<int:page>/', views.ProjectsView.as_view(), name='projects_page'),
     path('portfolio/design-and-development-projects/<int:page>/<str:order>/', views.ProjectsView.as_view(), name='projects_page_order'),
     path('portfolio/design-and-development-projects/<int:page>/<str:order>/<str:slug>/', views.ProjectsView.as_view(), name='projects_page_order_slug'),
-
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project_items_detail"),
+
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
 
     # Sitemap
