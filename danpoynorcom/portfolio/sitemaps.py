@@ -7,7 +7,7 @@ from .models import Client, Industry, Market, MediaType, Role, Project, ProjectI
 
 class BaseSitemap(Sitemap):
     protocol = 'https'
-    changefreq = 'monthly'
+    changefreq = 'yearly'
     priority = 0.5
 
 
@@ -59,8 +59,12 @@ class PaginatedSitemapMixin:
     def location(self, item):
         return item
 
-    def lastmod(self, item):
-        return item[1]
+        if item[1] is not None:
+            try:
+                return item[1].date()
+            except (ValueError, AttributeError):
+                pass
+        return None
 
 
 class ClientSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
@@ -145,7 +149,13 @@ class ProjectSitemap(BaseSitemap, Sitemap):
         return item[0]
 
     def lastmod(self, item):
-        return item[1]
+        # Ensure item[1] is not None and is a valid date
+        if item[1] is not None:
+            try:
+                return item[1].date()
+            except (ValueError, AttributeError):
+                pass
+        return None
 
 
 class ProjectItemDetailSitemap(BaseSitemap, Sitemap):
