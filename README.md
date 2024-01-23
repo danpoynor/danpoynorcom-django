@@ -1,10 +1,8 @@
-# Dan Poynor Portfolio
-
-Personal portfolio website for danpoynor.com built in Django.
+# DanPoynor.com Portfolio Website Built with Django
 
 Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  a list of links from `http://localhost:8000/sitemap.xml` and generate static `.html` files to deploy to a production site, such as GitHub Pages.
 
-NOTE: If working with the development environment, web pages can be slow to load due to heavy filtering (custom mangers) I'm using to display some data. This could be optimized in the database by adding additional indexes (for the `visible` columns) to speed things up, but this is a low priority since I'm the only one using this repo and it's not a factor in the final production version.
+NOTE: Working with the dev environment page loading can be slow due to heavy filtering (custom mangers) I'm using to display some data. This could be optimized in the database by adding additional indexes (for the `visible` columns) to speed things up, but this is a low priority since I'm the only one using this repo and it's not a factor in the final production version.
 
 Notes below are primarily for my own reference.
 
@@ -577,7 +575,7 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
 <details>
   <summary>Click to expand</summary>
 
-- [ ] Add a robots.txt file.
+- [x] ~Add a robots.txt file.~
 - [ ] Need to cross check links to make sure urls match up:
   - [WGET Sitemap](http://localhost:8000/wget_sitemap/)
   - [sitemap.xml](http://localhost:8000/sitemap.xml)
@@ -586,6 +584,6 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
   - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places.
   - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects.
 - [ ] Automate the steps in the 'Use `wget` To Generate Static Files' section above.
-- [ ] Automate adding the `sitemap.xml` and `robots.txt` files to the `docs/` directory.
+- [ ] Automate adding the `sitemap.xml`, `robots.txt`, `favicon.ico` files to the `docs/` directory.
 
 </details>
