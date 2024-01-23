@@ -1,21 +1,15 @@
 <nav class="pagination">
-    <form class="dropdown items-sort" method="post" action="{{ request.path }}">
-        {% csrf_token %}
-        <label for="order" class="prompt">Sort by:</label>
-        <select id="order" name="order" onchange="this.form.submit()">
-            <option value="asc" {% if order == 'asc' %}selected{% endif %}>A-Z</option>
-            <option value="desc" {% if order == 'desc' %}selected{% endif %}>Z-A</option>
-        </select>
-    </form>
+    {% include "partials/pagination/_sort_order.html" %}
     <div class="step-links">
+        <span class="pagination-label">Pages:</span>
         {% if page_obj.has_previous %}
             <div class="back-links">
                 <a href="{% url 'projects_page_order' page=1 order=order %}"
                    class="prev page-number"
-                   title="First page"><span class="arrow">«</span></a>
+                   title="View first page"><span class="arrow">«</span></a>
                 <a href="{% url 'projects_page_order' page=page_obj.previous_page_number order=order %}"
                    class="prev page-number"
-                   title="Previous page">Prev</a>
+                   title="View previous page">Prev</a>
             </div>
         {% endif %}
         <ol class="page-numbers">
@@ -31,7 +25,9 @@
                 {% else %}
                     <li>
                         <a href="{% url 'projects_page_order' page=i order=order %}"
-                           class="page-number">{{ i }}</a>
+                           class="page-number"
+                           aria-label="View page {{ i }}"
+                           title="View page {{ i }}">{{ i }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
@@ -40,10 +36,10 @@
             <div class="forward-links">
                 <a href="{% url 'projects_page_order' page=page_obj.next_page_number order=order %}"
                    class="prev page-number"
-                   title="Next page">Next</a>
+                   title="View next page">Next</a>
                 <a href="{% url 'projects_page_order' page=page_obj.paginator.num_pages order=order %}"
                    class="prev page-number arrow"
-                   title="Last page"><span class="arrow">»</span></a>
+                   title="View last page"><span class="arrow">»</span></a>
             </div>
         {% endif %}
     </div>

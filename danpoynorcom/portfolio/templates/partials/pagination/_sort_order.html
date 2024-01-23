@@ -1,0 +1,8 @@
+<form class="dropdown items-sort" method="post" action="{{ request.path }}">
+    {% csrf_token %}
+    <label for="order" class="prompt">Sort by:</label>
+    <select id="order" name="order" onchange="this.form.submit()">
+        <option value="asc" {% if order == 'asc' %}selected{% endif %}>Asc</option>
+        <option value="desc" {% if order == 'desc' %}selected{% endif %}>Desc</option>
+    </select>
+</form>

@@ -6,16 +6,16 @@ $font-large: 21px;
 $breakpoint: 900px;
 
 .pagination-bar {
+    align-items: center;
     background-color: var(--t7);
-    font-size: 0.8125rem;
-    margin: 0 0 1rem;
-    padding: $padding-medium;
-    min-height: 3.75rem;
-    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    font-size: 0.8125rem;
     justify-content: center;
-    align-items: center;
+    margin: 0 0 1rem;
+    min-height: 3.75rem;
+    padding: $padding-medium $padding-large;
+    width: 100%;
 
     &:last-child {
         margin: 1rem 0 0 0;
@@ -31,7 +31,7 @@ $breakpoint: 900px;
 
     p {
         color: var(--black);
-        margin: 0 .5rem;
+        margin: 0;
         white-space: nowrap;
     }
 
@@ -80,6 +80,10 @@ $breakpoint: 900px;
 
     .ellipsis {
         padding: $padding-small $padding-large;
+    }
+
+    .pagination-label {
+        margin-right: .5rem;
     }
 
     p {
