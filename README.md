@@ -495,39 +495,10 @@ If you are not working on a Windows machine, you can remove the `--restrict-file
 
 Download or copy the output from <http://localhost:8000/wget_sitemap/> to a plain text file named `wget_urls.txt`.
 
-`cd` to the project root directory and run:
+`cd` to the parent directory outside of the project to avoid `git` tracking the initial downloaded files then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
 
 ```sh
-mkdir docs
-wget -i wget_urls.txt --mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent
-```
-
-NOTE: A `.wgetrc` file can be used to set default options for `wget`. For example, for example to set the default options to `--mirror --no-clobber --page-requisites --html-extension --convert-links --domains localhost --no-parent`, create a `.wgetrc` file in the project root directory with the following contents:
-
-```sh
-# Set the default download directory to docs/
-directory_prefix = docs/
-
-# Set the default options
-mirror = on
-
-no-clobber = on
-
-page-requisites = on
-
-html-extension = on
-
-convert-links = on
-
-domains = localhost
-
-no-parent = on
-```
-
-Then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
-
-```sh
- wget --config=.wgetrc -i wget_urls.txt
+wget --config=danpoynorcom-django/.wgetrc -i danpoynorcom-django/wget_urls.txt
 ```
 
 `wget` will create a directory name `localhost:8000` in the current directory and download the files there.
@@ -545,6 +516,8 @@ git config core.symlinks true
 ```
 
 Now you can add the `docs/` directory to Git and push it to GitHub and GitHub Pages will serve the static files from there.
+
+---
 
 ##### Testing the build
 
