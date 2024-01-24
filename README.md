@@ -2,7 +2,7 @@
 
 Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  a list of links from `http://localhost:8000/sitemap.xml` and generate static `.html` files to deploy to a production site, such as GitHub Pages.
 
-NOTE: Working with the dev environment page loading can be slow due to heavy filtering (custom mangers) I'm using to display some data. This could be optimized in the database by adding additional indexes (for the `visible` columns) to speed things up, but this is a low priority since I'm the only one using this repo and it's not a factor in the final production version.
+NOTE: While working with the dev environment for this project, page loading can be slow due to heavy filtering (custom mangers) I'm using to display some data. This could be optimized in the database by adding additional indexes (for the `visible` columns) to speed things up, but this is a low priority since I'm the only one using this repo and it's not a factor in the final production version.
 
 Notes below are primarily for my own reference.
 

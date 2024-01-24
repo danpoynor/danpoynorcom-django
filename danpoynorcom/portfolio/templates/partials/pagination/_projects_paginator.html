@@ -1,5 +1,7 @@
 <nav class="pagination">
-    {% include "partials/pagination/_sort_order.html" %}
+    {% if page_obj.paginator.num_pages > 1 %}
+        {% include "partials/pagination/_sort_order.html" %}
+    {% endif %}
     <div class="step-links">
         <span class="pagination-label">Pages:</span>
         {% if page_obj.has_previous %}
