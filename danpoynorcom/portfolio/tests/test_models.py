@@ -1,48 +1,49 @@
 from django.test import TestCase
-from portfolio.models import Client, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
+# NOTE: I'm using PortfolioClient to avoid conflict with django.test.Client
+from portfolio.models import Client as PortfolioClient, Industry, Market, MediaType, Role, Project, ProjectItem, ProjectItemImage, ProjectItemAttachment
 
 
 class ClientModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        Client.objects.create(name='Test Client', slug='test-client', logo='http://example.com/logo.jpg', website='http://example.com')
+        PortfolioClient.objects.create(name='Test Client', slug='test-client', logo='http://example.com/logo.jpg', website='http://example.com')
 
     def test_name_label(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         field_label = client._meta.get_field('name').verbose_name
         self.assertEqual(field_label, 'name')
 
     def test_name_max_length(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         max_length = client._meta.get_field('name').max_length
         self.assertEqual(max_length, 200)
 
     def test_get_absolute_url(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         # This will also fail if the urlconf is not defined.
         self.assertEqual(client.get_absolute_url(), '/portfolio/clients/test-client-projects/')
 
     def test_description_is_optional(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         self.assertTrue(client._meta.get_field('description').blank)
 
     def test_visible_defaults_to_true(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         self.assertTrue(client.visible)
 
     def test_logo_max_length(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         max_length = client._meta.get_field('logo').max_length
         self.assertEqual(max_length, 200)
 
     def test_website_max_length(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         max_length = client._meta.get_field('website').max_length
         self.assertEqual(max_length, 200)
 
     def test_object_name_is_name(self):
-        client = Client.objects.get(id=1)
+        client = PortfolioClient.objects.get(id=1)
         expected_object_name = f'{client.name}'
         self.assertEqual(expected_object_name, str(client))
 
@@ -258,132 +259,113 @@ class ProjectModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        client = Client.objects.create(name='Test Client', slug='test-client')
-        industry = Industry.objects.create(name='Test Industry', slug='test-industry')
-        market = Market.objects.create(name='Test Market', slug='test-market')
-        mediatype = MediaType.objects.create(name='Test MediaType', slug='test-mediatype')
-        role = Role.objects.create(name='Test Role', slug='test-role')
+        # NOTE: I'm using the name 'test_client' instead of 'client' to avoid a naming conflict with
+        # the 'client' property of Django's TestCase, which is an instance of django.test.Client.
+        cls.test_client = PortfolioClient.objects.create(name='Test Client', slug='test-client')
+        cls.industry = Industry.objects.create(name='Test Industry', slug='test-industry')
+        cls.market = Market.objects.create(name='Test Market', slug='test-market')
+        cls.mediatype = MediaType.objects.create(name='Test MediaType', slug='test-mediatype')
+        cls.role = Role.objects.create(name='Test Role', slug='test-role')
 
-        project = Project.objects.create(name='Test Project', slug='test-project', client=client)
-        project.industry.add(industry)
-        project.market.add(market)
-        project.mediatype.add(mediatype)
-        project.role.add(role)
+    def setUp(self):
+        self.project = Project.objects.create(name='Test Project', slug='test-project', client=self.test_client)
+        self.project.industry.add(self.industry)
+        self.project.market.add(self.market)
+        self.project.mediatype.add(self.mediatype)
+        self.project.role.add(self.role)
 
     def test_name_label(self):
-        project = Project.objects.get(id=1)
-        field_label = project._meta.get_field('name').verbose_name
+        field_label = self.project._meta.get_field('name').verbose_name
         self.assertEqual(field_label, 'name')
 
     def test_name_max_length(self):
-        project = Project.objects.get(id=1)
-        max_length = project._meta.get_field('name').max_length
+        max_length = self.project._meta.get_field('name').max_length
         self.assertEqual(max_length, 200)
 
     def test_get_absolute_url(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.get_absolute_url(), '/portfolio/design-and-development-projects/test-project/')
+        self.assertEqual(self.project.get_absolute_url(), '/portfolio/project-details/test-project/')
 
     def test_str_method(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(str(project), 'Test Project')
+        self.assertEqual(str(self.project), 'Test Project')
 
     def test_get_verbose_name(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.get_verbose_name(), 'Project')
+        self.assertEqual(self.project.get_verbose_name(), 'Project')
 
     def test_get_verbose_name_plural(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.get_verbose_name_plural(), 'Projects')
+        self.assertEqual(self.project.get_verbose_name_plural(), 'Projects')
 
     def test_client_label(self):
-        project = Project.objects.get(id=1)
-        field_label = project._meta.get_field('client').verbose_name
+        field_label = self.project._meta.get_field('client').verbose_name
         self.assertEqual(field_label, 'client')
 
     def test_client_is_assigned(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.client.name, 'Test Client')
+        self.assertEqual(self.project.client.name, 'Test Client')
 
     def test_industry_is_assigned(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.industry.first().name, 'Test Industry')
+        self.assertEqual(self.project.industry.first().name, 'Test Industry')
 
     def test_market_is_assigned(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.market.first().name, 'Test Market')
+        self.assertEqual(self.project.market.first().name, 'Test Market')
 
     def test_mediatype_is_assigned(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.mediatype.first().name, 'Test MediaType')
+        self.assertEqual(self.project.mediatype.first().name, 'Test MediaType')
 
     def test_role_is_assigned(self):
-        project = Project.objects.get(id=1)
-        self.assertEqual(project.role.first().name, 'Test Role')
+        self.assertEqual(self.project.role.first().name, 'Test Role')
 
 
 class ProjectItemModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        project = Project.objects.create(name='Test Project', slug='test-project')
-        ProjectItem.objects.create(name='Test ProjectItem', slug='test-projectitem', project=project)
+        cls.project = Project.objects.create(name='Test Project', slug='test-project')
+
+    def setUp(self):
+        # Set up for each individual test method
+        self.project_item = ProjectItem.objects.create(name='Test ProjectItem', slug='test-projectitem', project=self.project)
 
     def test_name_label(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        field_label = projectitem._meta.get_field('name').verbose_name
+        field_label = self.project_item._meta.get_field('name').verbose_name
         self.assertEqual(field_label, 'name')
 
     def test_name_max_length(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        max_length = projectitem._meta.get_field('name').max_length
+        max_length = self.project_item._meta.get_field('name').max_length
         self.assertEqual(max_length, 200)
 
     def test_get_absolute_url(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertEqual(projectitem.get_absolute_url(), '/portfolio/project-details/test-projectitem/')
+        self.assertEqual(self.project_item.get_absolute_url(), '/portfolio/project-details/test-projectitem/')
 
     def test_str_method(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertEqual(str(projectitem), 'Test ProjectItem')
+        self.assertEqual(str(self.project_item), 'Test ProjectItem')
 
     def test_get_verbose_name(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertEqual(projectitem.get_verbose_name(), 'Project Item')
+        self.assertEqual(self.project_item.get_verbose_name(), 'Project Item')
 
     def test_get_verbose_name_plural(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertEqual(projectitem.get_verbose_name_plural(), 'Project Items')
+        self.assertEqual(self.project_item.get_verbose_name_plural(), 'Project Items')
 
     def test_status_label(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        field_label = projectitem._meta.get_field('status').verbose_name
+        field_label = self.project_item._meta.get_field('status').verbose_name
         self.assertEqual(field_label, 'status')
 
     def test_status_max_length(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        max_length = projectitem._meta.get_field('status').max_length
+        max_length = self.project_item._meta.get_field('status').max_length
         self.assertEqual(max_length, 2)
 
     def test_status_defaults_to_draft(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertEqual(projectitem.status, 'D')
+        self.assertEqual(self.project_item.status, 'D')
 
     def test_description_is_optional(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertTrue(projectitem._meta.get_field('description').blank)
+        self.assertTrue(self.project_item._meta.get_field('description').blank)
 
     def test_html_content_is_optional(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertTrue(projectitem._meta.get_field('html_content').blank)
+        self.assertTrue(self.project_item._meta.get_field('html_content').blank)
 
     def test_visible_defaults_to_true(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertTrue(projectitem.visible)
+        self.assertTrue(self.project_item.visible)
 
     def test_item_order_is_optional(self):
-        projectitem = ProjectItem.objects.get(id=1)
-        self.assertTrue(projectitem._meta.get_field('item_order').blank)
+        self.assertTrue(self.project_item._meta.get_field('item_order').blank)
 
 
 class ProjectItemImageModelTest(TestCase):

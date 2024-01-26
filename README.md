@@ -259,9 +259,9 @@ pip freeze > requirements.txt
 
 ## Run unit tests
 
-There are 144 passing unit tests so far located in the `tests/` directory.
+There are 144 unit tests written so far in the `tests/` directory. Eight Project model tests are skipped after I added the custom managers to the models and should be update sometime.
 
-NOTE: I couldn't figure out how to run tests in VS Code, so I run them from the command line for now.
+NOTE: Perhaps because of this projects file structure, I couldn't get tests to run in VS Code Testing panel, so I just run them from the command line.
 
 <details>
   <summary>Click to expand</summary>
