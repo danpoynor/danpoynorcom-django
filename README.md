@@ -421,7 +421,7 @@ Use `linkchecker --list-plugins` to see a list of all available plugins.
 
 ### Package Options for Exporting Static Files from Django
 
-After testing Bakery and studying other Django static site generators, I decided to use `wget` to generate the static files for this project since I can get it to capture the paginated pages as needed and it's already installed on my Mac.
+After testing Bakery and other Django static site generators, I settled on using `wget` to generate the static files for this project. Using `wget` I'm able to capture the paginated pages as needed.
 
 #### Use `wget` To Generate Static Files
 
