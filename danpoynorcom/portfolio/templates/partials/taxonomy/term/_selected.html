@@ -17,7 +17,9 @@
         </header>
         <ul class="showcase-list">
             {% for item in selected_items %}
-                {% include "partials/taxonomy/term/_item_card.html" with term=item %}
+                {% if item.has_projects %}
+                    {% include "partials/taxonomy/term/_item_card.html" with term=item %}
+                {% endif %}
             {% empty %}
                 <li>No selected {{ item_name }} available.</li>
             {% endfor %}

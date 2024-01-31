@@ -53,8 +53,15 @@ class TaxonomyMixin(models.Model):
     def get_verbose_name_plural(self):
         return self._meta.verbose_name_plural
 
-    def get_absolute_url(self):
-        return reverse(f"{self._meta.model_name}_detail", args=[str(self.slug)])
+    def get_project_items(self):
+        return self.project_items.all()
+
+    def has_projects(self):
+        # Check if term has at least one Project with at least one ProjectItem
+        return self.project_items.filter(project__item__isnull=False).exists()
+
+    # def get_absolute_url(self):
+    #     return reverse(f"{self._meta.model_name}_detail", args=[str(self.slug)])
 
 
 # Client taxonomy model

@@ -3,7 +3,9 @@
     <section class="taxonomy-categories">
         <ul class="showcase-list clients-list">
             {% for market in markets %}
-                {% include "partials/taxonomy/term/_item_card.html" with term=market %}
+                {% if market.has_projects %}
+                    {% include "partials/taxonomy/term/_item_card.html" with term=market %}
+                {% endif %}
             {% empty %}
                 <li>No markets available.</li>
             {% endfor %}

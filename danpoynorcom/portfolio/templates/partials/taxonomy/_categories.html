@@ -3,19 +3,21 @@
     <h2>{{ item_name|replace_underscore_with_space|title }} Overview</h2>
     <ul class="taxonomy-list {% if item_name != 'roles' %}gray-bullets{% endif %}">
         {% for item in items %}
-            {% if item_name == 'roles' %}
-                <li>
-                    <h3>
+            {% if item.has_projects %}
+                {% if item_name == 'roles' %}
+                    <li>
+                        <h3>
+                            <a href="{{ item.get_absolute_url }}"
+                               title="View all project samples created for {{ item.name }}">{{ item.name }} <span class="count">({{ item.project_item_count }})</span></a>
+                        </h3>
+                        <p>{{ item.description|safe }}</p>
+                    </li>
+                {% else %}
+                    <li>
                         <a href="{{ item.get_absolute_url }}"
-                           title="View all project samples created for {{ item.name }}">{{ item.name }} <span class="count">({{ item.project_item_count }})</span></a>
-                    </h3>
-                    <p>{{ item.description|safe }}</p>
-                </li>
-            {% else %}
-                <li>
-                    <a href="{{ item.get_absolute_url }}"
-                       title="View all project samples created for {{ item.name }}">{{ item.name }}&nbsp;<span class="count">({{ item.project_item_count }})</span></a>
-                </li>
+                           title="View all project samples created for {{ item.name }}">{{ item.name }}&nbsp;<span class="count">({{ item.project_item_count }})</span></a>
+                    </li>
+                {% endif %}
             {% endif %}
         {% empty %}
             <li>No {{ item_name|replace_underscore_with_space|title }} available.</li>

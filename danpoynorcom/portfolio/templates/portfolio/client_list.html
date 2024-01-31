@@ -9,7 +9,9 @@
     <section class="taxonomy-categories">
         <ul class="showcase-list clients-list">
             {% for client in clients %}
-                {% include "partials/taxonomy/term/_item_card.html" with term=client %}
+                {% if client.has_projects %}
+                    {% include "partials/taxonomy/term/_item_card.html" with term=client %}
+                {% endif %}
             {% empty %}
                 <li>No clients available.</li>
             {% endfor %}

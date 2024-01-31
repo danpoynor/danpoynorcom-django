@@ -4,7 +4,9 @@
         <h2>{{ item_name|replace_underscore_with_space|title }} Highlights</h2>
         <ul class="showcase-list">
             {% for item in highlighted_items %}
-                {% include "partials/taxonomy/term/_item_card.html" with term=item %}
+                {% if item.has_projects %}
+                    {% include "partials/taxonomy/term/_item_card.html" with term=item %}
+                {% endif %}
             {% empty %}
                 <li>No highlighted {{ item_name|replace_underscore_with_space|title }} available.</li>
             {% endfor %}
