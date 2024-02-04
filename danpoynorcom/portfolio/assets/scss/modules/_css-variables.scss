@@ -1,6 +1,7 @@
 // SASS variables for CSS colors and other values
 $theme-color: #568000;
 $theme-highlight-color: #9acd32;
+$white: #ffffff;
 
 // CSS Custom Properties
 :root {
@@ -13,7 +14,7 @@ $theme-highlight-color: #9acd32;
     --t9: #424242;
     --t10: rgba(154, 205, 50, .05);
     --t11: rgba(154, 205, 50, .1);
-    --t12: rgba(154, 205, 50, .825);
+    --t12: rgba(154, 205, 50, 0.825); // $theme highlight color
     --t13: #f5faeb;
     --black: #000000;
     --dark-grays-500: #5c5c5c;

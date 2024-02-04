@@ -5,41 +5,41 @@
         <h2 class="expando-trigger" aria-expanded="true">Project Info</h2>
     </label>
     <div class="expando-content">
-        {% if project.industry.all %}
+        {% if projectitem.industry.all %}
             <section class="project-industry-name">
                 <h3>Industry</h3>
                 <ul class="csv">
-                    {{ project.industry.all|join_as_links:'industry_detail' }}
+                    {{ projectitem.industry.all|join_as_links:'industry_detail' }}
                 </ul>
             </section>
         {% endif %}
-        {% if project.mediatype.all %}
+        {% if projectitem.media_type.all %}
             <section class="project-platorm-name">
                 <h3>Media Type</h3>
                 <ul class="csv">
-                    {{ project.mediatype.all|join_as_links:'mediatype_detail' }}
+                    {{ projectitem.media_type.all|join_as_links:'mediatype_detail' }}
                 </ul>
             </section>
         {% endif %}
-        {% if project.role.all %}
+        {% if projectitem.role.all %}
             <section class="project-role-names">
                 <h3>Role</h3>
                 <ul class="csv">
-                    {{ project.role.all|join_as_links:'role_detail' }}
+                    {{ projectitem.role.all|join_as_links:'role_detail' }}
                 </ul>
             </section>
         {% endif %}
-        {% if project.year %}
+        {% if projectitem.year %}
             <section class="project-platorm-name">
                 <h3>Year</h3>
-                <p>{{ project.year }}</p>
+                <p>{{ projectitem.year }}</p>
             </section>
         {% endif %}
-        {% if project.description %}
+        {% if projectitem.project.description %}
             <section class="project-description">
                 <h3>Project Description</h3>
                 <br />
-                {{ project.description|safe }}
+                {{ projectitem.project.description|safe }}
             </section>
         {% endif %}
     </div>

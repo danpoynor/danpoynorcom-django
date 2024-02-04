@@ -64,8 +64,8 @@ class TestUrls(TestCase):
         path = reverse('mediatype_detail', kwargs={'slug': 'test-slug'})
         self.assertEqual(resolve(path).func.__name__, views.MediaTypeProjectsListView.as_view().__name__)
 
-    def test_mediatype_page_order_url(self):
-        path = reverse('mediatype_page_order', kwargs={'slug': 'test-slug', 'page': 1, 'order': 'test-order'})
+    def test_media_type_page_order_url(self):
+        path = reverse('media_type_page_order', kwargs={'slug': 'test-slug', 'page': 1, 'order': 'test-order'})
         self.assertEqual(resolve(path).func.__name__, views.MediaTypeProjectsListView.as_view().__name__)
 
     def test_roles_url(self):

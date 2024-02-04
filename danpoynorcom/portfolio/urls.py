@@ -49,7 +49,7 @@ urlpatterns = [
 
     path("portfolio/media-types/", views.MediaTypesView.as_view(), name="mediatype_list"),
     path("portfolio/media-types/<slug:slug>-projects/", views.MediaTypeProjectsListView.as_view(), name="mediatype_detail"),
-    path("portfolio/media-types/<slug:slug>-projects/<int:page>/<str:order>/", views.MediaTypeProjectsListView.as_view(), name="mediatype_page_order"),
+    path("portfolio/media-types/<slug:slug>-projects/<int:page>/<str:order>/", views.MediaTypeProjectsListView.as_view(), name="media_type_page_order"),
 
     path("portfolio/roles/", views.RolesView.as_view(), name="role_list"),
     path("portfolio/roles/<slug:slug>-projects/", views.RoleProjectsListView.as_view(), name="role_detail"),
@@ -62,6 +62,9 @@ urlpatterns = [
     path("portfolio/design-and-development-projects/<slug:slug>/", views.ProjectItemsView.as_view(), name="project_items_detail"),
 
     path("portfolio/project-details/<slug:slug>/", views.ProjectDetailsView.as_view(), name="project_detail"),
+
+    # other urls...
+    path("adminactions/", include("adminactions.urls")),
 
     # Sitemap
     path(
@@ -79,7 +82,7 @@ urlpatterns = [
     path("404/", custom_page_not_found),
 
     # Page created for use with wget
-    path('wget_sitemap/', views.WgetSitemapView.as_view(), name='wget_sitemap'),
+    # path('wget_sitemap/', views.WgetSitemapView.as_view(), name='wget_sitemap'),
 
     # Page created for reviewing some SEO factors of each page
     path('seo-overview/', views.WebsiteSeoView.as_view(), name='seo_overview'),

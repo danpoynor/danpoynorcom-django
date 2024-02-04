@@ -1,13 +1,10 @@
-$external-link-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E";
-$external-link-icon-footer: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-highlight-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E";
-
 html {
     -webkit-font-smoothing: antialiased;
 }
 
 html,
 body {
-    font: normal 16px/1.61803398875 'Source Sans 3', sans-serif;
+    font: normal 16px/1.6 'Source Sans 3', sans-serif;
     color: var(--t5);
 }
 
@@ -16,7 +13,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.site-title,
+.value-statement p {
     font: normal 400 1rem/1 'Bitter', sans-serif;
     margin: 0;
     text-rendering: optimizeLegibility;
@@ -38,88 +37,18 @@ h4 {
     font: normal 400 100%/1.61803398875 'Bitter', sans-serif;
 }
 
-a {
-    color: var(--t3);
-    transition: all var(--transition-speed-faster) ease-out;
-}
-
-a,
-a:visited,
-a:hover {
-    text-decoration: none;
-}
-
 p {
     text-wrap: pretty;
 }
 
-p,
-.project-details .display-column,
-.project-details .expando,
-.taxonomy-list,
-.selected-taxonomy-items p,
-.taxonomy-meta,
-.sidebar-info,
-.contact-info,
-.about-references {
-
-    a,
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.2rem;
-        display: inline-block;
-
-        &:hover {
-            filter: brightness(var(--hover-brightness-amount));
-            text-underline-offset: 0.3rem;
-        }
-
-        &[target='_blank']:after {
-            content: "";
-            width: 11px;
-            height: 11px;
-            margin-left: 5px;
-            background-image: url($external-link-icon);
-            background-repeat: no-repeat;
-            background-size: contain;
-            display: inline-block;
-        }
-    }
-}
-
 .site-info {
     text-wrap: pretty;
-
-    a {
-        text-decoration: underline;
-        text-underline-offset: 0.2rem;
-    }
-
-    a:hover {
-        filter: brightness(var(--hover-brightness-amount-less));
-        text-underline-offset: 0.28rem;
-    }
 }
 
-.list-view {
+.project-list-view {
     p {
         &.title {
             font: 400 1.6rem/1.2 Bitter, sans-serif;
-
-            a {
-                text-decoration: underline;
-                text-decoration-thickness: 1.5px;
-                text-underline-offset: .1rem;
-
-                &:hover {
-                    filter: brightness(var(--hover-brightness-amount));
-                    text-underline-offset: 0.2rem;
-                }
-            }
         }
 
         &.description {
@@ -128,47 +57,6 @@ p,
                 font: normal 100%/1.61803398875 'Oswald', sans-serif;
             }
         }
-    }
-}
-
-body > header a {
-    transition: none;
-}
-
-body > footer .site-info {
-
-    a,
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-        color: var(--t12);
-        text-decoration: underline;
-
-        &[target='_blank']:after {
-            content: "";
-            width: 11px;
-            height: 11px;
-            margin-left: 5px;
-            background-image: url($external-link-icon-footer);
-            background-repeat: no-repeat;
-            background-size: contain;
-            display: inline-block;
-        }
-    }
-}
-
-a:active,
-a:focus {
-    outline: none !important;
-}
-
-.project-additional-samples {
-
-    a,
-    a:visited,
-    a:hover {
-        text-decoration: none;
     }
 }
 
@@ -181,52 +69,54 @@ a:focus {
     text-transform: uppercase;
     white-space: nowrap;
     width: 100%;
-
-    a {
-        color: var(--t12);
-        display: inline-block;
-        transition: color var(--transition-speed-faster) ease-in-out;
-
-        &:hover {
-            color: var(--t7);
-        }
-    }
 }
 
-.home-page h1 {
+main.home-page h1 {
     font-size: 2rem;
     margin: .5rem 0;
 }
 
-main header {
-    h1 {
-        color: var(--t6);
-        font-size: 2rem;
-        line-height: 1.2;
-        margin: 0;
+main {
+    header {
+        h1 {
+            color: var(--t6);
+            font-size: 2rem;
+            line-height: 1.2;
+            margin: 0;
+        }
 
-        a {
-            &:hover {
-                filter: brightness(var(--hover-brightness-amount));
-            }
+        h2 {
+            // used on single portfolio only?
+            font: normal 700 1.3125rem/1.4 'Bitter', sans-serif; // 21 / 16
+            margin: .5rem 0;
+        }
+
+        .divider {
+            // this is the "/" in the page titles
+            color: var(--t5);
+            font: 500 1.625rem/1 'Oswald', 'Bitter', sans-serif;
         }
     }
 
-    .project-name {
-        // for single project example pages
-        margin-top: 0;
-    }
+    .selects {
+        header {
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 1;
+                margin: 0;
+                padding: 0 .15rem 0;
+            }
 
-    h2 {
-        // used on single portfolio only?
-        font: normal 700 1.3125rem/1.4 'Bitter', sans-serif; // 21 / 16
-        margin: .5rem 0;
-    }
-
-    .divider {
-        // this is the "/" in the page titles
-        color: var(--t5);
-        font: 500 1.625rem/1 'Oswald', 'Bitter', sans-serif;
+            p {
+                font-size: 1.125rem;
+                line-height: 1.4;
+                margin: .5rem .33rem .75rem;
+                padding: 0;
+                text-align: center;
+                text-wrap: pretty;
+            }
+        }
     }
 }
 
@@ -252,33 +142,4 @@ p:empty {
 
 .nowrap {
     white-space: nowrap;
-}
-
-// Make green links on light gray background more readable for Lighthouse accessibility score
-.prev-next,
-.selects header,
-.taxonomy-categories,
-.prev-next-sample-navigation,
-.project-details-page header h1,
-.portfolio-taxonomy-term header h1,
-.portfolio-projects-page header h1 {
-    a {
-        color: hsl(80, 100%, 22%);
-    }
-}
-
-.project-details-page header h1,
-.portfolio-taxonomy-term header h1,
-.portfolio-projects-page header h1 {
-    a {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.2rem;
-        display: inline-block;
-
-        &:hover {
-            filter: brightness(var(--hover-brightness-amount));
-            text-underline-offset: 0.3rem;
-        }
-    }
 }

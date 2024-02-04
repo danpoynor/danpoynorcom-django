@@ -8,27 +8,27 @@
         <section class="project-client-name">
             <h3>Client</h3>
             <ul class="csv">
-                {% if project.client.name and project.client.slug %}
+                {% if projectitem.client.name and projectitem.client.slug %}
                     <li>
-                        <a href="{% url 'client_detail' slug=project.client.slug %}"><span class="nowrap">{{ project.client.name }}</span></a>
+                        <a href="{% url 'client_detail' slug=projectitem.client.slug %}"><span class="nowrap">{{ projectitem.client.name }}</span></a>
                     </li>
                 {% else %}
                     <li>No client information available.</li>
                 {% endif %}
             </ul>
         </section>
-        {% if project.market.all %}
+        {% if projectitem.market.all %}
             <section class="project-market-name">
                 <h3>Market</h3>
                 <ul class="csv">
-                    {{ project.market.all|join_as_links:'market_detail' }}
+                    {{ projectitem.market.all|join_as_links:'market_detail' }}
                 </ul>
             </section>
         {% endif %}
-        {% if project.client.description %}
+        {% if projectitem.client.description %}
             <section class="project-client-description">
                 <h3>Company Description</h3>
-                {{ project.client.description|safe }}
+                {{ projectitem.client.description|safe }}
             </section>
         {% endif %}
     </div>

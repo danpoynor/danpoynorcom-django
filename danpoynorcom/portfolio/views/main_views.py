@@ -1,112 +1,7 @@
-import re
-import random
-import inflect
-from django.shortcuts import redirect
 from django.db.models.functions import Lower
-from django.db.models import OuterRef, Exists
-from django.views.generic import TemplateView, DetailView, ListView
-from ..mixins import PaginationMixin, PrevNextMixin, ProjectDetailsPrevNextMixin
-from ..utils import get_visible_objects
+from django.views.generic import TemplateView, DetailView
 from ..models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
-from ..constants import PAGINATE_BY, SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
-
-DEFAULT_PAGE_DESCRIPTION = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."
-
-# List of verbs to use at the beginning of the page title or description
-SYNONYMS_FOR_EXPLORE = [
-    "Analyze",
-    "Browse",
-    "Check Out",
-    "Discover",
-    "Examine",
-    "Experience",
-    "Explore",
-    "Eye",
-    "Eyeball",
-    "Inspect",
-    "Investigate",
-    "Look At",
-    "Look Into",
-    "Look Over",
-    "Peek At",
-    "Peruse",
-    "Research",
-    "Review",
-    "Spy On"
-    "Study",
-    "Survey",
-    "View",
-]
-
-# Select a random word from the list
-random_synonym_for_explore = random.choice(SYNONYMS_FOR_EXPLORE)
-
-
-def get_taxonomy_objects_with_visible_projects(TaxonomyModel):
-    # Subquery to check if a taxonomy object has any visible projects with visible items
-    has_visible_projects_with_visible_items_subquery = Project.objects.filter(
-        **{TaxonomyModel._meta.model_name: OuterRef("pk")},
-        visible=True,
-        item__visible=True  # Check for visible items
-    )
-
-    # Get taxonomy objects that have any visible projects with visible items
-    taxonomy_objects = TaxonomyModel.objects.filter(visible=True).annotate(
-        has_visible_projects_with_visible_items=Exists(has_visible_projects_with_visible_items_subquery)
-    ).filter(has_visible_projects_with_visible_items=True)
-
-    return taxonomy_objects
-
-
-def capitalize_special_words(word):
-    special_words = {
-        "aol": "AOL",
-        "specification": "Specifications",
-        "html": "HTML",
-        "pop": "POP",
-        "video": "Video Editing",
-        "ux": "UX",
-        "cx": "CX",
-        "ui": "UI",
-        "uc": "UC",
-        "hp": "HP",
-        "fm": "FM",
-        "fyi": "FYI",
-        "vdo": "VDO",
-        "adp": "ADP",
-        "khn": "KHN",
-        "ppc": "PPC",
-        "rgb": "RGB",
-        "kcea": "KCEA",
-        "cnet": "CNET",
-        "cort": "CORT",
-        "imvu": "IMVU",
-        "calarts": "CalArts",
-        "calfinder": "CalFinder",
-        "blufire": "BluFire",
-        "tixnix": "TixNix",
-        "singlefeed": "SingleFeed",
-        "adbrite": "AdBrite",
-        "bactrack": "BACtrack",
-        "inetdvd": "iNetDVD",
-        "jarmedia": "JarMedia",
-        "echosign": "EchoSign",
-        "workbright": "WorkBright",
-        "businessuites": "BusinesSuites",
-        "tacitlogic": "TacitLogic",
-        "peoplesoft": "PeopleSoft",
-        "myofferpal": "MyOfferPal",
-        "grandmutual": "GrandMutual",
-        "macphee": "MacPhee",
-        "webex": "WebEx",
-        "stellaservice": "StellaService",
-        "quantbench": "QuantBench",
-        "nextcustomer": "NextCustomer",
-        "reallygreatrate": "ReallyGreatRate",
-        "homerun.com": "HomeRun.com",
-        "fiftyflowers.com": "FiftyFlowers.com"
-    }
-    return special_words.get(word.lower(), word)
+from ..constants import DEFAULT_PAGE_DESCRIPTION, SELECTED_CLIENT_IDS, SELECTED_INDUSTRY_IDS, SELECTED_MEDIA_TYPE_IDS, SELECTED_ROLE_IDS, HIGHLIGHTED_INDUSTRY_IDS, HIGHLIGHTED_MEDIA_TYPE_IDS, HIGHLIGHTED_ROLE_IDS
 
 
 class HomeView(TemplateView):
@@ -125,41 +20,21 @@ class PortfolioView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        selected_clients = Client.objects.filter(id__in=SELECTED_CLIENT_IDS)
+        selected_clients = Client.visible_objects.filter(id__in=SELECTED_CLIENT_IDS)
         for client in selected_clients:
-            visible_project_items = ProjectItem.objects.filter(
-                project__client=client,
-                project__visible=True,
-                visible=True
-            )
-            client.project_item_count = visible_project_items.count()
+            client.project_item_count = ProjectItem.visible_objects.filter(client=client).count()
 
-        selected_industries = Industry.objects.filter(id__in=SELECTED_INDUSTRY_IDS)
+        selected_industries = Industry.visible_objects.filter(id__in=SELECTED_INDUSTRY_IDS)
         for industry in selected_industries:
-            visible_project_items = ProjectItem.objects.filter(
-                project__industry=industry,
-                project__visible=True,
-                visible=True
-            )
-            industry.project_item_count = visible_project_items.count()
+            industry.project_item_count = ProjectItem.visible_objects.filter(industry=industry).count()
 
-        selected_media_types = MediaType.objects.filter(id__in=SELECTED_MEDIA_TYPE_IDS)
-        for mediatype in selected_media_types:
-            visible_project_items = ProjectItem.objects.filter(
-                project__mediatype=mediatype,
-                project__visible=True,
-                visible=True
-            )
-            mediatype.project_item_count = visible_project_items.count()
+        selected_media_types = MediaType.visible_objects.filter(id__in=SELECTED_MEDIA_TYPE_IDS)
+        for media_type in selected_media_types:
+            media_type.project_item_count = ProjectItem.visible_objects.filter(media_type=media_type).count()
 
-        selected_roles = Role.objects.filter(id__in=SELECTED_ROLE_IDS)
+        selected_roles = Role.visible_objects.filter(id__in=SELECTED_ROLE_IDS)
         for role in selected_roles:
-            visible_project_items = ProjectItem.objects.filter(
-                project__role=role,
-                project__visible=True,
-                visible=True
-            )
-            role.project_item_count = visible_project_items.count()
+            role.project_item_count = ProjectItem.visible_objects.filter(role=role).count()
 
         context.update({
             "selected_clients": selected_clients,
@@ -189,7 +64,7 @@ class ContactView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Let’s Connect! : UI/UX Design & Web Development : Austin, TX'
-        context['description'] = "I'm just a click, call, or email away. Let's discuss how we can transform your business. Send me your wildest ideas, and watch them become reality. 📲"
+        context['description'] = "I'm just a click, call, or email away. Let's discuss how we can transform your business. Send me your wildest ideas, and watch them become reality 🤝"
         return context
 
 
@@ -199,53 +74,21 @@ class ClientsView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        client_list = get_visible_objects(Client).order_by(Lower("name"))
+        client_list = Client.visible_objects.all().order_by(Lower("name"))
         for client in client_list:
-            # Get visible projects for the current client
-            visible_projects = get_visible_objects(Project).filter(client=client)
+            # Get visible items for the current client
+            visible_project_items = ProjectItem.visible_objects.filter(client=client)
 
-            # Get visible items for the visible projects
-            visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
-
+            # Count the number of visible items for the current client
             client.project_item_count = visible_project_items.count()
 
         context.update({
             "clients": client_list,
             "object": Client(),
             "title": "Startups to Global Brands : Checkout My Design & Dev Clients",
-            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner. 💓",
+            "description": "From silicon giants to indie darlings, I've powered success for diverse clients. Explore my global portfolio & find your perfect design partner 💓",
         })
 
-        return context
-
-
-class ClientProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
-    model = Client
-    template_name = "portfolio/client_detail.html"
-    count_type = "client items"
-    view_name = "client_page_order"
-    filter_field = "client"
-    paginator_template_name = "partials/pagination/_paginator.html"
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Add the title to the context
-        client_name = self.object.name.title()
-        words = re.split(r'(\s|/)', client_name)
-        words = [capitalize_special_words(word) for word in words]
-        client_name = "".join(words)
-        # Check if ".Com" is in the name and replace it with ".com"
-        if ".Com" in client_name:
-            client_name = client_name.replace(".Com", ".com")
-
-        # Get the page number and order from the request's query parameters
-        page = self.kwargs.get('page', '1')
-        order = self.kwargs.get('order', 'asc')
-        order_text = "Asc" if order == "asc" else "Desc"
-
-        context['title'] = f'{client_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'{random_synonym_for_explore} design and development projects for {client_name}. Page {page} {order_text}.'
         return context
 
 
@@ -255,31 +98,19 @@ class IndustriesView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        highlighted_industries = get_visible_objects(Industry).filter(id__in=HIGHLIGHTED_INDUSTRY_IDS)
+        highlighted_industries = Industry.visible_objects.filter(id__in=HIGHLIGHTED_INDUSTRY_IDS)
         for industry in highlighted_industries:
-            visible_project_items = ProjectItem.objects.filter(
-                project__industry=industry,
-                project__visible=True,
-                visible=True
-            )
+            visible_project_items = ProjectItem.visible_objects.filter(industry=industry)
             industry.project_item_count = visible_project_items.count()
 
-        industry_list = get_visible_objects(Industry)
+        industry_list = Industry.visible_objects.all().order_by(Lower("name"))
         for industry in industry_list:
-            visible_project_items = ProjectItem.objects.filter(
-                project__industry=industry,
-                project__visible=True,
-                visible=True
-            )
+            visible_project_items = ProjectItem.visible_objects.filter(industry=industry)
             industry.project_item_count = visible_project_items.count()
 
-        market_list = get_visible_objects(Market)
+        market_list = Market.visible_objects.all().order_by(Lower("name"))
         for market in market_list:
-            visible_project_items = ProjectItem.objects.filter(
-                project__market=market,
-                project__visible=True,
-                visible=True
-            )
+            visible_project_items = ProjectItem.visible_objects.filter(market=market)
             market.project_item_count = visible_project_items.count()
 
         context.update({
@@ -294,49 +125,16 @@ class IndustriesView(TemplateView):
         return context
 
 
-class IndustryProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
-    model = Industry
-    template_name = "portfolio/industry_detail.html"
-    count_type = "industry items"
-    view_name = "industry_page_order"
-    filter_field = "industry"
-    paginator_template_name = "partials/pagination/_paginator.html"
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Add the title to the context
-        industry_name = self.object.name.title()
-        words = re.split(r'(\s|/)', industry_name)
-        words = [capitalize_special_words(word) for word in words]
-        industry_name = "".join(words)
-        # Check if "Projects" is already in the name
-        if "Projects" in industry_name:
-            industry_name = industry_name.replace("Projects", "").strip()
-
-        # Get the page number and order from the request's query parameters
-        page = self.kwargs.get('page', '1')
-        order = self.kwargs.get('order', 'asc')
-        order_text = "Asc" if order == "asc" else "Desc"
-
-        context['title'] = f'{industry_name} Design & Dev Projects : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'{random_synonym_for_explore} design and development projects for {industry_name}. Page {page} {order_text}. ⚙️'
-        return context
-
-
 class MarketsView(TemplateView):
     template_name = "portfolio/market_list.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        market_list = get_taxonomy_objects_with_visible_projects(Market)
+        market_list = Market.visible_objects.all().order_by(Lower("name"))
         for market in market_list:
-            # Get visible projects for the current market
-            visible_projects = get_visible_objects(Project).filter(market=market)
-
-            # Get visible items for the visible projects
-            visible_project_items = get_visible_objects(ProjectItem).filter(project__in=visible_projects)
+            # Get visible items for the current market
+            visible_project_items = ProjectItem.visible_objects.filter(market=market)
 
             market.project_item_count = visible_project_items.count()
 
@@ -350,98 +148,30 @@ class MarketsView(TemplateView):
         return context
 
 
-class MarketProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
-    model = Market
-    template_name = "portfolio/market_detail.html"
-    count_type = "market items"
-    view_name = "market_page_order"
-    filter_field = "market"
-    paginator_template_name = "partials/pagination/_paginator.html"
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Add the title to the context
-        context['title'] = f'{self.object.name} Design & Development Expertise :  Austin, TX'
-        context['description'] = f'{random_synonym_for_explore} design and development projects for {self.object.name}.'
-        return context
-
-
 class MediaTypesView(TemplateView):
-    template_name = "portfolio/mediatype_list.html"
+    template_name = "portfolio/media_type_list.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        highlighted_media_types = get_visible_objects(MediaType).filter(id__in=HIGHLIGHTED_MEDIA_TYPE_IDS)
-        for mediatype in highlighted_media_types:
-            visible_project_items = ProjectItem.objects.filter(
-                project__mediatype=mediatype,
-                project__visible=True,
-                visible=True
-            )
-            mediatype.project_item_count = visible_project_items.count()
+        highlighted_media_types = MediaType.visible_objects.filter(id__in=HIGHLIGHTED_MEDIA_TYPE_IDS)
+        for media_type in highlighted_media_types:
+            visible_project_items = ProjectItem.visible_objects.filter(media_type=media_type)
+            media_type.project_item_count = visible_project_items.count()
 
-        mediatype_list = get_visible_objects(MediaType)
-        for mediatype in mediatype_list:
-            visible_project_items = ProjectItem.objects.filter(
-                project__mediatype=mediatype,
-                project__visible=True,
-                visible=True
-            )
-            mediatype.project_item_count = visible_project_items.count()
+        media_type_list = MediaType.visible_objects.all().order_by(Lower("name"))
+        for media_type in media_type_list:
+            visible_project_items = ProjectItem.visible_objects.filter(media_type=media_type)
+            media_type.project_item_count = visible_project_items.count()
 
         context.update({
             "highlighted_media_types": highlighted_media_types,
-            "mediatypes": mediatype_list,
+            "mediatypes": media_type_list,
             "object": MediaType(),
             "title": "Pixels 2 Print & Beyond : View Engaging Design & Dev Mastery",
-            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate. 🕸",
+            "description": "From print to interactive, design with seamless flexibility. Discover my media expertise & let's craft experiences that captivate 🕸",
         })
 
-        return context
-
-
-class MediaTypeProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
-    model = MediaType
-    template_name = "portfolio/mediatype_detail.html"
-    count_type = "media type items"
-    view_name = "mediatype_page_order"
-    filter_field = "mediatype"
-    paginator_template_name = "partials/pagination/_paginator.html"
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Create an engine
-        p = inflect.engine()
-        # Try to convert plural to singular
-        singular_name = p.singular_noun(self.object.name)
-        # If singular_noun returned False, use the original name
-        if not singular_name:
-            singular_name = self.object.name
-        else:
-            # Capitalize the first letter of each word
-            singular_name = singular_name.title()
-        # Replace "Displays" with "Display"
-        singular_name = singular_name.replace("Displays", "Display")
-        # Replace words
-        words = singular_name.split()
-        words = [capitalize_special_words(word) for word in words]
-        singular_name = " ".join(words)
-
-        # Get the page number and order from the URL path parameters
-        page = self.kwargs.get('page', '1')
-        order = self.kwargs.get('order', 'asc')
-        order_text = "Asc" if order == "asc" else "Desc"
-
-        # Check if "Design" is already in the name
-        if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
-            context['title'] = f'{singular_name} Portfolio : Austin, TX : Page {page} {order_text}'
-            context['description'] = f'{random_synonym_for_explore} the {singular_name} portfolio. Page {page} {order_text}.'
-        else:
-            context['title'] = f'{singular_name} Designer Portfolio : Austin, TX : Page {page} {order_text}'
-            context['description'] = f'{random_synonym_for_explore} the {singular_name} designer portfolio. Page {page} {order_text}.'
         return context
 
 
@@ -451,132 +181,28 @@ class RolesView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        highlighted_roles = get_visible_objects(Role).filter(id__in=HIGHLIGHTED_ROLE_IDS)
+        highlighted_roles = Role.visible_objects.filter(id__in=HIGHLIGHTED_ROLE_IDS)
         for role in highlighted_roles:
-            visible_project_items = ProjectItem.objects.filter(
-                project__role=role,
-                project__visible=True,
-                visible=True
-            )
+            visible_project_items = ProjectItem.visible_objects.filter(role=role)
             role.project_item_count = visible_project_items.count()
 
-        role_list = get_visible_objects(Role)
+        role_list = Role.visible_objects.all().order_by(Lower("name"))
         for role in role_list:
-            visible_project_items = get_visible_objects(ProjectItem, role)
-            role.project_item_count = len(visible_project_items)
+            visible_project_items = ProjectItem.visible_objects.filter(role=role)
+            role.project_item_count = visible_project_items.count()
 
         context.update({
             "highlighted_roles": highlighted_roles,
             "roles": role_list,
             "object": Role(),
             "title": "Concept to Creation: View My Diverse Design & Dev Experience",
-            "description": "Concept to code, I wear many hats. Explore my multi-faceted skillset & find the perfect design partner for your project. 🧢🎓🎩",
+            "description": "Concept to code, I wear many hats. Explore my multi-faceted skill set & find the perfect design partner for your project 🧢🎓🎩",
         })
 
         return context
 
 
-class RoleProjectsListView(PaginationMixin, PrevNextMixin, DetailView):
-    model = Role
-    template_name = "portfolio/role_detail.html"
-    count_type = "role items"
-    view_name = "role_page_order"
-    filter_field = "role"
-    paginator_template_name = "partials/pagination/_paginator.html"
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super().get_context_data(**kwargs)
-        # Add the title to the context
-        role_name = self.object.name.title()
-        words = re.split(r'(\s|/)', role_name)
-        words = [capitalize_special_words(word) for word in words]
-        role_name = "".join(words)
-
-        # Get the page number and order from the URL path parameters
-        page = self.kwargs.get('page', '1')
-        order = self.kwargs.get('order', 'asc')
-        order_text = "Asc" if order == "asc" else "Desc"
-
-        context['title'] = f'{role_name} Portfolio : Austin, TX : Page {page} {order_text}'
-        context['description'] = f'{random_synonym_for_explore} my {role_name} portfolio. Page {page} {order_text}.'
-        return context
-
-
-class ProjectsView(ListView):
-    model = Project
-    paginate_by = PAGINATE_BY
-    template_name = "portfolio/project_list.html"
-    view_name = "projects_page_order"
-    paginator_template_name = "partials/pagination/_projects_paginator.html"
-
-    def get(self, request, *args, **kwargs):
-        self.kwargs = kwargs
-        return super().get(request, *args, **kwargs)
-
-    def get_queryset(self):
-        # Subquery to check if a project has any visible items
-        has_visible_items_subquery = ProjectItem.objects.filter(
-            project=OuterRef("pk"),
-            visible=True  # Check for visible items
-        )
-
-        # Get projects that have any visible items
-        project_list = Project.objects.filter(
-            visible=True,
-            client__visible=True  # Check for visible client
-        ).annotate(
-            has_visible_items=Exists(has_visible_items_subquery)
-        ).filter(
-            has_visible_items=True
-        )
-
-        # Get the order from the URL, default to 'asc' if not provided
-        order = self.kwargs.get("order", "asc")
-
-        # Order the project list
-        project_list = project_list.order_by('name' if order == 'asc' else '-name')
-
-        return project_list
-
-    def post(self, request, *args, **kwargs):
-        # Get the selected order from the POST data
-        order = request.POST.get("order", "asc")
-
-        # Redirect to the first page with the selected order
-        return redirect(self.view_name, page=1, order=order)
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        # Get the page number from the URL
-        page_number = self.kwargs.get("page", '1')
-
-        # Get the order from the URL, default to 'asc' if not provided
-        order = self.kwargs.get("order", "asc")
-
-        # Get the elided page range
-        elided_page_range = context['paginator'].get_elided_page_range(context['page_obj'].number)
-
-        # Create a title that includes the page number and order
-        order_text = "Asc" if order == "asc" else "Desc"
-        title = f"Visual/UX/UI Design & Software Development Successes - Page {page_number} {order_text}"
-
-        context.update({
-            "order": order,
-            "count_type": "projects",  # Specify that we want to display the count of projects
-            "view_name": self.view_name,  # The name of the current view
-            "taxonomy_item_slug": "",  # There is no taxonomy item for this view
-            "title": title,
-            "description": DEFAULT_PAGE_DESCRIPTION,
-            "paginator_template_name": self.paginator_template_name,
-            "elided_page_range": elided_page_range,
-        })
-
-        return context
-
-
-class ProjectItemsView(PrevNextMixin, DetailView):
+class ProjectItemsView(DetailView):
     model = Project
     template_name = "portfolio/project_items_detail.html"
 
@@ -588,9 +214,9 @@ class ProjectItemsView(PrevNextMixin, DetailView):
         return context
 
 
-class ProjectDetailsView(ProjectDetailsPrevNextMixin, DetailView):
+class ProjectDetailsView(DetailView):
     model = ProjectItem
-    template_name = "portfolio/project_details.html"
+    template_name = "portfolio/project_detail.html"
 
     def get_class_name(self):
         return self.__class__.__name__
@@ -598,7 +224,7 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         project = self.object.project
-        context["items"] = project.get_ordered_items().filter(visible=True, project__visible=True)
+        context["items"] = ProjectItem.visible_objects.filter(project=project).order_by('item_order')
 
         # Check if project item name and project name are the same
         if self.object.name == project.name:
@@ -608,4 +234,6 @@ class ProjectDetailsView(ProjectDetailsPrevNextMixin, DetailView):
             context['title'] = f'Project: {project.name} : {self.object.name}'
             context['description'] = f'View Details: {project.name} and item: {self.object.name}'
 
+        context['previous_object'] = self.object.get_previous()
+        context['next_object'] = self.object.get_next()
         return context

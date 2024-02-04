@@ -1,6 +1,7 @@
 // Import standard partials
 // --------------------------------------------------
 @import "animation-keyframes";
+@import "view-transitions";
 @import "typography";
 @import "structure";
 @import "header";
@@ -13,6 +14,7 @@
 @import "section-value-statement";
 @import "section-selected-projects";
 @import "icons";
+@import "links";
 @import "lists";
 @import "prev-next-taxonomy-term-navigation";
 @import "masonry-layout";
@@ -21,7 +23,7 @@
 @import "pagination";
 @import "expando";
 @import "footers";
-@import "content-list-view";
+@import "content-project-list-view";
 @import "content-banner-ads";
 @import "content-emails";
 @import "content-tables";

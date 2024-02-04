@@ -2,7 +2,23 @@
 
 Django is used as the CMS locally, SQLite for the database, and SASS for CSS. Then `wget` is used to crawl  a list of links from `http://localhost:8000/sitemap.xml` and generate static `.html` files to deploy to a production site, such as GitHub Pages.
 
-NOTE: While working with the dev environment for this project, page loading can be slow due to heavy filtering (custom mangers) I'm using to display some data. This could be optimized in the database by adding additional indexes (for the `visible` columns) to speed things up, but this is a low priority since I'm the only one using this repo and it's not a factor in the final production version.
+Django is considered a "batteries included" web framework, meaning it comes with a lot of features out of the box. It's a great choice for building web applications, and it's also a good choice for building static websites.  IAnd it is especially well-suited for building complex web applications that require a lot of features.
+
+Included features are:
+
+- Built-in **object-relational mapper** (ORM) that makes it easy to interact with databases.
+- Built-in **admin interface** that makes it easy to manage content.
+- Powerful **URL routing system** that makes it easy to create clean, SEO-friendly URLs.
+- A **template system** that makes it easy to create reusable HTML templates.
+- Powerful **form system** that makes it easy to create and validate forms.
+- Built-in **testing framework** that makes it easy to write and run tests.
+- Built-in **security features** such as cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection protection.
+- Robust **authentication and authorization system**.
+- Powerful **caching system** that makes it easy to cache content and improve performance.
+- Built-in **internationalization and localization system** that makes it easy to create multilingual websites.
+- A built-in **web server** that makes it easy to develop and test web applications locally.
+- Has a **massive ecosystem of third-party packages** that make it easy to add new features to web application.
+- **Large community of developers** that make it easy to get help and find resources.
 
 Notes below are primarily for my own reference.
 
@@ -72,6 +88,12 @@ Referenced more in the [Django Features](https://docs.djangoproject.com/en/5.0/#
 - [`coverage`](https://coverage.readthedocs.io/en/latest/): Python library used to measure code coverage.
 - [`django.contrib.sitemaps`](https://docs.djangoproject.com/en/5.0/ref/contrib/sitemaps/): Django library used to generate sitemaps.
 - [`django_minify_html`](https://pypi.org/project/django-minify-html/): Django library to minify HTML. Uses [minify-html](https://github.com/wilsonzlin/minify-html), the extremely fast HTML + JS + CSS minifier, with Django. Note that responses are minified even when DEBUG is True. This is recommended because HTML minification can reveal bugs in your templates, so it’s best to always work with your HTML as it will appear in production. Minified HTML is hard to read with “View Source” - it’s best to rely on the inspector in your browser’s developer tools.
+- [django-adminactions](https://django-adminactions.readthedocs.io/en/latest/index.html): Used for bulk actions in the Django admin.
+
+Other packages resources to consider using for additional feature additions:
+
+- <https://github.com/andrewp-as-is/django-most-used-packages>
+- <https://djangopackages.org/>
 
 ### Other Features Include
 
@@ -372,7 +394,7 @@ pip install linkchecker
 linkchecker http://localhost:8000 --check-extern
 ```
 
-or to do a slower crawl to account for latency and ouput errors to a file use:
+Or to account for some occasional latency do a slower crawl and output errors to a file use:
 
 ```sh
 linkchecker --timeout=20 --threads=1 -F text/linkchecker_output.txt http://localhost:8000
@@ -468,7 +490,7 @@ The URL to start downloading from should be the last argument in the command.
 
 Note: The --domains option expects a domain name, not a URL. You should remove http:// from the --domains option.
 
-##### The `--mirror` Option
+###### The `--mirror` Option
 
 The --mirror option in wget is a shortcut for enabling several options that are useful for mirroring a website. Specifically, it's equivalent to -r -N -l inf --no-remove-listing.
 
@@ -493,9 +515,23 @@ If you are not working on a Windows machine, you can remove the `--restrict-file
 
 ##### Use `wget` To Generate Static Files From <http://localhost:8000/wget_sitemap/>
 
+First, validate the URLs in the sitemap using `linkchecker` and output the results to a file:
+
+```sh
+wget --spider --recursive --no-verbose --force-html -i http://localhost:8000/sitemap.xml > linkchecker_output.txt
+```
+
 Download or copy the output from <http://localhost:8000/wget_sitemap/> to a plain text file named `wget_urls.txt`.
 
-`cd` to the parent directory outside of the project to avoid `git` tracking the initial downloaded files then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
+Make sure the URLs in `wget_urls.txt` are pointing to `http://localhost:8000/` and not `https://danpoynor.com/`.
+
+Use `linkchecker` to validate the URLs in `wget_urls.txt` and output the results to a file:
+
+```sh
+linkchecker --timeout=30 --threads=2 -F text/linkchecker_output.txt http://localhost:8000
+```
+
+If no broken links are found, then `cd` to the parent directory outside of the project to avoid `git` tracking the initial downloaded files then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
 
 ```sh
 wget --config=danpoynorcom-django/.wgetrc -i danpoynorcom-django/wget_urls.txt
@@ -503,17 +539,9 @@ wget --config=danpoynorcom-django/.wgetrc -i danpoynorcom-django/wget_urls.txt
 
 `wget` will create a directory name `localhost:8000` in the current directory and download the files there.
 
-Create a `docs/` symlink if it doesn't exist already using:
+If `wget` pauses for a long time towards the end it's probably updating all the links in the project to be relative to the current directory. This is a good thing.
 
-```sh
-ln -s localhost:8000 docs
-```
-
-NOTE: Symbolic links are not followed by default in Git. If you want Git to follow the symbolic link, you need to set the `core.symlinks` configuration option to `true`:
-
-```sh
-git config core.symlinks true
-```
+Move the files to a `docs/` directory in the project root and remove the `localhost:8000` directory, unless iterating.
 
 Now you can add the `docs/` directory to Git and push it to GitHub and GitHub Pages will serve the static files from there.
 
@@ -524,15 +552,15 @@ Now you can add the `docs/` directory to Git and push it to GitHub and GitHub Pa
 To run a server in the directory containing the output, `cd` into `localhost+8000` directory and run:
 
 ```sh
-python -m http.server 9876
+python3 -m http.server 9876
 ```
 
-Then visit <http://localhost:9876> in a web browser.
+Then visit <http://localhost:9876> in a web browser to make sure the server is running and the site looks good.
 
 You can then run `linkchecker` on the build directory to check for broken links and output the results to a file:
 
 ```sh
-linkchecker --timeout=30 --threads=2 -F text/linkchecker_output.txt http://localhost:9876
+linkchecker --timeout=30 --threads=2 -F text/linkchecker_output_port9876.txt http://localhost:9876
 ```
 
 Check for unused CSS. If the [PurgeCSS CLI](https://purgecss.com/CLI.html) is installed, you can run it from inside the `localhost+8000` directory to create an output file with only the used CSS and compare it to the original CSS file.
@@ -548,15 +576,16 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
 <details>
   <summary>Click to expand</summary>
 
-- [x] ~Add a robots.txt file.~
-- [ ] Need to cross check links to make sure urls match up:
+- [ ] Write more tests
+- [ ] Make sure urls match up:
   - [WGET Sitemap](http://localhost:8000/wget_sitemap/)
   - [sitemap.xml](http://localhost:8000/sitemap.xml)
   - [SEO audit](http://localhost:8000/website-seo-overview/)
-- [ ] Populate MediaType column in Project Items table.
-  - [ ] Filter ProjectItems by MediaType on MediaTypeProjectsListView page, possible other places.
-  - [ ] May need to refactor schema so other taxonomies are also associated with ProjectItems instead of Projects.
-- [ ] Automate the steps in the 'Use `wget` To Generate Static Files' section above.
-- [ ] Automate adding the `sitemap.xml`, `robots.txt`, `favicon.ico` files to the `docs/` directory.
+- [ ] Evaluate automating the steps in the section 'Use `wget` To Generate Static Files' above.
+- [ ] Evaluate automating adding the `sitemap.xml`, `robots.txt`, `favicon.ico` files to the `docs/` directory.
+- [ ] Add concept matrix project item to the portfolio.
+- [ ] Update images to high res in the portfolio.
+- [ ] Add some cool `view-transition` animations.
+- [ ] Add info on how to view Flash projects in the portfolio.
 
 </details>

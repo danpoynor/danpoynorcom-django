@@ -1,0 +1,253 @@
+$external-link-icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E";
+$external-link-icon-footer: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23" + str-slice('#{$theme-highlight-color}', 2) + "' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E";
+
+a {
+    color: var(--t3);
+    transition: all var(--transition-speed-faster);
+
+    &::before,
+    &::after {
+        transition: all var(--transition-speed-faster);
+    }
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+a:active,
+a:focus {
+    outline: none !important;
+}
+
+a.site-title {
+    color: var(--t12);
+    display: inline-block;
+
+    &:hover {
+        color: var(--t7);
+    }
+}
+
+main header {
+    h1 {
+        a {
+            &:hover {
+                color: var(--t12);
+            }
+        }
+    }
+}
+
+.phone-email {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.875rem;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem auto 0;
+    white-space: nowrap;
+
+    p {
+        display: none;
+
+        @media screen and (min-width: $phone-email-media-query-break) {
+            display: block;
+            color: var(--t7);
+            margin: 0;
+
+            span {
+                color: #bcbaba;
+                // color: var(--t12);
+                margin-right: .5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    a {
+        color: var(--t12);
+        display: inline-block;
+        padding-left: 1.25rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        span {
+            position: relative;
+
+            &::after {
+                background: white;
+                bottom: 0;
+                content: "";
+                height: 1px;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                transform: translateY(-.3rem);
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+        }
+
+        &:hover {
+            color: white;
+
+            span::after {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    a.phone {
+        &::before {
+            @include icon-style($phone-pad-icon);
+            background-image: url($phone-pad-icon);
+            height: 15.547px;
+            transform: translateY(34%);
+            width: 10.996px;
+        }
+    }
+
+    a.email {
+        &::before {
+            @include icon-style($phone-pad-icon);
+            background-image: url($email-icon);
+            height: 11.787px;
+            transform: translateY(50%);
+            width: 14.484px;
+        }
+    }
+}
+
+p,
+.project-details .display-column,
+.project-details .expando,
+.taxonomy-list,
+.selected-taxonomy-items p,
+.taxonomy-meta,
+.sidebar-info,
+.contact-info,
+.about-references {
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2rem;
+        display: inline-block;
+
+        &:hover {
+            color: var(--t12);
+            text-underline-offset: 0.3rem;
+        }
+
+        &[target='_blank']::after {
+            content: "";
+            width: 11px;
+            height: 11px;
+            margin-left: 5px;
+            background-image: url($external-link-icon);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
+}
+
+.url-path-headline {
+    a {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 0.25rem;
+        display: inline-block;
+
+        &:hover {
+            color: var(--t12);
+            text-underline-offset: 0.35rem;
+        }
+    }
+}
+
+.project-list-view {
+    p {
+        &.title {
+            a {
+                text-decoration: underline;
+                text-decoration-thickness: 1.5px;
+                text-underline-offset: .25rem;
+
+                &:hover {
+                    color: var(--t12);
+                    text-underline-offset: 0.35rem;
+                }
+            }
+        }
+    }
+}
+
+.project-additional-samples {
+
+    a,
+    a:visited,
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+body > footer .site-info {
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: var(--t12);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+
+        &[target='_blank']::after {
+            content: "";
+            width: 11px;
+            height: 11px;
+            margin-left: 5px;
+            background-image: url($external-link-icon-footer);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+        }
+    }
+
+    a:hover {
+        color: var(--t7);
+        text-underline-offset: 0.28rem;
+        filter: brightness(500%);
+
+        [target='_blank']::after {
+            filter: brightness(150%);
+        }
+    }
+}
+
+// Make green links on light gray background more readable for Lighthouse accessibility score
+.prev-next,
+.selects header,
+.taxonomy-categories,
+.prev-next-sample-navigation,
+.url-path-headline {
+    a {
+        color: hsl(80, 100%, 22%);
+    }
+}

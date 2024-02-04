@@ -1,5 +1,16 @@
+// Hide Page Header on Portfolio Page but keep it accessible for SEO
 main.portfolio-page {
     header.page-header {
-        display: none;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+
+        h1 {
+            color: transparent;
+            height: 0;
+            width: 0;
+        }
     }
 }

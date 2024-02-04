@@ -51,36 +51,36 @@ class PaginatedSitemapMixin:
 class WgetSitemapView(View):
     sitemaps = [
         {
-            'queryset': Client.objects.filter(visible=True),
+            'queryset': Client.visible_objects.all(),
             'detail_url_name': 'client_detail',
             'page_order_url_name': 'client_page_order',
         },
         {
-            'queryset': Industry.objects.filter(visible=True),
+            'queryset': Industry.visible_objects.all(),
             'detail_url_name': 'industry_detail',
             'page_order_url_name': 'industry_page_order',
         },
         {
-            'queryset': Market.objects.filter(visible=True),
+            'queryset': Market.visible_objects.all(),
             'detail_url_name': 'market_detail',
             'page_order_url_name': 'market_page_order',
         },
         {
-            'queryset': MediaType.objects.filter(visible=True),
+            'queryset': MediaType.visible_objects.all(),
             'detail_url_name': 'mediatype_detail',
-            'page_order_url_name': 'mediatype_page_order',
+            'page_order_url_name': 'media_type_page_order',
         },
         {
-            'queryset': Role.objects.filter(visible=True),
+            'queryset': Role.visible_objects.all(),
             'detail_url_name': 'role_detail',
             'page_order_url_name': 'role_page_order',
         },
         # {
-        #     'queryset': Project.objects.filter(visible=True),
+        #     'queryset': Project.visible_objects.all(),
         #     'detail_url_name': 'project_detail',
         # },
         # {
-        #     'queryset': ProjectItem.objects.filter(visible=True),
+        #     'queryset': ProjectItem.visible_objects.all(),
         #     'detail_url_name': 'project_items_detail',
         # },
     ]

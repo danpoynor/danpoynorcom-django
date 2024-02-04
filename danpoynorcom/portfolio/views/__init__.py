@@ -4,18 +4,20 @@ from .main_views import (
     AboutView,
     ContactView,
     ClientsView,
-    ClientProjectsListView,
     IndustriesView,
-    IndustryProjectsListView,
     MarketsView,
-    MarketProjectsListView,
     MediaTypesView,
-    MediaTypeProjectsListView,
     RolesView,
-    RoleProjectsListView,
-    ProjectsView,
     ProjectItemsView,
     ProjectDetailsView,
+)
+from .pagination_views import (
+    ClientProjectsListView,
+    IndustryProjectsListView,
+    MarketProjectsListView,
+    MediaTypeProjectsListView,
+    RoleProjectsListView,
+    ProjectsView,
 )
 from .robots_views import RobotsTxtView
 from .seo_views import WebsiteSeoView

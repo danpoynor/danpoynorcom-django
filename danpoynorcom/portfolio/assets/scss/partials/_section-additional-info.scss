@@ -1,14 +1,16 @@
 .additional-info {
     h2 {
+        font-size: 2rem;
         font-weight: 400;
         margin: 0;
         padding: 0 .15rem 0;
-        font-size: 2rem;
+        text-align: center;
     }
 
     h3 {
         color: var(--t6);
         font-size: 1.125rem;
+        line-height: 1.4;
         margin: 0 0 0.33rem;
     }
 
@@ -18,10 +20,10 @@
     }
 
     header {
+        align-items: center;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: center;
         margin: 0;
         padding: 0 0 .5rem;
     }

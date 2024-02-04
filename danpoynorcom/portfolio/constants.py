@@ -10,3 +10,4 @@ HIGHLIGHTED_MEDIA_TYPE_IDS = [28, 3, 21, 36, 38]
 HIGHLIGHTED_ROLE_IDS = [12, 24, 22, 2, 8]
 VIEW_NAMES = ['home', 'portfolio', 'about', 'contact', 'client_list', 'industry_list', 'market_list', 'mediatype_list', 'role_list']
 MODELS = [Client, Industry, Market, MediaType, Role, Project, ProjectItem]
+DEFAULT_PAGE_DESCRIPTION = "Dan Poynor is a UI/UX designer and web developer in Austin, TX. He has worked with clients in a wide range of industries and markets, including startups, small businesses, and global brands."

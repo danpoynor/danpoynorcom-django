@@ -6,7 +6,7 @@
     <main class="portfolio-projects-page">
         <header>
             <div class="container">
-                <h1>
+                <h1 class="url-path-headline">
                     <a href="{% url 'portfolio' %}">Portfolio</a> <span class="divider">/</span> Project List
                 </h1>
             </div>
@@ -16,7 +16,7 @@
                 <section class="thumbnail-previews">
                     <div class="container">
                         {% include "partials/pagination/_bar.html" with total_items=total_projects %}
-                        <section class="list-view">
+                        <section class="project-list-view">
                             <ol>
                                 {% for project in page_obj %}
                                     <li>

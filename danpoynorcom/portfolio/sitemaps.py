@@ -3,6 +3,7 @@ from django.core.paginator import Paginator
 from django.urls import reverse
 from .constants import PAGINATE_BY
 from .models import Client, Industry, Market, MediaType, Role, Project, ProjectItem
+from .mixins import PaginationMixin
 
 
 class BaseSitemap(Sitemap):
@@ -19,7 +20,7 @@ class StaticViewSitemap(BaseSitemap, Sitemap):
         return reverse(item)
 
 
-class PaginatedSitemapMixin:
+class PaginatedSitemapMixin(PaginationMixin):
     def get_queryset(self):
         raise NotImplementedError
 
@@ -42,17 +43,19 @@ class PaginatedSitemapMixin:
             urls.append(reverse(self.get_detail_url_name(), kwargs={'slug': item.slug}))
 
             # Get all the visible projects for the item
-            projects = item.projects.filter(visible=True)
+            projects = item.project_items.filter(visible=True)
 
             # Create a Paginator for the projects
             paginator = Paginator(projects, PAGINATE_BY)
 
-            # For each page in the paginator
-            for page_number in paginator.page_range:
-                # For each order
-                for order in ['asc', 'desc']:
-                    # Generate the URL for the page and add it to the list
-                    urls.append(reverse(self.get_page_order_url_name(), kwargs={'slug': item.slug, 'page': page_number, 'order': order}))
+            # If more than one page in paginator.page_range
+            if paginator.num_pages > 1:
+                # For each page in the paginator
+                for page_number in paginator.page_range:
+                    # For each order
+                    for order in ['asc', 'desc']:
+                        # Generate the URL for the page and add it to the list
+                        urls.append(reverse(self.get_page_order_url_name(), kwargs={'slug': item.slug, 'page': page_number, 'order': order}))
 
         return urls
 
@@ -69,7 +72,7 @@ class PaginatedSitemapMixin:
 
 class ClientSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
     def get_queryset(self):
-        return Client.objects.filter(visible=True)
+        return Client.visible_objects.filter(visible=True)
 
     def get_detail_url_name(self):
         return 'client_detail'
@@ -80,7 +83,7 @@ class ClientSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
 
 class IndustrySitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
     def get_queryset(self):
-        return Industry.objects.filter(visible=True)
+        return Industry.visible_objects.filter(visible=True)
 
     def get_detail_url_name(self):
         return 'industry_detail'
@@ -91,7 +94,7 @@ class IndustrySitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
 
 class MarketSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
     def get_queryset(self):
-        return Market.objects.filter(visible=True)
+        return Market.visible_objects.filter(visible=True)
 
     def get_detail_url_name(self):
         return 'market_detail'
@@ -102,18 +105,18 @@ class MarketSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
 
 class MediaTypeSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
     def get_queryset(self):
-        return MediaType.objects.filter(visible=True)
+        return MediaType.visible_objects.filter(visible=True)
 
     def get_detail_url_name(self):
         return 'mediatype_detail'
 
     def get_page_order_url_name(self):
-        return 'mediatype_page_order'
+        return 'media_type_page_order'
 
 
 class RoleSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
     def get_queryset(self):
-        return Role.objects.filter(visible=True)
+        return Role.visible_objects.filter(visible=True)
 
     def get_detail_url_name(self):
         return 'role_detail'
@@ -125,7 +128,7 @@ class RoleSitemap(BaseSitemap, PaginatedSitemapMixin, Sitemap):
 class ProjectSitemap(BaseSitemap, Sitemap):
     def items(self):
         # Get all the visible projects
-        projects = Project.objects.filter(visible=True)
+        projects = Project.visible_objects.filter(visible=True)
 
         # Create a Paginator for the projects
         paginator = Paginator(projects, PAGINATE_BY)
@@ -160,7 +163,7 @@ class ProjectSitemap(BaseSitemap, Sitemap):
 
 class ProjectItemDetailSitemap(BaseSitemap, Sitemap):
     def items(self):
-        return ProjectItem.objects.filter(visible=True)
+        return ProjectItem.visible_objects.filter(visible=True)
 
     def location(self, item):
         return reverse('project_detail', args=[item.slug])
@@ -173,7 +176,7 @@ class ProjectItemDetailSitemap(BaseSitemap, Sitemap):
 # For example http://localhost:8000/portfolio/design-and-development-projects/bactrack-breathalyzers-website-redesign/
 class ProjectItemsSitemap(BaseSitemap, Sitemap):
     def items(self):
-        return ProjectItem.objects.filter(visible=True)
+        return ProjectItem.visible_objects.filter(visible=True)
 
     def location(self, item):
         return reverse('project_items_detail', args=[item.slug])
