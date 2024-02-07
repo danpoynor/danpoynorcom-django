@@ -580,7 +580,7 @@ purgecss --css static/portfolio/styles.css --content **/*.html --output static/p
 - [ ] Make sure urls match up:
   - [WGET Sitemap](http://localhost:8000/wget_sitemap/)
   - [sitemap.xml](http://localhost:8000/sitemap.xml)
-  - [SEO audit](http://localhost:8000/website-seo-overview/)
+  - [SEO audit](http://localhost:8000/seo-overview/)
 - [ ] Evaluate automating the steps in the section 'Use `wget` To Generate Static Files' above.
 - [ ] Evaluate automating adding the `sitemap.xml`, `robots.txt`, `favicon.ico` files to the `docs/` directory.
 - [ ] Add concept matrix project item to the portfolio.

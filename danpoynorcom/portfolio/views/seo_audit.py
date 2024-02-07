@@ -28,7 +28,7 @@ class WebsiteSeoView(View):
         # absolute URLs for each object.
         urls = [request.build_absolute_uri(reverse(view_name)) for view_name in VIEW_NAMES]
         for model in MODELS:
-            urls.extend(request.build_absolute_uri(obj.get_absolute_url()) for obj in model.objects.all())
+            urls.extend(request.build_absolute_uri(obj.get_absolute_url()) for obj in model.visible_objects.all())
 
         # Get the directory of the current script
         dir_path = os.path.dirname(os.path.realpath(__file__))
