@@ -397,7 +397,7 @@ linkchecker http://localhost:8000 --check-extern
 Or to account for some occasional latency do a slower crawl and output errors to a file use:
 
 ```sh
-linkchecker --timeout=20 --threads=1 -F text/linkchecker_output.txt http://localhost:8000
+linkchecker --timeout=20 --threads=1 -F text/linkchecker_output.log http://localhost:8000
 ```
 
 Note the `--check-extern` option tells `linkchecker` to check external links as well as internal links.
@@ -405,7 +405,7 @@ Note the `--check-extern` option tells `linkchecker` to check external links as 
 To output a file with the results of the `linkchecker` run, use the `-F` option followed by the path to the file to output to. For example:
 
 ```sh
-linkchecker --timeout=30 --ignore-url='.*\.swf$' -F text/linkchecker_output.txt http://localhost:8000  
+linkchecker --timeout=30 --ignore-url='.*\.swf$' -F text/linkchecker_output.log http://localhost:8000  
 ```
 
 If you want to check only HTML pages and ignore other resources, you can use the `--no-warnings` option. This will make `linkchecker` faster and reduce the number of URLs checked. However, it will also make `linkchecker` less thorough, as it won't check if your CSS, JavaScript, images, and other resources are loading correctly.
@@ -528,7 +528,7 @@ Make sure the URLs in `wget_urls.txt` are pointing to `http://localhost:8000/` a
 Use `linkchecker` to validate the URLs in `wget_urls.txt` and output the results to a file:
 
 ```sh
-linkchecker --timeout=30 --threads=2 -F text/linkchecker_output.txt http://localhost:8000
+linkchecker --timeout=30 --threads=2 -F text/linkchecker_output.log http://localhost:8000
 ```
 
 If no broken links are found, then `cd` to the parent directory outside of the project to avoid `git` tracking the initial downloaded files then run `wget` with the `--config` option followed by the path to the `.wgetrc` file:
