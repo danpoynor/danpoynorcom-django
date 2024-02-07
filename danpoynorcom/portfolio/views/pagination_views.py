@@ -214,10 +214,10 @@ class MediaTypeProjectsListView(PaginationMixin, DetailView):
         # Check if "Design" is already in the name
         if "Design" in singular_name or "Video Editing" in singular_name or "Photography" in singular_name:
             context['title'] = f'{singular_name} Portfolio : Austin, TX : Page {context["page"]} {context["order_text"]}'
-            context['description'] = f'{random_synonym_for_explore()} the {singular_name} portfolio. Page {context["page"]} {context["order_text"]}'
+            context['description'] = f'{random_synonym_for_explore()} {singular_name} portfolio. Page {context["page"]} {context["order_text"]}'
         else:
             context['title'] = f'{singular_name} Designer Portfolio : Austin, TX : Page {context["page"]} {context["order_text"]}'
-            context['description'] = f'{random_synonym_for_explore()} the {singular_name} designer portfolio'
+            context['description'] = f'{random_synonym_for_explore()} {singular_name} designer portfolio'
         context['previous_object'] = self.object.get_previous()
         context['next_object'] = self.object.get_next()
         return context
@@ -239,7 +239,7 @@ class RoleProjectsListView(PaginationMixin, DetailView):
         role_name = "".join(words)
 
         context['title'] = f'{role_name} Portfolio : Austin, TX : Page {context["page"]} {context["order_text"]}'
-        context['description'] = f'{random_synonym_for_explore()} my {role_name} portfolio'
+        context['description'] = f'{random_synonym_for_explore()} {role_name} portfolio'
         context['previous_object'] = self.object.get_previous()
         context['next_object'] = self.object.get_next()
         return context
