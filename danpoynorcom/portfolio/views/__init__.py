@@ -20,5 +20,5 @@ from .pagination_views import (
     ProjectsView,
 )
 from .robots_views import RobotsTxtView
-from .seo_views import WebsiteSeoView
+from .seo_audit import WebsiteSeoView
 from .wget_views import WgetSitemapView
