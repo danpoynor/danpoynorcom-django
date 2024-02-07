@@ -560,7 +560,7 @@ Then visit <http://localhost:9876> in a web browser to make sure the server is r
 You can then run `linkchecker` on the build directory to check for broken links and output the results to a file:
 
 ```sh
-linkchecker --timeout=30 --threads=2 -F text/linkchecker_output_port9876.txt http://localhost:9876
+linkchecker --timeout=30 --threads=2 -F text/linkchecker_output_port9876.log http://localhost:9876
 ```
 
 Check for unused CSS. If the [PurgeCSS CLI](https://purgecss.com/CLI.html) is installed, you can run it from inside the `localhost+8000` directory to create an output file with only the used CSS and compare it to the original CSS file.
