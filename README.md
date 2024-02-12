@@ -521,9 +521,9 @@ First, validate the URLs in the sitemap using `linkchecker` and output the resul
 wget --spider --recursive --no-verbose --force-html -i http://localhost:8000/sitemap.xml > linkchecker_output.txt
 ```
 
-Download or copy the output from <http://localhost:8000/wget_sitemap/> to a plain text file named `wget_urls.txt`.
+Download or copy the URLs in the output from <http://localhost:8000/wget_sitemap/> to a plain text file named `wget_urls.txt`.
 
-Make sure the URLs in `wget_urls.txt` are pointing to `http://localhost:8000/` and not `https://danpoynor.com/`.
+**Make sure the URLs in `wget_urls.txt` are pointing to `http://localhost:8000/` and NOT `https://danpoynor.com/`.**
 
 Use `linkchecker` to validate the URLs in `wget_urls.txt` and output the results to a file:
 

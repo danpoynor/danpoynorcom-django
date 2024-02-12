@@ -521,6 +521,14 @@ http://localhost:8000/portfolio/markets/b2g-projects/
 http://localhost:8000/portfolio/markets/c2c-projects/
 http://localhost:8000/portfolio/markets/g2b-projects/
 http://localhost:8000/portfolio/markets/g2p-projects/
+http://localhost:8000/portfolio/media-types/a-b-testing-display-ads-projects/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/1/asc/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/1/desc/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/2/asc/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/2/desc/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/3/asc/
+http://localhost:8000/portfolio/media-types/a-b-testing-landing-pages-projects/3/desc/
 http://localhost:8000/portfolio/media-types/animated-gifs-projects/
 http://localhost:8000/portfolio/media-types/animated-gifs-projects/1/asc/
 http://localhost:8000/portfolio/media-types/animated-gifs-projects/1/desc/
@@ -608,6 +616,8 @@ http://localhost:8000/portfolio/media-types/landing-pages-projects/8/asc/
 http://localhost:8000/portfolio/media-types/landing-pages-projects/8/desc/
 http://localhost:8000/portfolio/media-types/landing-pages-projects/9/asc/
 http://localhost:8000/portfolio/media-types/landing-pages-projects/9/desc/
+http://localhost:8000/portfolio/media-types/landing-pages-projects/10/asc/
+http://localhost:8000/portfolio/media-types/landing-pages-projects/10/desc/
 http://localhost:8000/portfolio/media-types/microsites-projects/
 http://localhost:8000/portfolio/media-types/microsites-projects/1/asc/
 http://localhost:8000/portfolio/media-types/microsites-projects/1/desc/
